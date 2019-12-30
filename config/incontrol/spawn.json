@@ -1,107 +1,71 @@
-[ 
-  {
-    "mob": "mowziesmobs:frostmaw",
-	"dimension": 0,
-    "mincount": 5,
-    "result": "deny"
-  },
-  {
-	"mob": "mowziesmobs:frostmaw",
-	"dimension": 0,
-	"biome": ["Plains"],
-	"mintime": 0,
-	"isnotcolliding": true, 
-	"mindifficulty": 1,	
-	"minheight": 90,
-	"seesky": true,
-    "result": "allow",
-    "healthadd": 500
-   },
-  {
-    "dimension": 0,
-    "mob": "thejungle:superdupersaurus",
-    "mincount": 5,
-    "result": "deny"
-  },
-  {
-    "biome": "Plains",
-	"mob": "thejungle:superdupersaurus",
-	"isnotcolliding": true,
-	"seesky": true,
-    "result": "allow",
-	"healthadd": 25
-   },
-  {
-    "dimension": 3,
-    "mob": "aether:burrukai",
-    "mincount": {
-	  "mob": "aether:burrukai",
-      "amount": 15,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": 3,
-    "mob": "aether:aerbunny",
-    "mincount": {
-	  "mob": "aether:aerbunny",
-      "amount": 15,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": 3,
-    "mob": "aether:aerwhale",
-    "mincount": {
-	  "mob": "aether:aerwhale",
-      "amount": 5,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": 3,
-    "mob": "aether:aechor_plant",
-    "mincount": {
-	  "mob": "aether:aechor_plant",
-	  "block": ["aether:aether_grass"],
-      "amount": 15,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": 3,
-    "mob": "aether:cockatrice",
-    "mincount": {
-	  "mob": "aether:cockatrice",
-	  "block": ["aether:woven_sticks"],
-      "amount": 15,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": 3,
-    "mob": "aether:glactrix",
-    "mincount": {
-	  "mob": "aether:glactrix",
-      "amount": 15,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": 3,
-    "mob": "aether:moa",
-    "mincount": {
-	  "mob": "aether:moa",
-	  "block": ["aether:woven_sticks"],
-      "amount": 15,
-      "perplayer": true
-    },
-    "result": "deny"
-  }
+[
+	{
+		"mob": "mowziesmobs:lantern",
+		"biome": [
+			"Bamboo Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eucalyptus Forest",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Lavender Fields",
+			"MushroomIslandShore",
+			"Oasis",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Rainforest"
+		],
+		"seesky": true,
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "mowziesmobs:lantern",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 10,
+		"damageadd": 0.1,
+		"speedadd": 0.1,
+		"potion": "minecraft:fire_resistance,10000,1"
+	},
+	{
+		"mob": "mowziesmobs:lantern",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:magma_cube",
+		"biome": [
+			"Bamboo Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eucalyptus Forest",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Lavender Fields",
+			"MushroomIslandShore",
+			"Oasis",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Rainforest"
+		],
+		"seesky": true,
+		"maxcount": {
+			"mob": "minecraft:magma_cube",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "minecraft:magma_cube",
+		"result": "deny"
+	}
 ]

@@ -1,73 +1,49 @@
 [
 	{
-		"dimension": 3,
-		"mobs": [
-			{
-				"mob": "minecraft:blaze",
-				"weight": 50,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "aether:aechor_plant",
-				"weight": 25,
-				"groupcountmin": 2,
-				"groupcountmax": 2
-			},
-			{
-				"mob": "aether:burrukai",
-				"weight": 100,
-				"groupcountmin": 4,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "aether:aerbunny",
-				"weight": 75,
-				"groupcountmin": 3,
-				"groupcountmax": 6
-			},
-			{
-				"mob": "aether:aerwhale",
-				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 2
-			},
-			{
-				"mob": "aether:cockatrice",
-				"weight": 100,
-				"groupcountmin": 1,
-				"groupcountmax": 2
-			},
-			{
-				"mob": "aether:glactrix",
-				"weight": 75,
-				"groupcountmin": 3,
-				"groupcountmax": 3
-			},
-			{
-				"mob": "aether:moa",
-				"weight": 100,
-				"groupcountmin": 2,
-				"groupcountmax": 3
-			}
-		]
-	},
-	{
 		"dimension": 0,
 		"mobs": [
-		{
-			"mob": "thejungle:superdupersaurus",
-			"weight": 100,
-			"groupcountmin": 1,
-			"groupcountmax": 1
-      },
-	  	{
-			"mob": "mowziesmobs:frostmaw",
-			"weight": 100,
-			"groupcountmin": 1,
-			"groupcountmax": 1
-      }
-    ]
-  }
- 
+			{
+				"mob": "minecraft:vindication_illager",
+				"weight": 1,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			},
+			{
+				"mob": "primitivemobs:flame_spewer",
+				"weight": 100,
+				"groupcountmin": 1,
+				"groupcountmax": 3
+			},
+			{
+				"mob": "specialmobs:hellfireblaze",
+				"weight": 100,
+				"groupcountmin": 1,
+				"groupcountmax": 3
+			},
+			{
+				"mob": "mowziesmobs:lantern",
+				"weight": 100,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			},
+			{
+				"mob": "magma_monsters:magma_monster",
+				"weight": 50,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			},
+			{
+				"mob": "magma_monsters:magma_monster_grunt",
+				"weight": 25,
+				"groupcountmin": 3,
+				"groupcountmax": 3
+			},
+			{
+				"mob": "mowziesmobs:lantern",
+				"weight": 1,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	}
 ]
