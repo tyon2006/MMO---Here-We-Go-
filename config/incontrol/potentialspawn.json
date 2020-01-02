@@ -3,44 +3,32 @@
 		"dimension": 0,
 		"mobs": [
 			{
-				"mob": "minecraft:vindication_illager",
+				"mob": "mowziesmobs:lantern",
 				"weight": 1,
 				"groupcountmin": 1,
 				"groupcountmax": 1
 			},
 			{
-				"mob": "primitivemobs:flame_spewer",
-				"weight": 100,
-				"groupcountmin": 1,
-				"groupcountmax": 3
-			},
-			{
-				"mob": "specialmobs:hellfireblaze",
-				"weight": 100,
-				"groupcountmin": 1,
-				"groupcountmax": 3
-			},
-			{
-				"mob": "mowziesmobs:lantern",
-				"weight": 100,
-				"groupcountmin": 1,
-				"groupcountmax": 1
-			},
-			{
-				"mob": "magma_monsters:magma_monster",
-				"weight": 50,
+				"mob": "thejungle:swampcrab",
+				"weight": 1,
 				"groupcountmin": 1,
 				"groupcountmax": 1
 			},
 			{
 				"mob": "magma_monsters:magma_monster_grunt",
-				"weight": 25,
-				"groupcountmin": 3,
-				"groupcountmax": 3
+				"weight": 5,
+				"groupcountmin": 1,
+				"groupcountmax": 1
 			},
 			{
-				"mob": "mowziesmobs:lantern",
-				"weight": 1,
+				"mob": "magma_monsters:magma_monster",
+				"weight": 10,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			},
+			{
+				"mob": "mowziesmobs:frostmaw",
+				"weight": 100,
 				"groupcountmin": 1,
 				"groupcountmax": 1
 			}

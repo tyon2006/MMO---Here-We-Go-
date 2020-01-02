@@ -37,9 +37,10 @@
 		"result": "deny"
 	},
 	{
-		"mob": "minecraft:magma_cube",
+		"mob": "thejungle:swampcrab",
 		"biome": [
 			"Bamboo Forest",
+			"Savanna",
 			"Cherry Blossom Grove",
 			"Coniferous Forest",
 			"Eucalyptus Forest",
@@ -56,16 +57,40 @@
 			"Temperate Rainforest",
 			"Tropical Rainforest"
 		],
-		"seesky": true,
+		"structure": "Village",
 		"maxcount": {
-			"mob": "minecraft:magma_cube",
+			"mob": "thejungle:swampcrab",
 			"amount": 12,
 			"perplayer": true
 		},
 		"result": "allow"
 	},
 	{
-		"mob": "minecraft:magma_cube",
+		"mob": "thejungle:swampcrab",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:frostmaw",
+		"biome": [
+			"Ice Plains Spikes"
+		],
+		"seesky": true,
+		"maxcount": {
+			"mob": "mowziesmobs:frostmaw",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 259,
+		"damageadd": 10,
+		"speedadd": 0.1,
+		"potion": "minecraft:leaping,10000,1"
+	},
+	{
+		"mob": "mowziesmobs:frostmaw",
+		"result": "deny"
+	},
+	{
 		"result": "deny"
 	}
 ]
