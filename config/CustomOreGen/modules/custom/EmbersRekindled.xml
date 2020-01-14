@@ -1,0 +1,1831 @@
+<!-- =================================================================
+     Custom Ore Generation "Embers Rekindled" Module: This
+     configuration covers copper, mountain copper, tin, mountain tin,
+     uranium, mountain uranium, lead, and mountain lead.
+     ================================================================= -->
+
+
+<!-- Configuration by Reteo. -->
+
+
+
+
+<!-- Is the "Embers Rekindled" mod on the system?  Let's find out! -->
+<IfModInstalled name="embers">
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupEmbersRekindled' displayName='Embers Rekindled' displayState='shown'>
+        <Description>
+          Distribution options for Embers Rekindled Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableEmbersRekindled' displayName='Handle Embers Rekindled Gen?' default='true' displayState='shown_dynamic' displayGroup='groupEmbersRekindled'>
+        <Description> Should Custom Ore Generation handle Embers Rekindled ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle Embers Rekindled ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Embers Rekindled ores will be handled by Minecraft directly.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpEmbersRekindled' displayName='Use Embers Rekindled Cleanup?' default='true' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of Embers Rekindled ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up Embers Rekindled ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Embers Rekindled ores do not need to be cleaned up by a substitution pass.'/>
+      </OptionChoice>
+
+      <!-- Quartz Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrQuartzDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Quartz is generated </Description>
+          <DisplayName>Embers Rekindled Quartz</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_quartz")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_quartz")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_quartz")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Quartz is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrQuartzFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Quartz distributions </Description>
+          <DisplayName>Embers Rekindled Quartz Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrQuartzSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Quartz distributions </Description>
+          <DisplayName>Embers Rekindled Quartz Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Quartz Configuration UI Complete -->
+
+
+      <!-- Copper Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrCopperDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Copper is generated </Description>
+          <DisplayName>Embers Rekindled Copper</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Copper is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Copper distributions </Description>
+          <DisplayName>Embers Rekindled Copper Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Copper distributions </Description>
+          <DisplayName>Embers Rekindled Copper Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Copper Configuration UI Complete -->
+
+
+      <!-- Mountain Copper Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrMountainCopperDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Mountain Copper is generated </Description>
+          <DisplayName>Embers Rekindled Mountain Copper</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Copper is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrMountainCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Mountain Copper distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Copper Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrMountainCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Mountain Copper distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Copper Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Copper Configuration UI Complete -->
+
+
+      <!-- Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrTinDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Tin is generated </Description>
+          <DisplayName>Embers Rekindled Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Tin distributions </Description>
+          <DisplayName>Embers Rekindled Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrTinSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Tin distributions </Description>
+          <DisplayName>Embers Rekindled Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Tin Configuration UI Complete -->
+
+
+      <!-- Mountain Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrMountainTinDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Mountain Tin is generated </Description>
+          <DisplayName>Embers Rekindled Mountain Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrMountainTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Mountain Tin distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrMountainTinSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Mountain Tin distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Tin Configuration UI Complete -->
+
+
+      <!-- Silver Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrSilverDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Silver is generated </Description>
+          <DisplayName>Embers Rekindled Silver</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Silver is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Silver distributions </Description>
+          <DisplayName>Embers Rekindled Silver Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Silver distributions </Description>
+          <DisplayName>Embers Rekindled Silver Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Silver Configuration UI Complete -->
+
+
+      <!-- Mountain Silver Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrMountainSilverDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Mountain Silver is generated </Description>
+          <DisplayName>Embers Rekindled Mountain Silver</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Silver is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrMountainSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Mountain Silver distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Silver Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrMountainSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Mountain Silver distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Silver Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Silver Configuration UI Complete -->
+
+
+      <!-- Lead Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrLeadDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Lead is generated </Description>
+          <DisplayName>Embers Rekindled Lead</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Lead is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrLeadFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Lead distributions </Description>
+          <DisplayName>Embers Rekindled Lead Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrLeadSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Lead distributions </Description>
+          <DisplayName>Embers Rekindled Lead Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Lead Configuration UI Complete -->
+
+
+      <!-- Mountain Lead Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrMountainLeadDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Mountain Lead is generated </Description>
+          <DisplayName>Embers Rekindled Mountain Lead</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Lead is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrMountainLeadFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Mountain Lead distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Lead Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrMountainLeadSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Mountain Lead distributions </Description>
+          <DisplayName>Embers Rekindled Mountain Lead Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Lead Configuration UI Complete -->
+
+
+      <!-- Aluminum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrAluminumDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Aluminum is generated </Description>
+          <DisplayName>Embers Rekindled Aluminum</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_aluminum")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_aluminum")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_aluminum")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Aluminum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrAluminumFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Aluminum distributions </Description>
+          <DisplayName>Embers Rekindled Aluminum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrAluminumSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Aluminum distributions </Description>
+          <DisplayName>Embers Rekindled Aluminum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Aluminum Configuration UI Complete -->
+
+
+      <!-- Nickel Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrNickelDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Nickel is generated </Description>
+          <DisplayName>Embers Rekindled Nickel</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_nickel")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_nickel")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_nickel")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Nickel is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrNickelFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Nickel distributions </Description>
+          <DisplayName>Embers Rekindled Nickel Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrNickelSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Nickel distributions </Description>
+          <DisplayName>Embers Rekindled Nickel Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Nickel Configuration UI Complete -->
+
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableEmbersRekindled'>
+
+
+
+
+      <!-- Overworld Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>
+
+        <!-- Starting Original "Overworld" Block Removal -->
+
+        <IfCondition condition=':= ?cleanUpEmbersRekindled'>
+          <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+            <Substitute name='embrOverworldBlockSubstitute0' block='minecraft:stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='embers:ore_copper' weight='1.0' />
+              <Replaces block='embers:ore_lead' weight='1.0' />
+              <Replaces block='embers:ore_tin' weight='1.0' />
+              <Replaces block='embers:ore_silver' weight='1.0' />
+			  <Replaces block='embers:ore_aluminum' weight='1.0' />
+			  <Replaces block='embers:ore_nickel' weight='1.0' />
+			  <Replaces block='embers:ore_quartz' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+
+        <!-- Original "Overworld" Block Removal Complete -->
+
+        <!-- Adding blocks -->
+
+        <!-- Begin Quartz Generation -->
+
+        <!-- Starting StratumClouds Preset for Quartz. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrQuartzDist = "StratumClouds"'>
+            <Cloud name='embrQuartzCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='embers:ore_quartz' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * embrQuartzSize ' range=':= 1.252 * _default_ * embrQuartzSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * embrQuartzSize ' range=':= 1.252 * _default_ * embrQuartzSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.567 * _default_ * embrQuartzFreq ' range=':= 1.567 * _default_ * embrQuartzFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Quartz is complete. -->
+
+
+        <!-- Starting LayeredVeins Preset for Quartz. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrQuartzDist = "LayeredVeins"'>
+            <Veins name='embrQuartzVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_quartz' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.348 * _default_ * embrQuartzFreq ' range=':= 2.348 * _default_ * embrQuartzFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.153 * _default_ * embrQuartzSize ' range=':= 1.153 * _default_ * embrQuartzSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.532 * _default_ ' range=':= 1.532 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrQuartzSize ' range=':= _default_ * embrQuartzSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.238 * _default_ * embrQuartzSize ' range=':= 1.238 * _default_ * embrQuartzSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Quartz is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Quartz. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrQuartzDist = "Vanilla"'>
+            <StandardGen name='embrQuartzStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_quartz' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 14.667 * oreSize * embrQuartzSize ' range=':= 7.33 * oreSize * embrQuartzSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * embrQuartzFreq ' range=':= 2.67 * oreFreq * embrQuartzFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Quartz is complete. -->
+
+        <!-- End Quartz Generation -->
+
+
+        <!-- Begin Copper Generation -->
+
+        <!-- Starting LayeredVeins Preset for Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrCopperDist = "LayeredVeins"'>
+            <Veins name='embrCopperVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_copper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrCopperFreq ' range=':= 2.167 * _default_ * embrCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrCopperSize ' range=':= 1.138 * _default_ * embrCopperSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrCopperSize ' range=':= _default_ * embrCopperSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrCopperSize ' range=':= 1.213 * _default_ * embrCopperSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Copper is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrCopperDist = "StrategicClouds"'>
+            <Cloud name='embrCopperCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_copper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrCopperSize ' range=':= 1.573 * _default_ * embrCopperSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrCopperSize ' range=':= 1.573 * _default_ * embrCopperSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrCopperFreq ' range=':= 2.474 * _default_ * embrCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrCopperHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_copper' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrCopperFreq  * 0.1 ' range=':= 2.167 * _default_ * embrCopperFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Copper is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrCopperDist = "Vanilla"'>
+            <StandardGen name='embrCopperStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_copper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 6.667 * oreSize * embrCopperSize ' range=':= 3.33 * oreSize * embrCopperSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 10.0 * oreFreq * embrCopperFreq ' range=':= 5.0 * oreFreq * embrCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Copper is complete. -->
+
+        <!-- End Copper Generation -->
+
+
+        <!-- Begin Mountain Copper Generation -->
+
+        <!-- Starting LayeredVeins Preset for Mountain Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainCopperDist = "LayeredVeins"'>
+            <Veins name='embrMountainCopperVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_copper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainCopperFreq ' range=':= 2.167 * _default_ * embrMountainCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrMountainCopperSize ' range=':= 1.138 * _default_ * embrMountainCopperSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrMountainCopperSize ' range=':= _default_ * embrMountainCopperSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrMountainCopperSize ' range=':= 1.213 * _default_ * embrMountainCopperSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Mountain Copper is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain  Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainCopperDist = "StrategicClouds"'>
+            <Cloud name='embrMountainCopperCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_copper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrMountainCopperSize ' range=':= 1.573 * _default_ * embrMountainCopperSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrMountainCopperSize ' range=':= 1.573 * _default_ * embrMountainCopperSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrMountainCopperFreq ' range=':= 2.474 * _default_ * embrMountainCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrMountainCopperHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_copper' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainCopperFreq  * 0.1 ' range=':= 2.167 * _default_ * embrMountainCopperFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Copper is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainCopperDist = "Vanilla"'>
+            <StandardGen name='embrMountainCopperStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_copper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 6.667 * oreSize * embrMountainCopperSize ' range=':= 3.33 * oreSize * embrMountainCopperSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 10.0 * oreFreq * embrMountainCopperFreq ' range=':= 5.0 * oreFreq * embrMountainCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Copper is complete. -->
+
+        <!-- End Mountain Copper Generation -->
+
+
+        <!-- Begin Tin Generation -->
+
+        <!-- Starting LayeredVeins Preset for Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrTinDist = "LayeredVeins"'>
+            <Veins name='embrTinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrTinFreq ' range=':= 2.167 * _default_ * embrTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrTinSize ' range=':= 1.138 * _default_ * embrTinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrTinSize ' range=':= _default_ * embrTinSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrTinSize ' range=':= 1.213 * _default_ * embrTinSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Tin is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrTinDist = "StrategicClouds"'>
+            <Cloud name='embrTinCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrTinSize ' range=':= 1.573 * _default_ * embrTinSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrTinSize ' range=':= 1.573 * _default_ * embrTinSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrTinFreq ' range=':= 2.474 * _default_ * embrTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrTinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_tin' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrTinFreq  * 0.1 ' range=':= 2.167 * _default_ * embrTinFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Tin is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrTinDist = "Vanilla"'>
+            <StandardGen name='embrTinStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 4.0 * oreSize * embrTinSize ' range=':= 2.0 * oreSize * embrTinSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 16.667 * oreFreq * embrTinFreq ' range=':= 8.33 * oreFreq * embrTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Tin is complete. -->
+
+        <!-- End Tin Generation -->
+
+
+        <!-- Begin Mountain Tin Generation -->
+
+        <!-- Starting LayeredVeins Preset for Mountain Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainTinDist = "LayeredVeins"'>
+            <Veins name='embrMountainTinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainTinFreq ' range=':= 2.167 * _default_ * embrMountainTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrMountainTinSize ' range=':= 1.138 * _default_ * embrMountainTinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrMountainTinSize ' range=':= _default_ * embrMountainTinSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrMountainTinSize ' range=':= 1.213 * _default_ * embrMountainTinSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Mountain Tin is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainTinDist = "StrategicClouds"'>
+            <Cloud name='embrMountainTinCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrMountainTinSize ' range=':= 1.573 * _default_ * embrMountainTinSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrMountainTinSize ' range=':= 1.573 * _default_ * embrMountainTinSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrMountainTinFreq ' range=':= 2.474 * _default_ * embrMountainTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrMountainTinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_tin' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainTinFreq  * 0.1 ' range=':= 2.167 * _default_ * embrMountainTinFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Tin is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainTinDist = "Vanilla"'>
+            <StandardGen name='embrMountainTinStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 4.0 * oreSize * embrMountainTinSize ' range=':= 2.0 * oreSize * embrMountainTinSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 16.667 * oreFreq * embrMountainTinFreq ' range=':= 8.33 * oreFreq * embrMountainTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Tin is complete. -->
+
+        <!-- End Mountain Tin Generation -->
+
+
+        <!-- Begin Silver Generation -->
+
+        <!-- Starting SparseVeins Preset for Silver. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrSilverDist = "SparseVeins"'>
+            <Veins name='embrSilverVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='embers:ore_silver' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * embrSilverFreq ' range=':= 3.355 * _default_ * embrSilverFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * embrSilverSize ' range=':= 0 * _default_ * embrSilverSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.832 * _default_ ' range=':= 1.832 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrSilverSize ' range=':= _default_ * embrSilverSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.353 * _default_ * embrSilverSize ' range=':= 1.353 * _default_ * embrSilverSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Silver is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Silver. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrSilverDist = "StrategicClouds"'>
+            <Cloud name='embrSilverCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_silver' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.251 * _default_ * embrSilverSize ' range=':= 1.251 * _default_ * embrSilverSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.251 * _default_ * embrSilverSize ' range=':= 1.251 * _default_ * embrSilverSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.565 * _default_ * embrSilverFreq ' range=':= 1.565 * _default_ * embrSilverFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrSilverHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_silver' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * embrSilverFreq  * 0.1 ' range=':= 3.355 * _default_ * embrSilverFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Silver is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Silver. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrSilverDist = "Vanilla"'>
+            <StandardGen name='embrSilverStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_silver' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 2.0 * oreSize * embrSilverSize ' range=':= 1.0 * oreSize * embrSilverSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 13.333 * oreFreq * embrSilverFreq ' range=':= 6.67 * oreFreq * embrSilverFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Silver is complete. -->
+
+        <!-- End Silver Generation -->
+
+
+        <!-- Begin Mountain Silver Generation -->
+
+        <!-- Starting SparseVeins Preset for Mountain Silver. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainSilverDist = "SparseVeins"'>
+            <Veins name='embrMountainSilverVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='embers:ore_silver' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * embrMountainSilverFreq ' range=':= 3.355 * _default_ * embrMountainSilverFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * embrMountainSilverSize ' range=':= 0 * _default_ * embrMountainSilverSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.832 * _default_ ' range=':= 1.832 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrMountainSilverSize ' range=':= _default_ * embrMountainSilverSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.353 * _default_ * embrMountainSilverSize ' range=':= 1.353 * _default_ * embrMountainSilverSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Mountain Silver is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain  Silver. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainSilverDist = "StrategicClouds"'>
+            <Cloud name='embrMountainSilverCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_silver' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.251 * _default_ * embrMountainSilverSize ' range=':= 1.251 * _default_ * embrMountainSilverSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.251 * _default_ * embrMountainSilverSize ' range=':= 1.251 * _default_ * embrMountainSilverSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.565 * _default_ * embrMountainSilverFreq ' range=':= 1.565 * _default_ * embrMountainSilverFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrMountainSilverHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_silver' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * embrMountainSilverFreq  * 0.1 ' range=':= 3.355 * _default_ * embrMountainSilverFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Silver is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Silver. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainSilverDist = "Vanilla"'>
+            <StandardGen name='embrMountainSilverStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_silver' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 2.0 * oreSize * embrMountainSilverSize ' range=':= 1.0 * oreSize * embrMountainSilverSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 13.333 * oreFreq * embrMountainSilverFreq ' range=':= 6.67 * oreFreq * embrMountainSilverFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Silver is complete. -->
+
+        <!-- End Mountain Silver Generation -->
+
+
+        <!-- Begin Lead Generation -->
+
+        <!-- Starting LayeredVeins Preset for Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrLeadDist = "LayeredVeins"'>
+            <Veins name='embrLeadVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_lead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrLeadFreq ' range=':= 1.001 * _default_ * embrLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * embrLeadSize ' range=':= 1.000 * _default_ * embrLeadSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrLeadSize ' range=':= _default_ * embrLeadSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * embrLeadSize ' range=':= 1.000 * _default_ * embrLeadSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Lead is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrLeadDist = "StrategicClouds"'>
+            <Cloud name='embrLeadCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_lead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * embrLeadSize ' range=':= 1.069 * _default_ * embrLeadSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * embrLeadSize ' range=':= 1.069 * _default_ * embrLeadSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * embrLeadFreq ' range=':= 1.143 * _default_ * embrLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrLeadHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_lead' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrLeadFreq  * 0.1 ' range=':= 1.001 * _default_ * embrLeadFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Lead is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrLeadDist = "Vanilla"'>
+            <StandardGen name='embrLeadStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_lead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 2.667 * oreSize * embrLeadSize ' range=':= 1.33 * oreSize * embrLeadSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * embrLeadFreq ' range=':= 2.67 * oreFreq * embrLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Lead is complete. -->
+
+        <!-- End Lead Generation -->
+
+
+        <!-- Begin Mountain Lead Generation -->
+
+        <!-- Starting LayeredVeins Preset for Mountain Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainLeadDist = "LayeredVeins"'>
+            <Veins name='embrMountainLeadVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_lead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrMountainLeadFreq ' range=':= 1.001 * _default_ * embrMountainLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * embrMountainLeadSize ' range=':= 1.000 * _default_ * embrMountainLeadSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrMountainLeadSize ' range=':= _default_ * embrMountainLeadSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * embrMountainLeadSize ' range=':= 1.000 * _default_ * embrMountainLeadSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Mountain Lead is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain  Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainLeadDist = "StrategicClouds"'>
+            <Cloud name='embrMountainLeadCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_lead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * embrMountainLeadSize ' range=':= 1.069 * _default_ * embrMountainLeadSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * embrMountainLeadSize ' range=':= 1.069 * _default_ * embrMountainLeadSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * embrMountainLeadFreq ' range=':= 1.143 * _default_ * embrMountainLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrMountainLeadHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_lead' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrMountainLeadFreq  * 0.1 ' range=':= 1.001 * _default_ * embrMountainLeadFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Lead is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrMountainLeadDist = "Vanilla"'>
+            <StandardGen name='embrMountainLeadStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_lead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 2.667 * oreSize * embrMountainLeadSize ' range=':= 1.33 * oreSize * embrMountainLeadSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * embrMountainLeadFreq ' range=':= 2.67 * oreFreq * embrMountainLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Lead is complete. -->
+
+        <!-- End Mountain Lead Generation -->
+
+        <!-- Begin Aluminum Generation -->
+
+        <!-- Starting LayeredVeins Preset for Aluminum. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrAluminumDist = "LayeredVeins"'>
+            <Veins name='embrAluminumVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_aluminum' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrAluminumFreq ' range=':= 1.001 * _default_ * embrAluminumFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * embrAluminumSize ' range=':= 1.000 * _default_ * embrAluminumSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrAluminumSize ' range=':= _default_ * embrAluminumSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * embrAluminumSize ' range=':= 1.000 * _default_ * embrAluminumSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Aluminum is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Aluminum. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrAluminumDist = "StrategicClouds"'>
+            <Cloud name='embrAluminumCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_aluminum' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * embrAluminumSize ' range=':= 1.069 * _default_ * embrAluminumSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * embrAluminumSize ' range=':= 1.069 * _default_ * embrAluminumSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * embrAluminumFreq ' range=':= 1.143 * _default_ * embrAluminumFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrAluminumHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_aluminum' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrAluminumFreq  * 0.1 ' range=':= 1.001 * _default_ * embrAluminumFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Aluminum is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Aluminum. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrAluminumDist = "Vanilla"'>
+            <StandardGen name='embrAluminumStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_aluminum' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 2.667 * oreSize * embrAluminumSize ' range=':= 1.33 * oreSize * embrAluminumSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * embrAluminumFreq ' range=':= 2.67 * oreFreq * embrAluminumFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Aluminum is complete. -->
+
+        <!-- End Aluminum Generation -->
+
+
+        <!-- Begin Nickel Generation -->
+
+        <!-- Starting LayeredVeins Preset for Nickel. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrNickelDist = "LayeredVeins"'>
+            <Veins name='embrNickelVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_nickel' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrNickelFreq ' range=':= 2.167 * _default_ * embrNickelFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrNickelSize ' range=':= 1.138 * _default_ * embrNickelSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrNickelSize ' range=':= _default_ * embrNickelSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrNickelSize ' range=':= 1.213 * _default_ * embrNickelSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Nickel is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Nickel. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrNickelDist = "StrategicClouds"'>
+            <Cloud name='embrNickelCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_nickel' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrNickelSize ' range=':= 1.573 * _default_ * embrNickelSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrNickelSize ' range=':= 1.573 * _default_ * embrNickelSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrNickelFreq ' range=':= 2.474 * _default_ * embrNickelFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrNickelHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_nickel' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrNickelFreq  * 0.1 ' range=':= 2.167 * _default_ * embrNickelFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Nickel is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Nickel. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrNickelDist = "Vanilla"'>
+            <StandardGen name='embrNickelStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_nickel' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 6.667 * oreSize * embrNickelSize ' range=':= 3.33 * oreSize * embrNickelSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 10.0 * oreFreq * embrNickelFreq ' range=':= 5.0 * oreFreq * embrNickelFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Nickel is complete. -->
+
+        <!-- End Nickel Generation -->
+
+        <!-- Finished adding blocks -->
+
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Embers Rekindled" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->
