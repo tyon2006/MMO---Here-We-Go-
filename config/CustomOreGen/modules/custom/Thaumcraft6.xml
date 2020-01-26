@@ -270,10 +270,35 @@
               </Description>
               <OreBlock block='thaumcraft:ore_amber' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='river'  />
-              <Biome name='grove'  />
-              <Biome name='shield'  />
-              <Biome name='thicket'  />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * thm6AmberFreq ' range=':= 0.270 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6AmberSize ' range=':= 0 * _default_ * thm6AmberSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -323,10 +348,35 @@
               </Description>
               <OreBlock block='thaumcraft:ore_amber' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='river'  />
-              <Biome name='grove'  />
-              <Biome name='shield'  />
-              <Biome name='thicket'  />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * thm6AmberSize ' range=':= 0.449 * _default_ * thm6AmberSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * thm6AmberSize ' range=':= 0.449 * _default_ * thm6AmberSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * thm6AmberFreq ' range=':= 0.202 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
@@ -374,10 +424,35 @@
               </Description>
               <OreBlock block='thaumcraft:ore_amber' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='river'  />
-              <Biome name='grove'  />
-              <Biome name='shield'  />
-              <Biome name='thicket'  />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
               <Setting name='Size' avg=':= 0.667 * oreSize * thm6AmberSize ' range=':= 0.33 * oreSize * thm6AmberSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * thm6AmberFreq ' range=':= 0.33 * oreFreq * thm6AmberFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -407,7 +482,35 @@
               </Description>
               <OreBlock block='thaumcraft:ore_cinnabar' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
               <Setting name='MotherlodeFrequency' avg=':= 1.838 * _default_ * thm6CinnabarFreq ' range=':= 1.838 * _default_ * thm6CinnabarFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6CinnabarSize ' range=':= 0 * _default_ * thm6CinnabarSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 26 ' range=':= 26 ' type='normal' scaleTo='base' />
@@ -447,7 +550,35 @@
               </Description>
               <OreBlock block='thaumcraft:ore_cinnabar' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
               <Setting name='CloudRadius' avg=':= 0.926 * _default_ * thm6CinnabarSize ' range=':= 0.926 * _default_ * thm6CinnabarSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.926 * _default_ * thm6CinnabarSize ' range=':= 0.926 * _default_ * thm6CinnabarSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.857 * _default_ * thm6CinnabarFreq ' range=':= 0.857 * _default_ * thm6CinnabarFreq ' type='normal' scaleTo='base' />
@@ -495,7 +626,35 @@
               </Description>
               <OreBlock block='thaumcraft:ore_cinnabar' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
               <Setting name='Size' avg=':= 0.667 * oreSize * thm6CinnabarSize ' range=':= 0.33 * oreSize * thm6CinnabarSize ' type='normal' />
               <Setting name='Frequency' avg=':= 12.0 * oreFreq * thm6CinnabarFreq ' range=':= 6.0 * oreFreq * thm6CinnabarFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 26 ' range=':= 26 ' type='normal' scaleTo='base' />

@@ -400,18 +400,18 @@
     <!-- First are the stone-based configurations; this way, they can be
          overridden using the stone oredict entry. -->
     <Import file='modules/custom/FlatBedrock.xml'/>
-    <Import file='modules/default/Chisel2.xml'/>
+    <Import file='modules/custom/Chisel2.xml'/>
 
     <!-- These rules allow for additional subterranean features. -->
     <Import file='modules/default/MinecraftSpecialRules.xml'/>
 
     <!-- Vanilla minecraft ores should always be the first ores to 
          load. -->
-    <Import file='modules/default/Vanilla.xml'/>
+    <Import file='modules/custom/Vanilla.xml'/>
 
     <!-- Then, the rest are free to come in. -->
     <Import file='modules/default/FossilsandArchaeology.xml'/>
-    <Import file='modules/default/ImmersiveEngineering.xml'/>
+    <Import file='modules/custom/ImmersiveEngineering.xml'/>
 
     <!-- ***************** Import Mod-provided configs ********************* -->
     <!-- NOTE: mods will overwrite these configs upon each load -->

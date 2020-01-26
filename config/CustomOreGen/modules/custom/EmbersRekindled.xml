@@ -86,7 +86,7 @@
 
       <!-- Copper Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrCopperDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <OptionChoice name='embrCopperDist' default='none' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
           <Description> Controls how Copper is generated </Description>
           <DisplayName>Embers Rekindled Copper</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
@@ -130,55 +130,9 @@
       <!-- Copper Configuration UI Complete -->
 
 
-      <!-- Mountain Copper Configuration UI Starting -->
-      <ConfigSection>
-        <OptionChoice name='embrMountainCopperDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Controls how Mountain Copper is generated </Description>
-          <DisplayName>Embers Rekindled Mountain Copper</DisplayName>
-          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
-
-          <Choice value='LayeredVeins' displayValue='Layered Veins'>
-            <Description>
-              Small, fairly rare motherlodes with 2-4 horizontal veins each.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
-
-          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
-            <Description>
-              Large irregular clouds filled lightly with ore.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <IfCondition condition=':= (?blockExists("embers:ore_copper")) '>
-
-          <Choice value='Vanilla' displayValue='Vanilla'>
-            <Description>
-              Simulates Vanilla Minecraft.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <Choice value='none' displayValue='None' description='Mountain Copper is not generated in the world.'/>
-        </OptionChoice>
-        <OptionNumeric name='embrMountainCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Frequency multiplier for Embers Rekindled Mountain Copper distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Copper Freq.</DisplayName>
-        </OptionNumeric>
-        <OptionNumeric name='embrMountainCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Size multiplier for Embers Rekindled Mountain Copper distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Copper Size</DisplayName>
-        </OptionNumeric>
-      </ConfigSection>
-      <!-- Mountain Copper Configuration UI Complete -->
-
-
       <!-- Tin Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrTinDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <OptionChoice name='embrTinDist' default='LayeredVeins' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
           <Description> Controls how Tin is generated </Description>
           <DisplayName>Embers Rekindled Tin</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
@@ -222,11 +176,11 @@
       <!-- Tin Configuration UI Complete -->
 
 
-      <!-- Mountain Tin Configuration UI Starting -->
+      <!-- Uncommon Tin Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrMountainTinDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Controls how Mountain Tin is generated </Description>
-          <DisplayName>Embers Rekindled Mountain Tin</DisplayName>
+        <OptionChoice name='embrUncommonTinDist' default='LayeredVeins' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Uncommon Tin is generated </Description>
+          <DisplayName>Embers Rekindled Uncommon Tin</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
 
           <Choice value='LayeredVeins' displayValue='Layered Veins'>
@@ -254,23 +208,69 @@
           </Choice>
           </IfCondition>
 
-          <Choice value='none' displayValue='None' description='Mountain Tin is not generated in the world.'/>
+          <Choice value='none' displayValue='None' description='Uncommon Tin is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='embrMountainTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Frequency multiplier for Embers Rekindled Mountain Tin distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Tin Freq.</DisplayName>
+        <OptionNumeric name='embrUncommonTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Uncommon Tin distributions </Description>
+          <DisplayName>Embers Rekindled Uncommon Tin Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='embrMountainTinSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Size multiplier for Embers Rekindled Mountain Tin distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Tin Size</DisplayName>
+        <OptionNumeric name='embrUncommonTinSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Uncommon Tin distributions </Description>
+          <DisplayName>Embers Rekindled Uncommon Tin Size</DisplayName>
         </OptionNumeric>
       </ConfigSection>
-      <!-- Mountain Tin Configuration UI Complete -->
+      <!-- Uncommon Tin Configuration UI Complete -->
+
+
+      <!-- Rare Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='embrRareTinDist' default='LayeredVeins' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Controls how Rare Tin is generated </Description>
+          <DisplayName>Embers Rekindled Rare Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("embers:ore_tin")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Rare Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='embrRareTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Frequency multiplier for Embers Rekindled Rare Tin distributions </Description>
+          <DisplayName>Embers Rekindled Rare Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='embrRareTinSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
+          <Description> Size multiplier for Embers Rekindled Rare Tin distributions </Description>
+          <DisplayName>Embers Rekindled Rare Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Rare Tin Configuration UI Complete -->
 
 
       <!-- Silver Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrSilverDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <OptionChoice name='embrSilverDist' default='none' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
           <Description> Controls how Silver is generated </Description>
           <DisplayName>Embers Rekindled Silver</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
@@ -314,55 +314,9 @@
       <!-- Silver Configuration UI Complete -->
 
 
-      <!-- Mountain Silver Configuration UI Starting -->
-      <ConfigSection>
-        <OptionChoice name='embrMountainSilverDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Controls how Mountain Silver is generated </Description>
-          <DisplayName>Embers Rekindled Mountain Silver</DisplayName>
-          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
-
-          <Choice value='SparseVeins' displayValue='Sparse Veins'>
-            <Description>
-              Large veins filled very lightly with ore.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
-
-          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
-            <Description>
-              Large irregular clouds filled lightly with ore.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <IfCondition condition=':= (?blockExists("embers:ore_silver")) '>
-
-          <Choice value='Vanilla' displayValue='Vanilla'>
-            <Description>
-              Simulates Vanilla Minecraft.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <Choice value='none' displayValue='None' description='Mountain Silver is not generated in the world.'/>
-        </OptionChoice>
-        <OptionNumeric name='embrMountainSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Frequency multiplier for Embers Rekindled Mountain Silver distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Silver Freq.</DisplayName>
-        </OptionNumeric>
-        <OptionNumeric name='embrMountainSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Size multiplier for Embers Rekindled Mountain Silver distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Silver Size</DisplayName>
-        </OptionNumeric>
-      </ConfigSection>
-      <!-- Mountain Silver Configuration UI Complete -->
-
-
       <!-- Lead Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrLeadDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <OptionChoice name='embrLeadDist' default='none' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
           <Description> Controls how Lead is generated </Description>
           <DisplayName>Embers Rekindled Lead</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
@@ -406,55 +360,9 @@
       <!-- Lead Configuration UI Complete -->
 
 
-      <!-- Mountain Lead Configuration UI Starting -->
-      <ConfigSection>
-        <OptionChoice name='embrMountainLeadDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Controls how Mountain Lead is generated </Description>
-          <DisplayName>Embers Rekindled Mountain Lead</DisplayName>
-          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
-
-          <Choice value='LayeredVeins' displayValue='Layered Veins'>
-            <Description>
-              Small, fairly rare motherlodes with 2-4 horizontal veins each.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
-
-          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
-            <Description>
-              Large irregular clouds filled lightly with ore.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <IfCondition condition=':= (?blockExists("embers:ore_lead")) '>
-
-          <Choice value='Vanilla' displayValue='Vanilla'>
-            <Description>
-              Simulates Vanilla Minecraft.
-            </Description>
-          </Choice>
-          </IfCondition>
-
-          <Choice value='none' displayValue='None' description='Mountain Lead is not generated in the world.'/>
-        </OptionChoice>
-        <OptionNumeric name='embrMountainLeadFreq' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Frequency multiplier for Embers Rekindled Mountain Lead distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Lead Freq.</DisplayName>
-        </OptionNumeric>
-        <OptionNumeric name='embrMountainLeadSize' default='1'  min='0' max='5' displayState=':= if(?enableEmbersRekindled, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEmbersRekindled'>
-          <Description> Size multiplier for Embers Rekindled Mountain Lead distributions </Description>
-          <DisplayName>Embers Rekindled Mountain Lead Size</DisplayName>
-        </OptionNumeric>
-      </ConfigSection>
-      <!-- Mountain Lead Configuration UI Complete -->
-
-
       <!-- Aluminum Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrAluminumDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <OptionChoice name='embrAluminumDist' default='none' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
           <Description> Controls how Aluminum is generated </Description>
           <DisplayName>Embers Rekindled Aluminum</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_aluminum")) '>
@@ -500,7 +408,7 @@
 
       <!-- Nickel Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='embrNickelDist'  displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
+        <OptionChoice name='embrNickelDist' default='none' displayState=':= if(?enableEmbersRekindled, "shown", "hidden")' displayGroup='groupEmbersRekindled'>
           <Description> Controls how Nickel is generated </Description>
           <DisplayName>Embers Rekindled Nickel</DisplayName>
           <IfCondition condition=':= (?blockExists("embers:ore_nickel")) '>
@@ -595,11 +503,39 @@
               </Description>
               <OreBlock block='embers:ore_quartz' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
-              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * embrQuartzSize ' range=':= 1.252 * _default_ * embrQuartzSize ' type='normal' />
+              <Biome name='dead_forest' />
+              <Biome name='fen' />
+              <Biome name='gravel_beach' />
+              <Biome name='marsh' />
+              <Biome name='wetland' />
+              <Biome name='desert' />
+              <Biome name='swampland' />
+              <Biome name='mutated_mesa' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='bayou' />
+              <Biome name='lush_swamp' />
+              <Biome name='mangrove' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='wasteland' />
+              <Setting name='CloudRadius' avg=':= 1 * _default_ * embrQuartzSize ' range=':= 1 * _default_ * embrQuartzSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.252 * _default_ * embrQuartzSize ' range=':= 1.252 * _default_ * embrQuartzSize ' type='normal' scaleTo='base' />
-              <Setting name='DistributionFrequency' avg=':= 1.567 * _default_ * embrQuartzFreq ' range=':= 1.567 * _default_ * embrQuartzFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 0.944 * _default_ * embrQuartzFreq ' range=':= 0.944 * _default_ * embrQuartzFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 48 ' range=':= 32 ' type='uniform' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -622,10 +558,38 @@
               </Description>
               <OreBlock block='embers:ore_quartz' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='dead_forest' />
+              <Biome name='fen' />
+              <Biome name='gravel_beach' />
+              <Biome name='marsh' />
+              <Biome name='wetland' />
+              <Biome name='desert' />
+              <Biome name='swampland' />
+              <Biome name='mutated_mesa' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='bayou' />
+              <Biome name='lush_swamp' />
+              <Biome name='mangrove' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='wasteland' />
               <Setting name='MotherlodeFrequency' avg=':= 2.348 * _default_ * embrQuartzFreq ' range=':= 2.348 * _default_ * embrQuartzFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 1.153 * _default_ * embrQuartzSize ' range=':= 1.153 * _default_ * embrQuartzSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 32 ' type='uniform' scaleTo='base' />
               <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -654,10 +618,38 @@
               </Description>
               <OreBlock block='embers:ore_quartz' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='dead_forest' />
+              <Biome name='fen' />
+              <Biome name='gravel_beach' />
+              <Biome name='marsh' />
+              <Biome name='wetland' />
+              <Biome name='desert' />
+              <Biome name='swampland' />
+              <Biome name='mutated_mesa' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='bayou' />
+              <Biome name='lush_swamp' />
+              <Biome name='mangrove' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='wasteland' />
               <Setting name='Size' avg=':= 14.667 * oreSize * embrQuartzSize ' range=':= 7.33 * oreSize * embrQuartzSize ' type='normal' />
               <Setting name='Frequency' avg=':= 5.333 * oreFreq * embrQuartzFreq ' range=':= 2.67 * oreFreq * embrQuartzFreq ' type='normal' scaleTo='base' />
-              <Setting name='Height' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='Height' avg=':= 48 ' range=':= 32 ' type='uniform' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             </StandardGen>
           </IfCondition>
@@ -780,119 +772,6 @@
         <!-- End Copper Generation -->
 
 
-        <!-- Begin Mountain Copper Generation -->
-
-        <!-- Starting LayeredVeins Preset for Mountain Copper. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainCopperDist = "LayeredVeins"'>
-            <Veins name='embrMountainCopperVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
-              <Description>
-                Small, fairly rare motherlodes  with 2-4 horizontal
-                veins each.
-              </Description>
-              <OreBlock block='embers:ore_copper' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainCopperFreq ' range=':= 2.167 * _default_ * embrMountainCopperFreq ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrMountainCopperSize ' range=':= 1.138 * _default_ * embrMountainCopperSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
-              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentLength' avg=':= _default_ * embrMountainCopperSize ' range=':= _default_ * embrMountainCopperSize ' type='normal' />
-              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrMountainCopperSize ' range=':= 1.213 * _default_ * embrMountainCopperSize ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </Veins>
-          </IfCondition>
-        </ConfigSection>
-        <!-- LayeredVeins Preset for Mountain Copper is  complete. -->
-
-
-        <!-- Starting StrategicClouds Preset for Mountain  Copper. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainCopperDist = "StrategicClouds"'>
-            <Cloud name='embrMountainCopperCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
-              <Description>
-                Large irregular clouds filled  lightly with ore.
-                These are  huge, spanning several adjacent  chunks,
-                and consequently rather  rare.  They contain a
-                sizeable  amount of ore, but it takes some  time and
-                effort to mine due to  low density. The intent for
-                strategic clouds is that the  player will need to
-                actively  search for one and then set up a  semi-
-                permanent mining base and  spend some time actually
-                mining  the ore.
-              </Description>
-              <OreBlock block='embers:ore_copper' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrMountainCopperSize ' range=':= 1.573 * _default_ * embrMountainCopperSize ' type='normal' />
-              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrMountainCopperSize ' range=':= 1.573 * _default_ * embrMountainCopperSize ' type='normal' scaleTo='base' />
-              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrMountainCopperFreq ' range=':= 2.474 * _default_ * embrMountainCopperFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Veins name='embrMountainCopperHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
-                <Description>
-                  Single blocks, generously  scattered through all
-                  heights  (density is about that of  vanilla iron
-                  ore). They will  replace dirt and sandstone  (but
-                  not grass or sand), so  they can be found nearer to
-                  the surface than most ores.  Intened to be used as a
-                  child  distribution for large, rare  strategic
-                  deposits that would  otherwise be very difficult  to
-                  find.  Note that the  frequency is multiplied by
-                  ground level to maintain a  constant density, but
-                  not by  ore frequency because it is  assumed that
-                  the frequency of  the parent distribution will
-                  already be scaled by that.
-                </Description>
-                <OreBlock block='embers:ore_copper' weight='1.0' />
-                <Replaces block='minecraft:dirt' weight='1.0' />
-                <Replaces block='minecraft:sandstone' weight='1.0' />
-                <ReplacesOre block='stone' weight='1.0' />
-                <Replaces block='minecraft:gravel' weight='1.0' />
-                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainCopperFreq  * 0.1 ' range=':= 2.167 * _default_ * embrMountainCopperFreq  * 0.1 ' type='normal' scaleTo='base' />
-              </Veins>
-            </Cloud>
-          </IfCondition>
-        </ConfigSection>
-        <!-- StrategicClouds Preset for Mountain Copper is  complete. -->
-
-
-        <!-- Starting Vanilla Preset for Mountain Copper. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainCopperDist = "Vanilla"'>
-            <StandardGen name='embrMountainCopperStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
-              <Description>
-                A master preset for standardgen  ore distributions.
-              </Description>
-              <OreBlock block='embers:ore_copper' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='Size' avg=':= 6.667 * oreSize * embrMountainCopperSize ' range=':= 3.33 * oreSize * embrMountainCopperSize ' type='normal' />
-              <Setting name='Frequency' avg=':= 10.0 * oreFreq * embrMountainCopperFreq ' range=':= 5.0 * oreFreq * embrMountainCopperFreq ' type='normal' scaleTo='base' />
-              <Setting name='Height' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </StandardGen>
-          </IfCondition>
-        </ConfigSection>
-        <!-- Vanilla Preset for Mountain Copper is complete. -->
-
-        <!-- End Mountain Copper Generation -->
-
-
         <!-- Begin Tin Generation -->
 
         <!-- Starting LayeredVeins Preset for Tin. -->
@@ -905,10 +784,53 @@
               </Description>
               <OreBlock block='embers:ore_tin' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
-              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrTinFreq ' range=':= 2.167 * _default_ * embrTinFreq ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrTinSize ' range=':= 1.138 * _default_ * embrTinSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills'  />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='chaparral' />
+              <Biome name='meadow' />
+              <Biome name='pasture' />
+              <Biome name='birch_forest_hills' />
+              <Biome name='mutated_birch_forest_hills' />
+              <Biome name='stone_beach' />
+              <Biome name='taiga_cold' />
+              <Biome name='prairie' />
+              <Biome name='white_beach' />
+              <Biome name='woodland' />
+              <Biome name='kelp_forest' />
+              <Biome name='coral_reef' />
+              <Biome name='frozen_ocean' />
+              <Setting name='MotherlodeFrequency' avg=':= 2.831 * _default_ * embrTinFreq ' range=':= 2.831 * _default_ * embrTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.448 * _default_ * embrTinSize ' range=':= 1.448 * _default_ * embrTinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -945,11 +867,54 @@
               </Description>
               <OreBlock block='embers:ore_tin' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills'  />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='chaparral' />
+              <Biome name='meadow' />
+              <Biome name='pasture' />
+              <Biome name='birch_forest_hills' />
+              <Biome name='mutated_birch_forest_hills' />
+              <Biome name='stone_beach' />
+              <Biome name='taiga_cold' />
+              <Biome name='prairie' />
+              <Biome name='white_beach' />
+              <Biome name='woodland' />
+              <Biome name='kelp_forest' />
+              <Biome name='coral_reef' />
+              <Biome name='frozen_ocean' />
               <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrTinSize ' range=':= 1.573 * _default_ * embrTinSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrTinSize ' range=':= 1.573 * _default_ * embrTinSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrTinFreq ' range=':= 2.474 * _default_ * embrTinFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -993,10 +958,53 @@
               </Description>
               <OreBlock block='embers:ore_tin' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills'  />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='chaparral' />
+              <Biome name='meadow' />
+              <Biome name='pasture' />
+              <Biome name='birch_forest_hills' />
+              <Biome name='mutated_birch_forest_hills' />
+              <Biome name='stone_beach' />
+              <Biome name='taiga_cold' />
+              <Biome name='prairie' />
+              <Biome name='white_beach' />
+              <Biome name='woodland' />
+              <Biome name='kelp_forest' />
+              <Biome name='coral_reef' />
+              <Biome name='frozen_ocean' />
               <Setting name='Size' avg=':= 4.0 * oreSize * embrTinSize ' range=':= 2.0 * oreSize * embrTinSize ' type='normal' />
               <Setting name='Frequency' avg=':= 16.667 * oreFreq * embrTinFreq ' range=':= 8.33 * oreFreq * embrTinFreq ' type='normal' scaleTo='base' />
-              <Setting name='Height' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             </StandardGen>
           </IfCondition>
@@ -1006,22 +1014,90 @@
         <!-- End Tin Generation -->
 
 
-        <!-- Begin Mountain Tin Generation -->
+        <!-- Begin Uncommon Tin Generation -->
 
-        <!-- Starting LayeredVeins Preset for Mountain Tin. -->
+        <!-- Starting LayeredVeins Preset for Uncommon Tin. -->
         <ConfigSection>
-          <IfCondition condition=':= embrMountainTinDist = "LayeredVeins"'>
-            <Veins name='embrMountainTinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+          <IfCondition condition=':= embrUncommonTinDist = "LayeredVeins"'>
+            <Veins name='embrUncommonTinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
               <Description>
                 Small, fairly rare motherlodes  with 2-4 horizontal
                 veins each.
               </Description>
               <OreBlock block='embers:ore_tin' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainTinFreq ' range=':= 2.167 * _default_ * embrMountainTinFreq ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * embrMountainTinSize ' range=':= 1.138 * _default_ * embrMountainTinSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Biome name='alps_foothills' />
+              <Biome name='bamboo_forest' />
+              <Biome name='bayou' />
+              <Biome name='beaches' />
+              <Biome name='birch_forest' />
+              <Biome name='boreal_forest' />
+              <Biome name='brushland' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='cold_beach' />
+              <Biome name='coniferous_forest' />
+              <Biome name='dead_forest' />
+              <Biome name='desert' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='fen' />
+              <Biome name='flower_field' />
+              <Biome name='forest' />
+              <Biome name='forest_hills' />
+              <Biome name='frozen_river' />
+              <Biome name='glacier' />
+              <Biome name='grassland' />
+              <Biome name='gravel_beach' />
+              <Biome name='ice_flats' />
+              <Biome name='ice_mountains' />
+              <Biome name='jungle' />
+              <Biome name='land_of_lakes' />
+              <Biome name='lush_desert' />
+              <Biome name='lush_swamp' />
+              <Biome name='magical_forest' />
+              <Biome name='mangrove' />
+              <Biome name='maple_woods' />
+              <Biome name='marsh' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mushroom_island' />
+              <Biome name='mutated_birch_forest' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='mutated_forest' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='mutated_mesa' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='mutated_savanna' />
+              <Biome name='mutated_taiga' />
+              <Biome name='mystic_grove' />
+              <Biome name='oasis' />
+              <Biome name='ocean' />
+              <Biome name='orchard' />
+              <Biome name='plains' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='river' />
+              <Biome name='roofed_forest' />
+              <Biome name='sacred_springs' />
+              <Biome name='savanna' />
+              <Biome name='seasonal_forest' />
+              <Biome name='shield' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='snowy_forest' />
+              <Biome name='swampland' />
+              <Biome name='taiga' />
+              <Biome name='tropical_island' />
+              <Biome name='volcanic_island' />
+              <Biome name='wetland' />
+              <Setting name='MotherlodeFrequency' avg=':= 0.755 * _default_ * embrTinFreq ' range=':= 0.755 * _default_ * embrTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.772 * _default_ * embrTinSize ' range=':= 0.772 * _default_ * embrTinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -1029,22 +1105,22 @@
               <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
               <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentLength' avg=':= _default_ * embrMountainTinSize ' range=':= _default_ * embrMountainTinSize ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrTinSize ' range=':= _default_ * embrTinSize ' type='normal' />
               <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrMountainTinSize ' range=':= 1.213 * _default_ * embrMountainTinSize ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrTinSize ' range=':= 1.213 * _default_ * embrTinSize ' type='normal' />
               <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             </Veins>
           </IfCondition>
         </ConfigSection>
-        <!-- LayeredVeins Preset for Mountain Tin is complete. -->
+        <!-- LayeredVeins Preset for Uncommon Tin is complete. -->
 
 
-        <!-- Starting StrategicClouds Preset for Mountain Tin. -->
+        <!-- Starting StrategicClouds Preset for Uncommon Tin. -->
         <ConfigSection>
-          <IfCondition condition=':= embrMountainTinDist = "StrategicClouds"'>
-            <Cloud name='embrMountainTinCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+          <IfCondition condition=':= embrUncommonTinDist = "StrategicClouds"'>
+            <Cloud name='embrUncommonTinCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
               <Description>
                 Large irregular clouds filled  lightly with ore.
                 These are  huge, spanning several adjacent  chunks,
@@ -1058,18 +1134,86 @@
               </Description>
               <OreBlock block='embers:ore_tin' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrMountainTinSize ' range=':= 1.573 * _default_ * embrMountainTinSize ' type='normal' />
-              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrMountainTinSize ' range=':= 1.573 * _default_ * embrMountainTinSize ' type='normal' scaleTo='base' />
-              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrMountainTinFreq ' range=':= 2.474 * _default_ * embrMountainTinFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Biome name='alps_foothills' />
+              <Biome name='bamboo_forest' />
+              <Biome name='bayou' />
+              <Biome name='beaches' />
+              <Biome name='birch_forest' />
+              <Biome name='boreal_forest' />
+              <Biome name='brushland' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='cold_beach' />
+              <Biome name='coniferous_forest' />
+              <Biome name='dead_forest' />
+              <Biome name='desert' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='fen' />
+              <Biome name='flower_field' />
+              <Biome name='forest' />
+              <Biome name='forest_hills' />
+              <Biome name='frozen_river' />
+              <Biome name='glacier' />
+              <Biome name='grassland' />
+              <Biome name='gravel_beach' />
+              <Biome name='ice_flats' />
+              <Biome name='ice_mountains' />
+              <Biome name='jungle' />
+              <Biome name='land_of_lakes' />
+              <Biome name='lush_desert' />
+              <Biome name='lush_swamp' />
+              <Biome name='magical_forest' />
+              <Biome name='mangrove' />
+              <Biome name='maple_woods' />
+              <Biome name='marsh' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mushroom_island' />
+              <Biome name='mutated_birch_forest' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='mutated_forest' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='mutated_mesa' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='mutated_savanna' />
+              <Biome name='mutated_taiga' />
+              <Biome name='mystic_grove' />
+              <Biome name='oasis' />
+              <Biome name='ocean' />
+              <Biome name='orchard' />
+              <Biome name='plains' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='river' />
+              <Biome name='roofed_forest' />
+              <Biome name='sacred_springs' />
+              <Biome name='savanna' />
+              <Biome name='seasonal_forest' />
+              <Biome name='shield' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='snowy_forest' />
+              <Biome name='swampland' />
+              <Biome name='taiga' />
+              <Biome name='tropical_island' />
+              <Biome name='volcanic_island' />
+              <Biome name='wetland' />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrUncommonTinSize ' range=':= 1.573 * _default_ * embrUncommonTinSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrUncommonTinSize ' range=':= 1.573 * _default_ * embrUncommonTinSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrUncommonTinFreq ' range=':= 2.474 * _default_ * embrUncommonTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
               <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Veins name='embrMountainTinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Veins name='embrUncommonTinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
                 <Description>
                   Single blocks, generously  scattered through all
                   heights  (density is about that of  vanilla iron
@@ -1089,34 +1233,218 @@
                 <Replaces block='minecraft:sandstone' weight='1.0' />
                 <ReplacesOre block='stone' weight='1.0' />
                 <Replaces block='minecraft:gravel' weight='1.0' />
-                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrMountainTinFreq  * 0.1 ' range=':= 2.167 * _default_ * embrMountainTinFreq  * 0.1 ' type='normal' scaleTo='base' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrUncommonTinFreq  * 0.1 ' range=':= 2.167 * _default_ * embrUncommonTinFreq  * 0.1 ' type='normal' scaleTo='base' />
               </Veins>
             </Cloud>
           </IfCondition>
         </ConfigSection>
-        <!-- StrategicClouds Preset for Mountain Tin is  complete. -->
+        <!-- StrategicClouds Preset for Uncommon Tin is  complete. -->
 
 
-        <!-- Starting Vanilla Preset for Mountain Tin. -->
+        <!-- Starting Vanilla Preset for Uncommon Tin. -->
         <ConfigSection>
-          <IfCondition condition=':= embrMountainTinDist = "Vanilla"'>
-            <StandardGen name='embrMountainTinStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+          <IfCondition condition=':= embrUncommonTinDist = "Vanilla"'>
+            <StandardGen name='embrUncommonTinStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
               <Description>
                 A master preset for standardgen  ore distributions.
               </Description>
               <OreBlock block='embers:ore_tin' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='Size' avg=':= 4.0 * oreSize * embrMountainTinSize ' range=':= 2.0 * oreSize * embrMountainTinSize ' type='normal' />
-              <Setting name='Frequency' avg=':= 16.667 * oreFreq * embrMountainTinFreq ' range=':= 8.33 * oreFreq * embrMountainTinFreq ' type='normal' scaleTo='base' />
-              <Setting name='Height' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Biome name='alps_foothills' />
+              <Biome name='bamboo_forest' />
+              <Biome name='bayou' />
+              <Biome name='beaches' />
+              <Biome name='birch_forest' />
+              <Biome name='boreal_forest' />
+              <Biome name='brushland' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='cold_beach' />
+              <Biome name='coniferous_forest' />
+              <Biome name='dead_forest' />
+              <Biome name='desert' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='fen' />
+              <Biome name='flower_field' />
+              <Biome name='forest' />
+              <Biome name='forest_hills' />
+              <Biome name='frozen_river' />
+              <Biome name='glacier' />
+              <Biome name='grassland' />
+              <Biome name='gravel_beach' />
+              <Biome name='ice_flats' />
+              <Biome name='ice_mountains' />
+              <Biome name='jungle' />
+              <Biome name='land_of_lakes' />
+              <Biome name='lush_desert' />
+              <Biome name='lush_swamp' />
+              <Biome name='magical_forest' />
+              <Biome name='mangrove' />
+              <Biome name='maple_woods' />
+              <Biome name='marsh' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mushroom_island' />
+              <Biome name='mutated_birch_forest' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='mutated_forest' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='mutated_mesa' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='mutated_savanna' />
+              <Biome name='mutated_taiga' />
+              <Biome name='mystic_grove' />
+              <Biome name='oasis' />
+              <Biome name='ocean' />
+              <Biome name='orchard' />
+              <Biome name='plains' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='river' />
+              <Biome name='roofed_forest' />
+              <Biome name='sacred_springs' />
+              <Biome name='savanna' />
+              <Biome name='seasonal_forest' />
+              <Biome name='shield' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='snowy_forest' />
+              <Biome name='swampland' />
+              <Biome name='taiga' />
+              <Biome name='tropical_island' />
+              <Biome name='volcanic_island' />
+              <Biome name='wetland' />
+              <Setting name='Size' avg=':= 4.0 * oreSize * embrUncommonTinSize ' range=':= 2.0 * oreSize * embrUncommonTinSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 16.667 * oreFreq * embrUncommonTinFreq ' range=':= 8.33 * oreFreq * embrUncommonTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             </StandardGen>
           </IfCondition>
         </ConfigSection>
-        <!-- Vanilla Preset for Mountain Tin is complete. -->
+        <!-- Vanilla Preset for Uncommon Tin is complete. -->
 
-        <!-- End Mountain Tin Generation -->
+        <!-- End Uncommon Tin Generation -->
+
+
+        <!-- Begin Rare Tin Generation -->
+
+        <!-- Starting LayeredVeins Preset for Rare Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrRareTinDist = "LayeredVeins"'>
+            <Veins name='embrRareTinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='MotherlodeFrequency' avg=':= 0.189 * _default_ * embrRareTinFreq ' range=':= 0.189 * _default_ * embrRareTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.772 * _default_ * embrRareTinSize ' range=':= 0.772 * _default_ * embrRareTinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * embrRareTinSize ' range=':= _default_ * embrRareTinSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * embrRareTinSize ' range=':= 1.213 * _default_ * embrRareTinSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Rare Tin is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Rare Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrRareTinDist = "StrategicClouds"'>
+            <Cloud name='embrRareTinCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * embrRareTinSize ' range=':= 1.573 * _default_ * embrRareTinSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * embrRareTinSize ' range=':= 1.573 * _default_ * embrRareTinSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * embrRareTinFreq ' range=':= 2.474 * _default_ * embrRareTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='embrRareTinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='embers:ore_tin' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * embrRareTinFreq  * 0.1 ' range=':= 2.167 * _default_ * embrRareTinFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Rare Tin is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Rare Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= embrRareTinDist = "Vanilla"'>
+            <StandardGen name='embrRareTinStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='embers:ore_tin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='Size' avg=':= 4.0 * oreSize * embrRareTinSize ' range=':= 2.0 * oreSize * embrRareTinSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 16.667 * oreFreq * embrRareTinFreq ' range=':= 8.33 * oreFreq * embrRareTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 67 ' range=':= 61 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Rare Tin is complete. -->
+
+        <!-- End Rare Tin Generation -->
 
 
         <!-- Begin Silver Generation -->
@@ -1237,124 +1565,6 @@
         <!-- End Silver Generation -->
 
 
-        <!-- Begin Mountain Silver Generation -->
-
-        <!-- Starting SparseVeins Preset for Mountain Silver. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainSilverDist = "SparseVeins"'>
-            <Veins name='embrMountainSilverVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
-              <Description>
-                Large veins filled very lightly  with ore.  Because
-                they contain  less ore per volume, these veins  are
-                relatively wide and long.  Mining the ore from them is
-                time  consuming compared to solid ore  veins.  They
-                are also more  difficult to follow, since it is
-                harder to get an idea of their  direction while
-                mining.
-              </Description>
-              <OreBlock block='embers:ore_silver' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * embrMountainSilverFreq ' range=':= 3.355 * _default_ * embrMountainSilverFreq ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * embrMountainSilverSize ' range=':= 0 * _default_ * embrMountainSilverSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchLength' avg=':= 1.832 * _default_ ' range=':= 1.832 * _default_ ' type='normal' />
-              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentLength' avg=':= _default_ * embrMountainSilverSize ' range=':= _default_ * embrMountainSilverSize ' type='normal' />
-              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentRadius' avg=':= 1.353 * _default_ * embrMountainSilverSize ' range=':= 1.353 * _default_ * embrMountainSilverSize ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </Veins>
-          </IfCondition>
-        </ConfigSection>
-        <!-- SparseVeins Preset for Mountain Silver is  complete. -->
-
-
-        <!-- Starting StrategicClouds Preset for Mountain  Silver. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainSilverDist = "StrategicClouds"'>
-            <Cloud name='embrMountainSilverCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
-              <Description>
-                Large irregular clouds filled  lightly with ore.
-                These are  huge, spanning several adjacent  chunks,
-                and consequently rather  rare.  They contain a
-                sizeable  amount of ore, but it takes some  time and
-                effort to mine due to  low density. The intent for
-                strategic clouds is that the  player will need to
-                actively  search for one and then set up a  semi-
-                permanent mining base and  spend some time actually
-                mining  the ore.
-              </Description>
-              <OreBlock block='embers:ore_silver' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='CloudRadius' avg=':= 1.251 * _default_ * embrMountainSilverSize ' range=':= 1.251 * _default_ * embrMountainSilverSize ' type='normal' />
-              <Setting name='CloudThickness' avg=':= 1.251 * _default_ * embrMountainSilverSize ' range=':= 1.251 * _default_ * embrMountainSilverSize ' type='normal' scaleTo='base' />
-              <Setting name='DistributionFrequency' avg=':= 1.565 * _default_ * embrMountainSilverFreq ' range=':= 1.565 * _default_ * embrMountainSilverFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Veins name='embrMountainSilverHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
-                <Description>
-                  Single blocks, generously  scattered through all
-                  heights  (density is about that of  vanilla iron
-                  ore). They will  replace dirt and sandstone  (but
-                  not grass or sand), so  they can be found nearer to
-                  the surface than most ores.  Intened to be used as a
-                  child  distribution for large, rare  strategic
-                  deposits that would  otherwise be very difficult  to
-                  find.  Note that the  frequency is multiplied by
-                  ground level to maintain a  constant density, but
-                  not by  ore frequency because it is  assumed that
-                  the frequency of  the parent distribution will
-                  already be scaled by that.
-                </Description>
-                <OreBlock block='embers:ore_silver' weight='1.0' />
-                <Replaces block='minecraft:dirt' weight='1.0' />
-                <Replaces block='minecraft:sandstone' weight='1.0' />
-                <ReplacesOre block='stone' weight='1.0' />
-                <Replaces block='minecraft:gravel' weight='1.0' />
-                <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * embrMountainSilverFreq  * 0.1 ' range=':= 3.355 * _default_ * embrMountainSilverFreq  * 0.1 ' type='normal' scaleTo='base' />
-              </Veins>
-            </Cloud>
-          </IfCondition>
-        </ConfigSection>
-        <!-- StrategicClouds Preset for Mountain Silver is  complete. -->
-
-
-        <!-- Starting Vanilla Preset for Mountain Silver. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainSilverDist = "Vanilla"'>
-            <StandardGen name='embrMountainSilverStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
-              <Description>
-                A master preset for standardgen  ore distributions.
-              </Description>
-              <OreBlock block='embers:ore_silver' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='Size' avg=':= 2.0 * oreSize * embrMountainSilverSize ' range=':= 1.0 * oreSize * embrMountainSilverSize ' type='normal' />
-              <Setting name='Frequency' avg=':= 13.333 * oreFreq * embrMountainSilverFreq ' range=':= 6.67 * oreFreq * embrMountainSilverFreq ' type='normal' scaleTo='base' />
-              <Setting name='Height' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </StandardGen>
-          </IfCondition>
-        </ConfigSection>
-        <!-- Vanilla Preset for Mountain Silver is complete. -->
-
-        <!-- End Mountain Silver Generation -->
-
-
         <!-- Begin Lead Generation -->
 
         <!-- Starting LayeredVeins Preset for Lead. -->
@@ -1467,118 +1677,6 @@
 
         <!-- End Lead Generation -->
 
-
-        <!-- Begin Mountain Lead Generation -->
-
-        <!-- Starting LayeredVeins Preset for Mountain Lead. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainLeadDist = "LayeredVeins"'>
-            <Veins name='embrMountainLeadVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
-              <Description>
-                Small, fairly rare motherlodes  with 2-4 horizontal
-                veins each.
-              </Description>
-              <OreBlock block='embers:ore_lead' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrMountainLeadFreq ' range=':= 1.001 * _default_ * embrMountainLeadFreq ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * embrMountainLeadSize ' range=':= 1.000 * _default_ * embrMountainLeadSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
-              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentLength' avg=':= _default_ * embrMountainLeadSize ' range=':= _default_ * embrMountainLeadSize ' type='normal' />
-              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * embrMountainLeadSize ' range=':= 1.000 * _default_ * embrMountainLeadSize ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </Veins>
-          </IfCondition>
-        </ConfigSection>
-        <!-- LayeredVeins Preset for Mountain Lead is  complete. -->
-
-
-        <!-- Starting StrategicClouds Preset for Mountain  Lead. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainLeadDist = "StrategicClouds"'>
-            <Cloud name='embrMountainLeadCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
-              <Description>
-                Large irregular clouds filled  lightly with ore.
-                These are  huge, spanning several adjacent  chunks,
-                and consequently rather  rare.  They contain a
-                sizeable  amount of ore, but it takes some  time and
-                effort to mine due to  low density. The intent for
-                strategic clouds is that the  player will need to
-                actively  search for one and then set up a  semi-
-                permanent mining base and  spend some time actually
-                mining  the ore.
-              </Description>
-              <OreBlock block='embers:ore_lead' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * embrMountainLeadSize ' range=':= 1.069 * _default_ * embrMountainLeadSize ' type='normal' />
-              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * embrMountainLeadSize ' range=':= 1.069 * _default_ * embrMountainLeadSize ' type='normal' scaleTo='base' />
-              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * embrMountainLeadFreq ' range=':= 1.143 * _default_ * embrMountainLeadFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Veins name='embrMountainLeadHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
-                <Description>
-                  Single blocks, generously  scattered through all
-                  heights  (density is about that of  vanilla iron
-                  ore). They will  replace dirt and sandstone  (but
-                  not grass or sand), so  they can be found nearer to
-                  the surface than most ores.  Intened to be used as a
-                  child  distribution for large, rare  strategic
-                  deposits that would  otherwise be very difficult  to
-                  find.  Note that the  frequency is multiplied by
-                  ground level to maintain a  constant density, but
-                  not by  ore frequency because it is  assumed that
-                  the frequency of  the parent distribution will
-                  already be scaled by that.
-                </Description>
-                <OreBlock block='embers:ore_lead' weight='1.0' />
-                <Replaces block='minecraft:dirt' weight='1.0' />
-                <Replaces block='minecraft:sandstone' weight='1.0' />
-                <ReplacesOre block='stone' weight='1.0' />
-                <Replaces block='minecraft:gravel' weight='1.0' />
-                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * embrMountainLeadFreq  * 0.1 ' range=':= 1.001 * _default_ * embrMountainLeadFreq  * 0.1 ' type='normal' scaleTo='base' />
-              </Veins>
-            </Cloud>
-          </IfCondition>
-        </ConfigSection>
-        <!-- StrategicClouds Preset for Mountain Lead is  complete. -->
-
-
-        <!-- Starting Vanilla Preset for Mountain Lead. -->
-        <ConfigSection>
-          <IfCondition condition=':= embrMountainLeadDist = "Vanilla"'>
-            <StandardGen name='embrMountainLeadStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
-              <Description>
-                A master preset for standardgen  ore distributions.
-              </Description>
-              <OreBlock block='embers:ore_lead' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Mountain'  />
-              <Setting name='Size' avg=':= 2.667 * oreSize * embrMountainLeadSize ' range=':= 1.33 * oreSize * embrMountainLeadSize ' type='normal' />
-              <Setting name='Frequency' avg=':= 5.333 * oreFreq * embrMountainLeadFreq ' range=':= 2.67 * oreFreq * embrMountainLeadFreq ' type='normal' scaleTo='base' />
-              <Setting name='Height' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </StandardGen>
-          </IfCondition>
-        </ConfigSection>
-        <!-- Vanilla Preset for Mountain Lead is complete. -->
-
-        <!-- End Mountain Lead Generation -->
 
         <!-- Begin Aluminum Generation -->
 

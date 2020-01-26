@@ -457,7 +457,36 @@
               </Description>
               <OreBlock block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Sandy'  />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplRubyFreq ' range=':= 0.270 * _default_ * boplRubyFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplRubySize ' range=':= 0 * _default_ * boplRubySize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -507,7 +536,36 @@
               </Description>
               <OreBlock block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Sandy'  />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplRubySize ' range=':= 0.449 * _default_ * boplRubySize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplRubySize ' range=':= 0.449 * _default_ * boplRubySize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplRubyFreq ' range=':= 0.202 * _default_ * boplRubyFreq ' type='normal' scaleTo='base' />
@@ -555,7 +613,36 @@
               </Description>
               <OreBlock block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <BiomeType name='Sandy'  />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplRubySize ' range=':= 0.33 * oreSize * boplRubySize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplRubyFreq ' range=':= 0.33 * oreFreq * boplRubyFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
