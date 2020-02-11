@@ -299,6 +299,7 @@
               <Biome name='flower_island' />
               <Biome name='eerie' />
               <Biome name='ominous_woods' />
+			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * thm6AmberFreq ' range=':= 0.270 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6AmberSize ' range=':= 0 * _default_ * thm6AmberSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -377,6 +378,7 @@
               <Biome name='flower_island' />
               <Biome name='eerie' />
               <Biome name='ominous_woods' />
+			  <Biome name='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * thm6AmberSize ' range=':= 0.449 * _default_ * thm6AmberSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * thm6AmberSize ' range=':= 0.449 * _default_ * thm6AmberSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * thm6AmberFreq ' range=':= 0.202 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
@@ -453,6 +455,7 @@
               <Biome name='flower_island' />
               <Biome name='eerie' />
               <Biome name='ominous_woods' />
+			  <Biome name='volcanic_island' />
               <Setting name='Size' avg=':= 0.667 * oreSize * thm6AmberSize ' range=':= 0.33 * oreSize * thm6AmberSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * thm6AmberFreq ' range=':= 0.33 * oreFreq * thm6AmberFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -788,7 +791,7 @@
 
         <!-- Begin Quartz Generation -->
 
-        <!-- Starting SparseVeins Preset for Air Infused  Stone. -->
+        <!-- Starting SparseVeins Preset for Quartz. -->
         <ConfigSection>
           <IfCondition condition=':= thm6QuartzDist = "SparseVeins"'>
             <Veins name='thm6QuartzVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60FEFEAB' drawBoundBox='false' boundBoxColor='0x60FEFEAB'>
@@ -857,7 +860,7 @@
         <!-- SparseVeins Preset for Quartz is  complete. -->
 
 
-        <!-- Starting StrategicClouds Preset for Air Infused  Stone. -->
+        <!-- Starting StrategicClouds Preset for Quartz. -->
         <ConfigSection>
           <IfCondition condition=':= thm6QuartzDist = "StrategicClouds"'>
             <Cloud name='thm6QuartzCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60FEFEAB' drawBoundBox='false' boundBoxColor='0x60FEFEAB'>
