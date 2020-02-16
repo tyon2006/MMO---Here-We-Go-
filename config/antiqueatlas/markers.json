@@ -36,6 +36,9 @@
     "antiqueatlas:village": {},
     "atlasextras:travel": {},
     "atlasextras:travelfrom": {},
-    "atlasextras:travelto": {}
+    "atlasextras:travelto": {},
+    "ebwizardry:obelisk": {},
+    "ebwizardry:shrine": {},
+    "ebwizardry:wizard_tower": {}
   }
 }

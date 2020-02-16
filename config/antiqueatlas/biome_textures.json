@@ -8,6 +8,7 @@
     "aether:aether_magnetic_hills": "HILLS",
     "aether:aether_void": "PLAINS",
     "aether:instanced_zone": "PLAINS",
+    "beasts:dried_reef": "SHORE",
     "biomesoplenty:alps": "MOUNTAINS_NAKED",
     "biomesoplenty:alps_foothills": "SNOW_PINES",
     "biomesoplenty:bamboo_forest": "JUNGLE",
@@ -182,9 +183,6 @@
     "thaumicaugmentation:tainted_lands": "PLAINS",
     "thejungle:jungle_mountain": "JUNGLE_CLIFFS",
     "thejungle:lost_world": "JUNGLE",
-    "thejungle:mangled_swamp": "SWAMP",
-    "wizardry:wizardry_torikki": "HILLS",
-    "wizardry:wizardry_torikkisea": "WATER",
-    "wizardry:wizardry_underworld": "PLAINS"
+    "thejungle:mangled_swamp": "SWAMP"
   }
 }

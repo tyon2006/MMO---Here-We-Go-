@@ -40,19 +40,10 @@
 
       <!-- Salt Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='wtchSaltDist' default='StratumClouds' displayState=':= if(?enableBewitchment, "shown", "hidden")' displayGroup='groupBewitchment'>
+        <OptionChoice name='wtchSaltDist'  displayState=':= if(?enableBewitchment, "shown", "hidden")' displayGroup='groupBewitchment'>
           <Description> Controls how Salt is generated </Description>
           <DisplayName>Bewitchment Salt</DisplayName>
           <IfCondition condition=':= (?blockExists("bewitchment:salt_ore")) '>
-
-          <Choice value='StratumClouds' displayValue='Strata'>
-            <Description>
-              Wide, thin, and flat disks of ore.
-            </Description>
-          </Choice>
-          </IfCondition>
-		  
-		  <IfCondition condition=':= (?blockExists("bewitchment:salt_ore")) '>
 
           <Choice value='SparseVeins' displayValue='Sparse Veins'>
             <Description>
@@ -95,7 +86,7 @@
 
       <!-- Silver Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='wtchSilverDist' default='none' displayState=':= if(?enableBewitchment, "shown", "hidden")' displayGroup='groupBewitchment'>
+        <OptionChoice name='wtchSilverDist'  displayState=':= if(?enableBewitchment, "shown", "hidden")' displayGroup='groupBewitchment'>
           <Description> Controls how Silver is generated </Description>
           <DisplayName>Bewitchment Silver</DisplayName>
           <IfCondition condition=':= (?blockExists("bewitchment:silver_ore")) '>
@@ -313,34 +304,6 @@
         <!-- Adding blocks -->
 
         <!-- Begin Salt Generation -->
-
-        <!-- Starting StratumClouds Preset for Salt. -->
-        <ConfigSection>
-          <IfCondition condition=':= wtchSaltDist = "StratumClouds"'>
-            <Cloud name='wtchSaltCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
-              <Description>
-                Wide, thin, and flat disks of  ore.  Primarily, this
-                distribution is meant to provide  realistic
-                distribution of stone  in a strata formation.
-              </Description>
-              <OreBlock block='bewitchment:salt_ore' weight='1.0' />
-              <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
-              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * wtchSaltSize ' range=':= 1.252 * _default_ * wtchSaltSize ' type='normal' />
-              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * wtchSaltSize ' range=':= 1.252 * _default_ * wtchSaltSize ' type='normal' scaleTo='base' />
-              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * wtchSaltFreq ' range=':= 2.567 * _default_ * wtchSaltFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
-              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
-              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            </Cloud>
-          </IfCondition>
-        </ConfigSection>
-        <!-- StratumClouds Preset for Salt is complete. -->
-
 
         <!-- Starting SparseVeins Preset for Salt. -->
         <ConfigSection>
@@ -583,45 +546,7 @@
               </Description>
               <OreBlock block='bewitchment:amethyst_ore' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='brushland' />
-              <Biome name='grassland' />
-              <Biome name='orchard' />
-              <Biome name='beaches' />
-              <Biome name='forest' />
-              <Biome name='plains' />
-              <Biome name='taiga' />
-              <Biome name='cold_beach' />
-              <Biome name='birch_forest' />
-              <Biome name='forest_hills' />
-              <Biome name='mutated_birch_forest' />
-              <Biome name='mutated_savanna' />
-              <Biome name='savanna' />
-              <Biome name='ocean' />
-              <Biome name='frozen_river' />
-              <Biome name='river' />
-              <Biome name='chaparral' />
-              <Biome name='meadow' />
-              <Biome name='pasture' />
-              <Biome name='birch_forest_hills' />
-              <Biome name='mutated_birch_forest_hills' />
-              <Biome name='stone_beach' />
-              <Biome name='taiga_cold' />
-              <Biome name='prairie' />
-              <Biome name='white_beach' />
-              <Biome name='woodland' />
-              <Biome name='kelp_forest' />
-              <Biome name='coral_reef' />
-              <Biome name='frozen_ocean' />
-              <Biome name='mutated_plains' />
-              <Biome name='land_of_lakes' />
-              <Biome name='flower_field' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean' />
+              <Biome name='.*'  />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * wtchAmethystFreq ' range=':= 0.270 * _default_ * wtchAmethystFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * wtchAmethystSize ' range=':= 0 * _default_ * wtchAmethystSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -671,45 +596,7 @@
               </Description>
               <OreBlock block='bewitchment:amethyst_ore' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='brushland' />
-              <Biome name='grassland' />
-              <Biome name='orchard' />
-              <Biome name='beaches' />
-              <Biome name='forest' />
-              <Biome name='plains' />
-              <Biome name='taiga' />
-              <Biome name='cold_beach' />
-              <Biome name='birch_forest' />
-              <Biome name='forest_hills' />
-              <Biome name='mutated_birch_forest' />
-              <Biome name='mutated_savanna' />
-              <Biome name='savanna' />
-              <Biome name='ocean' />
-              <Biome name='frozen_river' />
-              <Biome name='river' />
-              <Biome name='chaparral' />
-              <Biome name='meadow' />
-              <Biome name='pasture' />
-              <Biome name='birch_forest_hills' />
-              <Biome name='mutated_birch_forest_hills' />
-              <Biome name='stone_beach' />
-              <Biome name='taiga_cold' />
-              <Biome name='prairie' />
-              <Biome name='white_beach' />
-              <Biome name='woodland' />
-              <Biome name='kelp_forest' />
-              <Biome name='coral_reef' />
-              <Biome name='frozen_ocean' />
-              <Biome name='mutated_plains' />
-              <Biome name='land_of_lakes' />
-              <Biome name='flower_field' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean' />
+              <Biome name='.*'  />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * wtchAmethystSize ' range=':= 0.449 * _default_ * wtchAmethystSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * wtchAmethystSize ' range=':= 0.449 * _default_ * wtchAmethystSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * wtchAmethystFreq ' range=':= 0.202 * _default_ * wtchAmethystFreq ' type='normal' scaleTo='base' />
@@ -757,45 +644,7 @@
               </Description>
               <OreBlock block='bewitchment:amethyst_ore' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='brushland' />
-              <Biome name='grassland' />
-              <Biome name='orchard' />
-              <Biome name='beaches' />
-              <Biome name='forest' />
-              <Biome name='plains' />
-              <Biome name='taiga' />
-              <Biome name='cold_beach' />
-              <Biome name='birch_forest' />
-              <Biome name='forest_hills' />
-              <Biome name='mutated_birch_forest' />
-              <Biome name='mutated_savanna' />
-              <Biome name='savanna' />
-              <Biome name='ocean' />
-              <Biome name='frozen_river' />
-              <Biome name='river' />
-              <Biome name='chaparral' />
-              <Biome name='meadow' />
-              <Biome name='pasture' />
-              <Biome name='birch_forest_hills' />
-              <Biome name='mutated_birch_forest_hills' />
-              <Biome name='stone_beach' />
-              <Biome name='taiga_cold' />
-              <Biome name='prairie' />
-              <Biome name='white_beach' />
-              <Biome name='woodland' />
-              <Biome name='kelp_forest' />
-              <Biome name='coral_reef' />
-              <Biome name='frozen_ocean' />
-              <Biome name='mutated_plains' />
-              <Biome name='land_of_lakes' />
-              <Biome name='flower_field' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean' />
+              <Biome name='.*'  />
               <Setting name='Size' avg=':= 0.667 * oreSize * wtchAmethystSize ' range=':= 0.33 * oreSize * wtchAmethystSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * wtchAmethystFreq ' range=':= 0.33 * oreFreq * wtchAmethystFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />

@@ -26,25 +26,27 @@
 				}
 			]
 		},
-		"coal_ore": {
+		"ore_fossil": {
 			"retrogen": false,
 			"enabled": true,
-			"feature": "default",
+			"feature": "vein",
 			"replaces": "default",
-			"dimensions": [],
+			"dimensions": [
+				66
+			],
 			"biomes": {
 				"excludes": []
 			},
 			"parameters": {
-				"size": 25,
-				"variation": 12,
+				"size": 12,
+				"variation": 6,
 				"frequency": 20,
 				"minHeight": 0,
 				"maxHeight": 128
 			},
 			"blocks": [
 				{
-					"name": "minecraft:coal_ore",
+					"name": "erebus:ore_fossil",
 					"chance": 100
 				}
 			]
@@ -102,7 +104,9 @@
 			"replaces": "default",
 			"dimensions": [],
 			"biomes": {
-				"includes": [ "MESA" ]
+				"includes": [
+					"MESA"
+				]
 			},
 			"parameters": {
 				"size": 8,
@@ -118,24 +122,26 @@
 				}
 			]
 		},
-		"diamond_ore": {
+		"ore_sapphire": {
 			"retrogen": false,
 			"enabled": true,
 			"feature": "precision",
 			"replaces": "default",
-			"dimensions": [],
+			"dimensions": [
+				66
+			],
 			"biomes": {
 				"excludes": []
 			},
 			"parameters": {
 				"size": 3,
 				"numObjects": 2,
-				"minHeight": 0,
-				"maxHeight": 16
+				"minHeight": 5,
+				"maxHeight": 21
 			},
 			"blocks": [
 				{
-					"name": "minecraft:diamond_ore",
+					"name": "thejungle:ore_sapphire",
 					"chance": 100
 				}
 			]
@@ -193,7 +199,9 @@
 			"replaces": "default",
 			"dimensions": [],
 			"biomes": {
-				"includes": [ "MOUNTAIN" ]
+				"includes": [
+					"MOUNTAIN"
+				]
 			},
 			"parameters": {
 				"size": 1,
@@ -301,6 +309,31 @@
 					"name": "minecraft:stone",
 					"chance": 100,
 					"state": "variant=diorite"
+				}
+			]
+		},
+		"red_quark_crystal": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "glowstone",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 45,
+				"variation": 10,
+				"frequency": 10,
+				"minHeight": 55,
+				"maxHeight": 66
+			},
+			"blocks": [
+				{
+					"name": "quark:crystal:1",
+					"chance": 50
 				}
 			]
 		},

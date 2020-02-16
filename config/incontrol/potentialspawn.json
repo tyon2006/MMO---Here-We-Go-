@@ -1,37 +1,8 @@
 [
 	{
-		"dimension": 0,
-		"mobs": [
-			{
-				"mob": "mowziesmobs:lantern",
-				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 1
-			},
-			{
-				"mob": "thejungle:swampcrab",
-				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 1
-			},
-			{
-				"mob": "magma_monsters:magma_monster_grunt",
-				"weight": 5,
-				"groupcountmin": 1,
-				"groupcountmax": 1
-			},
-			{
-				"mob": "magma_monsters:magma_monster",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 1
-			},
-			{
-				"mob": "mowziesmobs:frostmaw",
-				"weight": 100,
-				"groupcountmin": 1,
-				"groupcountmax": 1
-			}
-		]
+		"mob": "iceandfire:firedragon",
+		"weight": 100,
+		"groupcountmin": 1,
+		"groupcountmax": 3
 	}
 ]

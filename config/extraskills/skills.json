@@ -1,0 +1,17 @@
+[
+	{
+		"name": "bawls",
+		"localName": "BAWLS",
+		"background": "emerald_block"
+	},
+	{
+		"name": "grayce",
+		"localName": "GRAYCE",
+		"background": "bookshelf"
+	},
+	{
+		"name": "skillz",
+		"localName": "SKILLZ",
+		"background": "brick_block"
+	}
+]

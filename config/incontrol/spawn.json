@@ -1,94 +1,12 @@
 [
 	{
-		"mob": "mowziesmobs:lantern",
-		"biome": [
-			"Bamboo Forest",
-			"Cherry Blossom Grove",
-			"Coniferous Forest",
-			"Eucalyptus Forest",
-			"Jungle",
-			"Jungle M",
-			"JungleEdge",
-			"JungleEdge M",
-			"JungleHills",
-			"Lavender Fields",
-			"MushroomIslandShore",
-			"Oasis",
-			"Overgrown Cliffs",
-			"Rainforest",
-			"Temperate Rainforest",
-			"Tropical Rainforest"
-		],
-		"seesky": true,
-		"mindifficulty": 0,
+		"mob": "iceandfire:firedragon",
 		"maxcount": {
-			"mob": "mowziesmobs:lantern",
-			"amount": 12,
-			"perplayer": true
-		},
-		"result": "allow",
-		"healthadd": 10,
-		"damageadd": 0.1,
-		"speedadd": 0.1,
-		"potion": "minecraft:fire_resistance,10000,1"
-	},
-	{
-		"mob": "mowziesmobs:lantern",
-		"result": "deny"
-	},
-	{
-		"mob": "thejungle:swampcrab",
-		"biome": [
-			"Bamboo Forest",
-			"Savanna",
-			"Cherry Blossom Grove",
-			"Coniferous Forest",
-			"Eucalyptus Forest",
-			"Jungle",
-			"Jungle M",
-			"JungleEdge",
-			"JungleEdge M",
-			"JungleHills",
-			"Lavender Fields",
-			"MushroomIslandShore",
-			"Oasis",
-			"Overgrown Cliffs",
-			"Rainforest",
-			"Temperate Rainforest",
-			"Tropical Rainforest"
-		],
-		"structure": "Village",
-		"maxcount": {
-			"mob": "thejungle:swampcrab",
-			"amount": 12,
+			"mob": "iceandfire:firedragon",
+			"amount": 50,
 			"perplayer": true
 		},
 		"result": "allow"
-	},
-	{
-		"mob": "thejungle:swampcrab",
-		"result": "deny"
-	},
-	{
-		"mob": "mowziesmobs:frostmaw",
-		"biome": [
-			"Ice Plains Spikes"
-		],
-		"seesky": true,
-		"maxcount": {
-			"mob": "mowziesmobs:frostmaw",
-			"amount": 1,
-			"perplayer": true
-		},
-		"result": "allow",
-		"healthadd": 259,
-		"damageadd": 10,
-		"speedadd": 0.1,
-		"potion": "minecraft:leaping,10000,1"
-	},
-	{
-		"mob": "mowziesmobs:frostmaw",
-		"result": "deny"
 	},
 	{
 		"result": "deny"

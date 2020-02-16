@@ -32,6 +32,13 @@ randomthings:magnetic
 bewitchment:magic_protection
 bibliocraft:bibliocraft.deathcompassench
 bibliocraft:bibliocraft.readingench
+ebwizardry:magic_sword
+ebwizardry:magic_bow
+ebwizardry:flaming_weapon
+ebwizardry:freezing_weapon
+ebwizardry:magic_protection
+ebwizardry:frost_protection
+ebwizardry:shock_protection
 mod_lavacow:poisonous
 mod_lavacow:lifesteal
 nyx:lunar_edge

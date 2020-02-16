@@ -144,6 +144,7 @@ aether:instanced_zone
 thaumcraft:magical_forest
 thaumcraft:eerie
 thaumcraft:eldritch
+beasts:dried_reef
 erebus:underground_jungle
 erebus:volcanic_desert
 erebus:subterranean_savannah
@@ -167,9 +168,6 @@ thaumicaugmentation:emptiness_highlands
 thejungle:jungle_mountain
 thejungle:mangled_swamp
 thejungle:lost_world
-wizardry:wizardry_torikkisea
-wizardry:wizardry_torikki
-wizardry:wizardry_underworld
 midnight:vigilant_forest
 midnight:black_ridge
 midnight:deceitful_bog

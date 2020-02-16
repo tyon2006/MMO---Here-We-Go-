@@ -63,7 +63,7 @@
             </Description>
         </OptionDisplayGroup>
         
-        <OptionNumeric name='oreFreq' default='2' min='0' max='5' displayState='shown' displayGroup='groupGeneral'>
+        <OptionNumeric name='oreFreq' default='1' min='0' max='5' displayState='shown' displayGroup='groupGeneral'>
             <Description> 
                 A global multiplier for the frequency of all ore distributions. 
             </Description>
@@ -400,18 +400,18 @@
     <!-- First are the stone-based configurations; this way, they can be
          overridden using the stone oredict entry. -->
     <Import file='modules/custom/FlatBedrock.xml'/>
-    <Import file='modules/custom/Chisel2.xml'/>
+    <Import file='modules/default/Chisel2.xml'/>
 
     <!-- These rules allow for additional subterranean features. -->
     <Import file='modules/default/MinecraftSpecialRules.xml'/>
 
     <!-- Vanilla minecraft ores should always be the first ores to 
          load. -->
-    <Import file='modules/custom/Vanilla.xml'/>
+    <Import file='modules/default/Vanilla.xml'/>
 
     <!-- Then, the rest are free to come in. -->
     <Import file='modules/default/FossilsandArchaeology.xml'/>
-    <Import file='modules/custom/ImmersiveEngineering.xml'/>
+    <Import file='modules/default/ImmersiveEngineering.xml'/>
 
     <!-- ***************** Import Mod-provided configs ********************* -->
     <!-- NOTE: mods will overwrite these configs upon each load -->

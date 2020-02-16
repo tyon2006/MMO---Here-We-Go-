@@ -457,36 +457,7 @@
               </Description>
               <OreBlock block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='shield' />
-              <Biome name='ice_flats' />
-              <Biome name='mutated_redwood_taiga' />
-              <Biome name='mutated_taiga' />
-              <Biome name='maple_woods' />
-              <Biome name='seasonal_forest' />
-              <Biome name='snowy_forest' />
-              <Biome name='smaller_extreme_hills' />
-              <Biome name='cold_desert' />
-              <Biome name='snowy_tundra' />
-              <Biome name='tundra' />
-              <Biome name='redwood_forest_edge' />
-              <Biome name='redwood_forest' />
-              <Biome name='mutated_redwood_taiga_hills' />
-              <Biome name='taiga_hills' />
-              <Biome name='snowy_coniferous_forest' />
-              <Biome name='highland' />
-              <Biome name='mountain' />
-              <Biome name='mountain_foothills' />
-              <Biome name='glacier' />
-              <Biome name='alps_foothills' />
-              <Biome name='volcanic_island' />
-              <Biome name='ice_mountains' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='mutated_ice_flats' />
+              <BiomeType name='Sandy'  />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplRubyFreq ' range=':= 0.270 * _default_ * boplRubyFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplRubySize ' range=':= 0 * _default_ * boplRubySize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -536,36 +507,7 @@
               </Description>
               <OreBlock block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='shield' />
-              <Biome name='ice_flats' />
-              <Biome name='mutated_redwood_taiga' />
-              <Biome name='mutated_taiga' />
-              <Biome name='maple_woods' />
-              <Biome name='seasonal_forest' />
-              <Biome name='snowy_forest' />
-              <Biome name='smaller_extreme_hills' />
-              <Biome name='cold_desert' />
-              <Biome name='snowy_tundra' />
-              <Biome name='tundra' />
-              <Biome name='redwood_forest_edge' />
-              <Biome name='redwood_forest' />
-              <Biome name='mutated_redwood_taiga_hills' />
-              <Biome name='taiga_hills' />
-              <Biome name='snowy_coniferous_forest' />
-              <Biome name='highland' />
-              <Biome name='mountain' />
-              <Biome name='mountain_foothills' />
-              <Biome name='glacier' />
-              <Biome name='alps_foothills' />
-              <Biome name='volcanic_island' />
-              <Biome name='ice_mountains' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='mutated_ice_flats' />
+              <BiomeType name='Sandy'  />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplRubySize ' range=':= 0.449 * _default_ * boplRubySize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplRubySize ' range=':= 0.449 * _default_ * boplRubySize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplRubyFreq ' range=':= 0.202 * _default_ * boplRubyFreq ' type='normal' scaleTo='base' />
@@ -613,36 +555,7 @@
               </Description>
               <OreBlock block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='shield' />
-              <Biome name='ice_flats' />
-              <Biome name='mutated_redwood_taiga' />
-              <Biome name='mutated_taiga' />
-              <Biome name='maple_woods' />
-              <Biome name='seasonal_forest' />
-              <Biome name='snowy_forest' />
-              <Biome name='smaller_extreme_hills' />
-              <Biome name='cold_desert' />
-              <Biome name='snowy_tundra' />
-              <Biome name='tundra' />
-              <Biome name='redwood_forest_edge' />
-              <Biome name='redwood_forest' />
-              <Biome name='mutated_redwood_taiga_hills' />
-              <Biome name='taiga_hills' />
-              <Biome name='snowy_coniferous_forest' />
-              <Biome name='highland' />
-              <Biome name='mountain' />
-              <Biome name='mountain_foothills' />
-              <Biome name='glacier' />
-              <Biome name='alps_foothills' />
-              <Biome name='volcanic_island' />
-              <Biome name='ice_mountains' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='mutated_ice_flats' />
+              <BiomeType name='Sandy'  />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplRubySize ' range=':= 0.33 * oreSize * boplRubySize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplRubyFreq ' range=':= 0.33 * oreFreq * boplRubyFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -668,7 +581,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Plains'  />
-			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplPeridotFreq ' range=':= 0.270 * _default_ * boplPeridotFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplPeridotSize ' range=':= 0 * _default_ * boplPeridotSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -719,7 +631,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Plains'  />
-              <Biome name='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplPeridotSize ' range=':= 0.449 * _default_ * boplPeridotSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplPeridotSize ' range=':= 0.449 * _default_ * boplPeridotSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplPeridotFreq ' range=':= 0.202 * _default_ * boplPeridotFreq ' type='normal' scaleTo='base' />
@@ -768,7 +679,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Plains'  />
-			  <Biome name='volcanic_island' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplPeridotSize ' range=':= 0.33 * oreSize * boplPeridotSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplPeridotFreq ' range=':= 0.33 * oreFreq * boplPeridotFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -794,7 +704,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:3' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Jungle'  />
-			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplTopazFreq ' range=':= 0.270 * _default_ * boplTopazFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplTopazSize ' range=':= 0 * _default_ * boplTopazSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -845,7 +754,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:3' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Jungle'  />
-			  <Biome name='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplTopazSize ' range=':= 0.449 * _default_ * boplTopazSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplTopazSize ' range=':= 0.449 * _default_ * boplTopazSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplTopazFreq ' range=':= 0.202 * _default_ * boplTopazFreq ' type='normal' scaleTo='base' />
@@ -894,7 +802,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:3' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Jungle'  />
-			  <Biome name='volcanic_island' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplTopazSize ' range=':= 0.33 * oreSize * boplTopazSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplTopazFreq ' range=':= 0.33 * oreFreq * boplTopazFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -920,7 +827,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:4' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Snowy'  />
-			  <Biome name='volcanic_island' />
               <Biome name='alps'  weight='-1' />
               <Biome name='alps_forest'  weight='-1' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplTanzaniteFreq ' range=':= 0.270 * _default_ * boplTanzaniteFreq ' type='normal' scaleTo='base' />
@@ -973,7 +879,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:4' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Snowy'  />
-			  <Biome name='volcanic_island' />
               <Biome name='alps'  weight='-1' />
               <Biome name='alps_forest'  weight='-1' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplTanzaniteSize ' range=':= 0.449 * _default_ * boplTanzaniteSize ' type='normal' />
@@ -1024,7 +929,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:4' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Snowy'  />
-			  <Biome name='volcanic_island' />
               <Biome name='alps'  weight='-1' />
               <Biome name='alps_forest'  weight='-1' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplTanzaniteSize ' range=':= 0.33 * oreSize * boplTanzaniteSize ' type='normal' />
@@ -1052,7 +956,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:5' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Swamp'  />
-			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplMalachiteFreq ' range=':= 0.270 * _default_ * boplMalachiteFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplMalachiteSize ' range=':= 0 * _default_ * boplMalachiteSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -1103,7 +1006,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:5' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Swamp'  />
-			  <Biome name='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplMalachiteSize ' range=':= 0.449 * _default_ * boplMalachiteSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplMalachiteSize ' range=':= 0.449 * _default_ * boplMalachiteSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplMalachiteFreq ' range=':= 0.202 * _default_ * boplMalachiteFreq ' type='normal' scaleTo='base' />
@@ -1152,7 +1054,6 @@
               <OreBlock block='BiomesOPlenty:gem_ore:5' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <BiomeType name='Swamp'  />
-			  <Biome name='volcanic_island' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplMalachiteSize ' range=':= 0.33 * oreSize * boplMalachiteSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplMalachiteFreq ' range=':= 0.33 * oreFreq * boplMalachiteFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -1184,7 +1085,6 @@
               <Biome name='mangrove'  />
               <Biome name='sacred_springs'  />
               <Biome name='tropics'  />
-			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplSapphireFreq ' range=':= 0.270 * _default_ * boplSapphireFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplSapphireSize ' range=':= 0 * _default_ * boplSapphireSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -1241,7 +1141,6 @@
               <Biome name='mangrove'  />
               <Biome name='sacred_springs'  />
               <Biome name='tropics'  />
-			  <Biome name='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplSapphireSize ' range=':= 0.449 * _default_ * boplSapphireSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplSapphireSize ' range=':= 0.449 * _default_ * boplSapphireSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplSapphireFreq ' range=':= 0.202 * _default_ * boplSapphireFreq ' type='normal' scaleTo='base' />
@@ -1296,7 +1195,6 @@
               <Biome name='mangrove'  />
               <Biome name='sacred_springs'  />
               <Biome name='tropics'  />
-			  <Biome name='volcanic_island' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplSapphireSize ' range=':= 0.33 * oreSize * boplSapphireSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplSapphireFreq ' range=':= 0.33 * oreFreq * boplSapphireFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -1325,7 +1223,6 @@
               <Biome name='grove'  />
               <Biome name='shield'  />
               <Biome name='thicket'  />
-			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * boplAmberFreq ' range=':= 0.270 * _default_ * boplAmberFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplAmberSize ' range=':= 0 * _default_ * boplAmberSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
@@ -1379,7 +1276,6 @@
               <Biome name='grove'  />
               <Biome name='shield'  />
               <Biome name='thicket'  />
-			  <Biome name='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * boplAmberSize ' range=':= 0.449 * _default_ * boplAmberSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * boplAmberSize ' range=':= 0.449 * _default_ * boplAmberSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * boplAmberFreq ' range=':= 0.202 * _default_ * boplAmberFreq ' type='normal' scaleTo='base' />
@@ -1431,7 +1327,6 @@
               <Biome name='grove'  />
               <Biome name='shield'  />
               <Biome name='thicket'  />
-			  <Biome name='volcanic_island' />
               <Setting name='Size' avg=':= 0.667 * oreSize * boplAmberSize ' range=':= 0.33 * oreSize * boplAmberSize ' type='normal' />
               <Setting name='Frequency' avg=':= 0.667 * oreFreq * boplAmberFreq ' range=':= 0.33 * oreFreq * boplAmberFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
