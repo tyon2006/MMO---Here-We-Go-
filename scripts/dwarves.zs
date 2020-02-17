@@ -7,9 +7,7 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
 
-
-rh(<erebus:bambucket>);
-//hide(<erebus:bambucket>.withTag({});
+rh(<erebus:bambucket:*>);
 
 recipes.removeShapeless(<minecraft:glowstone>, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>]);
 recipes.removeShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null],[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null], [null, null, null]]);
@@ -36,7 +34,6 @@ recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"})
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}), [<extraalchemy:empty_ring>,<minecraft:potion>.withTag({Potion:"minecraft:leaping"}),<ore:gemEmerald>,<minecraft:potion>.withTag({Potion: "minecraft:leaping"}),<embers:dust_ember>],{"iron":14 to 14});
 recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}));
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}), [<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}),<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<biomesoplenty:terrestrial_artifact>,<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<embers:dust_ember>],{"iron":14 to 14});
-
 
 recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:regeneration"}));
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:regeneration"}), [<extraalchemy:empty_ring>,<minecraft:potion>.withTag({Potion:"minecraft:regeneration"}),<biomesoplenty:gem>,<minecraft:potion>.withTag({Potion: "minecraft:regeneration"}),<embers:dust_ember>],{"iron":14 to 14, "copper":12 to 16, "ale":12 to 16});
