@@ -1,8 +1,0 @@
-[
-	{
-		"mob": "iceandfire:firedragon",
-		"weight": 100,
-		"groupcountmin": 1,
-		"groupcountmax": 3
-	}
-]
