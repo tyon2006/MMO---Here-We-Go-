@@ -105,72 +105,74 @@ rh(<cyclicmagic:dropper_exact>);
 rh(<cyclicmagic:fluid_placer>);
 
 //remove recipes for special items
-recipes.remove(<cyclicmagic:tool_swap>, false)
-recipes.remove(<cyclicmagic:tool_swap_match>, false)
-recipes.remove(<cyclicmagic:sword_weakness>, false)
-recipes.remove(<cyclicmagic:sword_slowness>, false)
-recipes.remove(<cyclicmagic:sword_ender>, false)
-recipes.remove(<cyclicmagic:ender_blaze>, false)
-recipes.remove(<cyclicmagic:laser_cannon>, false)
-recipes.remove(<cyclicmagic:soulstone>, false)
-recipes.remove(<cyclicmagic:tool_launcher>, false)
-recipes.remove(<cyclicmagic:password_remote>, false)
-recipes.remove(<cyclicmagic:tool_elevate>, false)
-recipes.remove(<cyclicmagic:tool_rotate>, false)
-recipes.remove(<cyclicmagic:evoker_fang>, false)
-recipes.remove(<cyclicmagic:water_spreader>, false)
-recipes.remove(<cyclicmagic:ender_eye_orb>, false)
-recipes.remove(<cyclicmagic:glove_climb>, false)
-recipes.remove(<cyclicmagic:tool_torch_launcher>, false)
-recipes.remove(<cyclicmagic:water_freezer>, false)
-recipes.remove(<cyclicmagic:fire_killer>, false)
-recipes.remove(<cyclicmagic:tool_mount>, false)
-recipes.remove(<cyclicmagic:tool_prospector>, false)
-recipes.remove(<cyclicmagic:carbon_paper>, false)
-recipes.remove(<cyclicmagic:tool_spelunker>, false)
-recipes.remove(<cyclicmagic:ender_dungeon>, false)
-recipes.remove(<cyclicmagic:ender_lightning>, false)
-recipes.remove(<cyclicmagic:cyclic_wand_build>, false)
-recipes.remove(<cyclicmagic:shears_obsidian>, false)
-recipes.remove(<cyclicmagic:tool_warp_home>, false)
-recipes.remove(<cyclicmagic:tool_warp_spawn>, false)
-recipes.remove(<cyclicmagic:tool_push>, false)
-recipes.remove(<cyclicmagic:tool_spawn_inspect>, false)
-recipes.remove(<cyclicmagic:wand_hypno>, false)
-recipes.remove(<cyclicmagic:tool_randomize>, false)
-recipes.remove(<cyclicmagic:ender_wool>, false)
-recipes.remove(<cyclicmagic:ender_snow>, false)
-recipes.remove(<cyclicmagic:ender_water>, false)
-recipes.remove(<cyclicmagic:tool_auto_torch>, false)
-recipes.remove(<cyclicmagic:wand_missile>, false)
-recipes.remove(<cyclicmagic:tool_mount_inverse>, false)
-recipes.remove(<cyclicmagic:boomerang>, false)
+recipes.remove(<cyclicmagic:tool_swap>, false);
+recipes.remove(<cyclicmagic:tool_swap_match>, false);
+recipes.remove(<cyclicmagic:sword_weakness>, false);
+recipes.remove(<cyclicmagic:sword_slowness>, false);
+recipes.remove(<cyclicmagic:sword_ender>, false);
+recipes.remove(<cyclicmagic:ender_blaze>, false);
+recipes.remove(<cyclicmagic:laser_cannon>, false);
+recipes.remove(<cyclicmagic:soulstone>, false);
+recipes.remove(<cyclicmagic:tool_launcher>, false);
+recipes.remove(<cyclicmagic:password_remote>, false);
+recipes.remove(<cyclicmagic:tool_elevate>, false);
+recipes.remove(<cyclicmagic:tool_rotate>, false);
+recipes.remove(<cyclicmagic:evoker_fang>, false);
+recipes.remove(<cyclicmagic:water_spreader>, false);
+recipes.remove(<cyclicmagic:ender_eye_orb>, false);
+recipes.remove(<cyclicmagic:glove_climb>, false);
+recipes.remove(<cyclicmagic:tool_torch_launcher>, false);
+recipes.remove(<cyclicmagic:water_freezer>, false);
+recipes.remove(<cyclicmagic:fire_killer>, false);
+recipes.remove(<cyclicmagic:tool_mount>, false);
+recipes.remove(<cyclicmagic:tool_prospector>, false);
+recipes.remove(<cyclicmagic:carbon_paper>, false);
+recipes.remove(<cyclicmagic:tool_spelunker>, false);
+recipes.remove(<cyclicmagic:ender_dungeon>, false);
+recipes.remove(<cyclicmagic:ender_lightning>, false);
+recipes.remove(<cyclicmagic:cyclic_wand_build>, false);
+recipes.remove(<cyclicmagic:shears_obsidian>, false);
+recipes.remove(<cyclicmagic:tool_warp_home>, false);
+recipes.remove(<cyclicmagic:tool_warp_spawn>, false);
+recipes.remove(<cyclicmagic:tool_push>, false);
+recipes.remove(<cyclicmagic:tool_spawn_inspect>, false);
+recipes.remove(<cyclicmagic:wand_hypno>, false);
+recipes.remove(<cyclicmagic:tool_randomize>, false);
+recipes.remove(<cyclicmagic:ender_wool>, false);
+recipes.remove(<cyclicmagic:ender_snow>, false);
+recipes.remove(<cyclicmagic:ender_water>, false);
+recipes.remove(<cyclicmagic:tool_auto_torch>, false);
+recipes.remove(<cyclicmagic:wand_missile>, false);
+recipes.remove(<cyclicmagic:tool_mount_inverse>, false);
+recipes.remove(<cyclicmagic:boomerang>, false);
 
 //***************************
 //		RANDOM THINGS
 //***************************
 
 //remove and hide unfit items
-recipes.remove(<randomthings:basicredstoneinterface>, false)
-recipes.remove(<randomthings:advancedredstoneinterface>, false)
-recipes.remove(<randomthings:redstonetool>, false)
-recipes.remove(<randomthings:ingredient:4>, false)
-recipes.remove(<randomthings:redstoneremote>, false)
-recipes.remove(<randomthings:voxelprojector>, false)
-recipes.remove(<randomthings:contactbutton>, false)
-recipes.remove(<randomthings:contactlever>, false)
-recipes.remove(<randomthings:eclipsedclock>, false)
-recipes.remove(<randomthings:blockbreaker>, false)
-recipes.remove(<randomthings:reinforcedenderbucket>, false)
-recipes.remove(<randomthings:idcard>, false)
-recipes.remove(<randomthings:redstoneactivator>, false)
-recipes.remove(<randomthings:spectrecharger>, false)
-recipes.remove(<randomthings:spectrecharger:1>, false)
-recipes.remove(<randomthings:spectrecharger:2>, false)
-recipes.remove(<randomthings:spectrecharger:3>, false)
-recipes.remove(<randomthings:diviningrod:*>, false)
-recipes.remove(<randomthings:timeinabottle>, false)
-recipes.remove(<randomthings:spectrecoil_genesis>, false)
-recipes.remove(<randomthings:summoningpendulum>, false)
-recipes.remove(<randomthings:portkey>, false)
-recipes.remove(<randomthings:chunkanalyzer>, false)
+rh(<randomthings:basicredstoneinterface>);
+rh(<randomthings:advancedredstoneinterface>);
+rh(<randomthings:redstonetool>);
+rh(<randomthings:ingredient:4>);
+rh(<randomthings:redstoneremote>);
+rh(<randomthings:voxelprojector>);
+rh(<randomthings:contactbutton>);
+rh(<randomthings:contactlever>);
+rh(<randomthings:eclipsedclock>);
+rh(<randomthings:blockbreaker>);
+rh(<randomthings:reinforcedenderbucket>);
+rh(<randomthings:idcard>);
+rh(<randomthings:floosign>);
+rh(<randomthings:redstoneactivator>);
+rh(<randomthings:spectrecharger>);
+rh(<randomthings:spectrecharger:1>);
+rh(<randomthings:spectrecharger:2>);
+rh(<randomthings:spectrecharger:3>);
+rh(<randomthings:diviningrod:*>);
+rh(<randomthings:timeinabottle>);
+rh(<randomthings:spectrecoil_genesis>);
+rh(<randomthings:beans:2> * 64);
+rh(<randomthings:summoningpendulum>);
+rh(<randomthings:portkey>);
+rh(<randomthings:chunkanalyzer>);
