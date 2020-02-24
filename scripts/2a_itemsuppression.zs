@@ -74,4 +74,20 @@ var itemSuppressionsIndustrialRenewal = [
 for item in itemSuppressionsIndustrialRenewal {
     hide(item);
 }
+
+//***************************
+//    ENGINEER'S TOOLS
+//***************************
+
+//remove and hide unfit items and blocks
+var itemRemovalsEngineersTools = [
+	<engineerstools:crushing_hammer>,
+	<engineerstools:gold_grit>,
+	<engineerstools:iron_grit>
+] as IItemStack[];
+
+for item in itemRemovalsEngineersTools {
+    rh(item);
+}
+
 print("--- 2_itemsuppression.zs initialized ---");
