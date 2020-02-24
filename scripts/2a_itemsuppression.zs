@@ -9,7 +9,7 @@ print("--- loading 2_itemsuppression.zs ---");
 //    INDUSTRIAL RENEWAL
 //***************************
 
-//remove and hide unfit stuff
+//remove and hide unfit items and blocks
 var itemRemovalsIndustrialRenewal = [
 	<industrialrenewal:aisle_hazard>,
 	<industrialrenewal:barrel_item>,
@@ -17,19 +17,30 @@ var itemRemovalsIndustrialRenewal = [
 	<industrialrenewal:battery_bank>,
 	<industrialrenewal:block_hazard>,
 	<industrialrenewal:cable_tray>,
+	<industrialrenewal:catwalk>,
+	<industrialrenewal:catwalk_ladder>,
+	<industrialrenewal:catwalk_stair>,
 	<industrialrenewal:caution_hazard>,
 	<industrialrenewal:coil_hv>,
+	<industrialrenewal:concrete>,
+	<industrialrenewal:conveyor_bulk>,
 	<industrialrenewal:defective_hazard>,
 	<industrialrenewal:energy_cable>,
 	<industrialrenewal:energy_cable_hv>,
 	<industrialrenewal:energy_cable_lv>,
+	<industrialrenewal:energy_switch>,
+	<industrialrenewal:entity_detector>,
 	<industrialrenewal:fire_hazard>,
 	<industrialrenewal:firebox_fluid>,
 	<industrialrenewal:firebox_solid>,
+	<industrialrenewal:handrail>,
 	<industrialrenewal:infinity_generator>,
+	<industrialrenewal:ir_manual>,
 	<industrialrenewal:isolator_hv>,
 	<industrialrenewal:radiation_hazard>,
 	<industrialrenewal:safety_hazard>,
+	<industrialrenewal:sensor_rain>,
+	<industrialrenewal:small_slab>,
 	<industrialrenewal:small_wind_blade>,
 	<industrialrenewal:small_wind_turbine>,
 	<industrialrenewal:small_wind_turbine_pillar>,
@@ -37,10 +48,30 @@ var itemRemovalsIndustrialRenewal = [
 	<industrialrenewal:solar_panel_frame>,
 	<industrialrenewal:steam_boiler>,
 	<industrialrenewal:steam_turbine>,
-	<industrialrenewal:transformer_hv>
+	<industrialrenewal:steel_saw>,
+	<industrialrenewal:stick_iron>,
+	<industrialrenewal:stick_steel>,
+	<industrialrenewal:transformer_hv>,
+	<industrialrenewal:trash>,
+	<industrialrenewal:catwalk_gate>
 ] as IItemStack[];
 
 for item in itemRemovalsIndustrialRenewal {
     rh(item);
+}
+
+//hide partial or incomplete items and blocks
+var itemSuppressionsIndustrialRenewal = [
+	<industrialrenewal:bar_level>,
+	<industrialrenewal:fire>,
+	<industrialrenewal:fluid_loader_arm>,
+	<industrialrenewal:pointer>,
+	<industrialrenewal:pointer_long>,
+	<industrialrenewal:rotary_drum>,
+	<industrialrenewal:sponge_iron>
+] as IItemStack[];
+
+for item in itemSuppressionsIndustrialRenewal {
+    hide(item);
 }
 print("--- 2_itemsuppression.zs initialized ---");
