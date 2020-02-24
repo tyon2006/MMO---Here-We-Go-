@@ -176,3 +176,11 @@ rh(<randomthings:beans:2> * 64);
 rh(<randomthings:summoningpendulum>);
 rh(<randomthings:portkey>);
 rh(<randomthings:chunkanalyzer>);
+
+//***************************
+//		APOTHEOSIS
+//***************************
+
+recipes.remove(<apotheosis:farmers_leash>, false);
+
+
