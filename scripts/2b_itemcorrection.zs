@@ -13,4 +13,11 @@ print("--- loading 2b_itemcorrection.zs ---");
 <industrialrenewal:flame_detector>.displayName = "Fire Detector";
 <industrialrenewal:firstaid_kit>.displayName = "First Aid Kit";
 
+//***************************
+//    BOUNTIFUL BAUBLES
+//***************************
+
+//change name to match prospective new recipe
+<bountifulbaubles:crowngold>.displayName = "Dawnstone Crown";
+
 print("--- 2b_itemcorrection.zs initialized ---");

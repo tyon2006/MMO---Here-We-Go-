@@ -90,4 +90,47 @@ for item in itemRemovalsEngineersTools {
     rh(item);
 }
 
+
+//***************************
+//    BOUNTIFUL BAUBLES
+//***************************
+
+//remove and hide unfit items
+var itemRemovalsBountifulBaubles = [
+	<bountifulbaubles:ringiron>,
+	<bountifulbaubles:disintegrationtablet>
+] as IItemStack[];
+
+for item in itemRemovalsBountifulBaubles {
+    rh(item);
+}
+
+//remove but do not hide recipe for this item, to be rescripted
+
+var recipeRemovalsBountifulBaubles = [
+	<bountifulbaubles:crowngold>,
+	<bountifulbaubles:ringflywheel>
+] as IItemStack[];
+
+for item in recipeRemovalsBountifulBaubles {
+	recipe.remove(item);
+]
+
+//***************************
+//       BIBLIOCRAFT
+//***************************
+
+//remove and hide unfit items
+var itemRemovalsBiblioCraft = [
+	<bibliocraft:recipebook>,
+	<bibliocraft:compass>
+] as IItemStack[];
+
+for item in itemRemovalsBiblioCraft {
+    rh(item);
+}
+
+//hide partial or incomplete items
+hide(<bibliocraft:markerpole>);
+
 print("--- 2_itemsuppression.zs initialized ---");
