@@ -114,7 +114,7 @@ var recipeRemovalsBountifulBaubles = [
 
 for item in recipeRemovalsBountifulBaubles {
 	recipe.remove(item);
-]
+}
 
 //***************************
 //       BIBLIOCRAFT
@@ -122,7 +122,6 @@ for item in recipeRemovalsBountifulBaubles {
 
 //remove and hide unfit items
 var itemRemovalsBiblioCraft = [
-	<bibliocraft:recipebook>,
 	<bibliocraft:compass>
 ] as IItemStack[];
 
@@ -132,5 +131,101 @@ for item in itemRemovalsBiblioCraft {
 
 //hide partial or incomplete items
 hide(<bibliocraft:markerpole>);
+
+//***************************
+//       SPARTAN SHIELDS
+//***************************
+
+//remove and hide unfit items
+var itemRemovalsSpartanShields = [
+	<spartanshields:shield_tower_invar>,
+	<spartanshields:shield_basic_invar>,
+	<spartanshields:shield_basic_platinum>,
+	<spartanshields:shield_tower_platinum>,
+	<spartanshields:shield_basic_constantan>,
+	<spartanshields:shield_tower_constantan>
+] as IItemStack[];
+
+for item in itemRemovalsSpartanShields {
+    rh(item);
+}
+
+//************************************
+//       SPARTAN WEAPONRY ARCANA
+//************************************
+
+//remove and hide unfit items
+var itemRemovalsSpartanArcana = [
+	<spartanweaponryarcana:dagger_manasteel>,
+	<spartanweaponryarcana:longsword_manasteel>,
+	<spartanweaponryarcana:katana_manasteel>,
+	<spartanweaponryarcana:saber_manasteel>,
+	<spartanweaponryarcana:rapier_manasteel>,
+	<spartanweaponryarcana:greatsword_manasteel>,
+	<spartanweaponryarcana:hammer_manasteel>,
+	<spartanweaponryarcana:warhammer_manasteel>,
+	<spartanweaponryarcana:spear_manasteel>,
+	<spartanweaponryarcana:halberd_manasteel>,
+	<spartanweaponryarcana:pike_manasteel>,
+	<spartanweaponryarcana:lance_manasteel>,
+	<spartanweaponryarcana:longbow_manasteel>,
+	<spartanweaponryarcana:crossbow_manasteel>.withTag({}),
+	<spartanweaponryarcana:throwing_knife_manasteel>,
+	<spartanweaponryarcana:throwing_axe_manasteel>,
+	<spartanweaponryarcana:javelin_manasteel>,
+	<spartanweaponryarcana:boomerang_manasteel>,
+	<spartanweaponryarcana:battleaxe_manasteel>,
+	<spartanweaponryarcana:mace_manasteel>,
+	<spartanweaponryarcana:glaive_manasteel>,
+	<spartanweaponryarcana:staff_manasteel>,
+	<spartanweaponryarcana:dagger_elementium>,
+	<spartanweaponryarcana:longsword_elementium>,
+	<spartanweaponryarcana:katana_elementium>,
+	<spartanweaponryarcana:saber_elementium>,
+	<spartanweaponryarcana:rapier_elementium>,
+	<spartanweaponryarcana:greatsword_elementium>,
+	<spartanweaponryarcana:hammer_elementium>,
+	<spartanweaponryarcana:warhammer_elementium>,
+	<spartanweaponryarcana:spear_elementium>,
+	<spartanweaponryarcana:halberd_elementium>,
+	<spartanweaponryarcana:pike_elementium>,
+	<spartanweaponryarcana:lance_elementium>,
+	<spartanweaponryarcana:longbow_elementium>,
+	<spartanweaponryarcana:crossbow_elementium>.withTag({}),
+	<spartanweaponryarcana:throwing_knife_elementium>,
+	<spartanweaponryarcana:throwing_axe_elementium>,
+	<spartanweaponryarcana:javelin_elementium>,
+	<spartanweaponryarcana:boomerang_elementium>,
+	<spartanweaponryarcana:battleaxe_elementium>,
+	<spartanweaponryarcana:mace_elementium>,
+	<spartanweaponryarcana:glaive_elementium>,
+	<spartanweaponryarcana:staff_elementium>,
+	<spartanweaponryarcana:dagger_terrasteel>,
+	<spartanweaponryarcana:longsword_terrasteel>,
+	<spartanweaponryarcana:katana_terrasteel>,
+	<spartanweaponryarcana:saber_terrasteel>,
+	<spartanweaponryarcana:rapier_terrasteel>,
+	<spartanweaponryarcana:greatsword_terrasteel>,
+	<spartanweaponryarcana:hammer_terrasteel>,
+	<spartanweaponryarcana:warhammer_terrasteel>,
+	<spartanweaponryarcana:javelin_terrasteel>,
+	<spartanweaponryarcana:spear_terrasteel>,
+	<spartanweaponryarcana:halberd_terrasteel>,
+	<spartanweaponryarcana:boomerang_terrasteel>,
+	<spartanweaponryarcana:battleaxe_terrasteel>,
+	<spartanweaponryarcana:pike_terrasteel>,
+	<spartanweaponryarcana:lance_terrasteel>,
+	<spartanweaponryarcana:mace_terrasteel>,
+	<spartanweaponryarcana:glaive_terrasteel>,
+	<spartanweaponryarcana:longbow_terrasteel>,
+	<spartanweaponryarcana:crossbow_terrasteel>.withTag({}),
+	<spartanweaponryarcana:staff_terrasteel>,
+	<spartanweaponryarcana:throwing_knife_terrasteel>,
+	<spartanweaponryarcana:throwing_axe_terrasteel>
+] as IItemStack[];
+
+for item in itemRemovalsSpartanArcana {
+    rh(item);
+}
 
 print("--- 2_itemsuppression.zs initialized ---");
