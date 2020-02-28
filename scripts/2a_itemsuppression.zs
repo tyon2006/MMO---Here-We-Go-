@@ -107,15 +107,6 @@ for item in itemRemovalsBountifulBaubles {
 
 //remove but do not hide recipe for this item, to be rescripted
 
-var recipeRemovalsBountifulBaubles = [
-	<bountifulbaubles:crowngold>,
-	<bountifulbaubles:ringflywheel>
-] as IItemStack[];
-
-for item in recipeRemovalsBountifulBaubles {
-	recipe.remove(item);
-}
-
 //***************************
 //       BIBLIOCRAFT
 //***************************
