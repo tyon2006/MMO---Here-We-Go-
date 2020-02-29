@@ -137,16 +137,56 @@ for item in itemRemovalsMysticalWorld {
 //remove and hide unfit items
 
 var itemRemovalsGoG = [
-<grimoireofgaia:weapon_prop_projectile_bubble>,
-<grimoireofgaia:weapon_prop_projectile_magic>,
-<grimoireofgaia:weapon_prop_projectile_magic_random>,
-<grimoireofgaia:weapon_prop_projectile_poison>,
-<grimoireofgaia:weapon_prop_projectile_web>,
-<grimoireofgaia:weapon_prop_enchanted>,
-<grimoireofgaia:fire_camp>,
-<grimoireofgaia:web_temp>
+	<grimoireofgaia:weapon_prop_projectile_bubble>,
+	<grimoireofgaia:weapon_prop_projectile_magic>,
+	<grimoireofgaia:weapon_prop_projectile_magic_random>,
+	<grimoireofgaia:weapon_prop_projectile_poison>,
+	<grimoireofgaia:weapon_prop_projectile_web>,
+	<grimoireofgaia:weapon_prop_enchanted>,
+	<grimoireofgaia:fire_camp>,
+	<grimoireofgaia:web_temp>
 ] as IItemStack[];
 
 for item in itemRemovalsGoG {
     rh(item);
 }
+
+//***************************
+//	SILVER CORRECTION
+//***************************
+
+//remove and hide unfit items
+
+var itemRemovalsSilver = [
+	<embers:pickaxe_silver>,
+	<embers:axe_silver>,
+	<embers:shovel_silver>,
+	<embers:hoe_silver>,
+	<embers:sword_silver>,
+	<iceandfire:armor_silver_metal_chestplate>,
+	<iceandfire:armor_silver_metal_leggings>,
+	<iceandfire:armor_silver_metal_boots>,
+	<iceandfire:armor_silver_metal_boots>,
+	<iceandfire:silver_sword>,
+	<iceandfire:silver_shovel>,
+	<iceandfire:silver_pickaxe>,
+	<iceandfire:silver_axe>,
+	<iceandfire:silver_hoe>,
+	<bewitchment:silver_helmet>,
+	<idk:silverarmourhelmet>,
+	<idk:silverarmourbody>,
+	<idk:silverarmourlegs>,
+	<idk:silverarmourboots>,
+	<idk:silversword>,
+	<idk:silveraxe>,
+	<idk:silverpickaxe>,
+	<idk:silvershovel>,
+	<idk:silverhoe>,
+] as IItemStack[];
+
+for item in itemRemovalsSilver {
+    rh(item);
+}
+
+
+
