@@ -6,6 +6,7 @@ import mods.embers.Stamper;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
+import crafttweaker.item.IItemStack;
 
 //***************************
 //		CYCLIC
