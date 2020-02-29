@@ -89,4 +89,63 @@ rh(<randomthings:chunkanalyzer>);
 
 recipes.remove(<apotheosis:farmers_leash>, false);
 
+//***************************
+//		MYSTICAL WORLD
+//***************************
 
+//remove and hide unfit items
+
+var itemRemovalsMysticalWorld = [
+	<mysticalworld:amethyst_sword>,
+	<mysticalworld:amethyst_shovel>,
+	<mysticalworld:amethyst_pickaxe>,
+	<mysticalworld:amethyst_hoe>,
+	<mysticalworld:copper_shovel>,
+	<mysticalworld:copper_sword>,
+	<mysticalworld:silver_axe>,
+	<mysticalworld:silver_hoe>,
+	<mysticalworld:silver_pickaxe>,
+	<mysticalworld:silver_shovel>,
+	<mysticalworld:silver_sword>,
+	<mysticalworld:amethyst_axe>,
+	<mysticalworld:copper_pickaxe>,
+	<mysticalworld:copper_hoe>,
+	<mysticalworld:copper_axe>,
+	<mysticalworld:amethyst_gem>,
+	<mysticalworld:silver_dust_tiny>,
+	<mysticalworld:silver_dust>,
+	<mysticalworld:silver_nugget>,
+	<mysticalworld:silver_ingot>,
+	<mysticalworld:copper_dust_tiny>,
+	<mysticalworld:copper_dust>,
+	<mysticalworld:copper_nugget>,
+	<mysticalworld:copper_ingot>,
+	<mysticalworld:amethyst_block>,
+	<mysticalworld:silver_block>,
+	<mysticalworld:copper_block>
+] as IItemStack[];
+
+for item in itemRemovalsMysticalWorld {
+    rh(item);
+}
+
+//***************************
+//	GRIMOIRE OF GAIA
+//***************************
+
+//remove and hide unfit items
+
+var itemRemovalsGoG = [
+<grimoireofgaia:weapon_prop_projectile_bubble>,
+<grimoireofgaia:weapon_prop_projectile_magic>,
+<grimoireofgaia:weapon_prop_projectile_magic_random>,
+<grimoireofgaia:weapon_prop_projectile_poison>,
+<grimoireofgaia:weapon_prop_projectile_web>,
+<grimoireofgaia:weapon_prop_enchanted>,
+<grimoireofgaia:fire_camp>,
+<grimoireofgaia:web_temp>
+] as IItemStack[];
+
+for item in itemRemovalsGoG {
+    rh(item);
+}
