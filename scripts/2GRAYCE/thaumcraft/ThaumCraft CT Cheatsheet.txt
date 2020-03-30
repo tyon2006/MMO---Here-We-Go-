@@ -1,0 +1,152 @@
+###Arcane Workbench###
+This package allows you to add and remove recipes to/from the Arcane Workbench.
+
+#Importing the package#
+You can import the package and its methods to facilitate the retrival of the methods.
+
+import mods.thaumcraft.ArcaneWorkbench;
+
+#Adding recipes#
+//mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]]);
+
+//mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[] input);
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
+
+#Removing recipes#
+//mods.thaumcraft.ArcaneWorkbench.removeRecipe(String name);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("recipeName");
+
+//mods.thaumcraft.ArcaneWorkbench.removeRecipe(IItemStack output);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
+
+###Crucible###
+This package allows you to add and remove recipes to/from the Crucible.
+
+#Importing the package#
+You can import the package and its methods to facilitate the retrival of the methods.
+
+import mods.thaumcraft.Crucible;
+
+#Adding recipes#
+//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
+mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
+
+#Removing recipes#
+//mods.thaumcraft.Crucible.removeRecipe(String name);
+mods.thaumcraft.Crucible.removeRecipe("recipeName");
+
+//mods.thaumcraft.Crucible.removeRecipe(IItemStack output);
+mods.thaumcraft.Crucible.removeRecipe(<minecraft:leather>);
+
+###Infusion###
+This package allows you to add and remove recipes to/from the Infusion.
+
+#Importing the package#
+You can import the package and its methods to facilitate the retrival of the methods.
+
+import mods.thaumcraft.Infusion;
+
+#Adding recipes#
+//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
+mods.thaumcraft.Infusion.registerRecipe("testName", "", <minecraft:diamond>, 20, [<aspect:aer>, <aspect:ignis>], <minecraft:grass>, [<minecraft:stick>, <minecraft:dirt>]);
+
+#Removing recipes#
+//mods.thaumcraft.Infusion.removeRecipe(String name);
+mods.thaumcraft.Infusion.removeRecipe("recipeName");
+
+//mods.thaumcraft.Infusion.removeRecipe(IItemStack output);
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror_essentia>);
+
+###Loot Bags###
+This package allows you to add and remove items to/from the Loot Bags.
+
+#Importing the package#
+You can import the package and its methods to facilitate the retrival of the methods.
+
+import mods.thaumcraft.LootBag;
+
+#Loot types#
+You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.
+Those determine the type of lootbag to be affected.
+
+    0: Common
+    1: Uncommon
+    2: Rare
+
+#Adding items#
+Notice: Gold coins have a value of 2000, diamonds are 50.
+
+//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
+mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
+
+#Removing items#
+//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
+mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
+
+###Salis Mundus###
+This package allows you to add conversion handlers for thaumcraft’s salis mundus handler.
+These handlers are invoked when you click a block in the world with Thaumcraft’s salis mundus to change them to something else.
+
+If that result is a block, it will be placed in the world, if not it will be dropped as item.
+
+#Import the package#
+To shorten method calls you can import the package like so:
+
+import mods.thaumcraft.SalisMundus;
+
+#Add Recipes#
+You can either specify an IBlock or an IOreDictEntry.
+If you don’t specify a research, this recipe will always be possible, if you do decide to specify a research string, you need to have the research unlocked in order for the conversion to work.
+
+//mods.thaumcraft.SalisMundus.addSingleConversion(IBlock in, IItemStack out, @Optional String research);
+SalisMundus.addSingleConversion(<blockstate:minecraft:dirt>.block, <minecraft:bedrock>);
+
+//mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
+mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
+SalisMundus.addSingleConversion(<ore:blockIron>, <minecraft:bedrock>);
+
+#Remove Recipes#
+You can also remove all recipes that return a matching item.
+This handler checks if the parameter provided matches with the output itemStack, so you could also remove all recipes using the wildcard ingredient <*>.
+
+mods.thaumcraft.SalisMundus.removeSingleConversion(IIngredient output);
+
+//Removes ALL registered handlers
+mods.thaumcraft.SalisMundus.removeSingleConversion(<*>);
+
+//Only removes the crucible handler
+mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
+
+###Smelting bonus###
+This package allows you to add and remove items to/from the Smelting bonus list.
+The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
+
+#Importing the package#
+You can import the package and its methods to facilitate the retrival of the methods.
+
+import mods.thaumcraft.SmeltingBonus;
+
+#Adding items#
+Notice: Input needs to be either an IItemStack or an IOreDictEntry
+
+//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
+
+#Removing items#
+Notice: Input needs to be either an IItemStack or an IOreDictEntry
+
+//mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<minecraft:gold_ore>, <minecraft:gold_nugget>);
+
+###Warp###
+This package allows you to set items’ Warp.
+
+#Importing the package#
+You can import the package and its methods to facilitate the retrival of the methods.
+
+import mods.thaumcraft.Warp;
+
+#Setting Warp#
+//mods.thaumcraft.Warp.setWarp(IItemStack stack, int amount);
+mods.thaumcraft.Warp.setWarp(<minecraft:dirt>, 500);
