@@ -1,0 +1,103 @@
+All removals are by IItemStack, even if IIngredient is accepted by the corresponding addition!
+Internally, the supplied IItemStack is checked if it matches the recipe, and the recipe is removed if it does.
+
+###STAMPER###
+Supports IIngredient for the input. Supports any IIngredient as valid ingredient for now.
+
+mods.embers.Stamper.add(IItemStack <output>,ILiquidStack <liquid>,IIngredient <stamp>,IIngredient <input>);
+mods.embers.Stamper.remove(IItemStack <output>);
+
+###MIXER###
+Important thing to note is that there's only 4 inputs on the centrifuge, but JEI only shows 3 inputs.
+
+mods.embers.Mixer.add(ILiquidStack <outputfluid>,ILiquidStack [<inputfluid1>, <inputfluid2>, <inputfluid3>, ...]);
+mods.embers.Mixer.remove(ILiquidStack <outputfluid>);
+
+###MELTER###
+Supports IIngredient.
+
+mods.embers.Melter.add(ILiquidStack <outputfluid>,IIngredient <input>);
+mods.embers.Melter.remove(IItemStack <input>);
+mods.embers.Melter.remove(ILiquidStack <outputfluid>);
+
+###DAWNSTONE ANVIL###
+Supports IIngredient. Bin underneath can catch only one of the outputs!
+
+mods.embers.DawnstoneAnvil.add(IItemStack [<output1>,<output2>,...],IIngredient <inputBottom>,IIngredient <inputTop>);
+mods.embers.DawnstoneAnvil.remove(IItemStack <inputBottom>,IItemStack <inputTop>);
+mods.embers.DawnstoneAnvil.blacklistRepair(IIngredient <input>);
+mods.embers.DawnstoneAnvil.blacklistMateriaRepair(IIngredient <input>);
+mods.embers.DawnstoneAnvil.blacklistBreakdown(IIngredient <input>);
+
+###EXCHANGE TABLET###
+Supports any IIngredient now.
+Supports any Aspect, even custom ones.
+aspect1, aspect2, ... must be String. (ex: "iron")
+range1, range2, ... must be IntRange! (ex: 14 to 64)
+(Consult CraftTweaker documentation for more information on zenscript types)
+mods.embers.Alchemy.add(IItemStack <output>,IIngredient [<inputCenter>,<inputSide1>,<inputSide2>,<inputSide3>,<inputSide4>],String:IntRange {<aspect1>:<range1>,<aspect2>:<range2>,...});
+mods.embers.Alchemy.remove(IItemStack <output>);
+
+###HEARTH COIL###
+mods.embers.HeatCoil.add(IItemStack <output>,IIngredient <input>);
+mods.embers.HeatCoil.remove(IItemStack <input>);
+
+###EMBER BORE###
+The default set is used when none of the other sets apply.
+
+EmberBoreSet mods.embers.EmberBore.create(Integer [<dimension1>,<dimension2>,...], String [<biome1>,<biome2>,...])
+EmberBoreSet mods.embers.EmberBore.getDefault()
+Integer[] boreset.dimensions = [<dimension1>,<dimension2>,...] (getter/setter)
+String[] boreset.biomes = [<biome1>,<biome2>,...] (getter/setter)
+WeightedItemStack[] boreset.stacks (getter)
+boreset.addOutput(WeightedItemStack <output>)
+boreset.removeOutput(IItemStack <output>)
+Clears all outputs for this set
+boreset.clear()
+
+######UTILITIES######
+
+###Ember Values### 
+(for Ember generating machinery)
+
+mods.embers.EmberGeneration.addEmberFuel(IIngredient <item>,Double <ember>) mods.embers.EmberGeneration.removeEmberFuel(IItemStack <item>)
+
+###Combustion and Catalysis Values###
+mods.embers.EmberGeneration.addCatalysisFuel(IIngredient <item>,Double <coefficient>) mods.embers.EmberGeneration.removeCatalysisFuel(IItemStack <item>) mods.embers.EmberGeneration.addCombustionFuel(IIngredient <item>,Double <coefficient>) mods.embers.EmberGeneration.removeCombustionFuel(IItemStack <item>)
+
+###Metal blocks for Pressure Refinery##
+mods.embers.EmberGeneration.addMetalCoefficient(IIngredient <item>,Double <coefficient>)
+
+###Boiler Fluids###
+mods.embers.EmberGeneration.addBoilerFluid(ILiquidStack <fluid>, ILiquidStack <gas>,Double <multiplier>) mods.embers.EmberGeneration.removeBoilerFluid(ILiquidStack <fluid>)
+
+###Steam Engine fluids###
+mods.embers.EmberGeneration.addSteamEngineFuel(ILiquidStack <fluid>, Double <multiplier>) mods.embers.EmberGeneration.removeSteamEngineFuel(ILiquidStack <fluid>)
+
+###Custom Aspecti###
+mods.embers.Alchemy.addAspect(String <name>, IIngredient <item>)
+
+
+####IIngredient Expansions####
+ingredient.anyHeat()
+ingredient.onlyHeatAtLeast(Float <amount>)
+ingredient.onlyHeatAtMost(Float <amount>)
+ingredient.onlyHeatLevelAtLeast(Integer <level>)
+ingredient.onlyHeatLevelAtMost(Integer <level>)
+ingredient.onlyWithModifier(String <modifier>)
+ingredient.onlyWithModifierLevelAtLeast(String <modifier>,Integer <level>)
+ingredient.onlyWithModifierLevelAtMost(String <modifier>,Integer <level>)
+ingredient.onlyIfModifierValid(String <modifier>)
+
+####IItemStack Expansions####
+Boolean itemstack.hasHeat()
+Float itemstack.getHeat()
+itemstack.setHeat(Float <level>)
+Float itemstack.getMaxHeat()
+Integer itemstack.getHeatLevel()
+Integer itemstack.setHeatLevel(Integer <level>)
+itemstack.addModifier(IItemStack <modifier>)
+Boolean itemstack.isModifierValid(String <modifiername>)
+Boolean itemstack.hasModifier(String <modifiername>)
+Integer itemstack.getModifierLevel(String <modifiername>)
+itemstack.setModifierLevel(String <modifiername>,Integer <level>)
