@@ -11,6 +11,7 @@ import mods.transmutationalchemy.mixer;
 //***************************
 //erebus
 rh(<erebus:bambucket:*>);
+rh(<soot:stamp_text:*>);
 
 //rats
 rh(<rats:token_piece>);
