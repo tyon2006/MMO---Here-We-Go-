@@ -88,9 +88,9 @@ mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "extraalchem
 rh(<transmutationalchemy:ash_dust>);
 
 mods.transmutationalchemy.mixer.removeRecipe(<transmutationalchemy:magical_dust>);
-
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 5],  1, true );
-
+mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 1, <transmutationalchemy:crystal_power> * 1],  1, true );
+mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 1, <transmutationalchemy:unknown_semifinished> * 1],  1, true );
+mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 1, <transmutationalchemy:unknown_mixture> * 1],  1, true );
 
 
 

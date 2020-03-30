@@ -3,28 +3,7 @@ import mods.compatskills.TraitCreator;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
 
-var bawls1 = mods.compatskills.TraitCreator.createTrait("BAWLS Basics", 0, 0, "extraskills:bawls", 5, "extraskills:bawls|5");
-var bawls2 = mods.compatskills.TraitCreator.createTrait("BAWLS Stores", 1, 0, "extraskills:bawls", 1, "extraskills:bawls|6");
-var bawls3 = mods.compatskills.TraitCreator.createTrait("BAWLS Weapons", 2, 0, "extraskills:bawls", 1, "extraskills:bawls|6");
-var bawls4 = mods.compatskills.TraitCreator.createTrait("BAWLS Alchemy", 3, 0, "extraskills:bawls", 1, "extraskills:bawls|6");
-var bawls5 = mods.compatskills.TraitCreator.createTrait("BAWLS Cathedrals", 4, 0, "extraskills:bawls", 1, "extraskills:bawls|6");
-var bawls6 = mods.compatskills.TraitCreator.createTrait("BAWLS Mixer", 0, 1, "extraskills:bawls", 1, "extraskills:bawls|10");
-var bawls7 = mods.compatskills.TraitCreator.createTrait("BAWLS Pedestals", 1, 1, "extraskills:bawls", 1, "extraskills:bawls|10");
-var bawls8 = mods.compatskills.TraitCreator.createTrait("BAWLS Potions", 2, 1, "extraskills:bawls", 1, "extraskills:bawls|10");
-var bawls9 = mods.compatskills.TraitCreator.createTrait("BAWLS Baubles", 3, 1, "extraskills:bawls", 2, "extraskills:bawls|11");
-var bawls10 = mods.compatskills.TraitCreator.createTrait("BAWLS Mechanics", 4, 1, "extraskills:bawls", 1, "extraskills:bawls|11");
-var bawls11 = mods.compatskills.TraitCreator.createTrait("BAWLS Rats", 0, 2, "extraskills:bawls", 1, "extraskills:bawls|16");
-var bawls12 = mods.compatskills.TraitCreator.createTrait("BAWLS Advanced Weapons", 1, 2, "extraskills:bawls", 3, "extraskills:bawls|19");
-var bawls13 = mods.compatskills.TraitCreator.createTrait("BAWLS Soot", 2, 2, "extraskills:bawls", 1, "extraskills:bawls|17");
-var bawls14 = mods.compatskills.TraitCreator.createTrait("BAWLS Advanced Power", 3, 2, "extraskills:bawls", 2, "extraskills:bawls|18");
-var bawls15 = mods.compatskills.TraitCreator.createTrait("BAWLS Advanced Potions", 4, 2, "extraskills:bawls", 2, "extraskills:bawls|18");
-var bawls16 = mods.compatskills.TraitCreator.createTrait("BAWLS Advanced Baubles", 0, 3, "extraskills:bawls", 3, "extraskills:bawls|27");
-var bawls17 = mods.compatskills.TraitCreator.createTrait("BAWLS Erebus", 1, 3, "extraskills:bawls", 3, "extraskills:bawls|27");
-var bawls18 = mods.compatskills.TraitCreator.createTrait("BAWLS Aetherworks", 2, 3, "extraskills:bawls", 3, "extraskills:bawls|27");
-var bawls19 = mods.compatskills.TraitCreator.createTrait("BAWLS Integration", 3, 3, "extraskills:bawls", 1, "extraskills:bawls|34");
-var bawls20 = mods.compatskills.TraitCreator.createTrait("BAWLS BUSTED", 4, 3, "extraskills:bawls", 5, "extraskills:bawls|39");
-
-//bawls2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //no proof this actually works?
+//bawls2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
 
 var grayce1 = mods.compatskills.TraitCreator.createTrait("grayce", 0, 0, "extraskills:grayce", 5, "extraskills:grayce|2");
 var grayce2 = mods.compatskills.TraitCreator.createTrait("grayce1", 1, 0, "extraskills:grayce", 1, "extraskills:grayce|2");

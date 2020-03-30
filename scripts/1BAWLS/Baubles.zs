@@ -26,12 +26,6 @@ rh(<grimoireofgaia:accessory_ring_jump>);
 rh(<grimoireofgaia:accessory_ring_night>);
 
 
-mods.transmutationalchemy.mixer.removeRecipe(<transmutationalchemy:magical_dust>);
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 3, ],  1, true );
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 3, ],  1, true );
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 3, ],  1, true );
-
-
 
 
 

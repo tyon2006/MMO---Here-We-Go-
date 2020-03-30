@@ -105,6 +105,19 @@ for item in itemRemovalsBountifulBaubles {
     rh(item);
 }
 
+//***************************
+//      BEASTS
+//***************************
+
+//remove and hide unfit items
+var itemRemovalsBeasts = [
+	<beasts:carrot_coin>
+] as IItemStack[];
+
+for item in itemRemovalsBeasts {
+    rh(item);
+}
+
 //remove but do not hide recipe for this item, to be rescripted
 
 //***************************
@@ -218,5 +231,7 @@ var itemRemovalsSpartanArcana = [
 for item in itemRemovalsSpartanArcana {
     rh(item);
 }
+
+
 
 print("--- 2_itemsuppression.zs initialized ---");
