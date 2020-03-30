@@ -24,7 +24,7 @@ var itemRemovalsOreBlocks = [
 	<mysticalworld:silver_ore>,
 	<mysticalworld:copper_ore>,
 	<thaumcraft:ore_quartz>,
-	<quark:charcoal_block>
+	<quark:charcoal_block>,
 	<iceandfire:sapphire_block>,
 	<biomesoplenty:gem:7>
 ] as IItemStack[];
