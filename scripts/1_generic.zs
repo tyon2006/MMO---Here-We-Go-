@@ -6,7 +6,19 @@ import mods.embers.Stamper;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
+import mods.inspirations.Cauldron;
 import crafttweaker.item.IItemStack;
+
+
+//****************************************************************
+// FIXING NYX, EVEN THOUGH THERE'S CERTAINLY 'NOTHING WRONG' WITH IT.
+//****************************************************************
+
+//mods.inspirations.Cauldron.
+mods.inspirations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
+
+
+mods.inspirations.Cauldron.addFillRecipe(<nyx:lunar_water_bottle>, <liquid:lunar_water>, 1, <minecraft:glass_bottle>);
 
 //***************************
 //		CYCLIC
