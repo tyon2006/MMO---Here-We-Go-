@@ -6,6 +6,7 @@ import mods.embers.Stamper;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
+
 //***************************
 //		REMOVE AND HIDE
 //***************************
@@ -53,9 +54,7 @@ mods.embers.Stamper.add(<thaumcraft:baubles:1>, <liquid:dawnstone>*72, <minecraf
 mods.embers.Alchemy.add(<extraalchemy:empty_ring>, [null,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>],{"iron": 12 to 16,"ale": 12 to 16});
 mods.embers.DawnstoneAnvil.add([<extraalchemy:empty_ring>], <embers:ember_ring>, <minecraft:glass_bottle>);
 
-//leaping 1 and 2
-recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}));
-mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}), [<extraalchemy:empty_ring>,<minecraft:potion>.withTag({Potion:"minecraft:leaping"}),<ore:gemEmerald>,<minecraft:potion>.withTag({Potion: "minecraft:leaping"}),<embers:dust_ember>],{"iron":14 to 14});
+
 recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}));
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}), [<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}),<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<biomesoplenty:terrestrial_artifact>,<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<embers:dust_ember>],{"iron":14 to 14});
 

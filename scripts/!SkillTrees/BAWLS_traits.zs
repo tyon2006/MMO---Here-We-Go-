@@ -1432,7 +1432,6 @@ var bawls18req = [
 	<cyclicmagic:charm_void:*>,
 	<cyclicmagic:charm_wing:*>,
 	<embers:ember_cartridge:*>,
-	<extraalchemy:empty_ring:*>,
 	<grimoireofgaia:accessory_charm_damage_iron:*>,
 	<mod_lavacow:goldenheart:*>,
 	<randomthings:lavacharm:*>,
@@ -1458,7 +1457,6 @@ var bawls19req = [
 
 	<bountifulbaubles:ringflywheel:*>,
 	<bountifulbaubles:ringflywheeladvanced:*>,
-
 	<rats:rat_upgrade_basic_energy:*>,
 	<rats:rat_upgrade_disenchanter:*>,
 	<rats:rat_upgrade_enchanter:*>,
