@@ -18,7 +18,8 @@ recipes.addShapedMirrored(<transmutationalchemy:blade>,
 [<minecraft:stick>,null]]);
 
 //unify ectoplasm
-recipes.replaceAllOccurences(<randomthings:ingredient:2>, <bewitchment:ectoplasm>);
+//removed bewitchment
+//recipes.replaceAllOccurences(<randomthings:ingredient:2>, <bewitchment:ectoplasm>);
 
 //***************************
 //		POTIONS
@@ -41,9 +42,10 @@ var itemRemovalsPotions = [
 	<minecraft:lingering_potion>.withTag({Potion: "netherex:frigid_health"}),
 	<minecraft:lingering_potion>.withTag({Potion: "netherex:dispersal"}),
 	<minecraft:lingering_potion>.withTag({Potion: "netherex:sorrow"}),
-	<aetherworks:item_potion_gem:38>,
-	<aetherworks:item_potion_gem:39>,
-	<aetherworks:item_potion_gem:40>,
+	<minecraft:tipped_arrow>.withTag({Potion: "netherex:freezing"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "netherex:frigid_health"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "netherex:dispersal"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "netherex:sorrow"}),
 	<minecraft:splash_potion>.withTag({Potion: "randomthings:collapse"}),
 	<minecraft:splash_potion>.withTag({Potion: "randomthings:long_collapse"}),
 	<minecraft:splash_potion>.withTag({Potion: "randomthings:strong_collapse"}),
@@ -195,47 +197,7 @@ rh(<randomthings:chunkanalyzer>);
 //		APOTHEOSIS
 //***************************
 
-recipes.remove(<apotheosis:farmers_leash>, false);
-
-//***************************
-//		MYSTICAL WORLD
-//***************************
-
-//remove and hide unfit items
-
-var itemRemovalsMysticalWorld = [
-	<mysticalworld:amethyst_sword>,
-	<mysticalworld:amethyst_shovel>,
-	<mysticalworld:amethyst_pickaxe>,
-	<mysticalworld:amethyst_hoe>,
-	<mysticalworld:copper_shovel>,
-	<mysticalworld:copper_sword>,
-	<mysticalworld:silver_axe>,
-	<mysticalworld:silver_hoe>,
-	<mysticalworld:silver_pickaxe>,
-	<mysticalworld:silver_shovel>,
-	<mysticalworld:silver_sword>,
-	<mysticalworld:amethyst_axe>,
-	<mysticalworld:copper_pickaxe>,
-	<mysticalworld:copper_hoe>,
-	<mysticalworld:copper_axe>,
-	<mysticalworld:amethyst_gem>,
-	<mysticalworld:silver_dust_tiny>,
-	<mysticalworld:silver_dust>,
-	<mysticalworld:silver_nugget>,
-	<mysticalworld:silver_ingot>,
-	<mysticalworld:copper_dust_tiny>,
-	<mysticalworld:copper_dust>,
-	<mysticalworld:copper_nugget>,
-	<mysticalworld:copper_ingot>,
-	<mysticalworld:amethyst_block>,
-	<mysticalworld:silver_block>,
-	<mysticalworld:copper_block>
-] as IItemStack[];
-
-for item in itemRemovalsMysticalWorld {
-    rh(item);
-}
+//recipes.remove(<apotheosis:farmers_leash>, false);
 
 //***************************
 //	GRIMOIRE OF GAIA
@@ -279,7 +241,6 @@ var itemRemovalsSilver = [
 	<iceandfire:silver_pickaxe>,
 	<iceandfire:silver_axe>,
 	<iceandfire:silver_hoe>,
-	<bewitchment:silver_helmet>,
 	<idk:silverarmourhelmet>,
 	<idk:silverarmourbody>,
 	<idk:silverarmourlegs>,

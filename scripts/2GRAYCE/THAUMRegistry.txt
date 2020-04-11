@@ -1,0 +1,1347 @@
+#### TCFullDump
+### BASICS
+## With Entries: 
+#####
+#### Key:              UNLOCKARTIFICE
+###  Category:         BASICS
+##   Localized Name:   Discovering Artifice
+##   Unlocalized Name: research.UNLOCKARTIFICE.title
+#####
+#### Key:              ORE
+###  Category:         BASICS
+##   Localized Name:   Ores
+##   Unlocalized Name: research.ORE.title
+#####
+#### Key:              FLUX
+###  Category:         BASICS
+##   Localized Name:   Flux
+##   Unlocalized Name: research.FLUX.title
+#####
+#### Key:              UNLOCKAUROMANCY
+###  Category:         BASICS
+##   Localized Name:   Discovering Auromancy
+##   Unlocalized Name: research.UNLOCKAUROMANCY.title
+#####
+#### Key:              !Wisp
+###  Category:         BASICS
+##   Localized Name:   Wisp
+##   Unlocalized Name: entity.Wisp.name
+#####
+#### Key:              CRYSTALFARMER
+###  Category:         BASICS
+##   Localized Name:   Crystal Farming
+##   Unlocalized Name: research.CRYSTALFARMER.title
+#####
+#### Key:              UNLOCKALCHEMY
+###  Category:         BASICS
+##   Localized Name:   Discovering Alchemy
+##   Unlocalized Name: research.UNLOCKALCHEMY.title
+#####
+#### Key:              !CrimsonCultist
+###  Category:         BASICS
+##   Localized Name:   The Crimson Cult
+##   Unlocalized Name: research.CrimsonCultist.title
+#####
+#### Key:              !EldritchCrab
+###  Category:         BASICS
+##   Localized Name:   Eldritch Crab
+##   Unlocalized Name: entity.EldritchCrab.name
+#####
+#### Key:              PRIMPEARL
+###  Category:         BASICS
+##   Localized Name:   Primordial Pearls
+##   Unlocalized Name: research.PRIMPEARL.title
+#####
+#### Key:              UNLOCKELDRITCH
+###  Category:         BASICS
+##   Localized Name:   Delving into the Eldritch
+##   Unlocalized Name: research.UNLOCKELDRITCH.title
+#####
+#### Key:              FLUXRIFT
+###  Category:         BASICS
+##   Localized Name:   Flux Rifts
+##   Unlocalized Name: research.FLUXRIFT.title
+#####
+#### Key:              FIRSTSTEPS
+###  Category:         BASICS
+##   Localized Name:   First Steps
+##   Unlocalized Name: research.FIRSTSTEPS.title
+#####
+#### Key:              KNOWLEDGETYPES
+###  Category:         BASICS
+##   Localized Name:   Types of Knowledge
+##   Unlocalized Name: research.KNOWLEDGETYPES.title
+#####
+#### Key:              UNLOCKGOLEMANCY
+###  Category:         BASICS
+##   Localized Name:   Discovering Golemancy
+##   Unlocalized Name: research.UNLOCKGOLEMANCY.title
+#####
+#### Key:              WARP
+###  Category:         BASICS
+##   Localized Name:   Warp
+##   Unlocalized Name: research.WARP.title
+#####
+#### Key:              THEORYRESEARCH
+###  Category:         BASICS
+##   Localized Name:   Theorycrafting
+##   Unlocalized Name: research.THEORYRESEARCH.title
+#####
+#### Key:              !Firebat
+###  Category:         BASICS
+##   Localized Name:   Firebat
+##   Unlocalized Name: entity.Firebat.name
+#####
+#### Key:              UNLOCKINFUSION
+###  Category:         BASICS
+##   Localized Name:   Discovering Infusion
+##   Unlocalized Name: research.UNLOCKINFUSION.title
+#####
+#### Key:              CELESTIALSCANNING
+###  Category:         BASICS
+##   Localized Name:   Celestial Observation
+##   Unlocalized Name: research.CELESTIALSCANNING.title
+#####
+#### Key:              FLUXCLEANUP
+###  Category:         BASICS
+##   Localized Name:   Flux Cleanup
+##   Unlocalized Name: research.FLUXCLEANUP.title
+#####
+#### Key:              !EldritchGuardian
+###  Category:         BASICS
+##   Localized Name:   Eldritch Guardian
+##   Unlocalized Name: entity.EldritchGuardian.name
+#####
+#### Key:              !Pech
+###  Category:         BASICS
+##   Localized Name:   The Pech
+##   Unlocalized Name: research.Pech.title
+#####
+#### Key:              !Taintacle
+###  Category:         BASICS
+##   Localized Name:   Taintacle
+##   Unlocalized Name: entity.Taintacle.name
+#####
+#### Key:              !TaintCrawler
+###  Category:         BASICS
+##   Localized Name:   Tainted Crawler
+##   Unlocalized Name: entity.TaintCrawler.name
+#####
+#### Key:              !BrainyZombie
+###  Category:         BASICS
+##   Localized Name:   Angry Zombie
+##   Unlocalized Name: entity.BrainyZombie.name
+#####
+#### Key:              RIFTCLOSER
+###  Category:         BASICS
+##   Localized Name:   Closing Flux Rifts
+##   Unlocalized Name: research.RIFTCLOSER.title
+#####
+#### Key:              CrimsonRites
+###  Category:         BASICS
+##   Localized Name:   The Crimson Rites
+##   Unlocalized Name: research.CrimsonRites.title
+#####
+#### Key:              !TaintSwarm
+###  Category:         BASICS
+##   Localized Name:   Taint Swarm
+##   Unlocalized Name: entity.TaintSwarm.name
+#####
+#### Key:              !ThaumSlime
+###  Category:         BASICS
+##   Localized Name:   Thaumic Slime
+##   Unlocalized Name: entity.ThaumSlime.name
+#####
+#### Key:              PLANTS
+###  Category:         BASICS
+##   Localized Name:   Plants
+##   Unlocalized Name: research.PLANTS.title
+#####
+#### Key:              !TaintSeed
+###  Category:         BASICS
+##   Localized Name:   Taint Seed
+##   Unlocalized Name: entity.TaintSeed.name
+
+
+### AUROMANCY
+## With Entries: 
+#####
+#### Key:              FOCUSPOUCH
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Pouch
+##   Unlocalized Name: research.FOCUSPOUCH.title
+#####
+#### Key:              WORKBENCHCHARGER
+###  Category:         AUROMANCY
+##   Localized Name:   Workbench Charger
+##   Unlocalized Name: research.WORKBENCHCHARGER.title
+#####
+#### Key:              FOCUSRIFT
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Effect: Rift
+##   Unlocalized Name: research.FOCUSRIFT.title
+#####
+#### Key:              FOCUSSCATTER
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Modifier: Scatter
+##   Unlocalized Name: research.FOCUSSCATTER.title
+#####
+#### Key:              FOCUSEXCHANGE
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Effect: Exchange
+##   Unlocalized Name: research.FOCUSEXCHANGE.title
+#####
+#### Key:              FOCUSGREATER
+###  Category:         AUROMANCY
+##   Localized Name:   Greater Foci
+##   Unlocalized Name: research.FOCUSGREATER.title
+#####
+#### Key:              FOCUSSPLIT
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Modifier: Split
+##   Unlocalized Name: research.FOCUSSPLIT.title
+#####
+#### Key:              BASEAUROMANCY
+###  Category:         AUROMANCY
+##   Localized Name:   Basic Auromancy
+##   Unlocalized Name: research.BASEAUROMANCY.title
+#####
+#### Key:              FOCUSELEMENTAL
+###  Category:         AUROMANCY
+##   Localized Name:   Elemental Effects
+##   Unlocalized Name: research.FOCUSELEMENTAL.title
+#####
+#### Key:              FOCUSFLUX
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Effect: Flux
+##   Unlocalized Name: research.FOCUSFLUX.title
+#####
+#### Key:              VISBATTERY
+###  Category:         AUROMANCY
+##   Localized Name:   Vis Battery
+##   Unlocalized Name: research.VISBATTERY.title
+#####
+#### Key:              FOCUSHEAL
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Effect: Heal
+##   Unlocalized Name: research.FOCUSHEAL.title
+#####
+#### Key:              FOCUSCLOUD
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Medium: Cloud
+##   Unlocalized Name: research.FOCUSCLOUD.title
+#####
+#### Key:              FOCUSPLAN
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Medium: Plan
+##   Unlocalized Name: research.FOCUSPLAN.title
+#####
+#### Key:              FOCUSCURSE
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Effect: Curse
+##   Unlocalized Name: research.FOCUSCURSE.title
+#####
+#### Key:              FOCUSBREAK
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Effect: Break
+##   Unlocalized Name: research.FOCUSBREAK.title
+#####
+#### Key:              FOCUSADVANCED
+###  Category:         AUROMANCY
+##   Localized Name:   Advanced Foci
+##   Unlocalized Name: research.FOCUSADVANCED.title
+#####
+#### Key:              FOCUSPROJECTILE
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Medium: Projectile
+##   Unlocalized Name: research.FOCUSPROJECTILE.title
+#####
+#### Key:              VISAMULET
+###  Category:         AUROMANCY
+##   Localized Name:   Vis Amulet
+##   Unlocalized Name: research.VISAMULET.title
+#####
+#### Key:              FOCUSBOLT
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Medium: Bolt
+##   Unlocalized Name: research.FOCUSBOLT.title
+#####
+#### Key:              FOCUSMINE
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Medium: Arcane Mine
+##   Unlocalized Name: research.FOCUSMINE.title
+#####
+#### Key:              FOCUSSPELLBAT
+###  Category:         AUROMANCY
+##   Localized Name:   Focus Medium: Spellbat
+##   Unlocalized Name: research.FOCUSSPELLBAT.title
+#####
+#### Key:              RECHARGEPEDESTAL
+###  Category:         AUROMANCY
+##   Localized Name:   Recharge Pedestal
+##   Unlocalized Name: research.RECHARGEPEDESTAL.title
+
+
+### ALCHEMY
+## With Entries: 
+#####
+#### Key:              ALUMENTUM
+###  Category:         ALCHEMY
+##   Localized Name:   Alumentum
+##   Unlocalized Name: research.ALUMENTUM.title
+#####
+#### Key:              POTIONSPRAYER
+###  Category:         ALCHEMY
+##   Localized Name:   Potion Sprayer
+##   Unlocalized Name: research.POTIONSPRAYER.title
+#####
+#### Key:              THAUMIUM_WEAPONRY
+###  Category:         ALCHEMY
+##   Localized Name:   Thaumium Weaponry
+##   Unlocalized Name: research.spartanweaponryarcana:THAUMIUM_WEAPONRY.title
+#####
+#### Key:              HEDGEALCHEMY
+###  Category:         ALCHEMY
+##   Localized Name:   Hedge Alchemy
+##   Unlocalized Name: research.HEDGEALCHEMY.title
+#####
+#### Key:              BATHSALTS
+###  Category:         ALCHEMY
+##   Localized Name:   Purifying Bath Salts
+##   Unlocalized Name: research.BATHSALTS.title
+#####
+#### Key:              BASEALCHEMY
+###  Category:         ALCHEMY
+##   Localized Name:   Basic Alchemy
+##   Unlocalized Name: research.BASEALCHEMY.title
+#####
+#### Key:              ESSENTIASMELTERTHAUMIUM
+###  Category:         ALCHEMY
+##   Localized Name:   Thaumium Essentia Smelter
+##   Unlocalized Name: research.ESSENTIASMELTERTHAUMIUM.title
+#####
+#### Key:              ESSENTIASMELTERVOID
+###  Category:         ALCHEMY
+##   Localized Name:   Void Metal Essentia Smelter
+##   Unlocalized Name: research.ESSENTIASMELTERVOID.title
+#####
+#### Key:              ARCANESPA
+###  Category:         ALCHEMY
+##   Localized Name:   Arcane Spa
+##   Unlocalized Name: research.ARCANESPA.title
+#####
+#### Key:              THAUMATORIUM
+###  Category:         ALCHEMY
+##   Localized Name:   Alchemical Automation
+##   Unlocalized Name: research.THAUMATORIUM.title
+#####
+#### Key:              ESSENTIATRANSPORT
+###  Category:         ALCHEMY
+##   Localized Name:   Advanced Essentia Transport
+##   Unlocalized Name: research.ESSENTIATRANSPORT.title
+#####
+#### Key:              LIQUIDDEATH
+###  Category:         ALCHEMY
+##   Localized Name:   Liquid Death
+##   Unlocalized Name: research.LIQUIDDEATH.title
+#####
+#### Key:              TUBES
+###  Category:         ALCHEMY
+##   Localized Name:   Essentia Tubes
+##   Unlocalized Name: research.TUBES.title
+#####
+#### Key:              IMPROVEDSMELTING
+###  Category:         ALCHEMY
+##   Localized Name:   Improved Essentia Distillation (part 1)
+##   Unlocalized Name: research.IMPROVEDSMELTING.title
+#####
+#### Key:              CENTRIFUGE
+###  Category:         ALCHEMY
+##   Localized Name:   Essentia Centrifuge
+##   Unlocalized Name: research.CENTRIFUGE.title
+#####
+#### Key:              WARDEDJARS
+###  Category:         ALCHEMY
+##   Localized Name:   Warded Jars & labels
+##   Unlocalized Name: research.WARDEDJARS.title
+#####
+#### Key:              IMPROVEDSMELTING2
+###  Category:         ALCHEMY
+##   Localized Name:   Improved Essentia Distillation (part 2)
+##   Unlocalized Name: research.IMPROVEDSMELTING2.title
+#####
+#### Key:              BOTTLETAINT
+###  Category:         ALCHEMY
+##   Localized Name:   Bottled Taint
+##   Unlocalized Name: research.BOTTLETAINT.title
+#####
+#### Key:              EVERFULLURN
+###  Category:         ALCHEMY
+##   Localized Name:   Everfull Urn
+##   Unlocalized Name: research.EVERFULLURN.title
+#####
+#### Key:              METALLURGY
+###  Category:         ALCHEMY
+##   Localized Name:   Alchemical Metallurgy
+##   Unlocalized Name: research.METALLURGY.title
+#####
+#### Key:              SANESOAP
+###  Category:         ALCHEMY
+##   Localized Name:   Sanity Soap
+##   Unlocalized Name: research.SANESOAP.title
+#####
+#### Key:              ESSENTIASMELTER
+###  Category:         ALCHEMY
+##   Localized Name:   Essentia Smelting
+##   Unlocalized Name: research.ESSENTIASMELTER.title
+#####
+#### Key:              METALPURIFICATION
+###  Category:         ALCHEMY
+##   Localized Name:   Metal Purification
+##   Unlocalized Name: research.METALPURIFICATION.title
+
+
+### ARTIFICE
+## With Entries: 
+#####
+#### Key:              MIRRORHAND
+###  Category:         ARTIFICE
+##   Localized Name:   Magical Hand Mirror
+##   Unlocalized Name: research.MIRRORHAND.title
+#####
+#### Key:              ARCANELAMP
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Lamp
+##   Unlocalized Name: research.ARCANELAMP.title
+#####
+#### Key:              BELLOWS
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Bellows
+##   Unlocalized Name: research.BELLOWS.title
+#####
+#### Key:              MIRRORESSENTIA
+###  Category:         ARTIFICE
+##   Localized Name:   Essentia Mirrors
+##   Unlocalized Name: research.MIRRORESSENTIA.title
+#####
+#### Key:              DIOPTRA
+###  Category:         ARTIFICE
+##   Localized Name:   Thaumic Dioptra
+##   Unlocalized Name: research.DIOPTRA.title
+#####
+#### Key:              HUNGRYCHEST
+###  Category:         ARTIFICE
+##   Localized Name:   Hungry Chest
+##   Unlocalized Name: research.HUNGRYCHEST.title
+#####
+#### Key:              ARCANEEAR
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Ear
+##   Unlocalized Name: research.ARCANEEAR.title
+#####
+#### Key:              GRAPPLEGUN
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Grappler
+##   Unlocalized Name: research.GRAPPLEGUN.title
+#####
+#### Key:              ARCANEPATTERNCRAFTER
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Pattern Crafter
+##   Unlocalized Name: research.ARCANEPATTERNCRAFTER.title
+#####
+#### Key:              MIRROR
+###  Category:         ARTIFICE
+##   Localized Name:   Mirror Magic
+##   Unlocalized Name: research.MIRROR.title
+#####
+#### Key:              INFERNALFURNACE
+###  Category:         ARTIFICE
+##   Localized Name:   Infernal Furnace
+##   Unlocalized Name: research.INFERNALFURNACE.title
+#####
+#### Key:              BASICTURRET
+###  Category:         ARTIFICE
+##   Localized Name:   Automated Crossbow
+##   Unlocalized Name: research.BASICTURRET.title
+#####
+#### Key:              LAMPFERTILITY
+###  Category:         ARTIFICE
+##   Localized Name:   Lamp of Fertility
+##   Unlocalized Name: research.LAMPFERTILITY.title
+#####
+#### Key:              LEVITATOR
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Levitator
+##   Unlocalized Name: research.LEVITATOR.title
+#####
+#### Key:              LAMPGROWTH
+###  Category:         ARTIFICE
+##   Localized Name:   Lamp of Growth
+##   Unlocalized Name: research.LAMPGROWTH.title
+#####
+#### Key:              VISGENERATOR
+###  Category:         ARTIFICE
+##   Localized Name:   Vis Powered Generator
+##   Unlocalized Name: research.VISGENERATOR.title
+#####
+#### Key:              ADVANCEDTURRET
+###  Category:         ARTIFICE
+##   Localized Name:   Advanced Automated Crossbow
+##   Unlocalized Name: research.ADVANCEDTURRET.title
+#####
+#### Key:              BASEARTIFICE
+###  Category:         ARTIFICE
+##   Localized Name:   Basic Artifice
+##   Unlocalized Name: research.BASEARTIFICE.title
+#####
+#### Key:              ARCANEBORE
+###  Category:         ARTIFICE
+##   Localized Name:   Arcane Bore
+##   Unlocalized Name: research.ARCANEBORE.title
+#####
+#### Key:              REDSTONERELAY
+###  Category:         ARTIFICE
+##   Localized Name:   Redstone Relay
+##   Unlocalized Name: research.REDSTONERELAY.title
+
+
+### INFUSION
+## With Entries: 
+#####
+#### Key:              RUNICSHIELDING
+###  Category:         INFUSION
+##   Localized Name:   Runic Shielding
+##   Unlocalized Name: research.RUNICSHIELDING.title
+#####
+#### Key:              INFUSIONBOOST
+###  Category:         INFUSION
+##   Localized Name:   Infusion Boosting
+##   Unlocalized Name: research.INFUSIONBOOST.title
+#####
+#### Key:              ARMORFORTRESS
+###  Category:         INFUSION
+##   Localized Name:   Thaumium Fortress Armor
+##   Unlocalized Name: research.ARMORFORTRESS.title
+#####
+#### Key:              INFUSIONSTABLE
+###  Category:         INFUSION
+##   Localized Name:   Infusion Stabilization
+##   Unlocalized Name: research.INFUSIONSTABLE.title
+#####
+#### Key:              INFUSIONELDRITCH
+###  Category:         INFUSION
+##   Localized Name:   Infusion: Eldritch Stone
+##   Unlocalized Name: research.INFUSIONELDRITCH.title
+#####
+#### Key:              INFUSIONANCIENT
+###  Category:         INFUSION
+##   Localized Name:   Infusion: Ancient Stone
+##   Unlocalized Name: research.INFUSIONANCIENT.title
+#####
+#### Key:              INFUSION
+###  Category:         INFUSION
+##   Localized Name:   Infusion
+##   Unlocalized Name: research.INFUSION.title
+#####
+#### Key:              PAVINGSTONES
+###  Category:         INFUSION
+##   Localized Name:   Arcane Paving Stones
+##   Unlocalized Name: research.PAVINGSTONES.title
+#####
+#### Key:              CURIOSITYBAND
+###  Category:         INFUSION
+##   Localized Name:   Headband of Curiosity
+##   Unlocalized Name: research.CURIOSITYBAND.title
+#####
+#### Key:              FORTRESSMASK
+###  Category:         INFUSION
+##   Localized Name:   Fortress Armor Faceplates
+##   Unlocalized Name: research.FORTRESSMASK.title
+#####
+#### Key:              CHARMUNDYING
+###  Category:         INFUSION
+##   Localized Name:   Charm of Undying
+##   Unlocalized Name: research.CHARMUNDYING.title
+#####
+#### Key:              VERDANTCHARMS
+###  Category:         INFUSION
+##   Localized Name:   Verdant Charms
+##   Unlocalized Name: research.VERDANTCHARMS.title
+#####
+#### Key:              BASEINFUSION
+###  Category:         INFUSION
+##   Localized Name:   Basic Infusion
+##   Unlocalized Name: research.BASEINFUSION.title
+#####
+#### Key:              CLOUDRING
+###  Category:         INFUSION
+##   Localized Name:   Cloudstepper Ring
+##   Unlocalized Name: research.CLOUDRING.title
+#####
+#### Key:              BOOTSTRAVELLER
+###  Category:         INFUSION
+##   Localized Name:   Boots of the Traveler
+##   Unlocalized Name: research.BOOTSTRAVELLER.title
+#####
+#### Key:              ELEMENTALTOOLS
+###  Category:         INFUSION
+##   Localized Name:   Elemental Tools
+##   Unlocalized Name: research.ELEMENTALTOOLS.title
+#####
+#### Key:              INFUSIONENCHANTMENT
+###  Category:         INFUSION
+##   Localized Name:   Infusion Enchantment
+##   Unlocalized Name: research.INFUSIONENCHANTMENT.title
+
+
+### GOLEMANCY
+## With Entries: 
+#####
+#### Key:              BASEGOLEMANCY
+###  Category:         GOLEMANCY
+##   Localized Name:   Basic Golemancy
+##   Unlocalized Name: research.BASEGOLEMANCY.title
+#####
+#### Key:              SEALLUMBER
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Lumberjack
+##   Unlocalized Name: research.SEALLUMBER.title
+#####
+#### Key:              MINDCLOCKWORK
+###  Category:         GOLEMANCY
+##   Localized Name:   Clockwork Minds
+##   Unlocalized Name: research.MINDCLOCKWORK.title
+#####
+#### Key:              GOLEMBREAKER
+###  Category:         GOLEMANCY
+##   Localized Name:   Golem Manipulation: Block Breaking
+##   Unlocalized Name: research.GOLEMBREAKER.title
+#####
+#### Key:              SEALBUTCHER
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Butcher
+##   Unlocalized Name: research.SEALBUTCHER.title
+#####
+#### Key:              MATSTUDCLAY
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Clay
+##   Unlocalized Name: research.MATSTUDCLAY.title
+#####
+#### Key:              SEALBREAK
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Block Breaker
+##   Unlocalized Name: research.SEALBREAK.title
+#####
+#### Key:              MATSTUDBRASS
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Brass
+##   Unlocalized Name: research.MATSTUDBRASS.title
+#####
+#### Key:              MATSTUDCOLDIRON
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Cold Iron
+##   Unlocalized Name: research.MATSTUDCOLDIRON.title
+#####
+#### Key:              SEALUSE
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Use
+##   Unlocalized Name: research.SEALUSE.title
+#####
+#### Key:              GOLEMCLIMBER
+###  Category:         GOLEMANCY
+##   Localized Name:   Golem Mobility: Climbing
+##   Unlocalized Name: research.GOLEMCLIMBER.title
+#####
+#### Key:              SEALSTORE
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Store
+##   Unlocalized Name: research.SEALSTORE.title
+#####
+#### Key:              SEALCOLLECT
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Collect 
+##   Unlocalized Name: research.SEALCOLLECT.title
+#####
+#### Key:              MATSTUDIRON
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Iron
+##   Unlocalized Name: research.MATSTUDIRON.title
+#####
+#### Key:              SEALEMPTY
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Empty
+##   Unlocalized Name: research.SEALEMPTY.title
+#####
+#### Key:              SEALSTOCK
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Stock
+##   Unlocalized Name: research.SEALSTOCK.title
+#####
+#### Key:              MATSTUDVOID
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Void Metal
+##   Unlocalized Name: research.MATSTUDVOID.title
+#####
+#### Key:              SEALPROVIDE
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Provide
+##   Unlocalized Name: research.SEALPROVIDE.title
+#####
+#### Key:              MATSTUDTHAUMIUM
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Thaumium
+##   Unlocalized Name: research.MATSTUDTHAUMIUM.title
+#####
+#### Key:              CONTROLSEALS
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seals
+##   Unlocalized Name: research.CONTROLSEALS.title
+#####
+#### Key:              SEALHARVEST
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Harvest
+##   Unlocalized Name: research.SEALHARVEST.title
+#####
+#### Key:              MINDBIOTHAUMIC
+###  Category:         GOLEMANCY
+##   Localized Name:   Biothaumic Minds
+##   Unlocalized Name: research.MINDBIOTHAUMIC.title
+#####
+#### Key:              GOLEMVISION
+###  Category:         GOLEMANCY
+##   Localized Name:   Golem Biothaumic Eyes
+##   Unlocalized Name: research.GOLEMVISION.title
+#####
+#### Key:              GOLEMFLYER
+###  Category:         GOLEMANCY
+##   Localized Name:   Golem Mobility: Flight
+##   Unlocalized Name: research.GOLEMFLYER.title
+#####
+#### Key:              MATSTUDSILVER
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Silver
+##   Unlocalized Name: research.MATSTUDSILVER.title
+#####
+#### Key:              MATSTUDDRAGONSBLOOD
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Dragon's Blood Resin
+##   Unlocalized Name: research.MATSTUDDRAGONSBLOOD.title
+#####
+#### Key:              GOLEMDIRECT
+###  Category:         GOLEMANCY
+##   Localized Name:   Golem Mastery
+##   Unlocalized Name: research.GOLEMDIRECT.title
+#####
+#### Key:              GOLEMCOMBATADV
+###  Category:         GOLEMANCY
+##   Localized Name:   Improved Golem Combat
+##   Unlocalized Name: research.GOLEMCOMBATADV.title
+#####
+#### Key:              JARBRAIN
+###  Category:         GOLEMANCY
+##   Localized Name:   Brain in a Jar
+##   Unlocalized Name: research.JARBRAIN.title
+#####
+#### Key:              GOLEMLOGISTICS
+###  Category:         GOLEMANCY
+##   Localized Name:   Golem Logistics
+##   Unlocalized Name: research.GOLEMLOGISTICS.title
+#####
+#### Key:              MATSTUDWOOD
+###  Category:         GOLEMANCY
+##   Localized Name:   Material Studies: Wood
+##   Unlocalized Name: research.MATSTUDWOOD.title
+#####
+#### Key:              SEALGUARD
+###  Category:         GOLEMANCY
+##   Localized Name:   Control Seal: Guard
+##   Unlocalized Name: research.SEALGUARD.title
+
+
+### ELDRITCH
+## With Entries: 
+#####
+#### Key:              VOIDSEERPEARL
+###  Category:         ELDRITCH
+##   Localized Name:   Voidseer's Pearl
+##   Unlocalized Name: research.VOIDSEERPEARL.title
+#####
+#### Key:              VOIDROBEARMOR
+###  Category:         ELDRITCH
+##   Localized Name:   Void Thaumaturge Armor
+##   Unlocalized Name: research.VOIDROBEARMOR.title
+#####
+#### Key:              PRIMALCRUSHER
+###  Category:         ELDRITCH
+##   Localized Name:   Primal Crusher
+##   Unlocalized Name: research.PRIMALCRUSHER.title
+#####
+#### Key:              VOIDSIPHON
+###  Category:         ELDRITCH
+##   Localized Name:   Void Siphon
+##   Unlocalized Name: research.VOIDSIPHON.title
+#####
+#### Key:              VOID_WEAPONRY
+###  Category:         ELDRITCH
+##   Localized Name:   Void Weaponry
+##   Unlocalized Name: research.spartanweaponryarcana:VOID_WEAPONRY.title
+#####
+#### Key:              BASEELDRITCH
+###  Category:         ELDRITCH
+##   Localized Name:   Void Seeds
+##   Unlocalized Name: research.BASEELDRITCH.title
+
+
+### ENGINEERED_GOLEMS
+## With Entries: 
+#####
+#### Key:              EG_MATSTUDTREATEDWOOD
+###  Category:         ENGINEERED_GOLEMS
+##   Localized Name:   Material Studies: Treated Wood
+##   Unlocalized Name: research.EG_MATSTUDTREATEDWOOD.title
+#####
+#### Key:              EG_MATSTUDSTEEL
+###  Category:         ENGINEERED_GOLEMS
+##   Localized Name:   Material Studies: Steel
+##   Unlocalized Name: research.EG_MATSTUDSTEEL.title
+#####
+#### Key:              EG_DAPPER
+###  Category:         ENGINEERED_GOLEMS
+##   Localized Name:   OwO What's this?
+##   Unlocalized Name: research.EG_DAPPER.title
+
+
+### EXPANDEDARCANUM
+## With Entries: 
+#####
+#### Key:              EA_GOLEMANCY
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Basic Golemancy
+##   Unlocalized Name: research.BASEGOLEMANCY.title
+#####
+#### Key:              EA_BASE
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Expanding Arcanum
+##   Unlocalized Name: research.base_ea.title
+#####
+#### Key:              EA_UPGRADEREFINING
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Refining Drill Upgrade
+##   Unlocalized Name: research.EA_UPGRADEREFINING.title
+#####
+#### Key:              EA_ARTIFICE
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Basic Artifice
+##   Unlocalized Name: research.BASEARTIFICE.title
+#####
+#### Key:              EA_METALPURIFICATION_IE
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Immersive Engineering Purification
+##   Unlocalized Name: research.EA_METALPURIFICATION_IE.title
+#####
+#### Key:              METALPURIFICATION
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Additional Purification
+##   Unlocalized Name: research.EA_METALPURIFICATION.title
+#####
+#### Key:              EA_MIMICFORK
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Mimic Fork
+##   Unlocalized Name: research.EA_MIMICFORK.title
+#####
+#### Key:              EA_ALCHEMY
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Basic Alchemy
+##   Unlocalized Name: research.BASEALCHEMY.title
+#####
+#### Key:              EA_SEALSHEAR
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Control Seal: Shear
+##   Unlocalized Name: research.EA_SEALSHEAR.title
+#####
+#### Key:              EA_INFUSION
+###  Category:         EXPANDEDARCANUM
+##   Localized Name:   Basic Infusion
+##   Unlocalized Name: research.BASEINFUSION.title
+
+
+### THAUMADDITIONS
+## With Entries: 
+#####
+#### Key:              TAR_AURA_DISPERSER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Aura Disperser
+##   Unlocalized Name: research_name.thaumadditions:aura_disperser
+#####
+#### Key:              TAR_VOID_CROP
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Growing Void
+##   Unlocalized Name: research_name.thaumadditions:void_crop
+#####
+#### Key:              TAR_ADAMINITE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Adaminite Metal
+##   Unlocalized Name: research_name.thaumadditions:adaminite
+#####
+#### Key:              TAR_MITHMINITE_BELT
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Belt
+##   Unlocalized Name: research_name.thaumadditions:mithminite_belt
+#####
+#### Key:              TAR_ADAMINITE_JAR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Adaminite Foritified Jars
+##   Unlocalized Name: research_name.thaumadditions:adaminite_jar
+#####
+#### Key:              TAR_MITHMINITE_FABRIC
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Fabric
+##   Unlocalized Name: research_name.thaumadditions:mithminite_fabric
+#####
+#### Key:              TAR_MITHMINITE_HOOD
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Hood
+##   Unlocalized Name: research_name.thaumadditions:mithminite_hood
+#####
+#### Key:              TAR_CRYSTAL_CRUSHER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Crystal Crusher
+##   Unlocalized Name: research_name.thaumadditions:crystal_crusher
+#####
+#### Key:              TAR_CRYSTAL_WATER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Liquid Crystal
+##   Unlocalized Name: research_name.thaumadditions:crystal_water
+#####
+#### Key:              TAR_VIS_SEEDS
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Growing Essentia
+##   Unlocalized Name: research_name.thaumadditions:vis_seeds
+#####
+#### Key:              TAR_ASPECT_COMBINER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Essentia Combining
+##   Unlocalized Name: research_name.thaumadditions:aspect_combiner
+#####
+#### Key:              TAR_MOB_SUMMONING
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Entity Recreation
+##   Unlocalized Name: research_name.thaumadditions:mob_summoning
+#####
+#### Key:              TAR_MITHMINITE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Metal
+##   Unlocalized Name: research_name.thaumadditions:mithminite
+#####
+#### Key:              TAR_SEAL_SYMBOLS
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Seal Symbology
+##   Unlocalized Name: research_name.thaumadditions:seal_symbols
+#####
+#### Key:              TAR_MITHRILLIUM_JAR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithrillium Reinforced Jars
+##   Unlocalized Name: research_name.thaumadditions:mithrillium_jar
+#####
+#### Key:              TAR_WORMHOLE_MIRROR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Wormhole Mirror
+##   Unlocalized Name: research_name.thaumadditions:wormhole_mirror
+#####
+#### Key:              TAR_MITHMINITE_SMELTER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Smeltery
+##   Unlocalized Name: research_name.thaumadditions:mithminite_smelter
+#####
+#### Key:              TAR_FLUX_CONCENTRATOR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Flux Concentrator
+##   Unlocalized Name: research_name.thaumadditions:flux_concentrator
+#####
+#### Key:              TAR_THAUMADDS
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Thaumic Additions
+##   Unlocalized Name: research_name.thaumadditions:thaumadds
+#####
+#### Key:              TAR_THAUMIUM_JAR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Thaumium Reinforced Jars
+##   Unlocalized Name: research_name.thaumadditions:thaumium_jar
+#####
+#### Key:              TAR_MITHMINITE_BOOTS
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Boots
+##   Unlocalized Name: research_name.thaumadditions:mithminite_boots
+#####
+#### Key:              TAR_BRASS_JAR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Brass Warded Jars
+##   Unlocalized Name: research_name.thaumadditions:brass_jar
+#####
+#### Key:              TAR_AURA_CHARGER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Aura Charger
+##   Unlocalized Name: research_name.thaumadditions:aura_charger
+#####
+#### Key:              TAR_CHESTER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Chester
+##   Unlocalized Name: research_name.thaumadditions:chester
+#####
+#### Key:              TAR_TOTEMS
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Totemancy
+##   Unlocalized Name: research_name.thaumadditions:totems
+#####
+#### Key:              TAR_CAKE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Arcane Cake
+##   Unlocalized Name: research_name.thaumadditions:arcane_cake
+#####
+#### Key:              TAR_KNOWLEDGE_TOME
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Tome of Sharing
+##   Unlocalized Name: research_name.thaumadditions:knowledge_tome
+#####
+#### Key:              TAR_SHADOW_ENCHANTER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Shadow Enchanter
+##   Unlocalized Name: research_name.thaumadditions:shadow_enchanter
+#####
+#### Key:              TAR_VOID_THAUMOMETER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Void Thaumometer
+##   Unlocalized Name: research_name.thaumadditions:void_thaumometer
+#####
+#### Key:              TAR_ELDRITCH
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Void Seeds
+##   Unlocalized Name: research.BASEELDRITCH.title
+#####
+#### Key:              TAR_ESSENTIA_PISTOL
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Essentia Pistol
+##   Unlocalized Name: research_name.thaumadditions:essentia_pistol
+#####
+#### Key:              TAR_SEAL_GLOBE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Seal Peeking
+##   Unlocalized Name: research_name.thaumadditions:seal_globe
+#####
+#### Key:              TAR_FRAGNANT_PENDANT
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Sane on the go!
+##   Unlocalized Name: research_name.thaumadditions:fragnant_pendant
+#####
+#### Key:              TAR_MITHMINITE_JAR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Jars
+##   Unlocalized Name: research_name.thaumadditions:mithminite_jar
+#####
+#### Key:              TAR_SEAL
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Arcane Seals
+##   Unlocalized Name: research_name.thaumadditions:seal
+#####
+#### Key:              TAR_VIS_SCRIBING_TOOLS
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Vis Scribing Tools
+##   Unlocalized Name: research_name.thaumadditions:vis_scribing_tools
+#####
+#### Key:              TAR_ELDRITCH_JAR
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Void Foritified Jars
+##   Unlocalized Name: research_name.thaumadditions:eldritch_jar
+#####
+#### Key:              TAR_CRYSTAL_BORE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Crystal Bore
+##   Unlocalized Name: research_name.thaumadditions:crystal_bore
+#####
+#### Key:              TAR_ADAMINITE_FABRIC
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Adaminite Fabric
+##   Unlocalized Name: research_name.thaumadditions:adaminite_fabric
+#####
+#### Key:              TAR_MITHRILLIUM
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithrillium Metal
+##   Unlocalized Name: research_name.thaumadditions:mithrillium
+#####
+#### Key:              TAR_PURIFLOWER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Puriflower
+##   Unlocalized Name: research_name.thaumadditions:puriflower
+#####
+#### Key:              TAR_MITHRILLIUM_SMELTER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithrillium Smeltery
+##   Unlocalized Name: research_name.thaumadditions:mithrillium_smelter
+#####
+#### Key:              TAR_GROWTH_CHAMBER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Crystal Growth Chamber
+##   Unlocalized Name: research_name.thaumadditions:growth_chamber
+#####
+#### Key:              TAR_MITHMINITE_ROBE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Mithminite Robe
+##   Unlocalized Name: research_name.thaumadditions:mithminite_robe
+#####
+#### Key:              TAR_SHADOW_BEAM_STAFF
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Shadow Beam Staff
+##   Unlocalized Name: research_name.thaumadditions:shadow_beam_staff
+#####
+#### Key:              TAR_CRYSTAL_BLOCK
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Crystal Blocks
+##   Unlocalized Name: research_name.thaumadditions:crystal_block
+#####
+#### Key:              TAR_ENCHANTED_GOLDEN_APPLE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Enchanted Golden Apple
+##   Unlocalized Name: research_name.thaumadditions:enchanted_golden_apple
+#####
+#### Key:              TAR_VOID_ELEMENTAL_HOE
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Void Hoe of Growth
+##   Unlocalized Name: research_name.thaumadditions:void_elemental_hoe
+#####
+#### Key:              TAR_ESSENCE_SALT
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Salty Vis
+##   Unlocalized Name: research_name.thaumadditions:essence_salt
+#####
+#### Key:              TAR_ADAMINITE_SMELTER
+###  Category:         THAUMADDITIONS
+##   Localized Name:   Adaminite Smeltery
+##   Unlocalized Name: research_name.thaumadditions:adaminite_smelter
+
+
+### RUSTIC_THAUMATURGY
+## With Entries: 
+#####
+#### Key:              RT_BASE
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Rustic Thaumaturgy
+##   Unlocalized Name: research.RT_BASE.title
+#####
+#### Key:              RT_SCONCES
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Crystal Sconces
+##   Unlocalized Name: research.RT_SCONCES.title
+#####
+#### Key:              RT_VISCAP
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:    Farming Vishroom
+##   Unlocalized Name: research.RT_VISCAP.title
+#####
+#### Key:              RT_VISCOUS
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Viscous Brew
+##   Unlocalized Name: research.RT_VISCOUS.title
+#####
+#### Key:              RT_MATSTUDIRONWOOD
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Material Studies: Ironwood
+##   Unlocalized Name: research.RT_MATSTUDIRONWOOD.title
+#####
+#### Key:              RT_SHIMMERPETAL
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Farming Shimmerleaf
+##   Unlocalized Name: research.RT_SHIMMERPETAL.title
+#####
+#### Key:              RT_BRASS_SCONCES
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Brass Crystal Sconces
+##   Unlocalized Name: research.RT_BRASS_SCONCES.title
+#####
+#### Key:              RT_BRASS_FIXTURES
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Brass Fixtures
+##   Unlocalized Name: research.RT_BRASS_FIXTURES.title
+#####
+#### Key:              RT_SHIMMERDEW
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Shimmerdew Spirits
+##   Unlocalized Name: research.RT_SHIMMERDEW.title
+#####
+#### Key:              RT_CINDERMOTE
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Farming Cinderpearl
+##   Unlocalized Name: research.RT_CINDERMOTE.title
+#####
+#### Key:              RT_CINDERFIRE
+###  Category:         RUSTIC_THAUMATURGY
+##   Localized Name:   Cinderfire Whiskey
+##   Unlocalized Name: research.RT_CINDERFIRE.title
+
+
+### THAUMIC_AUGMENTATION
+## With Entries: 
+#####
+#### Key:              WARDED_ARCANA
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Warded Arcana
+##   Unlocalized Name: thaumicaugmentation.research.warded_arcana.title
+#####
+#### Key:              WARD_KEYS
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Access Control
+##   Unlocalized Name: thaumicaugmentation.research.ward_keys.title
+#####
+#### Key:              FRENZY_MODIFIER
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Modifier: Frenzy
+##   Unlocalized Name: thaumicaugmentation.research.frenzy_modifier.title
+#####
+#### Key:              MORE_AUROMANCY
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Further Auromancy Studies
+##   Unlocalized Name: thaumicaugmentation.research.more_auromancy.title
+#####
+#### Key:              RIFT_STUDIES
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Rift Studies
+##   Unlocalized Name: thaumicaugmentation.research.rift_studies.title
+#####
+#### Key:              GAUNTLET_AUGMENTATION
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Gauntlet Augmentation
+##   Unlocalized Name: thaumicaugmentation.research.gauntlet_augmentation.title
+#####
+#### Key:              GAUNTLET_VOID
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Voidseer Caster's Gauntlet
+##   Unlocalized Name: thaumicaugmentation.research.gauntlet_void.title
+#####
+#### Key:              SEAL_SECURE
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Control Seal: Secure
+##   Unlocalized Name: thaumicaugmentation.research.seal_secure.title
+#####
+#### Key:              ENTERING_FRACTURE
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Entering the Emptiness
+##   Unlocalized Name: thaumicaugmentation.research.entering_fracture.title
+#####
+#### Key:              DIMENSIONAL_MODIFIERS
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Dimensional Modifiers
+##   Unlocalized Name: thaumicaugmentation.research.dimensional_modifiers.title
+#####
+#### Key:              FRACTURE_THEORY
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Discovering the Emptiness
+##   Unlocalized Name: thaumicaugmentation.research.fracture_theory.title
+#####
+#### Key:              EMPTINESS_MODIFIER
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Modifier: Emptiness
+##   Unlocalized Name: thaumicaugmentation.research.emptiness_modifier.title
+#####
+#### Key:              FOCUS_LIGHT
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Focus Effect: Light
+##   Unlocalized Name: thaumicaugmentation.research.focus_light.title
+#####
+#### Key:              BOOTS_VOID
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Boots of the Riftstrider
+##   Unlocalized Name: thaumicaugmentation.research.boots_void.title
+#####
+#### Key:              MORPHIC_TOOL
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Morphic Tool
+##   Unlocalized Name: thaumicaugmentation.research.morphic_tool.title
+#####
+#### Key:              ARCANE_DOOR
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Arcane Door
+##   Unlocalized Name: thaumicaugmentation.research.arcane_door.title
+#####
+#### Key:              !VOIDSTONE
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Void Stone
+##   Unlocalized Name: thaumicaugmentation.research.void_stone.title
+#####
+#### Key:              GAUNTLET_THAUMIUM
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Thaumium Caster's Gauntlet
+##   Unlocalized Name: thaumicaugmentation.research.gauntlet_thaumium.title
+#####
+#### Key:              PRIMAL_CUTTER
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Primal Cutter
+##   Unlocalized Name: thaumicaugmentation.research.primal_cutter.title
+#####
+#### Key:              FOCUS_WARD
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Focus Effect: Ward
+##   Unlocalized Name: thaumicaugmentation.research.focus_ward_coremod.title
+#####
+#### Key:              VOID_STONE_USAGE
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Manufacturing Eldritch Stone
+##   Unlocalized Name: thaumicaugmentation.research.void_stone_usage.title
+#####
+#### Key:              THAUMIC_AUGMENTATION_BASE
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Thaumic Augmentation
+##   Unlocalized Name: thaumicaugmentation.research.thaumic_augmentation_base.title
+#####
+#### Key:              VIS_REGENERATOR
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Vis Regenerator
+##   Unlocalized Name: thaumicaugmentation.research.vis_regenerator.title
+#####
+#### Key:              SEAL_COPIER
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Seal Copier
+##   Unlocalized Name: thaumicaugmentation.research.seal_copier.title
+#####
+#### Key:              RIFT_POWER
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Rift Power
+##   Unlocalized Name: thaumicaugmentation.research.rift_power.title
+#####
+#### Key:              EXPERIENCE_MODIFIER
+###  Category:         THAUMIC_AUGMENTATION
+##   Localized Name:   Modifier: Experience
+##   Unlocalized Name: thaumicaugmentation.research.experience_modifier.title
+
+
+### PERIPHERY
+## With Entries: 
+#####
+#### Key:              MALIGNANTHEART
+###  Category:         PERIPHERY
+##   Localized Name:   Malignant Heart
+##   Unlocalized Name: research.MALIGNANTHEART.title
+#####
+#### Key:              MAGICQUIVER
+###  Category:         PERIPHERY
+##   Localized Name:   Conjurer's Quiver
+##   Unlocalized Name: research.MAGICQUIVER.title
+#####
+#### Key:              CASTEREMBER
+###  Category:         PERIPHERY
+##   Localized Name:   Clockwork Casting
+##   Unlocalized Name: research.CASTEREMBER.title
+#####
+#### Key:              BASEPERIPHERY
+###  Category:         PERIPHERY
+##   Localized Name:   Thaumic Periphery
+##   Unlocalized Name: research.BASEPERIPHERY.title
+#####
+#### Key:              VISPHYLACTERY
+###  Category:         PERIPHERY
+##   Localized Name:   Vis Phylactery
+##   Unlocalized Name: research.VISPHYLACTERY.title
+#####
+#### Key:              PAULDRONREPULSION
+###  Category:         PERIPHERY
+##   Localized Name:   Pauldron of Repulsion
+##   Unlocalized Name: research.PAULDRONREPULSION.title
+

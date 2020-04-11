@@ -1,4 +1,3 @@
-
 import crafttweaker.item.IItemStack;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;

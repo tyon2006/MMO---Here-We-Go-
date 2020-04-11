@@ -33,42 +33,6 @@
 				"groupcountmax": 1
 			},
 			{
-				"mob": "bewitchment:black_dog",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 6
-			},
-			{
-				"mob": "bewitchment:ghost",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 2
-			},
-			{
-				"mob": "bewitchment:lizard",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:owl",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:raven",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:toad",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
 				"mob": "embers:ancient_golem",
 				"weight": 1,
 				"groupcountmin": 1,
@@ -301,30 +265,6 @@
 				"weight": 1,
 				"groupcountmin": 1,
 				"groupcountmax": 2
-			},
-			{
-				"mob": "mysticalworld:entity_beetle",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
-			},
-			{
-				"mob": "mysticalworld:entity_endermini",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "mysticalworld:entity_frog",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
-			},
-			{
-				"mob": "mysticalworld:entity_sprout",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
 			},
 			{
 				"mob": "primitivemobs:baby_spider",
@@ -1529,12 +1469,6 @@
 			{
 				"mob": "idk:potionbud",
 				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "idk:raidertruehostile",
-				"weight": 10,
 				"groupcountmin": 1,
 				"groupcountmax": 5
 			},
@@ -1592,42 +1526,6 @@
 				"groupcountmax": 1
 			},
 			{
-				"mob": "bewitchment:black_dog",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 6
-			},
-			{
-				"mob": "bewitchment:ghost",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 2
-			},
-			{
-				"mob": "bewitchment:lizard",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:owl",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:raven",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:toad",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
 				"mob": "embers:ancient_golem",
 				"weight": 1,
 				"groupcountmin": 1,
@@ -1860,30 +1758,6 @@
 				"weight": 1,
 				"groupcountmin": 1,
 				"groupcountmax": 2
-			},
-			{
-				"mob": "mysticalworld:entity_beetle",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
-			},
-			{
-				"mob": "mysticalworld:entity_endermini",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "mysticalworld:entity_frog",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
-			},
-			{
-				"mob": "mysticalworld:entity_sprout",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
 			},
 			{
 				"mob": "primitivemobs:baby_spider",
@@ -3088,12 +2962,6 @@
 			{
 				"mob": "idk:potionbud",
 				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "idk:raidertruehostile",
-				"weight": 10,
 				"groupcountmin": 1,
 				"groupcountmax": 5
 			},
@@ -3151,42 +3019,6 @@
 				"groupcountmax": 1
 			},
 			{
-				"mob": "bewitchment:black_dog",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 6
-			},
-			{
-				"mob": "bewitchment:ghost",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 2
-			},
-			{
-				"mob": "bewitchment:lizard",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:owl",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:raven",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
-				"mob": "bewitchment:toad",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 4
-			},
-			{
 				"mob": "embers:ancient_golem",
 				"weight": 1,
 				"groupcountmin": 1,
@@ -3419,30 +3251,6 @@
 				"weight": 1,
 				"groupcountmin": 1,
 				"groupcountmax": 2
-			},
-			{
-				"mob": "mysticalworld:entity_beetle",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
-			},
-			{
-				"mob": "mysticalworld:entity_endermini",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "mysticalworld:entity_frog",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
-			},
-			{
-				"mob": "mysticalworld:entity_sprout",
-				"weight": 10,
-				"groupcountmin": 1,
-				"groupcountmax": 9
 			},
 			{
 				"mob": "primitivemobs:baby_spider",
@@ -4647,12 +4455,6 @@
 			{
 				"mob": "idk:potionbud",
 				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 5
-			},
-			{
-				"mob": "idk:raidertruehostile",
-				"weight": 10,
 				"groupcountmin": 1,
 				"groupcountmax": 5
 			},
