@@ -1,0 +1,841 @@
+<!-- =================================================================
+     Custom Ore Generation "Transmutation Alchemy" Module: This configuration
+     covers power crystals, protection crystals, and mind crystals.
+     ================================================================= -->
+
+
+<!-- Is the "Transmutation Alchemy" mod on the system?  Let's find out! -->
+<IfModInstalled name="transmutationalchemy">
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupTransAlch' displayName='TransAlch' displayState='shown'>
+        <Description>
+          Distribution options for Transmutation Alchemy Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableTransAlch' displayName='Handle Transmutation Alchemy Gen?' default='true' displayState='shown_dynamic' displayGroup='groupTransAlch'>
+        <Description> Should Custom Ore Generation handle Transmutation Alchemy ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle Transmutation Alchemy ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Transmutation Alchemy ores will be handled by Minecraft directly.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpTransAlch' displayName='Use Transmutation Alchemy Cleanup?' default='true' displayState=':= if(?enableTransAlch, "shown", "hidden")' displayGroup='groupTransAlch'>
+        <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of Transmutation Alchemy ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up Transmutation Alchemy ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Transmutation Alchemy ores do not need to be cleaned up by a substitution pass.'/>
+      </OptionChoice>
+
+      <!-- Power Crystal Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='tralchPowerCrystalDist' default='StratumClouds' displayState=':= if(?enableTransAlch, "shown", "hidden")' displayGroup='groupTransAlch'>
+          <Description> Controls how Power Crystal is generated </Description>
+          <DisplayName>Transmutation Alchemy Power Crystal</DisplayName>
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:power_crystal_ore")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+		  
+		  <IfCondition condition=':= (?blockExists("transmutationalchemy:power_crystal_ore")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:power_crystal_ore")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:power_crystal_ore")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Power Crystal is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='tralchPowerCrystalFreq' default='1'  min='0' max='5' displayState=':= if(?enableTransAlch, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTransAlch'>
+          <Description> Frequency multiplier for Transmutation Alchemy Power Crystal distributions </Description>
+          <DisplayName>Transmutation Alchemy Power Crystal Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='tralchPowerCrystalSize' default='1'  min='0' max='5' displayState=':= if(?enableTransAlch, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTransAlch'>
+          <Description> Size multiplier for Transmutation Alchemy Power Crystal distributions </Description>
+          <DisplayName>Transmutation Alchemy Power Crystal Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Power Crystal Configuration UI Complete -->
+
+      <!-- Protection Crystal Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='tralchProtectionCrystalDist' default='StratumClouds' displayState=':= if(?enableTransAlch, "shown", "hidden")' displayGroup='groupTransAlch'>
+          <Description> Controls how Protection Crystal is generated </Description>
+          <DisplayName>Transmutation Alchemy Protection Crystal</DisplayName>
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:protection_crystal_ore")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+		  
+		  <IfCondition condition=':= (?blockExists("transmutationalchemy:protection_crystal_ore")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:protection_crystal_ore")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:protection_crystal_ore")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Protection Crystal is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='tralchProtectionCrystalFreq' default='1'  min='0' max='5' displayState=':= if(?enableTransAlch, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTransAlch'>
+          <Description> Frequency multiplier for Transmutation Alchemy Protection Crystal distributions </Description>
+          <DisplayName>Transmutation Alchemy Protection Crystal Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='tralchProtectionCrystalSize' default='1'  min='0' max='5' displayState=':= if(?enableTransAlch, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTransAlch'>
+          <Description> Size multiplier for Transmutation Alchemy Protection Crystal distributions </Description>
+          <DisplayName>Transmutation Alchemy Protection Crystal Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Protection Crystal Configuration UI Complete -->
+	  
+	  <!-- Mind Crystal Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='tralchMindCrystalDist' default='StratumClouds' displayState=':= if(?enableTransAlch, "shown", "hidden")' displayGroup='groupTransAlch'>
+          <Description> Controls how Mind Crystal is generated </Description>
+          <DisplayName>Transmutation Alchemy Mind Crystal</DisplayName>
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:mind_crystal_ore")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+		  
+		  <IfCondition condition=':= (?blockExists("transmutationalchemy:mind_crystal_ore")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:mind_crystal_ore")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("transmutationalchemy:mind_crystal_ore")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mind Crystal is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='tralchMindCrystalFreq' default='1'  min='0' max='5' displayState=':= if(?enableTransAlch, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTransAlch'>
+          <Description> Frequency multiplier for Transmutation Alchemy Mind Crystal distributions </Description>
+          <DisplayName>Transmutation Alchemy Mind Crystal Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='tralchMindCrystalSize' default='1'  min='0' max='5' displayState=':= if(?enableTransAlch, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTransAlch'>
+          <Description> Size multiplier for Transmutation Alchemy Mind Crystal distributions </Description>
+          <DisplayName>Transmutation Alchemy Mind Crystal Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mind Crystal Configuration UI Complete -->
+	  
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableTransAlch'>
+
+
+
+
+      <!-- Overworld Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>
+
+        <!-- Starting Original "Overworld" Block Removal -->
+
+        <IfCondition condition=':= ?cleanUpTransAlch'>
+          <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+            <Substitute name='tralchOverworldBlockSubstitute0' block='minecraft:stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='transmutationalchemy:power_crystal_ore' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+
+        <!-- Original "Overworld" Block Removal Complete -->
+
+        <!-- Starting Original "Nether" Block Removal -->
+      <IfCondition condition=':= dimension = "the_nether"'>
+			<IfCondition condition=':= ?cleanUpTransAlch'>
+				<IfCondition condition=':= ?blockExists("minecraft:netherrack")'>
+					<Substitute name='tralchNetherBlockSubstitute0' block='minecraft:netherrack'>
+						<Description>
+						Replace vanilla-generated ore clusters.
+						</Description>
+						<Comment>
+						The global option  deferredPopulationRange must be
+						large enough to catch all ore  clusters (>= 32).
+						</Comment>
+						<Replaces block='transmutationalchemy:protetion_crystal_ore' weight='1.0' />
+					</Substitute>
+				</IfCondition>
+			</IfCondition>
+	   </IfCondition>
+        <!-- Original "Nether" Block Removal Complete -->
+
+        <!-- Starting Original "End" Block Removal -->
+		
+      <IfCondition condition=':= dimension = "the_end"'>
+        <IfCondition condition=':= ?cleanUpTransAlch'>
+          <IfCondition condition=':= ?blockExists("minecraft:end_stone")'>
+            <Substitute name='tralchEndBlockSubstitute0' block='minecraft:end_stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='transmutationalchemy:mind_crystal_ore' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+	  </IfCondition>
+
+        <!-- Original "End" Block Removal Complete -->
+		
+
+        <!-- Adding blocks -->
+
+        <!-- Begin Power Crystal Generation -->
+
+        <!-- Starting StratumClouds Preset for Power Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchPowerCrystalDist = "StratumClouds"'>
+            <Cloud name='tralchPowerCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='transmutationalchemy:power_crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * tralchPowerCrystalSize ' range=':= 1.252 * _default_ * tralchPowerCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * tralchPowerCrystalSize ' range=':= 1.252 * _default_ * tralchPowerCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * tralchPowerCrystalFreq ' range=':= 2.567 * _default_ * tralchPowerCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Power Crystal is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Power Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchPowerCrystalDist = "SparseVeins"'>
+            <Veins name='tralchPowerCrystalVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='transmutationalchemy:power_crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
+              <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * tralchPowerCrystalFreq ' range=':= 2.599 * _default_ * tralchPowerCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * tralchPowerCrystalSize ' range=':= 0 * _default_ * tralchPowerCrystalSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.612 * _default_ ' range=':= 1.612 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * tralchPowerCrystalSize ' range=':= _default_ * tralchPowerCrystalSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.270 * _default_ * tralchPowerCrystalSize ' range=':= 1.270 * _default_ * tralchPowerCrystalSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Power Crystal is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Power Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchPowerCrystalDist = "StrategicClouds"'>
+            <Cloud name='tralchPowerCrystalCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='transmutationalchemy:power_crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
+              <Setting name='CloudRadius' avg=':= 1.101 * _default_ * tralchPowerCrystalSize ' range=':= 1.101 * _default_ * tralchPowerCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.101 * _default_ * tralchPowerCrystalSize ' range=':= 1.101 * _default_ * tralchPowerCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.212 * _default_ * tralchPowerCrystalFreq ' range=':= 1.212 * _default_ * tralchPowerCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='tralchPowerCrystalHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='transmutationalchemy:power_crystal_ore' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * tralchPowerCrystalFreq  * 0.1 ' range=':= 2.599 * _default_ * tralchPowerCrystalFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Power Crystal is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Power Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchPowerCrystalDist = "Vanilla"'>
+            <StandardGen name='tralchPowerCrystalStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='transmutationalchemy:power_crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='shield' />
+              <Biome name='ice_flats' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_taiga' />
+              <Biome name='maple_woods' />
+              <Biome name='seasonal_forest' />
+              <Biome name='snowy_forest' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills' />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='mutated_ice_flats' />
+              <Setting name='Size' avg=':= 24.0 * oreSize * tralchPowerCrystalSize ' range=':= 12.0 * oreSize * tralchPowerCrystalSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 0.667 * oreFreq * tralchPowerCrystalFreq ' range=':= 0.33 * oreFreq * tralchPowerCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Power Crystal is complete. -->
+
+        <!-- End Power Crystal Generation -->
+
+
+        <!-- Begin Protection Crystal Generation -->
+
+      <IfCondition condition=':= dimension = "the_nether"'>
+        <!-- Starting StratumClouds Preset for Protection Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchProtectionCrystalDist = "StratumClouds"'>
+            <Cloud name='tralchProtectionCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='transmutationalchemy:protection_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:netherrack' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * tralchProtectionCrystalSize ' range=':= 1.252 * _default_ * tralchProtectionCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * tralchProtectionCrystalSize ' range=':= 1.252 * _default_ * tralchProtectionCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * tralchProtectionCrystalFreq ' range=':= 2.567 * _default_ * tralchProtectionCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Protection Crystal is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Protection Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchProtectionCrystalDist = "SparseVeins"'>
+            <Veins name='tralchProtectionCrystalVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='transmutationalchemy:protection_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:netherrack' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * tralchProtectionCrystalFreq ' range=':= 2.599 * _default_ * tralchProtectionCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * tralchProtectionCrystalSize ' range=':= 0 * _default_ * tralchProtectionCrystalSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.612 * _default_ ' range=':= 1.612 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * tralchProtectionCrystalSize ' range=':= _default_ * tralchProtectionCrystalSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.270 * _default_ * tralchProtectionCrystalSize ' range=':= 1.270 * _default_ * tralchProtectionCrystalSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Protection Crystal is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Protection Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchProtectionCrystalDist = "StrategicClouds"'>
+            <Cloud name='tralchProtectionCrystalCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='transmutationalchemy:protection_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:netherrack' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.101 * _default_ * tralchProtectionCrystalSize ' range=':= 1.101 * _default_ * tralchProtectionCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.101 * _default_ * tralchProtectionCrystalSize ' range=':= 1.101 * _default_ * tralchProtectionCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.212 * _default_ * tralchProtectionCrystalFreq ' range=':= 1.212 * _default_ * tralchProtectionCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='tralchProtectionCrystalHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='transmutationalchemy:protection_crystal_ore' weight='1.0' />
+                <ReplacesOre block='minecraft:netherrack' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * tralchProtectionCrystalFreq  * 0.1 ' range=':= 2.599 * _default_ * tralchProtectionCrystalFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Protection Crystal is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Protection Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchProtectionCrystalDist = "Vanilla"'>
+            <StandardGen name='tralchProtectionCrystalStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='transmutationalchemy:protection_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:netherrack' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 24.0 * oreSize * tralchProtectionCrystalSize ' range=':= 12.0 * oreSize * tralchProtectionCrystalSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 0.667 * oreFreq * tralchProtectionCrystalFreq ' range=':= 0.33 * oreFreq * tralchProtectionCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Protection Crystal is complete. -->
+	  </IfCondition>
+	  
+        <!-- End Protection Crystal Generation -->
+
+
+        <!-- Begin Mind Crystal Generation -->
+
+      <IfCondition condition=':= dimension = "the_end"'>
+        <!-- Starting StratumClouds Preset for Mind Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchMindCrystalDist = "StratumClouds"'>
+            <Cloud name='tralchMindCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='transmutationalchemy:mind_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:end_stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * tralchMindCrystalSize ' range=':= 1.252 * _default_ * tralchMindCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * tralchMindCrystalSize ' range=':= 1.252 * _default_ * tralchMindCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * tralchMindCrystalFreq ' range=':= 2.567 * _default_ * tralchMindCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Mind Crystal is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Mind Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchMindCrystalDist = "SparseVeins"'>
+            <Veins name='tralchMindCrystalVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='transmutationalchemy:mind_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:end_stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * tralchMindCrystalFreq ' range=':= 2.599 * _default_ * tralchMindCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * tralchMindCrystalSize ' range=':= 0 * _default_ * tralchMindCrystalSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.612 * _default_ ' range=':= 1.612 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * tralchMindCrystalSize ' range=':= _default_ * tralchMindCrystalSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.270 * _default_ * tralchMindCrystalSize ' range=':= 1.270 * _default_ * tralchMindCrystalSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Mind Crystal is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mind Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchMindCrystalDist = "StrategicClouds"'>
+            <Cloud name='tralchMindCrystalCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='transmutationalchemy:mind_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:end_stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.101 * _default_ * tralchMindCrystalSize ' range=':= 1.101 * _default_ * tralchMindCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.101 * _default_ * tralchMindCrystalSize ' range=':= 1.101 * _default_ * tralchMindCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.212 * _default_ * tralchMindCrystalFreq ' range=':= 1.212 * _default_ * tralchMindCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='tralchMindCrystalHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='transmutationalchemy:mind_crystal_ore' weight='1.0' />
+                <ReplacesOre block='minecraft:end_stone' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * tralchMindCrystalFreq  * 0.1 ' range=':= 2.599 * _default_ * tralchMindCrystalFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mind Crystal is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mind Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= tralchMindCrystalDist = "Vanilla"'>
+            <StandardGen name='tralchMindCrystalStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='transmutationalchemy:mind_crystal_ore' weight='1.0' />
+              <ReplacesOre block='minecraft:end_stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 24.0 * oreSize * tralchMindCrystalSize ' range=':= 12.0 * oreSize * tralchMindCrystalSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 0.667 * oreFreq * tralchMindCrystalFreq ' range=':= 0.33 * oreFreq * tralchMindCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mind Crystal is complete. -->
+	  </IfCondition>
+	  
+        <!-- End Protection Crystal Generation -->
+		
+        <!-- Finished adding blocks -->
+
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Transmutation Alchemy" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

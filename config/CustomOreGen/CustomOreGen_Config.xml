@@ -421,7 +421,7 @@
     <OptionalImport file='modules/custom/BiomesOPlenty.xml'/>
 	<OptionalImport file='modules/custom/Thaumcraft6.xml'/>
 	<OptionalImport file='modules/custom/EmbersRekindled.xml'/>
-	<OptionalImport file='modules/custom/Bewitchment.xml'/>
+	<OptionalImport file='modules/custom/TransmutationAlchemy.xml'/>
 		
     <!--*************************   Testing & Debugging   *********************
     *   I use this section for quick-and-dirty experiments
