@@ -1,0 +1,13 @@
+{
+  "playerReviveTime": 120,
+  "playerReviveSurviveTime": 1800,
+  "playerHealthAfter": 2,
+  "playerFoodAfter": 6,
+  "banPlayerAfterDeath": false,
+  "exhaustion": 0.5,
+  "disableSounds": true,
+  "disableBleedingMessage": false,
+  "disableGiveUp": false,
+  "disableDisconnect": true,
+  "allowCommandsWhileBleeding": false
+}
