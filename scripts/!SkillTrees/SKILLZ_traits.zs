@@ -729,7 +729,7 @@ var skillz9req = [
 	<engineersdecor:sign_hotwire>,
 	<engineersdecor:steel_mesh_fence>,
 	<engineerstools:stimpack>,
-	<forge:bucketfilled>,
+	<forge:bucketfilled>.withTag({FluidName: "concrete_white", Amount: 1000}),
 	<immersiveengineering:cloth_device>,
 	<immersiveengineering:metal_decoration2:5>,
 	<immersiveengineering:metal_device1:8>,
