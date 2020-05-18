@@ -2,7 +2,7 @@
 	{
 		"name": "bawls",
 		"localName": "BAWLS",
-		"background": "emerald_block"
+		"background": "emerald_ore"
 	},
 	{
 		"name": "grayce",
@@ -12,6 +12,6 @@
 	{
 		"name": "skillz",
 		"localName": "SKILLZ",
-		"background": "iron_block"
+		"background": "brick"
 	}
 ]

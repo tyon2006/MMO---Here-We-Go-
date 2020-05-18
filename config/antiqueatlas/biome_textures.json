@@ -94,6 +94,7 @@
     "erebus:volcanic_desert": "PLAINS",
     "fossil:lair of darkness": "PLAINS",
     "fossil:treasure": "PLAINS",
+    "fossil:volcano": "DESERT",
     "iceandfire:glacier": "SNOW",
     "midnight:black_ridge": "PLAINS",
     "midnight:crystal_spires": "PLAINS",
@@ -184,8 +185,6 @@
     "thaumicaugmentation:tainted_lands": "PLAINS",
     "thejungle:jungle_mountain": "JUNGLE_CLIFFS",
     "thejungle:lost_world": "JUNGLE",
-    "thejungle:mangled_swamp": "SWAMP",
-	"stygian:acidic_plains": "CAVE_WALLS",
-	"stygian:stygian_growth": "PLAINS"
+    "thejungle:mangled_swamp": "SWAMP"
   }
 }

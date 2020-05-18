@@ -1,0 +1,6 @@
+
+{
+  "Name": "slime_slug",
+  "Registry ID": "beasts:slime_slug",
+  "Class": "random.beasts.common.entity.passive.EntitySlimeSlug"
+}
