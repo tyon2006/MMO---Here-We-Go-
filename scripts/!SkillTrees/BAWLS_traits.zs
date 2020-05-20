@@ -37,6 +37,7 @@ var bawls20 = mods.compatskills.TraitCreator.createTrait("bawls20", 4, 3, "extra
 
 var bawls1req = [
 
+	<embers:mech_core:*>,
 	<embers:item_pump:*>,
 	<embers:item_pipe:*>,
 	<embers:pump:*>,
@@ -53,7 +54,6 @@ var bawls1req = [
 	<soot:sealed_tile_slab:*>,
 	<embers:bin:*>,
 	<soot:sealed_tile_stairs:*>,
-	<embers:anti_tinker_lens:*>,
 	<embers:pipe:*>,
 	<embers:block_lantern:*>,
 	<embers:ember_activator:*>,
@@ -898,6 +898,7 @@ var bawls8req = [
 	<bountifulbaubles:trinketobsidianskull:*>,
 	<bountifulbaubles:trinketshulkerheart:*>,
 	<bountifulbaubles:trinketvitamins:*>,
+	<embers:anti_tinker_lens:*>,
 	<embers:ashen_amulet:*>,
 	<embers:dawnstone_mail:*>,
 	<embers:ember_amulet:*>,
@@ -996,7 +997,6 @@ var bawls10req = [
 	<embers:item_dropper:*>,
 	<embers:item_transfer:*>,
 	<embers:mech_actuator:*>,
-	<embers:mech_core:*>,
 	<embers:mechanical_pump:*>,
 	<embers:mini_boiler:*>,
 	<embers:stamp_gear:*>,
