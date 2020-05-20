@@ -99,7 +99,7 @@ mods.inspirations.Cauldron.addBrewingRecipe("potioncore:dispel", "minecraft:awkw
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:return_normal", "minecraft:awkward", <biomesoplenty:flower_1:3>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("cyclicmagic:swim", "minecraft:awkward", <biomesoplenty:coral:3>);
-mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_reach", "cyclicmagic:swim", <quark:glowshroom>);
+mods.inspirations.Cauldron.addBrewingRecipe("potioncore:swim2", "cyclicmagic:swim", <quark:glowshroom>);
 
 //lawl
 <minecraft:potion>.withTag({Potion: "potioncore:love"}).displayName = "Love Potion #9";
