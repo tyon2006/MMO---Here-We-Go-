@@ -106,9 +106,9 @@ mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_saturation", "pot
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:cure", "minecraft:awkward", <biomesoplenty:flower_0:6>);
 
-mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:leach_normal", "minecraft:awkward", <biomesoplenty:flower_0:8>);
-mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:leach_strong", "extraalchemy:leach_normal", <quark:glowshroom>);
-mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:leach_long", "extraalchemy:leach_normal", <transmutationalchemy:crystal_void>);
+mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:leech_normal", "minecraft:awkward", <biomesoplenty:flower_0:8>);
+mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:leech_strong", "extraalchemy:leech_normal", <quark:glowshroom>);
+mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:leech_long", "extraalchemy:leech_normal", <transmutationalchemy:crystal_void>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:chance", "minecraft:awkward", <nyx:comet_shard>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_chance", "potioncore:chance", <quark:glowshroom>);
@@ -156,13 +156,13 @@ mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_blindness", "potion
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:weight", "minecraft:awkward", <ore:ingotLead>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_weight", "potioncore:weight", <quark:glowshroom>);
-mods.inspirations.Cauldron.addBrewingRecipe("epotioncore:long_weight", "potioncore:weight", <transmutationalchemy:crystal_void>);
+mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_weight", "potioncore:weight", <transmutationalchemy:crystal_void>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:broken_magic_shield", "potioncore:magic_shield", <quark:glass_shards>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_broken_magic_shield", "potioncore:magic_shield", <quark:glowshroom>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_broken_magic_shield", "potioncore:strong_magic_shield", <quark:glass_shards>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_broken_magic_shield", "potioncore:magic_shield", <transmutationalchemy:crystal_void>);
-mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_broken_magic_shield", "potioncore:long_broken_magic_shield, <quark:glass_shards>);
+mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_broken_magic_shield", "potioncore:long_broken_magic_shield", <quark:glass_shards>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:magic_shield", "minecraft:awkward", <ebwizardry:crystal_flower>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_magic_shield", "potioncore:magic_shield", <quark:glowshroom>);
@@ -170,13 +170,13 @@ mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_magic_shield", "pot
 
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_normal", "extraalchemy:combustion_normal", <minecraft:string>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_strong", "extraalchemy:fuse_normal", <quark:glowshroom>);
-mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_long", "extraalchemy:fuse_normal", <transmutationalchemy:crystal_void>);
+mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_quick", "extraalchemy:fuse_normal", <transmutationalchemy:crystal_void>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_strong", "extraalchemy:combustion_strong", <minecraft:string>);
-mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_long", "extraalchemy:combustion_long", <minecraft:string>);
+mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:fuse_quick", "extraalchemy:combustion_long", <minecraft:string>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:health_boost", "minecraft:awkward", <biomesoplenty:flower_0:11>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_health_boost", "potioncore:health_boost", <quark:glowshroom>);
-mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_heath_boost", "potioncore:health_boost", <transmutationalchemy:crystal_void>);
+mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_health_boost", "potioncore:health_boost", <transmutationalchemy:crystal_void>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:climb", "minecraft:awkward", <primitivemobs:spider_egg>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_climb", "potioncore:climb", <transmutationalchemy:crystal_void>);
@@ -198,7 +198,7 @@ mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:hurry_normal", "charm:
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:hurry_strong", "extraalchemy:hurry_normal", <quark:glowshroom>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:hurry_long", "extraalchemy:hurry_normal", <transmutationalchemy:crystal_void>);
 
-mods.inspirations.Cauldron.addBrewingRecipe("potioncore:launch", "minecraft:awkward", <minecraft:fireworks>.*);
+mods.inspirations.Cauldron.addBrewingRecipe("potioncore:launch", "minecraft:awkward", <minecraft:fireworks>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_launch", "potioncore:launch", <quark:glowshroom>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:invert", "minecraft:awkward", <charm:endermite_powder>);
@@ -241,7 +241,7 @@ mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_levitation", "ext
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_levitation", "extraalchemy:dislocation_long", <stygian:endglow>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("xat:fairy", "extraalchemy:reincarnation_normal", <iceandfire:jar_pixie:1>);
-mods.inspirations.Cauldron.addBrewingRecipe("xat:fairy_extended", "xat:fairy", <quark:glowshroom>);
+mods.inspirations.Cauldron.addBrewingRecipe("xat:extended_fairy", "xat:fairy", <quark:glowshroom>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:dislocation_normal", "minecraft:awkward", <minecraft:chorus_fruit>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:dislocation_strong", "extraalchemy:dislocation_normal", <quark:glowshroom>);
