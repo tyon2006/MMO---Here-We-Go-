@@ -30,8 +30,6 @@ rh(<rats:rat_upgrade_ratinator>);
 rh(<rats:arcane_technology>);
 rh(<rats:rat_upgrade_nonbeliever>);
 
-
-
 recipes.removeShapeless(<minecraft:glowstone>, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>]);
 recipes.removeShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null],[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null], [null, null, null]]);
 
@@ -48,12 +46,8 @@ recipes.addShapeless("biomesoplenty_terrestrial_artifact", <biomesoplenty:terres
 //add aspects
 mods.embers.Alchemy.addAspect("ale", <soot:mug>.withTag({Fluid: {FluidName: "dwarven_ale", Amount: 250}}));
 
-//replace extra alchemy rings
-recipes.remove(<extraalchemy:empty_ring>);
-mods.embers.Stamper.add(<thaumcraft:baubles:1>, <liquid:dawnstone>*72, <minecraft:apple>, <embers:ember_cluster>);
+//TO REMOVE
 mods.embers.Alchemy.add(<extraalchemy:empty_ring>, [null,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>],{"iron": 12 to 16,"ale": 12 to 16});
-mods.embers.DawnstoneAnvil.add([<extraalchemy:empty_ring>], <embers:ember_ring>, <minecraft:glass_bottle>);
-
 
 recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}));
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}), [<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}),<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<biomesoplenty:terrestrial_artifact>,<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<embers:dust_ember>],{"iron":14 to 14});
@@ -81,15 +75,6 @@ mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:s
 
 //fuse experiment
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "extraalchemy:fuse_normal"}), [<extraalchemy:empty_ring>,<minecraft:potion>.withTag({Potion:"extraalchemy:fuse_normal"}),<ore:gemRuby>,<minecraft:potion>.withTag({Potion: "extraalchemy:fuse_normal"}),<embers:dust_ember>],{"iron":14 to 14});
-
-//TRANSMUTATION ALCHEMY
-
-rh(<transmutationalchemy:ash_dust>);
-
-mods.transmutationalchemy.mixer.removeRecipe(<transmutationalchemy:magical_dust>);
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 1, <transmutationalchemy:crystal_power> * 1],  1, true );
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 1, <transmutationalchemy:unknown_semifinished> * 1],  1, true );
-mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember> * 1, <transmutationalchemy:unknown_mixture> * 1],  1, true );
 
 
 

@@ -836,7 +836,8 @@ var bawls6req = [
 	<embers:heat_coil:*>,
 	<embers:inferno_forge:*>,
 	<embers:jet_augment:*>,
-	<embers:resonating_bell:*>
+	<embers:resonating_bell:*>,
+	<thejungle:golden_crab_meat>
 
 ] as IItemStack[];
 
@@ -870,8 +871,7 @@ var bawls7req = [
 	<embers:seed_silver:*>,
 	<embers:seed_tin:*>,
 	<embers:tyrfing:*>,
-	<embers:wildfire_core:*>,
-	<thejungle:golden_crab_meat>
+	<embers:wildfire_core:*>
 
 ] as IItemStack[];
 
@@ -885,6 +885,7 @@ for item in bawls7req {
 
 var bawls8req = [
 
+	<bountifulbaubles:amuletsinempty:*>,
 	<bountifulbaubles:amuletcross:*>,
 	<bountifulbaubles:crowngold:*>,
 	<bountifulbaubles:phantomprism:*>,
@@ -913,7 +914,6 @@ var bawls8req = [
 	<grimoireofgaia:accessory_trinket_water_breathing:*>,
 	<grimoireofgaia:accessory_trinket_wither:*>,
 	<mod_lavacow:halo_necklace:*>,
-	<randomthings:portablesounddampener:*>,
 	<xat:polarized_stone:*>,
 	<xat:sea_stone:*>
 	
@@ -1540,7 +1540,6 @@ for item in bawls17req {
 
 var bawls18req = [
 
-	<bountifulbaubles:amuletsinempty:*>,
 	<bountifulbaubles:amuletsingluttony:*>,
 	<bountifulbaubles:amuletsinpride:*>,
 	<bountifulbaubles:amuletsinwrath:*>,

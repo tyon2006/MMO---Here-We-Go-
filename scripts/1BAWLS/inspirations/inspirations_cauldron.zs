@@ -261,7 +261,6 @@ mods.inspirations.Cauldron.addBrewingRecipe("minecraft:regeneration", "minecraft
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:strong_regeneration", "minecraft:regeneration", <quark:glowshroom>);
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:long_regeneration", "minecraft:regeneration", <transmutationalchemy:crystal_void>);
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:strong_regeneration", "minecraft:strong_healing", <ore:bone>);
-mods.inspirations.Cauldron.addBrewingRecipe("minecraft:long_regeneration", "minecraft:long_healing", <ore:bone>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:archery", "minecraft:awkward", <ore:itemArrow>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:strong_archery", "potioncore:archery", <quark:glowshroom>);
