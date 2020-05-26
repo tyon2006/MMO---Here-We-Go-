@@ -47,7 +47,7 @@ recipes.addShapeless("biomesoplenty_terrestrial_artifact", <biomesoplenty:terres
 mods.embers.Alchemy.addAspect("ale", <soot:mug>.withTag({Fluid: {FluidName: "dwarven_ale", Amount: 250}}));
 
 //TO REMOVE
-mods.embers.Alchemy.add(<extraalchemy:empty_ring>, [null,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>],{"iron": 12 to 16,"ale": 12 to 16});
+//mods.embers.Alchemy.add(<extraalchemy:empty_ring>, [null,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>,<ore:nuggetDawnstone>],{"iron": 12 to 16,"ale": 12 to 16});
 
 recipes.remove(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}));
 mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:strong_leaping"}), [<extraalchemy:potion_ring>.withTag({Potion: "minecraft:leaping"}),<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<biomesoplenty:terrestrial_artifact>,<minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"}),<embers:dust_ember>],{"iron":14 to 14});

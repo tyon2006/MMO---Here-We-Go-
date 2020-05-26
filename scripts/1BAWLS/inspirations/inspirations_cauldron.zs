@@ -22,7 +22,7 @@ recipes.addShapeless(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), 
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:learning_normal", "minecraft:awkward", <thaumcraft:brain>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:learning_strong", "extraalchemy:learning_normal", <quark:glowshroom>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:learning_long", "extraalchemy:learning_normal", <transmutationalchemy:crystal_void>);
-//and down to the friction on
+//and down to get the friction on
 
 mods.inspirations.Cauldron.addBrewingRecipe("cyclicmagic:ender", "minecraft:awkward", <minecraft:ender_pearl>);
 
