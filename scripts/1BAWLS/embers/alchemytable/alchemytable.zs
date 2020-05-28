@@ -7,5 +7,4 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
 
-
 <bountifulbaubles:trinketobsidianskull>.displayName = "Obsidian Skull Charm";
