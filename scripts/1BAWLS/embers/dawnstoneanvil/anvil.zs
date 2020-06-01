@@ -29,16 +29,10 @@ rh(<bountifulbaubles:amuletsinempty>);
 
 mods.embers.DawnstoneAnvil.add([<thaumcraft:baubles:1>], <embers:ingot_dawnstone>, null);
 
-<minecraft:stick>.addTooltip(format.darkPurple("Second tooltip, purple."));
-<minecraft:stick>.addShiftTooltip(("Shift tooltip, no format."));
-<minecraft:stick>.addShiftTooltip(format.strikethrough("Shifttooltip, strikethrough."));
-<minecraft:stick>.addTooltip(format.darkAqua("BAWLS BASHERS"));
-
 <baubles:ring>.displayName = "Enchanted Ring";
-<baubles:ring>.addTooltip("A ring with magical properties. Often used as a base crafting material for more powerful rings. Provides a Strength buff when worn.");
-
-//<baubles:ring>.addShiftTooltip(format.italic("Tooltip with shift."));
 <thaumcraft:baubles:1>.addTooltip("A ring with no effect. Often used as a base crafting material for more powerful rings.");
+<baubles:ring>.addTooltip("A ring with magical properties. Often used as a base crafting material for more powerful rings. Provides a Haste buff when worn.");
+
 
 recipes.removeByRecipeName("embers:ember_ring");
 mods.embers.DawnstoneAnvil.add([<embers:ember_ring>], <thaumcraft:baubles:1>, <embers:ember_cluster>);

@@ -5,24 +5,44 @@ import mods.compatskills.Requirement.addRequirement;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
+var skillz1tooltip = "Essentials of Engineering";
+var skillz2tooltip = "Armaments";
+var skillz3tooltip = "Construction Permits";
+var skillz4tooltip = "Logistics I";
+var skillz5tooltip = "Installations and Machinery Maintenance";
 var skillz1 = mods.compatskills.TraitCreator.createTrait("skillz1", 0, 0, "extraskills:skillz", 5, "extraskills:skillz|5");
 var skillz2 = mods.compatskills.TraitCreator.createTrait("skillz2", 1, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
 var skillz3 = mods.compatskills.TraitCreator.createTrait("skillz3", 2, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
 var skillz4 = mods.compatskills.TraitCreator.createTrait("skillz4", 3, 0, "extraskills:skillz", 2, "trait|compatskills:skillz1");
 var skillz5 = mods.compatskills.TraitCreator.createTrait("skillz5", 4, 0, "extraskills:skillz", 2, "trait|compatskills:skillz1");
 
+var skillz6tooltip = "Light Machinery and Equipment";
+var skillz7tooltip = "Red Circuitry I";
+var skillz8tooltip = "Archaeological Experimentation";
+var skillz9tooltip = "Safety and Security Systems";
+var skillz10tooltip = "Ballistics and Explosives I";
 var skillz6 = mods.compatskills.TraitCreator.createTrait("skillz6", 0, 1, "extraskills:skillz", 4, "and|[extraskills:skillz|11]~[trait|compatskills:skillz1]");
 var skillz7 = mods.compatskills.TraitCreator.createTrait("skillz7", 1, 1, "extraskills:skillz", 1, "trait|compatskills:skillz6");
 var skillz8 = mods.compatskills.TraitCreator.createTrait("skillz8", 2, 1, "extraskills:skillz", 2, "trait|compatskills:skillz6");
 var skillz9 = mods.compatskills.TraitCreator.createTrait("skillz9", 3, 1, "extraskills:skillz", 1, "trait|compatskills:skillz6");
 var skillz10 = mods.compatskills.TraitCreator.createTrait("skillz10", 4, 1, "extraskills:skillz", 2, "trait|compatskills:skillz6");
 
+var skillz11tooltip = "Heavy Machinery and Equipment";
+var skillz12tooltip = "Red Circuitry II";
+var skillz13tooltip = "Bio-Mechanics I";
+var skillz14tooltip = "Logistics II";
+var skillz15tooltip = "Ballistics and Explosives II";
 var skillz11 = mods.compatskills.TraitCreator.createTrait("skillz11", 0, 2, "extraskills:skillz", 4, "and|[extraskills:skillz|21]~[trait|compatskills:skillz6]");
 var skillz12 = mods.compatskills.TraitCreator.createTrait("skillz12", 1, 2, "extraskills:skillz", 1, "and|[trait|compatskills:skillz11]~[trait|compatskills:skillz7]");
 var skillz13 = mods.compatskills.TraitCreator.createTrait("skillz13", 2, 2, "extraskills:skillz", 2, "and|[trait|compatskills:skillz11]~[trait|compatskills:skillz8]");
 var skillz14 = mods.compatskills.TraitCreator.createTrait("skillz14", 3, 2, "extraskills:skillz", 1, "and|[trait|compatskills:skillz11]~[trait|compatskills:skillz4]");
 var skillz15 = mods.compatskills.TraitCreator.createTrait("skillz15", 4, 2, "extraskills:skillz", 2, "and|[trait|compatskills:skillz11]~[trait|compatskills:skillz10]");
 
+var skillz16tooltip = "Core-Tapping";
+var skillz17tooltip = "Skyward";
+var skillz18tooltip = "Bio-Mechanics II";
+var skillz19tooltip = "Advanced Assembly";
+var skillz20tooltip = "PERFECTED!";
 var skillz16 = mods.compatskills.TraitCreator.createTrait("skillz16", 0, 3, "extraskills:skillz", 4, "and|[extraskills:skillz|31]~[trait|compatskills:skillz11]");
 var skillz17 = mods.compatskills.TraitCreator.createTrait("skillz17", 1, 3, "extraskills:skillz", 1, "trait|compatskills:skillz16");
 var skillz18 = mods.compatskills.TraitCreator.createTrait("skillz18", 2, 3, "extraskills:skillz", 1, "and|[trait|compatskills:skillz16]~[trait|compatskills:skillz13]");
@@ -38,7 +58,6 @@ var skillz20 = mods.compatskills.TraitCreator.createTrait("skillz20", 4, 3, "ext
 
 var skillz1req = [
 		
-	
 	<cyclicmagic:carbon_paper>,
 	<cyclicmagic:tool_rotate>,
 	<engineersdecor:small_lab_furnace>,
@@ -93,6 +112,7 @@ var skillz1req = [
 
 for item in skillz1req {
 	addRequirement(item, "trait|compatskills:skillz1");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz1tooltip));
 }
 
 //**************************************
@@ -278,6 +298,7 @@ var skillz2req = [
 
 for item in skillz2req {
 	addRequirement(item, "trait|compatskills:skillz2");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz2tooltip));
 }
 
 //**************************************
@@ -461,6 +482,7 @@ var skillz3req = [
 
 for item in skillz3req {
 	addRequirement(item, "trait|compatskills:skillz3");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz3tooltip));
 }
 
 //**************************************
@@ -494,7 +516,8 @@ var skillz4req = [
 
 for item in skillz4req {
 	addRequirement(item, "trait|compatskills:skillz4");
-	}
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz4tooltip));
+}
 
 //**************************************
 //							SKILLZ 5
@@ -543,6 +566,7 @@ var skillz5req = [
 
 for item in skillz5req {
 	addRequirement(item, "trait|compatskills:skillz5");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz5tooltip));
 }
 
 //**************************************
@@ -609,6 +633,7 @@ var skillz6req = [
 
 for item in skillz6req {
 	addRequirement(item, "trait|compatskills:skillz6");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz6tooltip));
 }
 
 //**************************************
@@ -663,6 +688,7 @@ var skillz7req = [
 
 for item in skillz7req {
 	addRequirement(item, "trait|compatskills:skillz7");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz7tooltip));
 }
 
 //**************************************
@@ -707,7 +733,10 @@ var skillz8req = [
 ] as IItemStack[];
 
 for item in skillz8req {
-		addRequirement(item, "or|[trait|compatskills:skillz8]~[or|[extraskills:bawls|20]~[extraskills:grayce|20]]");
+	addRequirement(item, "or|[trait|compatskills:skillz8]~[or|[extraskills:bawls|20]~[extraskills:grayce|20]]");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz8tooltip) + 
+	format.gray(" or ") + format.gold("15 in BAWLS") + 
+	format.gray(" or ") + format.lightPurple("15 in GRAYCE"));
 }
 
 //**************************************
@@ -792,6 +821,7 @@ var skillz9req = [
 
 for item in skillz9req {
 	addRequirement(item, "trait|compatskills:skillz9");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz9tooltip));
 }
 
 //**************************************
@@ -837,6 +867,7 @@ var skillz10req = [
 
 for item in skillz10req {
 	addRequirement(item, "trait|compatskills:skillz10");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz10tooltip));
 }
 
 //**************************************
@@ -881,6 +912,7 @@ var skillz11req = [
 
 for item in skillz11req {
 	addRequirement(item, "trait|compatskills:skillz11");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz11tooltip));
 }
 
 //**************************************
@@ -950,6 +982,7 @@ var skillz12req = [
 
 for item in skillz12req {
 	addRequirement(item, "trait|compatskills:skillz12");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz12tooltip));
 }
 
 //**************************************
@@ -991,6 +1024,7 @@ var skillz13req = [
 
 for item in skillz13req {
 	addRequirement(item, "trait|compatskills:skillz13");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz13tooltip));
 }
 
 //**************************************
@@ -1057,8 +1091,10 @@ var skillz14req = [
 
 for item in skillz14req {
 	addRequirement(item, "trait|compatskills:skillz14");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz14tooltip));
 }
 
+//not currently in use
 /*
 var skillz14cons = [
 
@@ -1080,7 +1116,6 @@ for item in skillz14cons {
 
 var skillz15req = [
 
-	
 	<cyclicmagic:dynamite_safe>,
 	<cyclicmagic:ender_lightning>.withTag({}),
 	<cyclicmagic:ender_tnt_4>,
@@ -1117,6 +1152,7 @@ var skillz15req = [
 for item in skillz15req {
 
 	addRequirement(item, "trait|compatskills:skillz15");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz15tooltip));
 	
 }
 
@@ -1138,6 +1174,7 @@ var skillz16req = [
 
 for item in skillz16req {
 	addRequirement(item, "trait|compatskills:skillz16");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz16tooltip));
 }
 
 //**************************************
@@ -1221,6 +1258,7 @@ var skillz17req = [
 
 for item in skillz17req {
 	addRequirement(item, "trait|compatskills:skillz17");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz17tooltip));
 }
 
 //**************************************
@@ -1237,6 +1275,7 @@ var skillz18req = [
 
 for item in skillz18req {
 	addRequirement(item, "trait|compatskills:skillz18");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz18tooltip));
 }
 
 //**************************************
@@ -1256,12 +1295,13 @@ var skillz19req = [
 
 for item in skillz19req {
 	addRequirement(item, "trait|compatskills:skillz19");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz18tooltip));
 }
 
 //**************************************
 //							SKILLZ 20
 //**************************************
-/*
+
 var skillz20req = [
 
 	<fossil:spinosaurus_egg>,
@@ -1281,5 +1321,6 @@ var skillz20req = [
 
 for item in skillz20req {
 	addRequirement(item, "trait|compatskills:skillz20");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz20tooltip));
 }
-*/
+

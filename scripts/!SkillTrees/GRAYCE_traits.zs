@@ -5,24 +5,44 @@ import mods.compatskills.Requirement.addRequirement;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
+var grayce1tooltip = "Fundamentals";
+var grayce2tooltip = "Instruments";
+var grayce3tooltip = "Thaumaturgic Architecture";
+var grayce4tooltip = "Principles of Praecantatio";
+var grayce5tooltip = "Resonance of Radiance";
 var grayce1 = mods.compatskills.TraitCreator.createTrait("grayce1", 0, 0, "extraskills:grayce", 5, "extraskills:grayce|5");
 var grayce2 = mods.compatskills.TraitCreator.createTrait("grayce2", 1, 0, "extraskills:grayce", 1, "trait|compatskills:grayce1");
 var grayce3 = mods.compatskills.TraitCreator.createTrait("grayce3", 2, 0, "extraskills:grayce", 1, "trait|compatskills:grayce1");
 var grayce4 = mods.compatskills.TraitCreator.createTrait("grayce4", 3, 0, "extraskills:grayce", 2, "trait|compatskills:grayce1");
 var grayce5 = mods.compatskills.TraitCreator.createTrait("grayce5", 4, 0, "extraskills:grayce", 2, "trait|compatskills:grayce1");
 
+var grayce6tooltip = "Initiations";
+var grayce7tooltip = "Crystal-Shaping";
+var grayce8tooltip = "Arcane Trinkets I";
+var grayce9tooltip = "Arcane Apparel";
+var grayce10tooltip = "Access Control";
 var grayce6 = mods.compatskills.TraitCreator.createTrait("grayce6", 0, 1, "extraskills:grayce", 4, "and|[extraskills:grayce|11]~[trait|compatskills:grayce1]");
 var grayce7 = mods.compatskills.TraitCreator.createTrait("grayce7", 1, 1, "extraskills:grayce", 1, "and|[trait|compatskills:grayce5]~[trait|compatskills:grayce6]");
 var grayce8 = mods.compatskills.TraitCreator.createTrait("grayce8", 2, 1, "extraskills:grayce", 2, "trait|compatskills:grayce6");
 var grayce9 = mods.compatskills.TraitCreator.createTrait("grayce9", 3, 1, "extraskills:grayce", 2, "and|[trait|compatskills:grayce4]~[trait|compatskills:grayce6]");
 var grayce10 = mods.compatskills.TraitCreator.createTrait("grayce10", 4, 1, "extraskills:grayce", 1, "and|[trait|compatskills:grayce5]~[trait|compatskills:grayce6]");
 
+var grayce11tooltip = "Practices";
+var grayce12tooltip = "The Art of Hoarding";
+var grayce13tooltip = "How to Raise your Dragon";
+var grayce14tooltip = "Greater Arcanabula I";
+var grayce15tooltip = "Ignite the Dragon Forge!";
 var grayce11 = mods.compatskills.TraitCreator.createTrait("grayce11", 0, 2, "extraskills:grayce", 4, "and|[extraskills:grayce|21]~[trait|compatskills:grayce6]");
 var grayce12 = mods.compatskills.TraitCreator.createTrait("grayce12", 1, 2, "extraskills:grayce", 1, "and|[trait|compatskills:grayce11]~[trait|compatskills:grayce7]");
 var grayce13 = mods.compatskills.TraitCreator.createTrait("grayce13", 2, 2, "extraskills:grayce", 2, "trait|compatskills:grayce11");
 var grayce14 = mods.compatskills.TraitCreator.createTrait("grayce14", 3, 2, "extraskills:grayce", 2, "and|[trait|compatskills:grayce11]~[trait|compatskills:grayce9]");
 var grayce15 = mods.compatskills.TraitCreator.createTrait("grayce15", 4, 2, "extraskills:grayce", 1, "and|[trait|compatskills:grayce11]~[trait|compatskills:grayce13]");
 
+var grayce16tooltip = "Masteries";
+var grayce17tooltip = "Chiaroscuro";
+var grayce18tooltip = "Arcane Trinkets II";
+var grayce19tooltip = "Greater Arcanabula II";
+var grayce20tooltip = "EXALTED!";
 var grayce16 = mods.compatskills.TraitCreator.createTrait("grayce16", 0, 3, "extraskills:grayce", 4, "and|[extraskills:grayce|31]~[trait|compatskills:grayce11]");
 var grayce17 = mods.compatskills.TraitCreator.createTrait("grayce17", 1, 3, "extraskills:grayce", 1, "trait|compatskills:grayce16");
 var grayce18 = mods.compatskills.TraitCreator.createTrait("grayce18", 2, 3, "extraskills:grayce", 1, "and|[trait|compatskills:grayce16]~[trait|compatskills:grayce8]");
@@ -30,7 +50,6 @@ var grayce19 = mods.compatskills.TraitCreator.createTrait("grayce19", 3, 3, "ext
 var grayce20 = mods.compatskills.TraitCreator.createTrait("grayce20", 4, 3, "extraskills:grayce", 2, "and|[extraskills:grayce|40]~[trait|compatskills:grayce16]");
 
 //grayce2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
-
 
 //**************************************
 //							GRAYCE 1
@@ -96,6 +115,7 @@ var grayce1req = [
 
 for item in grayce1req {
 	addRequirement(item, "trait|compatskills:grayce1");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce1tooltip));
 }
 
 //**************************************
@@ -263,6 +283,7 @@ var grayce2req = [
 
 for item in grayce2req {
 	addRequirement(item, "trait|compatskills:grayce2");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce2tooltip));
 }
 
 //**************************************
@@ -326,7 +347,6 @@ var grayce3req = [
 	<chineseworkshop:fu:*>,
 	<chineseworkshop:jungle_tree_altar:*>,
 	<chineseworkshop:lithel_deco:*>,
-	<chineseworkshop:material:*>,
 	<chineseworkshop:material:*>,
 	<chineseworkshop:mei_ren_kao:*>,
 	<chineseworkshop:men_dun:*>,
@@ -413,6 +433,7 @@ var grayce3req = [
 
 for item in grayce3req {
 	addRequirement(item, "trait|compatskills:grayce3");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce3tooltip));
 }
 
 //**************************************
@@ -457,14 +478,14 @@ var grayce4req = [
 	<ebwizardry:wizard_handbook>,
 	<ebwizardry:wizard_hat>,
 	<ebwizardry:wizard_leggings>,
-	<ebwizardry:wizard_robe>,
-	<ebwizardry:scroll:*>
+	<ebwizardry:wizard_robe>
 	
 ] as IItemStack[];
 
 for item in grayce4req {
 	addRequirement(item, "trait|compatskills:grayce4");
-	}
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce4tooltip));
+}
 	
 	//This allows other disciplines to use the items produced by this trait
 
@@ -546,7 +567,9 @@ var grayce4cons = [
 
 for item in grayce4cons {
 	addRequirement(item, "or|[trait|compatskills:grayce4]~[or|[extraskills:bawls|15]~[extraskills:skillz|15]]");
-
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce4tooltip) + 
+	format.gray(" or ") + format.gold("15 in BAWLS") + 
+	format.gray(" or ") + format.red("15 in SKILLZ"));
 }
 
 //**************************************
@@ -569,6 +592,7 @@ var grayce5req = [
 
 for item in grayce5req {
 	addRequirement(item, "trait|compatskills:grayce5");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce5tooltip));
 }
 
 //**************************************
@@ -597,6 +621,7 @@ var grayce6req = [
 
 for item in grayce6req {
 	addRequirement(item, "trait|compatskills:grayce6");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce6tooltip));
 }
 
 //**************************************
@@ -626,6 +651,7 @@ var grayce7req = [
 
 for item in grayce7req {
 	addRequirement(item, "trait|compatskills:grayce7");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce7tooltip));
 }
 
 //**************************************
@@ -686,7 +712,10 @@ var grayce8req = [
 ] as IItemStack[];
 
 for item in grayce8req {
-		addRequirement(item, "or|[trait|compatskills:grayce8]~[or|[extraskills:bawls|20]~[extraskills:skillz|20]]");
+	addRequirement(item, "or|[trait|compatskills:grayce8]~[or|[extraskills:bawls|20]~[extraskills:skillz|20]]");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce8tooltip) + 
+	format.gray(" or ") + format.gold("20 in BAWLS") + 
+	format.gray(" or ") + format.red("20 in SKILLZ"));
 }
 
 //**************************************
@@ -785,6 +814,7 @@ var grayce9req = [
 
 for item in grayce9req {
 	addRequirement(item, "trait|compatskills:grayce9");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce9tooltip));
 }
 
 //**************************************
@@ -819,6 +849,7 @@ var grayce10req = [
 
 for item in grayce10req {
 	addRequirement(item, "trait|compatskills:grayce10");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce10tooltip));
 }
 
 //**************************************
@@ -852,6 +883,7 @@ var grayce11req = [
 
 for item in grayce11req {
 	addRequirement(item, "trait|compatskills:grayce11");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce11tooltip));
 }
 
 //**************************************
@@ -878,6 +910,7 @@ var grayce12req = [
 
 for item in grayce12req {
 	addRequirement(item, "trait|compatskills:grayce12");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce12tooltip));
 }
 
 //**************************************
@@ -909,6 +942,7 @@ var grayce13req = [
 
 for item in grayce13req {
 	addRequirement(item, "trait|compatskills:grayce13");
+		item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce13tooltip));
 }
 
 //**************************************
@@ -1004,22 +1038,93 @@ var grayce14req = [
 
 for item in grayce14req {
 	addRequirement(item, "trait|compatskills:grayce14");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce14tooltip));
 }
 
-/*
 var grayce14cons = [
 
-	<transmutationalchemy:enchantment_boost_potion:*>,
-	<transmutationalchemy:exchange_potion:*>,
-	<transmutationalchemy:transformation_potion:*>
+	<ebwizardry:scroll:48>,
+	<ebwizardry:scroll:49>,
+	<ebwizardry:scroll:50>,
+	<ebwizardry:scroll:51>,
+	<ebwizardry:scroll:52>,
+	<ebwizardry:scroll:53>,
+	<ebwizardry:scroll:54>,
+	<ebwizardry:scroll:55>,
+	<ebwizardry:scroll:56>,
+	<ebwizardry:scroll:57>,
+	<ebwizardry:scroll:58>,
+	<ebwizardry:scroll:59>,
+	<ebwizardry:scroll:60>,
+	<ebwizardry:scroll:61>,
+	<ebwizardry:scroll:62>,
+	<ebwizardry:scroll:63>,
+	<ebwizardry:scroll:64>,
+	<ebwizardry:scroll:65>,
+	<ebwizardry:scroll:66>,
+	<ebwizardry:scroll:66>,
+	<ebwizardry:scroll:67>,
+	<ebwizardry:scroll:68>,
+	<ebwizardry:scroll:69>,
+	<ebwizardry:scroll:70>,
+	<ebwizardry:scroll:70>,
+	<ebwizardry:scroll:71>,
+	<ebwizardry:scroll:71>,
+	<ebwizardry:scroll:72>,
+	<ebwizardry:scroll:73>,
+	<ebwizardry:scroll:74>,
+	<ebwizardry:scroll:75>,
+	<ebwizardry:scroll:76>,
+	<ebwizardry:scroll:77>,
+	<ebwizardry:scroll:78>,
+	<ebwizardry:scroll:79>,
+	<ebwizardry:scroll:80>,
+	<ebwizardry:scroll:81>,
+	<ebwizardry:scroll:82>,
+	<ebwizardry:scroll:83>,
+	<ebwizardry:scroll:84>,
+	<ebwizardry:scroll:85>,
+	<ebwizardry:scroll:86>,
+	<ebwizardry:scroll:87>,
+	<ebwizardry:scroll:88>,
+	<ebwizardry:scroll:89>,
+	<ebwizardry:scroll:90>,
+	<ebwizardry:scroll:124>,
+	<ebwizardry:scroll:125>,
+	<ebwizardry:scroll:126>,
+	<ebwizardry:scroll:127>,
+	<ebwizardry:scroll:128>,
+	<ebwizardry:scroll:129>,
+	<ebwizardry:scroll:130>,
+	<ebwizardry:scroll:130>,
+	<ebwizardry:scroll:131>,
+	<ebwizardry:scroll:132>,
+	<ebwizardry:scroll:133>,
+	<ebwizardry:scroll:134>,
+	<ebwizardry:scroll:135>,
+	<ebwizardry:scroll:152>,
+	<ebwizardry:scroll:153>,
+	<ebwizardry:scroll:154>,
+	<ebwizardry:scroll:155>,
+	<ebwizardry:scroll:156>,
+	<ebwizardry:scroll:156>,
+	<ebwizardry:scroll:157>,
+	<ebwizardry:scroll:158>,
+	<ebwizardry:scroll:159>,
+	<ebwizardry:scroll:160>,
+	<ebwizardry:scroll:161>,
+	<ebwizardry:scroll:162>,
+	<ebwizardry:scroll:163>,
+	<ebwizardry:scroll:164>
 	
 ] as IItemStack[];
 
 for item in grayce14cons {
 	addRequirement(item, "or|[trait|compatskills:grayce14]~[or|[extraskills:bawls|25]~[extraskills:skillz|25]]");
-
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce14tooltip) + 
+	format.gray(" or ") + format.gold("25 in BAWLS") + 
+	format.gray(" or ") + format.red("25 in SKILLZ"));
 }
-*/
 
 //**************************************
 //							GRAYCE 15
@@ -1051,6 +1156,7 @@ var grayce15req = [
 for item in grayce15req {
 
 	addRequirement(item, "trait|compatskills:grayce15");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce15tooltip));
 	
 }
 
@@ -1076,6 +1182,7 @@ var grayce16req = [
 
 for item in grayce16req {
 	addRequirement(item, "trait|compatskills:grayce16");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce16tooltip));
 }
 
 //**************************************
@@ -1129,6 +1236,7 @@ var grayce17req = [
 
 for item in grayce17req {
 	addRequirement(item, "trait|compatskills:grayce17");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce17tooltip));
 }
 
 //**************************************
@@ -1174,6 +1282,7 @@ var grayce18req = [
 
 for item in grayce18req {
 	addRequirement(item, "trait|compatskills:grayce18");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce18tooltip));
 }
 
 //**************************************
@@ -1213,18 +1322,52 @@ var grayce19req = [
 	<ebwizardry:spell_book:169>,
 	<ebwizardry:spell_book:170>,
 	<ebwizardry:spell_book:171>,
-	<ebwizardry:spell_book:172>
+	<ebwizardry:spell_book:172>,
+	<ebwizardry:scroll:93>,
+	<ebwizardry:scroll:94>,
+	<ebwizardry:scroll:92>,
+	<ebwizardry:scroll:91>,
+	<ebwizardry:scroll:166>,
+	<ebwizardry:scroll:165>,
+	<ebwizardry:scroll:105>,
+	<ebwizardry:scroll:169>,
+	<ebwizardry:scroll:139>,
+	<ebwizardry:scroll:104>,
+	<ebwizardry:scroll:103>,
+	<ebwizardry:scroll:102>,
+	<ebwizardry:scroll:168>,
+	<ebwizardry:scroll:167>,
+	<ebwizardry:scroll:101>,
+	<ebwizardry:scroll:100>,
+	<ebwizardry:scroll:99>,
+	<ebwizardry:scroll:138>,
+	<ebwizardry:scroll:137>,
+	<ebwizardry:scroll:98>,
+	<ebwizardry:scroll:97>,
+	<ebwizardry:scroll:136>,
+	<ebwizardry:scroll:96>,
+	<ebwizardry:scroll:95>,
+	<ebwizardry:scroll:172>,
+	<ebwizardry:scroll:140>,
+	<ebwizardry:scroll:110>,
+	<ebwizardry:scroll:109>,
+	<ebwizardry:scroll:171>,
+	<ebwizardry:scroll:170>,
+	<ebwizardry:scroll:108>,
+	<ebwizardry:scroll:107>,
+	<ebwizardry:scroll:106>
 	
 ] as IItemStack[];
 
 for item in grayce19req {
 	addRequirement(item, "trait|compatskills:grayce19");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce19tooltip));
 }
 
 //**************************************
 //							GRAYCE 20
 //**************************************
-/*
+
 var grayce20req = [
 
 	<ebwizardry:charm_transportation>,
@@ -1247,5 +1390,6 @@ var grayce20req = [
 
 for item in grayce20req {
 	addRequirement(item, "trait|compatskills:grayce20");
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("GRAYCE - " + grayce20tooltip));
 }
-*/
+
