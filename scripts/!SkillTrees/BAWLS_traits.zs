@@ -1,27 +1,48 @@
 import crafttweaker.item.IItemStack;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
+import mods.jei.JEI;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
+var bawls1tooltip = "Basics";
+var bawls2tooltip = "Bashers";
+var bawls3tooltip = "Buildings";
+var bawls4tooltip = "Transmutation I";
+var bawls5tooltip = "Mixology I";
 var bawls1 = mods.compatskills.TraitCreator.createTrait("bawls1", 0, 0, "extraskills:bawls", 5, "extraskills:bawls|5");
 var bawls2 = mods.compatskills.TraitCreator.createTrait("bawls2", 1, 0, "extraskills:bawls", 1, "trait|compatskills:bawls1");
 var bawls3 = mods.compatskills.TraitCreator.createTrait("bawls3", 2, 0, "extraskills:bawls", 1, "trait|compatskills:bawls1");
 var bawls4 = mods.compatskills.TraitCreator.createTrait("bawls4", 3, 0, "extraskills:bawls", 2, "trait|compatskills:bawls1");
 var bawls5 = mods.compatskills.TraitCreator.createTrait("bawls5", 4, 0, "extraskills:bawls", 2, "trait|compatskills:bawls1");
 
+var bawls6tooltip = "The Dawn Forge";
+var bawls7tooltip = "Fiery Fusion";
+var bawls8tooltip = "Hand-Crafted Jewelry I";
+var bawls9tooltip = "StRATegic Partnership I";
+var bawls10tooltip = "Mechanics";
 var bawls6 = mods.compatskills.TraitCreator.createTrait("bawls6", 0, 1, "extraskills:bawls", 4, "and|[extraskills:bawls|11]~[trait|compatskills:bawls1]");
 var bawls7 = mods.compatskills.TraitCreator.createTrait("bawls7", 1, 1, "extraskills:bawls", 2, "trait|compatskills:bawls6");
 var bawls8 = mods.compatskills.TraitCreator.createTrait("bawls8", 2, 1, "extraskills:bawls", 1, "and|[trait|compatskills:bawls6]~[trait|compatskills:bawls7]");
 var bawls9 = mods.compatskills.TraitCreator.createTrait("bawls9", 3, 1, "extraskills:bawls", 1, "trait|compatskills:bawls6");
 var bawls10 = mods.compatskills.TraitCreator.createTrait("bawls10", 4, 1, "extraskills:bawls", 2, "trait|compatskills:bawls6");
 
+var bawls11tooltip = "Fire Power";
+var bawls12tooltip = "The Good Stuff";
+var bawls13tooltip = "Fine Boozables";
+var bawls14tooltip = "Transmutation II";
+var bawls15tooltip = "Mixology II";
 var bawls11 = mods.compatskills.TraitCreator.createTrait("bawls11", 0, 2, "extraskills:bawls", 4, "and|[extraskills:bawls|21]~[trait|compatskills:bawls6]");
 var bawls12 = mods.compatskills.TraitCreator.createTrait("bawls12", 1, 2, "extraskills:bawls", 2, "and|[trait|compatskills:bawls11]~[trait|compatskills:bawls7]");
 var bawls13 = mods.compatskills.TraitCreator.createTrait("bawls13", 2, 2, "extraskills:bawls", 1, "trait|compatskills:bawls11");
 var bawls14 = mods.compatskills.TraitCreator.createTrait("bawls14", 3, 2, "extraskills:bawls", 2, "and|[trait|compatskills:bawls11]~[trait|compatskills:bawls4]");
 var bawls15 = mods.compatskills.TraitCreator.createTrait("bawls15", 4, 2, "extraskills:bawls", 1, "and|[trait|compatskills:bawls11]~[trait|compatskills:bawls5]");
 
+var bawls16tooltip = "Moon Power";
+var bawls17tooltip = "Fightin' Bugs & Movin' Dirt";
+var bawls18tooltip = "Hand-Crafted Jewelry II";
+var bawls19tooltip = "StRATegic Partnership II";
+var bawls20tooltip = "BUSTED!";
 var bawls16 = mods.compatskills.TraitCreator.createTrait("bawls16", 0, 3, "extraskills:bawls", 4, "and|[extraskills:bawls|31]~[trait|compatskills:bawls11]");
 var bawls17 = mods.compatskills.TraitCreator.createTrait("bawls17", 1, 3, "extraskills:bawls", 1, "trait|compatskills:bawls16");
 var bawls18 = mods.compatskills.TraitCreator.createTrait("bawls18", 2, 3, "extraskills:bawls", 1, "and|[trait|compatskills:bawls16]~[trait|compatskills:bawls8]");
@@ -100,6 +121,7 @@ var bawls1req = [
 
 for item in bawls1req {
 	addRequirement(item, "trait|compatskills:bawls1");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls1tooltip));
 }
 
 //**************************************
@@ -109,24 +131,14 @@ for item in bawls1req {
 var bawls2req = [
 
 	<embers:axe_bronze:*>,
-	<embers:axe_bronze:*>,
-	<embers:axe_dawnstone:*>,
 	<embers:axe_dawnstone:*>,
 	<embers:hoe_bronze:*>,
-	<embers:hoe_bronze:*>,
-	<embers:hoe_dawnstone:*>,
 	<embers:hoe_dawnstone:*>,
 	<embers:pickaxe_bronze:*>,
-	<embers:pickaxe_bronze:*>,
-	<embers:pickaxe_dawnstone:*>,
 	<embers:pickaxe_dawnstone:*>,
 	<embers:shovel_bronze:*>,
-	<embers:shovel_bronze:*>,
-	<embers:shovel_dawnstone:*>,
 	<embers:shovel_dawnstone:*>,
 	<embers:sword_bronze:*>,
-	<embers:sword_bronze:*>,
-	<embers:sword_dawnstone:*>,
 	<embers:sword_dawnstone:*>,
 	<spartanfire:battleaxe_desert:*>,
 	<spartanfire:battleaxe_desert_venom:*>,
@@ -162,7 +174,6 @@ var bawls2req = [
 	<spartanfire:hammer_fire_dragonsteel:*>,
 	<spartanfire:hammer_ice_dragonbone:*>,
 	<spartanfire:hammer_ice_dragonsteel:*>,
-	<spartanfire:hammer_ice_dragonsteel:*>,
 	<spartanfire:hammer_jungle:*>,
 	<spartanfire:hammer_jungle_venom:*>,
 	<spartanfire:throwing_axe_desert:*>,
@@ -175,22 +186,13 @@ var bawls2req = [
 	<spartanfire:throwing_axe_jungle:*>,
 	<spartanfire:throwing_axe_jungle_venom:*>,
 	<spartanfire:warhammer_desert:*>,
-	<spartanfire:warhammer_desert:*>,
-	<spartanfire:warhammer_desert_venom:*>,
 	<spartanfire:warhammer_desert_venom:*>,
 	<spartanfire:warhammer_dragonbone:*>,
-	<spartanfire:warhammer_dragonbone:*>,
-	<spartanfire:warhammer_fire_dragonbone:*>,
 	<spartanfire:warhammer_fire_dragonbone:*>,
 	<spartanfire:warhammer_fire_dragonsteel:*>,
-	<spartanfire:warhammer_fire_dragonsteel:*>,
-	<spartanfire:warhammer_ice_dragonbone:*>,
 	<spartanfire:warhammer_ice_dragonbone:*>,
 	<spartanfire:warhammer_ice_dragonsteel:*>,
-	<spartanfire:warhammer_ice_dragonsteel:*>,
 	<spartanfire:warhammer_jungle:*>,
-	<spartanfire:warhammer_jungle:*>,
-	<spartanfire:warhammer_jungle_venom:*>,
 	<spartanfire:warhammer_jungle_venom:*>,
 	<spartanweaponry:battleaxe_bronze:*>,
 	<spartanweaponry:battleaxe_copper:*>,
@@ -299,6 +301,7 @@ var bawls2req = [
 
 for item in bawls2req {
 	addRequirement(item, "trait|compatskills:bawls2");
+		item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls2tooltip));
 }
 
 //**************************************
@@ -448,6 +451,7 @@ var bawls3req = [
 
 for item in bawls3req {
 	addRequirement(item, "trait|compatskills:bawls3");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls3tooltip));
 }
 
 //**************************************
@@ -473,6 +477,7 @@ var bawls4req = [
 
 for item in bawls4req {
 	addRequirement(item, "trait|compatskills:bawls4");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls4tooltip));
 }
 
 //This allows other disciplines to use the items produced by this trait
@@ -497,6 +502,9 @@ var bawls4cons = [
 
 for item in bawls4cons {
 	addRequirement(item, "or|[trait|compatskills:bawls4]~[or|[extraskills:grayce|15]~[extraskills:skillz|15]]");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls4tooltip) + 
+	format.gray(" or ") + format.lightPurple("15 in GRAYCE") + 
+	format.gray(" or ") + format.red("15 in SKILLZ"));
 
 }
 
@@ -513,6 +521,7 @@ var bawls5req = [
 
 for item in bawls5req {
 	addRequirement(item, "trait|compatskills:bawls5");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls5tooltip));
 }
 
 //This allows other disciplines to use the items produced by this trait
@@ -813,6 +822,9 @@ var bawls5cons = [
 
 for item in bawls5cons {
 	addRequirement(item, "or|[trait|compatskills:bawls5]~[or|[extraskills:grayce|15]~[extraskills:skillz|15]]");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls5tooltip) + 
+	format.gray(" or ") + format.lightPurple("15 in GRAYCE") + 
+	format.gray(" or ") + format.red("15 in SKILLZ"));
 
 }
 
@@ -843,6 +855,7 @@ var bawls6req = [
 
 for item in bawls6req {
 	addRequirement(item, "trait|compatskills:bawls6");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls6tooltip));
 }
 
 //**************************************
@@ -877,6 +890,7 @@ var bawls7req = [
 
 for item in bawls7req {
 	addRequirement(item, "trait|compatskills:bawls7");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls7tooltip));
 }
 
 //**************************************
@@ -922,6 +936,7 @@ var bawls8req = [
 
 for item in bawls8req {
 	addRequirement(item, "trait|compatskills:bawls8");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls8tooltip));
 }
 
 //**************************************
@@ -980,6 +995,7 @@ var bawls9req = [
 
 for item in bawls9req {
 	addRequirement(item, "trait|compatskills:bawls9");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls9tooltip));
 }
 
 //**************************************
@@ -1021,6 +1037,7 @@ var bawls10req = [
 
 for item in bawls10req {
 	addRequirement(item, "trait|compatskills:bawls10");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls10tooltip));
 }
 
 //**************************************
@@ -1051,6 +1068,7 @@ var bawls11req = [
 
 for item in bawls11req {
 	addRequirement(item, "trait|compatskills:bawls11");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls11tooltip));
 }
 
 //**************************************
@@ -1084,6 +1102,7 @@ var bawls12req = [
 
 for item in bawls12req {
 	addRequirement(item, "trait|compatskills:bawls12");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls12tooltip));
 }
 
 //**************************************
@@ -1112,6 +1131,7 @@ var bawls13req = [
 
 for item in bawls13req {
 	addRequirement(item, "trait|compatskills:bawls13");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls13tooltip));
 }
 
 //**************************************
@@ -1143,6 +1163,7 @@ var bawls14req = [
 
 for item in bawls14req {
 	addRequirement(item, "trait|compatskills:bawls14");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls14tooltip));
 }
 
 //This allows other disciplines to use the items produced by this trait
@@ -1157,6 +1178,9 @@ var bawls14cons = [
 
 for item in bawls14cons {
 	addRequirement(item, "or|[trait|compatskills:bawls14]~[or|[extraskills:grayce|25]~[extraskills:skillz|25]]");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls14tooltip) + 
+	format.gray(" or ") + format.lightPurple("25 in GRAYCE") + 
+	format.gray(" or ") + format.red("25 in SKILLZ"));
 
 }
 
@@ -1485,6 +1509,9 @@ var bawls15req = [
 
 for item in bawls15req {
 	addRequirement(item, "or|[trait|compatskills:bawls15]~[or|[extraskills:grayce|25]~[extraskills:skillz|25]]");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls15tooltip) + 
+	format.gray(" or ") + format.lightPurple("25 in GRAYCE") + 
+	format.gray(" or ") + format.red("25 in SKILLZ"));
 }
 
 //**************************************
@@ -1521,6 +1548,7 @@ var bawls16req = [
 
 for item in bawls16req {
 	addRequirement(item, "trait|compatskills:bawls16");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls16tooltip));	
 }
 
 //**************************************
@@ -1533,6 +1561,7 @@ var bawls17req = [
 
 for item in bawls17req {
 	addRequirement(item, "trait|compatskills:bawls17");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls17tooltip));
 }
 
 //**************************************
@@ -1570,6 +1599,7 @@ var bawls18req = [
 
 for item in bawls18req {
 	addRequirement(item, "trait|compatskills:bawls18");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls18tooltip));
 }
 
 //**************************************
@@ -1577,7 +1607,6 @@ for item in bawls18req {
 //**************************************
 
 var bawls19req = [
-
 
 	<rats:archeologist_hat:*>,
 	<rats:auto_curdler:*>,
@@ -1618,6 +1647,7 @@ var bawls19req = [
 
 for item in bawls19req {
 	addRequirement(item, "trait|compatskills:bawls19");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls19tooltip));
 }
 
 //**************************************
@@ -1687,4 +1717,5 @@ var bawls20req = [
 
 for item in bawls20req {
 	addRequirement(item, "trait|compatskills:bawls20");
+	item.addTooltip(format.darkPurple("Requires: ") + format.gold("BAWLS - " + bawls20tooltip));
 }

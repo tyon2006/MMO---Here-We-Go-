@@ -577,7 +577,6 @@ for item in grayce5req {
 
 var grayce6req = [
 
-	<forge:bucketfilled>,
 	<thaumadditions:void_seed>,
 	<thaumcraft:bottle_taint>,
 	<thaumcraft:causality_collapser>,

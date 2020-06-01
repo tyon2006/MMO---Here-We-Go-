@@ -22,6 +22,22 @@ recipes.addShapedMirrored(<transmutationalchemy:blade>,
 //recipes.replaceAllOccurences(<randomthings:ingredient:2>, <bewitchment:ectoplasm>);
 
 //***************************
+//		RENAMING
+//***************************
+
+<embers:pump>.displayName = "Fluid Extractor";
+
+//***************************
+//		MISC CHANGES
+//***************************
+
+recipes.remove(<extraalchemy:potion_bag>);
+recipes.addShaped("Alchemy Bag", <extraalchemy:potion_bag>,
+ [[<iceandfire:chain_link>,<ore:leather>,<iceandfire:chain_link>],
+  [<ore:leather>,<ore:chest>,<ore:leather>],
+  [<ore:leather>,<ore:leather>,<ore:leather>]]);
+
+//***************************
 //		POTIONS
 //***************************
 
@@ -110,7 +126,7 @@ for item in itemRemovalsPotions {
 }
 
 //***************************************************************
-// FIXING NYX, EVEN THOUGH THERE'S CERTAINLY 'NO ISSUE' AT ALL WITH IT.
+// FIXING NYX, EVEN THOUGH THERE'S CERTAINLY 'NO ISSUE AT ALL' WITH IT.
 //***************************************************************
 
 mods.inspirations.Cauldron.addFillRecipe(<nyx:lunar_water_bottle>, <liquid:lunar_water>, 1, <minecraft:glass_bottle>);
@@ -232,15 +248,6 @@ var itemRemovalsSilver = [
 	<embers:shovel_silver>,
 	<embers:hoe_silver>,
 	<embers:sword_silver>,
-	<iceandfire:armor_silver_metal_chestplate>,
-	<iceandfire:armor_silver_metal_leggings>,
-	<iceandfire:armor_silver_metal_boots>,
-	<iceandfire:armor_silver_metal_boots>,
-	<iceandfire:silver_sword>,
-	<iceandfire:silver_shovel>,
-	<iceandfire:silver_pickaxe>,
-	<iceandfire:silver_axe>,
-	<iceandfire:silver_hoe>,
 	<idk:silverarmourhelmet>,
 	<idk:silverarmourbody>,
 	<idk:silverarmourlegs>,
@@ -249,7 +256,7 @@ var itemRemovalsSilver = [
 	<idk:silveraxe>,
 	<idk:silverpickaxe>,
 	<idk:silvershovel>,
-	<idk:silverhoe>,
+	<idk:silverhoe>
 ] as IItemStack[];
 
 for item in itemRemovalsSilver {
