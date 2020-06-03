@@ -6,6 +6,20 @@ import mods.contenttweaker.Color;
 import mods.contenttweaker.DropHandler;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.WeightedItemStack;
+import mods.contenttweaker.IItemRightClick;
+import crafttweaker.block.IBlock;
+import mods.contenttweaker.ActionResult;
+import mods.contenttweaker.Item;
+import crafttweaker.block.IBlockState;
+import mods.contenttweaker.World;
+import mods.contenttweaker.Player;
+import mods.contenttweaker.IItemUse;
+import mods.contenttweaker.IItemColorSupplier;
+import mods.contenttweaker.Commands;
+import crafttweaker.player.IPlayer;
+import crafttweaker.command.ICommandSender;
+import crafttweaker.entity.IEntity;
+
 
 var moltenElemental = mods.contenttweaker.VanillaFactory.createFluid("molten_elemental_alloy", Color.fromHex("C4B2D1"));
 moltenElemental.setViscosity(6000);
@@ -36,8 +50,21 @@ erebusTransOre.setDropHandler(function(drops, world, position, state, fortune) {
 });
 erebusTransOre.register();
 
-
-
+var midnightPortalSpawner = mods.contenttweaker.VanillaFactory.createItem("midnight_portal_spawner");
+//midnightPortalSpawner.setItemUseAction("EAT"); //this doesnt do anything if the item doesnt already have some kind of windup
+midnightPortalSpawner.maxDamage = 50;
+midnightPortalSpawner.setMaxStackSize(1);
+midnightPortalSpawner.onItemUse = function(player, world, pos, hand, facing, blockHit) {
+    var portalPos1 = pos.getOffset("up", 1);
+	var portalPos2 = pos.getOffset("up", 2);
+    if (world.getBlockState(portalPos1).isReplaceable(world,portalPos1) & world.getBlockState(portalPos2).isReplaceable(world,portalPos2)) {
+		Commands.call("summon midnight:rift " + portalPos1.getX() + " " + portalPos1.getY() + " " + portalPos1.getZ(), player, world, false, false);
+		player.getHeldItem(hand).damage(5, player);
+        return ActionResult.success();
+    }
+		return ActionResult.pass();
+};
+midnightPortalSpawner.register();
 
 
 

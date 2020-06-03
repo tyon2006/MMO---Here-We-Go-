@@ -12,7 +12,6 @@ import mods.transmutationalchemy.mixer;
 //***************************
 //erebus
 rh(<erebus:bambucket:*>);
-rh(<soot:stamp_text:*>);
 
 //rats
 rh(<rats:token_piece>);
@@ -34,10 +33,16 @@ recipes.removeShapeless(<minecraft:glowstone>, [<minecraft:glowstone_dust>, <min
 recipes.removeShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null],[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null], [null, null, null]]);
 
 recipes.addShapeless(<minecraft:sea_lantern>, [<minecraft:dye:6>,<minecraft:glowstone>]);
-recipes.addShaped(<minecraft:glass>, [[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],[<minecraft:stone>, null, <minecraft:stone>], [<minecraft:stone>, null, <minecraft:stone>]]);
+recipes.addShaped(<minecraft:glass>, 
+[[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
+[<minecraft:stone>, null, <minecraft:stone>], 
+[<minecraft:stone>, null, <minecraft:stone>]]);
 
 recipes.remove(<biomesoplenty:terrestrial_artifact>);
-recipes.addShapeless("biomesoplenty_terrestrial_artifact", <biomesoplenty:terrestrial_artifact>, [<ore:gemRuby>, <ore:gemTopaz>, <ore:gemAmber>, <ore:gemPeridot>, <ore:gemMalachite>, <ore:gemSapphire>, <ore:gemTanzanite>, <ore:gemEmerald>, <ore:gemDiamond>]);
+recipes.addShapeless("biomesoplenty_terrestrial_artifact", <biomesoplenty:terrestrial_artifact>, 
+[<ore:gemRuby>, <ore:gemTopaz>, <ore:gemAmber>, 
+<ore:gemPeridot>, <ore:gemMalachite>, <ore:gemSapphire>, 
+<ore:gemTanzanite>, <ore:gemEmerald>, <ore:gemDiamond>]);
 
 
 

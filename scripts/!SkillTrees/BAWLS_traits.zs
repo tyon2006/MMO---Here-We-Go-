@@ -948,7 +948,8 @@ var bawls8req = [
 	<grimoireofgaia:accessory_trinket_wither:*>,
 	<mod_lavacow:halo_necklace:*>,
 	<xat:polarized_stone:*>,
-	<xat:sea_stone:*>
+	<xat:sea_stone:*>,
+	<randomthings:obsidianskull>
 	
 ] as IItemStack[];
 

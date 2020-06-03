@@ -132,7 +132,6 @@ for item in itemRemovalsPotions {
 mods.inspirations.Cauldron.addFillRecipe(<nyx:lunar_water_bottle>, <liquid:lunar_water>, 1, <minecraft:glass_bottle>);
 mods.inspirations.Cauldron.addFluidRecipe(<nyx:lunar_water_bottle>, <minecraft:glass_bottle>, <liquid:lunar_water>);
 
-
 //***************************
 //		CYCLIC
 //***************************

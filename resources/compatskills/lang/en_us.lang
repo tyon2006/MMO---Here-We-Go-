@@ -1,5 +1,5 @@
 reskillable.unlock.compatskills.bawls1=Basics
-reskillable.unlock.compatskills.bawls2=BAWLS Bashers
+reskillable.unlock.compatskills.bawls2=Bashers
 reskillable.unlock.compatskills.bawls3=Buildings
 reskillable.unlock.compatskills.bawls4=Transmutation I
 reskillable.unlock.compatskills.bawls5=Mixology I
@@ -8,7 +8,7 @@ reskillable.unlock.compatskills.bawls7=Fiery Fusion
 reskillable.unlock.compatskills.bawls8=Hand-Crafted Jewelry I 
 reskillable.unlock.compatskills.bawls9=StRATegic Partnership I
 reskillable.unlock.compatskills.bawls10=Mechanics
-reskillable.unlock.compatskills.bawls11=Unlimited Power
+reskillable.unlock.compatskills.bawls11=Fire Power
 reskillable.unlock.compatskills.bawls12=The Good Stuff
 reskillable.unlock.compatskills.bawls13=Fine Boozables
 reskillable.unlock.compatskills.bawls14=Transmutation II
@@ -17,7 +17,8 @@ reskillable.unlock.compatskills.bawls16=Moon Power
 reskillable.unlock.compatskills.bawls17=Fightin' Bugs & Movin' Dirt
 reskillable.unlock.compatskills.bawls18=Hand-Crafted Jewelry II
 reskillable.unlock.compatskills.bawls19=StRATegic Partnership II
-reskillable.unlock.compatskills.bawls20=BAWLS BUSTED!
+reskillable.unlock.compatskills.bawls20=BUSTED!
+
 reskillable.unlock.compatskills.bawls1.desc=
 reskillable.unlock.compatskills.bawls2.desc=
 reskillable.unlock.compatskills.bawls3.desc=
@@ -40,7 +41,7 @@ reskillable.unlock.compatskills.bawls19.desc=
 reskillable.unlock.compatskills.bawls20.desc=
 
 reskillable.unlock.compatskills.grayce1=Fundamentals
-reskillable.unlock.compatskills.grayce2=Weapons of GRAYCE
+reskillable.unlock.compatskills.grayce2=Instruments
 reskillable.unlock.compatskills.grayce3=Thaumaturgic Architecture
 reskillable.unlock.compatskills.grayce4=Principles of Praecantatio
 reskillable.unlock.compatskills.grayce5=Resonance of Radiance
@@ -82,7 +83,7 @@ reskillable.unlock.compatskills.grayce19.desc=High sorcery!
 reskillable.unlock.compatskills.grayce20.desc=This is the ultimate climax of GRAYCE!
 
 reskillable.unlock.compatskills.skillz1=Essentials of Engineering
-reskillable.unlock.compatskills.skillz2=SKILLZ Armaments
+reskillable.unlock.compatskills.skillz2=Armaments
 reskillable.unlock.compatskills.skillz3=Construction Permits
 reskillable.unlock.compatskills.skillz4=Logistics I
 reskillable.unlock.compatskills.skillz5=Installations and Machinery Maintenance

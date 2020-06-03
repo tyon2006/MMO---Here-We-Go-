@@ -125,9 +125,7 @@ for item in grayce1req {
 var grayce2req = [
 
 	<spartanweaponry:katana_copper>,
-	<iceandfire:dragonsteel_fire_axe>,
 	<iceandfire:dragonsteel_fire_sword>,
-	<iceandfire:dragonsteel_ice_axe>,
 	<iceandfire:dragonsteel_ice_sword>,
 	<spartanfire:glaive_desert>,
 	<spartanfire:glaive_desert_venom>,
