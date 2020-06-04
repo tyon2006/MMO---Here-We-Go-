@@ -20,7 +20,6 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.command.ICommandSender;
 import crafttweaker.entity.IEntity;
 
-
 var moltenElemental = mods.contenttweaker.VanillaFactory.createFluid("molten_elemental_alloy", Color.fromHex("C4B2D1"));
 moltenElemental.setViscosity(6000);
 moltenElemental.setDensity(2000);
@@ -42,16 +41,17 @@ erebusTransOre.setBlockResistance(10.0);
 erebusTransOre.setToolClass("pickaxe");
 erebusTransOre.setDropHandler(function(drops, world, position, state, fortune) {
     drops.clear();
-	drops.add(<item:transmutationalchemy:crystal_power> % 95);
+	drops.add(<item:transmutationalchemy:crystal_power> % 100);
+	drops.add(<item:transmutationalchemy:crystal_power> % 50);
     drops.add(<item:transmutationalchemy:crystal_protection> % 85);
     drops.add(<item:transmutationalchemy:crystal_mind> % 75);
-	drops.add(<item:transmutationalchemy:venom_shard> % 33);
+	drops.add(<item:transmutationalchemy:venom_shard> % 17);
 	return;
+	
 });
 erebusTransOre.register();
 
 var midnightPortalSpawner = mods.contenttweaker.VanillaFactory.createItem("midnight_portal_spawner");
-//midnightPortalSpawner.setItemUseAction("EAT"); //this doesnt do anything if the item doesnt already have some kind of windup
 midnightPortalSpawner.maxDamage = 50;
 midnightPortalSpawner.setMaxStackSize(1);
 midnightPortalSpawner.onItemUse = function(player, world, pos, hand, facing, blockHit) {
@@ -65,9 +65,5 @@ midnightPortalSpawner.onItemUse = function(player, world, pos, hand, facing, blo
 		return ActionResult.pass();
 };
 midnightPortalSpawner.register();
-
-
-
-
 
 

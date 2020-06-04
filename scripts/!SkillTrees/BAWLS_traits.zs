@@ -1237,7 +1237,9 @@ var bawls13req = [
 	<soot:signet_antimony:*>,
 	<soot:still:*>,
 	<soot:witch_fire:*>,
-	<xat:dwarf_stout:*>
+	<xat:dwarf_stout:*>,
+	<xat:titan_spirit>,
+	<xat:fairy_dew>
 
 ] as IItemStack[];
 
@@ -1804,7 +1806,8 @@ var bawls18req = [
 	<xat:ender_tiara:*>,
 	<xat:greater_inertia_stone:*>,
 	<xat:inertia_null_stone:*>,
-	<xat:weightless_stone:*>
+	<xat:weightless_stone:*>,
+	<xat:glow_ring>
 
 ] as IItemStack[];
 

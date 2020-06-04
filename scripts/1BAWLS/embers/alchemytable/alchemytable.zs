@@ -99,9 +99,118 @@ mods.embers.Alchemy.add(<bountifulbaubles:shieldcobalt>,
 <transmutationalchemy:magical_lapis_dust>],
 {"iron": 16 to 32, "dawnstone": 24 to 36});
 
+recipes.remove(<xat:polarized_stone>);
+mods.embers.Alchemy.add(<xat:polarized_stone>,
+[<soot:mundane_stone>,
+<ore:blockRedstone>, <embers:adhesive>, <ore:blockLapis>,
+<transmutationalchemy:magical_iron_dust>],
+{"iron": 16 to 64});
+
+recipes.remove(<bountifulbaubles:trinketballoon>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketballoon>,
+[<randomthings:bottleofair>,
+<minecraft:slime_ball>, <transmutationalchemy:elemental_clay>, <minecraft:slime_ball>,
+<ore:string>],
+{"silver": 16 to 64});
+
+mods.embers.Alchemy.add(<embers:dawnstone_mail>,
+[<minecraft:leather_chestplate>,
+<ore:plateDawnstone>, <iceandfire:chain>, <ore:plateDawnstone>,
+<ore:plateDawnstone>],
+{"dawnstone": 16 to 64});
+
+recipes.remove(<bountifulbaubles:trinketballoon>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketballoon>,
+[<randomthings:bottleofair>,
+<minecraft:slime_ball>, <transmutationalchemy:elemental_clay>, <minecraft:slime_ball>,
+<ore:string>],
+{"silver": 16 to 64});
+
+mods.embers.Alchemy.add(<bountifulbaubles:trinketvitamins>,
+[<biomesoplenty:jar_empty>,
+<minecraft:carrot>, <transmutationalchemy:elemental_clay>, <minecraft:apple>,
+<minecraft:melon>],
+{"dawnstone": 16 to 64});
+
+mods.embers.Alchemy.add(<bountifulbaubles:ringfreeaction>,
+[<bountifulbaubles:ringoverclocking>,
+<minecraft:web>, <transmutationalchemy:elemental_ingot>, <minecraft:web>,
+<bountifulbaubles:trinketshulkerheart>],
+{"silver": 16 to 64});
+
+recipes.remove(<bountifulbaubles:trinketapple>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketapple>,
+[<minecraft:golden_apple>,
+<minecraft:speckled_melon>, <transmutationalchemy:elemental_clay>, <minecraft:golden_carrot>,
+<transmutationalchemy:magical_dust_tier2>],
+{"copper": 16 to 64, "iron": 16 to 64});
+
+recipes.remove(<grimoireofgaia:accessory_trinket_wither>);
+mods.embers.Alchemy.add(<grimoireofgaia:accessory_trinket_wither>,
+[<mod_lavacow:undyingheart>,
+<ore:boneWithered>, <iceandfire:chain_link>, <ore:boneWithered>,
+<transmutationalchemy:elemental_ingot>],
+{"lead": 16 to 64, "iron": 16 to 64});
+
+recipes.remove(<bountifulbaubles:trinketbezoar>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketbezoar>,
+[<minecraft:slime_ball>,
+<forge:bucketfilled>.withTag({FluidName: "hot_spring_water", Amount: 1000}), <transmutationalchemy:elemental_clay>, <forge:bucketfilled>.withTag({FluidName: "endacid", Amount: 1000}),
+<embers:adhesive>],
+{"copper": 16 to 64, "iron": 16 to 64});
+
 //***************************
 //		     STAGE 2 BAUBLES
 //***************************
+
+recipes.remove(<xat:fairy_ring>);
+mods.embers.Alchemy.add(<xat:fairy_ring>,
+[<baubles:ring>,
+<minecraft:lingering_potion>.withTag({Potion: "xat:extended_fairy"}), <biomesoplenty:terrestrial_artifact>, <minecraft:lingering_potion>.withTag({Potion: "xat:extended_fairy"}),
+<transmutationalchemy:transformation_dust>],
+{"copper": 24 to 36, "lead": 48 to 64, "silver": 100 to 200, "iron": 12 to 24, "dawnstone": 24 to 36});
+
+recipes.remove(<xat:titan_ring>);
+mods.embers.Alchemy.add(<xat:titan_ring>,
+[<baubles:ring>,
+<minecraft:lingering_potion>.withTag({Potion: "xat:extended_titan"}), <biomesoplenty:terrestrial_artifact>, <minecraft:lingering_potion>.withTag({Potion: "xat:extended_titan"}),
+<transmutationalchemy:transformation_dust>],
+{"copper": 100 to 200, "lead": 48 to 64, "silver": 24 to 36, "iron": 12 to 24, "dawnstone": 24 to 36});
+
+recipes.remove(<xat:wither_ring>);
+mods.embers.Alchemy.add(<xat:wither_ring>,
+[<baubles:ring>,
+<minecraft:lingering_potion>.withTag({Potion: "potioncore:long_purity"}), <biomesoplenty:terrestrial_artifact>, <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_wither"}),
+<transmutationalchemy:enchantment_boost_dust>],
+{"lead": 48 to 64, "silver": 24 to 36, "iron": 12 to 24, "dawnstone": 24 to 36});
+
+recipes.remove(<xat:glow_ring>);
+mods.embers.Alchemy.add(<xat:glow_ring>,
+[<baubles:ring>,
+<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_night_vision"}), <embers:glimmer_shard>, <minecraft:lingering_potion>.withTag({Potion: "minecraft:long_night_vision"}),
+<transmutationalchemy:enchantment_boost_dust>],
+{"lead": 12 to 24, "silver": 24 to 36, "iron": 48 to 64});
+
+recipes.remove(<bountifulbaubles:trinketshulkerheart>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketshulkerheart>,
+[<grimoireofgaia:accessory_trinket_wither>,
+<minecraft:shulker_shell>, <transmutationalchemy:elemental_clay>, <minecraft:shulker_shell>,
+<grimoireofgaia:accessory_trinket_levitation>],
+{"copper": 32 to 96, "lead": 32 to 96});
+
+recipes.remove(<bountifulbaubles:trinketshulkerheart>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketshulkerheart>,
+[<grimoireofgaia:accessory_trinket_wither>,
+<bountifulbaubles:enderdragonscale>, <transmutationalchemy:elemental_clay>, <bountifulbaubles:trinketblackdragonscale>,
+<embers:adhesive>],
+{"iron": 16 to 64, "lead": 100 to 100});
+
+recipes.remove(<bountifulbaubles:ringflywheel>);
+mods.embers.Alchemy.add(<bountifulbaubles:ringflywheel>,
+[<baubles:ring>,
+<ore:blockElectrum>, <ore:blockLead>, <ore:blockSteel>,
+<ore:blockRedstone>],
+{"copper": 32 to 96, "lead": 32 to 96});
 
 recipes.remove(<bountifulbaubles:trinketobsidianskull>);
 mods.embers.Alchemy.add(<bountifulbaubles:trinketobsidianskull>,
@@ -157,9 +266,48 @@ mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:s
 recipes.remove(<bountifulbaubles:shieldobsidian>);
 mods.embers.Alchemy.add(<bountifulbaubles:shieldobsidian>,
 [<bountifulbaubles:shieldcobalt>,
-<minecraft:lingering_potion>.withTag({Potion: "cyclicmagic:swim"}), <ore:dustPrismarine>, <minecraft:lingering_potion>.withTag({Potion: "cyclicmagic:swim"}),
+<cyclicmagic:crystallized_obsidian>, <bountifulbaubles:trinketobsidianskull>, <cyclicmagic:crystallized_obsidian>,
 <transmutationalchemy:magical_dust_tier3>],
-{"lead": 24 to 36, "silver": 24 to 36});
+{"lead": 64 to 128});
+
+recipes.remove(<bountifulbaubles:trinketmixeddragonscale>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketmixeddragonscale>,
+[<bountifulbaubles:trinketblackdragonscale>,
+<embers:adhesive>, <transmutationalchemy:elemental_clay>, <embers:adhesive>,
+<bountifulbaubles:trinketbezoar>],
+{"iron": 64 to 128});
+
+//***************************
+//		     STAGE 4+ BAUBLES
+//***************************
+
+recipes.remove(<xat:poison_stone>);
+mods.embers.Alchemy.add(<xat:poison_stone>,
+[<biomesoplenty:terrestrial_artifact>,
+<iceandfire:hydra_fang>, <bountifulbaubles:trinketbezoar>, <mowziesmobs:naga_fang>,
+<bountifulbaubles:trinketapple>],
+{"lead": 192 to 192});
+
+recipes.remove(<xat:inertia_null_stone>);
+mods.embers.Alchemy.add(<xat:inertia_null_stone>,
+[<biomesoplenty:terrestrial_artifact>,
+<bountifulbaubles:trinketluckyhorseshoe>, <minecraft:slime_ball>, <bountifulbaubles:shieldcobalt>,
+<transmutationalchemy:unstable_dust>],
+{"iron": 192 to 192});
+
+recipes.remove(<xat:weightless_stone>);
+mods.embers.Alchemy.add(<xat:weightless_stone>,
+[<biomesoplenty:terrestrial_artifact>,
+<minecraft:lingering_potion>.withTag({Potion: "potioncore:long_levitation"}), <ebwizardry:scroll:11>, <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:gravity_long"}),
+<bountifulbaubles:trinketshulkerheart>],
+{"lead": 128 to 128, "dawnstone": 128 to 128});
+
+recipes.remove(<xat:greater_inertia_stone>);
+mods.embers.Alchemy.add(<xat:greater_inertia_stone>,
+[<xat:inertia_null_stone>,
+<aether:cloud_parachute>, <ebwizardry:scroll:170>, <thaumcraft:cloud_ring>,
+<minecraft:lingering_potion>.withTag({Potion: "charm:coffee"})],
+{"silver": 192 to 192, "dawnstone": 192 to 192});
 
 
 
