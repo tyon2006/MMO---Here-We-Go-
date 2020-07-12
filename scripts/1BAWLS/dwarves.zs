@@ -44,8 +44,25 @@ recipes.addShapeless("biomesoplenty_terrestrial_artifact", <biomesoplenty:terres
 <ore:gemPeridot>, <ore:gemMalachite>, <ore:gemSapphire>, 
 <ore:gemTanzanite>, <ore:gemEmerald>, <ore:gemDiamond>]);
 
+recipes.remove(<bountifulbaubles:reforger>);
+recipes.addShapedMirrored("recipenamecmon", <bountifulbaubles:reforger>, 
+[[<embers:eldritch_insignia>, <minecraft:lava_bucket>, <embers:intelligent_apparatus>], 
+[<embers:tinker_hammer>, <ore:workbench>, <embers:tinker_hammer>], 
+[<embers:winding_gears>, <minecraft:anvil>, <embers:superheater>]]);
 
+recipes.remove(<xat:titan_spirit>);
+recipes.addShapedMirrored("titan_spirit", <bountifulbaubles:reforger>, 
+[[<embers:eldritch_insignia>, <minecraft:lava_bucket>, <embers:intelligent_apparatus>], 
+[<embers:tinker_hammer>, <ore:workbench>, <embers:tinker_hammer>], 
+[<embers:winding_gears>, <minecraft:anvil>, <embers:superheater>]]);
 
+recipes.remove(<xat:fairy_dew>);
+recipes.addShapedMirrored("fairy_dew", <bountifulbaubles:reforger>, 
+[[<embers:eldritch_insignia>, <minecraft:lava_bucket>, <embers:intelligent_apparatus>], 
+[<embers:tinker_hammer>, <ore:workbench>, <embers:tinker_hammer>], 
+[<embers:winding_gears>, <minecraft:anvil>, <embers:superheater>]]);
+
+recipes.remove(<xat:dwarf_stout>);
 
 
 

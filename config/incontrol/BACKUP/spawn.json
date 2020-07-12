@@ -1,0 +1,6446 @@
+[
+	{
+		"mob": "mowziesmobs:lantern",
+		"biome": [
+			"Bamboo Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eucalyptus Forest",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Lavender Fields",
+			"MushroomIslandShore",
+			"Oasis",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "mowziesmobs:lantern",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 10,
+		"speedadd": 0.2
+	},
+	{
+		"mob": "magma_monsters:magma_monster_grunt",
+		"biome": [
+			"Volcanic Island",
+			"Hell",
+			"Torrid Wasteland",
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "magma_monsters:magma_monster_grunt",
+			"amount": 18,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "magma_monsters:magma_monster",
+		"biome": [
+			"Volcanic Island",
+			"Hell",
+			"Torrid Wasteland",
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "magma_monsters:magma_monster",
+			"amount": 6,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 50
+	},
+	{
+		"mob": "mowziesmobs:frostmaw",
+		"biome": [
+			"Ice Plains Spikes"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "mowziesmobs:frostmaw",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 250,
+		"damageadd": 5,
+		"speedadd": 2
+	},
+	{
+		"mob": "betteranimalsplus:hirschgeist",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Cold Taiga",
+			"Meadow",
+			"Sunflower Plains",
+			"Roofed Forest M",
+			"Pasture",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Cold Taiga Hills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "betteranimalsplus:hirschgeist",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 100
+	},
+	
+	{
+		"mob": "embers:ancient_golem",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills+",
+			"Highland",
+			"Ice Mountains",
+			"JungleHills",
+			"Mountain",
+			"MountainFoothills",
+			"Desert M",
+			"Extreme Hills M",
+			"Extreme Hills+ M",
+			"Swampland M",
+			"Overgrown Cliffs",
+			"Steppe",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "embers:ancient_golem",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 25
+	},
+	{
+		"mob": "golems:golem_ice",
+		"biome": [
+			"Boreal Forest",
+			"Ice Plains",
+			"Mega Spruce Taiga",
+			"Seasonal Forest",
+			"Snowy Forest",
+			"Taiga",
+			"Taiga M"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "golems:golem_ice",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "golems:golem_leaves",
+		"biome": [
+			"Bamboo Forest",
+			"Birch Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Birch Forest M",
+			"Grassland",
+			"Forest",
+			"ForestHills",
+			"Maple Woods",
+			"Orchard",
+			"Origin Island",
+			"Plains"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "golems:golem_leaves",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "golems:golem_shroom",
+		"biome": [
+			"MushroomIsland",
+			"MushroomIsland"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "golems:golem_shroom",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "golems:golem_straw",
+		"biome": [
+			"MushroomIslandShore",
+			"MushroomIslandShore",
+			"Fen",
+			"Mesa (Bryce)",
+			"Savanna M",
+			"Savanna",
+			"Brushland",
+			"Dead Forest",
+			"Fen",
+			"Mesa (Bryce)",
+			"Savanna M",
+			"Savanna",
+			"Brushland",
+			"Dead Forest",
+			"Fen",
+			"Mesa (Bryce)",
+			"Savanna M",
+			"Savanna"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "golems:golem_straw",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "golems:golem_wooden",
+		"biome": [
+			"Brushland",
+			"Grassland",
+			"Marsh",
+			"Plains",
+			"Savanna",
+			"Savanna M",
+			"Swampland",
+			"Wetland",
+			"Brushland",
+			"Grassland",
+			"Marsh",
+			"Plains",
+			"Savanna",
+			"Savanna M",
+			"Swampland",
+			"Wetland"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "golems:golem_wooden",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "illagers_plus:archer",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Woodland",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "illagers_plus:archer",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 4
+	},
+	{
+		"mob": "illagers_plus:enchanter",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Stone Beach",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "illagers_plus:enchanter",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 6
+	},
+	{
+		"mob": "illagers_plus:furantur",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Woodland",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "illagers_plus:furantur",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 8
+	},
+	{
+		"mob": "illagers_plus:hoarder",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Stone Beach",
+			"Sunflower Plains",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "illagers_plus:hoarder",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 6
+	},
+	{
+		"mob": "illagers_plus:necromancer",
+		"biome": [
+			"Flower Field",
+			"Land of Lakes",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Savanna Plateau",
+			"Flower Field",
+			"Land of Lakes",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "illagers_plus:necromancer",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 24
+	},
+	{
+		"mob": "minecraft:evocation_illager",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Flower Field",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Flower Field",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "minecraft:evocation_illager",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 20
+	},
+	{
+		"mob": "minecraft:illusion_illager",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Cold Taiga",
+			"Coral Reef",
+			"Flower Field",
+			"Kelp Forest",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Stone Beach",
+			"Sunflower Plains",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "minecraft:illusion_illager",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 4
+	},
+	{
+		"mob": "minecraft:polar_bear",
+		"biome": [
+			"Cold Taiga",
+			"Grove",
+			"Ice Plains",
+			"Mega Spruce Taiga",
+			"Shield",
+			"SnowyTundra",
+			"Taiga",
+			"Taiga M",
+			"Tundra",
+			"Seasonal Forest",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"TaigaHills",
+			"FrozenOcean",
+			"FrozenRiver"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "minecraft:polar_bear",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "minecraft:silverfish",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Dead Swamp",
+			"Land of Lakes",
+			"Lush Desert",
+			"Lush Swamp",
+			"Mangrove",
+			"Moor",
+			"JungleEdge",
+			"MushroomIsland",
+			"Rainforest",
+			"Quagmire",
+			"Swampland M",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"JungleHills"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "minecraft:silverfish",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "minecraft:snowman",
+		"biome": [
+			"Boreal Forest",
+			"Ice Plains",
+			"Mega Spruce Taiga",
+			"Seasonal Forest",
+			"Snowy Forest",
+			"Taiga",
+			"Taiga M"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "minecraft:snowman",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "minecraft:squid",
+		"biome": [
+			"Ocean"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "minecraft:squid",
+			"amount": 6,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "minecraft:vindication_illager",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Cold Taiga",
+			"Coral Reef",
+			"Flower Field",
+			"Kelp Forest",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Stone Beach",
+			"Sunflower Plains",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "minecraft:vindication_illager",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 4
+	},
+	{
+		"mob": "minecraft:witch",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "minecraft:witch",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10
+	},
+	{
+		"mob": "mod_lavacow:foglet",
+		"biome": [
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"JungleHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:foglet",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 4
+	},
+	{
+		"mob": "mod_lavacow:mimic",
+		"biome": [
+			"Alps",
+			"Crag",
+			"Ice Plains Spikes",
+			"Glacier",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"AlpsFoothills",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Ice Mountains",
+			"Overgrown Cliffs",
+			"Volcanic Island"
+		],
+		"mindifficulty": 0,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "mod_lavacow:mimic",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 10
+	},
+	{
+		"mob": "mod_lavacow:piranha",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Dead Swamp",
+			"Land of Lakes",
+			"Lush Swamp",
+			"Mangrove",
+			"Moor",
+			"Swampland M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:piranha",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "mod_lavacow:ptera",
+		"biome": [
+			"Mesa",
+			"Mesa (Bryce)",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:ptera",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10
+	},
+	{
+		"mob": "mod_lavacow:scarecrow",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Dead Swamp",
+			"Flower Field",
+			"Lush Swamp",
+			"Mangrove",
+			"Meadow",
+			"Moor",
+			"Sunflower Plains",
+			"Pasture",
+			"Prairie",
+			"Quagmire"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "mod_lavacow:scarecrow",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 60
+	},
+	{
+		"mob": "mod_lavacow:sludgelord",
+		"biome": [
+			"Crag",
+			"Dead Swamp",
+			"Eerie",
+			"Ominous Woods",
+			"Quagmire"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:sludgelord",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 60
+	},
+	{
+		"mob": "mod_lavacow:undeadswine",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "mod_lavacow:undeadswine",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 20
+	},
+	{
+		"mob": "mod_lavacow:vespa",
+		"biome": [
+			"Bayou",
+			"Land of Lakes",
+			"Lush Desert",
+			"Lush Swamp",
+			"Mangrove",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:vespa",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10
+	},
+	{
+		"mob": "mod_lavacow:zombiefrozen",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Crag",
+			"Eerie",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Mega Taiga",
+			"Mega Taiga Hills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:zombiefrozen",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10
+	},
+	{
+		"mob": "mod_lavacow:zombiemushroom",
+		"biome": [
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Roofed Forest M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:zombiemushroom",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10
+	},
+	{
+		"mob": "mod_lavacow:zombiepiranha",
+		"biome": [
+			"Dead Swamp",
+			"Desert",
+			"Quagmire",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mod_lavacow:zombiepiranha",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "mowziesmobs:baby_foliaath",
+		"biome": [
+			"Flower Field",
+			"Flower Forest",
+			"Flower Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mowziesmobs:baby_foliaath",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "mowziesmobs:barako",
+		"biome": [
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "mowziesmobs:barako",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "mowziesmobs:foliaath",
+		"biome": [
+			"Flower Field",
+			"Flower Forest",
+			"Flower Island"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "mowziesmobs:foliaath",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 50
+	},
+	{
+		"mob": "mowziesmobs:grottol",
+		"biome": [
+			"AlpsFoothills",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Highland",
+			"Ice Mountains",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Snowy Coniferous Forest",
+			"TaigaHills",
+			"Volcanic Island"
+		],
+		"mindifficulty": 0,
+		"seesky": false,
+		"maxcount": {
+			"mob": "mowziesmobs:grottol",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "mowziesmobs:naga",
+		"biome": [
+			"Bayou",
+			"Land of Lakes",
+			"Lush Swamp",
+			"Mangrove",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxtime": 12000,
+		"mintime": 0,
+		"minheight": 74,
+		"maxcount": {
+			"mob": "mowziesmobs:naga",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "mutantbeasts:mutant_creeper",
+		"biome": [
+			"Alps",
+			"Crag"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mutantbeasts:mutant_creeper",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 24
+	},
+	{
+		"mob": "mutantbeasts:mutant_enderman",
+		"biome": [
+			"End"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mutantbeasts:mutant_enderman",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 24
+	},
+	{
+		"mob": "mutantbeasts:mutant_skeleton",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Mega Taiga"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mutantbeasts:mutant_skeleton",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 24
+	},
+	{
+		"mob": "mutantbeasts:mutant_zombie",
+		"biome": [
+			"Dead Swamp",
+			"Desert"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "mutantbeasts:mutant_zombie",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 24
+	},
+	{
+		"mob": "primitivemobs:baby_spider",
+		"biome": [
+			"Bayou",
+			"Dead Swamp",
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Land of Lakes",
+			"Lush Desert",
+			"Lush Swamp",
+			"Mangrove",
+			"Mystic Grove",
+			"Quagmire",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:baby_spider",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:bewitched_tome",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxcount": {
+			"mob": "primitivemobs:bewitched_tome",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "primitivemobs:blazing_juggernaut",
+		"biome": [
+			"Hell",
+			"Phantasmagoric Inferno",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:blazing_juggernaut",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 20
+	},
+	{
+		"mob": "primitivemobs:brain_slime",
+		"biome": [
+			"Bamboo Forest",
+			"Boreal Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eucalyptus Forest",
+			"Grove",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Lavender Fields",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Oasis",
+			"Rainforest",
+			"Temperate Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:brain_slime",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:chameleon",
+		"biome": [
+			"Brushland",
+			"Chaparral",
+			"Desert",
+			"Desert M",
+			"DesertHills",
+			"Mesa",
+			"Mesa (Bryce)",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Oasis",
+			"Outback",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau M",
+			"Steppe"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:chameleon",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "primitivemobs:dodo",
+		"biome": [
+			"Flower Island",
+			"MushroomIsland",
+			"Volcanic Island"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:dodo",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "primitivemobs:festive_creeper",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest M",
+			"Extreme Hills Edge",
+			"Forest",
+			"ForestHills",
+			"Grassland",
+			"Ice Plains",
+			"Maple Woods",
+			"Mega Spruce Taiga",
+			"Orchard",
+			"Plains",
+			"Seasonal Forest",
+			"Snowy Forest",
+			"Taiga",
+			"Taiga M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:festive_creeper",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 4
+	},
+	{
+		"mob": "primitivemobs:filch_lizard",
+		"biome": [
+			"Brushland",
+			"Chaparral",
+			"Cold Beach",
+			"Cold Desert",
+			"Dead Forest",
+			"DesertHills",
+			"Gravel Beach",
+			"Mesa (Bryce)",
+			"Oasis",
+			"Outback",
+			"Prairie",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau M",
+			"Shrubland",
+			"Xeric Shrubland"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:filch_lizard",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "primitivemobs:flame_spewer",
+		"biome": [
+			"Volcanic Island",
+			"Arctic Abyss",
+			"Corrupted Sands",
+			"Fungi Forest",
+			"Hell",
+			"Phantasmagoric Inferno",
+			"Ruthless Sands",
+			"Torrid Wasteland",
+			"Undergarden",
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:flame_spewer",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 4
+	},
+	{
+		"mob": "primitivemobs:goblin",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Cold Taiga Hills",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Woodland"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "primitivemobs:goblin",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:grovesprite",
+		"biome": [
+			"Bamboo Forest",
+			"Birch Forest",
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Birch Forest M",
+			"Boreal Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Forest",
+			"ForestHills",
+			"Grove",
+			"Maple Woods",
+			"Orchard",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Woodland"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:grovesprite",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "primitivemobs:harpy",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest M",
+			"Cold Taiga Hills",
+			"ForestHills",
+			"Mega Taiga Hills",
+			"Origin Island",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau",
+			"Birch Forest",
+			"Birch Forest M",
+			"Cold Taiga Hills",
+			"ForestHills",
+			"Mega Taiga Hills",
+			"Origin Island",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:harpy",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 8
+	},
+	{
+		"mob": "primitivemobs:haunted_tool",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:haunted_tool",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "primitivemobs:lily_lurker",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Eucalyptus Forest",
+			"Land of Lakes",
+			"Lush Swamp",
+			"Mangrove",
+			"Moor",
+			"Mystic Grove",
+			"Sacred Springs"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:lily_lurker",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:mimic",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Crag",
+			"Dead Swamp",
+			"Eerie",
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"Ice Plains Spikes",
+			"Magical Forest",
+			"Mangrove",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Sacred Springs"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "primitivemobs:mimic",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 10
+	},
+	{
+		"mob": "primitivemobs:mother_spider",
+		"biome": [
+			"Eerie",
+			"Lush Desert",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:mother_spider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 20
+	},
+	{
+		"mob": "primitivemobs:skeleton_warrior",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest M",
+			"Brushland",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Forest",
+			"ForestHills",
+			"Grassland",
+			"Mega Taiga",
+			"Orchard",
+			"Origin Beach",
+			"Origin Island",
+			"Plains",
+			"Roofed Forest M",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau",
+			"Taiga"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:skeleton_warrior",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:support_creeper",
+		"biome": [
+			"Alps",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Crag",
+			"Dead Swamp",
+			"Deep Ocean",
+			"Desert",
+			"Eerie",
+			"Ice Plains Spikes",
+			"Mega Taiga",
+			"Ominous Woods",
+			"Quagmire",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:support_creeper",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:traveling_merchant",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Stone Beach",
+			"Sunflower Plains",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 0,
+		"seesky": true,
+		"maxcount": {
+			"mob": "primitivemobs:traveling_merchant",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 10
+	},
+	{
+		"mob": "primitivemobs:treasure_slime",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:treasure_slime",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "primitivemobs:trollager",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Land of Lakes",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Woodland",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "primitivemobs:trollager",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 50,
+		"damageadd": 10
+	},
+	{
+		"mob": "primitivemobs:void_eye",
+		"biome": [
+			"Bamboo Forest",
+			"Boreal Forest",
+			"Cherry Blossom Grove",
+			"Crag",
+			"Dead Forest",
+			"Eerie",
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Sacred Springs"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "primitivemobs:void_eye",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow",
+		"speedadd": 0.2
+	},
+	{
+		"mob": "quark:ashen",
+		"biome": [
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "quark:ashen",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10
+	},
+	{
+		"mob": "quark:dweller",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest M",
+			"Brushland",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Forest",
+			"ForestHills",
+			"Grassland",
+			"Mega Taiga",
+			"Orchard",
+			"Origin Beach",
+			"Origin Island",
+			"Plains",
+			"Roofed Forest M",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau",
+			"Taiga"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "quark:dweller",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "quark:stoneling",
+		"biome": [
+			"Mountain",
+			"MountainFoothills",
+			"Cold Desert",
+			"SnowyTundra",
+			"TaigaHills",
+			"Tundra",
+			"AlpsFoothills",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Ice Mountains",
+			"Glacier",
+			"Volcanic Island",
+			"Alps",
+			"Crag",
+			"Ice Plains Spikes"
+		],
+		"mindifficulty": 0,
+		"seesky": false,
+		"maxheight": 50,
+		"maxcount": {
+			"mob": "quark:stoneling",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "quark:wraith",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Dead Swamp",
+			"Deep Ocean",
+			"Desert",
+			"Mega Taiga",
+			"Quagmire",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxcount": {
+			"mob": "quark:wraith",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "rats:feral_ratlantean",
+		"biome": [
+			"Dead Swamp",
+			"Mangrove",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Bayou",
+			"Quagmire",
+			"Lush Swamp",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "rats:feral_ratlantean",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 50,
+		"damageadd": 2,
+		"speedadd": 0.5
+	},
+	{
+		"mob": "rats:illager_piper",
+		"biome": [
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Extreme Hills",
+			"Extreme Hills Edge",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Highland",
+			"Maple Woods",
+			"Mega Spruce Taiga",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"Seasonal Forest",
+			"Shield",
+			"Taiga M",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "rats:illager_piper",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "rats:rat",
+		"biome": [
+			"Cold Desert",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Extreme Hills Edge",
+			"Highland",
+			"Maple Woods",
+			"Mega Spruce Taiga",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"Seasonal Forest",
+			"Shield",
+			"Taiga M",
+			"TaigaHills"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "rats:rat",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thaumcraft:brainyzombie",
+		"biome": [
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"Grove",
+			"JungleEdge",
+			"Lavender Fields",
+			"Lush Desert",
+			"Magical Forest",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Mystic Grove",
+			"Rainforest",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thaumcraft:brainyzombie",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thaumcraft:eldritchcrab",
+		"biome": [
+			"Eerie",
+			"black_ridge",
+			"deceitful_bog",
+			"fungi_forest",
+			"hilly_fungi_forest",
+			"hilly_vigilant_forest",
+			"night_plains",
+			"obscured_peaks",
+			"obscured_plateau",
+			"phantasmal_valley",
+			"runebush_grove",
+			"vigilant_forest",
+			"warped_fields"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thaumcraft:eldritchcrab",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thaumcraft:eldritchguardian",
+		"biome": [
+			"black_ridge",
+			"deceitful_bog",
+			"fungi_forest",
+			"hilly_fungi_forest",
+			"hilly_vigilant_forest",
+			"night_plains",
+			"obscured_peaks",
+			"obscured_plateau",
+			"phantasmal_valley",
+			"runebush_grove",
+			"vigilant_forest",
+			"warped_fields"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thaumcraft:eldritchguardian",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thaumcraft:inhabitedzombie",
+		"biome": [
+			"black_ridge",
+			"deceitful_bog",
+			"fungi_forest",
+			"hilly_fungi_forest",
+			"hilly_vigilant_forest",
+			"night_plains",
+			"obscured_peaks",
+			"obscured_plateau",
+			"phantasmal_valley",
+			"runebush_grove",
+			"vigilant_forest",
+			"warped_fields"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thaumcraft:inhabitedzombie",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thaumcraft:pech",
+		"biome": [
+			"black_ridge",
+			"crystal_spires",
+			"deceitful_bog",
+			"fungi_forest",
+			"hilly_fungi_forest",
+			"hilly_vigilant_forest",
+			"night_plains",
+			"obscured_peaks",
+			"obscured_plateau",
+			"phantasmal_valley",
+			"runebush_grove",
+			"vigilant_forest",
+			"warped_fields"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "thaumcraft:pech",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thaumcraft:thaumslime",
+		"biome": [
+			"black_ridge",
+			"crystal_spires",
+			"deceitful_bog",
+			"fungi_forest",
+			"hilly_fungi_forest",
+			"hilly_vigilant_forest",
+			"night_plains",
+			"obscured_peaks",
+			"obscured_plateau",
+			"phantasmal_valley",
+			"runebush_grove",
+			"vigilant_forest",
+			"warped_fields"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxcount": {
+			"mob": "thaumcraft:thaumslime",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "thaumcraft:wisp",
+		"biome": [
+			"black_ridge",
+			"crystal_spires",
+			"deceitful_bog",
+			"fungi_forest",
+			"hilly_fungi_forest",
+			"hilly_vigilant_forest",
+			"night_plains",
+			"obscured_peaks",
+			"obscured_plateau",
+			"phantasmal_valley",
+			"runebush_grove",
+			"vigilant_forest",
+			"warped_fields"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "thaumcraft:wisp",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:gorrbat",
+		"biome": [
+			"Overgrown Cliffs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "thejungle:gorrbat",
+			"amount": 4,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "thejungle:junglespider",
+		"biome": [
+			"Eerie",
+			"Eucalyptus Forest",
+			"JungleEdge",
+			"JungleHills",
+			"Magical Forest",
+			"Flower Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Temperate Rainforest",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "thejungle:junglespider",
+			"amount": 9,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "thejungle:lizardman",
+		"biome": [
+			"Elysian Fields",
+			"Elysian Forest",
+			"Fungal Forest",
+			"Petrified Forest",
+			"Submerged Swamp",
+			"Subterranean Savannah",
+			"Ulterior Outback",
+			"Underground Jungle",
+			"Volcanic Desert"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:lizardman",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:lizardmanskewerer",
+		"biome": [
+			"Elysian Fields",
+			"Elysian Forest",
+			"Fungal Forest",
+			"Petrified Forest",
+			"Submerged Swamp",
+			"Subterranean Savannah",
+			"Ulterior Outback",
+			"Underground Jungle",
+			"Volcanic Desert"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:lizardmanskewerer",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:lizardmanstalker",
+		"biome": [
+			"Elysian Fields",
+			"Elysian Forest",
+			"Fungal Forest",
+			"Petrified Forest",
+			"Submerged Swamp",
+			"Subterranean Savannah",
+			"Ulterior Outback",
+			"Underground Jungle",
+			"Volcanic Desert"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:lizardmanstalker",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:lizardmanwitchdoctor",
+		"biome": [
+			"Elysian Fields",
+			"Elysian Forest",
+			"Fungal Forest",
+			"Petrified Forest",
+			"Submerged Swamp",
+			"Subterranean Savannah",
+			"Ulterior Outback",
+			"Underground Jungle",
+			"Volcanic Desert"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:lizardmanwitchdoctor",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:mistspider",
+		"biome": [
+			"Eerie",
+			"JungleEdge",
+			"JungleHills",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:mistspider",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:rhinopter",
+		"biome": [
+			"Elysian Fields",
+			"Elysian Forest",
+			"Submerged Swamp",
+			"Subterranean Savannah",
+			"Ulterior Outback",
+			"Underground Jungle"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:rhinopter",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:stonegolem",
+		"biome": [
+			"Eerie",
+			"Magical Forest",
+			"Flower Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxcount": {
+			"mob": "thejungle:stonegolem",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "thejungle:superdupersaurus",
+		"biome": [
+			"JungleEdge",
+			"JungleHills",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"JungleEdge",
+			"JungleHills",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"JungleEdge",
+			"JungleHills",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 0,
+		"maxcount": {
+			"mob": "thejungle:superdupersaurus",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "thejungle:swampcrab",
+		"biome": [
+			"Bog",
+			"Lush Swamp",
+			"Mangrove",
+			"Moor"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "thejungle:swampcrab",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:darkcreeper",
+		"biome": [
+			"Cold Desert",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Highland",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:darkcreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:deathcreeper",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:deathcreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:doomcreeper",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:doomcreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:endercreeper",
+		"biome": [
+			"The Void",
+			"The End"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:endercreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:firecreeper",
+		"biome": [
+			"Desert",
+			"Desert M",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Wasteland",
+			"Volcanic Island",
+			"Wasteland",
+			"Hell"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:firecreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:jumpingcreeper",
+		"biome": [
+			"Cold Desert",
+			"Extreme Hills Edge",
+			"Highland",
+			"Ice Plains",
+			"Maple Woods",
+			"Mega Spruce Taiga",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Shield",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"SnowyTundra",
+			"Taiga M",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:jumpingcreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:lightningcreeper",
+		"biome": [
+			"Cold Desert",
+			"Extreme Hills Edge",
+			"Highland",
+			"Ice Plains",
+			"Maple Woods",
+			"Mega Spruce Taiga",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Shield",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"SnowyTundra",
+			"Taiga M",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:lightningcreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:minicreeper",
+		"biome": [
+			"Extreme Hills Edge",
+			"Ice Plains",
+			"Maple Woods",
+			"Mega Spruce Taiga",
+			"Seasonal Forest",
+			"Shield",
+			"Snowy Forest",
+			"Taiga M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:minicreeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:splittingcreeper",
+		"biome": [
+			"AlpsFoothills",
+			"Cold Desert",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Highland",
+			"Ice Mountains",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Snowy Coniferous Forest",
+			"SnowyTundra",
+			"TaigaHills",
+			"Tundra"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:splittingcreeper",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:brutezombie",
+		"biome": [
+			"Bog",
+			"Dead Forest",
+			"DesertHills",
+			"Fen",
+			"Gravel Beach",
+			"Marsh",
+			"Mesa (Bryce)",
+			"Moor",
+			"Outback",
+			"Savanna Plateau M",
+			"Shrubland",
+			"Steppe",
+			"Swampland",
+			"Swampland M",
+			"Wetland",
+			"Xeric Shrubland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:brutezombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:firezombie",
+		"biome": [
+			"Desert",
+			"Desert M",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Wasteland",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:firezombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:fishingzombie",
+		"biome": [
+			"Beach",
+			"Cold Beach",
+			"Gravel Beach",
+			"MushroomIslandShore",
+			"River",
+			"Stone Beach",
+			"White Beach"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:fishingzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:giantzombie",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Desert M",
+			"DesertHills",
+			"Lush Swamp",
+			"Mangrove",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Moor",
+			"Outback",
+			"Savanna Plateau M",
+			"Shrubland",
+			"Steppe",
+			"Swampland M",
+			"Xeric Shrubland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:giantzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:hungryzombie",
+		"biome": [
+			"Bayou",
+			"Dead Swamp",
+			"Desert",
+			"Desert M",
+			"Lush Swamp",
+			"Mangrove",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Quagmire",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:hungryzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:huskzombie",
+		"biome": [
+			"Desert",
+			"Desert M",
+			"DesertHills",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Mesa Plateau F",
+			"Outback",
+			"Prairie",
+			"Savanna Plateau M",
+			"Shrubland",
+			"Steppe",
+			"Volcanic Island",
+			"Xeric Shrubland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:huskzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:plaguezombie",
+		"biome": [
+			"Fungi Forest",
+			"Undergarden"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:plaguezombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:brutepigzombie",
+		"biome": [
+			"Fungi Forest",
+			"Undergarden"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:brutepigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:fishingpigzombie",
+		"biome": [
+			"Fungi Forest",
+			"Undergarden"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:fishingpigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:giantpigzombie",
+		"biome": [
+			"Fungi Forest",
+			"Undergarden"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:giantpigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:hungrypigzombie",
+		"biome": [
+			"Fungi Forest",
+			"Undergarden"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:hungrypigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:knightpigzombie",
+		"biome": [
+			"Fungi Forest",
+			"Undergarden"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:knightpigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:plaguepigzombie",
+		"biome": [
+			"Fungi Forest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:plaguepigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:vampirepigzombie",
+		"biome": [
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:vampirepigzombie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:bruteskeleton",
+		"biome": [
+			"Beach",
+			"Birch Forest",
+			"Birch Forest M",
+			"Brushland",
+			"Cold Beach",
+			"Forest",
+			"ForestHills",
+			"FrozenRiver",
+			"Grassland",
+			"Ocean",
+			"Orchard",
+			"Origin Beach",
+			"Origin Island",
+			"Plains",
+			"River",
+			"Savanna",
+			"Savanna M",
+			"Taiga"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:bruteskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:fireskeleton",
+		"biome": [
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:fireskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:gatlingskeleton",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:gatlingskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:giantskeleton",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Mega Taiga",
+			"Roofed Forest M",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:giantskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:knightskeleton",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Coral Reef",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Stone Beach",
+			"Sunflower Plains",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:knightskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:ninjaskeleton",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Flower Field",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:ninjaskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:poisonskeleton",
+		"biome": [
+			"Bayou",
+			"Dead Swamp",
+			"Land of Lakes",
+			"Lush Desert",
+			"Lush Swamp",
+			"Mangrove",
+			"Mystic Grove",
+			"Quagmire",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:poisonskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:sniperskeleton",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:sniperskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:knightwitherskeleton",
+		"biome": [
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:knightwitherskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:ninjawitherskeleton",
+		"biome": [
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:ninjawitherskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:sniperwitherskeleton",
+		"biome": [
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:sniperwitherskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:spitfirewitherskeleton",
+		"biome": [
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:spitfirewitherskeleton",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:blackberryslime",
+		"biome": [
+			"Mega Spruce Taiga",
+			"Taiga",
+			"Mega Taiga",
+			"Taiga M",
+			"Cold Taiga",
+			"Grove"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:blackberryslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:blueberryslime",
+		"biome": [
+			"FrozenRiver",
+			"Cold Taiga M",
+			"Dead Swamp",
+			"Eerie",
+			"Ice Plains",
+			"Quagmire",
+			"Grove",
+			"SnowyTundra",
+			"Stone Beach",
+			"Tundra"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:blueberryslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:caramelslime",
+		"biome": [
+			"Brushland",
+			"Chaparral",
+			"Fen",
+			"Oasis",
+			"Outback",
+			"Prairie",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau M",
+			"Shrubland",
+			"Xeric Shrubland"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:caramelslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:grapeslime",
+		"biome": [
+			"Fen",
+			"Birch Forest",
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Birch Forest M",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Flower Forest",
+			"Forest",
+			"ForestHills",
+			"Magical Forest",
+			"Maple Woods",
+			"Ominous Woods",
+			"Orchard",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:grapeslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:lemonslime",
+		"biome": [
+			"Dead Forest",
+			"Desert",
+			"DesertHills",
+			"Mesa",
+			"Mesa (Bryce)",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:lemonslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:strawberryslime",
+		"biome": [
+			"Bamboo Forest",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"Lush Desert",
+			"Mangrove",
+			"Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:strawberryslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:watermelonslime",
+		"biome": [
+			"Dead Forest",
+			"Prairie",
+			"Extreme Hills Edge",
+			"Flower Field",
+			"Flower Island",
+			"Grassland",
+			"Lavender Fields",
+			"Meadow",
+			"Pasture",
+			"Plains",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:watermelonslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:flyinglavaslime",
+		"biome": [
+			"Corrupted Sands",
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:flyinglavaslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:hardenedlavaslime",
+		"biome": [
+			"Corrupted Sands",
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:hardenedlavaslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:stickylavaslime",
+		"biome": [
+			"Corrupted Sands",
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:stickylavaslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:volatilelavaslime",
+		"biome": [
+			"Corrupted Sands",
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:volatilelavaslime",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:babyspider",
+		"biome": [
+			"Bamboo Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eucalyptus Forest",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Lavender Fields",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Oasis",
+			"Rainforest",
+			"Temperate Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:babyspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:desertspider",
+		"biome": [
+			"Cold Desert",
+			"Desert M",
+			"DesertHills",
+			"Lush Desert",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:desertspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:flyingspider",
+		"biome": [
+			"Bamboo Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eucalyptus Forest",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Lavender Fields",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Oasis",
+			"Rainforest",
+			"Temperate Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:flyingspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:giantspider",
+		"biome": [
+			"Eucalyptus Forest",
+			"JungleEdge",
+			"JungleHills",
+			"Lavender Fields",
+			"Lush Desert",
+			"Magical Forest",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Temperate Rainforest",
+			"Tropical Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:giantspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:hungryspider",
+		"biome": [
+			"Lush Desert",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:hungryspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:motherspider",
+		"biome": [
+			"Lush Desert",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:motherspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:palespider",
+		"biome": [
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"JungleEdge",
+			"JungleHills",
+			"Lavender Fields",
+			"Lush Desert",
+			"Magical Forest",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Mystic Grove",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:palespider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:poisonspider",
+		"biome": [
+			"Eerie",
+			"Lush Desert",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Roofed Forest",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:poisonspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:webspider",
+		"biome": [
+			"Bamboo Forest",
+			"Boreal Forest",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Eerie",
+			"Flower Island",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge M",
+			"Oasis",
+			"Ominous Woods"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:webspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:witchspider",
+		"biome": [
+			"Bamboo Forest",
+			"Boreal Forest",
+			"Cherry Blossom Grove",
+			"Crag",
+			"Dead Forest",
+			"Eerie",
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Sacred Springs"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:witchspider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:babycavespider",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest M",
+			"Extreme Hills Edge",
+			"ForestHills",
+			"Highland",
+			"Maple Woods",
+			"Mountain",
+			"MountainFoothills",
+			"Origin Island",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"Swampland M",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:babycavespider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:flyingcavespider",
+		"biome": [
+			"AlpsFoothills",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Highland",
+			"Ice Mountains",
+			"Mega Taiga Hills",
+			"Mountain",
+			"MountainFoothills",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Snowy Coniferous Forest",
+			"Swampland M",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:flyingcavespider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:mothercavespider",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Cold Taiga Hills",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Mega Taiga Hills"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:mothercavespider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:webcavespider",
+		"biome": [
+			"Alps",
+			"Birch Forest",
+			"Birch Forest M",
+			"Cold Taiga Hills",
+			"Crag",
+			"Extreme Hills Edge",
+			"ForestHills",
+			"Ice Plains Spikes",
+			"Maple Woods",
+			"Origin Island",
+			"Seasonal Forest",
+			"Snowy Forest"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:webcavespider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:witchcavespider",
+		"biome": [
+			"Crag",
+			"Eerie",
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Sacred Springs"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:witchcavespider",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:blindingsilverfish",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"FrozenOcean",
+			"FrozenRiver",
+			"Kelp Forest",
+			"Ocean",
+			"River"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:blindingsilverfish",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:fishingsilverfish",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"FrozenOcean",
+			"FrozenRiver",
+			"Kelp Forest",
+			"Ocean",
+			"River"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:fishingsilverfish",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:flyingsilverfish",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Coral Reef",
+			"Deep Ocean",
+			"Flower Field",
+			"Kelp Forest",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:flyingsilverfish",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:poisonsilverfish",
+		"biome": [
+			"Bayou",
+			"Bog",
+			"Dead Swamp",
+			"JungleEdge",
+			"JungleHills",
+			"Land of Lakes",
+			"Lush Desert",
+			"Lush Swamp",
+			"Mangrove",
+			"Moor",
+			"MushroomIsland",
+			"Rainforest",
+			"Swampland M",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:poisonsilverfish",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:toughsilverfish",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Crag",
+			"Desert M",
+			"Extreme Hills",
+			"Extreme Hills Edge",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Highland",
+			"Ice Mountains",
+			"JungleHills",
+			"Mountain",
+			"MountainFoothills",
+			"Overgrown Cliffs",
+			"Steppe",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "specialMobs:toughsilverfish",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "allow"
+	},
+	{
+		"mob": "specialMobs:blindingenderman",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"FrozenOcean",
+			"FrozenRiver",
+			"Kelp Forest",
+			"Ocean",
+			"River"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:blindingenderman",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:icyenderman",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Cold Desert",
+			"Extreme Hills",
+			"Extreme Hills+",
+			"FrozenOcean",
+			"Glacier",
+			"Ice Mountains",
+			"Extreme Hills M",
+			"Extreme Hills+ M",
+			"Ice Plains Spikes",
+			"Cold Taiga M",
+			"SnowyTundra",
+			"Stone Beach",
+			"Cold Taiga Hills",
+			"TaigaHills",
+			"Tundra"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:icyenderman",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:lightningenderman",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Dead Swamp",
+			"Eerie",
+			"Ice Plains Spikes",
+			"Mega Taiga",
+			"Ominous Woods",
+			"Quagmire",
+			"Roofed Forest M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:lightningenderman",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:minienderman",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Dead Swamp",
+			"Eerie",
+			"Ice Plains Spikes",
+			"Mega Taiga",
+			"Ominous Woods",
+			"Quagmire",
+			"Roofed Forest M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:minienderman",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:mirageenderman",
+		"biome": [
+			"Cold Desert",
+			"Lush Desert",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa (Bryce)",
+			"Mesa Plateau M",
+			"Mesa Plateau F M",
+			"Oasis",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:mirageenderman",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:thiefenderman",
+		"biome": [
+			"Alps",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Crag",
+			"Dead Swamp",
+			"Deep Ocean",
+			"Desert",
+			"Eerie",
+			"Ice Plains Spikes",
+			"Mega Taiga",
+			"Ominous Woods",
+			"Quagmire",
+			"Roofed Forest M",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:thiefenderman",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:dominationwitch",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:dominationwitch",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:shadowswitch",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:shadowswitch",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:undeadwitch",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:undeadwitch",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:wildswitch",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:wildswitch",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:windwitch",
+		"biome": [
+			"Mega Taiga Hills",
+			"Moor",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Quagmire",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:windwitch",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:babyghast",
+		"biome": [
+			"Hell"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:babyghast",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:fighterghast",
+		"biome": [
+			"Hell"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:fighterghast",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:kingghast",
+		"biome": [
+			"Hell"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:kingghast",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:queenghast",
+		"biome": [
+			"Hell"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:queenghast",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:unholyghast",
+		"biome": [
+			"Hell"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:unholyghast",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:cinderblaze",
+		"biome": [
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:cinderblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:conflagrationblaze",
+		"biome": [
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:conflagrationblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:emberblaze",
+		"biome": [
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:emberblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:hellfireblaze",
+		"biome": [
+			"Hell",
+			"Torrid Wasteland",
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:hellfireblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:infernoblaze",
+		"biome": [
+			"Hell",
+			"Torrid Wasteland",
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:infernoblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:wildfireblaze",
+		"biome": [
+			"Hell",
+			"Torrid Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:wildfireblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "specialMobs:joltblaze",
+		"biome": [
+			"Arctic Abyss"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "specialMobs:joltblaze",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "fossil:fossil.megalodon",
+		"biome": [
+			"Deep Ocean"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "fossil:fossil.megalodon",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "allow",
+		"healthadd": 20,
+		"speedadd": 0.2
+	},
+	{
+		"mob": "grimoireofgaia:ant",
+		"biome": [
+			"Chaparral",
+			"Desert M",
+			"DesertHills",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Outback",
+			"Savanna Plateau M",
+			"Steppe",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:ant",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:ant_ranger",
+		"biome": [
+			"Desert",
+			"Desert M",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Savanna Plateau",
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:ant_ranger",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:anubis",
+		"biome": [
+			"Desert",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:anubis",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:arachne",
+		"biome": [
+			"Flower Forest",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Overgrown Cliffs",
+			"Sacred Springs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:arachne",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:banshee",
+		"biome": [
+			"AlpsFoothills",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Highland",
+			"Ice Mountains",
+			"JungleHills",
+			"Mountain",
+			"MountainFoothills",
+			"Overgrown Cliffs"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:banshee",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:baphomet",
+		"biome": [
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:baphomet",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:bee",
+		"biome": [
+			"Extreme Hills Edge",
+			"Grassland",
+			"Highland",
+			"Lavender Fields",
+			"Meadow",
+			"Origin Beach",
+			"Origin Island",
+			"Pasture",
+			"Plains"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "grimoireofgaia:bee",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:bone_knight",
+		"biome": [
+			"Crag",
+			"Desert",
+			"Desert M",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Savanna Plateau",
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:bone_knight",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:butler",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Flower Field",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Flower Field",
+			"Land of Lakes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest M",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:butler",
+			"amount": 10,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:cecaelia",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"FrozenOcean",
+			"Kelp Forest",
+			"Ocean"
+		],
+		"mindifficulty": 1,
+		"seesky": false,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "grimoireofgaia:cecaelia",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:centaur",
+		"biome": [
+			"Cold Taiga M",
+			"Eerie",
+			"Flower Field",
+			"Flower Island",
+			"Grassland",
+			"Grove",
+			"Lavender Fields",
+			"Meadow",
+			"Origin Beach",
+			"Pasture",
+			"Plains",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:centaur",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:cobble_golem",
+		"biome": [
+			"JungleEdge",
+			"JungleHills",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:cobble_golem",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:cobblestone_golem",
+		"biome": [
+			"JungleEdge",
+			"JungleHills",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:cobblestone_golem",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:creep",
+		"biome": [
+			"Grove",
+			"Land of Lakes",
+			"Lavender Fields",
+			"Lush Desert",
+			"Magical Forest",
+			"Meadow",
+			"Mega Taiga",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Sacred Springs",
+			"Savanna Plateau M",
+			"Shrubland",
+			"Wasteland",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:creep",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:cyan_flower",
+		"biome": [
+			"Grove",
+			"Lavender Fields",
+			"Magical Forest",
+			"Meadow",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Ominous Woods",
+			"Pasture",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Snowy Coniferous Forest",
+			"Sunflower Plains",
+			"TaigaHills",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "grimoireofgaia:cyan_flower",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:cyclops",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest M",
+			"Boreal Forest",
+			"Coniferous Forest",
+			"Extreme Hills Edge",
+			"ForestHills",
+			"Highland",
+			"Maple Woods",
+			"MushroomIsland",
+			"Origin Island",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:cyclops",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:deathword",
+		"biome": [
+			"Bamboo Forest",
+			"Boreal Forest",
+			"Cherry Blossom Grove",
+			"Crag",
+			"Dead Forest",
+			"Eerie",
+			"Eucalyptus Forest",
+			"Flower Forest",
+			"Magical Forest",
+			"Mystic Grove",
+			"Ominous Woods",
+			"Sacred Springs"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "grimoireofgaia:deathword",
+			"amount": 10,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:dhampir",
+		"biome": [
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:dhampir",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:dryad",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Birch Forest M",
+			"Cherry Blossom Grove",
+			"Coniferous Forest",
+			"Forest",
+			"ForestHills",
+			"Maple Woods",
+			"Orchard",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"seesky": true,
+		"maxcount": {
+			"mob": "grimoireofgaia:dryad",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:dullahan",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Cold Taiga Hills",
+			"Crag",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Mega Taiga Hills"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "grimoireofgaia:dullahan",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:dwarf",
+		"biome": [
+			"Boreal Forest",
+			"Coniferous Forest",
+			"Extreme Hills Edge",
+			"ForestHills",
+			"Highland",
+			"Maple Woods",
+			"Mountain",
+			"MountainFoothills",
+			"Origin Island",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:dwarf",
+			"amount": 15,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:ender_dragon_girl",
+		"biome": [
+			"Stygian Growth"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:ender_dragon_girl",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:ender_eye",
+		"biome": [
+			"Stygian Growth",
+			"Acidic Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:ender_eye",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:flesh_lich",
+		"biome": [
+			"Lush Desert",
+			"Mangrove",
+			"Overgrown Cliffs",
+			"Tropical Island",
+			"Tropical Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:flesh_lich",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:gelatinous_slime",
+		"biome": [
+			"Bayou",
+			"Dead Swamp",
+			"Lush Swamp",
+			"Mangrove",
+			"Quagmire"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:gelatinous_slime",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:goblin",
+		"biome": [
+			"Desert",
+			"Desert M",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Savanna Plateau",
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:goblin",
+			"amount": 15,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:goblin_feral",
+		"biome": [
+			"Brushland",
+			"Chaparral",
+			"Desert M",
+			"DesertHills",
+			"Mesa",
+			"Mesa (Bryce)",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Oasis",
+			"Outback",
+			"Savanna",
+			"Savanna M",
+			"Savanna Plateau M",
+			"Steppe",
+			"Volcanic Island"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:goblin_feral",
+			"amount": 15,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:gryphon",
+		"biome": [
+			"ForestHills",
+			"Highland",
+			"Maple Woods",
+			"Origin Island",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"minheight": 74,
+		"maxcount": {
+			"mob": "grimoireofgaia:gryphon",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:harpy",
+		"biome": [
+			"Eerie",
+			"Extreme Hills",
+			"Extreme Hills M",
+			"Extreme Hills+",
+			"Extreme Hills+ M",
+			"Flower Field",
+			"Flower Island",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Savanna Plateau",
+			"Sunflower Plains",
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:harpy",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:hunter",
+		"biome": [
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:hunter",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:kikimora",
+		"biome": [
+			"Birch Forest",
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Birch Forest M",
+			"Forest",
+			"ForestHills",
+			"Grassland",
+			"Meadow",
+			"Orchard",
+			"Origin Beach",
+			"Origin Island",
+			"Pasture",
+			"Plains",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:kikimora",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:kobold",
+		"biome": [
+			"JungleEdge",
+			"JungleHills",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:kobold",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:matango",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"Kelp Forest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:matango",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:mermaid",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"Kelp Forest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:mermaid",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:mimic",
+		"biome": [
+			"Birch Forest M",
+			"Boreal Forest",
+			"Coniferous Forest",
+			"ForestHills",
+			"FrozenOcean",
+			"FrozenRiver",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"JungleHills",
+			"MushroomIsland",
+			"Ocean",
+			"Rainforest",
+			"Savanna",
+			"Savanna M",
+			"Temperate Rainforest"
+		],
+		"mindifficulty": 1,
+		"maxheight": 55,
+		"maxcount": {
+			"mob": "grimoireofgaia:mimic",
+			"amount": 10,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:minotaur",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Eerie",
+			"Flower Field",
+			"Flower Forest",
+			"Flower Island",
+			"Mystic Grove",
+			"Sacred Springs",
+			"Land of Lakes",
+			"Magical Forest",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Glacier",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:minotaur",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:minotaurus",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Eerie",
+			"Flower Field",
+			"Flower Forest",
+			"Flower Island",
+			"Mystic Grove",
+			"Sacred Springs",
+			"Land of Lakes",
+			"Magical Forest",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Glacier",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:minotaurus",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:mummy",
+		"biome": [
+			"Desert",
+			"Desert M",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Savanna Plateau",
+			"Volcanic Island",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:mummy",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:naga",
+		"biome": [
+			"Coral Reef",
+			"Coral Reef",
+			"Coral Reef"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:naga",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:nine_tails",
+		"biome": [
+			"Deep Ocean",
+			"Deep Ocean",
+			"Deep Ocean"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:nine_tails",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:oni",
+		"biome": [
+			"Kelp Forest",
+			"Kelp Forest",
+			"Kelp Forest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:oni",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:orc",
+		"biome": [
+			"Boreal Forest",
+			"Coniferous Forest",
+			"Extreme Hills Edge",
+			"ForestHills",
+			"Highland",
+			"Maple Woods",
+			"Mountain",
+			"MountainFoothills",
+			"Origin Island",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"RedwoodForestEdge",
+			"Seasonal Forest",
+			"Snowy Coniferous Forest",
+			"Snowy Forest",
+			"TaigaHills"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:orc",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:satyress",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Cold Taiga",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Mega Taiga Hills",
+			"Pasture",
+			"Prairie",
+			"Sunflower Plains",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:satyress",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:selkie",
+		"biome": [
+			"Glacier",
+			"Stone Beach",
+			"FrozenOcean",
+			"FrozenRiver"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:selkie",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:shaman",
+		"biome": [
+			"JungleEdge",
+			"JungleHills",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"Overgrown Cliffs",
+			"Rainforest",
+			"Temperate Rainforest",
+			"Stygian Growth"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:shaman",
+			"amount": 7,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:sharko",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"Kelp Forest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:sharko",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:siren",
+		"biome": [
+			"Coral Reef",
+			"Deep Ocean",
+			"Kelp Forest"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:siren",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:sphinx",
+		"biome": [
+			"desert",
+			"mutated_desert",
+			"lush_desert",
+			"mesa",
+			"mesa_clear_rock",
+			"mesa_rock",
+			"mutated_mesa_rock",
+			"mutated_mesa_clear_rock"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:sphinx",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:sporeling",
+		"biome": [
+			"MushroomIsland",
+			"MushroomIslandShore"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:sporeling",
+			"amount": 12,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:spriggan",
+		"biome": [
+			"Lush Desert",
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Land of Lakes",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Woodland",
+			"Lavender Fields",
+			"Meadow",
+			"Pasture",
+			"Sunflower Plains",
+			"Bayou",
+			"Bog",
+			"Lush Swamp",
+			"Mangrove"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:spriggan",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:succubus",
+		"biome": [
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:succubus",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:toad",
+		"biome": [
+			"FrozenRiver",
+			"Jungle",
+			"Jungle M",
+			"JungleEdge",
+			"JungleEdge M",
+			"MushroomIsland",
+			"Eucalyptus Forest",
+			"Marsh",
+			"Rainforest",
+			"River",
+			"Bog",
+			"Swampland",
+			"Temperate Rainforest",
+			"Tundra",
+			"Wetland",
+			"Moor",
+			"Swampland M"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:toad",
+			"amount": 1,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:valkyrie",
+		"biome": [
+			"Alps",
+			"Crag"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:valkyrie",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:vampire",
+		"biome": [
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:vampire",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:werecat",
+		"biome": [
+			"Eerie",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"Flower Forest",
+			"Mystic Grove",
+			"Sacred Springs",
+			"Magical Forest",
+			"Ominous Woods"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:werecat",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:witch",
+		"biome": [
+			"Crag",
+			"Land of Lakes",
+			"Eerie",
+			"Roofed Forest",
+			"Roofed Forest M",
+			"Ice Plains Spikes",
+			"Flower Forest",
+			"Mystic Grove",
+			"Sacred Springs",
+			"Magical Forest",
+			"Ominous Woods",
+			"Flower Field",
+			"Sunflower Plains"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:witch",
+			"amount": 3,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:wither_cow",
+		"biome": [
+			"Phantasmagoric Inferno"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:wither_cow",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:yeti",
+		"biome": [
+			"Alps",
+			"AlpsFoothills",
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Crag",
+			"Ice Plains Spikes",
+			"Mega Taiga",
+			"Mega Taiga Hills",
+			"Glacier"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:yeti",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "grimoireofgaia:yuki-onna",
+		"biome": [
+			"Flower Island",
+			"Tropical Island",
+			"Tropical Rainforest",
+			"Flower Forest",
+			"Mystic Grove",
+			"Sacred Springs",
+			"Magical Forest",
+			"Ominous Woods",
+			"Overgrown Cliffs"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "grimoireofgaia:yuki-onna",
+			"amount": 2,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "aqua_creepers:aqua_creeper",
+		"biome": [
+			"River",
+			"Frozen River"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "aqua_creepers:aqua_creeper",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "idk:mutt",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Sunflower Plains",
+			"Woodland",
+			"Savanna Plateau"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "idk:mutt",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "idk:potionbud",
+		"biome": [
+			"Birch Forest Hills",
+			"Birch Forest Hills M",
+			"Chaparral",
+			"Cold Taiga",
+			"Flower Field",
+			"Land of Lakes",
+			"Meadow",
+			"Pasture",
+			"Prairie",
+			"Roofed Forest M",
+			"Stone Beach",
+			"Sunflower Plains",
+			"White Beach",
+			"Woodland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "idk:potionbud",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "idk:railliger",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Desert",
+			"Flower Island",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Flower Field",
+			"Sunflower Plains",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "idk:railliger",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10,
+		"damageadd": 2
+	},
+	{
+		"mob": "idk:ravager",
+		"biome": [
+			"Cold Taiga Hills",
+			"Cold Taiga M",
+			"Desert",
+			"Flower Island",
+			"Mesa",
+			"Mesa Plateau",
+			"Mesa Plateau F",
+			"Mesa Plateau F M",
+			"Mesa Plateau M",
+			"Flower Field",
+			"Sunflower Plains",
+			"Savanna Plateau",
+			"Wasteland"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "idk:ravager",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default",
+		"healthadd": 10,
+		"damageadd": 2
+	},
+	{
+		"mob": "idk:vampire",
+		"biome": [
+			"Visceral Heap"
+		],
+		"mindifficulty": 1,
+		"maxcount": {
+			"mob": "idk:vampire",
+			"amount": 5,
+			"perplayer": true
+		},
+		"result": "default"
+	},
+	{
+		"mob": "mowziesmobs:lantern",
+		"result": "deny"
+	},
+	{
+		"mob": "magma_monsters:magma_monster_grunt",
+		"result": "deny"
+	},
+	{
+		"mob": "magma_monsters:magma_monster",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:frostmaw",
+		"result": "deny"
+	},
+	{
+		"mob": "betteranimalsplus:hirschgeist",
+		"result": "deny"
+	},
+	{
+		"mob": "bewitchment:black_dog",
+		"result": "deny"
+	},
+	{
+		"mob": "bewitchment:ghost",
+		"result": "deny"
+	},
+	{
+		"mob": "bewitchment:lizard",
+		"result": "deny"
+	},
+	{
+		"mob": "bewitchment:owl",
+		"result": "deny"
+	},
+	{
+		"mob": "bewitchment:raven",
+		"result": "deny"
+	},
+	{
+		"mob": "bewitchment:toad",
+		"result": "deny"
+	},
+	{
+		"mob": "embers:ancient_golem",
+		"result": "deny"
+	},
+	{
+		"mob": "golems:golem_ice",
+		"result": "deny"
+	},
+	{
+		"mob": "golems:golem_leaves",
+		"result": "deny"
+	},
+	{
+		"mob": "golems:golem_shroom",
+		"result": "deny"
+	},
+	{
+		"mob": "golems:golem_straw",
+		"result": "deny"
+	},
+	{
+		"mob": "golems:golem_wooden",
+		"result": "deny"
+	},
+	{
+		"mob": "illagers_plus:archer",
+		"result": "deny"
+	},
+	{
+		"mob": "illagers_plus:enchanter",
+		"result": "deny"
+	},
+	{
+		"mob": "illagers_plus:furantur",
+		"result": "deny"
+	},
+	{
+		"mob": "illagers_plus:hoarder",
+		"result": "deny"
+	},
+	{
+		"mob": "illagers_plus:necromancer",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:evocation_illager",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:illusion_illager",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:polar_bear",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:silverfish",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:snowman",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:squid",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:vindication_illager",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:witch",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:foglet",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:mimic",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:piranha",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:ptera",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:scarecrow",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:sludgelord",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:undeadswine",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:vespa",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:zombiefrozen",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:zombiemushroom",
+		"result": "deny"
+	},
+	{
+		"mob": "mod_lavacow:zombiepiranha",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:baby_foliaath",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:barako",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:foliaath",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:grottol",
+		"result": "deny"
+	},
+	{
+		"mob": "mowziesmobs:naga",
+		"result": "deny"
+	},
+	{
+		"mob": "mutantbeasts:mutant_creeper",
+		"result": "deny"
+	},
+	{
+		"mob": "mutantbeasts:mutant_enderman",
+		"result": "deny"
+	},
+	{
+		"mob": "mutantbeasts:mutant_skeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "mutantbeasts:mutant_zombie",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:baby_spider",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:bewitched_tome",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:blazing_juggernaut",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:brain_slime",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:chameleon",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:dodo",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:festive_creeper",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:filch_lizard",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:flame_spewer",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:goblin",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:grovesprite",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:harpy",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:haunted_tool",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:lily_lurker",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:mimic",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:mother_spider",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:skeleton_warrior",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:support_creeper",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:traveling_merchant",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:treasure_slime",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:trollager",
+		"result": "deny"
+	},
+	{
+		"mob": "primitivemobs:void_eye",
+		"result": "deny"
+	},
+	{
+		"mob": "quark:ashen",
+		"result": "deny"
+	},
+	{
+		"mob": "quark:dweller",
+		"result": "deny"
+	},
+	{
+		"mob": "quark:stoneling",
+		"result": "deny"
+	},
+	{
+		"mob": "quark:wraith",
+		"result": "deny"
+	},
+	{
+		"mob": "rats:feral_ratlantean",
+		"result": "deny"
+	},
+	{
+		"mob": "rats:illager_piper",
+		"result": "deny"
+	},
+	{
+		"mob": "rats:rat",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:brainyzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:eldritchcrab",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:eldritchguardian",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:inhabitedzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:pech",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:thaumslime",
+		"result": "deny"
+	},
+	{
+		"mob": "thaumcraft:wisp",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:gorrbat",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:junglespider",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:lizardman",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:lizardmanskewerer",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:lizardmanstalker",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:lizardmanwitchdoctor",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:mistspider",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:rhinopter",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:stonegolem",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:superdupersaurus",
+		"result": "deny"
+	},
+	{
+		"mob": "thejungle:swampcrab",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:darkcreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:deathcreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:doomcreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:endercreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:firecreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:jumpingcreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:lightningcreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:minicreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:splittingcreeper",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:brutezombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:firezombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:fishingzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:giantzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:hungryzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:huskzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:plaguezombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:brutepigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:fishingpigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:giantpigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:hungrypigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:knightpigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:plaguepigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:vampirepigzombie",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:bruteskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:fireskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:gatlingskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:giantskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:knightskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:ninjaskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:poisonskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:sniperskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:knightwitherskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:ninjawitherskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:sniperwitherskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:spitfirewitherskeleton",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:blackberryslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:blueberryslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:caramelslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:grapeslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:lemonslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:strawberryslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:watermelonslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:flyinglavaslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:hardenedlavaslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:stickylavaslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:volatilelavaslime",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:babyspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:desertspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:flyingspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:giantspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:hungryspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:motherspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:palespider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:poisonspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:webspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:witchspider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:babycavespider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:flyingcavespider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:mothercavespider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:webcavespider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:witchcavespider",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:blindingsilverfish",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:fishingsilverfish",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:flyingsilverfish",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:poisonsilverfish",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:toughsilverfish",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:blindingenderman",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:icyenderman",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:lightningenderman",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:minienderman",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:mirageenderman",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:thiefenderman",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:dominationwitch",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:shadowswitch",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:undeadwitch",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:wildswitch",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:windwitch",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:babyghast",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:fighterghast",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:kingghast",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:queenghast",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:unholyghast",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:cinderblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:conflagrationblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:emberblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:hellfireblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:infernoblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:wildfireblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "specialMobs:joltblaze",
+		"result": "deny"
+	},
+	{
+		"mob": "fossil:fossil.megalodon",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:ant",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:ant_ranger",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:anubis",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:arachne",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:banshee",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:baphomet",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:bee",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:bone_knight",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:butler",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:cecaelia",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:centaur",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:cobble_golem",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:cobblestone_golem",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:creep",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:cyan_flower",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:cyclops",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:deathword",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:dhampir",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:dryad",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:dullahan",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:dwarf",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:ender_dragon_girl",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:ender_eye",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:flesh_lich",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:gelatinous_slime",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:goblin",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:goblin_feral",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:gryphon",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:harpy",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:hunter",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:kikimora",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:kobold",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:matango",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:mermaid",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:mimic",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:minotaur",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:minotaurus",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:mummy",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:naga",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:nine_tails",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:oni",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:orc",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:satyress",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:selkie",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:shaman",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:sharko",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:siren",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:sphinx",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:sporeling",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:spriggan",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:succubus",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:toad",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:valkyrie",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:vampire",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:werecat",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:witch",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:wither_cow",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:yeti",
+		"result": "deny"
+	},
+	{
+		"mob": "grimoireofgaia:yuki-onna",
+		"result": "deny"
+	},
+	{
+		"mob": "aqua_creepers:aqua_creeper",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:mutt",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:pillager",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:pillagertruehostile",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:potionbud",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:raidertruehostile",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:railliger",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:ravager",
+		"result": "deny"
+	},
+	{
+		"mob": "idk:vampire",
+		"result": "deny"
+	}
+]
