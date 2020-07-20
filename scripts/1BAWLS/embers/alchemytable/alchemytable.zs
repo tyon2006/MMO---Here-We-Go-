@@ -36,6 +36,26 @@ mods.embers.Alchemy.add(<quark:diamond_heart>,
 <ore:gemAether>],
 {"iron": 24 to 36, "lead": 24 to 36});
 
+mods.embers.Alchemy.add(<transmutationalchemy:crystal_mind>*3,
+[<transmutationalchemy:nether_dust>,
+<transmutationalchemy:crystal_power>, <transmutationalchemy:crystal_power>, <transmutationalchemy:crystal_power>,
+<transmutationalchemy:crystal_power>], {"antimony": 4 to 8});
+
+mods.embers.Alchemy.add(<transmutationalchemy:crystal_protection>*3,
+[<transmutationalchemy:ender_dust>,
+<transmutationalchemy:crystal_mind>, <transmutationalchemy:crystal_mind>, <transmutationalchemy:crystal_mind>,
+<transmutationalchemy:crystal_mind>], {"antimony": 4 to 8});
+
+mods.embers.Alchemy.add(<transmutationalchemy:venom_crystal>*3,
+[<transmutationalchemy:venom_dust>,
+<transmutationalchemy:crystal_protection>, <transmutationalchemy:crystal_protection>, <transmutationalchemy:crystal_protection>,
+<transmutationalchemy:crystal_protection>], {"antimony": 4 to 8});
+
+mods.embers.Alchemy.add(<transmutationalchemy:crystal_power>*3,
+[<transmutationalchemy:magical_dust>,
+<transmutationalchemy:venom_crystal>, <transmutationalchemy:venom_crystal>, <transmutationalchemy:venom_crystal>,
+<transmutationalchemy:venom_crystal>], {"antimony": 4 to 8});
+
 //***************************
 //		     STAGE 1 BAUBLES
 //***************************
@@ -263,6 +283,24 @@ mods.embers.Alchemy.add(<extraalchemy:potion_ring>.withTag({Potion: "minecraft:s
 //		     STAGE 3 BAUBLES
 //***************************
 
+recipes.remove(<bountifulbaubles:amuletsinpride>);
+mods.embers.Alchemy.add(<bountifulbaubles:amuletsinpride>,
+[<thaumcraft:baubles>,
+<transmutationalchemy:magical_gold_dust>,<grimoireofgaia:accessory_charm_damage_iron>, <transmutationalchemy:magical_gold_dust>,  <embers:eldritch_insignia>],
+{"dawnstone": 64 to 128});
+
+recipes.remove(<bountifulbaubles:amuletsingluttony>);
+mods.embers.Alchemy.add(<bountifulbaubles:amuletsingluttony>,
+[<thaumcraft:baubles>,
+<transmutationalchemy:magical_iron_dust>,<grimoireofgaia:accessory_charm_damage_iron>, <transmutationalchemy:magical_iron_dust>,  <embers:eldritch_insignia>],
+{"iron": 64 to 128});
+
+recipes.remove(<bountifulbaubles:amuletsinwrath>);
+mods.embers.Alchemy.add(<bountifulbaubles:amuletsinwrath>,
+[<thaumcraft:baubles>,
+<transmutationalchemy:nether_dust>,<grimoireofgaia:accessory_charm_damage_iron>, <transmutationalchemy:nether_dust>,  <embers:eldritch_insignia>],
+{"copper": 64 to 128});
+
 recipes.remove(<bountifulbaubles:shieldobsidian>);
 mods.embers.Alchemy.add(<bountifulbaubles:shieldobsidian>,
 [<bountifulbaubles:shieldcobalt>,
@@ -277,9 +315,86 @@ mods.embers.Alchemy.add(<bountifulbaubles:trinketmixeddragonscale>,
 <bountifulbaubles:trinketbezoar>],
 {"iron": 64 to 128});
 
+recipes.remove(<bountifulbaubles:trinketluckyhorseshoe>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketluckyhorseshoe>,
+[<transmutationalchemy:elemental_ingot>,
+<transmutationalchemy:magical_gold_dust>, <minecraft:golden_horse_armor>, <transmutationalchemy:magical_gold_dust>,
+<minecraft:golden_boots>],
+{"lead": 64 to 128});
+
+recipes.remove(<bountifulbaubles:trinketluckyhorseshoe>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketluckyhorseshoe>,
+[<transmutationalchemy:elemental_ingot>,
+<transmutationalchemy:magical_gold_dust>, <minecraft:golden_horse_armor>, <transmutationalchemy:magical_gold_dust>,
+<minecraft:golden_boots>],
+{"lead": 64 to 128});
+
+recipes.remove(<bountifulbaubles:magicmirror>);
+mods.embers.Alchemy.add(<bountifulbaubles:magicmirror>,
+[<netherex:dull_mirror>,
+<ore:ingotSilver>, <bountifulbaubles:potionrecall>, <ore:ingotSilver>,
+<bountifulbaubles:potionrecall>],
+{"silver": 128 to 192});
+
 //***************************
 //		     STAGE 4+ BAUBLES
 //***************************
+
+recipes.remove(<bountifulbaubles:wormholemirror>);
+mods.embers.Alchemy.add(<bountifulbaubles:wormholemirror>,
+[<netherex:dull_mirror>,
+<bountifulbaubles:potionwormhole>, <cyclicmagic:charm_void>.withTag({}), <bountifulbaubles:potionwormhole>,
+<transmutationalchemy:teleportation_dust>],
+{"silver": 192 to 192});
+
+recipes.remove(<bountifulbaubles:trinketankhcharm>);
+mods.embers.Alchemy.add(<bountifulbaubles:trinketankhcharm>,
+[<quark:diamond_heart>,
+<bountifulbaubles:trinketapple>, <bountifulbaubles:ringfreeaction>, <bountifulbaubles:trinketmixeddragonscale>,
+<bountifulbaubles:trinketvitamins>],
+{"lead": 192 to 192});
+
+recipes.remove(<xat:ender_tiara>);
+mods.embers.Alchemy.add(<xat:ender_tiara>,
+[<quark:diamond_heart>,
+<transmutationalchemy:ender_dust>, <bountifulbaubles:crowngold>, <transmutationalchemy:ender_dust>,
+<minecraft:dragon_egg>],
+{"lead": 192 to 192});
+
+recipes.remove(<mod_lavacow:goldenheart>);
+mods.embers.Alchemy.add(<cyclicmagic:charm_void>.withTag({}),
+[<grimoireofgaia:accessory_trinket_wither>,
+<minecraft:lingering_potion>.withTag({Potion: "potioncore:long_repair"}), <minecraft:golden_chestplate>, <minecraft:lingering_potion>.withTag({Potion: "minecraft:long_regeneration"}),
+<transmutationalchemy:magical_gold_dust>],
+{"iron": 192 to 192});
+
+recipes.remove(<cyclicmagic:charm_void>.withTag({}));
+mods.embers.Alchemy.add(<cyclicmagic:charm_void>.withTag({}),
+[<quark:diamond_heart>,
+<transmutationalchemy:venom_dust>, <embers:glimmer_shard>, <transmutationalchemy:crystal_void>,
+<transmutationalchemy:elemental_ingot>],
+{"lead": 192 to 192});
+
+recipes.remove(<cyclicmagic:charm_wing>.withTag({}));
+mods.embers.Alchemy.add(<cyclicmagic:charm_wing>.withTag({}),
+[<quark:diamond_heart>,
+<transmutationalchemy:experience_dust>, <embers:glimmer_shard>, <soot:mug>.withTag({Fluid: {FluidName: "inner_fire", Amount: 250}}),
+<transmutationalchemy:elemental_ingot>],
+{"lead": 192 to 192});
+
+recipes.remove(<cyclicmagic:charm_fire>);
+mods.embers.Alchemy.add(<cyclicmagic:charm_fire>,
+[<quark:diamond_heart>,
+<transmutationalchemy:fire_dust>, <embers:glimmer_shard>, <soot:mug>.withTag({Fluid: {FluidName: "inner_fire", Amount: 250}}),
+<transmutationalchemy:elemental_ingot>],
+{"lead": 192 to 192});
+
+recipes.remove(<bountifulbaubles:ringflywheeladvanced>);
+mods.embers.Alchemy.add(<bountifulbaubles:ringflywheeladvanced>,
+[<bountifulbaubles:ringflywheel>,
+<transmutationalchemy:ender_dust>, <charm:ender_pearl_block>, <transmutationalchemy:ender_dust>,
+<immersiveengineering:storage:7>],
+{"iron": 192 to 192});
 
 recipes.remove(<xat:poison_stone>);
 mods.embers.Alchemy.add(<xat:poison_stone>,
@@ -308,6 +423,8 @@ mods.embers.Alchemy.add(<xat:greater_inertia_stone>,
 <aether:cloud_parachute>, <ebwizardry:scroll:170>, <thaumcraft:cloud_ring>,
 <minecraft:lingering_potion>.withTag({Potion: "charm:coffee"})],
 {"silver": 192 to 192, "dawnstone": 192 to 192});
+
+
 
 
 

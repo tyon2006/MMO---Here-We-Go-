@@ -1896,6 +1896,7 @@ var bawls20req = [
 	<transmutationalchemy:heavenly_potion:*>,
 	<transmutationalchemy:infinity_dust:*>,
 	<transmutationalchemy:magical_dust_tier5:*>,
+	<randomthings:floosign:*>,
 	
 	<minecraft:potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:flight"}),

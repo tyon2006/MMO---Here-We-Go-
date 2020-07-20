@@ -1,38 +1,52 @@
+
 #loader contenttweaker
-import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.Fluid;
-import mods.contenttweaker.Block;
-import mods.contenttweaker.Color;
-import mods.contenttweaker.DropHandler;
-import crafttweaker.item.IItemStack;
-import crafttweaker.item.WeightedItemStack;
-import mods.contenttweaker.IItemRightClick;
 import crafttweaker.block.IBlock;
-import mods.contenttweaker.ActionResult;
-import mods.contenttweaker.Item;
 import crafttweaker.block.IBlockState;
-import mods.contenttweaker.World;
-import mods.contenttweaker.Player;
-import mods.contenttweaker.IItemUse;
-import mods.contenttweaker.IItemColorSupplier;
-import mods.contenttweaker.Commands;
-import crafttweaker.player.IPlayer;
 import crafttweaker.command.ICommandSender;
 import crafttweaker.entity.IEntity;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.WeightedItemStack;
+import crafttweaker.player.IPlayer;
+import mods.contenttweaker.ActionResult;
+import mods.contenttweaker.Block;
+import mods.contenttweaker.Color;
+import mods.contenttweaker.Commands;
+import mods.contenttweaker.DropHandler;
+import mods.contenttweaker.Fluid;
+import mods.contenttweaker.IItemColorSupplier;
+import mods.contenttweaker.IItemRightClick;
+import mods.contenttweaker.IItemUse;
+import mods.contenttweaker.Item;
+import mods.contenttweaker.Player;
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.World;
+import mods.embers.Alchemy;
+import mods.embers.DawnstoneAnvil;
+import mods.embers.Stamper;
+import mods.jei.JEI.hide as hide;
+import mods.jei.JEI.removeAndHide as rh;
+import mods.jei.JEI;
+import mods.transmutationalchemy.mixer;
 
 var moltenElemental = mods.contenttweaker.VanillaFactory.createFluid("molten_elemental_alloy", Color.fromHex("C4B2D1"));
 moltenElemental.setViscosity(6000);
 moltenElemental.setDensity(2000);
 moltenElemental.setLuminosity(15);
-moltenElemental.setTemperature(900);
+moltenElemental.setTemperature(1300);
+moltenElemental.setStillLocation("embers:blocks/molten_lead_still");
+moltenElemental.setFlowingLocation("embers:blocks/molten_lead_flowing");
 moltenElemental.register();
+//<fluid:molten_elemental_alloy> = "Molten Elemental Alloy";
 
 var moltenElementalClay = mods.contenttweaker.VanillaFactory.createFluid("melted_elemental_clay", Color.fromHex("B2D1C7"));
 moltenElementalClay.setViscosity(6000);
 moltenElementalClay.setDensity(2000);
 moltenElementalClay.setLuminosity(15);
-moltenElementalClay.setTemperature(900);
+moltenElementalClay.setTemperature(1300);
+moltenElementalClay.setStillLocation("embers:blocks/molten_lead_still");
+moltenElementalClay.setFlowingLocation("embers:blocks/molten_lead_flowing");
 moltenElementalClay.register();
+//<fluid:melted_elemental_clay> = "Melted Elemental Clay";
 
 var erebusTransOre = mods.contenttweaker.VanillaFactory.createBlock("erebus_trans_ore", <blockmaterial:rock>);
 erebusTransOre.setLightValue(0.1);
@@ -45,7 +59,7 @@ erebusTransOre.setDropHandler(function(drops, world, position, state, fortune) {
 	drops.add(<item:transmutationalchemy:crystal_power> % 50);
     drops.add(<item:transmutationalchemy:crystal_protection> % 85);
     drops.add(<item:transmutationalchemy:crystal_mind> % 75);
-	drops.add(<item:transmutationalchemy:venom_shard> % 17);
+	drops.add(<item:transmutationalchemy:venom_shard> % 3);
 	return;
 	
 });
