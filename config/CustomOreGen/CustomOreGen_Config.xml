@@ -412,6 +412,7 @@
     <!-- Then, the rest are free to come in. -->
     <Import file='modules/default/FossilsandArchaeology.xml'/>
     <Import file='modules/custom/ImmersiveEngineering.xml'/>
+    <Import file='modules/custom/ImmersiveIntelligence.xml'/>	
 
     <!-- ***************** Import Mod-provided configs ********************* -->
     <!-- NOTE: mods will overwrite these configs upon each load -->
@@ -421,7 +422,7 @@
     <OptionalImport file='modules/custom/BiomesOPlenty.xml'/>
 	<OptionalImport file='modules/custom/Thaumcraft6.xml'/>
 	<OptionalImport file='modules/custom/EmbersRekindled.xml'/>
-	<OptionalImport file='modules/custom/TransmutationAlchemy.xml'/>
+	<OptionalImport file='modules/custom/Bewitchment.xml'/>
 		
     <!--*************************   Testing & Debugging   *********************
     *   I use this section for quick-and-dirty experiments

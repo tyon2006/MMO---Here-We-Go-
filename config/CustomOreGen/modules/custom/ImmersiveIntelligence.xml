@@ -1,0 +1,2292 @@
+<!-- =================================================================
+     Custom Ore Generation "Immersive Intelligence" Module: This
+     configuration covers zinc, platinum, tungsten, and salt.
+     ================================================================= -->
+
+
+<!-- Configuration by Reteo. -->
+
+
+
+
+<!-- Is the "Immersive Intelligence" mod on the system?  Let's find
+     out! -->
+<IfModInstalled name="immersiveintelligence">
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupImmersiveIntelligence' displayName='Immersive Intelligence' displayState='shown'>
+        <Description>
+          Distribution options for Immersive Intelligence Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableImmersiveIntelligence' displayName='Handle Immersive Intelligence Gen?' default='true' displayState='shown_dynamic' displayGroup='groupImmersiveIntelligence'>
+        <Description> Should Custom Ore Generation handle Immersive Intelligence ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle Immersive Intelligence ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Immersive Intelligence ores will be handled by Minecraft directly.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpImmersiveIntelligence' displayName='Use Immersive Intelligence Cleanup?' default='true' displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of Immersive Intelligence ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up Immersive Intelligence ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Immersive Intelligence ores do not need to be cleaned up by a substitution pass.'/>
+      </OptionChoice>
+
+      <!-- Zinc Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintZincDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Zinc is generated </Description>
+          <DisplayName>Immersive Intelligence Zinc</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Zinc is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintZincFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Zinc distributions </Description>
+          <DisplayName>Immersive Intelligence Zinc Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintZincSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Zinc distributions </Description>
+          <DisplayName>Immersive Intelligence Zinc Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Zinc Configuration UI Complete -->
+
+
+      <!-- Uncommon Zinc Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintUncommonZincDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Uncommon Zinc is generated </Description>
+          <DisplayName>Immersive Intelligence Uncommon Zinc</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Uncommon Zinc is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintUncommonZincFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Uncommon Zinc distributions </Description>
+          <DisplayName>Immersive Intelligence Uncommon Zinc Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintUncommonZincSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Uncommon Zinc distributions </Description>
+          <DisplayName>Immersive Intelligence Uncommon Zinc Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Uncommon Zinc Configuration UI Complete -->
+
+
+      <!-- Rare Zinc Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintRareZincDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Rare Zinc is generated </Description>
+          <DisplayName>Immersive Intelligence Rare Zinc</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Rare Zinc is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintRareZincFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Rare Zinc distributions </Description>
+          <DisplayName>Immersive Intelligence Rare Zinc Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintRareZincSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Rare Zinc distributions </Description>
+          <DisplayName>Immersive Intelligence Rare Zinc Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Rare Zinc Configuration UI Complete -->
+
+
+      <!-- Tungsten Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintTungstenDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Tungsten is generated </Description>
+          <DisplayName>Immersive Intelligence Tungsten</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Tungsten is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintTungstenFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Tungsten distributions </Description>
+          <DisplayName>Immersive Intelligence Tungsten Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintTungstenSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Tungsten distributions </Description>
+          <DisplayName>Immersive Intelligence Tungsten Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Tungsten Configuration UI Complete -->
+
+
+      <!-- Uncommon Tungsten Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintUncommonTungstenDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Uncommon Tungsten is generated </Description>
+          <DisplayName>Immersive Intelligence Uncommon Tungsten</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Uncommon Tungsten is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintUncommonTungstenFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Uncommon Tungsten distributions </Description>
+          <DisplayName>Immersive Intelligence Uncommon Tungsten Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintUncommonTungstenSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Uncommon Tungsten distributions </Description>
+          <DisplayName>Immersive Intelligence Uncommon Tungsten Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Uncommon Tungsten Configuration UI Complete -->
+
+
+      <!-- Rare Tungsten Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintRareTungstenDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Rare Tungsten is generated </Description>
+          <DisplayName>Immersive Intelligence Rare Tungsten</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Rare Tungsten is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintRareTungstenFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Rare Tungsten distributions </Description>
+          <DisplayName>Immersive Intelligence Rare Tungsten Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintRareTungstenSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Rare Tungsten distributions </Description>
+          <DisplayName>Immersive Intelligence Rare Tungsten Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Rare Tungsten Configuration UI Complete -->
+
+
+      <!-- Platinum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintPlatinumDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Platinum is generated </Description>
+          <DisplayName>Immersive Intelligence Platinum</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Platinum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintPlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Platinum distributions </Description>
+          <DisplayName>Immersive Intelligence Platinum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Platinum distributions </Description>
+          <DisplayName>Immersive Intelligence Platinum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Platinum Configuration UI Complete -->
+
+
+      <!-- Uncommon Platinum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintUncommonPlatinumDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Uncommon Platinum is generated </Description>
+          <DisplayName>Immersive Intelligence Uncommon Platinum</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Uncommon Platinum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintUncommonPlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Uncommon Platinum distributions </Description>
+          <DisplayName>Immersive Intelligence Uncommon Platinum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintUncommonPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Uncommon Platinum distributions </Description>
+          <DisplayName>Immersive Intelligence Uncommon Platinum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Uncommon Platinum Configuration UI Complete -->
+
+
+      <!-- Rare Platinum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='iintRarePlatinumDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Rare Platinum is generated </Description>
+          <DisplayName>Immersive Intelligence Rare Platinum</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:0")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Rare Platinum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintRarePlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Rare Platinum distributions </Description>
+          <DisplayName>Immersive Intelligence Rare Platinum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintRarePlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Rare Platinum distributions </Description>
+          <DisplayName>Immersive Intelligence Rare Platinum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Rare Platinum Configuration UI Complete -->
+	    
+	
+	  <!-- Salt Configuration UI Starting -->
+      <ConfigSection>
+
+        <OptionChoice name='iintSaltDist' default='StratumClouds' displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Controls how Salt is generated </Description>
+          <DisplayName>Immersive Intelligence Salt</DisplayName>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:3")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+		  
+		  <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:3")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:3")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:3")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Salt is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='iintSaltFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Frequency multiplier for Immersive Intelligence Salt distributions </Description>
+          <DisplayName>Immersive Intelligence Salt Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='iintSaltSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+          <Description> Size multiplier for Immersive Intelligence Salt distributions </Description>
+          <DisplayName>Immersive Intelligence Salt Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Salt Configuration UI Complete -->
+
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableImmersiveIntelligence'>
+
+
+
+
+      <!-- Overworld Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>
+
+        <!-- Starting Original "Overworld" Block Removal -->
+
+        <IfCondition condition=':= ?cleanUpImmersiveIntelligence'>
+          <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+            <Substitute name='iintOverworldBlockSubstitute0' block='minecraft:stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='immersiveintelligence:ore:0' weight='1.0' />
+              <Replaces block='immersiveintelligence:ore:1' weight='1.0' />
+              <Replaces block='immersiveintelligence:ore:2' weight='1.0' />
+              <Replaces block='immersiveintelligence:ore:3' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+
+        <!-- Original "Overworld" Block Removal Complete -->
+
+        <!-- Adding blocks -->
+
+        <!-- Begin Zinc Generation -->
+
+        <!-- Starting LayeredVeins Preset for Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintZincDist = "LayeredVeins"'>
+            <Veins name='iintZincVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills'  />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='chaparral' />
+              <Biome name='meadow' />
+              <Biome name='pasture' />
+              <Biome name='birch_forest_hills' />
+              <Biome name='mutated_birch_forest_hills' />
+              <Biome name='stone_beach' />
+              <Biome name='taiga_cold' />
+              <Biome name='prairie' />
+              <Biome name='white_beach' />
+              <Biome name='woodland' />
+              <Biome name='kelp_forest' />
+              <Biome name='coral_reef' />
+              <Biome name='frozen_ocean' />
+              <Setting name='MotherlodeFrequency' avg=':= 3.089 * _default_ * iintZincFreq ' range=':= 3.089 * _default_ * iintZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.579 * _default_ * iintZincSize ' range=':= 1.579 * _default_ * iintZincSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.496 * _default_ ' range=':= 1.496 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintZincSize ' range=':= _default_ * iintZincSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.291 * _default_ * iintZincSize ' range=':= 1.291 * _default_ * iintZincSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Zinc is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintZincDist = "StrategicClouds"'>
+            <Cloud name='iintZincCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills'  />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='chaparral' />
+              <Biome name='meadow' />
+              <Biome name='pasture' />
+              <Biome name='birch_forest_hills' />
+              <Biome name='mutated_birch_forest_hills' />
+              <Biome name='stone_beach' />
+              <Biome name='taiga_cold' />
+              <Biome name='prairie' />
+              <Biome name='white_beach' />
+              <Biome name='woodland' />
+              <Biome name='kelp_forest' />
+              <Biome name='coral_reef' />
+              <Biome name='frozen_ocean' />
+              <Setting name='CloudRadius' avg=':= 1.271 * _default_ * iintZincSize ' range=':= 1.271 * _default_ * iintZincSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.271 * _default_ * iintZincSize ' range=':= 1.271 * _default_ * iintZincSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.616 * _default_ * iintZincFreq ' range=':= 1.616 * _default_ * iintZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 56 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintZincHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.416 * _default_ * iintZincFreq  * 0.1 ' range=':= 1.416 * _default_ * iintZincFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Zinc is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintZincDist = "Vanilla"'>
+            <StandardGen name='iintZincStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='cold_desert' />
+              <Biome name='snowy_tundra' />
+              <Biome name='tundra' />
+              <Biome name='redwood_forest_edge' />
+              <Biome name='redwood_forest' />
+              <Biome name='mutated_redwood_taiga_hills' />
+              <Biome name='taiga_hills'  />
+              <Biome name='snowy_coniferous_forest' />
+              <Biome name='highland' />
+              <Biome name='mountain' />
+              <Biome name='mountain_foothills' />
+              <Biome name='moor' />
+              <Biome name='xeric_shrubland' />
+              <Biome name='mutated_savanna_rock' />
+              <Biome name='shrubland' />
+              <Biome name='bog' />
+              <Biome name='outback' />
+              <Biome name='desert_hills' />
+              <Biome name='mutated_desert' />
+              <Biome name='mutated_swampland' />
+              <Biome name='steppe' />
+              <Biome name='chaparral' />
+              <Biome name='meadow' />
+              <Biome name='pasture' />
+              <Biome name='birch_forest_hills' />
+              <Biome name='mutated_birch_forest_hills' />
+              <Biome name='stone_beach' />
+              <Biome name='taiga_cold' />
+              <Biome name='prairie' />
+              <Biome name='white_beach' />
+              <Biome name='woodland' />
+              <Biome name='kelp_forest' />
+              <Biome name='coral_reef' />
+              <Biome name='frozen_ocean' />
+              <Setting name='Size' avg=':= 5.333 * oreSize * iintZincSize ' range=':= 2.67 * oreSize * iintZincSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintZincFreq ' range=':= 2.67 * oreFreq * iintZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 56 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Zinc is complete. -->
+
+        <!-- End Zinc Generation -->
+
+
+        <!-- Begin Uncommon Zinc Generation -->
+
+        <!-- Starting LayeredVeins Preset for Uncommon Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonZincDist = "LayeredVeins"'>
+            <Veins name='iintUncommonZincVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='alps_foothills' />
+              <Biome name='bamboo_forest' />
+              <Biome name='bayou' />
+              <Biome name='beaches' />
+              <Biome name='birch_forest' />
+              <Biome name='boreal_forest' />
+              <Biome name='brushland' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='cold_beach' />
+              <Biome name='coniferous_forest' />
+              <Biome name='dead_forest' />
+              <Biome name='desert' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='fen' />
+              <Biome name='flower_field' />
+              <Biome name='forest' />
+              <Biome name='forest_hills' />
+              <Biome name='frozen_river' />
+              <Biome name='glacier' />
+              <Biome name='grassland' />
+              <Biome name='gravel_beach' />
+              <Biome name='ice_flats' />
+              <Biome name='ice_mountains' />
+              <Biome name='jungle' />
+              <Biome name='land_of_lakes' />
+              <Biome name='lush_desert' />
+              <Biome name='lush_swamp' />
+              <Biome name='magical_forest' />
+              <Biome name='mangrove' />
+              <Biome name='maple_woods' />
+              <Biome name='marsh' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mushroom_island' />
+              <Biome name='mutated_birch_forest' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='mutated_forest' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='mutated_mesa' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='mutated_savanna' />
+              <Biome name='mutated_taiga' />
+              <Biome name='mystic_grove' />
+              <Biome name='oasis' />
+              <Biome name='ocean' />
+              <Biome name='orchard' />
+              <Biome name='plains' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='river' />
+              <Biome name='roofed_forest' />
+              <Biome name='sacred_springs' />
+              <Biome name='savanna' />
+              <Biome name='seasonal_forest' />
+              <Biome name='shield' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='snowy_forest' />
+              <Biome name='swampland' />
+              <Biome name='taiga' />
+              <Biome name='tropical_island' />
+              <Biome name='volcanic_island' />
+              <Biome name='wetland' />
+              <Setting name='MotherlodeFrequency' avg=':= 0.824 * _default_ * iintUncommonZincFreq ' range=':= 0.824 * _default_ * iintUncommonZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.842 * _default_ * iintUncommonZincSize ' range=':= 0.842 * _default_ * iintUncommonZincSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.496 * _default_ ' range=':= 1.496 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintUncommonZincSize ' range=':= _default_ * iintUncommonZincSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.091 * _default_ * iintUncommonZincSize ' range=':= 1.091 * _default_ * iintUncommonZincSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Uncommon Zinc is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Uncommon  Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonZincDist = "StrategicClouds"'>
+            <Cloud name='iintUncommonZincCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='alps_foothills' />
+              <Biome name='bamboo_forest' />
+              <Biome name='bayou' />
+              <Biome name='beaches' />
+              <Biome name='birch_forest' />
+              <Biome name='boreal_forest' />
+              <Biome name='brushland' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='cold_beach' />
+              <Biome name='coniferous_forest' />
+              <Biome name='dead_forest' />
+              <Biome name='desert' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='fen' />
+              <Biome name='flower_field' />
+              <Biome name='forest' />
+              <Biome name='forest_hills' />
+              <Biome name='frozen_river' />
+              <Biome name='glacier' />
+              <Biome name='grassland' />
+              <Biome name='gravel_beach' />
+              <Biome name='ice_flats' />
+              <Biome name='ice_mountains' />
+              <Biome name='jungle' />
+              <Biome name='land_of_lakes' />
+              <Biome name='lush_desert' />
+              <Biome name='lush_swamp' />
+              <Biome name='magical_forest' />
+              <Biome name='mangrove' />
+              <Biome name='maple_woods' />
+              <Biome name='marsh' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mushroom_island' />
+              <Biome name='mutated_birch_forest' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='mutated_forest' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='mutated_mesa' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='mutated_savanna' />
+              <Biome name='mutated_taiga' />
+              <Biome name='mystic_grove' />
+              <Biome name='oasis' />
+              <Biome name='ocean' />
+              <Biome name='orchard' />
+              <Biome name='plains' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='river' />
+              <Biome name='roofed_forest' />
+              <Biome name='sacred_springs' />
+              <Biome name='savanna' />
+              <Biome name='seasonal_forest' />
+              <Biome name='shield' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='snowy_forest' />
+              <Biome name='swampland' />
+              <Biome name='taiga' />
+              <Biome name='tropical_island' />
+              <Biome name='volcanic_island' />
+              <Biome name='wetland' />
+              <Setting name='CloudRadius' avg=':= 1.271 * _default_ * iintUncommonZincSize ' range=':= 1.271 * _default_ * iintUncommonZincSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.271 * _default_ * iintUncommonZincSize ' range=':= 1.271 * _default_ * iintUncommonZincSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.616 * _default_ * iintUncommonZincFreq ' range=':= 1.616 * _default_ * iintUncommonZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintUncommonZincHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.416 * _default_ * iintUncommonZincFreq  * 0.1 ' range=':= 1.416 * _default_ * iintUncommonZincFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Uncommon Zinc is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Uncommon Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonZincDist = "Vanilla"'>
+            <StandardGen name='iintUncommonZincStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='alps_foothills' />
+              <Biome name='bamboo_forest' />
+              <Biome name='bayou' />
+              <Biome name='beaches' />
+              <Biome name='birch_forest' />
+              <Biome name='boreal_forest' />
+              <Biome name='brushland' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='cold_beach' />
+              <Biome name='coniferous_forest' />
+              <Biome name='dead_forest' />
+              <Biome name='desert' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='fen' />
+              <Biome name='flower_field' />
+              <Biome name='forest' />
+              <Biome name='forest_hills' />
+              <Biome name='frozen_river' />
+              <Biome name='glacier' />
+              <Biome name='grassland' />
+              <Biome name='gravel_beach' />
+              <Biome name='ice_flats' />
+              <Biome name='ice_mountains' />
+              <Biome name='jungle' />
+              <Biome name='land_of_lakes' />
+              <Biome name='lush_desert' />
+              <Biome name='lush_swamp' />
+              <Biome name='magical_forest' />
+              <Biome name='mangrove' />
+              <Biome name='maple_woods' />
+              <Biome name='marsh' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mushroom_island' />
+              <Biome name='mutated_birch_forest' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='mutated_forest' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='mutated_mesa' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='mutated_redwood_taiga' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='mutated_savanna' />
+              <Biome name='mutated_taiga' />
+              <Biome name='mystic_grove' />
+              <Biome name='oasis' />
+              <Biome name='ocean' />
+              <Biome name='orchard' />
+              <Biome name='plains' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='river' />
+              <Biome name='roofed_forest' />
+              <Biome name='sacred_springs' />
+              <Biome name='savanna' />
+              <Biome name='seasonal_forest' />
+              <Biome name='shield' />
+              <Biome name='smaller_extreme_hills' />
+              <Biome name='snowy_forest' />
+              <Biome name='swampland' />
+              <Biome name='taiga' />
+              <Biome name='tropical_island' />
+              <Biome name='volcanic_island' />
+              <Biome name='wetland' />
+              <Setting name='Size' avg=':= 5.333 * oreSize * iintUncommonZincSize ' range=':= 2.67 * oreSize * iintUncommonZincSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintUncommonZincFreq ' range=':= 2.67 * oreFreq * iintUncommonZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Uncommon Zinc is complete. -->
+
+        <!-- End Uncommon Zinc Generation -->
+
+
+        <!-- Begin Rare Zinc Generation -->
+
+        <!-- Starting LayeredVeins Preset for Rare Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRareZincDist = "LayeredVeins"'>
+            <Veins name='iintRareZincVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='MotherlodeFrequency' avg=':= 0.206 * _default_ * iintRareZincFreq ' range=':= 0.206 * _default_ * iintRareZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.842 * _default_ * iintRareZincSize ' range=':= 0.842 * _default_ * iintRareZincSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.190 * _default_ ' range=':= 1.190 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintRareZincSize ' range=':= _default_ * iintRareZincSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.091 * _default_ * iintRareZincSize ' range=':= 1.091 * _default_ * iintRareZincSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Rare Zinc is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Rare  Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRareZincDist = "StrategicClouds"'>
+            <Cloud name='iintRareZincCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='CloudRadius' avg=':= 1.271 * _default_ * iintRareZincSize ' range=':= 1.271 * _default_ * iintRareZincSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.271 * _default_ * iintRareZincSize ' range=':= 1.271 * _default_ * iintRareZincSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.616 * _default_ * iintRareZincFreq ' range=':= 1.616 * _default_ * iintRareZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintRareZincHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.416 * _default_ * iintRareZincFreq  * 0.1 ' range=':= 1.416 * _default_ * iintRareZincFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Rare Zinc is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Rare Zinc. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRareZincDist = "Vanilla"'>
+            <StandardGen name='iintRareZincStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='Size' avg=':= 5.333 * oreSize * iintRareZincSize ' range=':= 2.67 * oreSize * iintRareZincSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintRareZincFreq ' range=':= 2.67 * oreFreq * iintRareZincFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Rare Zinc is complete. -->
+
+        <!-- End Rare Zinc Generation -->
+
+
+        <!-- Begin Tungsten Generation -->
+
+        <!-- Starting LayeredVeins Preset for Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintTungstenDist = "LayeredVeins"'>
+            <Veins name='iintTungstenVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='ominous_woods' />
+              <Biome name='mutated_ice_flats' />
+              <Biome name='wasteland' />
+              <Biome name='savanna_rock' />
+              <Biome name='deep_ocean' />
+              <Setting name='MotherlodeFrequency' avg=':= 2.317 * _default_ * iintTungstenFreq ' range=':= 2.317 * _default_ * iintTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.184 * _default_ * iintTungstenSize ' range=':= 1.184 * _default_ * iintTungstenSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.496 * _default_ ' range=':= 1.496 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintTungstenSize ' range=':= _default_ * iintTungstenSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.500 * _default_ * iintTungstenSize ' range=':= 1.500 * _default_ * iintTungstenSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Tungsten is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintTungstenDist = "StrategicClouds"'>
+            <Cloud name='iintTungstenCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='ominous_woods'/>
+              <Biome name='mutated_ice_flats'/>
+              <Biome name='wasteland'/>
+              <Biome name='savanna_rock' />
+              <Biome name='deep_ocean'/>
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintTungstenSize ' range=':= 1.069 * _default_ * iintTungstenSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintTungstenSize ' range=':= 1.069 * _default_ * iintTungstenSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintTungstenFreq ' range=':= 1.143 * _default_ * iintTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 62.5 ' range=':= 22.5 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintTungstenHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iintTungstenFreq  * 0.1 ' range=':= 1.001 * _default_ * iintTungstenFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Tungsten is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintTungstenDist = "Vanilla"'>
+            <StandardGen name='iintTungstenStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='ominous_woods'/>
+              <Biome name='mutated_ice_flats'/>
+              <Biome name='wasteland'/>
+              <Biome name='savanna_rock' />
+              <Biome name='deep_ocean'/>
+              <Setting name='Size' avg=':= 2.667 * oreSize * iintTungstenSize ' range=':= 1.33 * oreSize * iintTungstenSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintTungstenFreq ' range=':= 2.67 * oreFreq * iintTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 62.5 ' range=':= 22.5 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Tungsten is complete. -->
+
+        <!-- End Tungsten Generation -->
+
+
+        <!-- Begin Uncommon Tungsten Generation -->
+
+        <!-- Starting LayeredVeins Preset for Uncommon  Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonTungstenDist = "LayeredVeins"'>
+            <Veins name='iintUncommonTungstenVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='mutated_taiga_cold' />
+              <Biome name='redwood_taiga' />
+              <Biome name='taiga_cold_hills' />
+              <Biome name='corrupted_sands' />
+              <Biome name='fungi_forest' />
+              <Biome name='phantasmagoric_inferno' />
+              <Biome name='undergarden' />
+              <Biome name='visceral_heap' />
+              <Biome name='hell' />
+              <Biome name='arctic_abyss' />
+              <Biome name='fungi_forest' />
+              <Biome name='ruthless_sands' />
+              <Biome name='torrid_wasteland' />
+              <Setting name='MotherlodeFrequency' avg=':= 0.618 * _default_ * iintUncommonTungstenFreq ' range=':= 0.618 * _default_ * iintUncommonTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.631 * _default_ * iintUncommonTungstenSize ' range=':= 0.631 * _default_ * iintUncommonTungstenSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintUncommonTungstenSize ' range=':= _default_ * iintUncommonTungstenSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.500 * _default_ * iintUncommonTungstenSize ' range=':= 1.500 * _default_ * iintUncommonTungstenSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Uncommon Tungsten is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Uncommon  Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonTungstenDist = "StrategicClouds"'>
+            <Cloud name='iintUncommonTungstenCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='mutated_taiga_cold' />
+              <Biome name='redwood_taiga' />
+              <Biome name='taiga_cold_hills' />
+              <Biome name='corrupted_sands' />
+              <Biome name='fungi_forest' />
+              <Biome name='phantasmagoric_inferno' />
+              <Biome name='undergarden' />
+              <Biome name='visceral_heap' />
+              <Biome name='hell' />
+              <Biome name='arctic_abyss' />
+              <Biome name='fungi_forest' />
+              <Biome name='ruthless_sands' />
+              <Biome name='torrid_wasteland' />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintUncommonTungstenSize ' range=':= 1.069 * _default_ * iintUncommonTungstenSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintUncommonTungstenSize ' range=':= 1.069 * _default_ * iintUncommonTungstenSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintUncommonTungstenFreq ' range=':= 1.143 * _default_ * iintUncommonTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintUncommonTungstenHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iintUncommonTungstenFreq  * 0.1 ' range=':= 1.001 * _default_ * iintUncommonTungstenFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Uncommon Tungsten is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Uncommon Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonTungstenDist = "Vanilla"'>
+            <StandardGen name='iintUncommonTungstenStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='mutated_taiga_cold' />
+              <Biome name='redwood_taiga' />
+              <Biome name='taiga_cold_hills' />
+              <Biome name='corrupted_sands' />
+              <Biome name='fungi_forest' />
+              <Biome name='phantasmagoric_inferno' />
+              <Biome name='undergarden' />
+              <Biome name='visceral_heap' />
+              <Biome name='hell' />
+              <Biome name='arctic_abyss' />
+              <Biome name='fungi_forest' />
+              <Biome name='ruthless_sands' />
+              <Biome name='torrid_wasteland' />
+              <Setting name='Size' avg=':= 2.667 * oreSize * iintUncommonTungstenSize ' range=':= 1.33 * oreSize * iintUncommonTungstenSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintUncommonTungstenFreq ' range=':= 2.67 * oreFreq * iintUncommonTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Uncommon Tungsten is complete. -->
+
+        <!-- End Uncommon Tungsten Generation -->
+
+
+        <!-- Begin Rare Tungsten Generation -->
+
+        <!-- Starting LayeredVeins Preset for Rare  Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRareTungstenDist = "LayeredVeins"'>
+            <Veins name='iintRareTungstenVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='MotherlodeFrequency' avg=':= 0.154 * _default_ * iintRareTungstenFreq ' range=':= 0.154 * _default_ * iintRareTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.613 * _default_ * iintRareTungstenSize ' range=':= 0.613 * _default_ * iintRareTungstenSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintRareTungstenSize ' range=':= _default_ * iintRareTungstenSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * iintRareTungstenSize ' range=':= 1.000 * _default_ * iintRareTungstenSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Rare Tungsten is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Rare  Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRareTungstenDist = "StrategicClouds"'>
+            <Cloud name='iintRareTungstenCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintRareTungstenSize ' range=':= 1.069 * _default_ * iintRareTungstenSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintRareTungstenSize ' range=':= 1.069 * _default_ * iintRareTungstenSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintRareTungstenFreq ' range=':= 1.143 * _default_ * iintRareTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintRareTungstenHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iintRareTungstenFreq  * 0.1 ' range=':= 1.001 * _default_ * iintRareTungstenFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Rare Tungsten is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Rare Tungsten. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRareTungstenDist = "Vanilla"'>
+            <StandardGen name='iintRareTungstenStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='Size' avg=':= 2.667 * oreSize * iintRareTungstenSize ' range=':= 1.33 * oreSize * iintRareTungstenSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintRareTungstenFreq ' range=':= 2.67 * oreFreq * iintRareTungstenFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Rare Tungsten is complete. -->
+
+        <!-- End Rare Tungsten Generation -->
+
+		
+        <!-- Begin Platinum Generation -->
+
+        <!-- Starting LayeredVeins Preset for Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintPlatinumDist = "LayeredVeins"'>
+            <Veins name='iintPlatinumVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='mutated_taiga_cold' />
+              <Biome name='redwood_taiga' />
+              <Biome name='taiga_cold_hills' />
+              <Biome name='corrupted_sands' />
+              <Biome name='fungi_forest' />
+              <Biome name='phantasmagoric_inferno' />
+              <Biome name='undergarden' />
+              <Biome name='visceral_heap' />
+              <Biome name='hell' />
+              <Biome name='arctic_abyss' />
+              <Biome name='fungi_forest' />
+              <Biome name='ruthless_sands' />
+              <Biome name='torrid_wasteland' />
+              <Setting name='MotherlodeFrequency' avg=':= 0.814 * _default_ * iintPlatinumFreq ' range=':= 0.814 * _default_ * iintPlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.086 * _default_ * iintPlatinumSize ' range=':= 1.086 * _default_ * iintPlatinumSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintPlatinumSize ' range=':= _default_ * iintPlatinumSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.300 * _default_ * iintPlatinumSize ' range=':= 1.300 * _default_ * iintPlatinumSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Platinum is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintPlatinumDist = "StrategicClouds"'>
+            <Cloud name='iintPlatinumCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='mutated_taiga_cold' />
+              <Biome name='redwood_taiga' />
+              <Biome name='taiga_cold_hills' />
+              <Biome name='corrupted_sands' />
+              <Biome name='fungi_forest' />
+              <Biome name='phantasmagoric_inferno' />
+              <Biome name='undergarden' />
+              <Biome name='visceral_heap' />
+              <Biome name='hell' />
+              <Biome name='arctic_abyss' />
+              <Biome name='fungi_forest' />
+              <Biome name='ruthless_sands' />
+              <Biome name='torrid_wasteland' />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintPlatinumSize ' range=':= 1.069 * _default_ * iintPlatinumSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintPlatinumSize ' range=':= 1.069 * _default_ * iintPlatinumSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintPlatinumFreq ' range=':= 1.143 * _default_ * iintPlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintPlatinumHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iintPlatinumFreq  * 0.1 ' range=':= 1.001 * _default_ * iintPlatinumFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Platinum is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintPlatinumDist = "Vanilla"'>
+            <StandardGen name='iintPlatinumStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='alps' />
+              <Biome name='crag' />
+              <Biome name='dead_swamp' />
+              <Biome name='quagmire' />
+              <Biome name='mutated_taiga_cold' />
+              <Biome name='redwood_taiga' />
+              <Biome name='taiga_cold_hills' />
+              <Biome name='corrupted_sands' />
+              <Biome name='fungi_forest' />
+              <Biome name='phantasmagoric_inferno' />
+              <Biome name='undergarden' />
+              <Biome name='visceral_heap' />
+              <Biome name='hell' />
+              <Biome name='arctic_abyss' />
+              <Biome name='fungi_forest' />
+              <Biome name='ruthless_sands' />
+              <Biome name='torrid_wasteland' />
+              <Setting name='Size' avg=':= 5.333 * oreSize * iintPlatinumSize ' range=':= 2.67 * oreSize * iintPlatinumSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 2.667 * oreFreq * iintPlatinumFreq ' range=':= 1.33 * oreFreq * iintPlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Platinum is complete. -->
+
+        <!-- End Platinum Generation -->
+
+
+        <!-- Begin Uncommon Platinum Generation -->
+
+        <!-- Starting LayeredVeins Preset for Uncommon Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonPlatinumDist = "LayeredVeins"'>
+            <Veins name='iintUncommonPlatinumVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='bayou' />
+              <Biome name='lush_swamp' />
+              <Biome name='mangrove' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='land_of_lakes' />
+              <Biome name='flower_field' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='ominous_woods' />
+              <Biome name='mutated_ice_flats' />
+              <Biome name='wasteland' />
+              <Biome name='savanna_rock' />
+              <Biome name='deep_ocean' />
+              <Setting name='MotherlodeFrequency' avg=':= 0.217 * _default_ * iintUncommonPlatinumFreq ' range=':= 0.217 * _default_ * iintUncommonPlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.702 * _default_ * iintUncommonPlatinumSize ' range=':= 0.702 * _default_ * iintUncommonPlatinumSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 0.841 * _default_ ' range=':= 0.841 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintUncommonPlatinumSize ' range=':= _default_ * iintUncommonPlatinumSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * iintUncommonPlatinumSize ' range=':= 1.000 * _default_ * iintUncommonPlatinumSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Uncommon Platinum is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Uncommon  Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonPlatinumDist = "StrategicClouds"'>
+            <Cloud name='iintUncommonPlatinumCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='bayou' />
+              <Biome name='lush_swamp' />
+              <Biome name='mangrove' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='land_of_lakes' />
+              <Biome name='flower_field' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='ominous_woods'/>
+              <Biome name='mutated_ice_flats'/>
+              <Biome name='wasteland'/>
+              <Biome name='savanna_rock' />
+              <Biome name='deep_ocean'/>
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintUncommonPlatinumSize ' range=':= 1.069 * _default_ * iintUncommonPlatinumSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintUncommonPlatinumSize ' range=':= 1.069 * _default_ * iintUncommonPlatinumSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintUncommonPlatinumFreq ' range=':= 1.143 * _default_ * iintUncommonPlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintUncommonPlatinumHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iintUncommonPlatinumFreq  * 0.1 ' range=':= 1.001 * _default_ * iintUncommonPlatinumFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Uncommon Platinum is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Uncommon Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintUncommonPlatinumDist = "Vanilla"'>
+            <StandardGen name='iintUncommonPlatinumStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='glacier' />
+              <Biome name='alps_foothills' />
+              <Biome name='volcanic_island' />
+              <Biome name='ice_mountains' />
+              <Biome name='mutated_extreme_hills' />
+              <Biome name='mutated_extreme_hills_with_trees' />
+              <Biome name='extreme_hills' />
+              <Biome name='extreme_hills_with_trees' />
+              <Biome name='bayou' />
+              <Biome name='lush_swamp' />
+              <Biome name='mangrove' />
+              <Biome name='mutated_mesa_clear_rock' />
+              <Biome name='mutated_mesa_rock' />
+              <Biome name='mesa' />
+              <Biome name='mesa_clear_rock' />
+              <Biome name='mesa_rock' />
+              <Biome name='mutated_plains' />
+              <Biome name='land_of_lakes' />
+              <Biome name='flower_field' />
+              <Biome name='mutated_roofed_forest' />
+              <Biome name='redwood_taiga_hills' />
+              <Biome name='ominous_woods'/>
+              <Biome name='mutated_ice_flats'/>
+              <Biome name='wasteland'/>
+              <Biome name='savanna_rock' />
+              <Biome name='deep_ocean'/>
+              <Setting name='Size' avg=':= 5.333 * oreSize * iintUncommonPlatinumSize ' range=':= 2.67 * oreSize * iintUncommonPlatinumSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 2.667 * oreFreq * iintUncommonPlatinumFreq ' range=':= 1.33 * oreFreq * iintUncommonPlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Uncommon Platinum is complete. -->
+
+        <!-- End Uncommon Platinum Generation -->
+
+
+        <!-- Begin Rare Platinum Generation -->
+
+        <!-- Starting LayeredVeins Preset for Rare Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRarePlatinumDist = "LayeredVeins"'>
+            <Veins name='iintRarePlatinumVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='MotherlodeFrequency' avg=':= 0.054 * _default_ * iintRarePlatinumFreq ' range=':= 0.054 * _default_ * iintRarePlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0.702 * _default_ * iintRarePlatinumSize ' range=':= 0.702 * _default_ * iintRarePlatinumSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 0.841 * _default_ ' range=':= 0.841 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintRarePlatinumSize ' range=':= _default_ * iintRarePlatinumSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * iintRarePlatinumSize ' range=':= 1.000 * _default_ * iintRarePlatinumSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Rare Platinum is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Rare  Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRarePlatinumDist = "StrategicClouds"'>
+            <Cloud name='iintRarePlatinumCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintRarePlatinumSize ' range=':= 1.069 * _default_ * iintRarePlatinumSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintRarePlatinumSize ' range=':= 1.069 * _default_ * iintRarePlatinumSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintRarePlatinumFreq ' range=':= 1.143 * _default_ * iintRarePlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintRarePlatinumHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iintRarePlatinumFreq  * 0.1 ' range=':= 1.001 * _default_ * iintRarePlatinumFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Rare Platinum is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Rare Platinum. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintRarePlatinumDist = "Vanilla"'>
+            <StandardGen name='iintRarePlatinumStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='origin_island'  />
+			  <Biome name='origin_beach'  />
+              <Setting name='Size' avg=':= 5.333 * oreSize * iintRarePlatinumSize ' range=':= 2.67 * oreSize * iintRarePlatinumSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 2.667 * oreFreq * iintRarePlatinumFreq ' range=':= 1.33 * oreFreq * iintRarePlatinumFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Rare Platinum is complete. -->
+
+        <!-- End Rare Platinum Generation -->		
+		
+		
+		        <!-- Begin Salt Generation -->
+
+        <!-- Starting StratumClouds Preset for Salt. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintSaltDist = "StratumClouds"'>
+            <Cloud name='iintSaltCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:3' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * iintSaltSize ' range=':= 1.252 * _default_ * iintSaltSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * iintSaltSize ' range=':= 1.252 * _default_ * iintSaltSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * iintSaltFreq ' range=':= 2.567 * _default_ * iintSaltFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Salt is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Salt. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintSaltDist = "SparseVeins"'>
+            <Veins name='iintSaltVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:3' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * iintSaltFreq ' range=':= 2.599 * _default_ * iintSaltFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * iintSaltSize ' range=':= 0 * _default_ * iintSaltSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.612 * _default_ ' range=':= 1.612 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * iintSaltSize ' range=':= _default_ * iintSaltSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.270 * _default_ * iintSaltSize ' range=':= 1.270 * _default_ * iintSaltSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Salt is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Salt. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintSaltDist = "StrategicClouds"'>
+            <Cloud name='iintSaltCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:3' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.101 * _default_ * iintSaltSize ' range=':= 1.101 * _default_ * iintSaltSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.101 * _default_ * iintSaltSize ' range=':= 1.101 * _default_ * iintSaltSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.212 * _default_ * iintSaltFreq ' range=':= 1.212 * _default_ * iintSaltFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='iintSaltHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='immersiveintelligence:ore:3' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * iintSaltFreq  * 0.1 ' range=':= 2.599 * _default_ * iintSaltFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Salt is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Salt. -->
+        <ConfigSection>
+          <IfCondition condition=':= iintSaltDist = "Vanilla"'>
+            <StandardGen name='iintSaltStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='immersiveintelligence:ore:3' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 24.0 * oreSize * iintSaltSize ' range=':= 12.0 * oreSize * iintSaltSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 0.667 * oreFreq * iintSaltFreq ' range=':= 0.33 * oreFreq * iintSaltFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Salt is complete. -->
+
+        <!-- End Salt Generation -->
+		
+        <!-- Finished adding blocks -->
+
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Immersive Intelligence" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->
