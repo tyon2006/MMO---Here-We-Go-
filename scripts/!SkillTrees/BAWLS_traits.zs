@@ -608,7 +608,6 @@ var bawls5cons = [
 	<minecraft:potion>.withTag({Potion: "potioncore:absorption"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:blindness"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:chance"}),
-	<minecraft:potion>.withTag({Potion: "potioncore:chance"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:cure"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:dispel"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:drown"}),

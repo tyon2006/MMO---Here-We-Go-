@@ -6,6 +6,7 @@ import mods.embers.Stamper;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
+import crafttweaker.item.IItemStack;
 
 //***************************
 //		REMOVE AND HIDE
@@ -28,6 +29,29 @@ rh(<rats:rat_upgrade_aristocrat>);
 rh(<rats:rat_upgrade_ratinator>);
 rh(<rats:arcane_technology>);
 rh(<rats:rat_upgrade_nonbeliever>);
+
+var gargoyles = [
+
+	<cathedral:cathedral_gargoyle_demon_stone>,
+	<cathedral:cathedral_gargoyle_demon_sandstone>,
+	<cathedral:cathedral_gargoyle_demon_redsandstone>,
+	<cathedral:cathedral_gargoyle_demon_obsidian>,
+	<cathedral:cathedral_gargoyle_demon_netherbrick>,
+	<cathedral:cathedral_gargoyle_demon_quartz>,
+	<cathedral:cathedral_gargoyle_demon_endstone>,
+	<cathedral:cathedral_gargoyle_demon_packedice>,
+	<cathedral:cathedral_gargoyle_demon_snow>,
+	<cathedral:cathedral_gargoyle_demon_marble>,
+	<cathedral:cathedral_gargoyle_demon_limestone>,
+	<cathedral:cathedral_gargoyle_demon_dwemer>
+	
+] as IItemStack[];
+
+for item in gargoyles {
+
+	recipes.replaceAllOccurences(<minecraft:lit_pumpkin>, <soot:mundane_stone>, item);
+
+}
 
 recipes.removeShapeless(<minecraft:glowstone>, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>]);
 recipes.removeShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null],[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null], [null, null, null]]);

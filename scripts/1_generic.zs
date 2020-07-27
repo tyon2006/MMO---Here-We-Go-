@@ -36,6 +36,21 @@ recipes.addShaped("Alchemy Bag", <extraalchemy:potion_bag>,
  [[<iceandfire:chain_link>,<ore:leather>,<iceandfire:chain_link>],
   [<ore:leather>,<ore:chest>,<ore:leather>],
   [<ore:leather>,<ore:leather>,<ore:leather>]]);
+  
+recipes.addShaped("Iron Horse Armor", <minecraft:iron_horse_armor>,
+ [[<iceandfire:chain_link>,<minecraft:iron_helmet>,<iceandfire:chain_link>],
+  [<ore:leather>,<minecraft:iron_leggings>,<ore:leather>],
+  [<iceandfire:chain_link>,<minecraft:iron_leggings>,<iceandfire:chain_link>]]);
+  
+recipes.addShaped("Golden Horse Armor", <minecraft:golden_horse_armor>,
+ [[<iceandfire:chain_link>,<minecraft:golden_helmet>,<iceandfire:chain_link>],
+  [<ore:leather>,<minecraft:golden_leggings>,<ore:leather>],
+  [<iceandfire:chain_link>,<minecraft:golden_leggings>,<iceandfire:chain_link>]]);
+  
+recipes.addShaped("Diamond Horse Armor", <minecraft:diamond_horse_armor>,
+ [[<iceandfire:chain_link>,<minecraft:diamond_helmet>,<iceandfire:chain_link>],
+  [<ore:leather>,<minecraft:diamond_leggings>,<ore:leather>],
+  [<iceandfire:chain_link>,<minecraft:diamond_leggings>,<iceandfire:chain_link>]]);
 
 //***************************
 //		POTIONS

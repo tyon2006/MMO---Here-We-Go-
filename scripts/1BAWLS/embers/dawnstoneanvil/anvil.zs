@@ -19,7 +19,6 @@ mods.embers.DawnstoneAnvil.add([<embers:dust_ember>*6], <embers:shard_ember>, nu
 mods.embers.DawnstoneAnvil.add([<embers:shard_ember>*6], <embers:crystal_ember>, null);
 mods.embers.DawnstoneAnvil.add([<embers:crystal_ember>, <embers:shard_ember>*3, <minecraft:gunpowder>], <embers:ember_cluster>, null);
 
-
 //***************************
 //		    		BAUBLES
 //***************************
@@ -72,5 +71,13 @@ recipes.addShaped("Mundane Belt", <thaumcraft:baubles:2>,
   [<ore:leather>,null,<ore:leather>],
   [<iceandfire:chain_link>,<embers:ingot_dawnstone>,<iceandfire:chain_link>]]);
 
+//***************************
+//		    ENHANCEMENTS
+//***************************
 
+recipes.addShaped("Stone", <minecraft:stone>,
+ [[<soot:mundane_stone>,<soot:mundane_stone>],
+  [<soot:mundane_stone>,<soot:mundane_stone>]]);
+  
+mods.embers.DawnstoneAnvil.add([<soot:mundane_stone>*3], <minecraft:stone>, null);
 
