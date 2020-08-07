@@ -412,7 +412,8 @@
     <!-- Then, the rest are free to come in. -->
     <Import file='modules/default/FossilsandArchaeology.xml'/>
     <Import file='modules/custom/ImmersiveEngineering.xml'/>
-    <Import file='modules/custom/ImmersiveIntelligence.xml'/>	
+    <Import file='modules/custom/ImmersiveIntelligence.xml'/>
+	<Import file='modules/custom/TransmutationAlchemy.xml'/>
 
     <!-- ***************** Import Mod-provided configs ********************* -->
     <!-- NOTE: mods will overwrite these configs upon each load -->

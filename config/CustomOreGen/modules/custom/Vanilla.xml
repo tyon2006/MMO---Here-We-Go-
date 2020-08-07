@@ -447,7 +447,7 @@
 
     <!-- Mountain Redstone Configuration UI Starting -->
     <ConfigSection>
-      <OptionChoice name='vnlaMountainRedstoneDist'  displayState=':= if(?enableVanilla, "shown", "hidden")' displayGroup='groupVanilla'>
+      <OptionChoice name='vnlaMountainRedstoneDist' default='StrategicClouds' displayState=':= if(?enableVanilla, "shown", "hidden")' displayGroup='groupVanilla'>
         <Description> Controls how Mountain Redstone is generated </Description>
         <DisplayName>Vanilla Mountain Redstone</DisplayName>
         <IfCondition condition=':= (?blockExists("minecraft:redstone_ore")) '>
