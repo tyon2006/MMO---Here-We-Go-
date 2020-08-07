@@ -457,7 +457,6 @@ var skillz3req = [
 	<immersiveengineering:wirecoil:3>,
 	<immersiveengineering:wirecoil:4>,
 	<immersivepetroleum:stone_decoration>,
-	<industrialrenewal:block_chimney>,
 	<industrialrenewal:brace>,
 	<industrialrenewal:brace_steel>,
 	<industrialrenewal:bunker_hatch>,
@@ -525,12 +524,6 @@ for item in skillz4req {
 
 var skillz5req = [
 
-	<adchimneys:brick:1>,
-	<adchimneys:brick:2>,
-	<adchimneys:brick>,
-	<adchimneys:stonebrick:1>,
-	<adchimneys:stonebrick:2>,
-	<adchimneys:stonebrick>,
 	<adpother:aerometer>,
 	<adpother:diamond_filter>,
 	<adpother:diamond_respirator>,

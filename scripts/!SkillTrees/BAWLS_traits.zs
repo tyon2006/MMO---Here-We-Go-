@@ -530,7 +530,6 @@ for item in bawls4cons {
 
 var bawls5req = [
 
-	<minecraft:cauldron:*>,
 	<biomesoplenty:jar_filled:1>
 
 ] as IItemStack[];
