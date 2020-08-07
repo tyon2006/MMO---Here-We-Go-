@@ -72,7 +72,7 @@
         <Description> Frequency multiplier for Vanilla Clay distributions </Description>
         <DisplayName>Vanilla Clay Freq.</DisplayName>
       </OptionNumeric>
-      <OptionNumeric name='vnlaClaySize' default='1'  min='0' max='5' displayState=':= if(?enableVanilla, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupVanilla'>
+      <OptionNumeric name='vnlaClaySize' default='2'  min='0' max='5' displayState=':= if(?enableVanilla, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupVanilla'>
         <Description> Size multiplier for Vanilla Clay distributions </Description>
         <DisplayName>Vanilla Clay Size</DisplayName>
       </OptionNumeric>
