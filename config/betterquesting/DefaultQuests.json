@@ -415,45 +415,1085 @@
           "index:3": 0
         }
       }
-    }
-  },
-  "questLines:9": {
-    "0:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 48,
-          "x:3": -24,
-          "y:3": -24,
-          "id:3": 0,
-          "sizeY:3": 48
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 48,
-          "id:3": 1,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 60,
-          "x:3": 36,
-          "y:3": 24,
-          "id:3": 2,
-          "sizeY:3": 48
-        }
-      },
-      "lineID:3": 0,
+    },
+    "3:10": {
+      "questID:3": 3,
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
           "visibility:8": "NORMAL",
-          "name:8": "Nick\u0027s Quest Line",
+          "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:writable_book",
+            "id:8": "minecraft:nether_star",
             "Count:3": 1,
-            "Damage:2": 32767,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "advancement_id:8": "",
+          "index:3": 0,
+          "taskID:8": "bq_standard:advancement"
+        },
+        "1:10": {
+          "visible:1": 0,
+          "invert:1": 0,
+          "range:3": -1,
+          "index:3": 1,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "posX:3": 0,
+          "posY:3": 0,
+          "posZ:3": 0,
+          "biome:8": "",
+          "name:8": "New Location",
+          "dimension:3": 0,
+          "taxiCabDist:1": 0,
+          "taskID:8": "bq_standard:location"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:water_bucket",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "requiredUses:3": 1,
+          "ignoreNbt:1": 0,
+          "index:3": 2,
+          "block:10": {
+            "blockID:8": "minecraft:air",
+            "nbt:10": {},
+            "amount:3": 0,
+            "oreDict:8": "",
+            "meta:3": 0
+          },
+          "onHit:1": 0,
+          "onInteract:1": 1,
+          "allowOffHand:1": 1,
+          "taskID:8": "bq_standard:interact_item",
+          "allowMainHand:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "4:10": {
+      "questID:3": 4,
+      "preRequisites:11": [
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "COMPLETED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Ember Flux",
+          "desc:8": "Go talk to Mich MacGuffin. Immediately."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "npcDialogID:3": 3,
+          "description:8": "Go talk to Mich MacGuffin",
+          "index:3": 0,
+          "taskID:8": "bq_npc_integration:npc_dialog"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "ordinarycoins:coingold",
+              "Count:3": 25,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 1
+        }
+      }
+    },
+    "5:10": {
+      "questID:3": 5,
+      "preRequisites:11": [
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "HIDDEN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 1,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "trigger:ember_flux",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "description:8": "",
+          "index:3": 0,
+          "trigger:8": "minecraft:impossible",
+          "conditions:8": "{}",
+          "taskID:8": "bq_standard:trigger"
+        },
+        "1:10": {
+          "advancement_id:8": "universalbestiary:minecraft_llama",
+          "index:3": 1,
+          "taskID:8": "bq_standard:advancement"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "score:8": "ember_flux",
+          "rewardID:8": "bq_standard:scoreboard",
+          "index:3": 0,
+          "type:8": "dummy",
+          "value:3": 1,
+          "relative:1": 1
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 1
+        }
+      }
+    },
+    "6:10": {
+      "questID:3": 6,
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "HIDDEN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 1,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "trigger:ember_flux_2",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {
+        "0:10": {
+          "score:8": "ember_flux",
+          "rewardID:8": "bq_standard:scoreboard",
+          "index:3": 0,
+          "type:8": "dummy",
+          "value:3": 1,
+          "relative:1": 1
+        }
+      }
+    },
+    "7:10": {
+      "questID:3": 7,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bountiful:bounty",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Find a Bounty Board",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bountiful:bountyboarditem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "requiredUses:3": 1,
+          "ignoreNbt:1": 0,
+          "index:3": 0,
+          "block:10": {
+            "blockID:8": "minecraft:air",
+            "nbt:10": {},
+            "amount:3": 0,
+            "oreDict:8": "",
+            "meta:3": 0
+          },
+          "onHit:1": 0,
+          "onInteract:1": 1,
+          "allowOffHand:1": 1,
+          "taskID:8": "bq_standard:interact_item",
+          "allowMainHand:1": 1
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "ordinarycoins:coinbronze",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "8:10": {
+      "questID:3": 8,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "9:10": {
+      "questID:3": 9,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Open up BAWLS",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "10:10": {
+      "questID:3": 10,
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "COMPLETED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "embers:shard_ember",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "First quest in bawls",
+          "desc:8": "gimme 1 level"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 2,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "11:10": {
+      "questID:3": 11,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Meet Noggle",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "amount:3": 1,
+          "range:3": 4,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "ReturnToStart:1": 1,
+            "NpcInv:9": {},
+            "BossColor:3": 0,
+            "PotionEffect:3": 0,
+            "Size:3": 5,
+            "stopAndInteract:1": 1,
+            "Resistances:10": {
+              "Arrow:5": 1.0,
+              "Explosion:5": 1.0,
+              "Knockback:5": 1.0,
+              "Melee:5": 1.0
+            },
+            "BossBar:1": 0,
+            "RespawnTime:3": 20,
+            "NpcAngrySound:8": "",
+            "ReactsToFire:1": 0,
+            "IgnoreCobweb:1": 0,
+            "PositionOffsetZ:5": 5.0,
+            "PositionOffsetY:5": 5.0,
+            "PositionOffsetX:5": 5.0,
+            "LootMode:3": 0,
+            "TransformHasAI:1": 0,
+            "AttackStrenght:3": 5,
+            "PersistenceRequired:1": 0,
+            "id:8": "customnpcs:customnpc",
+            "IsStatue:1": 0,
+            "MovingPatern:3": 0,
+            "NpcLines:10": {
+              "Lines:9": {}
+            },
+            "DefendFaction:1": 0,
+            "FireIndirect:3": 0,
+            "NpcVisible:3": 0,
+            "LinkedNpcName:8": "",
+            "NpcScenes:10": {
+              "Scenes:9": {}
+            },
+            "HitSound:8": "minecraft:entity.arrow.hit",
+            "FindShelter:3": 2,
+            "Air:2": 300,
+            "TacticalVariant:3": 0,
+            "Orientation:3": 0,
+            "ScriptLanguage:8": "ECMAScript",
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "KnockBack:3": 0,
+            "TransformHasJob:1": 0,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "BurnInSun:1": 0,
+            "StandingState:3": 0,
+            "AttackInvisible:1": 0,
+            "NpcInteractNPCLines:10": {
+              "Lines:9": {}
+            },
+            "HurtTime:2": 0,
+            "WalkingRange:3": 10,
+            "ShotCount:3": 1,
+            "pDur:3": 5,
+            "StartPosNew:11": [
+              0,
+              0,
+              0
+            ],
+            "AttackRange:3": 2,
+            "NpcKillLines:10": {
+              "Lines:9": {}
+            },
+            "PotionImmune:1": 0,
+            "AvoidsSun:1": 0,
+            "Texture:8": "customnpcs:textures/entity/humanmale/steve.png",
+            "NpcJob:3": 0,
+            "BurstCount:3": 1,
+            "NpcAttackLines:10": {
+              "Lines:9": {}
+            },
+            "pSpeed:3": 10,
+            "pArea:3": 0,
+            "DeathTime:2": 0,
+            "pImpact:3": 0,
+            "MoveState:3": 0,
+            "pRender3D:1": 1,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "CombatRegen:3": 0,
+            "NpcsTimers:9": {},
+            "MarkovGender:3": 0,
+            "pEffect:3": 0,
+            "DistanceToMelee:3": 0,
+            "NpcStepSound:8": "",
+            "FireRate:3": 5,
+            "LeftHanded:1": 0,
+            "pEffAmp:3": 0,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "ImmuneToFire:1": 0,
+            "NpcKilledLines:10": {
+              "Lines:9": {}
+            },
+            "UUIDMost:4": 6575440419074756207,
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "DisablePitch:1": 0,
+            "pPhysics:1": 1,
+            "TransformHasInv:1": 0,
+            "NpcInteractLines:10": {
+              "Lines:9": {
+                "0:10": {
+                  "Line:8": "Hello @p",
+                  "Song:8": "",
+                  "Slot:3": 0
+                }
+              }
+            },
+            "HurtByTimestamp:3": 0,
+            "pSpin:1": 0,
+            "NpcHurtSound:8": "minecraft:entity.player.hurt",
+            "pTrail:3": 0,
+            "CreatureType:3": 0,
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": -2.0,
+                "Name:8": "tc.mobmod"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "tc.mobmodtaint"
+              },
+              "2:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.projectileDamage"
+              },
+              "3:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.magicDamage"
+              },
+              "4:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.jumpHeight"
+              },
+              "5:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.damageResistance"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "potioncore.magicShielding"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.physicalDamageRate"
+              },
+              "9:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.experienceRate"
+              },
+              "10:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.fireDamageRate"
+              },
+              "11:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.fireAspect"
+              },
+              "12:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.barehandedPower"
+              },
+              "13:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.witchburn"
+              },
+              "14:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.attraction"
+              },
+              "15:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.attraction_generation"
+              },
+              "16:10": {
+                "Base:6": 100.0,
+                "Name:8": "cyberware.tolerance"
+              },
+              "17:10": {
+                "Base:6": 1.0,
+                "Name:8": "xat.entityRace"
+              },
+              "18:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.slash"
+              },
+              "19:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.pierce"
+              },
+              "20:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.impact"
+              },
+              "21:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "22:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "23:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "24:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "25:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "26:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "27:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "28:10": {
+                "Base:6": 5.0,
+                "Name:8": "generic.attackDamage"
+              },
+              "29:10": {
+                "Base:6": 0.5,
+                "Name:8": "generic.flyingSpeed"
+              }
+            },
+            "Invulnerable:1": 0,
+            "TransformHasDisplay:1": 0,
+            "NoFallDamage:1": 0,
+            "AbsorptionAmount:5": 0.0,
+            "TransformHasRole:1": 0,
+            "Name:8": "Zdziwigostryja",
+            "FallDistance:5": 0.0,
+            "SkinColor:3": 16777215,
+            "NpcIdleSound:8": "",
+            "Weapons:9": {},
+            "NPCDialogOptions:9": {},
+            "AggroRange:3": 16,
+            "DirectLOS:1": 1,
+            "HealthRegen:3": 1,
+            "ForgeCaps:10": {
+              "xat:race:10": {
+                "default_height:5": 0.0,
+                "default_width:5": 0.0,
+                "race:8": "Human",
+                "bonus_mana:3": 0,
+                "prev_race:8": "Human",
+                "login:1": 1,
+                "first_login:1": 0,
+                "target:3": 100,
+                "size:3": 100,
+                "mana:5": 100.0,
+                "width:5": 0.0,
+                "transformed:1": 0,
+                "fake:1": 0,
+                "height:5": 0.0,
+                "affinity:5": 1.0
+              },
+              "llibrary:extendedentitydatacapability:10": {
+                "mm:living:10": {
+                  "frozenYaw:5": 0.0,
+                  "freezeProgress:5": 0.0,
+                  "frozenPitch:5": 0.0,
+                  "prevHasAI:1": 0,
+                  "frozenYawHead:5": 0.0,
+                  "frozenEntityID:3": -1,
+                  "frozenLimbSwingAmount:5": 0.0,
+                  "frozenRenderYawOffset:5": 0.0,
+                  "frozenSwingProgress:5": 0.0
+                },
+                "Ice And Fire - Siren Property Tracker:10": {
+                  "CharmedBySiren:1": 0,
+                  "SirenID:3": 0
+                },
+                "Ice And Fire - Frozen Property Tracker:10": {
+                  "TicksUntilUnfrozen:3": 0,
+                  "IsFrozen:1": 0
+                },
+                "Ice and Fire - Player Property Tracker:10": {
+                  "DismountedDragon:1": 0,
+                  "GauntletDamage:3": 0,
+                  "DreadPortalZ:3": 0,
+                  "DreadPortalY:3": 0,
+                  "DreadPortalX:3": 0
+                },
+                "Ice And Fire - Chain Property Tracker:10": {
+                  "ConnectedEntities:9": {}
+                },
+                "Ice And Fire - Stone Property Tracker:10": {
+                  "StoneBreakLvl:3": 0,
+                  "TurnedToStone:1": 0
+                }
+              },
+              "aether:entityinfo:10": {
+                "hasSpawnArea:1": 0
+              },
+              "aether:statuseffects:10": {},
+              "thaumicaugmentation:portal_state:10": {
+                "inPortal:1": 0
+              }
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "NpcModelData:10": {
+              "LegsConfig:10": {
+                "NotShared:1": 0,
+                "ScaleZ:5": 1.0,
+                "TransZ:5": 0.0,
+                "TransY:5": 0.0,
+                "TransX:5": 0.0,
+                "ScaleY:5": 1.0,
+                "ScaleX:5": 1.0
+              },
+              "BodyConfig:10": {
+                "NotShared:1": 0,
+                "ScaleZ:5": 1.0,
+                "TransZ:5": 0.0,
+                "TransY:5": 0.0,
+                "TransX:5": 0.0,
+                "ScaleY:5": 1.0,
+                "ScaleX:5": 1.0
+              },
+              "Eyes:10": {
+                "Pattern:1": 0,
+                "Glint:1": 1,
+                "Type:1": -1,
+                "PositionY:3": 1,
+                "SkinColor:3": 11830381,
+                "PlayerTexture:1": 0,
+                "Color:3": 6704179,
+                "BrowColor:3": 5982516,
+                "BrowThickness:3": 4
+              },
+              "LegParts:10": {
+                "Pattern:1": 0,
+                "Type:1": 0,
+                "PlayerTexture:1": 0,
+                "Color:3": 16777215
+              },
+              "Parts:9": {},
+              "ArmsConfig:10": {
+                "NotShared:1": 0,
+                "ScaleZ:5": 1.0,
+                "TransZ:5": 0.0,
+                "TransY:5": 0.0,
+                "TransX:5": 0.0,
+                "ScaleY:5": 1.0,
+                "ScaleX:5": 1.0
+              },
+              "ExtraData:10": {},
+              "HeadConfig:10": {
+                "NotShared:1": 0,
+                "ScaleZ:5": 1.0,
+                "TransZ:5": 0.0,
+                "TransY:5": 0.0,
+                "TransX:5": 0.0,
+                "ScaleY:5": 1.0,
+                "ScaleX:5": 1.0
+              }
+            },
+            "minDelay:3": 20,
+            "DoorInteract:3": 2,
+            "MoveSpeed:3": 5,
+            "TransformEditingModus:1": 0,
+            "UsingSkinUrl:1": 0,
+            "Leashed:1": 0,
+            "SkinUrl:8": "",
+            "CanSwim:1": 1,
+            "GroundSound:8": "minecraft:block.stone.break",
+            "MaxHealth:3": 20,
+            "HideBodyWhenKilled:1": 0,
+            "AttackSpeed:3": 20,
+            "PotionDuration:3": 5,
+            "maxDelay:3": 40,
+            "ScriptEnabled:1": 0,
+            "Role:3": 0,
+            "DropChance:9": {},
+            "FactionPoints:10": {
+              "DecreaseFaction1Points:1": 0,
+              "OptionFaction2Points:3": 100,
+              "OptionFactions1:3": -1,
+              "OptionFactions2:3": -1,
+              "OptionFaction1Points:3": 100,
+              "DecreaseFaction2Points:1": 0
+            },
+            "pDamage:3": 4,
+            "KilledTime:4": 0,
+            "AimWhileShooting:1": 0,
+            "CanPickUpLoot:1": 0,
+            "AttackOtherFactions:1": 0,
+            "CanDrown:1": 1,
+            "pSize:3": 5,
+            "CanSprint:1": 0,
+            "CanLeap:1": 0,
+            "TransformIsActive:1": 0,
+            "ForgeData:10": {},
+            "MovingState:3": 0,
+            "MovingPos:3": 0,
+            "PotionAmp:3": 0,
+            "OnAttack:3": 0,
+            "TacticalRadius:3": 8,
+            "FallFlying:1": 0,
+            "MaxExp:3": 0,
+            "OrderedLines:1": 0,
+            "PortalCooldown:3": 0,
+            "pGlows:1": 0,
+            "TransformHasAdvanced:1": 0,
+            "TransformHasStats:1": 0,
+            "MovementType:3": 0,
+            "FiringSound:8": "minecraft:entity.arrow.shoot",
+            "ModRev:3": 18,
+            "Accuracy:3": 60,
+            "MinExp:3": 0,
+            "Armor:9": {},
+            "CloakTexture:8": "",
+            "GlowTexture:8": "",
+            "MaxFiringRange:3": 15,
+            "pXlr8:1": 0,
+            "MarkovGeneratorId:3": 2,
+            "Scripts:9": {},
+            "UUIDLeast:4": -8940429525668653545,
+            "Health:5": 20.0,
+            "pStick:1": 0,
+            "MovingPause:1": 1,
+            "NpcDeathSound:8": "minecraft:entity.player.hurt",
+            "MovingPathNew:9": {},
+            "FactionID:3": 0,
+            "Title:8": "",
+            "TotalTicksAlive:4": 0,
+            "Rotation:9": {
+              "0:5": 4.8736444,
+              "1:5": 0.0
+            },
+            "ShowName:3": 0,
+            "npcInteracting:1": 1,
+            "UpdateBlocked:1": 0,
+            "AvoidsWater:1": 0,
+            "NoLivingAnimation:1": 0,
+            "SpawnCycle:3": 0
+          },
+          "taskID:8": "bq_standard:meeting",
+          "target:8": "customnpcs:customnpc",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    }
+  },
+  "questLines:9": {
+    "0:10": {
+      "quests:9": {},
+      "lineID:3": 0,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Stevannia",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 8
+    },
+    "1:10": {
+      "quests:9": {},
+      "lineID:3": 1,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Mystic Accord",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 10
+    },
+    "2:10": {
+      "quests:9": {},
+      "lineID:3": 2,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Exploration and Geology",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "biomesoplenty:earth",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 1
+    },
+    "3:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -12,
+          "id:3": 9,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 3,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "ALWAYS",
+          "name:8": "Intro Quests",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "grimoireofgaia:misc_book",
+            "Count:3": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "bg_image:8": "",
@@ -462,6 +1502,297 @@
         }
       },
       "order:3": 0
+    },
+    "4:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 10,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 4,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "BAWLS",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "embers:ember_cluster",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 4
+    },
+    "5:10": {
+      "quests:9": {},
+      "lineID:3": 5,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "SKILLZ",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:wirecoil",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 5
+    },
+    "6:10": {
+      "quests:9": {},
+      "lineID:3": 6,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "GRAYCE",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "thaumicaugmentation:material",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 6
+    },
+    "7:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 4,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 0,
+          "id:3": 5,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 0,
+          "id:3": 6,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 7,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Dawnholdt",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 7
+    },
+    "8:10": {
+      "quests:9": {},
+      "lineID:3": 8,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "The Clans",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 9
+    },
+    "9:10": {
+      "quests:9": {},
+      "lineID:3": 10,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Adventures and Dungeons",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 2
+    },
+    "10:10": {
+      "quests:9": {},
+      "lineID:3": 11,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Story: Who is Herobrine?",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 11
+    },
+    "11:10": {
+      "quests:9": {},
+      "lineID:3": 12,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Story: The King in Red",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 12
+    },
+    "12:10": {
+      "quests:9": {},
+      "lineID:3": 13,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Story: Dethrone King Boggle",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 13
+    },
+    "13:10": {
+      "quests:9": {},
+      "lineID:3": 14,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Story: Gunger-what, now?",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 14
+    },
+    "14:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 7,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 15,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "name:8": "Bounties and Beasts",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 3
     }
   },
   "questSettings:10": {
@@ -471,7 +1802,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "party_enable:1": 1,
