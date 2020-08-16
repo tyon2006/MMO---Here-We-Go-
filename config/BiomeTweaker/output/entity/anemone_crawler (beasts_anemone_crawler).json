@@ -1,0 +1,6 @@
+
+{
+  "Name": "anemone_crawler",
+  "Registry ID": "beasts:anemone_crawler",
+  "Class": "random.beasts.common.entity.passive.EntityAnemoneCrawler"
+}

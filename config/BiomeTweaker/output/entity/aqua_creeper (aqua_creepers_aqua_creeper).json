@@ -1,0 +1,6 @@
+
+{
+  "Name": "aqua_creeper",
+  "Registry ID": "aqua_creepers:aqua_creeper",
+  "Class": "aqua_creepers.entities.EntityAquaCreeper"
+}

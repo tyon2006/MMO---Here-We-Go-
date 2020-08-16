@@ -1,0 +1,6 @@
+
+{
+  "Name": "skewer_shrimp",
+  "Registry ID": "beasts:skewer_shrimp",
+  "Class": "random.beasts.common.entity.monster.EntitySkewerShrimp"
+}

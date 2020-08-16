@@ -1,0 +1,6 @@
+
+{
+  "Name": "landwhale",
+  "Registry ID": "beasts:landwhale",
+  "Class": "random.beasts.common.entity.passive.EntityLandwhale"
+}

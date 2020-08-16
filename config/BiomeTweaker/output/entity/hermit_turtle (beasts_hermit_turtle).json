@@ -1,0 +1,6 @@
+
+{
+  "Name": "hermit_turtle",
+  "Registry ID": "beasts:hermit_turtle",
+  "Class": "random.beasts.common.entity.passive.EntityHermitTurtle"
+}

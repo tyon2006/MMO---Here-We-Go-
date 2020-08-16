@@ -1,0 +1,6 @@
+
+{
+  "Name": "legfish",
+  "Registry ID": "beasts:legfish",
+  "Class": "random.beasts.common.entity.passive.EntityLegfish"
+}
