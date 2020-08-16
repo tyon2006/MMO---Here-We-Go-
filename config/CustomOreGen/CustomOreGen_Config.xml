@@ -45,7 +45,7 @@
         </OptionDisplayGroup>
 
         <OptionChoice name='COGActive'
-                      default=':= dimension="overworld" | dimension="Aether" | dimension="EREBUS" | dimension="midnight" | dimension="the_nether" | dimension="the_end"'
+                      default=':= dimension="overworld" | dimension="Aether" | dimension="midnight" | dimension="the_nether" | dimension="the_end"'
                       displayGroup='groupInternal'>
             <Choice value='true' displayValue='On'/>
             <Choice value='false' displayValue='Off'/>
@@ -413,6 +413,7 @@
     <Import file='modules/default/FossilsandArchaeology.xml'/>
     <Import file='modules/custom/ImmersiveEngineering.xml'/>
     <Import file='modules/custom/ImmersiveIntelligence.xml'/>
+    <Import file='modules/custom/ImmersiveEnergy.xml'/>
 	<Import file='modules/custom/TransmutationAlchemy.xml'/>
 
     <!-- ***************** Import Mod-provided configs ********************* -->

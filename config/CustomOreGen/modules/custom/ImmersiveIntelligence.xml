@@ -4,7 +4,7 @@
      ================================================================= -->
 
 
-<!-- Configuration by Reteo. -->
+<!-- Configuration by Caervec. -->
 
 
 
@@ -43,7 +43,7 @@
         <OptionChoice name='iintZincDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Controls how Zinc is generated </Description>
           <DisplayName>Immersive Intelligence Zinc</DisplayName>
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='LayeredVeins' displayValue='Layered Veins'>
             <Description>
@@ -52,7 +52,7 @@
           </Choice>
           </IfCondition>
 
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
             <Description>
@@ -61,7 +61,7 @@
           </Choice>
           </IfCondition>
 
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='Vanilla' displayValue='Vanilla'>
             <Description>
@@ -89,7 +89,7 @@
         <OptionChoice name='iintUncommonZincDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Controls how Uncommon Zinc is generated </Description>
           <DisplayName>Immersive Intelligence Uncommon Zinc</DisplayName>
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='LayeredVeins' displayValue='Layered Veins'>
             <Description>
@@ -98,7 +98,7 @@
           </Choice>
           </IfCondition>
 
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
             <Description>
@@ -107,7 +107,7 @@
           </Choice>
           </IfCondition>
 
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='Vanilla' displayValue='Vanilla'>
             <Description>
@@ -135,7 +135,7 @@
         <OptionChoice name='iintRareZincDist'  displayState=':= if(?enableImmersiveIntelligence, "shown", "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Controls how Rare Zinc is generated </Description>
           <DisplayName>Immersive Intelligence Rare Zinc</DisplayName>
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='LayeredVeins' displayValue='Layered Veins'>
             <Description>
@@ -144,7 +144,7 @@
           </Choice>
           </IfCondition>
 
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
             <Description>
@@ -153,7 +153,7 @@
           </Choice>
           </IfCondition>
 
-          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:2")) '>
+          <IfCondition condition=':= (?blockExists("immersiveintelligence:ore:1")) '>
 
           <Choice value='Vanilla' displayValue='Vanilla'>
             <Description>
@@ -260,7 +260,7 @@
           <Description> Frequency multiplier for Immersive Intelligence Uncommon Tungsten distributions </Description>
           <DisplayName>Immersive Intelligence Uncommon Tungsten Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='iintUncommonTungstenSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <OptionNumeric name='iintUncommonTungstenSize' default='1.5'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Size multiplier for Immersive Intelligence Uncommon Tungsten distributions </Description>
           <DisplayName>Immersive Intelligence Uncommon Tungsten Size</DisplayName>
         </OptionNumeric>
@@ -306,7 +306,7 @@
           <Description> Frequency multiplier for Immersive Intelligence Rare Tungsten distributions </Description>
           <DisplayName>Immersive Intelligence Rare Tungsten Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='iintRareTungstenSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <OptionNumeric name='iintRareTungstenSize' default='1.5'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Size multiplier for Immersive Intelligence Rare Tungsten distributions </Description>
           <DisplayName>Immersive Intelligence Rare Tungsten Size</DisplayName>
         </OptionNumeric>
@@ -352,7 +352,7 @@
           <Description> Frequency multiplier for Immersive Intelligence Platinum distributions </Description>
           <DisplayName>Immersive Intelligence Platinum Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='iintPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <OptionNumeric name='iintPlatinumSize' default='1.5'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Size multiplier for Immersive Intelligence Platinum distributions </Description>
           <DisplayName>Immersive Intelligence Platinum Size</DisplayName>
         </OptionNumeric>
@@ -398,7 +398,7 @@
           <Description> Frequency multiplier for Immersive Intelligence Uncommon Platinum distributions </Description>
           <DisplayName>Immersive Intelligence Uncommon Platinum Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='iintUncommonPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <OptionNumeric name='iintUncommonPlatinumSize' default='1.5'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Size multiplier for Immersive Intelligence Uncommon Platinum distributions </Description>
           <DisplayName>Immersive Intelligence Uncommon Platinum Size</DisplayName>
         </OptionNumeric>
@@ -553,52 +553,35 @@
                 Small, fairly rare motherlodes  with 2-4 horizontal
                 veins each.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='grove' />
-              <Biome name='mushroom_island_shore' />
-              <Biome name='lavender_fields' />
-              <Biome name='eucalyptus_forest' />
-              <Biome name='rainforest' />
-              <Biome name='jungle_edge' />
-              <Biome name='temperate_rainforest' />
-              <Biome name='tropical_rainforest' />
-              <Biome name='jungle_hills' />
-              <Biome name='overgrown_cliffs' />
-              <Biome name='cold_desert' />
-              <Biome name='snowy_tundra' />
-              <Biome name='tundra' />
-              <Biome name='redwood_forest_edge' />
-              <Biome name='redwood_forest' />
-              <Biome name='mutated_redwood_taiga_hills' />
-              <Biome name='taiga_hills'  />
-              <Biome name='snowy_coniferous_forest' />
-              <Biome name='highland' />
-              <Biome name='mountain' />
-              <Biome name='mountain_foothills' />
-              <Biome name='moor' />
-              <Biome name='xeric_shrubland' />
-              <Biome name='mutated_savanna_rock' />
-              <Biome name='shrubland' />
-              <Biome name='bog' />
-              <Biome name='outback' />
-              <Biome name='desert_hills' />
-              <Biome name='mutated_desert' />
-              <Biome name='mutated_swampland' />
-              <Biome name='steppe' />
-              <Biome name='chaparral' />
-              <Biome name='meadow' />
-              <Biome name='pasture' />
-              <Biome name='birch_forest_hills' />
-              <Biome name='mutated_birch_forest_hills' />
-              <Biome name='stone_beach' />
-              <Biome name='taiga_cold' />
-              <Biome name='prairie' />
-              <Biome name='white_beach' />
-              <Biome name='woodland' />
-              <Biome name='kelp_forest' />
-              <Biome name='coral_reef' />
-              <Biome name='frozen_ocean' />
+			  <Biome name ='cold_desert' />
+			  <Biome name ='birch_forest_hills' />
+			  <Biome name ='forest_hills' />
+			  <Biome name ='mutated_birch_forest' />
+			  <Biome name ='rainforest' />
+			  <Biome name ='jungle_edge' />
+			  <Biome name ='mystic_grove' />
+			  <Biome name ='sacred_springs' />
+			  <Biome name ='mutated_savanna' />
+			  <Biome name ='mutated_savanna_rock' />
+			  <Biome name ='extreme_hills' />
+			  <Biome name ='smaller_extreme_hills' />
+			  <Biome name ='mushroom_island' />
+			  <Biome name ='mushroom_island_shore' />
+			  <Biome name ='dried_reef' />
+			  <Biome name ='the_abyss' />
+			  <Biome name ='frozen_ocean' />
+			  <Biome name ='lavender_fields' />
+			  <Biome name ='meadow' />
+			  <Biome name ='pasture' />
+			  <Biome name ='prairie' />
+			  <Biome name ='fen' />
+			  <Biome name ='shrubland' />
+			  <Biome name ='wetland' />
+			  <Biome name ='mutated_swampland' />
+			  <Biome name ='snowy_coniferous_forest' />
+			  <Biome name ='taiga_hills' />
               <Setting name='MotherlodeFrequency' avg=':= 3.089 * _default_ * iintZincFreq ' range=':= 3.089 * _default_ * iintZincFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 1.579 * _default_ * iintZincSize ' range=':= 1.579 * _default_ * iintZincSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
@@ -636,52 +619,35 @@
                 permanent mining base and  spend some time actually
                 mining  the ore.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='grove' />
-              <Biome name='mushroom_island_shore' />
-              <Biome name='lavender_fields' />
-              <Biome name='eucalyptus_forest' />
-              <Biome name='rainforest' />
-              <Biome name='jungle_edge' />
-              <Biome name='temperate_rainforest' />
-              <Biome name='tropical_rainforest' />
-              <Biome name='jungle_hills' />
-              <Biome name='overgrown_cliffs' />
-              <Biome name='cold_desert' />
-              <Biome name='snowy_tundra' />
-              <Biome name='tundra' />
-              <Biome name='redwood_forest_edge' />
-              <Biome name='redwood_forest' />
-              <Biome name='mutated_redwood_taiga_hills' />
-              <Biome name='taiga_hills'  />
-              <Biome name='snowy_coniferous_forest' />
-              <Biome name='highland' />
-              <Biome name='mountain' />
-              <Biome name='mountain_foothills' />
-              <Biome name='moor' />
-              <Biome name='xeric_shrubland' />
-              <Biome name='mutated_savanna_rock' />
-              <Biome name='shrubland' />
-              <Biome name='bog' />
-              <Biome name='outback' />
-              <Biome name='desert_hills' />
-              <Biome name='mutated_desert' />
-              <Biome name='mutated_swampland' />
-              <Biome name='steppe' />
-              <Biome name='chaparral' />
-              <Biome name='meadow' />
-              <Biome name='pasture' />
-              <Biome name='birch_forest_hills' />
-              <Biome name='mutated_birch_forest_hills' />
-              <Biome name='stone_beach' />
-              <Biome name='taiga_cold' />
-              <Biome name='prairie' />
-              <Biome name='white_beach' />
-              <Biome name='woodland' />
-              <Biome name='kelp_forest' />
-              <Biome name='coral_reef' />
-              <Biome name='frozen_ocean' />
+			  <Biome name ='cold_desert' />
+			  <Biome name ='birch_forest_hills' />
+			  <Biome name ='forest_hills' />
+			  <Biome name ='mutated_birch_forest' />
+			  <Biome name ='rainforest' />
+			  <Biome name ='jungle_edge' />
+			  <Biome name ='mystic_grove' />
+			  <Biome name ='sacred_springs' />
+			  <Biome name ='mutated_savanna' />
+			  <Biome name ='mutated_savanna_rock' />
+			  <Biome name ='extreme_hills' />
+			  <Biome name ='smaller_extreme_hills' />
+			  <Biome name ='mushroom_island' />
+			  <Biome name ='mushroom_island_shore' />
+			  <Biome name ='dried_reef' />
+			  <Biome name ='the_abyss' />
+			  <Biome name ='frozen_ocean' />
+			  <Biome name ='lavender_fields' />
+			  <Biome name ='meadow' />
+			  <Biome name ='pasture' />
+			  <Biome name ='prairie' />
+			  <Biome name ='fen' />
+			  <Biome name ='shrubland' />
+			  <Biome name ='wetland' />
+			  <Biome name ='mutated_swampland' />
+			  <Biome name ='snowy_coniferous_forest' />
+			  <Biome name ='taiga_hills' />
               <Setting name='CloudRadius' avg=':= 1.271 * _default_ * iintZincSize ' range=':= 1.271 * _default_ * iintZincSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.271 * _default_ * iintZincSize ' range=':= 1.271 * _default_ * iintZincSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 1.616 * _default_ * iintZincFreq ' range=':= 1.616 * _default_ * iintZincFreq ' type='normal' scaleTo='base' />
@@ -707,7 +673,7 @@
                   the frequency of  the parent distribution will
                   already be scaled by that.
                 </Description>
-                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
                 <Replaces block='minecraft:dirt' weight='1.0' />
                 <Replaces block='minecraft:sandstone' weight='1.0' />
                 <ReplacesOre block='stone' weight='1.0' />
@@ -727,52 +693,35 @@
               <Description>
                 A master preset for standardgen  ore distributions.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='grove' />
-              <Biome name='mushroom_island_shore' />
-              <Biome name='lavender_fields' />
-              <Biome name='eucalyptus_forest' />
-              <Biome name='rainforest' />
-              <Biome name='jungle_edge' />
-              <Biome name='temperate_rainforest' />
-              <Biome name='tropical_rainforest' />
-              <Biome name='jungle_hills' />
-              <Biome name='overgrown_cliffs' />
-              <Biome name='cold_desert' />
-              <Biome name='snowy_tundra' />
-              <Biome name='tundra' />
-              <Biome name='redwood_forest_edge' />
-              <Biome name='redwood_forest' />
-              <Biome name='mutated_redwood_taiga_hills' />
-              <Biome name='taiga_hills'  />
-              <Biome name='snowy_coniferous_forest' />
-              <Biome name='highland' />
-              <Biome name='mountain' />
-              <Biome name='mountain_foothills' />
-              <Biome name='moor' />
-              <Biome name='xeric_shrubland' />
-              <Biome name='mutated_savanna_rock' />
-              <Biome name='shrubland' />
-              <Biome name='bog' />
-              <Biome name='outback' />
-              <Biome name='desert_hills' />
-              <Biome name='mutated_desert' />
-              <Biome name='mutated_swampland' />
-              <Biome name='steppe' />
-              <Biome name='chaparral' />
-              <Biome name='meadow' />
-              <Biome name='pasture' />
-              <Biome name='birch_forest_hills' />
-              <Biome name='mutated_birch_forest_hills' />
-              <Biome name='stone_beach' />
-              <Biome name='taiga_cold' />
-              <Biome name='prairie' />
-              <Biome name='white_beach' />
-              <Biome name='woodland' />
-              <Biome name='kelp_forest' />
-              <Biome name='coral_reef' />
-              <Biome name='frozen_ocean' />
+			  <Biome name ='cold_desert' />
+			  <Biome name ='birch_forest_hills' />
+			  <Biome name ='forest_hills' />
+			  <Biome name ='mutated_birch_forest' />
+			  <Biome name ='rainforest' />
+			  <Biome name ='jungle_edge' />
+			  <Biome name ='mystic_grove' />
+			  <Biome name ='sacred_springs' />
+			  <Biome name ='mutated_savanna' />
+			  <Biome name ='mutated_savanna_rock' />
+			  <Biome name ='extreme_hills' />
+			  <Biome name ='smaller_extreme_hills' />
+			  <Biome name ='mushroom_island' />
+			  <Biome name ='mushroom_island_shore' />
+			  <Biome name ='dried_reef' />
+			  <Biome name ='the_abyss' />
+			  <Biome name ='frozen_ocean' />
+			  <Biome name ='lavender_fields' />
+			  <Biome name ='meadow' />
+			  <Biome name ='pasture' />
+			  <Biome name ='prairie' />
+			  <Biome name ='fen' />
+			  <Biome name ='shrubland' />
+			  <Biome name ='wetland' />
+			  <Biome name ='mutated_swampland' />
+			  <Biome name ='snowy_coniferous_forest' />
+			  <Biome name ='taiga_hills' />
               <Setting name='Size' avg=':= 5.333 * oreSize * iintZincSize ' range=':= 2.67 * oreSize * iintZincSize ' type='normal' />
               <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintZincFreq ' range=':= 2.67 * oreFreq * iintZincFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 56 ' range=':= 16 ' type='normal' scaleTo='base' />
@@ -795,77 +744,68 @@
                 Small, fairly rare motherlodes  with 2-4 horizontal
                 veins each.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='alps_foothills' />
-              <Biome name='bamboo_forest' />
-              <Biome name='bayou' />
-              <Biome name='beaches' />
-              <Biome name='birch_forest' />
-              <Biome name='boreal_forest' />
-              <Biome name='brushland' />
-              <Biome name='cherry_blossom_grove' />
-              <Biome name='cold_beach' />
-              <Biome name='coniferous_forest' />
-              <Biome name='dead_forest' />
-              <Biome name='desert' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='fen' />
-              <Biome name='flower_field' />
-              <Biome name='forest' />
-              <Biome name='forest_hills' />
-              <Biome name='frozen_river' />
-              <Biome name='glacier' />
-              <Biome name='grassland' />
-              <Biome name='gravel_beach' />
-              <Biome name='ice_flats' />
-              <Biome name='ice_mountains' />
-              <Biome name='jungle' />
-              <Biome name='land_of_lakes' />
-              <Biome name='lush_desert' />
-              <Biome name='lush_swamp' />
-              <Biome name='magical_forest' />
-              <Biome name='mangrove' />
-              <Biome name='maple_woods' />
-              <Biome name='marsh' />
-              <Biome name='mesa' />
-              <Biome name='mesa_clear_rock' />
-              <Biome name='mesa_rock' />
-              <Biome name='mushroom_island' />
-              <Biome name='mutated_birch_forest' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='mutated_forest' />
-              <Biome name='mutated_jungle' />
-              <Biome name='mutated_jungle_edge' />
-              <Biome name='mutated_mesa' />
-              <Biome name='mutated_mesa_clear_rock' />
-              <Biome name='mutated_mesa_rock' />
-              <Biome name='mutated_plains' />
-              <Biome name='mutated_redwood_taiga' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='mutated_savanna' />
-              <Biome name='mutated_taiga' />
-              <Biome name='mystic_grove' />
-              <Biome name='oasis' />
-              <Biome name='ocean' />
-              <Biome name='orchard' />
-              <Biome name='plains' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='river' />
-              <Biome name='roofed_forest' />
-              <Biome name='sacred_springs' />
-              <Biome name='savanna' />
-              <Biome name='seasonal_forest' />
-              <Biome name='shield' />
-              <Biome name='smaller_extreme_hills' />
-              <Biome name='snowy_forest' />
-              <Biome name='swampland' />
-              <Biome name='taiga' />
-              <Biome name='tropical_island' />
-              <Biome name='volcanic_island' />
-              <Biome name='wetland' />
+			  <Biome name ='gravel_beach' />
+			  <Biome name ='white_beach' />
+			  <Biome name ='beaches' />
+			  <Biome name ='cold_beach' />
+			  <Biome name ='stone_beach' />
+			  <Biome name ='desert' />
+			  <Biome name ='birch_forest' />
+			  <Biome name ='forest' />
+			  <Biome name ='jungle' />
+			  <Biome name ='mutated_jungle' />
+			  <Biome name ='boreal_forest' />
+			  <Biome name ='mutated_forest' />
+			  <Biome name ='brushland' />
+			  <Biome name ='mutated_mesa' />
+			  <Biome name ='highland' />
+			  <Biome name ='mountain' />
+			  <Biome name ='ocean' />
+			  <Biome name ='origin_beach' />
+			  <Biome name ='origin_island' />
+			  <Biome name ='grassland' />
+			  <Biome name ='plains' />
+			  <Biome name ='savanna' />
+			  <Biome name ='frozen_river' />
+			  <Biome name ='river' />
+			  <Biome name ='grove' />
+			  <Biome name ='orchard' />
+			  <Biome name ='marsh' />
+			  <Biome name ='swampland' />
+			  <Biome name ='mutated_redwood_taiga' />
+			  <Biome name ='mutated_taiga' />
+			  <Biome name ='taiga' />
+			  <Biome name ='dead_forest' />
+			  <Biome name ='lush_desert' />
+			  <Biome name ='steppe' />
+			  <Biome name ='coniferous_forest' />
+			  <Biome name ='seasonal_forest' />
+			  <Biome name ='mutated_birch_forest_hills' />
+			  <Biome name ='eucalyptus_forest' />
+			  <Biome name ='temperate_rainforest' />
+			  <Biome name ='jungle_hills' />
+			  <Biome name ='maple_woods' />
+			  <Biome name ='magical_forest' />
+			  <Biome name ='outback' />
+			  <Biome name ='mutated_mesa_clear_rock' />
+			  <Biome name ='mutated_mesa_rock' />
+			  <Biome name ='mountain_foothills' />
+			  <Biome name ='extreme_hills_with_trees' />
+			  <Biome name ='mutated_extreme_hills' />
+			  <Biome name ='coral_reef' />
+			  <Biome name ='kelp_forest' />
+			  <Biome name ='flower_field' />
+			  <Biome name ='mutated_plains' />
+			  <Biome name ='cherry_blossom_grove' />
+			  <Biome name ='land_of_lakes' />
+			  <Biome name ='bog' />
+			  <Biome name ='lush_swamp' />
+			  <Biome name ='ice_flats' />
+			  <Biome name ='redwood_taiga_hills' />
+			  <Biome name ='taiga_cold' />
+			  <Biome name ='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.824 * _default_ * iintUncommonZincFreq ' range=':= 0.824 * _default_ * iintUncommonZincFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0.842 * _default_ * iintUncommonZincSize ' range=':= 0.842 * _default_ * iintUncommonZincSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
@@ -903,77 +843,68 @@
                 permanent mining base and  spend some time actually
                 mining  the ore.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='alps_foothills' />
-              <Biome name='bamboo_forest' />
-              <Biome name='bayou' />
-              <Biome name='beaches' />
-              <Biome name='birch_forest' />
-              <Biome name='boreal_forest' />
-              <Biome name='brushland' />
-              <Biome name='cherry_blossom_grove' />
-              <Biome name='cold_beach' />
-              <Biome name='coniferous_forest' />
-              <Biome name='dead_forest' />
-              <Biome name='desert' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='fen' />
-              <Biome name='flower_field' />
-              <Biome name='forest' />
-              <Biome name='forest_hills' />
-              <Biome name='frozen_river' />
-              <Biome name='glacier' />
-              <Biome name='grassland' />
-              <Biome name='gravel_beach' />
-              <Biome name='ice_flats' />
-              <Biome name='ice_mountains' />
-              <Biome name='jungle' />
-              <Biome name='land_of_lakes' />
-              <Biome name='lush_desert' />
-              <Biome name='lush_swamp' />
-              <Biome name='magical_forest' />
-              <Biome name='mangrove' />
-              <Biome name='maple_woods' />
-              <Biome name='marsh' />
-              <Biome name='mesa' />
-              <Biome name='mesa_clear_rock' />
-              <Biome name='mesa_rock' />
-              <Biome name='mushroom_island' />
-              <Biome name='mutated_birch_forest' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='mutated_forest' />
-              <Biome name='mutated_jungle' />
-              <Biome name='mutated_jungle_edge' />
-              <Biome name='mutated_mesa' />
-              <Biome name='mutated_mesa_clear_rock' />
-              <Biome name='mutated_mesa_rock' />
-              <Biome name='mutated_plains' />
-              <Biome name='mutated_redwood_taiga' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='mutated_savanna' />
-              <Biome name='mutated_taiga' />
-              <Biome name='mystic_grove' />
-              <Biome name='oasis' />
-              <Biome name='ocean' />
-              <Biome name='orchard' />
-              <Biome name='plains' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='river' />
-              <Biome name='roofed_forest' />
-              <Biome name='sacred_springs' />
-              <Biome name='savanna' />
-              <Biome name='seasonal_forest' />
-              <Biome name='shield' />
-              <Biome name='smaller_extreme_hills' />
-              <Biome name='snowy_forest' />
-              <Biome name='swampland' />
-              <Biome name='taiga' />
-              <Biome name='tropical_island' />
-              <Biome name='volcanic_island' />
-              <Biome name='wetland' />
+			  <Biome name ='gravel_beach' />
+			  <Biome name ='white_beach' />
+			  <Biome name ='beaches' />
+			  <Biome name ='cold_beach' />
+			  <Biome name ='stone_beach' />
+			  <Biome name ='desert' />
+			  <Biome name ='birch_forest' />
+			  <Biome name ='forest' />
+			  <Biome name ='jungle' />
+			  <Biome name ='mutated_jungle' />
+			  <Biome name ='boreal_forest' />
+			  <Biome name ='mutated_forest' />
+			  <Biome name ='brushland' />
+			  <Biome name ='mutated_mesa' />
+			  <Biome name ='highland' />
+			  <Biome name ='mountain' />
+			  <Biome name ='ocean' />
+			  <Biome name ='origin_beach' />
+			  <Biome name ='origin_island' />
+			  <Biome name ='grassland' />
+			  <Biome name ='plains' />
+			  <Biome name ='savanna' />
+			  <Biome name ='frozen_river' />
+			  <Biome name ='river' />
+			  <Biome name ='grove' />
+			  <Biome name ='orchard' />
+			  <Biome name ='marsh' />
+			  <Biome name ='swampland' />
+			  <Biome name ='mutated_redwood_taiga' />
+			  <Biome name ='mutated_taiga' />
+			  <Biome name ='taiga' />
+			  <Biome name ='dead_forest' />
+			  <Biome name ='lush_desert' />
+			  <Biome name ='steppe' />
+			  <Biome name ='coniferous_forest' />
+			  <Biome name ='seasonal_forest' />
+			  <Biome name ='mutated_birch_forest_hills' />
+			  <Biome name ='eucalyptus_forest' />
+			  <Biome name ='temperate_rainforest' />
+			  <Biome name ='jungle_hills' />
+			  <Biome name ='maple_woods' />
+			  <Biome name ='magical_forest' />
+			  <Biome name ='outback' />
+			  <Biome name ='mutated_mesa_clear_rock' />
+			  <Biome name ='mutated_mesa_rock' />
+			  <Biome name ='mountain_foothills' />
+			  <Biome name ='extreme_hills_with_trees' />
+			  <Biome name ='mutated_extreme_hills' />
+			  <Biome name ='coral_reef' />
+			  <Biome name ='kelp_forest' />
+			  <Biome name ='flower_field' />
+			  <Biome name ='mutated_plains' />
+			  <Biome name ='cherry_blossom_grove' />
+			  <Biome name ='land_of_lakes' />
+			  <Biome name ='bog' />
+			  <Biome name ='lush_swamp' />
+			  <Biome name ='ice_flats' />
+			  <Biome name ='redwood_taiga_hills' />
+			  <Biome name ='taiga_cold' />
+			  <Biome name ='volcanic_island' />
               <Setting name='CloudRadius' avg=':= 1.271 * _default_ * iintUncommonZincSize ' range=':= 1.271 * _default_ * iintUncommonZincSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.271 * _default_ * iintUncommonZincSize ' range=':= 1.271 * _default_ * iintUncommonZincSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 1.616 * _default_ * iintUncommonZincFreq ' range=':= 1.616 * _default_ * iintUncommonZincFreq ' type='normal' scaleTo='base' />
@@ -999,7 +930,7 @@
                   the frequency of  the parent distribution will
                   already be scaled by that.
                 </Description>
-                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
                 <Replaces block='minecraft:dirt' weight='1.0' />
                 <Replaces block='minecraft:sandstone' weight='1.0' />
                 <ReplacesOre block='stone' weight='1.0' />
@@ -1019,77 +950,68 @@
               <Description>
                 A master preset for standardgen  ore distributions.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='alps_foothills' />
-              <Biome name='bamboo_forest' />
-              <Biome name='bayou' />
-              <Biome name='beaches' />
-              <Biome name='birch_forest' />
-              <Biome name='boreal_forest' />
-              <Biome name='brushland' />
-              <Biome name='cherry_blossom_grove' />
-              <Biome name='cold_beach' />
-              <Biome name='coniferous_forest' />
-              <Biome name='dead_forest' />
-              <Biome name='desert' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='fen' />
-              <Biome name='flower_field' />
-              <Biome name='forest' />
-              <Biome name='forest_hills' />
-              <Biome name='frozen_river' />
-              <Biome name='glacier' />
-              <Biome name='grassland' />
-              <Biome name='gravel_beach' />
-              <Biome name='ice_flats' />
-              <Biome name='ice_mountains' />
-              <Biome name='jungle' />
-              <Biome name='land_of_lakes' />
-              <Biome name='lush_desert' />
-              <Biome name='lush_swamp' />
-              <Biome name='magical_forest' />
-              <Biome name='mangrove' />
-              <Biome name='maple_woods' />
-              <Biome name='marsh' />
-              <Biome name='mesa' />
-              <Biome name='mesa_clear_rock' />
-              <Biome name='mesa_rock' />
-              <Biome name='mushroom_island' />
-              <Biome name='mutated_birch_forest' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='mutated_forest' />
-              <Biome name='mutated_jungle' />
-              <Biome name='mutated_jungle_edge' />
-              <Biome name='mutated_mesa' />
-              <Biome name='mutated_mesa_clear_rock' />
-              <Biome name='mutated_mesa_rock' />
-              <Biome name='mutated_plains' />
-              <Biome name='mutated_redwood_taiga' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='mutated_savanna' />
-              <Biome name='mutated_taiga' />
-              <Biome name='mystic_grove' />
-              <Biome name='oasis' />
-              <Biome name='ocean' />
-              <Biome name='orchard' />
-              <Biome name='plains' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='river' />
-              <Biome name='roofed_forest' />
-              <Biome name='sacred_springs' />
-              <Biome name='savanna' />
-              <Biome name='seasonal_forest' />
-              <Biome name='shield' />
-              <Biome name='smaller_extreme_hills' />
-              <Biome name='snowy_forest' />
-              <Biome name='swampland' />
-              <Biome name='taiga' />
-              <Biome name='tropical_island' />
-              <Biome name='volcanic_island' />
-              <Biome name='wetland' />
+			  <Biome name ='gravel_beach' />
+			  <Biome name ='white_beach' />
+			  <Biome name ='beaches' />
+			  <Biome name ='cold_beach' />
+			  <Biome name ='stone_beach' />
+			  <Biome name ='desert' />
+			  <Biome name ='birch_forest' />
+			  <Biome name ='forest' />
+			  <Biome name ='jungle' />
+			  <Biome name ='mutated_jungle' />
+			  <Biome name ='boreal_forest' />
+			  <Biome name ='mutated_forest' />
+			  <Biome name ='brushland' />
+			  <Biome name ='mutated_mesa' />
+			  <Biome name ='highland' />
+			  <Biome name ='mountain' />
+			  <Biome name ='ocean' />
+			  <Biome name ='origin_beach' />
+			  <Biome name ='origin_island' />
+			  <Biome name ='grassland' />
+			  <Biome name ='plains' />
+			  <Biome name ='savanna' />
+			  <Biome name ='frozen_river' />
+			  <Biome name ='river' />
+			  <Biome name ='grove' />
+			  <Biome name ='orchard' />
+			  <Biome name ='marsh' />
+			  <Biome name ='swampland' />
+			  <Biome name ='mutated_redwood_taiga' />
+			  <Biome name ='mutated_taiga' />
+			  <Biome name ='taiga' />
+			  <Biome name ='dead_forest' />
+			  <Biome name ='lush_desert' />
+			  <Biome name ='steppe' />
+			  <Biome name ='coniferous_forest' />
+			  <Biome name ='seasonal_forest' />
+			  <Biome name ='mutated_birch_forest_hills' />
+			  <Biome name ='eucalyptus_forest' />
+			  <Biome name ='temperate_rainforest' />
+			  <Biome name ='jungle_hills' />
+			  <Biome name ='maple_woods' />
+			  <Biome name ='magical_forest' />
+			  <Biome name ='outback' />
+			  <Biome name ='mutated_mesa_clear_rock' />
+			  <Biome name ='mutated_mesa_rock' />
+			  <Biome name ='mountain_foothills' />
+			  <Biome name ='extreme_hills_with_trees' />
+			  <Biome name ='mutated_extreme_hills' />
+			  <Biome name ='coral_reef' />
+			  <Biome name ='kelp_forest' />
+			  <Biome name ='flower_field' />
+			  <Biome name ='mutated_plains' />
+			  <Biome name ='cherry_blossom_grove' />
+			  <Biome name ='land_of_lakes' />
+			  <Biome name ='bog' />
+			  <Biome name ='lush_swamp' />
+			  <Biome name ='ice_flats' />
+			  <Biome name ='redwood_taiga_hills' />
+			  <Biome name ='taiga_cold' />
+			  <Biome name ='volcanic_island' />
               <Setting name='Size' avg=':= 5.333 * oreSize * iintUncommonZincSize ' range=':= 2.67 * oreSize * iintUncommonZincSize ' type='normal' />
               <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintUncommonZincFreq ' range=':= 2.67 * oreFreq * iintUncommonZincFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 48 ' range=':= 32 ' type='normal' scaleTo='base' />
@@ -1112,7 +1034,7 @@
                 Small, fairly rare motherlodes  with 2-4 horizontal
                 veins each.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Biome name='origin_island'  />
 			  <Biome name='origin_beach'  />
@@ -1153,7 +1075,7 @@
                 permanent mining base and  spend some time actually
                 mining  the ore.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Biome name='origin_island'  />
 			  <Biome name='origin_beach'  />
@@ -1182,7 +1104,7 @@
                   the frequency of  the parent distribution will
                   already be scaled by that.
                 </Description>
-                <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+                <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
                 <Replaces block='minecraft:dirt' weight='1.0' />
                 <Replaces block='minecraft:sandstone' weight='1.0' />
                 <ReplacesOre block='stone' weight='1.0' />
@@ -1202,7 +1124,7 @@
               <Description>
                 A master preset for standardgen  ore distributions.
               </Description>
-              <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
+              <OreBlock block='immersiveintelligence:ore:1' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Biome name='origin_island'  />
 			  <Biome name='origin_beach'  />
@@ -1230,11 +1152,26 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='ominous_woods' />
-              <Biome name='mutated_ice_flats' />
-              <Biome name='wasteland' />
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean' />
+			  <Biome name ='desert_hills' />
+			  <Biome name ='mutated_desert' />
+			  <Biome name ='redwood_forest' />
+			  <Biome name ='mutated_redwood_taiga_hills' />
+			  <Biome name ='mutated_roofed_forest' />
+			  <Biome name ='overgrown_cliffs' />
+			  <Biome name ='tropical_island' />
+			  <Biome name ='ominous_woods' />
+			  <Biome name ='eerie' />
+			  <Biome name ='mesa_rock' />
+			  <Biome name ='savanna_rock' />
+			  <Biome name ='glacier' />
+			  <Biome name ='ice_mountains' />
+			  <Biome name ='deep_ocean' />
+			  <Biome name ='snowy_tundra' />
+			  <Biome name ='tundra' />
+			  <Biome name ='dead_swamp' />
+			  <Biome name ='quagmire' />
+			  <Biome name ='mutated_ice_flats' />
+			  <Biome name ='wasteland' />
               <Setting name='MotherlodeFrequency' avg=':= 2.317 * _default_ * iintTungstenFreq ' range=':= 2.317 * _default_ * iintTungstenFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 1.184 * _default_ * iintTungstenSize ' range=':= 1.184 * _default_ * iintTungstenSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
@@ -1274,11 +1211,26 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='ominous_woods'/>
-              <Biome name='mutated_ice_flats'/>
-              <Biome name='wasteland'/>
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean'/>
+			  <Biome name ='desert_hills' />
+			  <Biome name ='mutated_desert' />
+			  <Biome name ='redwood_forest' />
+			  <Biome name ='mutated_redwood_taiga_hills' />
+			  <Biome name ='mutated_roofed_forest' />
+			  <Biome name ='overgrown_cliffs' />
+			  <Biome name ='tropical_island' />
+			  <Biome name ='ominous_woods' />
+			  <Biome name ='eerie' />
+			  <Biome name ='mesa_rock' />
+			  <Biome name ='savanna_rock' />
+			  <Biome name ='glacier' />
+			  <Biome name ='ice_mountains' />
+			  <Biome name ='deep_ocean' />
+			  <Biome name ='snowy_tundra' />
+			  <Biome name ='tundra' />
+			  <Biome name ='dead_swamp' />
+			  <Biome name ='quagmire' />
+			  <Biome name ='mutated_ice_flats' />
+			  <Biome name ='wasteland' />
               <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintTungstenSize ' range=':= 1.069 * _default_ * iintTungstenSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintTungstenSize ' range=':= 1.069 * _default_ * iintTungstenSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintTungstenFreq ' range=':= 1.143 * _default_ * iintTungstenFreq ' type='normal' scaleTo='base' />
@@ -1326,11 +1278,26 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='ominous_woods'/>
-              <Biome name='mutated_ice_flats'/>
-              <Biome name='wasteland'/>
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean'/>
+			  <Biome name ='desert_hills' />
+			  <Biome name ='mutated_desert' />
+			  <Biome name ='redwood_forest' />
+			  <Biome name ='mutated_redwood_taiga_hills' />
+			  <Biome name ='mutated_roofed_forest' />
+			  <Biome name ='overgrown_cliffs' />
+			  <Biome name ='tropical_island' />
+			  <Biome name ='ominous_woods' />
+			  <Biome name ='eerie' />
+			  <Biome name ='mesa_rock' />
+			  <Biome name ='savanna_rock' />
+			  <Biome name ='glacier' />
+			  <Biome name ='ice_mountains' />
+			  <Biome name ='deep_ocean' />
+			  <Biome name ='snowy_tundra' />
+			  <Biome name ='tundra' />
+			  <Biome name ='dead_swamp' />
+			  <Biome name ='quagmire' />
+			  <Biome name ='mutated_ice_flats' />
+			  <Biome name ='wasteland' />
               <Setting name='Size' avg=':= 2.667 * oreSize * iintTungstenSize ' range=':= 1.33 * oreSize * iintTungstenSize ' type='normal' />
               <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintTungstenFreq ' range=':= 2.67 * oreFreq * iintTungstenFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 62.5 ' range=':= 22.5 ' type='normal' scaleTo='base' />
@@ -1355,25 +1322,30 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='flower_island' />
-              <Biome name='eerie' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='dead_swamp' />
-              <Biome name='quagmire' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='corrupted_sands' />
-              <Biome name='fungi_forest' />
-              <Biome name='phantasmagoric_inferno' />
-              <Biome name='undergarden' />
-              <Biome name='visceral_heap' />
-              <Biome name='hell' />
-              <Biome name='arctic_abyss' />
-              <Biome name='fungi_forest' />
-              <Biome name='ruthless_sands' />
-              <Biome name='torrid_wasteland' />
+			  <Biome name ='oasis' />
+			  <Biome name ='xeric_shrubland' />
+			  <Biome name ='redwood_forest_edge' />
+			  <Biome name ='woodland' />
+			  <Biome name ='roofed_forest' />
+			  <Biome name ='bamboo_forest' />
+			  <Biome name ='tropical_rainforest' />
+			  <Biome name ='mutated_jungle_edge' />
+			  <Biome name ='crag' />
+			  <Biome name ='flower_island' />
+			  <Biome name ='mesa' />
+			  <Biome name ='mesa_clear_rock' />
+			  <Biome name ='alps' />
+			  <Biome name ='alps_foothills' />
+			  <Biome name ='mutated_extreme_hills_with_trees' />
+			  <Biome name ='chaparral' />
+			  <Biome name ='shield' />
+			  <Biome name ='snowy_forest' />
+			  <Biome name ='bayou' />
+			  <Biome name ='mangrove' />
+			  <Biome name ='moor' />
+			  <Biome name ='mutated_taiga_cold' />
+			  <Biome name ='redwood_taiga' />
+			  <Biome name ='taiga_cold_hills' />
               <Setting name='MotherlodeFrequency' avg=':= 0.618 * _default_ * iintUncommonTungstenFreq ' range=':= 0.618 * _default_ * iintUncommonTungstenFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0.631 * _default_ * iintUncommonTungstenSize ' range=':= 0.631 * _default_ * iintUncommonTungstenSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
@@ -1413,25 +1385,30 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='flower_island' />
-              <Biome name='eerie' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='dead_swamp' />
-              <Biome name='quagmire' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='corrupted_sands' />
-              <Biome name='fungi_forest' />
-              <Biome name='phantasmagoric_inferno' />
-              <Biome name='undergarden' />
-              <Biome name='visceral_heap' />
-              <Biome name='hell' />
-              <Biome name='arctic_abyss' />
-              <Biome name='fungi_forest' />
-              <Biome name='ruthless_sands' />
-              <Biome name='torrid_wasteland' />
+			  <Biome name ='oasis' />
+			  <Biome name ='xeric_shrubland' />
+			  <Biome name ='redwood_forest_edge' />
+			  <Biome name ='woodland' />
+			  <Biome name ='roofed_forest' />
+			  <Biome name ='bamboo_forest' />
+			  <Biome name ='tropical_rainforest' />
+			  <Biome name ='mutated_jungle_edge' />
+			  <Biome name ='crag' />
+			  <Biome name ='flower_island' />
+			  <Biome name ='mesa' />
+			  <Biome name ='mesa_clear_rock' />
+			  <Biome name ='alps' />
+			  <Biome name ='alps_foothills' />
+			  <Biome name ='mutated_extreme_hills_with_trees' />
+			  <Biome name ='chaparral' />
+			  <Biome name ='shield' />
+			  <Biome name ='snowy_forest' />
+			  <Biome name ='bayou' />
+			  <Biome name ='mangrove' />
+			  <Biome name ='moor' />
+			  <Biome name ='mutated_taiga_cold' />
+			  <Biome name ='redwood_taiga' />
+			  <Biome name ='taiga_cold_hills' />
               <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintUncommonTungstenSize ' range=':= 1.069 * _default_ * iintUncommonTungstenSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintUncommonTungstenSize ' range=':= 1.069 * _default_ * iintUncommonTungstenSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintUncommonTungstenFreq ' range=':= 1.143 * _default_ * iintUncommonTungstenFreq ' type='normal' scaleTo='base' />
@@ -1479,25 +1456,30 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:2' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='flower_island' />
-              <Biome name='eerie' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='dead_swamp' />
-              <Biome name='quagmire' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='corrupted_sands' />
-              <Biome name='fungi_forest' />
-              <Biome name='phantasmagoric_inferno' />
-              <Biome name='undergarden' />
-              <Biome name='visceral_heap' />
-              <Biome name='hell' />
-              <Biome name='arctic_abyss' />
-              <Biome name='fungi_forest' />
-              <Biome name='ruthless_sands' />
-              <Biome name='torrid_wasteland' />
+			  <Biome name ='oasis' />
+			  <Biome name ='xeric_shrubland' />
+			  <Biome name ='redwood_forest_edge' />
+			  <Biome name ='woodland' />
+			  <Biome name ='roofed_forest' />
+			  <Biome name ='bamboo_forest' />
+			  <Biome name ='tropical_rainforest' />
+			  <Biome name ='mutated_jungle_edge' />
+			  <Biome name ='crag' />
+			  <Biome name ='flower_island' />
+			  <Biome name ='mesa' />
+			  <Biome name ='mesa_clear_rock' />
+			  <Biome name ='alps' />
+			  <Biome name ='alps_foothills' />
+			  <Biome name ='mutated_extreme_hills_with_trees' />
+			  <Biome name ='chaparral' />
+			  <Biome name ='shield' />
+			  <Biome name ='snowy_forest' />
+			  <Biome name ='bayou' />
+			  <Biome name ='mangrove' />
+			  <Biome name ='moor' />
+			  <Biome name ='mutated_taiga_cold' />
+			  <Biome name ='redwood_taiga' />
+			  <Biome name ='taiga_cold_hills' />
               <Setting name='Size' avg=':= 2.667 * oreSize * iintUncommonTungstenSize ' range=':= 1.33 * oreSize * iintUncommonTungstenSize ' type='normal' />
               <Setting name='Frequency' avg=':= 5.333 * oreFreq * iintUncommonTungstenFreq ' range=':= 2.67 * oreFreq * iintUncommonTungstenFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 32 ' range=':= 32 ' type='normal' scaleTo='base' />
@@ -1638,25 +1620,26 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='flower_island' />
-              <Biome name='eerie' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='dead_swamp' />
-              <Biome name='quagmire' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='corrupted_sands' />
-              <Biome name='fungi_forest' />
-              <Biome name='phantasmagoric_inferno' />
-              <Biome name='undergarden' />
-              <Biome name='visceral_heap' />
-              <Biome name='hell' />
-              <Biome name='arctic_abyss' />
-              <Biome name='fungi_forest' />
-              <Biome name='ruthless_sands' />
-              <Biome name='torrid_wasteland' />
+			  <Biome name ='desert_hills' />
+			  <Biome name ='mutated_desert' />
+			  <Biome name ='redwood_forest' />
+			  <Biome name ='mutated_redwood_taiga_hills' />
+			  <Biome name ='mutated_roofed_forest' />
+			  <Biome name ='overgrown_cliffs' />
+			  <Biome name ='tropical_island' />
+			  <Biome name ='ominous_woods' />
+			  <Biome name ='eerie' />
+			  <Biome name ='mesa_rock' />
+			  <Biome name ='savanna_rock' />
+			  <Biome name ='glacier' />
+			  <Biome name ='ice_mountains' />
+			  <Biome name ='deep_ocean' />
+			  <Biome name ='snowy_tundra' />
+			  <Biome name ='tundra' />
+			  <Biome name ='dead_swamp' />
+			  <Biome name ='quagmire' />
+			  <Biome name ='mutated_ice_flats' />
+			  <Biome name ='wasteland' />
               <Setting name='MotherlodeFrequency' avg=':= 0.814 * _default_ * iintPlatinumFreq ' range=':= 0.814 * _default_ * iintPlatinumFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 1.086 * _default_ * iintPlatinumSize ' range=':= 1.086 * _default_ * iintPlatinumSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
@@ -1696,25 +1679,26 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='flower_island' />
-              <Biome name='eerie' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='dead_swamp' />
-              <Biome name='quagmire' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='corrupted_sands' />
-              <Biome name='fungi_forest' />
-              <Biome name='phantasmagoric_inferno' />
-              <Biome name='undergarden' />
-              <Biome name='visceral_heap' />
-              <Biome name='hell' />
-              <Biome name='arctic_abyss' />
-              <Biome name='fungi_forest' />
-              <Biome name='ruthless_sands' />
-              <Biome name='torrid_wasteland' />
+			  <Biome name ='desert_hills' />
+			  <Biome name ='mutated_desert' />
+			  <Biome name ='redwood_forest' />
+			  <Biome name ='mutated_redwood_taiga_hills' />
+			  <Biome name ='mutated_roofed_forest' />
+			  <Biome name ='overgrown_cliffs' />
+			  <Biome name ='tropical_island' />
+			  <Biome name ='ominous_woods' />
+			  <Biome name ='eerie' />
+			  <Biome name ='mesa_rock' />
+			  <Biome name ='savanna_rock' />
+			  <Biome name ='glacier' />
+			  <Biome name ='ice_mountains' />
+			  <Biome name ='deep_ocean' />
+			  <Biome name ='snowy_tundra' />
+			  <Biome name ='tundra' />
+			  <Biome name ='dead_swamp' />
+			  <Biome name ='quagmire' />
+			  <Biome name ='mutated_ice_flats' />
+			  <Biome name ='wasteland' />
               <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintPlatinumSize ' range=':= 1.069 * _default_ * iintPlatinumSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintPlatinumSize ' range=':= 1.069 * _default_ * iintPlatinumSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintPlatinumFreq ' range=':= 1.143 * _default_ * iintPlatinumFreq ' type='normal' scaleTo='base' />
@@ -1762,25 +1746,26 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='flower_island' />
-              <Biome name='eerie' />
-              <Biome name='alps' />
-              <Biome name='crag' />
-              <Biome name='dead_swamp' />
-              <Biome name='quagmire' />
-              <Biome name='mutated_taiga_cold' />
-              <Biome name='redwood_taiga' />
-              <Biome name='taiga_cold_hills' />
-              <Biome name='corrupted_sands' />
-              <Biome name='fungi_forest' />
-              <Biome name='phantasmagoric_inferno' />
-              <Biome name='undergarden' />
-              <Biome name='visceral_heap' />
-              <Biome name='hell' />
-              <Biome name='arctic_abyss' />
-              <Biome name='fungi_forest' />
-              <Biome name='ruthless_sands' />
-              <Biome name='torrid_wasteland' />
+			  <Biome name ='desert_hills' />
+			  <Biome name ='mutated_desert' />
+			  <Biome name ='redwood_forest' />
+			  <Biome name ='mutated_redwood_taiga_hills' />
+			  <Biome name ='mutated_roofed_forest' />
+			  <Biome name ='overgrown_cliffs' />
+			  <Biome name ='tropical_island' />
+			  <Biome name ='ominous_woods' />
+			  <Biome name ='eerie' />
+			  <Biome name ='mesa_rock' />
+			  <Biome name ='savanna_rock' />
+			  <Biome name ='glacier' />
+			  <Biome name ='ice_mountains' />
+			  <Biome name ='deep_ocean' />
+			  <Biome name ='snowy_tundra' />
+			  <Biome name ='tundra' />
+			  <Biome name ='dead_swamp' />
+			  <Biome name ='quagmire' />
+			  <Biome name ='mutated_ice_flats' />
+			  <Biome name ='wasteland' />
               <Setting name='Size' avg=':= 5.333 * oreSize * iintPlatinumSize ' range=':= 2.67 * oreSize * iintPlatinumSize ' type='normal' />
               <Setting name='Frequency' avg=':= 2.667 * oreFreq * iintPlatinumFreq ' range=':= 1.33 * oreFreq * iintPlatinumFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
@@ -1805,40 +1790,30 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='sacred_springs' />
-              <Biome name='lush_desert' />
-              <Biome name='mystic_grove' />
-              <Biome name='mutated_forest' />
-              <Biome name='magical_forest' />
-              <Biome name='roofed_forest' />
-              <Biome name='mushroom_island' />
-              <Biome name='tropical_island' />
-              <Biome name='glacier' />
-              <Biome name='alps_foothills' />
-              <Biome name='volcanic_island' />
-              <Biome name='ice_mountains' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='bayou' />
-              <Biome name='lush_swamp' />
-              <Biome name='mangrove' />
-              <Biome name='mutated_mesa_clear_rock' />
-              <Biome name='mutated_mesa_rock' />
-              <Biome name='mesa' />
-              <Biome name='mesa_clear_rock' />
-              <Biome name='mesa_rock' />
-              <Biome name='mutated_plains' />
-              <Biome name='land_of_lakes' />
-              <Biome name='flower_field' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='ominous_woods' />
-              <Biome name='mutated_ice_flats' />
-              <Biome name='wasteland' />
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean' />
+			  <Biome name ='oasis' />
+			  <Biome name ='xeric_shrubland' />
+			  <Biome name ='redwood_forest_edge' />
+			  <Biome name ='woodland' />
+			  <Biome name ='roofed_forest' />
+			  <Biome name ='bamboo_forest' />
+			  <Biome name ='tropical_rainforest' />
+			  <Biome name ='mutated_jungle_edge' />
+			  <Biome name ='crag' />
+			  <Biome name ='flower_island' />
+			  <Biome name ='mesa' />
+			  <Biome name ='mesa_clear_rock' />
+			  <Biome name ='alps' />
+			  <Biome name ='alps_foothills' />
+			  <Biome name ='mutated_extreme_hills_with_trees' />
+			  <Biome name ='chaparral' />
+			  <Biome name ='shield' />
+			  <Biome name ='snowy_forest' />
+			  <Biome name ='bayou' />
+			  <Biome name ='mangrove' />
+			  <Biome name ='moor' />
+			  <Biome name ='mutated_taiga_cold' />
+			  <Biome name ='redwood_taiga' />
+			  <Biome name ='taiga_cold_hills' />
               <Setting name='MotherlodeFrequency' avg=':= 0.217 * _default_ * iintUncommonPlatinumFreq ' range=':= 0.217 * _default_ * iintUncommonPlatinumFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0.702 * _default_ * iintUncommonPlatinumSize ' range=':= 0.702 * _default_ * iintUncommonPlatinumSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
@@ -1878,40 +1853,30 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='sacred_springs' />
-              <Biome name='lush_desert' />
-              <Biome name='mystic_grove' />
-              <Biome name='mutated_forest' />
-              <Biome name='magical_forest' />
-              <Biome name='roofed_forest' />
-              <Biome name='mushroom_island' />
-              <Biome name='tropical_island' />
-              <Biome name='glacier' />
-              <Biome name='alps_foothills' />
-              <Biome name='volcanic_island' />
-              <Biome name='ice_mountains' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='bayou' />
-              <Biome name='lush_swamp' />
-              <Biome name='mangrove' />
-              <Biome name='mutated_mesa_clear_rock' />
-              <Biome name='mutated_mesa_rock' />
-              <Biome name='mesa' />
-              <Biome name='mesa_clear_rock' />
-              <Biome name='mesa_rock' />
-              <Biome name='mutated_plains' />
-              <Biome name='land_of_lakes' />
-              <Biome name='flower_field' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='ominous_woods'/>
-              <Biome name='mutated_ice_flats'/>
-              <Biome name='wasteland'/>
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean'/>
+			  <Biome name ='oasis' />
+			  <Biome name ='xeric_shrubland' />
+			  <Biome name ='redwood_forest_edge' />
+			  <Biome name ='woodland' />
+			  <Biome name ='roofed_forest' />
+			  <Biome name ='bamboo_forest' />
+			  <Biome name ='tropical_rainforest' />
+			  <Biome name ='mutated_jungle_edge' />
+			  <Biome name ='crag' />
+			  <Biome name ='flower_island' />
+			  <Biome name ='mesa' />
+			  <Biome name ='mesa_clear_rock' />
+			  <Biome name ='alps' />
+			  <Biome name ='alps_foothills' />
+			  <Biome name ='mutated_extreme_hills_with_trees' />
+			  <Biome name ='chaparral' />
+			  <Biome name ='shield' />
+			  <Biome name ='snowy_forest' />
+			  <Biome name ='bayou' />
+			  <Biome name ='mangrove' />
+			  <Biome name ='moor' />
+			  <Biome name ='mutated_taiga_cold' />
+			  <Biome name ='redwood_taiga' />
+			  <Biome name ='taiga_cold_hills' />
               <Setting name='CloudRadius' avg=':= 1.069 * _default_ * iintUncommonPlatinumSize ' range=':= 1.069 * _default_ * iintUncommonPlatinumSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 1.069 * _default_ * iintUncommonPlatinumSize ' range=':= 1.069 * _default_ * iintUncommonPlatinumSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * iintUncommonPlatinumFreq ' range=':= 1.143 * _default_ * iintUncommonPlatinumFreq ' type='normal' scaleTo='base' />
@@ -1959,40 +1924,30 @@
               </Description>
               <OreBlock block='immersiveintelligence:ore:0' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='sacred_springs' />
-              <Biome name='lush_desert' />
-              <Biome name='mystic_grove' />
-              <Biome name='mutated_forest' />
-              <Biome name='magical_forest' />
-              <Biome name='roofed_forest' />
-              <Biome name='mushroom_island' />
-              <Biome name='tropical_island' />
-              <Biome name='glacier' />
-              <Biome name='alps_foothills' />
-              <Biome name='volcanic_island' />
-              <Biome name='ice_mountains' />
-              <Biome name='mutated_extreme_hills' />
-              <Biome name='mutated_extreme_hills_with_trees' />
-              <Biome name='extreme_hills' />
-              <Biome name='extreme_hills_with_trees' />
-              <Biome name='bayou' />
-              <Biome name='lush_swamp' />
-              <Biome name='mangrove' />
-              <Biome name='mutated_mesa_clear_rock' />
-              <Biome name='mutated_mesa_rock' />
-              <Biome name='mesa' />
-              <Biome name='mesa_clear_rock' />
-              <Biome name='mesa_rock' />
-              <Biome name='mutated_plains' />
-              <Biome name='land_of_lakes' />
-              <Biome name='flower_field' />
-              <Biome name='mutated_roofed_forest' />
-              <Biome name='redwood_taiga_hills' />
-              <Biome name='ominous_woods'/>
-              <Biome name='mutated_ice_flats'/>
-              <Biome name='wasteland'/>
-              <Biome name='savanna_rock' />
-              <Biome name='deep_ocean'/>
+			  <Biome name ='oasis' />
+			  <Biome name ='xeric_shrubland' />
+			  <Biome name ='redwood_forest_edge' />
+			  <Biome name ='woodland' />
+			  <Biome name ='roofed_forest' />
+			  <Biome name ='bamboo_forest' />
+			  <Biome name ='tropical_rainforest' />
+			  <Biome name ='mutated_jungle_edge' />
+			  <Biome name ='crag' />
+			  <Biome name ='flower_island' />
+			  <Biome name ='mesa' />
+			  <Biome name ='mesa_clear_rock' />
+			  <Biome name ='alps' />
+			  <Biome name ='alps_foothills' />
+			  <Biome name ='mutated_extreme_hills_with_trees' />
+			  <Biome name ='chaparral' />
+			  <Biome name ='shield' />
+			  <Biome name ='snowy_forest' />
+			  <Biome name ='bayou' />
+			  <Biome name ='mangrove' />
+			  <Biome name ='moor' />
+			  <Biome name ='mutated_taiga_cold' />
+			  <Biome name ='redwood_taiga' />
+			  <Biome name ='taiga_cold_hills' />
               <Setting name='Size' avg=':= 5.333 * oreSize * iintUncommonPlatinumSize ' range=':= 2.67 * oreSize * iintUncommonPlatinumSize ' type='normal' />
               <Setting name='Frequency' avg=':= 2.667 * oreFreq * iintUncommonPlatinumFreq ' range=':= 1.33 * oreFreq * iintUncommonPlatinumFreq ' type='normal' scaleTo='base' />
               <Setting name='Height' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
