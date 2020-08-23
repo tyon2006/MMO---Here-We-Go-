@@ -67,18 +67,26 @@ erebusTransOre.setDropHandler(function(drops, world, position, state, fortune) {
 erebusTransOre.register();
 
 var midnightPortalSpawner = mods.contenttweaker.VanillaFactory.createItem("midnight_portal_spawner");
-midnightPortalSpawner.maxDamage = 50;
+midnightPortalSpawner.maxDamage = 5;
 midnightPortalSpawner.setMaxStackSize(1);
 midnightPortalSpawner.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     var portalPos1 = pos.getOffset("up", 1);
 	var portalPos2 = pos.getOffset("up", 2);
     if (world.getBlockState(portalPos1).isReplaceable(world,portalPos1) & world.getBlockState(portalPos2).isReplaceable(world,portalPos2)) {
 		Commands.call("summon midnight:rift " + portalPos1.getX() + " " + portalPos1.getY() + " " + portalPos1.getZ(), player, world, false, false);
-		player.getHeldItem(hand).damage(5, player);
+		player.getHeldItem(hand).damage(1, player);
         return ActionResult.success();
     }
 		return ActionResult.pass();
 };
 midnightPortalSpawner.register();
 
-
+var filterSulfur = mods.contenttweaker.VanillaFactory.createItem("filterSulfur");
+filterSulfur.maxStackSize = 64;
+filterSulfur.register();
+var filterCarbon = mods.contenttweaker.VanillaFactory.createItem("filterCarbon");
+filterCarbon.maxStackSize = 64;
+filterCarbon.register();
+var filterDust = mods.contenttweaker.VanillaFactory.createItem("filterDust");
+filterDust.maxStackSize = 64;
+filterDust.register();

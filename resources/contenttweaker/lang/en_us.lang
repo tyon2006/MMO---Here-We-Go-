@@ -2,3 +2,6 @@ tile.contenttweaker.erebus_trans_ore.name=Alchemical Crystal Cluster Ore
 fluid.contenttweaker.molten_elemental_alloy.name=Molten Elemental Alloy
 fluid.contenttweaker.melted_elemental_clay.name=Melted Elemental Clay
 item.contenttweaker.midnight_portal_spawner.name=Midnight Portal Wand
+item.contenttweaker.filterCarbon.name=Carbon Filter
+item.contenttweaker.filterDust.name=Dust Filter
+item.contenttweaker.filterSulfur.name=Sulfur Filter
