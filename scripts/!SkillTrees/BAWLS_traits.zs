@@ -1237,7 +1237,9 @@ var bawls13req = [
 	<soot:witch_fire:*>,
 	<xat:dwarf_stout:*>,
 	<xat:titan_spirit>,
-	<xat:fairy_dew>
+	<xat:fairy_dew>,
+	<soot:essence:*>,
+	<soot:decanter>
 
 ] as IItemStack[];
 

@@ -64,7 +64,6 @@ var skillz1req = [
 	<engineersdecor:small_solar_panel>,
 	<engineersdecor:treated_wood_crafting_table>,
 	<engineerstools:ariadne_coal>,
-	<immersiveengineering:blueprint>,
 	<immersiveengineering:cloth_device:1>,
 	<immersiveengineering:connector:1>,
 	<immersiveengineering:connector>,
@@ -568,7 +567,6 @@ for item in skillz5req {
 
 var skillz6req = [
 
-	<immersiveengineering:blueprint>,
 	<immersiveengineering:connector:2>,
 	<immersiveengineering:connector:3>,
 	<immersiveengineering:connector:7>,
