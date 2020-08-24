@@ -12,9 +12,9 @@ var skillz4tooltip = "Logistics I";
 var skillz5tooltip = "Installations and Machinery Maintenance";
 var skillz1 = mods.compatskills.TraitCreator.createTrait("skillz1", 0, 0, "extraskills:skillz", 5, "extraskills:skillz|5");
 var skillz2 = mods.compatskills.TraitCreator.createTrait("skillz2", 1, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
-var skillz3 = mods.compatskills.TraitCreator.createTrait("skillz3", 2, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
+var skillz3 = mods.compatskills.TraitCreator.createTrait("skillz3", 2, 0, "extraskills:skillz", 2, "trait|compatskills:skillz1");
 var skillz4 = mods.compatskills.TraitCreator.createTrait("skillz4", 3, 0, "extraskills:skillz", 2, "trait|compatskills:skillz1");
-var skillz5 = mods.compatskills.TraitCreator.createTrait("skillz5", 4, 0, "extraskills:skillz", 2, "trait|compatskills:skillz1");
+var skillz5 = mods.compatskills.TraitCreator.createTrait("skillz5", 4, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
 
 var skillz6tooltip = "Light Machinery and Equipment";
 var skillz7tooltip = "Red Circuitry I";
@@ -552,7 +552,10 @@ var skillz5req = [
 	<rustic:condenser_advanced>,
 	<rustic:crushing_tub>,
 	<rustic:retort>,
-	<rustic:retort_advanced>
+	<rustic:retort_advanced>,
+	<contenttweaker:filterdust>,
+	<contenttweaker:filtersulfur>,
+	<contenttweaker:filtercarbon>
 	
 ] as IItemStack[];
 
