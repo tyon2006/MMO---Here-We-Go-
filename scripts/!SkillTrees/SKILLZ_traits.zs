@@ -73,7 +73,6 @@ var skillz1req = [
 	<immersiveengineering:material:11>,
 	<immersiveengineering:material:12>,
 	<immersiveengineering:material:26>,
-	<immersiveengineering:material:27>,
 	<immersiveengineering:metal_decoration2:4>,
 	<immersiveengineering:metal_device0>,
 	<immersiveengineering:metal_device1:1>,
@@ -105,7 +104,9 @@ var skillz1req = [
 	<sophisticatedwolves:swdogtag>,
 	<sophisticatedwolves:swdogtreat>,
 	<sophisticatedwolves:swpetcarrier>,
-	<sophisticatedwolves:swwhistle>
+	<sophisticatedwolves:swwhistle>,
+	<immersiveintelligence:wrench>,
+	<immersiveintelligence:tachometer>
 	
 ] as IItemStack[];
 
@@ -474,7 +475,20 @@ var skillz3req = [
 	<industrialrenewal:roof>,
 	<industrialrenewal:scaffold>,
 	<industrialrenewal:wall_concrete>,
-	<industrialrenewal:window>
+	<industrialrenewal:window>,
+	<chisel:technicalnew:3>,
+	<chisel:technicalnew:2>,
+	<chisel:technicalnew:1>,
+	<chisel:technicalnew>,
+	<chisel:technical1:4>,
+	<chisel:technical1:3>,
+	<chisel:technicalnew:7>,
+	<chisel:technicalnew:8>,
+	<immersive_energy:sheetmetal>,
+	<immersive_energy:sheetmetal:1>,
+	<chisel:technicalnew:6>,
+	<chisel:technicalnew:5>,
+	<chisel:technicalnew:4>
 	
 ] as IItemStack[];
 
@@ -508,8 +522,17 @@ var skillz4req = [
 	<industrialrenewal:valve_pipe_large>,
 	<multistorage:stone_storage:1>,
 	<multistorage:stone_storage:5>,
-	<multistorage:stone_storage:7>
-	
+	<multistorage:stone_storage:7>,
+	<immersiveintelligence:small_crate:2>,
+	<immersiveintelligence:small_crate:1>,
+	<immersiveintelligence:small_crate>,
+	<immersiveintelligence:small_crate:3>,
+	<immersiveintelligence:small_crate:4>,
+	<immersiveintelligence:small_crate:5>,
+	<immersiveintelligence:metal_device>,
+	<immersivetech:metal_barrel:1>,
+	<immersivetech:metal_barrel:2>
+		
 ] as IItemStack[];
 
 for item in skillz4req {
@@ -555,8 +578,12 @@ var skillz5req = [
 	<rustic:retort_advanced>,
 	<contenttweaker:filterdust>,
 	<contenttweaker:filtersulfur>,
-	<contenttweaker:filtercarbon>
-	
+	<contenttweaker:filtercarbon>,
+	<immersive_energy:hefty_wrench>,
+	<immersive_energy:toolupgrade:1>,
+	<immersive_energy:toolupgrade>,
+	<immersive_energy:toolupgrade:3>
+		
 ] as IItemStack[];
 
 for item in skillz5req {
@@ -621,7 +648,22 @@ var skillz6req = [
 	<zettaindustries:batterypowertap>,
 	<zettaindustries:batterywall>,
 	<zettaindustries:blockgraphite>,
-	<zettaindustries:rfmeterblock>
+	<zettaindustries:rfmeterblock>,
+	<engineersdecor:small_electrical_furnace>,
+	<engineersdecor:small_mineral_smelter>,
+	<engineersdecor:passive_fluid_accumulator>,
+	<engineersdecor:small_tree_cutter>,
+	<engineersdecor:small_block_breaker>,
+	<engineersdecor:small_milking_machine>,
+	<toolbelt:belt>.withTag({}),
+	<toolbelt:pouch>,
+	<shipwrecks_winslow:diving_legs>,
+	<immersiveengineering:axe_steel>,
+	<immersiveengineering:shovel_steel>,
+	<immersiveengineering:pickaxe_steel>,
+	<engineerstools:sleeping_bag>,
+	<immersiveengineering:skyhook>,
+	<cyclicmagic:ender_torch>
 	
 ] as IItemStack[];
 
@@ -676,7 +718,8 @@ var skillz7req = [
 	<randomthings:advancedredstonetorch_on>,
 	<randomthings:analogemitter>,
 	<randomthings:sidedredstone>,
-	<randomthings:triggerglass>
+	<randomthings:triggerglass>,
+	<rewired:ecglass>
 	
 ] as IItemStack[];
 
@@ -727,10 +770,8 @@ var skillz8req = [
 ] as IItemStack[];
 
 for item in skillz8req {
-	addRequirement(item, "or|[trait|compatskills:skillz8]~[or|[extraskills:bawls|20]~[extraskills:grayce|20]]");
-	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz8tooltip) + 
-	format.gray(" or ") + format.gold("15 in BAWLS") + 
-	format.gray(" or ") + format.lightPurple("15 in GRAYCE"));
+	addRequirement(item, "trait|compatskills:skillz8");
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz8tooltip));
 }
 
 //**************************************
@@ -809,7 +850,15 @@ var skillz9req = [
 	<secretroomsmod:secret_wooden_trapdoor>,
 	<secretroomsmod:solid_air>,
 	<secretroomsmod:switch_probe>,
-	<secretroomsmod:torch_lever>
+	<secretroomsmod:torch_lever>,
+	<immersive_energy:power_armor_suit_head>,
+	<immersive_energy:power_armor_suit_leggs>,
+	<immersive_energy:power_armor_suit_body>,
+	<immersive_energy:power_armor_suit_boots>,
+	<immersiveintelligence:stone_decoration>,
+	<immersiveintelligence:data_connector:2>,
+	<immersiveintelligence:binoculars>,
+	<immersiveintelligence:binoculars:1>.withTag({enabled: 0 as byte})
 	
 ] as IItemStack[];
 
@@ -917,20 +966,14 @@ var skillz12req = [
 
 	<charm:variable_redstone_lamp>,
 	<cyclicmagic:dice>,
-	<cyclicmagic:dice>,
 	<cyclicmagic:password_block>,
 	<cyclicmagic:target>,
 	<immersiveengineering:connector:10>,
 	<immersiveengineering:connector:13>,
 	<projectred-core:resource_item:2>,
-	<projectred-core:resource_item:2>,
-	<projectred-core:resource_item:3>,
 	<projectred-core:resource_item:3>,
 	<projectred-core:resource_item:4>,
-	<projectred-core:resource_item:4>,
 	<projectred-core:resource_item:20>,
-	<projectred-core:resource_item:20>,
-	<projectred-core:resource_item:21>,
 	<projectred-core:resource_item:21>,
 	<projectred-core:resource_item:250>,
 	<projectred-core:resource_item:300>,
@@ -1012,7 +1055,43 @@ var skillz13req = [
 	<fossil:therizinosaurus_egg>,
 	<fossil:triceratops_egg>,
 	<fossil:whip>,
-	<mowziesmobs:foliaath_seed>
+	<mowziesmobs:foliaath_seed>,
+	<immersiveintelligence:material:12>,
+	<immersiveintelligence:material:11>,
+	<immersiveintelligence:material:10>,
+	<cyberware:hand_upgrades:1>,
+	<cyberware:foot_upgrades:1>,
+	<cyberware:foot_upgrades:2>,
+	<cyberware:brain_upgrades:4>,
+	<cyberware:cybereye_upgrades:1>,
+	<cyberware:skin_upgrades:1>,
+	<cyberware:cybereye_upgrades>,
+	<cyberware:lower_organs_upgrades>,
+	<cyberware:bone_upgrades>,
+	<cyberware:bone_upgrades:1>,
+	<cyberware:bone_upgrades:2>,
+	<cyberware:lungs_upgrades>,
+	<cyberware:lungs_upgrades:1>,
+	<cyberware:brain_upgrades:2>,
+	<cyberware:brain_upgrades:3>,
+	<cyberware:lower_organs_upgrades:2>,
+	<cyberware:cybereyes>,
+	<cyberware:cyberlimbs>,
+	<cyberware:cyberlimbs:1>,
+	<cyberware:cyberlimbs:2>,
+	<cyberware:cyberlimbs:3>,
+	<cyberware:component>,
+	<cyberware:component:6>,
+	<cyberware:leg_upgrades>,
+	<cyberware:leg_upgrades:1>,
+	<cyberware:hand_upgrades>,
+	<cyberware:hand_upgrades:2>,
+	<rewired:torso:1>,
+	<cyberware:foot_upgrades>,
+	<rewired:foot>,
+	<cyberware:cybereye_upgrades:3>,
+	<cyberware:cybereye_upgrades:4>,
+	<immersiveengineering:material:27>,
 	
 ] as IItemStack[];
 
@@ -1079,8 +1158,34 @@ var skillz14req = [
 	<randomthings:plate_itemrejuvenator>,
 	<randomthings:plate_itemsealer>,
 	<randomthings:positionfilter>,
-	<randomthings:potionvaporizer>
-	
+	<randomthings:potionvaporizer>,
+	<immersiveintelligence:motor_belt:1>,
+	<immersiveintelligence:mechanical_connector>,
+	<immersiveintelligence:mechanical_device>,
+	<immersiveintelligence:gearbox>,
+	<immersiveintelligence:minecart>,
+	<immersiveintelligence:minecart:1>,
+	<immersiveintelligence:minecart:3>,
+	<immersiveintelligence:minecart:2>,
+	<immersiveintelligence:minecart:4>,
+	<immersivetech:valve:2>,
+	<immersivetech:valve:1>,
+	<immersivetech:valve>,
+	<immersivetech:metal_trash:2>,
+	<immersivetech:metal_trash:1>,
+	<immersivetech:metal_trash>,
+	<immersiveintelligence:metal_decoration:4>,
+	<immersiveintelligence:metal_decoration:3>,
+	<immersiveintelligence:data_connector:3>,
+	<immersiveintelligence:skycrate_mount>,
+	<immersiveintelligence:skycrate_mount:1>,
+	<immersiveintelligence:motor_belt>,
+	<immersiveintelligence:data_connector:4>,
+	<immersiveintelligence:data_connector:5>,
+	<immersiveintelligence:cloth_decoration>,
+	<immersiveintelligence:cloth_decoration:1>,
+	<immersiveintelligence:metal_decoration:5>
+
 ] as IItemStack[];
 
 for item in skillz14req {
@@ -1088,8 +1193,9 @@ for item in skillz14req {
 	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz14tooltip));
 }
 
-//not currently in use
-/*
+
+/* not yet in use
+
 var skillz14cons = [
 
 	<transmutationalchemy:enchantment_boost_potion:*>,
@@ -1103,6 +1209,7 @@ for item in skillz14cons {
 
 }
 */
+
 
 //**************************************
 //							SKILLZ 15
@@ -1139,7 +1246,28 @@ var skillz15req = [
 	<immersiveengineering:toolupgrade:9>,
 	<immersiveengineering:toolupgrade:13>,
 	<mod_lavacow:holy_grenade>,
-	<zettaindustries:hook>
+	<zettaindustries:hook>,
+	<immersiveintelligence:casing_machinegun>,
+	<immersiveintelligence:bullet_magazine>,
+	<immersiveintelligence:machinegun>,
+	<immersiveengineering:drillhead>,
+	<immersiveintelligence:material:18>,
+	<immersiveintelligence:metal_device:1>,
+	<immersiveintelligence:data_connector:7>,
+	<immersiveintelligence:press_mold:1>,
+	<immersiveintelligence:press_mold:2>,
+	<immersiveintelligence:press_mold:3>,
+	<immersiveintelligence:tracer_powder>.withTag({colour: 16777215}),
+	<immersiveintelligence:casing_grenade>,
+	<immersiveintelligence:weapon_upgrade:7>,
+	<immersiveintelligence:weapon_upgrade:6>,
+	<immersiveintelligence:weapon_upgrade:5>,
+	<immersiveintelligence:weapon_upgrade:4>,
+	<immersiveintelligence:weapon_upgrade:3>,
+	<immersiveintelligence:weapon_upgrade:2>,
+	<immersiveintelligence:weapon_upgrade:1>,
+	<immersiveintelligence:weapon_upgrade>,
+	<immersiveintelligence:casing_submachinegun>
 	
 ] as IItemStack[];
 
@@ -1157,12 +1285,33 @@ for item in skillz15req {
 var skillz16req = [
 
 	<immersiveengineering:metal_device1:7>,
-	<randomthings:superlubricentstone>,
-	<randomthings:superlubricentboots>,
-	<randomthings:ingredient:6>,
-	<randomthings:superlubricentplatform>,
+	<immersiveintelligence:circuit_functional:1>,
+	<immersiveintelligence:circuit_functional:2>,
+	<immersiveintelligence:circuit_functional:3>,
+	<immersiveintelligence:circuit_functional:4>,
+	<immersiveintelligence:circuit_functional:5>,
+	<immersiveintelligence:circuit_functional:6>,
+	<immersiveintelligence:circuit_functional>,
+	<immersiveintelligence:data_connector:1>,
+	<immersiveintelligence:data_connector>,
+	<immersiveintelligence:data_wire>,
+	<immersiveintelligence:material:15>,
+	<immersiveintelligence:material:21>,
+	<immersiveintelligence:metal_decoration:1>,
+	<immersiveintelligence:metal_decoration>,
+	<immersiveintelligence:metal_device:2>,
+	<immersiveintelligence:metal_device:3>,
+	<immersiveintelligence:metal_device:4>,
+	<immersiveintelligence:metal_device:6>,
+	<immersiveintelligence:metal_device:7>,
+	<immersiveintelligence:punchtape>,
+	<immersiveintelligence:radio_configurator>,
+	<immersivepetroleum:oil_can>,
 	<randomthings:filteredsuperlubricentplatform>,
-	<immersivepetroleum:oil_can>
+	<randomthings:ingredient:6>,
+	<randomthings:superlubricentboots>,
+	<randomthings:superlubricentplatform>,
+	<randomthings:superlubricentstone>
 
 ] as IItemStack[];
 
@@ -1235,10 +1384,7 @@ var skillz17req = [
 	<aether:zanite_pickaxe>,
 	<aether:zanite_axe>,
 	<aether:zanite_crossbow>,
-	<aether:bolt:5>,
-	<aether:bolt:4>,
-	<aether:bolt:3>,
-	<aether:bolt:2>,
+	<aether:bolt>,
 	<aether:zanite_boots>,
 	<aether:zanite_leggings>,
 	<aether:zanite_chestplate>,
@@ -1261,9 +1407,31 @@ for item in skillz17req {
 
 var skillz18req = [
 
-	<mutantbeasts:creeper_minion_tracker>,
+	<cyberware:arm_upgrades>,
+	<cyberware:brain_upgrades>,
+	<cyberware:cyberheart>,
+	<cyberware:eye_upgrades>,
+	<cyberware:heart_upgrades:1>,
+	<cyberware:heart_upgrades:3>,
+	<cyberware:leg_upgrades>,
+	<cyberware:lower_organs_upgrades:1>,
+	<cyberware:lower_organs_upgrades:3>,
+	<cyberware:muscle_upgrades:1>,
+	<cyberware:muscle_upgrades>,
+	<cyberware:skin_upgrades:3>,
+	<cyberware:skin_upgrades>,
+	<immersiveintelligence:material:10>,
+	<immersiveintelligence:material:11>,
+	<immersiveintelligence:material:12>,
 	<minecraft:spawn_egg>.withTag({EntityTag: {id: "mutantbeasts:creeper_minion"}}),
-	<mutantbeasts:chemical_x>
+	<mutantbeasts:chemical_x>,
+	<mutantbeasts:creeper_minion_tracker>,
+	<randomthings:soundpattern>,
+	<rewired:cranium>,
+	<rewired:energydrink>,
+	<rewired:hand>,
+	<rewired:skin:1>,
+	<rewired:skin:2>
 		
 ] as IItemStack[];
 
@@ -1279,11 +1447,21 @@ for item in skillz18req {
 var skillz19req = [
 	
 	<cyclicmagic:builder_block>,
-	<randomthings:soundpattern>,
-	<randomthings:soundrecorder>,
-	<cyclicmagic:tool_swap_match>.withTag({ActionType: 0, timeout: 0}),
 	<cyclicmagic:tool_swap>.withTag({ActionType: 3, timeout: 0}),
-	<randomthings:portablesounddampener>
+	<cyclicmagic:tool_swap_match>.withTag({ActionType: 0, timeout: 0}),
+	<immersiveintelligence:casing_artillery>,
+	<immersiveintelligence:drillhead:1>,
+	<immersiveintelligence:drillhead:2>,
+	<immersiveintelligence:drillhead:3>,
+	<immersiveintelligence:drillhead>,
+	<immersiveintelligence:material:16>,
+	<immersiveintelligence:material:17>,
+	<immersiveintelligence:metal_decoration:2>,
+	<immersiveintelligence:press_mold>,
+	<immersiveintelligence:radio_configurator:1>,
+	<randomthings:portablesounddampener>,
+	<randomthings:soundpattern>,
+	<randomthings:soundrecorder>
 	
 ] as IItemStack[];
 
@@ -1309,7 +1487,9 @@ var skillz20req = [
 	<fossil:aquatic_scarab_gem>,
 	<fossil:figurine:15>,
 	<fossil:skull_stick>,
-	<fossil:scarab_gem>
+	<fossil:scarab_gem>,
+	<rewired:skin>,
+	<cyberware:heart_upgrades>
 	
 ] as IItemStack[];
 
