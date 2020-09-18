@@ -348,11 +348,11 @@
 
           <Choice value='none' displayValue='None' description='Platinum is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='iintPlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <OptionNumeric name='iintPlatinumFreq' default='1.6'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Frequency multiplier for Immersive Intelligence Platinum distributions </Description>
           <DisplayName>Immersive Intelligence Platinum Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='iintPlatinumSize' default='1.5'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
+        <OptionNumeric name='iintPlatinumSize' default='0.6'  min='0' max='5' displayState=':= if(?enableImmersiveIntelligence, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveIntelligence'>
           <Description> Size multiplier for Immersive Intelligence Platinum distributions </Description>
           <DisplayName>Immersive Intelligence Platinum Size</DisplayName>
         </OptionNumeric>

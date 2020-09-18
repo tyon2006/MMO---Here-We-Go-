@@ -44,6 +44,16 @@ for item in itemRemovalsIngots {
 	rh(item);
 }
 
+/* Removes and hides duplicate blocks in JEI */
+var itemRemovalsStorageBlocks = [
+	<idk:blockofsilver>,
+	<immersive_energy:storage:1>
+] as IItemStack[];
+
+for item in itemRemovalsStorageBlocks {
+	rh(item);
+}
+
 ### /* Changes sapphire ore to drop Ice and Fire sapphires */
 static blockHarvestDrops as WeightedItemStack[][string] = {
 	"biomesoplenty:gem_ore:6": [
