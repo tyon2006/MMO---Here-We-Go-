@@ -27,8 +27,6 @@ var plates = [
 	<immersiveengineering:metal:34>,
 	<immersiveintelligence:material_plate:3>,
 	<immersiveintelligence:material_plate:4>,
-	<jaopca:item_platefluorite>,
-	<jaopca:item_platephosphorus>,
 	<immersiveintelligence:material_plate>,
 	<immersiveintelligence:material_plate:2>,
 	<thaumcraft:plate>,
