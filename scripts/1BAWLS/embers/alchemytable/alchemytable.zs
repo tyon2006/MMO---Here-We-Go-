@@ -56,6 +56,8 @@ mods.embers.Alchemy.add(<transmutationalchemy:crystal_power>*3,
 <transmutationalchemy:venom_crystal>, <transmutationalchemy:venom_crystal>, <transmutationalchemy:venom_crystal>,
 <transmutationalchemy:venom_crystal>], {"antimony": 4 to 8});
 
+
+
 //***************************
 //		     STAGE 1 BAUBLES
 //***************************
@@ -342,7 +344,7 @@ mods.embers.Alchemy.add(<bountifulbaubles:magicmirror>,
 
 recipes.remove(<bountifulbaubles:wormholemirror>);
 mods.embers.Alchemy.add(<bountifulbaubles:wormholemirror>,
-[<netherex:dull_mirror>,
+[<bountifulbaubles:magicmirror>,
 <bountifulbaubles:potionwormhole>, <cyclicmagic:charm_void>.withTag({}), <bountifulbaubles:potionwormhole>,
 <transmutationalchemy:teleportation_dust>],
 {"silver": 192 to 192});
@@ -423,3 +425,5 @@ mods.embers.Alchemy.add(<xat:greater_inertia_stone>,
 <aether:cloud_parachute>, <ebwizardry:scroll:170>, <thaumcraft:cloud_ring>,
 <minecraft:lingering_potion>.withTag({Potion: "charm:coffee"})],
 {"silver": 192 to 192, "dawnstone": 192 to 192});
+
+

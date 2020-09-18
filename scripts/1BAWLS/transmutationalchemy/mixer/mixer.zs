@@ -19,7 +19,7 @@ oreDustAsh.add(<biomesoplenty:ash>);
 oreDustAshes.add(<biomesoplenty:ash>);
 furnace.addRecipe(<transmutationalchemy:ash_dust>*2, <ore:charcoal>);
 
-//rh(<transmutationalchemy:ash_dust>);
+//recipes.remove(<transmutationalchemy:ash_dust>);
 
 recipes.replaceAllOccurences(<transmutationalchemy:ash_dust>, <ore:dustAsh>);
 recipes.replaceAllOccurences(<biomesoplenty:ash>, <ore:dustAsh>);

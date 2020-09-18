@@ -137,7 +137,7 @@ var itemRemovalsPotions = [
 ] as IItemStack[];
 
 for item in itemRemovalsPotions {
-    rh(item);
+    recipes.remove(item);
 }
 
 //***************************************************************
@@ -197,30 +197,30 @@ recipes.remove(<cyclicmagic:tool_mount_inverse>, false);
 //***************************
 
 //remove and hide unfit items
-rh(<randomthings:basicredstoneinterface>);
-rh(<randomthings:advancedredstoneinterface>);
-rh(<randomthings:redstonetool>);
-rh(<randomthings:ingredient:4>);
-rh(<randomthings:redstoneremote>);
-rh(<randomthings:voxelprojector>);
-rh(<randomthings:contactbutton>);
-rh(<randomthings:contactlever>);
-rh(<randomthings:eclipsedclock>);
-rh(<randomthings:blockbreaker>);
-rh(<randomthings:reinforcedenderbucket>);
-rh(<randomthings:idcard>);
-rh(<randomthings:redstoneactivator>);
-rh(<randomthings:spectrecharger>);
-rh(<randomthings:spectrecharger:1>);
-rh(<randomthings:spectrecharger:2>);
-rh(<randomthings:spectrecharger:3>);
-rh(<randomthings:diviningrod:*>);
-rh(<randomthings:timeinabottle>);
-rh(<randomthings:spectrecoil_genesis>);
-rh(<randomthings:beans:2>);
-rh(<randomthings:summoningpendulum>);
-rh(<randomthings:portkey>);
-rh(<randomthings:chunkanalyzer>);
+recipes.remove(<randomthings:basicredstoneinterface>);
+recipes.remove(<randomthings:advancedredstoneinterface>);
+recipes.remove(<randomthings:redstonetool>);
+recipes.remove(<randomthings:ingredient:4>);
+recipes.remove(<randomthings:redstoneremote>);
+recipes.remove(<randomthings:voxelprojector>);
+recipes.remove(<randomthings:contactbutton>);
+recipes.remove(<randomthings:contactlever>);
+recipes.remove(<randomthings:eclipsedclock>);
+recipes.remove(<randomthings:blockbreaker>);
+recipes.remove(<randomthings:reinforcedenderbucket>);
+recipes.remove(<randomthings:idcard>);
+recipes.remove(<randomthings:redstoneactivator>);
+recipes.remove(<randomthings:spectrecharger>);
+recipes.remove(<randomthings:spectrecharger:1>);
+recipes.remove(<randomthings:spectrecharger:2>);
+recipes.remove(<randomthings:spectrecharger:3>);
+recipes.remove(<randomthings:diviningrod:*>);
+recipes.remove(<randomthings:timeinabottle>);
+recipes.remove(<randomthings:spectrecoil_genesis>);
+recipes.remove(<randomthings:beans:2>);
+recipes.remove(<randomthings:summoningpendulum>);
+recipes.remove(<randomthings:portkey>);
+recipes.remove(<randomthings:chunkanalyzer>);
 
 //***************************
 //		APOTHEOSIS
@@ -246,7 +246,7 @@ var itemRemovalsGoG = [
 ] as IItemStack[];
 
 for item in itemRemovalsGoG {
-    rh(item);
+    recipes.remove(item);
 }
 
 //***************************
@@ -273,7 +273,7 @@ var itemRemovalsSilver = [
 ] as IItemStack[];
 
 for item in itemRemovalsSilver {
-    rh(item);
+    recipes.remove(item);
 }
 
 

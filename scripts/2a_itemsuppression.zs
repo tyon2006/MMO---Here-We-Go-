@@ -57,7 +57,7 @@ var itemRemovalsIndustrialRenewal = [
 ] as IItemStack[];
 
 for item in itemRemovalsIndustrialRenewal {
-    rh(item);
+    recipes.remove(item);
 }
 
 //hide partial or incomplete items and blocks
@@ -87,7 +87,7 @@ var itemRemovalsEngineersTools = [
 ] as IItemStack[];
 
 for item in itemRemovalsEngineersTools {
-    rh(item);
+    recipes.remove(item);
 }
 
 
@@ -102,7 +102,7 @@ var itemRemovalsBountifulBaubles = [
 ] as IItemStack[];
 
 for item in itemRemovalsBountifulBaubles {
-    rh(item);
+    recipes.remove(item);
 }
 
 //***************************
@@ -115,7 +115,7 @@ var itemRemovalsBeasts = [
 ] as IItemStack[];
 
 for item in itemRemovalsBeasts {
-    rh(item);
+    recipes.remove(item);
 }
 
 //remove but do not hide recipe for this item, to be rescripted
@@ -130,7 +130,7 @@ var itemRemovalsBiblioCraft = [
 ] as IItemStack[];
 
 for item in itemRemovalsBiblioCraft {
-    rh(item);
+    recipes.remove(item);
 }
 
 //hide partial or incomplete items
@@ -151,7 +151,7 @@ var itemRemovalsSpartanShields = [
 ] as IItemStack[];
 
 for item in itemRemovalsSpartanShields {
-    rh(item);
+    recipes.remove(item);
 }
 
 //************************************
@@ -229,7 +229,7 @@ var itemRemovalsSpartanArcana = [
 ] as IItemStack[];
 
 for item in itemRemovalsSpartanArcana {
-    rh(item);
+    recipes.remove(item);
 }
 
 

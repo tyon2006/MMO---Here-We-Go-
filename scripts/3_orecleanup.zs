@@ -26,7 +26,7 @@ var itemRemovalsOreBlocks = [
 ] as IItemStack[];
 
 for item in itemRemovalsOreBlocks {
-	rh(item);
+	recipes.remove(item);
 }
 
 ### /* Changes sapphire ore to drop Ice and Fire sapphires */

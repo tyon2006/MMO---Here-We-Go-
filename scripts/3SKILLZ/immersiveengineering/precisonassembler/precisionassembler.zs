@@ -64,7 +64,7 @@ addRecipe(<cyberware:component:6>,null,[<ore:plateSteel>, <immersiveengineering:
 	
 //cons xmitter
 recipes.addShaped("constrans_scheme", 
-<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "cyberware:bone_upgrades", Count: 1 as byte, Damage: 1 as short}}),
+<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "cyberware:brain_upgrades", Count: 1 as byte, Damage: 2 as short}}),
  [[<ore:plateBrass>,<immersiveengineering:material:1>,<ore:plateBrass>],
   [<ore:dyeBlue>,<ore:dyeBlue>,<ore:dyeBlue>],
   [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]]);
@@ -231,7 +231,7 @@ addRecipe(<cyberware:foot_upgrades>,null,[<ore:plateSteel>,<cyberware:component>
 	
 //oxygenatorboost
 recipes.addShaped("lungs_scheme", 
-<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "cyberware:bone_upgrades", Count: 1 as byte, Damage: 0 as short}}),
+<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "cyberware:lungs_upgrades", Count: 1 as byte, Damage: 1 as short}}),
  [[<immersiveengineering:metal:32>,<immersiveengineering:wirecoil:1>,<immersiveengineering:metal:32>],
   [<ore:dyeBlue>,<ore:dyeBlue>,<ore:dyeBlue>],
   [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]]);
@@ -408,4 +408,8 @@ addRecipe(<cyberware:skin_upgrades:1>,null,[<ore:plateConstantan>, <cyclicmagic:
 	["inserter pick first", "inserter drop main", "drill work main", "solderer work main", 
 	"inserter pick second", "drill work main", "inserter drop main", "solderer work main", 
 	"solderer work third", "inserter pick third", "inserter drop main", "solderer work main"],  16000, 1);
+	
+//SECONDARY TRAIT
+
+
 	

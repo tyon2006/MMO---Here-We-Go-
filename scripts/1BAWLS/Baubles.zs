@@ -9,24 +9,22 @@ import crafttweaker.item.IItemStack;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
 
-
-
 //***************************
 //		REMOVE AND HIDE
 //***************************
-rh(<xat:dwarf_ring>);
-rh(<xat:fairy_ring>);
-rh(<xat:wither_ring>);
-rh(<grimoireofgaia:accessory_trinket_poison>);
-rh(<cyclicmagic:charm_antidote>.withTag({}));
-rh(<xat:glow_ring>);
-rh(<bountifulbaubles:spectralsilt>);
-rh(<grimoireofgaia:accessory_ring_haste>);
-rh(<bountifulbaubles:flaregun>);
-rh(<bountifulbaubles:trinketbrokenheart>);
-rh(<grimoireofgaia:accessory_ring_speed>);
-rh(<grimoireofgaia:accessory_ring_jump>);
-rh(<grimoireofgaia:accessory_ring_night>);
+recipes.remove(<xat:dwarf_ring>);
+recipes.remove(<xat:fairy_ring>);
+recipes.remove(<xat:wither_ring>);
+recipes.remove(<grimoireofgaia:accessory_trinket_poison>);
+recipes.remove(<cyclicmagic:charm_antidote>.withTag({}));
+recipes.remove(<xat:glow_ring>);
+recipes.remove(<bountifulbaubles:spectralsilt>);
+recipes.remove(<grimoireofgaia:accessory_ring_haste>);
+recipes.remove(<bountifulbaubles:flaregun>);
+recipes.remove(<bountifulbaubles:trinketbrokenheart>);
+recipes.remove(<grimoireofgaia:accessory_ring_speed>);
+recipes.remove(<grimoireofgaia:accessory_ring_jump>);
+recipes.remove(<grimoireofgaia:accessory_ring_night>);
 
 
 //***************************

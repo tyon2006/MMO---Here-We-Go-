@@ -5,7 +5,7 @@ import mods.jei.JEI.hide as hide;
 print("--- loading Immersive Zetta.zs ---");
 
 ##Removes the Graphite Block
-	rh(<zettaindustries:blockgraphite>);
+	recipes.remove(<zettaindustries:blockgraphite>);
 
 ##Battery Walls
 	recipes.remove(<zettaindustries:batterywall>);

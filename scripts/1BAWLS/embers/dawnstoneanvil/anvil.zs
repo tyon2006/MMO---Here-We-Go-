@@ -23,8 +23,8 @@ mods.embers.DawnstoneAnvil.add([<embers:crystal_ember>, <embers:shard_ember>*3, 
 //		    		BAUBLES
 //***************************
 
-rh(<bountifulbaubles:ringiron>);
-rh(<bountifulbaubles:amuletsinempty>);
+recipes.remove(<bountifulbaubles:ringiron>);
+recipes.remove(<bountifulbaubles:amuletsinempty>);
 
 mods.embers.DawnstoneAnvil.add([<thaumcraft:baubles:1>], <embers:ingot_dawnstone>, null);
 

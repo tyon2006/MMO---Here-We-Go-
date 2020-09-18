@@ -13,7 +13,10 @@ import crafttweaker.item.IItemStack;
 //***************************
 
 //add recipe for lunar water to awkward
-recipes.addShapeless(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<nyx:lunar_water_bottle>, <embers:dust_ember>]);
+recipes.addShapeless(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<nyx:lunar_water_bottle>, <ore:dustPrismarine>]);
+
+//removals
+mods.inspirations.Cauldron.removeBrewingRecipe("extraalchemy:charged2_normal", "extraalchemy:charged_normal", <minecraft:nether_wart>);
 
 //***************************
 //		POTIONS IN CAULDRON
@@ -310,4 +313,3 @@ mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_flight", "potioncor
 
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:charged_normal", "minecraft:awkward", <transmutationalchemy:magical_dust_tier3>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:charged2_normal", "extraalchemy:charged_normal", <transmutationalchemy:magical_dust_tier5>);
-
