@@ -26,7 +26,22 @@ var itemRemovalsOreBlocks = [
 ] as IItemStack[];
 
 for item in itemRemovalsOreBlocks {
-	recipes.remove(item);
+	rh(item);
+}
+
+/* Removes and hides duplicate ingots in JEI */
+var itemRemovalsIngots = [
+	<erebus:materials:44>,
+	<erebus:materials:43>,
+	<erebus:materials:42>,
+	<erebus:materials:45>,
+	<projectred-core:resource_item:101>,
+	<idk:silveringot>,
+	<immersive_energy:metal:1>
+] as IItemStack[];
+
+for item in itemRemovalsIngots {
+	rh(item);
 }
 
 ### /* Changes sapphire ore to drop Ice and Fire sapphires */
