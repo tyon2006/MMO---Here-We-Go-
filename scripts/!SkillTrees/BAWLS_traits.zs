@@ -11,8 +11,6 @@ mods.compatskills.DimensionLock.addDimensionLock(4, "or|[trait|compatskills:skil
 mods.compatskills.DimensionLock.addDimensionLock(-66, "or|[trait|compatskills:grayce17]~[trait|compatskills:bawls17]");
 mods.compatskills.DimensionLock.addDimensionLock(66, "or|[trait|compatskills:bawls17]~[trait|compatskills:skillz17]");
 
-
-
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
 var bawls1tooltip = "Basics";
