@@ -3,6 +3,16 @@ import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
 import mods.jei.JEI;
 
+//global dimension locking
+mods.compatskills.DimensionLock.addDimensionLock(-1, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce6]~[trait|compatskills:skillz6]]");
+mods.compatskills.DimensionLock.addDimensionLock(1, "or|[trait|compatskills:bawls11]~[or|[trait|compatskills:grayce11]~[trait|compatskills:skillz11]]");
+
+mods.compatskills.DimensionLock.addDimensionLock(4, "or|[trait|compatskills:skillz17]~[trait|compatskills:grayce17]");
+mods.compatskills.DimensionLock.addDimensionLock(-66, "or|[trait|compatskills:grayce17]~[trait|compatskills:bawls17]");
+mods.compatskills.DimensionLock.addDimensionLock(66, "or|[trait|compatskills:bawls17]~[trait|compatskills:skillz17]");
+
+
+
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
 var bawls1tooltip = "Basics";
