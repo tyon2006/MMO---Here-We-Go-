@@ -81,7 +81,6 @@ var grayce1req = [
 	<thaumcraft:filter>,
 	<thaumcraft:focus_pouch>,
 	<thaumcraft:goggles>,
-	<thaumcraft:ingot:2>,
 	<thaumcraft:ingot>,
 	<thaumcraft:jar_normal>,
 	<thaumcraft:jar_void>,
