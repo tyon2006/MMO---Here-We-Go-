@@ -11,7 +11,7 @@
 		]
 	},
 	{
-		"kindName" : "rod",
+		"kindName" : "stick",
 		"modIdPriorityList" :
 		[
 			"minecraft",
@@ -32,7 +32,7 @@
 			"immersiveintelligence"
 		]
 	},
-		{
+	{
 		"kindName" : "plate",
 		"modIdPriorityList" :
 		[
