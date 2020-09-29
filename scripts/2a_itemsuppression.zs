@@ -232,6 +232,78 @@ for item in itemRemovalsSpartanArcana {
     recipes.remove(item);
 }
 
+//************************************
+//       VARIED COMMODITIES
+//************************************
 
+//remove and hide unfit items
+var itemRemovalsVariedCommodities = [
+	<idk:silverarmourbody>,
+	<idk:silverarmourboots>,
+	<idk:silverarmourhelmet>,
+	<idk:silverarmourlegs>,
+	<variedcommodities:bronze_gun>,
+	<variedcommodities:bronze_sword>,
+	<variedcommodities:bullet>,
+	<variedcommodities:campfire_unlit>,
+	<variedcommodities:candle_unlit>,
+	<variedcommodities:car_key>,
+	<variedcommodities:coin_bronze>,
+	<variedcommodities:coin_diamond>,
+	<variedcommodities:coin_emerald>,
+	<variedcommodities:coin_gold>,
+	<variedcommodities:coin_iron>,
+	<variedcommodities:coin_stone>,
+	<variedcommodities:coin_wood>,
+	<variedcommodities:diamond_gun>,
+	<variedcommodities:emerald_gun>,
+	<variedcommodities:gem_amethyst>,
+	<variedcommodities:gem_ruby>,
+	<variedcommodities:gem_sapphire>,
+	<variedcommodities:golden_gun>,
+	<variedcommodities:iron_gun>,
+	<variedcommodities:key2>,
+	<variedcommodities:key>,
+	<variedcommodities:lamp_unlit>,
+	<variedcommodities:machine_gun>,
+	<variedcommodities:mana>,
+	<variedcommodities:phone>,
+	<variedcommodities:ring>,
+	<variedcommodities:skull>,
+	<variedcommodities:stone_gun>,
+	<variedcommodities:usb_stick>,
+	<variedcommodities:vcrecipes_book>,
+	<variedcommodities:wooden_gun>
+] as IItemStack[];
+
+for item in itemRemovalsVariedCommodities {
+    recipes.remove(item);
+}
+
+//************************************
+//       SILVER GOODS
+//************************************
+
+//Cleans up silver products
+var itemRemovalsSilverGoods = [
+	<embers:axe_silver>,
+	<embers:hoe_silver>,
+	<embers:pickaxe_silver>,
+	<embers:shovel_silver>,
+	<embers:sword_silver>,
+	<idk:silverarmourbody>,
+	<idk:silverarmourboots>,
+	<idk:silverarmourhelmet>,
+	<idk:silverarmourlegs>,
+	<idk:silveraxe>,
+	<idk:silverhoe>,
+	<idk:silverpickaxe>,
+	<idk:silvershovel>,
+	<idk:silversword>
+] as IItemStack[];
+
+for item in itemRemovalsSilverGoods {
+    recipes.remove(item);
+}
 
 print("--- 2_itemsuppression.zs initialized ---");
