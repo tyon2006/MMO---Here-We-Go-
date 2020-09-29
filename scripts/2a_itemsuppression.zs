@@ -277,7 +277,7 @@ var itemRemovalsVariedCommodities = [
 ] as IItemStack[];
 
 for item in itemRemovalsVariedCommodities {
-    recipes.remove(item);
+    rh(item);
 }
 
 //************************************
@@ -303,7 +303,7 @@ var itemRemovalsSilverGoods = [
 ] as IItemStack[];
 
 for item in itemRemovalsSilverGoods {
-    recipes.remove(item);
+    rh(item);
 }
 
 print("--- 2_itemsuppression.zs initialized ---");
