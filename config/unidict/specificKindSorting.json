@@ -1,0 +1,46 @@
+[
+	{
+		"kindName" : "ore",
+		"modIdPriorityList" :
+		[
+			"minecraft",
+			"immersiveengineering",
+			"immersiveintelligence",
+			"embers",
+			"thaumcraft"
+		]
+	},
+	{
+		"kindName" : "rod",
+		"modIdPriorityList" :
+		[
+			"minecraft",
+			"immersiveengineering",
+			"immersiveintelligence",
+			"embers",
+			"thaumcraft"
+		]
+	},
+	{
+		"kindName" : "ingot",
+		"modIdPriorityList" :
+		[
+			"minecraft",
+			"embers",
+			"immersiveengineering",
+			"thaumcraft"
+			"immersiveintelligence"
+		]
+	},
+		{
+		"kindName" : "plate",
+		"modIdPriorityList" :
+		[
+			"minecraft",
+			"thaumcraft",
+			"embers",
+			"immersiveengineering",
+			"immersiveintelligence"
+		]
+	}
+]
