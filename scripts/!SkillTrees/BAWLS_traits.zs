@@ -495,7 +495,18 @@ var bawls4req = [
 	<transmutationalchemy:magical_dust:*>,
 	<transmutationalchemy:magical_dust_tier2:*>,
 	<transmutationalchemy:magical_dust_tier3:*>,
-	<transmutationalchemy:mixer:*>
+	<transmutationalchemy:mixer:*>,
+	<runesofwizardry_classics:dust_classic>,
+	<runesofwizardry_classics:dust_classic:1>,
+	<runesofwizardry_classics:dust_classic:2>,
+	<runesofwizardry_classics:dust_classic:3>,
+	<runesofwizardry:runic_dictionary>,
+	<runesofwizardry:dummyguide>,
+	<guideapi:runesofwizardry-guide_book>,
+	<runesofwizardry:broom>,
+	<runesofwizardry:dust_pouch:*>,
+	<runesofwizardry:dust_dye:*>,
+	<runesofwizardry:dust_dyed:*>
 	
 ] as IItemStack[];
 
@@ -955,7 +966,14 @@ var bawls8req = [
 	<mod_lavacow:halo_necklace:*>,
 	<xat:polarized_stone:*>,
 	<xat:sea_stone:*>,
-	<randomthings:obsidianskull>
+	<randomthings:obsidianskull>,
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap"}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink"}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:void"}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:bounce"}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:foresight"}})
+
 	
 ] as IItemStack[];
 
@@ -1815,7 +1833,11 @@ var bawls18req = [
 	<xat:greater_inertia_stone:*>,
 	<xat:inertia_null_stone:*>,
 	<xat:weightless_stone:*>,
-	<xat:glow_ring>
+	<xat:glow_ring>,
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap2"}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink2"}}),
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:return"}})
+
 
 ] as IItemStack[];
 

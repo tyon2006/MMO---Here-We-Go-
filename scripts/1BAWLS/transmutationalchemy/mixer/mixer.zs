@@ -26,6 +26,45 @@ recipes.replaceAllOccurences(<biomesoplenty:ash>, <ore:dustAsh>);
 recipes.replaceAllOccurences(<embers:dust_ash>, <ore:dustAsh>);
 
 //***************************
+//	FIXING RUNES OF WIZARDRY
+//***************************
+var runesgottago = [
+
+	<runesofwizardry:dust_plant_storage>,
+	<runesofwizardry:dust_aqua>,
+	<runesofwizardry:dust_aqua_storage>,
+	<runesofwizardry:dust_fire>,
+	<runesofwizardry:dust_fire_storage>,
+	<runesofwizardry:dust_glowstone>,
+	<runesofwizardry:dust_glowstone_storage>,
+	<runesofwizardry:dust_ender>,
+	<runesofwizardry:dust_ender_storage>,
+	<runesofwizardry:dust_plant>,
+	<runesofwizardry:dust_inert>,
+	<runesofwizardry:pestle>,
+	<runesofwizardry:plantball>,
+	<runesofwizardry:plantball:1>,
+	<randomthings:runedust:*>
+	
+] as IItemStack[];
+
+for item in runesgottago  {
+
+	rh(item);
+
+}
+
+recipes.remove(<runesofwizardry_classics:dust_classic>);
+recipes.remove(<runesofwizardry_classics:dust_classic:1>);
+recipes.remove(<runesofwizardry_classics:dust_classic:2>);
+recipes.remove(<runesofwizardry_classics:dust_classic:3>);
+
+mods.transmutationalchemy.mixer.addRecipe(<runesofwizardry_classics:dust_classic>*8, [ <embers:dust_ember>, <ore:dustSalt> * 3, <ore:treeSapling>],  10, true);
+mods.transmutationalchemy.mixer.addRecipe(<runesofwizardry_classics:dust_classic:1>*8, [ <embers:dust_ember>, <ore:dustSalt> * 3, <minecraft:gunpowder>],  10, true);
+mods.transmutationalchemy.mixer.addRecipe(<runesofwizardry_classics:dust_classic:2>*8, [ <embers:dust_ember>, <ore:dustSalt> * 3, <minecraft:dye:4>],  10, true);
+mods.transmutationalchemy.mixer.addRecipe(<runesofwizardry_classics:dust_classic:3>*8, [ <embers:dust_ember>, <ore:dustSalt> * 3, <ore:dustBlaze>],  10, true);
+
+//***************************
 //		    DUST RECYCLING
 //***************************
 mods.transmutationalchemy.mixer.addRecipe(<transmutationalchemy:magical_dust>, [ <embers:dust_ember>, <transmutationalchemy:unknown_semifinished> * 1],  5, true);
