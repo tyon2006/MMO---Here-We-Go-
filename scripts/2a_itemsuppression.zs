@@ -57,7 +57,7 @@ var itemRemovalsIndustrialRenewal = [
 ] as IItemStack[];
 
 for item in itemRemovalsIndustrialRenewal {
-    recipes.remove(item);
+    rh(item);
 }
 
 //hide partial or incomplete items and blocks
@@ -87,7 +87,7 @@ var itemRemovalsEngineersTools = [
 ] as IItemStack[];
 
 for item in itemRemovalsEngineersTools {
-    recipes.remove(item);
+    rh(item);
 }
 
 
@@ -102,7 +102,7 @@ var itemRemovalsBountifulBaubles = [
 ] as IItemStack[];
 
 for item in itemRemovalsBountifulBaubles {
-    recipes.remove(item);
+    rh(item);
 }
 
 //***************************
@@ -115,7 +115,7 @@ var itemRemovalsBeasts = [
 ] as IItemStack[];
 
 for item in itemRemovalsBeasts {
-    recipes.remove(item);
+    rh(item);
 }
 
 //remove but do not hide recipe for this item, to be rescripted
@@ -130,7 +130,7 @@ var itemRemovalsBiblioCraft = [
 ] as IItemStack[];
 
 for item in itemRemovalsBiblioCraft {
-    recipes.remove(item);
+    rh(item);
 }
 
 //hide partial or incomplete items
@@ -143,15 +143,11 @@ hide(<bibliocraft:markerpole>);
 //remove and hide unfit items
 var itemRemovalsSpartanShields = [
 	<spartanshields:shield_tower_invar>,
-	<spartanshields:shield_basic_invar>,
-	<spartanshields:shield_basic_platinum>,
-	<spartanshields:shield_tower_platinum>,
-	<spartanshields:shield_basic_constantan>,
-	<spartanshields:shield_tower_constantan>
+	<spartanshields:shield_basic_invar>
 ] as IItemStack[];
 
 for item in itemRemovalsSpartanShields {
-    recipes.remove(item);
+    rh(item);
 }
 
 //************************************
@@ -229,7 +225,7 @@ var itemRemovalsSpartanArcana = [
 ] as IItemStack[];
 
 for item in itemRemovalsSpartanArcana {
-    recipes.remove(item);
+    rh(item);
 }
 
 //************************************
