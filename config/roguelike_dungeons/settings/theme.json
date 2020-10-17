@@ -1,0 +1,374 @@
+{
+	"name": "demo:theme",
+	"themes": [
+		{
+			"level": 0,
+			"primary": {
+				"walls": {
+					"type": "WEIGHTED",
+					"data": [
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "cathedral:basalt_block_carved",
+								"meta": 2
+							},
+							"weight": 3
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "cathedral:dwemer_block_carved",
+								"meta": 6
+							},
+							"weight": 1
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "cathedral:basalt_block_carved",
+								"meta": 5
+							},
+							"weight": 2
+						}
+					]
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "cathedral:basalt_stairs_carved_smalltiles"
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "cathedral:cathedral_pillar_various",
+						"meta": 12
+					}
+				},
+				"door": {
+					"name": "cathedral:dwemer_door_normal"
+				},
+				"floor": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "soot:sealed_tile"
+					}
+				},
+				"lightblock": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "cathedral:dwemer_light_normal",
+						"meta": 2
+					}
+				}
+			},
+			"secondary": {
+				"walls": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "soot:wrought_tile"
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "cathedral:cathedral_railing_various",
+						"meta": 11
+					}
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "cathedral:basalt_stairs_carved_smalltiles"
+					}
+				},
+				"door": {
+					"name": "cathedral:dwemer_door_normal"
+				}
+			}
+		},
+		{
+			"level": 1,
+			"primary": {
+				"walls": {
+					"type": "WEIGHTED",
+					"data": [
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick"
+							},
+							"weight": 10
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "gravel"
+							},
+							"weight": 1
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "cobblestone"
+							},
+							"weight": 2
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick",
+								"meta": 1
+							},
+							"weight": 3
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick",
+								"meta": 2
+							},
+							"weight": 4
+						}
+					]
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "STONE",
+						"meta": 6
+					}
+				}
+			},
+			"secondary": {
+				"walls": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "planks",
+						"meta": 1
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "log",
+						"meta": 1
+					}
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "spruce_stairs"
+					}
+				}
+			}
+		},
+		{
+			"level": 2,
+			"primary": {
+				"walls": {
+					"type": "WEIGHTED",
+					"data": [
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick"
+							},
+							"weight": 6
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "gravel"
+							},
+							"weight": 2
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick",
+								"meta": 1
+							},
+							"weight": 4
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick",
+								"meta": 2
+							},
+							"weight": 2
+						}
+					]
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "stone",
+						"meta": 6
+					}
+				},
+				"door": {
+					"name": "iron_door"
+				}
+			}
+		},
+		{
+			"level": 3,
+			"primary": {
+				"walls": {
+					"type": "WEIGHTED",
+					"data": [
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "gravel"
+							},
+							"weight": 2
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "monster_egg",
+								"meta": 1
+							},
+							"weight": 1
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "monster_egg",
+								"meta": 3
+							},
+							"weight": 1
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick",
+								"meta": 1
+							},
+							"weight": 1
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "stonebrick",
+								"meta": 2
+							},
+							"weight": 1
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "cobblestone"
+							},
+							"weight": 5
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "mossy_cobblestone"
+							},
+							"weight": 4
+						}
+					]
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "stone_stairs"
+					}
+				},
+				"door": {
+					"name": "iron_door"
+				}
+			}
+		},
+		{
+			"level": 4,
+			"primary": {
+				"walls": {
+					"type": "WEIGHTED",
+					"data": [
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "minecraft:end_bricks"
+							},
+							"weight": 30
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "chisel:endstone1"
+							},
+							"weight": 3
+						},
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "chisel:endstone2"
+							},
+							"weight": 1
+						}
+					]
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "quark:end_bricks_stairs"
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "minecraft:purpur_pillar"
+					}
+				},
+				"door": {
+					"name": "minecraft:spruce_door"
+				},
+				"floor": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "minecraft:purpur_block"
+					}
+				},
+				"lightblock": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "biomesoplenty:crystal"
+					}
+				}
+			},
+			"secondary": {
+				"walls": {
+					"type": "WEIGHTED",
+					"data": [
+						{
+							"type": "METABLOCK",
+							"data": {
+								"name": "minecraft:end_stone"
+							},
+							"weight": 1
+						}
+					]
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "minecraft:purpur_stairs"
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "quark:purpur_block_wall"
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,229 @@
+{
+	"name": "dwarf:theme5",
+	"themes": [
+		{
+			"level" : [0],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_tiles", "meta" : 0}, "weight" : 20},
+								{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}, "weight" : 40}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_tiles", "meta" : 0}, "weight" : 20},
+								{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}, "weight" : 40}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_tiles", "meta" : 0}, "weight" : 20},
+								{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}, "weight" : 40}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_tiles", "meta" : 0}, "weight" : 20},
+							{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "quark:elder_sea_lantern", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "embers:stairs_caminite_brick", "meta" : 0}},
+				"floor" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "embers:sealed_planks", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "soot:sealed_tile", "meta" : 0}, "weight" : 1}
+					]
+				},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:elder_sea_lantern", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:roofing_block_cyan", "meta" : 0}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile_stairs", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "soot:sealed_tile", "meta" : 0}},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			}
+		},
+				{
+			"level" : [1],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "embers:archaic_bricks", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "soot:archaic_big_bricks", "meta" : 0}, "weight" : 5}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "embers:archaic_bricks", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "soot:archaic_big_bricks", "meta" : 0}, "weight" : 5}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "embers:archaic_edge", "meta" : 0}},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "embers:archaic_bricks", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "embers:archaic_light", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "embers:archaic_bricks", "meta" : 0}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "embers:archaic_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "soot:archaic_big_bricks_stairs", "meta" : 0}},
+				"floor" : {"type" : "WEIGHTED", "data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "embers:sealed_planks", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "soot:sealed_tile", "meta" : 0}, "weight" : 1}]
+				},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "embers:archaic_light", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			},
+			"secondary" : {
+				"walls" : {
+					"type" : "WEIGHTED",
+					"data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "soot:wrought_tile", "meta" : 0}, "weight" : 3},
+							{"type" : "METABLOCK", "data" : {"name" : "soot:wrought_platform", "meta" : 0}, "weight" : 1}
+							]
+						},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "soot:archaic_bricks_stairs", "meta" : 0}},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			}
+		},
+				{
+			"level" : [2],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "embers:ashen_brick", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "embers:ashen_tile", "meta" : 0}, "weight" : 5}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "embers:ashen_brick", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "embers:ashen_tile", "meta" : 0}, "weight" : 5}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_block_carved", "meta" : 11}},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "embers:ashen_brick", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "embers:ashen_brick", "meta" : 0}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "embers:wall_ashen_stone", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "embers:stairs_ashen_brick", "meta" : 0}},
+				"floor" : {"type" : "WEIGHTED", "data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "soot:wrought_tile", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "soot:wrought_platform", "meta" : 0}, "weight" : 1}]
+				},
+				"door" : {"name" : "cathedral:dwemer_door_normal"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}},
+				"liquid" : {"name" : "embers:alchemical_redstone"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:roofing_block_red", "meta" : 0}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "embers:ashen_stone", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "embers:stairs_ashen_stone", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "soot:sealed_tile", "meta" : 0}},
+				"door" : {"name" : "cathedral:dwemer_door_normal"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}},
+				"liquid" : {"name" : "embers:alchemical_redstone"}
+			}
+		},
+				{
+			"level" : [3],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+						"data" : [
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:basalt", "meta" : 3}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_block_carved", "meta" : 5}, "weight" : 20},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_block_carved", "meta" : 12}, "weight" : 1}
+							]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:basalt", "meta" : 3}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_block_carved", "meta" : 5}, "weight" : 20},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_block_carved", "meta" : 12}, "weight" : 1}
+							]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:basalt", "meta" : 3}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_block_carved", "meta" : 5}, "weight" : 20},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_block_carved", "meta" : 12}, "weight" : 1}
+							]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:basalt", "meta" : 3}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_block_carved", "meta" : 5}, "weight" : 20},
+							{"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_light_normal", "meta" : 1}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:basalt", "meta" : 3}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:cathedral_pillar_various", "meta" : 11}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_stairs_carved_bricks", "meta" : 0}},
+				"floor" : {"type" : "COLUMNS", 
+					"data" : [
+					{"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_block_carved", "meta" : 0}},
+					{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_clay", "meta" : 0}}]
+					},
+				"door" : {"name" : "cathedral:dwemer_door_normal"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_light_normal", "meta" : 1}},
+				"liquid" : {"name" : "embers:alchemical_redstone"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_block_carved", "meta" : 5}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_block_carved", "meta" : 6}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:basalt_stairs_carved_slabs", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "chisel:basalt", "meta" : 8}},
+				"door" : {"name" : "cathedral:dwemer_door_normal"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "cathedral:dwemer_light_normal", "meta" : 1}},
+				"liquid" : {"name" : "embers:alchemical_redstone"}
+			}
+		},
+				{
+			"level" : [4],
+			"primary" : {
+				"walls" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_tiles", "meta" : 0}, "weight" : 15},
+						{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}, "weight" : 25},
+						{"type" : "METABLOCK", "data" : {"name" : "quark:elder_sea_lantern", "meta" : 0}, "weight" : 1}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "embers:stairs_caminite_brick", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "embers:sealed_planks", "meta" : 0}},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:elder_sea_lantern", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_clay", "meta" : 0}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile_stairs", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "soot:sealed_tile", "meta" : 0}},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			}
+		}
+	]
+}			

@@ -1,0 +1,17 @@
+{
+	"name" : "dwarf:main5",
+	"exclusive" : true,
+	"criteria" : {
+		"biomeTypes" : [
+			"PLAINS"
+		]
+	},
+	"inherit" : [
+		"dwarf:tower",
+		"dwarf:layout",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme5",
+		"demo:loot"
+	]
+}
