@@ -18,8 +18,8 @@ recipes.addShapedMirrored(<transmutationalchemy:blade>,
 [<minecraft:stick>,null]]);
 
 //unify ectoplasm
-//removed bewitchment
 //recipes.replaceAllOccurences(<randomthings:ingredient:2>, <bewitchment:ectoplasm>);
+//removed bewitchment
 
 //***************************
 //		RENAMING
@@ -137,7 +137,7 @@ var itemRemovalsPotions = [
 ] as IItemStack[];
 
 for item in itemRemovalsPotions {
-    recipes.remove(item);
+    rh(item);
 }
 
 //***************************************************************
