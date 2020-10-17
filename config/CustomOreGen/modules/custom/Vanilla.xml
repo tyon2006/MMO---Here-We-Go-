@@ -732,6 +732,8 @@
 
     <IfCondition condition=':= ?COGActive'>
 
+	<IfCondition condition=':= dimension="overworld"'>
+	  
       <!-- Starting Original "Overworld" Block Removal -->
         <IfCondition condition=':= vnlaClayDist != "Vanilla"'>
           <IfCondition condition=':= ?blockExists("minecraft:sand")'>
@@ -2893,6 +2895,7 @@
       <!-- End Emerald Generation -->
 
       <!-- Finished adding blocks -->
+	</IfCondition>
 
     </IfCondition>
     <!-- Overworld Setup Complete -->

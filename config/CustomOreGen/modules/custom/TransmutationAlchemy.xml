@@ -268,10 +268,11 @@
 
         <!-- Begin Power Crystal Generation -->
 
+	  <IfCondition condition=':= dimension="overworld"'>
         <!-- Starting StratumClouds Preset for Power Crystal. -->
         <ConfigSection>
           <IfCondition condition=':= tralchPowerCrystalDist = "StratumClouds"'>
-            <Cloud name='tralchPowerCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+            <Cloud name='tralchPowerCrystalStrata'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
               <Description>
                 Wide, thin, and flat disks of  ore.  Primarily, this
                 distribution is meant to provide  realistic
@@ -524,6 +525,7 @@
           </IfCondition>
         </ConfigSection>
         <!-- Vanilla Preset for Power Crystal is complete. -->
+	  </IfCondition>
 
         <!-- End Power Crystal Generation -->
 
@@ -534,7 +536,7 @@
         <!-- Starting StratumClouds Preset for Protection Crystal. -->
         <ConfigSection>
           <IfCondition condition=':= tralchProtectionCrystalDist = "StratumClouds"'>
-            <Cloud name='tralchProtectionCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+            <Cloud name='tralchProtectionCrystalStrata'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
               <Description>
                 Wide, thin, and flat disks of  ore.  Primarily, this
                 distribution is meant to provide  realistic
@@ -678,7 +680,7 @@
         <!-- Starting StratumClouds Preset for Mind Crystal. -->
         <ConfigSection>
           <IfCondition condition=':= tralchMindCrystalDist = "StratumClouds"'>
-            <Cloud name='tralchMindCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+            <Cloud name='tralchMindCrystalStrata'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
               <Description>
                 Wide, thin, and flat disks of  ore.  Primarily, this
                 distribution is meant to provide  realistic

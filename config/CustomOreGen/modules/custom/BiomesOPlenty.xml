@@ -417,6 +417,7 @@
       <!-- Overworld Setup Beginning -->
 
       <IfCondition condition=':= ?COGActive'>
+	  <IfCondition condition=':= dimension="overworld"'>
 
         <!-- Starting Original "Overworld" Block Removal -->
 
@@ -1446,7 +1447,7 @@
         <!-- End Amber Generation -->
 
         <!-- Finished adding blocks -->
-
+	  </IfCondition>
       </IfCondition>
       <!-- Overworld Setup Complete -->
 

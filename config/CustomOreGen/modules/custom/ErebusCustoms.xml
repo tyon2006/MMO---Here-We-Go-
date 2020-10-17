@@ -1,0 +1,457 @@
+<!-- =================================================================
+     Custom Ore Generation "Erebus Customs" Module: This configuration
+     covers alchemical crystal clusters and blue gems.
+     ================================================================= -->
+
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupErebCustom' displayName='Erebus Customs' displayState='shown'>
+        <Description>
+          Distribution options for Erebus Custom Ore Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableErebCustom' displayName='Handle Erebus Custom Ore Gen?' default='true' displayState='shown_dynamic' displayGroup='groupErebCustom'>
+        <Description> Should Custom Ore Generation handle Erebus Custom Ore ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle Erebus Custom Ore ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='Erebus Custom Ore ores will be handled by Minecraft directly.'/>
+      </OptionChoice>
+
+      <!-- Crystal Cluster Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ercusClusterCrystalDist' default='StratumClouds' displayState=':= if(?enableErebCustom, "shown", "hidden")' displayGroup='groupErebCustom'>
+          <Description> Controls how Crystal Cluster is generated </Description>
+          <DisplayName>Erebus Custom Ore Crystal Cluster</DisplayName>
+          <IfCondition condition=':= (?blockExists("contenttweaker:erebus_trans_ore")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+		  
+		  <IfCondition condition=':= (?blockExists("contenttweaker:erebus_trans_ore")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("contenttweaker:erebus_trans_ore")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("contenttweaker:erebus_trans_ore")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Crystal Cluster is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ercusClusterCrystalFreq' default='1'  min='0' max='5' displayState=':= if(?enableErebCustom, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupErebCustom'>
+          <Description> Frequency multiplier for Erebus Custom Ore Crystal Cluster distributions </Description>
+          <DisplayName>Erebus Custom Ore Crystal Cluster Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ercusClusterCrystalSize' default='1'  min='0' max='5' displayState=':= if(?enableErebCustom, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupErebCustom'>
+          <Description> Size multiplier for Erebus Custom Ore Crystal Cluster distributions </Description>
+          <DisplayName>Erebus Custom Ore Crystal Cluster Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Crystal Cluster Configuration UI Complete -->
+
+      <!-- Bluegem Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ercusBlueGemDist' default='Vanilla' displayState=':= if(?enableErebCustom, "shown", "hidden")' displayGroup='groupErebCustom'>
+          <Description> Controls how Bluegem is generated </Description>
+          <DisplayName>Erebus Custom Ore Bluegem</DisplayName>
+          <IfCondition condition=':= (?blockExists("thejungle:ore_sapphire")) '>
+
+          <Choice value='StratumClouds' displayValue='Strata'>
+            <Description>
+              Wide, thin, and flat disks of ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+		  
+		  <IfCondition condition=':= (?blockExists("thejungle:ore_sapphire")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("thejungle:ore_sapphire")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("thejungle:ore_sapphire")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Bluegem is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ercusBlueGemFreq' default='1'  min='0' max='5' displayState=':= if(?enableErebCustom, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupErebCustom'>
+          <Description> Frequency multiplier for Erebus Custom Ore Bluegem distributions </Description>
+          <DisplayName>Erebus Custom Ore Bluegem Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ercusBlueGemSize' default='1'  min='0' max='5' displayState=':= if(?enableErebCustom, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupErebCustom'>
+          <Description> Size multiplier for Erebus Custom Ore Bluegem distributions </Description>
+          <DisplayName>Erebus Custom Ore Bluegem Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Bluegem Configuration UI Complete -->
+	  
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableErebCustom'>
+
+
+      <!-- Erebus Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>		
+
+        <!-- Adding blocks -->
+
+        <!-- Begin Crystal Cluster Generation -->
+
+      <IfCondition condition=':= dimension = "EREBUS"'>
+        <!-- Starting StratumClouds Preset for Crystal Cluster. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusClusterCrystalDist = "StratumClouds"'>
+            <Cloud name='ercusClusterCrystalCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='contenttweaker:erebus_trans_ore' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*' />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * ercusClusterCrystalSize ' range=':= 1.252 * _default_ * ercusClusterCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * ercusClusterCrystalSize ' range=':= 1.252 * _default_ * ercusClusterCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * ercusClusterCrystalFreq ' range=':= 2.567 * _default_ * ercusClusterCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Crystal Cluster is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Crystal Cluster. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusClusterCrystalDist = "SparseVeins"'>
+            <Veins name='ercusClusterCrystalVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='contenttweaker:erebus_trans_ore' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*' />
+              <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * ercusClusterCrystalFreq ' range=':= 2.599 * _default_ * ercusClusterCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * ercusClusterCrystalSize ' range=':= 0 * _default_ * ercusClusterCrystalSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.612 * _default_ ' range=':= 1.612 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ercusClusterCrystalSize ' range=':= _default_ * ercusClusterCrystalSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.270 * _default_ * ercusClusterCrystalSize ' range=':= 1.270 * _default_ * ercusClusterCrystalSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Crystal Cluster is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Crystal Cluster. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusClusterCrystalDist = "StrategicClouds"'>
+            <Cloud name='ercusClusterCrystalCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='contenttweaker:erebus_trans_ore' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*' />
+              <Setting name='CloudRadius' avg=':= 1.101 * _default_ * ercusClusterCrystalSize ' range=':= 1.101 * _default_ * ercusClusterCrystalSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.101 * _default_ * ercusClusterCrystalSize ' range=':= 1.101 * _default_ * ercusClusterCrystalSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.212 * _default_ * ercusClusterCrystalFreq ' range=':= 1.212 * _default_ * ercusClusterCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ercusClusterCrystalHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='contenttweaker:erebus_trans_ore' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * ercusClusterCrystalFreq  * 0.1 ' range=':= 2.599 * _default_ * ercusClusterCrystalFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Crystal Cluster is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Crystal Cluster. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusClusterCrystalDist = "Vanilla"'>
+            <StandardGen name='ercusClusterCrystalStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='contenttweaker:erebus_trans_ore' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*' />
+              <Setting name='Size' avg=':= 24.0 * oreSize * ercusClusterCrystalSize ' range=':= 12.0 * oreSize * ercusClusterCrystalSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 0.667 * oreFreq * ercusClusterCrystalFreq ' range=':= 0.33 * oreFreq * ercusClusterCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Crystal Cluster is complete. -->
+	  </IfCondition>
+	  
+        <!-- End Crystal Cluster Generation -->
+
+
+        <!-- Begin Bluegem Generation -->
+
+      <IfCondition condition=':= dimension = "EREBUS"'>
+        <!-- Starting StratumClouds Preset for Bluegem. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusBlueGemDist = "StratumClouds"'>
+            <Cloud name='ercusBlueGemCloud'  inherits='PresetStratum' drawWireframe=':= drawWireframes' wireframeColor='0x60A5A28F' drawBoundBox='false' boundBoxColor='0x60A5A28F'>
+              <Description>
+                Wide, thin, and flat disks of  ore.  Primarily, this
+                distribution is meant to provide  realistic
+                distribution of stone  in a strata formation.
+              </Description>
+              <OreBlock block='thejungle:ore_sapphire' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.252 * _default_ * ercusBlueGemSize ' range=':= 1.252 * _default_ * ercusBlueGemSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.252 * _default_ * ercusBlueGemSize ' range=':= 1.252 * _default_ * ercusBlueGemSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.567 * _default_ * ercusBlueGemFreq ' range=':= 2.567 * _default_ * ercusBlueGemFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 67 ' range=':= 61 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StratumClouds Preset for Bluegem is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Bluegem. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusBlueGemDist = "SparseVeins"'>
+            <Veins name='ercusBlueGemVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='thejungle:ore_sapphire' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * ercusBlueGemFreq ' range=':= 2.599 * _default_ * ercusBlueGemFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * ercusBlueGemSize ' range=':= 0 * _default_ * ercusBlueGemSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.612 * _default_ ' range=':= 1.612 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ercusBlueGemSize ' range=':= _default_ * ercusBlueGemSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.270 * _default_ * ercusBlueGemSize ' range=':= 1.270 * _default_ * ercusBlueGemSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Bluegem is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Bluegem. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusBlueGemDist = "StrategicClouds"'>
+            <Cloud name='ercusBlueGemCloud'  inherits='PresetStrategicCloud' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='thejungle:ore_sapphire' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.101 * _default_ * ercusBlueGemSize ' range=':= 1.101 * _default_ * ercusBlueGemSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.101 * _default_ * ercusBlueGemSize ' range=':= 1.101 * _default_ * ercusBlueGemSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.212 * _default_ * ercusBlueGemFreq ' range=':= 1.212 * _default_ * ercusBlueGemFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ercusBlueGemHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='thejungle:ore_sapphire' weight='1.0' />
+                <ReplacesOre block='minecraft:netherrack' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.599 * _default_ * ercusBlueGemFreq  * 0.1 ' range=':= 2.599 * _default_ * ercusBlueGemFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Bluegem is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Bluegem. -->
+        <ConfigSection>
+          <IfCondition condition=':= ercusBlueGemDist = "Vanilla"'>
+            <StandardGen name='ercusBlueGemStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x6052BBEF' drawBoundBox='false' boundBoxColor='0x6052BBEF'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='thejungle:ore_sapphire' weight='1.0' />
+              <ReplacesOre block='stoneUmber' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 24.0 * oreSize * ercusBlueGemSize ' range=':= 12.0 * oreSize * ercusBlueGemSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 0.667 * oreFreq * ercusBlueGemFreq ' range=':= 0.33 * oreFreq * ercusBlueGemFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 120 ' range=':= 64 ' type='uniform' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Bluegem is complete. -->
+	  </IfCondition>
+	  
+        <!-- End Bluegem Generation -->
+		
+        <!-- Finished adding blocks -->
+
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+<!-- The "Erebus Custom" ore set is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

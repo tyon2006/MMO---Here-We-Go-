@@ -46,7 +46,7 @@
                     <OreBlock block='erebus:umberstone' weight='1.0' />
                     <Replaces block='minecraft:bedrock' weight='1.0' />
                 </Substitute>
-				<Substitute name='flatbedrockerebustop' minHeight='123' maxHeight='128'>
+				<Substitute name='flatbedrockerebustop' minHeight='123' maxHeight='126'>
                     <OreBlock block='erebus:umberstone' weight='1.0' />
                     <Replaces block='minecraft:bedrock' weight='1.0' />
                 </Substitute>

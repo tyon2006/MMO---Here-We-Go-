@@ -235,6 +235,8 @@
 
       <IfCondition condition=':= ?COGActive'>
 
+	  <IfCondition condition=':= dimension="overworld"'>
+	  
         <!-- Starting Original "Overworld" Block Removal -->
 
         <IfCondition condition=':= ?cleanUpThaumcraft6'>
@@ -975,6 +977,7 @@
         <!-- End Quartz Generation -->
 
         <!-- Finished adding blocks -->
+	  </IfCondition>
 
       </IfCondition>
       <!-- Overworld Setup Complete -->

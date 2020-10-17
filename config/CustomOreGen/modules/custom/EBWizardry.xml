@@ -85,6 +85,8 @@
 
     <IfCondition condition=':= ?COGActive'>
 
+	<IfCondition condition=':= dimension="overworld"'>
+
 	<IfCondition condition=':= ?cleanUpEBWizardry'>
         <IfCondition condition=':= ?blockExists("minecraft:stone")'>
           <Substitute name='ebwzOverworldBlockSubstitute' block='minecraft:stone'>
@@ -282,6 +284,8 @@
       <!-- End Arcane Crystal Generation -->
 
       <!-- Finished adding blocks -->
+	 </IfCondition>
+	  
 	 </IfCondition> 
     <!-- Overworld Setup Complete -->
 

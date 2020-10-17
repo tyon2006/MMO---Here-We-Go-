@@ -325,6 +325,8 @@
 
       <IfCondition condition=':= ?COGActive'>
 
+	  <IfCondition condition=':= dimension="overworld"'>
+	  
         <!-- Starting Original "Overworld" Block Removal -->
 
         <IfCondition condition=':= ?cleanUpImmersiveEnergy'>
@@ -1157,6 +1159,7 @@
         <!-- End Rare Thorium Generation -->
 		
         <!-- Finished adding blocks -->
+	  </IfCondition>
 
       </IfCondition>
       <!-- Overworld Setup Complete -->
