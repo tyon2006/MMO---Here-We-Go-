@@ -323,6 +323,25 @@
             <Biome name='.*'/>
         </VeinsPreset>
 
+        <VeinsPreset name='PresetGeodeLayer' branchType='Bezier'>
+            <Description> 
+                Multi-layered deposit. On the outside is a shell,
+                usually made of some form of stone. Within this
+                shell is sprinkled ores. Inside both is an air pocket
+                from which the enterprising miner can look for the
+                contained ores.
+            </Description>        
+            <Setting name='MotherlodeFrequency' avg=':= 0.25 * oreFreq' range=':= 0.1 * oreFreq'/>
+            <Setting name='MotherlodeSize' avg=':= 2.4 * oreSize' range=':= 0.5 * oreSize'/>
+            <Setting name='MotherlodeHeight' avg=':= 32/64 * dimension.groundLevel' range=':= 16/64 * dimension.groundLevel' type='normal'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='0' range='0'/>
+            <Setting name='OreDensity' avg='1' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+
         <VeinsPreset name='PresetPipeVeins' branchType='Bezier'>     
             <Description>
                 Short sparsely filled veins sloping up from near the bottom of the map.
@@ -424,7 +443,7 @@
     <OptionalImport file='modules/custom/BiomesOPlenty.xml'/>
 	<OptionalImport file='modules/custom/Thaumcraft6.xml'/>
 	<OptionalImport file='modules/custom/EmbersRekindled.xml'/>
-	<OptionalImport file='modules/custom/Bewitchment.xml'/>
+	<OptionalImport file='modules/custom/EBWizardry.xml'/>
 		
     <!--*************************   Testing & Debugging   *********************
     *   I use this section for quick-and-dirty experiments

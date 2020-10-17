@@ -1,0 +1,304 @@
+<!-- =================================================================
+     Custom Ore Generation "Wizardry" Module: This configuration covers
+     arcane crystals.
+     ================================================================= -->
+
+
+<!-- This is a set of configurations for the Wizardry mod.
+     Configuration by Caervec. -->
+
+<!-- Is the "EBWizardry" mod on the system?  Let's find out! -->
+<IfModInstalled name="ebwizardry">
+
+<!-- Starting Configuration for Custom Ore Generation. -->
+<ConfigSection>
+
+  <!-- Setup Screen Configuration -->
+  <ConfigSection>
+      <OptionDisplayGroup name='groupEBWizardry' displayName='EB Wizardry' displayState='shown'>
+        <Description>
+          Distribution options for EB Wizardry Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableEBWizardry' displayName='Handle EB Wizardry Gen?' default='true' displayState='shown_dynamic' displayGroup='groupEBWizardry'>
+        <Description> Should Custom Ore Generation handle EB Wizardry ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle EB Wizardry ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='EB Wizardry ores will be handled by Minecraft directly.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpEBWizardry' displayName='Use EB Wizardry Cleanup?' default='true' displayState=':= if(?enableEBWizardry, "shown", "hidden")' displayGroup='groupEBWizardry'>
+	  <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of EB Wizardry ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. 
+	  </Description>
+      <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up EB Wizardry ores.'/>
+      <Choice value=':= ?false' displayValue='No' description='EB Wizardry ores do not need to be cleaned up by a substitution pass.'/>
+	  </OptionChoice>
+
+    <!-- Arcane Crystal Configuration UI Starting -->
+    <ConfigSection>
+      <OptionChoice name='ebwzArcaneCrystalDist' default='SparseVeins' displayState=':= if(?enableEBWizardry, "shown", "hidden")' displayGroup='groupEBWizardry'>
+        <Description> Controls how Arcane Crystal is generated </Description>
+        <DisplayName>Vanilla Arcane Crystal</DisplayName>
+        <IfCondition condition=':= (?blockExists("ebwizardry:crystal_ore"))'>
+
+        <Choice value='Geodes' displayValue='Geodes'>
+          <Description>
+            Large stone-shelled geodes filled with ore and crystals.
+          </Description>
+        </Choice>
+        </IfCondition>
+
+        <IfCondition condition=':= (?blockExists("ebwizardry:crystal_ore"))'>
+
+        <Choice value='SparseVeins' displayValue='Sparse Veins'>
+          <Description>
+            Large veins filled very lightly  with ore.
+          </Description>
+        </Choice>
+        </IfCondition>
+
+        <IfCondition condition=':= (?blockExists("ebwizardry:crystal_ore"))'>
+
+        <Choice value='Vanilla' displayValue='Vanilla'>
+          <Description>
+            Simulates Vanilla Minecraft.
+          </Description>
+        </Choice>
+        </IfCondition>
+
+        <Choice value='none' displayValue='None' description='Arcane Crystal is not generated in the world.'/>
+      </OptionChoice>
+      <OptionNumeric name='ebwzArcaneCrystalFreq' default='2'  min='0' max='5' displayState=':= if(?enableEBWizardry, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEBWizardry'>
+        <Description> Frequency multiplier for Vanilla Arcane Crystal distributions </Description>
+        <DisplayName>Vanilla Arcane Crystal Freq.</DisplayName>
+      </OptionNumeric>
+      <OptionNumeric name='ebwzArcaneCrystalSize' default='1'  min='0' max='5' displayState=':= if(?enableEBWizardry, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupEBWizardry'>
+        <Description> Size multiplier for Vanilla Arcane Crystal distributions </Description>
+        <DisplayName>Vanilla Arcane Crystal Size</DisplayName>
+      </OptionNumeric>
+    </ConfigSection>
+    <!-- Arcane Crystal Configuration UI Complete -->
+  <!-- Setup Screen Complete -->
+</ConfigSection>
+	
+  <IfCondition condition=':= ?enableEBWizardry'>
+
+    <!-- Overworld Setup Beginning -->
+
+    <IfCondition condition=':= ?COGActive'>
+
+	<IfCondition condition=':= ?cleanUpEBWizardry'>
+        <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+          <Substitute name='ebwzOverworldBlockSubstitute' block='minecraft:stone'>
+            <Description>
+              Replace vanilla-generated ore clusters.
+            </Description>
+            <Comment>
+              The global option deferredPopulationRange  must be large
+              enough to catch all ore  clusters (>= 32).
+            </Comment>
+            <Replaces block='ebwizardry:crystal_ore' weight='1.0' />
+          </Substitute>
+        </IfCondition>
+      </IfCondition>
+
+      <!-- Original "Overworld" Block Removal Complete -->
+
+      <!-- Adding blocks -->
+
+      <!-- Begin Arcane Crystal Generation -->
+
+        <!-- Starting Geodes Preset for Arcane Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= ebwzArcaneCrystalDist = "Geodes"'>
+		  	<!-- Shell layer of geode. -->
+            <Veins name='ebwzArcaneCrystalGeodeShell'  inherits='PresetSmallDeposits' seed='0x9868' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60000000' drawBoundBox='false' boundBoxColor='0x60000000'>
+              <Description>
+                Multi-layered deposit.  On the  outside is a shell,
+                usually made  of some form of stone.  Within  this
+                shell is sprinkled ores.  Inside both is an air pocket
+                from  which the enterprising miner can  look for the
+                contained ores.
+              </Description>
+              <OreBlock block='minecraft:stone' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Replaces block='minecraft:dirt' weight='1.0' />
+              <Replaces block='minecraft:gravel' weight='1.0' />
+              <ReplacesOre block='sand' weight='1.0' />
+              <Replaces block='minecraft:lava' weight='1.0' />
+              <Replaces block='minecraft:water' weight='1.0' />
+              <Replaces block='minecraft:air' weight='1.0' />
+              <Biome name='.*' />
+              <Setting name='MotherlodeFrequency' avg=':= _default_ * 0.25 * ebwzArcaneCrystalFreq ' range=':= _default_ * 0.25 * ebwzArcaneCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= _default_ * 8  * ebwzArcaneCrystalSize ' range=':= _default_ * 2 * ebwzArcaneCrystalSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 30 ' range=':= 10 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+			<!-- Ore layer of geode. -->
+			<Veins name='ebwzArcaneCrystalGeodeOre'  inherits='ebwzArcaneCrystalGeodeShell' branchType='Bezier' seed='0x9868' drawWireframe=':= drawWireframes' wireframeColor='0x60000000' drawBoundBox='false' boundBoxColor='0x60000000'>
+              <Description>
+                Multi-layered deposit. This forms the ore layer,
+                just inside the shell is sprinkled ores. 
+              </Description>
+              <OreBlock block='ebwizardry:crystal_ore' weight='0.333' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Replaces block='minecraft:dirt' weight='1.0' />
+              <Setting name='MotherlodeSize' avg=':= _default_ * 0.8' range=':= _default_ * 0.8' type='uniform' />
+			</Veins>
+			<!-- Crystal layer of geode. -->
+            <Veins name='ebwzArcaneCrystalGeodeCrystals'  inherits='ebwzArcaneCrystalGeodeOre' branchType='Bezier' seed='0x9868' drawWireframe=':= drawWireframes' wireframeColor='0x60000000' drawBoundBox='false' boundBoxColor='0x60000000'>
+              <Description>
+                Multi-layered deposit. This forms the crystal layer,
+				made of protruding crystals.
+              </Description>
+              <OreBlock block='thaumcraft:crystal_aer:2' weight='0.167' />
+			  <OreBlock block='thaumcraft:crystal_ignis:2' weight='0.167' />
+			  <OreBlock block='thaumcraft:crystal_aqua:2' weight='0.167' />
+			  <OreBlock block='thaumcraft:crystal_terra:2' weight='0.167' />
+			  <OreBlock block='thaumcraft:crystal_ordo:2' weight='0.167' />
+			  <OreBlock block='thaumcraft:crystal_perditio:2' weight='0.167' />
+              <Replaces block='ebwizardry:crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Setting name='MotherlodeSize' avg=':= _default_ * 0.8' range=':= _default_ * 0.8' type='uniform' />
+            </Veins>
+			<!-- Clearing remains of crystal layer of geode. -->
+			<Veins name='ebwzArcaneCrystalGeodeClear'  inherits='ebwzArcaneCrystalGeodeCrystals' branchType='Bezier' seed='0x9868' drawWireframe=':= drawWireframes' wireframeColor='0x60000000' drawBoundBox='false' boundBoxColor='0x60000000'>
+              <Description>
+                Multi-layered deposit. This clears the remainder of
+				the crystal layer.
+              </Description>
+              <OreBlock block='minecraft:air' weight='1.0' />
+              <Replaces block='ebwizardry:crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Setting name='MotherlodeSize' avg=':= _default_ * 1.0' range=':= _default_ * 1.0' type='uniform' />
+            </Veins>
+			<!-- Hollow interior of geode. -->
+			<Veins name='ebwzArcaneCrystalGeodeBubble'  inherits='ebwzArcaneCrystalGeodeClear' branchType='Bezier' seed='0x9868' drawWireframe=':= drawWireframes' wireframeColor='0x60000000' drawBoundBox='false' boundBoxColor='0x60000000'>
+              <Description>
+                Multi-layered deposit. This forms the hollow
+				interior of the geode.
+              </Description>
+              <OreBlock block='minecraft:air' weight='1.0' />
+			  <Replaces block='thaumcraft:crystal_aer:2' weight='1.0' />
+			  <Replaces block='thaumcraft:crystal_ignis:2' weight='1.0' />
+			  <Replaces block='thaumcraft:crystal_aqua:2' weight='1.0' />
+			  <Replaces block='thaumcraft:crystal_terra:2' weight='1.0' />
+			  <Replaces block='thaumcraft:crystal_ordo:2' weight='1.0' />
+			  <Replaces block='thaumcraft:crystal_perditio:2' weight='1.0' />
+              <Replaces block='ebwizardry:crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Setting name='MotherlodeSize' avg=':= _default_ * 0.8' range=':= _default_ * 0.8' type='uniform' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Geodes Preset for Arcane Crystal is complete. -->
+
+
+        <!-- Starting SparseVeins Preset for Arcane Crystal. -->
+        <ConfigSection>
+          <IfCondition condition=':= ebwzArcaneCrystalDist = "SparseVeins"'>
+            <Veins name='ebwzArcaneCrystalVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe=':= drawWireframes' wireframeColor='0x60831C20' drawBoundBox='false' boundBoxColor='0x60831C20'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='ebwizardry:crystal_ore' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='bamboo_forest' />
+              <Biome name='cherry_blossom_grove' />
+              <Biome name='oasis' />
+              <Biome name='jungle' />
+              <Biome name='mutated_jungle' />
+              <Biome name='mutated_jungle_edge' />
+              <Biome name='boreal_forest' />
+              <Biome name='coniferous_forest' />
+              <Biome name='grove' />
+              <Biome name='mushroom_island_shore' />
+              <Biome name='lavender_fields' />
+              <Biome name='eucalyptus_forest' />
+              <Biome name='rainforest' />
+              <Biome name='jungle_edge' />
+              <Biome name='temperate_rainforest' />
+              <Biome name='tropical_rainforest' />
+              <Biome name='jungle_hills' />
+              <Biome name='overgrown_cliffs' />
+              <Biome name='sacred_springs' />
+              <Biome name='lush_desert' />
+              <Biome name='mystic_grove' />
+              <Biome name='mutated_forest' />
+              <Biome name='magical_forest' />
+              <Biome name='roofed_forest' />
+              <Biome name='mushroom_island' />
+              <Biome name='tropical_island' />
+              <Biome name='flower_island' />
+              <Biome name='eerie' />
+              <Biome name='ominous_woods' />
+              <Setting name='MotherlodeFrequency' avg=':= 1.838 * _default_ * ebwzArcaneCrystalFreq ' range=':= 1.838 * _default_ * ebwzArcaneCrystalFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * ebwzArcaneCrystalSize ' range=':= 0 * _default_ * ebwzArcaneCrystalSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 26 ' range=':= 26 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.356 * _default_ ' range=':= 1.356 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ebwzArcaneCrystalSize ' range=':= _default_ * ebwzArcaneCrystalSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.164 * _default_ * ebwzArcaneCrystalSize ' range=':= 1.164 * _default_ * ebwzArcaneCrystalSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Arcane Crystal is complete. -->
+
+
+      <!-- Starting Vanilla Preset for Arcane Crystal. -->
+      <ConfigSection>
+        <IfCondition condition=':= ebwzArcaneCrystalDist = "Vanilla"'>
+          <StandardGen name='ebwzArcaneCrystalStandard'  inherits='PresetStandardGen' drawWireframe=':= drawWireframes' wireframeColor='0x606CE391' drawBoundBox='false' boundBoxColor='0x606CE391'>
+            <Description>
+              A master preset for standardgen ore  distributions.
+            </Description>
+            <OreBlock block='ebwizardry:crystal_ore' weight='1.0' />
+            <ReplacesOre block='stone' weight='1.0' />
+            <BiomeType name='.*'  />
+            <Setting name='Size' avg=':= 1.333 * oreSize * ebwzArcaneCrystalSize ' range=':= 0.67 * oreSize * ebwzArcaneCrystalSize ' type='normal' />
+            <Setting name='Frequency' avg=':= 0.667 * oreFreq * ebwzArcaneCrystalFreq ' range=':= 0.33 * oreFreq * ebwzArcaneCrystalFreq ' type='normal' scaleTo='base' />
+            <Setting name='Height' avg=':= 16 ' range=':= 12 ' type='normal' scaleTo='base' />
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+          </StandardGen>
+        </IfCondition>
+      </ConfigSection>
+      <!-- Vanilla Preset for Arcane Crystal is complete. -->
+
+      <!-- End Arcane Crystal Generation -->
+
+      <!-- Finished adding blocks -->
+	 </IfCondition> 
+    <!-- Overworld Setup Complete -->
+
+  </IfCondition>
+
+  </ConfigSection>
+
+<!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "EBWizardry" mod is now configured. -->
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

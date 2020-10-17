@@ -301,7 +301,7 @@
               <Biome name='ominous_woods' />
 			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * thm6AmberFreq ' range=':= 0.270 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
-              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6AmberSize ' range=':= 0 * _default_ * thm6AmberSize ' type='normal' />
+              <Setting name='MotherlodeSize' avg=':= 1.0 * _default_ * thm6AmberSize ' range=':= 1.0 * _default_ * thm6AmberSize ' type='normal' />
               <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 13 ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -323,7 +323,7 @@
               <OreBlock block='minecraft:water' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='thaumcraft:ore_amber' weight='1.0' />
-              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6AmberSize  * 0.5 ' range=':= 0 * _default_ * thm6AmberSize  * 0.5 ' type='normal' />
+              <Setting name='MotherlodeSize' avg=':= _default_ * thm6AmberSize  * 0.5 ' range=':= _default_ * thm6AmberSize  * 0.5 ' type='normal' />
               <Setting name='SegmentRadius' avg=':= 0.721 * _default_ * thm6AmberSize  * 0.5 ' range=':= 0.721 * _default_ * thm6AmberSize  * 0.5 ' type='normal' />
               <Setting name='OreDensity' avg=':= 1.0 ' range=':= 0 ' type='normal' />
             </Veins>
