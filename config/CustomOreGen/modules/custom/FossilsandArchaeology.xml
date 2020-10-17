@@ -73,7 +73,7 @@
 
           <Choice value='none' displayValue='None' description='Fossils is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='fsarFossilsFreq' default='1'  min='0' max='5' displayState=':= if(?enableFossilsandArchaeology, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFossilsandArchaeology'>
+        <OptionNumeric name='fsarFossilsFreq' default='0.6'  min='0' max='5' displayState=':= if(?enableFossilsandArchaeology, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFossilsandArchaeology'>
           <Description> Frequency multiplier for Fossils and Archaeology Fossils distributions </Description>
           <DisplayName>Fossils and Archaeology Fossils Freq.</DisplayName>
         </OptionNumeric>
@@ -321,7 +321,6 @@
               </Description>
               <OreBlock block='fossil:permafrost' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
               <BiomeType name='Snowy'  />
               <Setting name='CloudRadius' avg=':= 0.817 * _default_ * fsarPermafrostSize ' range=':= 0.817 * _default_ * fsarPermafrostSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.817 * _default_ * fsarPermafrostSize ' range=':= 0.817 * _default_ * fsarPermafrostSize ' type='normal' scaleTo='base' />
@@ -354,7 +353,6 @@
               </Description>
               <OreBlock block='fossil:permafrost' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
               <BiomeType name='Snowy'  />
               <Setting name='MotherlodeFrequency' avg=':= 2.450 * _default_ * fsarPermafrostFreq ' range=':= 2.450 * _default_ * fsarPermafrostFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * fsarPermafrostSize ' range=':= 0 * _default_ * fsarPermafrostSize ' type='normal' />
@@ -387,7 +385,6 @@
               </Description>
               <OreBlock block='fossil:permafrost' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
-              <Biome name='.*'  />
               <BiomeType name='Snowy'  />
               <Setting name='Size' avg=':= 2.667 * oreSize * fsarPermafrostSize ' range=':= 1.33 * oreSize * fsarPermafrostSize ' type='normal' />
               <Setting name='Frequency' avg=':= 5.333 * oreFreq * fsarPermafrostFreq ' range=':= 2.67 * oreFreq * fsarPermafrostFreq ' type='normal' scaleTo='base' />

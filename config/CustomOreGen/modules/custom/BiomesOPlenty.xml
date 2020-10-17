@@ -41,7 +41,7 @@
 
       <!-- Amethyst Configuration UI Starting -->
       <ConfigSection>
-        <OptionChoice name='boplAmethystDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionChoice name='boplAmethystDist' default='Vanilla' displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Amethyst is generated </Description>
           <DisplayName>Biomes O Plenty Amethyst</DisplayName>
           <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore")) &amp; (?blockExists("minecraft:lava")) '>
@@ -90,7 +90,7 @@
         <OptionChoice name='boplRubyDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Ruby is generated </Description>
           <DisplayName>Biomes O Plenty Ruby</DisplayName>
-          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:1")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:1")) &amp; (?blockExists("embers:alchemical_redstone")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -119,7 +119,7 @@
 
           <Choice value='none' displayValue='None' description='Ruby is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='boplRubyFreq' default='1'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionNumeric name='boplRubyFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Frequency multiplier for Biomes O Plenty Ruby distributions </Description>
           <DisplayName>Biomes O Plenty Ruby Freq.</DisplayName>
         </OptionNumeric>
@@ -136,7 +136,7 @@
         <OptionChoice name='boplPeridotDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Peridot is generated </Description>
           <DisplayName>Biomes O Plenty Peridot</DisplayName>
-          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:2")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:2")) &amp; (?blockExists("zettaindustries:sulfurousacid")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -165,7 +165,7 @@
 
           <Choice value='none' displayValue='None' description='Peridot is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='boplPeridotFreq' default='1'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionNumeric name='boplPeridotFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Frequency multiplier for Biomes O Plenty Peridot distributions </Description>
           <DisplayName>Biomes O Plenty Peridot Freq.</DisplayName>
         </OptionNumeric>
@@ -182,7 +182,7 @@
         <OptionChoice name='boplTopazDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Topaz is generated </Description>
           <DisplayName>Biomes O Plenty Topaz</DisplayName>
-          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:3")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:3")) &amp; (?blockExists("adpother:polluted_water")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -211,7 +211,7 @@
 
           <Choice value='none' displayValue='None' description='Topaz is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='boplTopazFreq' default='1'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionNumeric name='boplTopazFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Frequency multiplier for Biomes O Plenty Topaz distributions </Description>
           <DisplayName>Biomes O Plenty Topaz Freq.</DisplayName>
         </OptionNumeric>
@@ -228,7 +228,7 @@
         <OptionChoice name='boplTanzaniteDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Tanzanite is generated </Description>
           <DisplayName>Biomes O Plenty Tanzanite</DisplayName>
-          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:4")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:4")) &amp; (?blockExists("cyclicmagic:crystal")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -257,7 +257,7 @@
 
           <Choice value='none' displayValue='None' description='Tanzanite is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='boplTanzaniteFreq' default='1'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionNumeric name='boplTanzaniteFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Frequency multiplier for Biomes O Plenty Tanzanite distributions </Description>
           <DisplayName>Biomes O Plenty Tanzanite Freq.</DisplayName>
         </OptionNumeric>
@@ -274,7 +274,7 @@
         <OptionChoice name='boplMalachiteDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Malachite is generated </Description>
           <DisplayName>Biomes O Plenty Malachite</DisplayName>
-          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:5")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:5")) &amp; (?blockExists("biomesoplenty:hot_spring_water")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -303,7 +303,7 @@
 
           <Choice value='none' displayValue='None' description='Malachite is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='boplMalachiteFreq' default='1'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionNumeric name='boplMalachiteFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Frequency multiplier for Biomes O Plenty Malachite distributions </Description>
           <DisplayName>Biomes O Plenty Malachite Freq.</DisplayName>
         </OptionNumeric>
@@ -320,7 +320,7 @@
         <OptionChoice name='boplSapphireDist'  displayState=':= if(?enableBiomesOPlenty, "shown", "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Controls how Sapphire is generated </Description>
           <DisplayName>Biomes O Plenty Sapphire</DisplayName>
-          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:6")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("BiomesOPlenty:gem_ore:6")) &amp; (?blockExists("biomesoplenty:poison")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -349,7 +349,7 @@
 
           <Choice value='none' displayValue='None' description='Sapphire is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='boplSapphireFreq' default='1'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
+        <OptionNumeric name='boplSapphireFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableBiomesOPlenty, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupBiomesOPlenty'>
           <Description> Frequency multiplier for Biomes O Plenty Sapphire distributions </Description>
           <DisplayName>Biomes O Plenty Sapphire Freq.</DisplayName>
         </OptionNumeric>
@@ -507,7 +507,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='boplRubyVeinsPipe'  inherits='boplRubyVeins' branchType='Bezier' seed='0x706D' drawWireframe=':= drawWireframes' wireframeColor='0x60C60031' drawBoundBox='false' boundBoxColor='0x60C60031'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='embers:alchemical_redstone' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='BiomesOPlenty:gem_ore:1' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplRubySize  * 0.5 ' range=':= 0 * _default_ * boplRubySize  * 0.5 ' type='normal' />
@@ -689,7 +689,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='boplPeridotVeinsPipe'  inherits='boplPeridotVeins' branchType='Bezier' seed='0xA6AC' drawWireframe=':= drawWireframes' wireframeColor='0x60076855' drawBoundBox='false' boundBoxColor='0x60076855'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='zettaindustries:sulfurousacid' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='BiomesOPlenty:gem_ore:2' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplPeridotSize  * 0.5 ' range=':= 0 * _default_ * boplPeridotSize  * 0.5 ' type='normal' />
@@ -815,7 +815,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='boplTopazVeinsPipe'  inherits='boplTopazVeins' branchType='Bezier' seed='0xB7E1' drawWireframe=':= drawWireframes' wireframeColor='0x60D95A03' drawBoundBox='false' boundBoxColor='0x60D95A03'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='adpother:polluted_water' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='BiomesOPlenty:gem_ore:3' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplTopazSize  * 0.5 ' range=':= 0 * _default_ * boplTopazSize  * 0.5 ' type='normal' />
@@ -943,7 +943,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='boplTanzaniteVeinsPipe'  inherits='boplTanzaniteVeins' branchType='Bezier' seed='0xA51A' drawWireframe=':= drawWireframes' wireframeColor='0x607701B9' drawBoundBox='false' boundBoxColor='0x607701B9'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='cyclicmagic:crystal' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='BiomesOPlenty:gem_ore:4' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplTanzaniteSize  * 0.5 ' range=':= 0 * _default_ * boplTanzaniteSize  * 0.5 ' type='normal' />
@@ -1073,7 +1073,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='boplMalachiteVeinsPipe'  inherits='boplMalachiteVeins' branchType='Bezier' seed='0x5A38' drawWireframe=':= drawWireframes' wireframeColor='0x60109D81' drawBoundBox='false' boundBoxColor='0x60109D81'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='biomesoplenty:hot_spring_water' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='BiomesOPlenty:gem_ore:5' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplMalachiteSize  * 0.5 ' range=':= 0 * _default_ * boplMalachiteSize  * 0.5 ' type='normal' />
@@ -1182,6 +1182,8 @@
               <Biome name='hot_springs'  />
               <Biome name='kelp_forest'  />
               <Biome name='mangrove'  />
+			  <Biome name='ocean'  />
+              <Biome name='deep_ocean'  />
               <Biome name='sacred_springs'  />
               <Biome name='tropics'  />
 			  <Biome name='volcanic_island' />
@@ -1205,7 +1207,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='boplSapphireVeinsPipe'  inherits='boplSapphireVeins' branchType='Bezier' seed='0x7474' drawWireframe=':= drawWireframes' wireframeColor='0x603494C3' drawBoundBox='false' boundBoxColor='0x603494C3'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='biomesoplenty:poison' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='BiomesOPlenty:gem_ore:6' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * boplSapphireSize  * 0.5 ' range=':= 0 * _default_ * boplSapphireSize  * 0.5 ' type='normal' />

@@ -45,7 +45,7 @@
         <OptionChoice name='thm6AmberDist'  displayState=':= if(?enableThaumcraft6, "shown", "hidden")' displayGroup='groupThaumcraft6'>
           <Description> Controls how Amber is generated </Description>
           <DisplayName>Thaumcraft 6 Amber</DisplayName>
-          <IfCondition condition=':= (?blockExists("thaumcraft:ore_amber")) &amp; (?blockExists("minecraft:lava")) '>
+          <IfCondition condition=':= (?blockExists("thaumcraft:ore_amber")) &amp; (?blockExists("minecraft:water")) '>
 
           <Choice value='PipeVeins' displayValue='Pipe Veins'>
             <Description>
@@ -74,7 +74,7 @@
 
           <Choice value='none' displayValue='None' description='Amber is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='thm6AmberFreq' default='1'  min='0' max='5' displayState=':= if(?enableThaumcraft6, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupThaumcraft6'>
+        <OptionNumeric name='thm6AmberFreq' default='2.7'  min='0' max='5' displayState=':= if(?enableThaumcraft6, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupThaumcraft6'>
           <Description> Frequency multiplier for Thaumcraft 6 Amber distributions </Description>
           <DisplayName>Thaumcraft 6 Amber Freq.</DisplayName>
         </OptionNumeric>
@@ -302,7 +302,7 @@
 			  <Biome name='volcanic_island' />
               <Setting name='MotherlodeFrequency' avg=':= 0.270 * _default_ * thm6AmberFreq ' range=':= 0.270 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6AmberSize ' range=':= 0 * _default_ * thm6AmberSize ' type='normal' />
-              <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 13 ' type='normal' scaleTo='base' />
               <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
@@ -320,7 +320,7 @@
 
             <!-- Configuring contained material. -->
             <Veins name='thm6AmberVeinsPipe'  inherits='thm6AmberVeins' branchType='Bezier' seed='0x1FEF' drawWireframe=':= drawWireframes' wireframeColor='0x60FE9D1B' drawBoundBox='false' boundBoxColor='0x60FE9D1B'>
-              <OreBlock block='minecraft:lava' weight='1.0' />
+              <OreBlock block='minecraft:water' weight='1.0' />
               <ReplacesOre block='stone' weight='1.0' />
               <Replaces block='thaumcraft:ore_amber' weight='1.0' />
               <Setting name='MotherlodeSize' avg=':= 0 * _default_ * thm6AmberSize  * 0.5 ' range=':= 0 * _default_ * thm6AmberSize  * 0.5 ' type='normal' />
@@ -382,11 +382,11 @@
               <Setting name='CloudRadius' avg=':= 0.449 * _default_ * thm6AmberSize ' range=':= 0.449 * _default_ * thm6AmberSize ' type='normal' />
               <Setting name='CloudThickness' avg=':= 0.449 * _default_ * thm6AmberSize ' range=':= 0.449 * _default_ * thm6AmberSize ' type='normal' scaleTo='base' />
               <Setting name='DistributionFrequency' avg=':= 0.202 * _default_ * thm6AmberFreq ' range=':= 0.202 * _default_ * thm6AmberFreq ' type='normal' scaleTo='base' />
-              <Setting name='CloudHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 40 ' range=':= 13 ' type='normal' scaleTo='base' />
               <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= 0 * _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreDensity' avg=':= 1.0' range=':= 1.0' type='normal' scaleTo='base' />
               <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
               <Veins name='thm6AmberHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe=':= drawWireframes' wireframeColor='0x60FE9D1B' drawBoundBox='false' boundBoxColor='0x60FE9D1B'>
