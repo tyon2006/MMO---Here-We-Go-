@@ -1,28 +1,26 @@
 {
-	"name" : "demo:spawners",
+	"name" : "dwarf:spawners",
 	"spawners" : [
 		{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "minecraft:vindication_illager"},
-				{"name" : "minecraft:witch"},
-				{"name" : "minecraft:zombie_villager"}
+				{"name" : "embers:ancient_golem"}
 			],
-			"level" : [0, 1]
+			"level" : [0, 1, 2, 3, 4]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
-				{"name" : "minecraft:creeper", "nbt" : "{powered:1}"}
+				{"name" : "embers:ancient_golem"}
 			],
-			"level" : [0, 1]
+			"level" : [0, 1, 2, 3, 4]
 		},
 		{
 			"type" : "SKELETON",
 			"potentials" : [
-				{"name" : "minecraft:wither_skeleton"}
+				{"name" : "embers:ancient_golem"}
 			],
-			"level" : [0, 1]
+			"level" : [0, 1, 2, 3, 4]
 		}
 	]
 }
