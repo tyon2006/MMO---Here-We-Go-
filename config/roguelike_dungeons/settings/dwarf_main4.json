@@ -1,0 +1,24 @@
+{
+	"name": "dwarf:main4",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Alps",
+			"AlpsFoothills",
+			"Crag",
+			"Extreme Hills+ M",
+			"RedwoodForestEdge",
+			"Shield",
+			"Snowy Forest"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout4",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme4",
+		"dwarf:spawners",
+		"demo:loot"
+	]
+}

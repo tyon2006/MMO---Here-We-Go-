@@ -1,0 +1,21 @@
+{
+	"name": "dwarf:main1",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Highland",
+			"Mountain",
+			"Mega Spruce Taiga",
+			"Taiga M"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout1",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme1",
+		"dwarf:spawners",
+		"demo:loot"
+	]
+}

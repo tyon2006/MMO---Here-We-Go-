@@ -1,0 +1,8 @@
+{
+	"name" : "dwarf:layout1",
+	"num_rooms" : [10, 0, 0, 0, 0],
+	"scatter" : [12, 1, 1, 1, 1],
+	"layouts" : [
+		{"level" : [0, 1, 2, 3, 4], "type" : "CLASSIC"}
+	]
+}

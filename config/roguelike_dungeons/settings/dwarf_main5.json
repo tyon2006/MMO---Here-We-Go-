@@ -1,14 +1,20 @@
 {
-	"name" : "dwarf:main5",
-	"exclusive" : true,
-	"criteria" : {
-		"biomeTypes" : [
-			"PLAINS"
+	"name": "dwarf:main5",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"SnowyTundra",
+			"Tundra"
 		]
 	},
-	"inherit" : [
+	"inherit": [
 		"dwarf:tower",
-		"dwarf:layout",
+		"dwarf:layout5",
 		"dwarf:rooms",
 		"dwarf:segments",
 		"dwarf:theme5",

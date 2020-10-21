@@ -1,0 +1,22 @@
+{
+	"name": "dwarf:main2",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Cold Desert",
+			"Extreme Hills",
+			"Extreme Hills Edge",
+			"Snowy Coniferous Forest",
+			"TaigaHills"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout2",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme2",
+		"dwarf:spawners",
+		"demo:loot"
+	]
+}

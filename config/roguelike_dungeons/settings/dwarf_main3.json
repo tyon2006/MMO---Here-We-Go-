@@ -1,0 +1,24 @@
+{
+	"name": "dwarf:main3",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Extreme Hills+",
+			"Ice Plains",
+			"Maple Woods",
+			"MountainFoothills",
+			"Extreme Hills M",
+			"Seasonal Forest",
+			"Volcanic Island"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout3",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme3",
+		"dwarf:spawners",
+		"demo:loot"
+	]
+}
