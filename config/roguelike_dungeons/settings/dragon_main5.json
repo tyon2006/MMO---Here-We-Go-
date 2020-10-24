@@ -1,0 +1,24 @@
+{
+	"name": "dragon:main5",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"SnowyTundra",
+			"Tundra"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout5",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme5",
+		"dragon:spawners",
+		"demo:loot"
+	]
+}
