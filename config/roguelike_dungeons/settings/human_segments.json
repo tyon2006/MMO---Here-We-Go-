@@ -1,0 +1,23 @@
+{
+	"name" : "human:segments",
+	"segments" : [
+		{"level": [0,1,2,3,4], "type" : "CHEST", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "WALL", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "SHELF", "weight" : 1},
+		{"level": [0,1,2,3], "type" : "INSET", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "DOOR", "weight" : 5},
+		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 2},
+		{"level": [0,1,2], "type" : "LAMP", "weight" : 1},
+		{"level": [1,2,3,4], "type" : "ARROW", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 2},		
+		{"level": [0,1,2,3,4], "type" : "WHEAT", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "BOOKS", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "MINESHAFT", "weight" : 2},
+		{"level": [0,1,2,3,4], "type" : "FIREPLACE", "weight" : 1},
+		{"level": [0], "type" : "SPAWNER", "weight" : 1},
+		{"level": [1], "type" : "SPAWNER", "weight" : 2},
+		{"level": [2], "type" : "SPAWNER", "weight" : 3},
+		{"level": [3], "type" : "SPAWNER", "weight" : 4},
+		{"level": [4], "type" : "SPAWNER", "weight" : 5}
+	]
+}

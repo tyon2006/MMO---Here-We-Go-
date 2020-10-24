@@ -1,0 +1,131 @@
+{
+	"name" : "human:spawners",
+	"spawners" : [
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "idk:pillager"},
+				{"name" : "illagers_plus:archer"},
+				{"name" : "idk:potionbud"},
+				{"name" : "idk:mutt"}
+			],
+			"level" : [0]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "idk:pillager"},
+				{"name" : "illagers_plus:archer"},
+				{"name" : "idk:potionbud"},
+				{"name" : "idk:mutt"}
+			],
+			"level" : [0]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "idk:pillager"},
+				{"name" : "illagers_plus:archer"},
+				{"name" : "idk:potionbud"},
+				{"name" : "idk:mutt"}
+			],
+			"level" : [0]
+		},
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"},
+				{"name" : "specialmobs:firecreeper"},
+				{"name" : "specialmobs:wildfireblaze"}
+			],
+			"level" : [1]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"},
+				{"name" : "specialmobs:firecreeper"},
+				{"name" : "specialmobs:wildfireblaze"}
+			],
+			"level" : [1]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"},
+				{"name" : "specialmobs:firecreeper"},
+				{"name" : "specialmobs:wildfireblaze"}
+			],
+			"level" : [1]
+		},
+				{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"},
+				{"name" : "specialmobs:firecreeper"},
+				{"name" : "specialmobs:wildfireblaze"}
+			],
+			"level" : [2]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"}
+			],
+			"level" : [2]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"}
+			],
+			"level" : [2]
+		},
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"},
+				{"name" : "specialmobs:firecreeper"},
+				{"name" : "specialmobs:wildfireblaze"}
+			],
+			"level" : [3]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"}
+			],
+			"level" : [3]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"}
+			],
+			"level" : [3]
+		},
+				{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"},
+				{"name" : "specialmobs:firecreeper"},
+				{"name" : "specialmobs:wildfireblaze"}
+			],
+			"level" : [4]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"}
+			],
+			"level" : [4]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "embers:ancient_golem"}
+			],
+			"level" : [4]
+		}
+	]
+}

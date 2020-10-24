@@ -1,0 +1,24 @@
+{
+	"name": "human:main5",
+	"exclusive": true,
+	"criteria": {
+		"biomeTypes": [
+			"Glacier",
+			"Ice Mountains",
+			"Ice Plains Spikes",
+			"Redwood Taiga Hills M",
+			"RedwoodForest",
+			"SnowyTundra",
+			"Tundra"
+		]
+	},
+	"inherit": [
+		"human:tower",
+		"human:layout5",
+		"human:rooms",
+		"human:segments",
+		"human:theme5",
+		"human:spawners",
+		"demo:loot"
+	]
+}
