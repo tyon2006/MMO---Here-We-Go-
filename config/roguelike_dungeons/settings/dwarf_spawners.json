@@ -6,8 +6,7 @@
 			"potentials" : [
 				{"name" : "idk:pillager"},
 				{"name" : "illagers_plus:archer"},
-				{"name" : "idk:potionbud"},
-				{"name" : "idk:mutt"}
+				{"name" : "idk:potionbud"}
 			],
 			"level" : [0]
 		},
@@ -16,8 +15,7 @@
 			"potentials" : [
 				{"name" : "idk:pillager"},
 				{"name" : "illagers_plus:archer"},
-				{"name" : "idk:potionbud"},
-				{"name" : "idk:mutt"}
+				{"name" : "idk:potionbud"}
 			],
 			"level" : [0]
 		},
@@ -26,8 +24,7 @@
 			"potentials" : [
 				{"name" : "idk:pillager"},
 				{"name" : "illagers_plus:archer"},
-				{"name" : "idk:potionbud"},
-				{"name" : "idk:mutt"}
+				{"name" : "idk:potionbud"}
 			],
 			"level" : [0]
 		},
@@ -61,15 +58,17 @@
 				{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "grimoireofgaia:orc"},
+				{"name" : "grimoireofgaia:goblin"},
+				{"name" : "embers:ancient_golem"}
 			],
 			"level" : [2]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
+				{"name" : "grimoireofgaia:orc"},
+				{"name" : "grimoireofgaia:goblin"},
 				{"name" : "embers:ancient_golem"}
 			],
 			"level" : [2]
@@ -77,6 +76,8 @@
 		{
 			"type" : "SKELETON",
 			"potentials" : [
+				{"name" : "grimoireofgaia:orc"},
+				{"name" : "grimoireofgaia:goblin"},
 				{"name" : "embers:ancient_golem"}
 			],
 			"level" : [2]
@@ -84,15 +85,19 @@
 		{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "iceandfire:if_troll"},
+				{"name" : "primitivemobs:trollager"},
+				{"name" : "mod_lavacow:foglet"},
+				{"name" : "embers:ancient_golem"}
 			],
 			"level" : [3]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
+				{"name" : "iceandfire:if_troll"},
+				{"name" : "primitivemobs:trollager"},
+				{"name" : "mod_lavacow:foglet"},
 				{"name" : "embers:ancient_golem"}
 			],
 			"level" : [3]
@@ -100,6 +105,9 @@
 		{
 			"type" : "SKELETON",
 			"potentials" : [
+				{"name" : "iceandfire:if_troll"},
+				{"name" : "primitivemobs:trollager"},
+				{"name" : "mod_lavacow:foglet"},
 				{"name" : "embers:ancient_golem"}
 			],
 			"level" : [3]
@@ -107,23 +115,21 @@
 				{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "rats:plague_beast"}
 			],
 			"level" : [4]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "rats:plague_beast"}
 			],
 			"level" : [4]
 		},
 		{
 			"type" : "SKELETON",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "rats:plague_beast"}
 			],
 			"level" : [4]
 		}

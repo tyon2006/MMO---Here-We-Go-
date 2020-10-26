@@ -2,7 +2,7 @@
 	"name": "dwarf:main2",
 	"exclusive": true,
 	"criteria": {
-		"biomeTypes": [
+		"biomes": [
 			"Cold Desert",
 			"Extreme Hills",
 			"Extreme Hills Edge",

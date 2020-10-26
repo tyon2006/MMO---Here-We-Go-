@@ -12,6 +12,7 @@
 		{"level": [0,1,2,3], "type" : "BOOKS", "weight" : 1},
 		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 2},
 		{"level": [0,1,2,3,4], "type" : "TOMB", "weight" : 2},
+		{"level": [0,1,2,3,4], "type" : "MUSHROOM", "weight" : 1},
 		{"level": [1,2,3,4], "type" : "SILVERFISH", "weight" : 1},
 		{"level": [0,1,2,3,4], "type" : "ARROW", "weight" : 1},
 		{"level": [0], "type" : "SPAWNER", "weight" : 1},

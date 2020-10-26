@@ -1,0 +1,24 @@
+{
+	"name": "dragon:main2",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"JungleEdge",
+			"Lavender Fields",
+			"MushroomIsland",
+			"MushroomIslandShore",
+			"Mystic Grove",
+			"Rainforest",
+			"Sacred Springs"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout2",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme2",
+		"dragon:spawners",
+		"demo:loot"
+	]
+}

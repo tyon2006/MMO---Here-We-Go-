@@ -1,5 +1,5 @@
 {
-	"name" : "dwarf:layout4",
+	"name" : "human:layout4",
 	"num_rooms" : [10, 11, 12, 13, 0],
 	"scatter" : [12, 14, 15, 16, 1],
 	"layouts" : [

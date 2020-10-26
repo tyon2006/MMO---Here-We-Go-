@@ -1,22 +1,22 @@
 {
-	"name": "human:main5",
+	"name": "human:main1",
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Dead Swamp",
-			"DesertHills",
-			"Mesa Plateau F",
-			"Desert M",
-			"Quagmire",
-			"Wasteland"
+			"Dead Forest",
+			"Desert",
+			"Gravel Beach",
+			"Marsh",
+			"Mesa (Bryce)",
+			"Swampland"
 		]
 	},
 	"inherit": [
 		"human:tower",
-		"human:layout5",
+		"human:layout1",
 		"human:rooms",
 		"human:segments",
-		"human:theme5",
+		"human:theme1",
 		"human:spawners",
 		"demo:loot"
 	]

@@ -1,5 +1,5 @@
 {
-	"name" : "dwarf:layout3",
+	"name" : "dragon:layout3",
 	"num_rooms" : [10, 11, 12, 0, 0],
 	"scatter" : [12, 14, 15, 1, 1],
 	"layouts" : [

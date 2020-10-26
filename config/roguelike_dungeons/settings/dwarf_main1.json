@@ -2,7 +2,7 @@
 	"name": "dwarf:main1",
 	"exclusive": true,
 	"criteria": {
-		"biomeTypes": [
+		"biomes": [
 			"Highland",
 			"Mountain",
 			"Mega Spruce Taiga",

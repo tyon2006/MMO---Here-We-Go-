@@ -2,7 +2,7 @@
 	"name": "dwarf:main5",
 	"exclusive": true,
 	"criteria": {
-		"biomeTypes": [
+		"biomes": [
 			"Glacier",
 			"Ice Mountains",
 			"Ice Plains Spikes",

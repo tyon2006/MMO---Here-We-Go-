@@ -2,7 +2,7 @@
 	"name": "dwarf:main4",
 	"exclusive": true,
 	"criteria": {
-		"biomeTypes": [
+		"biomes": [
 			"Alps",
 			"AlpsFoothills",
 			"Crag",

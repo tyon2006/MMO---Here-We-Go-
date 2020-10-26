@@ -1,20 +1,21 @@
 {
-	"name": "dragon:main5",
+	"name": "dragon:main4",
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Eerie",
-			"Ominous Woods",
-			"Overgrown Cliffs",
-			"Tropical Island"
+			"Bamboo Forest",
+			"Flower Island",
+			"JungleEdge M",
+			"Oasis",
+			"Roofed Forest"
 		]
 	},
 	"inherit": [
 		"dragon:tower",
-		"dragon:layout5",
+		"dragon:layout4",
 		"dragon:rooms",
 		"dragon:segments",
-		"dragon:theme5",
+		"dragon:theme4",
 		"dragon:spawners",
 		"demo:loot"
 	]

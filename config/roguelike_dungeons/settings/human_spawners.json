@@ -5,8 +5,7 @@
 			"type" : "ZOMBIE",
 			"potentials" : [
 				{"name" : "idk:pillager"},
-				{"name" : "illagers_plus:archer"},
-				{"name" : "idk:potionbud"},
+				{"name" : "minecraft:vindication_illager"},
 				{"name" : "idk:mutt"}
 			],
 			"level" : [0]
@@ -15,8 +14,7 @@
 			"type" : "SPIDER",
 			"potentials" : [
 				{"name" : "idk:pillager"},
-				{"name" : "illagers_plus:archer"},
-				{"name" : "idk:potionbud"},
+				{"name" : "minecraft:vindication_illager"},
 				{"name" : "idk:mutt"}
 			],
 			"level" : [0]
@@ -25,8 +23,7 @@
 			"type" : "SKELETON",
 			"potentials" : [
 				{"name" : "idk:pillager"},
-				{"name" : "illagers_plus:archer"},
-				{"name" : "idk:potionbud"},
+				{"name" : "minecraft:vindication_illager"},
 				{"name" : "idk:mutt"}
 			],
 			"level" : [0]
@@ -34,96 +31,120 @@
 		{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "idk:railliger"},
+				{"name" : "grimoireofgaia:illager_inquisitor"},
+				{"name" : "minecraft:witch"}
 			],
 			"level" : [1]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "idk:railliger"},
+				{"name" : "grimoireofgaia:illager_inquisitor"},
+				{"name" : "minecraft:witch"}
 			],
 			"level" : [1]
 		},
 		{
 			"type" : "SKELETON",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "idk:railliger"},
+				{"name" : "grimoireofgaia:illager_inquisitor"},
+				{"name" : "minecraft:witch"}
 			],
 			"level" : [1]
 		},
 				{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "grimoireofgaia:illager_fire"},
+				{"name" : "specialmobs:plaguezombie"},
+				{"name" : "mod_lavacow:unburied"},
+				{"name" : "minecraft:zombie_villager"}
 			],
 			"level" : [2]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "grimoireofgaia:illager_fire"},
+				{"name" : "specialmobs:plaguezombie"},
+				{"name" : "mod_lavacow:unburied"},
+				{"name" : "minecraft:zombie_villager"}
 			],
 			"level" : [2]
 		},
 		{
 			"type" : "SKELETON",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "grimoireofgaia:illager_fire"},
+				{"name" : "specialmobs:plaguezombie"},
+				{"name" : "mod_lavacow:unburied"},
+				{"name" : "minecraft:zombie_villager"}
 			],
 			"level" : [2]
 		},
 		{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "grimoireofgaia:flesh_lich"},
+				{"name" : "mod_lavacow:sludgelord"},
+				{"name" : "specialmobs:blackberryslime"},
+				{"name" : "specialmobs:lemonslime"},
+				{"name" : "specialmobs:watermelonslime"}
 			],
 			"level" : [3]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "grimoireofgaia:flesh_lich"},
+				{"name" : "mod_lavacow:sludgelord"},
+				{"name" : "specialmobs:blackberryslime"},
+				{"name" : "specialmobs:lemonslime"},
+				{"name" : "specialmobs:watermelonslime"}
 			],
 			"level" : [3]
 		},
 		{
 			"type" : "SKELETON",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "grimoireofgaia:flesh_lich"},
+				{"name" : "mod_lavacow:sludgelord"},
+				{"name" : "specialmobs:blackberryslime"},
+				{"name" : "specialmobs:lemonslime"},
+				{"name" : "specialmobs:watermelonslime"}
 			],
 			"level" : [3]
 		},
 				{
 			"type" : "ZOMBIE",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"},
-				{"name" : "specialmobs:firecreeper"},
-				{"name" : "specialmobs:wildfireblaze"}
+				{"name" : "mod_lavacow:ithaqua"},
+				{"name" : "mod_lavacow:banshee"},
+				{"name" : "mod_lavacow:avaton"},
+				{"name" : "mod_lavacow:undertaker"}
 			],
 			"level" : [4]
 		},
 		{
 			"type" : "SPIDER",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "mod_lavacow:ithaqua"},
+				{"name" : "mod_lavacow:banshee"},
+				{"name" : "mod_lavacow:avaton"},
+				{"name" : "mod_lavacow:undertaker"}
 			],
 			"level" : [4]
 		},
 		{
 			"type" : "SKELETON",
 			"potentials" : [
-				{"name" : "embers:ancient_golem"}
+				{"name" : "mod_lavacow:ithaqua"},
+				{"name" : "mod_lavacow:banshee"},
+				{"name" : "mod_lavacow:avaton"},
+				{"name" : "mod_lavacow:undertaker"}
 			],
 			"level" : [4]
 		}

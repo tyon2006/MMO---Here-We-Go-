@@ -6,7 +6,7 @@
 		{"level": [0,1,2,3,4], "type" : "SHELF", "weight" : 1},
 		{"level": [0,1,2,3], "type" : "INSET", "weight" : 1},
 		{"level": [0,1,2,3,4], "type" : "DOOR", "weight" : 5},
-		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 2},
+		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 3},
 		{"level": [0,1,2], "type" : "LAMP", "weight" : 1},
 		{"level": [1,2,3,4], "type" : "ARROW", "weight" : 1},
 		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 2},		

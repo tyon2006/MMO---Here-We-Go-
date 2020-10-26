@@ -1,0 +1,176 @@
+{
+	"name": "dragon:theme4",
+	"themes": [
+		{
+			"level" : [0],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall", "meta" : 0}},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 0}},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 0}},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:white_gray_wall", "meta" : 0}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "quark:blaze_lantern", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumcraft:plank_greatwood", "meta" : 0}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:log_greatwood", "meta" : 1}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall_stairs", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "thaumadditions:chiseled_greatwood", "meta" : 0}, "weight" : 10},
+				"door" : {"name" : "chineseworkshop:window_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:blaze_lantern", "meta" : 0}},
+				"liquid" : {"name" : "thaumadditions:crystal_water"}
+			},
+			"secondary" : {
+				"walls" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:architectural_painting", "meta" : 0}, "weight" : 1},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumcraft:plank_silverwood", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumadditions:chiseled_amber_block", "meta" : 0}, "weight" : 1}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:dark_green_pillar", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_greatwood", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "thaumadditions:chiseled_greatwood", "meta" : 0}},
+				"door" : {"name" : "chineseworkshop:window_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:blaze_lantern", "meta" : 0}},
+				"liquid" : {"name" : "thaumadditions:crystal_water"}
+			}
+		},
+				{
+			"level" : [1],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 4}, "weight" : 6},
+								{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 6}, "weight" : 1}
+							]
+						},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 4}, "weight" : 6},
+								{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 6}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:paper", "meta" : 3}},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:white_gray_wall", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "quark:blaze_lantern", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumadditions:brass_plated_silverwood", "meta" : 0}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:log_silverwood", "meta" : 1}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_silverwood", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "thaumadditions:brass_plated_silverwood", "meta" : 0}},
+				"door" : {"name" : "betternether:bone_cincinnasite_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:blaze_lantern", "meta" : 0}},
+				"liquid" : {"name" : "thaumadditions:crystal_water"}
+			},
+			"secondary" : {
+				"walls" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:architectural_painting", "meta" : 0}, "weight" : 1},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumcraft:plank_silverwood", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumadditions:chiseled_amber_block", "meta" : 0}, "weight" : 1}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:red_pillar", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:white_gray_wall_stairs", "meta" : 0}},
+				"door" : {"name" : "chineseworkshop:window_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:blaze_lantern", "meta" : 0}},
+				"liquid" : {"name" : "thaumadditions:crystal_water"}
+			}
+		},
+		{
+			"level" : [2],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone", "meta" : 3}},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone", "meta" : 3}},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone1", "meta" : 7}},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone", "meta" : 3}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:stone", "meta" : 7}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone", "meta" : 3}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone1", "meta" : 13}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_arcane", "meta" : 0}},
+				"floor" : {"type" : "WEIGHTED", "data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone2", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone", "meta" : 8}, "weight" : 1}]
+				},
+				"door" : {"name" : "chineseworkshop:door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:stone", "meta" : 7}},
+				"liquid" : {"name" : "thaumcraft:liquid_death"}
+			},
+			"secondary" : {
+				"walls" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:energizedvoidstone", "meta" : 6}, "weight" : 1},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:energizedvoidstone", "meta" : 2}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:energizedvoidstone", "meta" : 4}, "weight" : 1}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "chisel:energizedvoidstone", "meta" : 5}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_arcane_brick", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "chisel:arcane_stone2", "meta" : 0}},
+				"door" : {"name" : "chineseworkshop:door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:stone", "meta" : 7}},
+				"liquid" : {"name" : "thaumcraft:liquid_death"}
+			}
+		},
+		{
+			"level" : [3, 4],
+			"primary" : {
+				"walls" : {
+					"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:stone", "meta" : 9}, "weight" : 50},
+							{"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stone_ancient_glyphed", "meta" : 1}, "weight" : 10},
+							{"type" : "METABLOCK", "data" : {"name" : "thaumadditions:amber_lamp", "meta" : 0}, "weight" : 1}
+							]
+						},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stone_ancient_glyphed", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_ancient", "meta" : 0}},
+				"floor" : {"type" : "WEIGHTED", 
+					"data" : [
+					{"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stone_ancient_tile", "meta" : 0}, "weight" : 10},
+					{"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:slab_double", "meta" : 0}, "weight" : 10}]
+					},
+				"door" : {"name" : "midnight:tenebrum_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "thaumadditions:amber_lamp", "meta" : 0}},
+				"liquid" : {"name" : "thaumcraft:liquid_death"}
+			},
+			"secondary" : {
+				"walls" : {
+					"type" : "LAYERS", "data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:starfield_glass", "meta" : 1}},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:starfield_glass", "meta" : 1}},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:starfield_glass", "meta" : 1}},
+						{"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stone_ancient_tile", "meta" : 0}}
+					]	
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stone_ancient_glyphed", "meta" : 12}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_ancient", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "industrialrenewal:industrial_floor", "meta" : 0}},
+				"door" : {"name" : "midnight:tenebrum_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "thaumadditions:amber_lamp", "meta" : 0}},
+				"liquid" : {"name" : "thaumcraft:liquid_death"}
+			}
+		}
+	]
+}			

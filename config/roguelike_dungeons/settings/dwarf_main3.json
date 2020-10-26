@@ -2,7 +2,7 @@
 	"name": "dwarf:main3",
 	"exclusive": true,
 	"criteria": {
-		"biomeTypes": [
+		"biomes": [
 			"Extreme Hills+",
 			"Ice Plains",
 			"Maple Woods",
