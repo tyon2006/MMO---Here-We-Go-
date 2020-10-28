@@ -18,6 +18,9 @@ recipes.addShapeless(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), 
 //removals
 mods.inspirations.Cauldron.removeBrewingRecipe("extraalchemy:charged2_normal", "extraalchemy:charged_normal", <minecraft:nether_wart>);
 
+//lunar water tooltip
+<nyx:lunar_water_bottle>.addTooltip("A magical fluid used as a base in Dwarven alchemy. When consumed, will remove negative potion effects and give the player a short regeneration buff.");
+
 //***************************
 //		POTIONS IN CAULDRON
 //***************************
