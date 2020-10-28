@@ -590,7 +590,6 @@ var itemRemovalsAether = [
 	<lost_aether:phoenix_cape>,
 	<lost_aether:power_gloves>,
 	<lost_aether:zanite_shield>,
-	<aether_legacy:skyroot_bookshelf>,
 	<aether:quicksoil>,
 	<aether_legacy:quicksoil_glass>,
 	<aether:holystone>,
