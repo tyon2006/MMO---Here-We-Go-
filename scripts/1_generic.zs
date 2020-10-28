@@ -243,8 +243,5 @@ var itemRemovalsGoG = [
 ] as IItemStack[];
 
 for item in itemRemovalsGoG {
-    recipes.remove(item);
+    rh(item);
 }
-
-
-

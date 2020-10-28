@@ -617,10 +617,140 @@ var itemRemovalsAether = [
 	<aether:greatroot_sapling:2>,
 	<aether_legacy:golden_oak_sapling>,
 	<aether_legacy:skyroot_sapling>,
-	<lost_aether:crystal_sapling>
+	<lost_aether:crystal_sapling>,
+	<aether_legacy:skyroot_bed_item>,
+	<aether:masonry_bench>,
+	<aether:brettl_grass>
 ] as IItemStack[];
 
 for item in itemRemovalsAether {
     rh(item);
 }
+
+
+//************************************
+//           SAPLINGS
+//************************************
+
+//Cleans up tree saplings with DT variants
+var itemRemovalsSaplings = [
+	<aether_legacy:golden_oak_sapling>,
+	<aether_legacy:skyroot_sapling>,
+	<biomesoplenty:sapling_0:1>,
+	<biomesoplenty:sapling_0:2>,
+	<biomesoplenty:sapling_0:3>,
+	<biomesoplenty:sapling_0:4>,
+	<biomesoplenty:sapling_0:5>,
+	<biomesoplenty:sapling_0:6>,
+	<biomesoplenty:sapling_0:7>,
+	<biomesoplenty:sapling_0>,
+	<biomesoplenty:sapling_1:1>,
+	<biomesoplenty:sapling_1:2>,
+	<biomesoplenty:sapling_1:3>,
+	<biomesoplenty:sapling_1:4>,
+	<biomesoplenty:sapling_1:5>,
+	<biomesoplenty:sapling_1:6>,
+	<biomesoplenty:sapling_1>,
+	<biomesoplenty:sapling_2:1>,
+	<biomesoplenty:sapling_2:2>,
+	<biomesoplenty:sapling_2:3>,
+	<biomesoplenty:sapling_2:4>,
+	<biomesoplenty:sapling_2:5>,
+	<biomesoplenty:sapling_2:6>,
+	<biomesoplenty:sapling_2:7>,
+	<lost_aether:crystal_sapling>,
+	<randomthings:spectresapling>,
+	<rustic:sapling:1>,
+	<rustic:sapling>,
+	<rustic:sapling_apple>,
+	<thaumcraft:sapling_greatwood>,
+	<thaumcraft:sapling_silverwood>,
+	<minecraft:sapling>,
+	<minecraft:sapling:1>,
+	<minecraft:sapling:2>,
+	<minecraft:sapling:3>,
+	<minecraft:sapling:4>,
+	<minecraft:sapling:5>,
+	<quark:variant_sapling>,
+	<quark:variant_sapling:1>
+] as IItemStack[];
+
+for item in itemRemovalsSaplings {
+    rh(item);
+}
+
+//************************************
+//           WAYSTONES
+//************************************
+
+//Removes nonstandard waystones
+var itemRemovalsWaystones = [
+	<signpost:blockbasemodel0>,
+	<signpost:blockbasemodel2>,
+	<signpost:blockbasemodel3>,
+	<signpost:blockbasemodel4>,
+	<signpost:blockbasemodel1>,
+	<signpost:blockbasemodel5>,
+	<signpost:blockbasemodel6>,
+	<signpost:blockbasemodel7>,
+	<signpost:blockbase>
+] as IItemStack[];
+
+for item in itemRemovalsWaystones {
+    rh(item);
+}
+
+
+//************************************
+//           MISCELLANEOUS
+//************************************
+
+//Removes items from various mods
+var itemRemovalsMiscellaneous = [
+	<sophisticatedwolves:swkennel>,
+	<beasts:icon>,
+	<netherex:dull_mirror>,
+	<secretroomsmod:camouflage_paste:1>,
+	<bibliocraft:biblioglasses:1>,
+	<bibliocraft:biblioredbook>.withTag({redstonebook: "by James Maxwell"}),
+	<secretroomsmod:iron_exposing_helmet>,
+	<disenchanter:disenchantmenttable:1>,
+	<disenchanter:disenchantmenttable:2>,
+	<disenchanter:disenchantmenttable:3>,
+	<disenchanter:disenchantmenttable:5>,
+	<disenchanter:disenchantmenttable:6>,
+	<disenchanter:disenchantmenttable:7>,
+	<immersive_energy:material:1>,
+	<immersive_energy:metal_generators0>
+] as IItemStack[];
+
+for item in itemRemovalsMiscellaneous {
+    rh(item);
+}
+
+//Hides internal items
+var itemRemovalsInternals = [
+	<randomthings:floobrick>,
+	<randomthings:ancientbrick>,
+	<aether:brettl_plant>,
+	<betterquesting:extra_life>,
+	<betterquesting:extra_life:1>,
+	<betterquesting:extra_life:2>,
+	<biomesoplenty:earth>,
+	<bountifulbaubles:spectralsilt>,
+	<cyclicmagic:sprout>,
+	<zettaindustries:sulfurousacid>,
+	<cyclicmagic:milk>,
+	<cyclicmagic:biomass>,
+	<cyclicmagic:crystal>,
+	<cyclicmagic:amber>,
+	<cyclicmagic:poison>,
+	<cyclicmagic:fire_dark_anim>,
+	<aether_legacy:aether_portal>
+] as IItemStack[];
+
+for item in itemRemovalsInternals {
+    hide(item);
+}
+
 print("--- 2_itemsuppression.zs initialized ---");
