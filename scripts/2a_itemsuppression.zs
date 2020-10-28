@@ -590,7 +590,6 @@ var itemRemovalsAether = [
 	<lost_aether:phoenix_cape>,
 	<lost_aether:power_gloves>,
 	<lost_aether:zanite_shield>,
-	<aether_legacy:skyroot_plank>,
 	<aether_legacy:skyroot_bookshelf>,
 	<aether:quicksoil>,
 	<aether_legacy:quicksoil_glass>,
@@ -746,11 +745,33 @@ var itemRemovalsInternals = [
 	<cyclicmagic:amber>,
 	<cyclicmagic:poison>,
 	<cyclicmagic:fire_dark_anim>,
-	<aether_legacy:aether_portal>
+	<aether_legacy:aether_portal>,
+	<thaumadditions:dna_sample>.withTag({})
 ] as IItemStack[];
 
 for item in itemRemovalsInternals {
     hide(item);
+}
+
+//***************************
+//	GRIMOIRE OF GAIA
+//***************************
+
+//remove and hide unfit items
+
+var itemRemovalsGoG = [
+	<grimoireofgaia:weapon_prop_projectile_bubble>,
+	<grimoireofgaia:weapon_prop_projectile_magic>,
+	<grimoireofgaia:weapon_prop_projectile_magic_random>,
+	<grimoireofgaia:weapon_prop_projectile_poison>,
+	<grimoireofgaia:weapon_prop_projectile_web>,
+	<grimoireofgaia:weapon_prop_enchanted>,
+	<grimoireofgaia:fire_camp>,
+	<grimoireofgaia:web_temp>
+] as IItemStack[];
+
+for item in itemRemovalsGoG {
+    rh(item);
 }
 
 print("--- 2_itemsuppression.zs initialized ---");

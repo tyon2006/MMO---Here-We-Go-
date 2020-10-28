@@ -225,23 +225,3 @@ recipes.remove(<randomthings:chunkanalyzer>);
 
 //recipes.remove(<apotheosis:farmers_leash>, false);
 
-//***************************
-//	GRIMOIRE OF GAIA
-//***************************
-
-//remove and hide unfit items
-
-var itemRemovalsGoG = [
-	<grimoireofgaia:weapon_prop_projectile_bubble>,
-	<grimoireofgaia:weapon_prop_projectile_magic>,
-	<grimoireofgaia:weapon_prop_projectile_magic_random>,
-	<grimoireofgaia:weapon_prop_projectile_poison>,
-	<grimoireofgaia:weapon_prop_projectile_web>,
-	<grimoireofgaia:weapon_prop_enchanted>,
-	<grimoireofgaia:fire_camp>,
-	<grimoireofgaia:web_temp>
-] as IItemStack[];
-
-for item in itemRemovalsGoG {
-    rh(item);
-}
