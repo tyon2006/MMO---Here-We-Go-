@@ -309,7 +309,25 @@ for item in itemRemovalsSilverGoods {
 //Cleans up otherwise unremoved unsuitable items from Cyclic, Random Things, Apotheosis, etc
 var itemRemovalsKitchenSink = [
 	<cyclicmagic:clock>,
-	<cyclicmagic:block_soundproofing>
+	<cyclicmagic:block_soundproofing>,
+	<randomthings:plate_processing>,
+	<randomthings:rezstone>,
+	<randomthings:blazeandsteel>,
+	<randomthings:dyeingmachine>,
+	<randomthings:playerinterface>,
+	<randomthings:blockofsticks>,
+	<randomthings:blockofsticks:1>,
+	<randomthings:spectreanchor>,
+	<randomthings:plate_accelerator_directional>,
+	<randomthings:plate_bouncy>,
+	<randomthings:plate_accelerator>,
+	<randomthings:plate_redirector>,
+	<randomthings:plate_filteredredirector>,
+	<randomthings:plate_extraction>,
+	<randomthings:plate_collection>,
+	<randomthings:plate_redstone>,
+	<randomthings:irondropper>,
+	<randomthings:imbuingstation>
 ] as IItemStack[];
 
 for item in itemRemovalsKitchenSink {
