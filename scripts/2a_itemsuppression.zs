@@ -302,4 +302,20 @@ for item in itemRemovalsSilverGoods {
     rh(item);
 }
 
+//************************************
+//       KITCHEN SINK MODS
+//************************************
+
+//Cleans up otherwise unremoved unsuitable items from Cyclic, Random Things, Apotheosis, etc
+var itemRemovalsKitchenSink = [
+	<cyclicmagic:clock>,
+	<cyclicmagic:block_soundproofing>
+] as IItemStack[];
+
+for item in itemRemovalsKitchenSink {
+    rh(item);
+}
+
+
+
 print("--- 2_itemsuppression.zs initialized ---");
