@@ -65,6 +65,7 @@ var itemSuppressionsIndustrialRenewal = [
 	<industrialrenewal:bar_level>,
 	<industrialrenewal:fire>,
 	<industrialrenewal:fluid_loader_arm>,
+	<industrialrenewal:limiter>,
 	<industrialrenewal:pointer>,
 	<industrialrenewal:pointer_long>,
 	<industrialrenewal:rotary_drum>,
@@ -317,6 +318,7 @@ var itemRemovalsKitchenSink = [
 	<randomthings:playerinterface>,
 	<randomthings:blockofsticks>,
 	<randomthings:blockofsticks:1>,
+	<randomthings:ingredient:8>,
 	<randomthings:spectreanchor>,
 	<randomthings:plate_accelerator_directional>,
 	<randomthings:plate_bouncy>,
@@ -327,13 +329,298 @@ var itemRemovalsKitchenSink = [
 	<randomthings:plate_collection>,
 	<randomthings:plate_redstone>,
 	<randomthings:irondropper>,
-	<randomthings:imbuingstation>
+	<randomthings:imbuingstation>,
+	<quark:rope>
 ] as IItemStack[];
 
 for item in itemRemovalsKitchenSink {
     rh(item);
 }
 
+//************************************
+//             NETHEREX
+//************************************
 
+//Cleans up unsuitable items
+var itemRemovalsNetherEX = [
+	<netherex:blazed_amedian_pickaxe>,
+	<netherex:blazed_amedian_sword>,
+	<netherex:withered_amedian_hammer>,
+	<netherex:withered_amedian_hoe>,
+	<netherex:frosted_amedian_sword>,
+	<netherex:withered_amedian_axe>,
+	<netherex:withered_amedian_shovel>,
+	<netherex:withered_amedian_pickaxe>,
+	<netherex:withered_amedian_sword>,
+	<netherex:frosted_amedian_shovel>,
+	<netherex:frosted_amedian_hammer>,
+	<netherex:frosted_amedian_hoe>,
+	<netherex:frosted_amedian_axe>,
+	<netherex:blazed_amedian_shovel>,
+	<netherex:blazed_amedian_axe>,
+	<netherex:blazed_amedian_hoe>,
+	<netherex:blazed_amedian_hammer>,
+	<netherex:frosted_amedian_pickaxe>,
+	<netherex:rime_and_steel>
+] as IItemStack[];
 
+for item in itemRemovalsNetherEX {
+    rh(item);
+}
+
+//************************************
+//          PROJECT RED
+//************************************
+
+//Cleans up unsuitable items
+var itemRemovalsProjectRed = [
+	<projectred-core:resource_item:104>,
+	<projectred-core:resource_item:105>,
+	<projectred-core:resource_item:200>,
+	<projectred-core:resource_item:201>,
+	<projectred-core:resource_item:202>,
+	<projectred-core:resource_item:250>,
+	<projectred-core:resource_item:252>,
+	<projectred-core:resource_item:300>,
+	<projectred-core:resource_item:312>,
+	<projectred-core:resource_item:342>,
+	<projectred-core:resource_item:400>,
+	<projectred-core:resource_item:401>,
+	<projectred-core:resource_item:402>,
+	<projectred-core:resource_item:410>,
+	<projectred-core:resource_item:420>,
+	<projectred-core:resource_item:421>,
+	<projectred-core:resource_item:600>,
+	<projectred-core:drawplate>,
+	<projectred-transmission:framed_wire:34>,
+	<projectred-transmission:wire:34>
+] as IItemStack[];
+
+for item in itemRemovalsProjectRed {
+    rh(item);
+}
+
+//************************************
+//      CYBERWARE AND REWIRED
+//************************************
+
+//Cleans up unsuitable items
+var itemRemovalsCyberware = [
+	<cyberware:component:1>,
+	<cyberware:component:2>,
+	<cyberware:component:3>,
+	<cyberware:component:4>,
+	<cyberware:component:5>,
+	<cyberware:component:8>,
+	<cyberware:component:9>,
+	<cyberware:blueprint_archive>,
+	<cyberware:component_box>,
+	<cyberware:blueprint:1>,
+	<cyberware:engineering_table>,
+	<cyberware:scanner>,
+	<cyberware:beacon>,
+	<cyberware:radio_post>,
+	<cyberware:beacon_large>
+] as IItemStack[];
+
+for item in itemRemovalsCyberware {
+    rh(item);
+}
+
+//************************************
+//      AETHER I AND II
+//************************************
+
+//Cleans up unsuitable items
+var itemRemovalsAether = [
+	<aether:aether_dirt:1>,
+	<aether:aether_dirt>,
+	<aether:aether_flower:1>,
+	<aether:aether_flower:2>,
+	<aether:aether_flower:3>,
+	<aether:aether_flower>,
+	<aether:aether_grass:1>,
+	<aether:aether_grass:2>,
+	<aether:aether_grass:3>,
+	<aether:aether_grass:4>,
+	<aether:aether_grass>,
+	<aether:aether_teleporter>,
+	<aether:amberoot_leaves>,
+	<aether:arctic_spikespring>,
+	<aether:arkenium_gloves>,
+	<aether:blue_dark_skyroot_leaves>,
+	<aether:blue_light_skyroot_leaves>,
+	<aether:blue_skyroot_leaves>,
+	<aether:blue_swingtip>,
+	<aether:blueberries>,
+	<aether:blueberry_bush:1>,
+	<aether:blueberry_bush>,
+	<aether:brettl_cane>,
+	<aether:brettl_rope>,
+	<aether:burrukai_pelt_gloves>,
+	<aether:candy_cane_block>,
+	<aether:candy_cane_wall>,
+	<aether:dark_blue_dark_skyroot_leaves>,
+	<aether:dark_blue_light_skyroot_leaves>,
+	<aether:dark_blue_light_skyroot_leaves>,
+	<aether:dark_blue_skyroot_leaves>,
+	<aether:dark_skyroot_log>,
+	<aether:enchanted_blueberry>,
+	<aether:enchanted_wyndberry>,
+	<aether:forgotten_rose>,
+	<aether:golden_oak_log>,
+	<aether:gravitite_gloves>,
+	<aether:greatroot_log_wall>,
+	<aether:greatroot_log_wall>,
+	<aether:green_dark_skyroot_leaves>,
+	<aether:green_light_skyroot_leaves>,
+	<aether:green_skyroot_leaves>,
+	<aether:green_swingtip>,
+	<aether:highlands_bush>,
+	<aether:highlands_tulips>,
+	<aether:irradiated_armor>,
+	<aether:irradiated_charm>,
+	<aether:irradiated_chunk>,
+	<aether:irradiated_dust>,
+	<aether:irradiated_flower>,
+	<aether:irradiated_neckwear>,
+	<aether:irradiated_ring>,
+	<aether:irradiated_sword>,
+	<aether:irradiated_tool>,
+	<aether:light_skyroot_log>,
+	<aether:mutant_leaves>,
+	<aether:mutant_leaves_decorated>,
+	<aether:mutant_leaves_decorated>,
+	<aether:neverbloom>,
+	<aether:orange>,
+	<aether:orange_tree>,
+	<aether:outpost_campfire>,
+	<aether:pink_swingtip>,
+	<aether:plumproot>,
+	<aether:plumproot_mash>,
+	<aether:plumproot_pie>,
+	<aether:quickshoot>,
+	<aether:shard_of_life>,
+	<aether:skyroot_log>,
+	<aether:skyroot_log_wall>,
+	<aether:skyroot_pinecone>,
+	<aether:taegore_hide_gloves>,
+	<aether:tall_aether_grass:1>,
+	<aether:tall_aether_grass:2>,
+	<aether:tall_aether_grass>,
+	<aether:thera_dirt>,
+	<aether:thera_grass>,
+	<aether:therawood_leaves>,
+	<aether:therawood_log_wall>,
+	<aether:valkyrie_grass:2>,
+	<aether:valkyrie_grass>,
+	<aether:valkyrie_wings>,
+	<aether:wildcard>,
+	<aether:wisproot_log_wall>,
+	<aether:wyndberry>,
+	<aether:zanite_gloves>,
+	<aether_legacy:agility_cape>,
+	<aether_legacy:blue_cape>,
+	<aether_legacy:chain_gloves>,
+	<aether_legacy:dart:1>,
+	<aether_legacy:dart:2>,
+	<aether_legacy:dart>,
+	<aether_legacy:dart_shooter:1>,
+	<aether_legacy:dart_shooter:2>,
+	<aether_legacy:dart_shooter>,
+	<aether_legacy:diamond_gloves>,
+	<aether_legacy:golden_feather>,
+	<aether_legacy:golden_gloves>,
+	<aether_legacy:golden_pendant>,
+	<aether_legacy:golden_ring>,
+	<aether_legacy:gravitite_axe>,
+	<aether_legacy:gravitite_boots>,
+	<aether_legacy:gravitite_chestplate>,
+	<aether_legacy:gravitite_gloves>,
+	<aether_legacy:gravitite_helmet>,
+	<aether_legacy:gravitite_leggings>,
+	<aether_legacy:gravitite_pickaxe>,
+	<aether_legacy:gravitite_shovel>,
+	<aether_legacy:gravitite_sword>,
+	<aether_legacy:holystone_axe>,
+	<aether_legacy:holystone_pickaxe>,
+	<aether_legacy:holystone_shovel>,
+	<aether_legacy:holystone_sword>,
+	<aether_legacy:ice_pendant>,
+	<aether_legacy:ice_ring>,
+	<aether_legacy:invisibility_cape>,
+	<aether_legacy:iron_bubble>,
+	<aether_legacy:iron_gloves>,
+	<aether_legacy:iron_pendant>,
+	<aether_legacy:iron_ring>,
+	<aether_legacy:leather_gloves>,
+	<aether_legacy:moa_egg>.withTag({typeId: 0}),
+	<aether_legacy:moa_egg>.withTag({typeId: 1}),
+	<aether_legacy:moa_egg>.withTag({typeId: 2}),
+	<aether_legacy:moa_egg>.withTag({typeId: 3}),
+	<aether_legacy:moa_egg>.withTag({typeId: 4}),
+	<aether_legacy:nature_staff>,
+	<aether_legacy:neptune_gloves>,
+	<aether_legacy:obsidian_gloves>,
+	<aether_legacy:phoenix_gloves>,
+	<aether_legacy:red_cape>,
+	<aether_legacy:regeneration_stone>,
+	<aether_legacy:skyroot_axe>,
+	<aether_legacy:skyroot_pickaxe>,
+	<aether_legacy:skyroot_shovel>,
+	<aether_legacy:skyroot_stick>,
+	<aether_legacy:skyroot_sword>,
+	<aether_legacy:swet_cape>,
+	<aether_legacy:valkyrie_cape>,
+	<aether_legacy:valkyrie_gloves>,
+	<aether_legacy:white_cape>,
+	<aether_legacy:yellow_cape>,
+	<aether_legacy:zanite_axe>,
+	<aether_legacy:zanite_boots>,
+	<aether_legacy:zanite_chestplate>,
+	<aether_legacy:zanite_gloves>,
+	<aether_legacy:zanite_helmet>,
+	<aether_legacy:zanite_leggings>,
+	<aether_legacy:zanite_pendant>,
+	<aether_legacy:zanite_pickaxe>,
+	<aether_legacy:zanite_ring>,
+	<aether_legacy:zanite_shovel>,
+	<aether_legacy:zanite_sword>,
+	<lost_aether:gravitite_shield>,
+	<lost_aether:phoenix_cape>,
+	<lost_aether:power_gloves>,
+	<lost_aether:zanite_shield>,
+	<aether_legacy:skyroot_plank>,
+	<aether_legacy:skyroot_bookshelf>,
+	<aether:quicksoil>,
+	<aether_legacy:quicksoil_glass>,
+	<aether:holystone>,
+	<aether:holystone:1>,
+	<aether:holystone_brick>,
+	<aether_legacy:incubator>,
+	<aether_legacy:freezer>,
+	<aether_legacy:enchanter>,
+	<aether_legacy:obsidian_helmet>,
+	<aether_legacy:obsidian_chestplate>,
+	<aether_legacy:obsidian_leggings>,
+	<aether_legacy:obsidian_boots>,
+	<aether:skyroot_sapling>,
+	<aether:skyroot_sapling:2>,
+	<aether:skyroot_sapling:1>,
+	<aether:unique_sapling>,
+	<aether:unique_sapling:1>,
+	<aether:wisproot_sapling>,
+	<aether:wisproot_sapling:1>,
+	<aether:wisproot_sapling:2>,
+	<aether:greatroot_sapling:1>,
+	<aether:greatroot_sapling>,
+	<aether:greatroot_sapling:2>,
+	<aether_legacy:golden_oak_sapling>,
+	<aether_legacy:skyroot_sapling>,
+	<lost_aether:crystal_sapling>
+] as IItemStack[];
+
+for item in itemRemovalsAether {
+    rh(item);
+}
 print("--- 2_itemsuppression.zs initialized ---");
