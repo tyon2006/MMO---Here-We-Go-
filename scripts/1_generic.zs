@@ -180,9 +180,6 @@ recipes.remove(<cyclicmagic:ender_dungeon>, false);
 recipes.remove(<cyclicmagic:ender_lightning>, false);
 recipes.remove(<cyclicmagic:cyclic_wand_build>, false);
 recipes.remove(<cyclicmagic:shears_obsidian>, false);
-recipes.remove(<cyclicmagic:tool_warp_home>, false);
-recipes.remove(<cyclicmagic:tool_warp_spawn>, false);
-recipes.remove(<cyclicmagic:tool_push>, false);
 recipes.remove(<cyclicmagic:tool_spawn_inspect>, false);
 recipes.remove(<cyclicmagic:wand_hypno>, false);
 recipes.remove(<cyclicmagic:ender_wool>, false);
@@ -227,54 +224,4 @@ recipes.remove(<randomthings:chunkanalyzer>);
 //***************************
 
 //recipes.remove(<apotheosis:farmers_leash>, false);
-
-//***************************
-//	GRIMOIRE OF GAIA
-//***************************
-
-//remove and hide unfit items
-
-var itemRemovalsGoG = [
-	<grimoireofgaia:weapon_prop_projectile_bubble>,
-	<grimoireofgaia:weapon_prop_projectile_magic>,
-	<grimoireofgaia:weapon_prop_projectile_magic_random>,
-	<grimoireofgaia:weapon_prop_projectile_poison>,
-	<grimoireofgaia:weapon_prop_projectile_web>,
-	<grimoireofgaia:weapon_prop_enchanted>,
-	<grimoireofgaia:fire_camp>,
-	<grimoireofgaia:web_temp>
-] as IItemStack[];
-
-for item in itemRemovalsGoG {
-    recipes.remove(item);
-}
-
-//***************************
-//	SILVER CORRECTION
-//***************************
-
-//remove and hide unfit items
-
-var itemRemovalsSilver = [
-	<embers:pickaxe_silver>,
-	<embers:axe_silver>,
-	<embers:shovel_silver>,
-	<embers:hoe_silver>,
-	<embers:sword_silver>,
-	<idk:silverarmourhelmet>,
-	<idk:silverarmourbody>,
-	<idk:silverarmourlegs>,
-	<idk:silverarmourboots>,
-	<idk:silversword>,
-	<idk:silveraxe>,
-	<idk:silverpickaxe>,
-	<idk:silvershovel>,
-	<idk:silverhoe>
-] as IItemStack[];
-
-for item in itemRemovalsSilver {
-    recipes.remove(item);
-}
-
-
 

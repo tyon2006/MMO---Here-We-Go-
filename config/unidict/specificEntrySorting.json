@@ -1,0 +1,12 @@
+[
+	{
+		"entryName" : "dustAsh",
+		"modIdPriorityList" :
+		[
+			"minecraft",
+			"embers",
+			"transmutationalchemy",
+			"biomesoplenty"
+		]
+	}
+]
