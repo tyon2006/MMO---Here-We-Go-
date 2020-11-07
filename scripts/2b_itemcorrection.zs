@@ -1,6 +1,15 @@
 print("--- loading 2b_itemcorrection.zs ---");
 
 //***************************
+//    RECIPE CORRECTIONS
+//***************************
+
+//change/remove incorrect recipes
+recipes.remove(<minecraft:glowstone>);
+recipes.addShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>],[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]]);
+
+
+//***************************
 //    INDUSTRIAL RENEWAL
 //***************************
 
