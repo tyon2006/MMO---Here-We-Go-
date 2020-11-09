@@ -18,7 +18,7 @@ var grayce5 = mods.compatskills.TraitCreator.createTrait("grayce5", 4, 0, "extra
 
 var grayce6tooltip = "Initiations";
 var grayce7tooltip = "Crystal-Shaping";
-var grayce8tooltip = "Arcane Trinkets I";
+var grayce8tooltip = "Arcane Trinkets 1";
 var grayce9tooltip = "Arcane Apparel";
 var grayce10tooltip = "Access Control";
 var grayce6 = mods.compatskills.TraitCreator.createTrait("grayce6", 0, 1, "extraskills:grayce", 4, "and|[extraskills:grayce|11]~[trait|compatskills:grayce1]");
@@ -30,7 +30,7 @@ var grayce10 = mods.compatskills.TraitCreator.createTrait("grayce10", 4, 1, "ext
 var grayce11tooltip = "Practices";
 var grayce12tooltip = "The Art of Hoarding";
 var grayce13tooltip = "How to Raise your Dragon";
-var grayce14tooltip = "Greater Arcanabula I";
+var grayce14tooltip = "Greater Arcanabula 1";
 var grayce15tooltip = "Ignite the Dragon Forge!";
 var grayce11 = mods.compatskills.TraitCreator.createTrait("grayce11", 0, 2, "extraskills:grayce", 4, "and|[extraskills:grayce|21]~[trait|compatskills:grayce6]");
 var grayce12 = mods.compatskills.TraitCreator.createTrait("grayce12", 1, 2, "extraskills:grayce", 1, "and|[trait|compatskills:grayce11]~[trait|compatskills:grayce7]");
@@ -40,8 +40,8 @@ var grayce15 = mods.compatskills.TraitCreator.createTrait("grayce15", 4, 2, "ext
 
 var grayce16tooltip = "Masteries";
 var grayce17tooltip = "Chiaroscuro";
-var grayce18tooltip = "Arcane Trinkets II";
-var grayce19tooltip = "Greater Arcanabula II";
+var grayce18tooltip = "Arcane Trinkets 2";
+var grayce19tooltip = "Greater Arcanabula 2";
 var grayce20tooltip = "EXALTED!";
 var grayce16 = mods.compatskills.TraitCreator.createTrait("grayce16", 0, 3, "extraskills:grayce", 4, "and|[extraskills:grayce|31]~[trait|compatskills:grayce11]");
 var grayce17 = mods.compatskills.TraitCreator.createTrait("grayce17", 1, 3, "extraskills:grayce", 1, "trait|compatskills:grayce16");
@@ -58,6 +58,8 @@ var grayce20 = mods.compatskills.TraitCreator.createTrait("grayce20", 4, 3, "ext
 var grayce1req = [
 		
 	<ebwizardry:scroll:1>,
+	<thaumcraft:ingot:2>,
+	<thaumadditions:vis_scribing_tools>,
 	<quark:horse_whistle>,
 	<thaumadditions:thaumic_lectern>,
 	<thaumadditions:vis_scribing_tools>,
@@ -309,7 +311,6 @@ var grayce3req = [
 	<chineseworkshop:black_roof_tile_edge_rr:*>,
 	<chineseworkshop:black_roof_tile_edge_slab:*>,
 	<chineseworkshop:black_roof_tile_edge_slab_rr:*>,
-	<chineseworkshop:black_roof_tile_edge_slab_rr:*>,
 	<chineseworkshop:black_roof_tile_edge_slab_t_cw:*>,
 	<chineseworkshop:black_roof_tile_edge_slab_t_rr:*>,
 	<chineseworkshop:black_roof_tile_edge_slab_t_wb:*>,
@@ -402,7 +403,6 @@ var grayce3req = [
 	<chineseworkshop:yellow_tile_ridge_roof_j:*>,
 	<chineseworkshop:yellow_tile_ridge_roof_top:*>,
 	<chineseworkshop:yellow_tile_roof:*>,
-	<chineseworkshop:yellow_tile_roof_j:*>,
 	<chineseworkshop:yellow_tile_roof_slab:*>,
 	<chineseworkshop:yellow_tile_roof_slab_top:*>,
 	<chisel:arcane_stone1:*>,
@@ -488,7 +488,6 @@ for item in grayce4req {
 
 var grayce4cons = [
 	
-	<ebwizardry:scroll:1>,
 	<ebwizardry:scroll:2>,
 	<ebwizardry:scroll:3>,
 	<ebwizardry:scroll:4>,
@@ -738,9 +737,7 @@ var grayce9req = [
 	<ebwizardry:spell_book:27>,
 	<ebwizardry:spell_book:28>,
 	<ebwizardry:spell_book:29>,
-	<ebwizardry:spell_book:29>,
 	<ebwizardry:spell_book:30>,
-	<ebwizardry:spell_book:31>,
 	<ebwizardry:spell_book:31>,
 	<ebwizardry:spell_book:32>,
 	<ebwizardry:spell_book:33>,
@@ -760,8 +757,6 @@ var grayce9req = [
 	<ebwizardry:spell_book:47>,
 	<ebwizardry:spell_book:114>,
 	<ebwizardry:spell_book:115>,
-	<ebwizardry:spell_book:115>,
-	<ebwizardry:spell_book:116>,
 	<ebwizardry:spell_book:116>,
 	<ebwizardry:spell_book:117>,
 	<ebwizardry:spell_book:118>,
@@ -770,9 +765,7 @@ var grayce9req = [
 	<ebwizardry:spell_book:121>,
 	<ebwizardry:spell_book:122>,
 	<ebwizardry:spell_book:123>,
-	<ebwizardry:spell_book:145>,
 	<ebwizardry:spell_book:146>,
-	<ebwizardry:spell_book:147>,
 	<ebwizardry:spell_book:147>,
 	<ebwizardry:spell_book:148>,
 	<ebwizardry:spell_book:149>,
@@ -866,6 +859,7 @@ var grayce11req = [
 	<thaumadditions:void_anvil>,
 	<thaumcraft:fortress_helm>,
 	<thaumcraft:fortress_legs>,
+	<thaumcraft:fortress_chest>,
 	<thaumcraft:ingot:1>,
 	<thaumcraft:void_chest>,
 	<thaumcraft:void_helm>,
@@ -994,7 +988,6 @@ var grayce14req = [
 	<ebwizardry:spell_book:79>,
 	<ebwizardry:spell_book:80>,
 	<ebwizardry:spell_book:81>,
-	<ebwizardry:spell_book:82>,
 	<ebwizardry:spell_book:83>,
 	<ebwizardry:spell_book:84>,
 	<ebwizardry:spell_book:85>,
@@ -1064,8 +1057,6 @@ var grayce14cons = [
 	<ebwizardry:scroll:68>,
 	<ebwizardry:scroll:69>,
 	<ebwizardry:scroll:70>,
-	<ebwizardry:scroll:70>,
-	<ebwizardry:scroll:71>,
 	<ebwizardry:scroll:71>,
 	<ebwizardry:scroll:72>,
 	<ebwizardry:scroll:73>,
@@ -1077,7 +1068,6 @@ var grayce14cons = [
 	<ebwizardry:scroll:79>,
 	<ebwizardry:scroll:80>,
 	<ebwizardry:scroll:81>,
-	<ebwizardry:scroll:82>,
 	<ebwizardry:scroll:83>,
 	<ebwizardry:scroll:84>,
 	<ebwizardry:scroll:85>,

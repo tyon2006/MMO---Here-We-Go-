@@ -1,7 +1,19 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.PlayerBreakSpeedEvent;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
 import mods.jei.JEI;
+import crafttweaker.player.IPlayer;
+import crafttweaker.event.ILivingEvent;
+import crafttweaker.world.IWorld;
+import crafttweaker.world.IWorldProvider;
+import crafttweaker.world.IWorldInfo;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.entity.IEntityDrop;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.contenttweaker.Commands;
+
 
 //global dimension locking
 mods.compatskills.DimensionLock.addDimensionLock(-1, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce6]~[trait|compatskills:skillz6]]");
@@ -16,7 +28,7 @@ mods.compatskills.DimensionLock.addDimensionLock(66, "or|[trait|compatskills:baw
 var bawls1tooltip = "Basics";
 var bawls2tooltip = "Bashers";
 var bawls3tooltip = "Buildings";
-var bawls4tooltip = "Transmutation I";
+var bawls4tooltip = "Transmutation 1";
 var bawls5tooltip = "Mixology I";
 var bawls1 = mods.compatskills.TraitCreator.createTrait("bawls1", 0, 0, "extraskills:bawls", 5, "extraskills:bawls|5");
 var bawls2 = mods.compatskills.TraitCreator.createTrait("bawls2", 1, 0, "extraskills:bawls", 1, "trait|compatskills:bawls1");
@@ -26,8 +38,8 @@ var bawls5 = mods.compatskills.TraitCreator.createTrait("bawls5", 4, 0, "extrask
 
 var bawls6tooltip = "The Dawn Forge";
 var bawls7tooltip = "Fiery Fusion";
-var bawls8tooltip = "Hand-Crafted Jewelry I";
-var bawls9tooltip = "StRATegic Partnership I";
+var bawls8tooltip = "Hand-Crafted Jewelry 1";
+var bawls9tooltip = "StRATegic Partnership 1";
 var bawls10tooltip = "Mechanics";
 var bawls6 = mods.compatskills.TraitCreator.createTrait("bawls6", 0, 1, "extraskills:bawls", 4, "and|[extraskills:bawls|11]~[trait|compatskills:bawls1]");
 var bawls7 = mods.compatskills.TraitCreator.createTrait("bawls7", 1, 1, "extraskills:bawls", 2, "trait|compatskills:bawls6");
@@ -38,8 +50,8 @@ var bawls10 = mods.compatskills.TraitCreator.createTrait("bawls10", 4, 1, "extra
 var bawls11tooltip = "Fire Power";
 var bawls12tooltip = "The Good Stuff";
 var bawls13tooltip = "Fine Boozables";
-var bawls14tooltip = "Transmutation II";
-var bawls15tooltip = "Mixology II";
+var bawls14tooltip = "Transmutation 2";
+var bawls15tooltip = "Mixology 2";
 var bawls11 = mods.compatskills.TraitCreator.createTrait("bawls11", 0, 2, "extraskills:bawls", 4, "and|[extraskills:bawls|21]~[trait|compatskills:bawls6]");
 var bawls12 = mods.compatskills.TraitCreator.createTrait("bawls12", 1, 2, "extraskills:bawls", 2, "and|[trait|compatskills:bawls11]~[trait|compatskills:bawls7]");
 var bawls13 = mods.compatskills.TraitCreator.createTrait("bawls13", 2, 2, "extraskills:bawls", 1, "trait|compatskills:bawls11");
@@ -48,8 +60,8 @@ var bawls15 = mods.compatskills.TraitCreator.createTrait("bawls15", 4, 2, "extra
 
 var bawls16tooltip = "Moon Power";
 var bawls17tooltip = "Fightin' Bugs & Movin' Dirt";
-var bawls18tooltip = "Hand-Crafted Jewelry II";
-var bawls19tooltip = "StRATegic Partnership II";
+var bawls18tooltip = "Hand-Crafted Jewelry 2";
+var bawls19tooltip = "StRATegic Partnership 2";
 var bawls20tooltip = "BUSTED!";
 var bawls16 = mods.compatskills.TraitCreator.createTrait("bawls16", 0, 3, "extraskills:bawls", 4, "and|[extraskills:bawls|31]~[trait|compatskills:bawls11]");
 var bawls17 = mods.compatskills.TraitCreator.createTrait("bawls17", 1, 3, "extraskills:bawls", 1, "trait|compatskills:bawls16");
@@ -58,6 +70,18 @@ var bawls19 = mods.compatskills.TraitCreator.createTrait("bawls19", 3, 3, "extra
 var bawls20 = mods.compatskills.TraitCreator.createTrait("bawls20", 4, 3, "extraskills:bawls", 2, "and|[extraskills:bawls|40]~[trait|compatskills:bawls16]");
 
 //bawls2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
+
+bawls1.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+ 
+    if(event.entity.world.time % 10 == 0) {
+        val player as IPlayer = event.entity;
+        player.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(6 * 20, 0));
+        player.addPotionEffect(<potion:minecraft:absorption>.makePotionEffect(6 * 20, 0));
+    }
+};
 
 
 //**************************************
@@ -76,7 +100,7 @@ var bawls1req = [
 	<embers:crystal_ember:*>,
 	<embers:wrapped_sealed_planks:*>,
 	<embers:tinker_lens:*>,
-	<embers:copper_cell:*>,
+	<embers:copper_cell>,
 	<soot:sealed_planks_stairs:*>,
 	<embers:ember_receiver:*>,
 	<embers:ember_emitter:*>,
@@ -623,7 +647,6 @@ var bawls5cons = [
 	<minecraft:potion>.withTag({Potion: "minecraft:weakness"}),
 	<minecraft:potion>.withTag({Potion: "mowziesmobs:long_poison_resist"}),
 	<minecraft:potion>.withTag({Potion: "mowziesmobs:poison_resist"}),
-	<minecraft:potion>.withTag({Potion: "potioncore:absorption"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:blindness"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:chance"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:cure"}),
@@ -719,7 +742,6 @@ var bawls5cons = [
 	<minecraft:splash_potion>.withTag({Potion: "minecraft:weakness"}),
 	<minecraft:splash_potion>.withTag({Potion: "mowziesmobs:long_poison_resist"}),
 	<minecraft:splash_potion>.withTag({Potion: "mowziesmobs:poison_resist"}),
-	<minecraft:splash_potion>.withTag({Potion: "potioncore:absorption"}),
 	<minecraft:splash_potion>.withTag({Potion: "potioncore:blindness"}),
 	<minecraft:splash_potion>.withTag({Potion: "potioncore:chance"}),
 	<minecraft:splash_potion>.withTag({Potion: "potioncore:chance"}),
@@ -816,7 +838,6 @@ var bawls5cons = [
 	<minecraft:lingering_potion>.withTag({Potion: "minecraft:weakness"}),
 	<minecraft:lingering_potion>.withTag({Potion: "mowziesmobs:long_poison_resist"}),
 	<minecraft:lingering_potion>.withTag({Potion: "mowziesmobs:poison_resist"}),
-	<minecraft:lingering_potion>.withTag({Potion: "potioncore:absorption"}),
 	<minecraft:lingering_potion>.withTag({Potion: "potioncore:blindness"}),
 	<minecraft:lingering_potion>.withTag({Potion: "potioncore:chance"}),
 	<minecraft:lingering_potion>.withTag({Potion: "potioncore:chance"}),
@@ -938,7 +959,6 @@ var bawls8req = [
 	<bountifulbaubles:amuletcross:*>,
 	<bountifulbaubles:crowngold:*>,
 	<bountifulbaubles:phantomprism:*>,
-	<bountifulbaubles:ringflywheel:*>,
 	<bountifulbaubles:ringfreeaction:*>,
 	<bountifulbaubles:ringoverclocking:*>,
 	<bountifulbaubles:shieldcobalt:*>,
@@ -992,18 +1012,14 @@ var bawls9req = [
 	<rats:cheese_stick:*>,
 	<rats:chef_toque:*>,
 	<rats:contaminated_food:*>,
-	<rats:farmer_hat:*>,
 	<rats:fish_barrel:*>,
-	<rats:fisherman_hat:*>,
 	<rats:herb_bundle:*>,
-	<rats:piper_hat:*>,
 	<rats:plague_leech:*>,
 	<rats:plague_stew:*>,
 	<rats:plastic_waste:*>,
 	<rats:radius_stick:*>,
 	<rats:rat_cage:*>,
 	<rats:rat_crafting_table:*>,
-	<rats:rat_fez:*>,
 	<rats:rat_flute:*>,
 	<rats:rat_sack:*>,
 	<rats:rat_toga:*>,
@@ -1067,8 +1083,6 @@ var bawls9req = [
 	<rats:rat_upgrade_speed>,
 	<rats:rat_upgrade_replanter>,
 	<rats:rat_upgrade_jury_rigged>,
-	<rats:rat_upgrade_basic_ratlantean>,
-	<rats:rat_upgrade_buccaneer>,
 	<rats:rat_tube_purple>,
 	<rats:rat_tube_blue>,
 	<rats:rat_tube_brown>,
@@ -1084,8 +1098,6 @@ var bawls9req = [
 	<rats:rat_tube_orange>,
 	<rats:rat_tube_light_blue>,
 	<rats:rat_tube_cyan>,
-	<rats:plague_scythe>,
-	<rats:plague_tome>,
 	<rats:rat_igloo_white>,
 	<rats:rat_igloo_orange>,
 	<rats:rat_igloo_magenta>,
@@ -1229,9 +1241,6 @@ var bawls12req = [
 	<embers:shifting_scales:*>,
 	<embers:staff_ember:*>,
 	<embers:winding_gears:*>,
-	<thaumicperiphery:caster_ember:*>,
-	<thaumicperiphery:pauldron:*>,
-	<thaumicperiphery:pauldron_repulsion:*>,
 	<embers:ember_jar:*>,
 	<embers:ember_bulb:*>
 
@@ -1794,7 +1803,32 @@ var bawls17req = [
 	<erebus:water_striders>,
 	<erebus:web_slinger>,
 	<erebus:web_slinger_wither>,
-	<erebus:woodlouse_ball>
+	<erebus:woodlouse_ball>,
+	<erebus:whetstone:5>,
+	<erebus:whetstone:4>,
+	<erebus:whetstone:3>,
+	<erebus:whetstone:2>,
+	<erebus:whetstone:1>,
+	<erebus:umber_golem_statue>,
+	<erebus:whetstone>,
+	<erebus:idols:4>,
+	<erebus:idols:7>,
+	<erebus:bamboo_nerd_pole>,
+	<erebus:bamboo_ladder>,
+	<erebus:bamboo_bridge>,
+	<erebus:mucus_bomb>,
+	<erebus:bamboo_pipe_extract>,
+	<erebus:liquifier>,
+	<erebus:glowing_jar>,
+	<erebus:silo_roof>,
+	<erebus:fluid_jar>,
+	<erebus:bamboo_extender>,
+	<erebus:smoothie_maker>,
+	<erebus:composter>,
+	<erebus:materials:15>,
+	<erebus:bamboo_crate>,
+	<erebus:silo_tank>,
+	<erebus:bamboo_pipe>
 		
 ] as IItemStack[];
 
@@ -1814,7 +1848,6 @@ var bawls18req = [
 	<bountifulbaubles:amuletsinwrath:*>,
 	<bountifulbaubles:magicmirror:*>,
 	<bountifulbaubles:reforger:*>,
-	<bountifulbaubles:ringflywheeladvanced:*>,
 	<bountifulbaubles:trinketankhcharm:*>,
 	<bountifulbaubles:trinketbezoar:*>,
 	<bountifulbaubles:trinketblackdragonscale:*>,
@@ -1829,10 +1862,6 @@ var bawls18req = [
 	<randomthings:obsidianskullring:*>,
 	<xat:damage_shield:*>,
 	<xat:dragons_eye:*>,
-	<xat:ender_tiara:*>,
-	<xat:greater_inertia_stone:*>,
-	<xat:inertia_null_stone:*>,
-	<xat:weightless_stone:*>,
 	<xat:glow_ring>,
 	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap2"}}),
 	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink2"}}),
@@ -1853,6 +1882,9 @@ for item in bawls18req {
 var bawls19req = [
 
 	<rats:archeologist_hat:*>,
+	<rats:piper_hat:*>,
+	<rats:fisherman_hat:*>,
+	<rats:farmer_hat:*>,
 	<rats:auto_curdler:*>,
 	<rats:black_death_mask:*>,
 	<rats:music_disc_living_mice:*>,
@@ -1865,7 +1897,6 @@ var bawls19req = [
 	<rats:rat_capture_net:*>,
 	<rats:rat_upgrade_advanced_energy:*>,
 	<rats:rat_upgrade_aquatic:*>,
-	<rats:rat_upgrade_archeologist:*>,
 	<rats:rat_upgrade_basic_energy:*>,
 	<rats:rat_upgrade_big_bucket:*>,
 	<rats:rat_upgrade_christmas:*>,
@@ -1875,16 +1906,15 @@ var bawls19req = [
 	<rats:rat_upgrade_disenchanter:*>,
 	<rats:rat_upgrade_elite_energy:*>,
 	<rats:rat_upgrade_enchanter:*>,
-	<rats:rat_upgrade_ender:*>,
 	<rats:rat_upgrade_feral_bite:*>,
 	<rats:rat_upgrade_flight:*>,
-	<rats:rat_upgrade_gemcutter:*>,
 	<rats:rat_upgrade_ore_doubling:*>,
 	<rats:rat_upgrade_placer:*>,
 	<rats:rat_upgrade_poison:*>,
 	<rats:rat_upgrade_tnt_survivor:*>,
 	<rats:rat_upgrade_warrior:*>,
 	<rats:santa_hat:*>,
+	<rats:rat_fez:*>,
 	<rats:top_hat:*>,
 	<rats:rat_upgrade_basic_ratlantean>,
 	<rats:rat_upgrade_buccaneer>,
@@ -1917,17 +1947,16 @@ var bawls20req = [
 	<rats:marbled_cheese_golem_core:*>,
 	<rats:marbled_cheese_rat_head:*>,
 	<rats:marbled_cheese_raw:*>,
-	<rats:rat_upgrade_dragon:*>,
 	<rats:rat_upgrade_extreme_energy:*>,
 	<rats:rat_upgrade_god:*>,
 	<rats:rat_upgrade_voodoo:*>,
 	<rats:upgrade_combiner:*>,
 	<rats:upgrade_separator:*>,
+	<rats:rat_upgrade_gemcutter:*>,
 	<transmutationalchemy:heavenly_potion:*>,
 	<transmutationalchemy:infinity_dust:*>,
 	<transmutationalchemy:magical_dust_tier5:*>,
 	<randomthings:floosign:*>,
-	
 	<minecraft:potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:flight"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:long_flight"}),

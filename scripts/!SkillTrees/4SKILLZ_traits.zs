@@ -8,7 +8,7 @@ import mods.compatskills.Requirement.addRequirement;
 var skillz1tooltip = "Essentials of Engineering";
 var skillz2tooltip = "Armaments";
 var skillz3tooltip = "Construction Permits";
-var skillz4tooltip = "Logistics I";
+var skillz4tooltip = "Logistics 1";
 var skillz5tooltip = "Installations and Machinery Maintenance";
 var skillz1 = mods.compatskills.TraitCreator.createTrait("skillz1", 0, 0, "extraskills:skillz", 5, "extraskills:skillz|5");
 var skillz2 = mods.compatskills.TraitCreator.createTrait("skillz2", 1, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
@@ -17,10 +17,10 @@ var skillz4 = mods.compatskills.TraitCreator.createTrait("skillz4", 3, 0, "extra
 var skillz5 = mods.compatskills.TraitCreator.createTrait("skillz5", 4, 0, "extraskills:skillz", 1, "trait|compatskills:skillz1");
 
 var skillz6tooltip = "Light Machinery and Equipment";
-var skillz7tooltip = "Red Circuitry I";
+var skillz7tooltip = "Red Circuitry 1";
 var skillz8tooltip = "Archaeological Experimentation";
 var skillz9tooltip = "Safety and Security Systems";
-var skillz10tooltip = "Ballistics and Explosives I";
+var skillz10tooltip = "Ballistics and Explosives 1";
 var skillz6 = mods.compatskills.TraitCreator.createTrait("skillz6", 0, 1, "extraskills:skillz", 4, "and|[extraskills:skillz|11]~[trait|compatskills:skillz1]");
 var skillz7 = mods.compatskills.TraitCreator.createTrait("skillz7", 1, 1, "extraskills:skillz", 1, "trait|compatskills:skillz6");
 var skillz8 = mods.compatskills.TraitCreator.createTrait("skillz8", 2, 1, "extraskills:skillz", 2, "trait|compatskills:skillz6");
@@ -28,10 +28,10 @@ var skillz9 = mods.compatskills.TraitCreator.createTrait("skillz9", 3, 1, "extra
 var skillz10 = mods.compatskills.TraitCreator.createTrait("skillz10", 4, 1, "extraskills:skillz", 2, "trait|compatskills:skillz6");
 
 var skillz11tooltip = "Heavy Machinery and Equipment";
-var skillz12tooltip = "Red Circuitry II";
-var skillz13tooltip = "Bio-Mechanics I";
-var skillz14tooltip = "Logistics II";
-var skillz15tooltip = "Ballistics and Explosives II";
+var skillz12tooltip = "Red Circuitry 2";
+var skillz13tooltip = "Bio-Mechanics 1";
+var skillz14tooltip = "Logistics 2";
+var skillz15tooltip = "Ballistics and Explosives 2";
 var skillz11 = mods.compatskills.TraitCreator.createTrait("skillz11", 0, 2, "extraskills:skillz", 4, "and|[extraskills:skillz|21]~[trait|compatskills:skillz6]");
 var skillz12 = mods.compatskills.TraitCreator.createTrait("skillz12", 1, 2, "extraskills:skillz", 1, "and|[trait|compatskills:skillz11]~[trait|compatskills:skillz7]");
 var skillz13 = mods.compatskills.TraitCreator.createTrait("skillz13", 2, 2, "extraskills:skillz", 2, "and|[trait|compatskills:skillz11]~[trait|compatskills:skillz8]");
@@ -40,7 +40,7 @@ var skillz15 = mods.compatskills.TraitCreator.createTrait("skillz15", 4, 2, "ext
 
 var skillz16tooltip = "Core-Tapping";
 var skillz17tooltip = "Skyward";
-var skillz18tooltip = "Bio-Mechanics II";
+var skillz18tooltip = "Bio-Mechanics 2";
 var skillz19tooltip = "Advanced Assembly";
 var skillz20tooltip = "PERFECTED!";
 var skillz16 = mods.compatskills.TraitCreator.createTrait("skillz16", 0, 3, "extraskills:skillz", 4, "and|[extraskills:skillz|31]~[trait|compatskills:skillz11]");
@@ -659,6 +659,15 @@ var skillz6req = [
 	<immersiveengineering:pickaxe_steel>,
 	<engineerstools:sleeping_bag>,
 	<immersiveengineering:skyhook>,
+	<shipwrecks_winslow:diving_helmet>,
+	<shipwrecks_winslow:diving_chest>,
+	<shipwrecks_winslow:diving_boots>,
+	<immersiveengineering:sword_steel>,
+	<immersiveintelligence:measuring_cup>,
+	<immersiveintelligence:lighter>,
+	<immersiveintelligence:material_spring>,
+	<immersiveintelligence:material_spring:1>,
+	<immersiveintelligence:material_spring:2>,
 	<cyclicmagic:ender_torch>
 	
 ] as IItemStack[];
@@ -675,7 +684,6 @@ for item in skillz6req {
 var skillz7req = [
 
 	<charm:redstone_sand>,
-	<cyclicmagic:moon_sensor>,
 	<engineersdecor:iron_floor_edge_light>,
 	<engineersdecor:iron_inset_light>,
 	<immersiveengineering:connector:12>,
@@ -740,7 +748,6 @@ var skillz8req = [
 	<fossil:cultivate>,
 	<fossil:deinonychus_egg>,
 	<fossil:dinopedia>,
-	<fossil:diplodocus_egg>,
 	<fossil:dodo_egg_cultivated>,
 	<fossil:dryosaurus_egg>,
 	<fossil:edaphosaurus_egg>,
@@ -879,7 +886,11 @@ var skillz10req = [
 	<ebwizardry:smoke_bomb>,
 	<ebwizardry:spark_bomb>,
 	<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}),
-	<immersiveengineering:bullet:*>,
+	<immersiveintelligence:casing_revolver>,
+	<immersiveengineering:bullet:2>.withTag({bullet: "casull"}),
+	<immersiveengineering:bullet:2>.withTag({bullet: "armor_piercing"}),
+	<immersiveengineering:bullet:2>.withTag({bullet: "he"}),
+	<immersiveengineering:bullet:2>.withTag({bullet: "silver"}),
 	<immersiveengineering:drill>,
 	<immersiveengineering:drillhead:1>,
 	<immersiveengineering:jerrycan>,
@@ -945,7 +956,43 @@ var skillz11req = [
 	<industrialrenewal:dam_outflow>,
 	<industrialrenewal:dam_turbine>,
 	<industrialrenewal:electric_pump>,
-	<industrialrenewal:high_pressure_pipe>
+	<industrialrenewal:high_pressure_pipe>,
+	<immersiveintelligence:precission_tool:2>,
+	<immersiveintelligence:precission_tool:1>,
+	<immersiveintelligence:precission_tool>,
+	<immersiveintelligence:material_plate>,
+	<immersiveintelligence:material_ingot:5>,
+	<immersiveintelligence:material_ingot>,
+	<immersiveintelligence:material_dust>,
+	<immersiveintelligence:material:14>,
+	<immersiveintelligence:material:13>,
+	<immersiveintelligence:sawblade:2>,
+	<immersiveintelligence:sawblade:1>,
+	<immersiveintelligence:sawblade>,
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material", Count: 1 as byte, Damage: 9 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material", Count: 1 as byte, Damage: 1 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material", Count: 4 as byte, Damage: 8 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material_plate", Count: 1 as byte, Damage: 5 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material_ingot", Count: 1 as byte, Damage: 6 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:material", Count: 4 as byte, Damage: 26 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material", Count: 1 as byte, Damage: 4 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveintelligence:material", Count: 2 as byte, Damage: 0 as short}}),
+	<immersiveintelligence:precission_tool:5>,
+	<immersiveintelligence:precission_tool:4>,
+	<immersiveintelligence:precission_tool:3>,
+	<immersiveintelligence:material:2>,
+	<immersiveintelligence:material:3>,
+	<immersiveintelligence:material:7>,
+	<immersiveintelligence:material:6>,
+	<immersiveintelligence:material:5>,
+	<immersiveintelligence:material:8>,
+	<immersiveintelligence:material:4>,
+	<immersiveintelligence:material:1>,
+	<immersivetech:stone_decoration_slab>,
+	<immersiveintelligence:material:9>,
+	<immersiveintelligence:material>,
+	<immersiveintelligence:material:20>,
+	<immersiveintelligence:printed_page>
 	
 ] as IItemStack[];
 
@@ -1009,7 +1056,11 @@ var skillz12req = [
 	<randomthings:inventorytester>,
 	<randomthings:onlinedetector>,
 	<randomthings:redstoneobserver>,
-	<zettaindustries:variableredstoneemitter>
+	<zettaindustries:variableredstoneemitter>,
+	<immersiveintelligence:material_ingot:6>,
+	<immersiveintelligence:material_plate:5>,
+	<immersiveintelligence:material_dust:5>,
+	<immersiveintelligence:material_boule>
 	
 ] as IItemStack[];
 
@@ -1027,10 +1078,9 @@ mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:firedragon>, "
 
 var skillz13req = [
 
-	<cyclicmagic:block_enchanter>,
-	<cyclicmagic:exp_pylon>,
 	<fossil:ankylosaurus_egg>,
 	<fossil:arthropleura_egg>,
+	<cyberware:cybereye_upgrades:2>,
 	<fossil:ceratosaurus_egg>,
 	<fossil:chicken_essence>,
 	<fossil:dilophosaurus_egg>,
@@ -1088,6 +1138,21 @@ var skillz13req = [
 	<cyberware:cybereye_upgrades:3>,
 	<cyberware:cybereye_upgrades:4>,
 	<immersiveengineering:material:27>,
+	<cyberware:surgery>,
+	<cyberware:surgery_chamber>,
+	<cyberware:charger>,
+	<contenttweaker:dna_bodypart_stomach>,
+	<contenttweaker:dna_bodypart_heart>,
+	<contenttweaker:dna_bodypart_lungs>,
+	<contenttweaker:dna_bodypart_brain>,
+	<contenttweaker:dna_bodypart_bones>,
+	<contenttweaker:dna_bodypart_eyes>,
+	<contenttweaker:dna_bodypart_armleft>,
+	<contenttweaker:dna_bodypart_muscle>,
+	<contenttweaker:dna_bodypart_legleft>,
+	<contenttweaker:dna_bodypart_legright>,
+	<contenttweaker:dna_bodypart_armright>,
+	<contenttweaker:dna_bodypart_skin>
 	
 ] as IItemStack[];
 
@@ -1106,8 +1171,6 @@ var skillz14req = [
 	<cyclicmagic:block_fishing>,
 	<cyclicmagic:block_shears>,
 	<cyclicmagic:block_user>,
-	<cyclicmagic:magnet_anti_block>,
-	<cyclicmagic:magnet_block>,
 	<cyclicmagic:plate_vector>,
 	<engineersdecor:factory_placer>,
 	<engineersdecor:straight_pipe_valve>,
@@ -1143,9 +1206,7 @@ var skillz14req = [
 	<multistorage:stone_storage:8>,
 	<multistorage:stone_storage>,
 	<randomthings:biomeradar>,
-	<randomthings:emeraldcompass>,
 	<randomthings:entityfilter>,
-	<randomthings:goldencompass>,
 	<randomthings:igniter>,
 	<randomthings:inventoryrerouter>,
 	<randomthings:itemfilter>,
@@ -1191,7 +1252,6 @@ for item in skillz14req {
 
 
 /* not yet in use
-
 var skillz14cons = [
 
 	<transmutationalchemy:enchantment_boost_potion:*>,
@@ -1218,16 +1278,12 @@ var skillz15req = [
 	<cyclicmagic:ender_tnt_4>,
 	<cyclicmagic:ender_tnt_5>,
 	<cyclicmagic:ender_tnt_6>,
-	<ea:drillhead_thaumium>,
-	<ea:drillhead_void>,
-	<ea:upgrade_refining>,
 	<ebwizardry:firebomb>,
 	<ebwizardry:poison_bomb>,
 	<immersiveengineering:blueprint>.withTag({blueprint: "specialBullet"}),
 	<immersiveengineering:bullet:2>.withTag({bullet: "buckshot"}),
 	<immersiveengineering:bullet:2>.withTag({bullet: "dragonsbreath"}),
 	<immersiveengineering:bullet:2>.withTag({bullet: "flare"}),
-	<immersiveengineering:bullet:2>.withTag({bullet: "potion"}),
 	<immersiveengineering:bullet:2>.withTag({bullet: "zettaindustries:hook_bullet"}),
 	<immersiveengineering:chemthrower>,
 	<immersiveengineering:drillhead>,
@@ -1344,9 +1400,7 @@ var skillz17req = [
 	<aether:arkenium_chestplate>,
 	<aether:arkenium_crossbow>,
 	<aether:arkenium_axe>,
-	<aether:cloud_parachute:2>,
-	<aether:cloud_parachute:1>,
-	<aether:cloud_parachute>,
+	<aether:cloud_parachute:*>,
 	<aether:holystone_bookshelf>,
 	<aether:aether_saddle>,
 	<aether:quicksoil_glass>,
@@ -1406,23 +1460,19 @@ var skillz18req = [
 	<cyberware:arm_upgrades>,
 	<cyberware:brain_upgrades>,
 	<cyberware:cyberheart>,
+	<cyberware:dense_battery>,
 	<cyberware:eye_upgrades>,
 	<cyberware:heart_upgrades:1>,
 	<cyberware:heart_upgrades:3>,
-	<cyberware:leg_upgrades>,
 	<cyberware:lower_organs_upgrades:1>,
 	<cyberware:lower_organs_upgrades:3>,
 	<cyberware:muscle_upgrades:1>,
 	<cyberware:muscle_upgrades>,
 	<cyberware:skin_upgrades:3>,
 	<cyberware:skin_upgrades>,
-	<immersiveintelligence:material:10>,
-	<immersiveintelligence:material:11>,
-	<immersiveintelligence:material:12>,
 	<minecraft:spawn_egg>.withTag({EntityTag: {id: "mutantbeasts:creeper_minion"}}),
 	<mutantbeasts:chemical_x>,
 	<mutantbeasts:creeper_minion_tracker>,
-	<randomthings:soundpattern>,
 	<rewired:cranium>,
 	<rewired:energydrink>,
 	<rewired:hand>,
@@ -1463,7 +1513,7 @@ var skillz19req = [
 
 for item in skillz19req {
 	addRequirement(item, "trait|compatskills:skillz19");
-	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz18tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.red("SKILLZ - " + skillz19tooltip));
 }
 
 //**************************************
