@@ -90,6 +90,7 @@ bawls1.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
 
 var bawls1req = [
 
+	<soot:stamp_text>,
 	<embers:mech_core:*>,
 	<embers:item_pump:*>,
 	<embers:item_pipe:*>,
@@ -298,15 +299,12 @@ var bawls2req = [
 	<spartanweaponry:warhammer_electrum:*>,
 	<spartanweaponry:warhammer_gold:*>,
 	<spartanweaponry:warhammer_iron:*>,
-	<spartanweaponry:warhammer_iron:*>,
 	<spartanweaponry:warhammer_lead:*>,
 	<spartanweaponry:warhammer_nickel:*>,
 	<spartanweaponry:warhammer_silver:*>,
 	<spartanweaponry:warhammer_steel:*>,
 	<spartanweaponry:warhammer_stone:*>,
-	<spartanweaponry:warhammer_stone:*>,
 	<spartanweaponry:warhammer_tin:*>,
-	<spartanweaponry:warhammer_wood:*>,
 	<spartanweaponry:warhammer_wood:*>,
 	<spartanweaponryarcana:battleaxe_dawnstone:*>,
 	<spartanweaponryarcana:battleaxe_thaumium:*>,
@@ -314,7 +312,6 @@ var bawls2req = [
 	<spartanweaponryarcana:crossbow_dawnstone:*>,
 	<spartanweaponryarcana:crossbow_thaumium:*>,
 	<spartanweaponryarcana:crossbow_voidmetal:*>,
-	<spartanweaponryarcana:greatsword_dawnstone:*>,
 	<spartanweaponryarcana:greatsword_dawnstone:*>,
 	<spartanweaponryarcana:greatsword_thaumium:*>,
 	<spartanweaponryarcana:greatsword_voidmetal:*>,
@@ -324,7 +321,6 @@ var bawls2req = [
 	<spartanweaponryarcana:throwing_axe_dawnstone:*>,
 	<spartanweaponryarcana:throwing_axe_thaumium:*>,
 	<spartanweaponryarcana:throwing_axe_voidmetal:*>,
-	<spartanweaponryarcana:warhammer_dawnstone:*>,
 	<spartanweaponryarcana:warhammer_dawnstone:*>,
 	<spartanweaponryarcana:warhammer_thaumium:*>,
 	<spartanweaponryarcana:warhammer_voidmetal:*>
@@ -530,7 +526,17 @@ var bawls4req = [
 	<runesofwizardry:broom>,
 	<runesofwizardry:dust_pouch:*>,
 	<runesofwizardry:dust_dye:*>,
-	<runesofwizardry:dust_dyed:*>
+	<runesofwizardry:dust_dyed:*>,
+	<runesofwizardry:dust_inert_storage>,
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:foresight"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:bounce"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:void"}}),
+	<runesofwizardry:dust_pouch>.withTag({runesofwizardry: {}}),
+	<runesofwizardry_classics:dust_classic_storage>,
+	<runesofwizardry_classics:dust_classic_storage:1>,
+	<runesofwizardry:inscription>.withTag({runesofwizardry: {}})
 	
 ] as IItemStack[];
 
@@ -905,7 +911,14 @@ var bawls6req = [
 	<embers:inferno_forge:*>,
 	<embers:jet_augment:*>,
 	<embers:resonating_bell:*>,
-	<thejungle:golden_crab_meat>
+	<thejungle:golden_crab_meat>,
+	<embers:glimmer_shard>,
+	<embers:item_request>,
+	<embers:golems_eye>,
+	<embers:large_tank>,
+	<embers:stone_edge>,
+	<embers:stone_valve>,
+	<embers:geo_separator>
 
 ] as IItemStack[];
 
@@ -987,14 +1000,11 @@ var bawls8req = [
 	<xat:polarized_stone:*>,
 	<xat:sea_stone:*>,
 	<randomthings:obsidianskull>,
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap"}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink"}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:void"}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:bounce"}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:foresight"}})
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:void"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:bounce"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:foresight"}})
 
-	
 ] as IItemStack[];
 
 for item in bawls8req {
@@ -1154,10 +1164,8 @@ var bawls10req = [
 
 	<embers:boiler:*>,
 	<embers:breaker:*>,
-	<embers:combustor:*>,
 	<embers:fluid_transfer:*>,
 	<embers:gear_dawnstone:*>,
-	<embers:geo_separator:*>,
 	<embers:item_dropper:*>,
 	<embers:item_transfer:*>,
 	<embers:mech_actuator:*>,
@@ -1167,8 +1175,6 @@ var bawls10req = [
 	<embers:stamp_gear_raw:*>,
 	<embers:steam_engine:*>,
 	<embers:stirling:*>,
-	<embers:stone_edge:*>,
-	<embers:stone_valve:*>,
 	<embers:vacuum:*>,
 	<mysticalmechanics:axle_iron:*>,
 	<mysticalmechanics:gear_fan:*>,
@@ -1178,7 +1184,9 @@ var bawls10req = [
 	<mysticalmechanics:gear_iron:*>,
 	<mysticalmechanics:gearbox_frame:*>,
 	<mysticalmechanics:mergebox_frame:*>,
-	<soot:redstone_bin:*>
+	<soot:redstone_bin:*>,
+	<embers:mech_actuator_single>,
+	<mystgears:mechanical_dial>
 	
 ] as IItemStack[];
 
@@ -1209,8 +1217,13 @@ var bawls11req = [
 	<iceandfire:diamond_hippogryph_armor:*>,
 	<iceandfire:gold_hippogryph_armor:*>,
 	<iceandfire:iron_hippogryph_armor:*>,
-	<soot:ember_burst:*>
-			
+	<soot:ember_burst:*>,
+	<embers:ember_pipe>,
+	<embers:catalyzer>,
+	<embers:reaction_chamber>,
+	<embers:spark_plug>,
+	<embers:combustor>
+				
 ] as IItemStack[];
 
 for item in bawls11req {
@@ -1255,6 +1268,10 @@ for item in bawls12req {
 //							BAWLS 13
 //**************************************
 
+//quick fix
+<soot:essence:0>.withTag({type: "null"}).displayName = "Empty Essence Flask";
+<soot:essence:0>.withTag({type: "null"}).addTooltip("Used to extract essence from the top of an Essence Decanter.");
+
 var bawls13req = [
 
 	<embers:catalytic_plug:*>,
@@ -1265,7 +1282,6 @@ var bawls13req = [
 	<soot:ingot_antimony:*>,
 	<soot:insulation:*>,
 	<soot:mug:*>,
-	<soot:mundane_stone:*>,
 	<soot:scale:*>,
 	<soot:signet_antimony:*>,
 	<soot:still:*>,
@@ -1274,7 +1290,7 @@ var bawls13req = [
 	<xat:titan_spirit>,
 	<xat:fairy_dew>,
 	<soot:essence:*>,
-	<soot:decanter>
+	<soot:decanter>,
 
 ] as IItemStack[];
 
@@ -1306,7 +1322,14 @@ var bawls14req = [
 	<transmutationalchemy:unstable_crystal_seed:*>,
 	<transmutationalchemy:unstable_pickaxe:*>,
 	<transmutationalchemy:venom_crystal:*>,
-	<transmutationalchemy:venom_shard:*>
+	<transmutationalchemy:venom_shard:*>,
+	<runesofwizardry_classics:dust_classic:3>,
+	<runesofwizardry_classics:dust_classic:2>,
+	<runesofwizardry:inscription:*>,
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink2"}}),
+	<runesofwizardry_classics:dust_classic_storage:3>,
+	<runesofwizardry_classics:dust_classic_storage:2>,
+	<transmutationalchemy:magic_wand>
 	
 ] as IItemStack[];
 
@@ -1828,7 +1851,11 @@ var bawls17req = [
 	<erebus:materials:15>,
 	<erebus:bamboo_crate>,
 	<erebus:silo_tank>,
-	<erebus:bamboo_pipe>
+	<erebus:bamboo_pipe>,
+	<midnight:spore_bomb:1>,
+	<midnight:spore_bomb:2>,
+	<midnight:spore_bomb:3>,
+	<midnight:spore_bomb>
 		
 ] as IItemStack[];
 
@@ -1863,10 +1890,8 @@ var bawls18req = [
 	<xat:damage_shield:*>,
 	<xat:dragons_eye:*>,
 	<xat:glow_ring>,
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap2"}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink2"}}),
-	<runesofwizardry:inscription>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:return"}})
-
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:leap2"}}),
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:blink2"}})
 
 ] as IItemStack[];
 
@@ -1957,6 +1982,7 @@ var bawls20req = [
 	<transmutationalchemy:infinity_dust:*>,
 	<transmutationalchemy:magical_dust_tier5:*>,
 	<randomthings:floosign:*>,
+	<runesofwizardry:inscription:1>.withTag({runesofwizardry: {inscription_id: "runesofwizardry_classics:return"}}),
 	<minecraft:potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:flight"}),
 	<minecraft:potion>.withTag({Potion: "potioncore:long_flight"}),

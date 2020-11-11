@@ -319,6 +319,12 @@ var skillz3req = [
 	<chisel:bricks2:4>,
 	<chisel:bricks2:5>,
 	<chisel:bricks2>,
+	<chisel:bricks:10>,
+	<chisel:bricks:11>,
+	<chisel:bricks:12>,
+	<chisel:bricks:13>,
+	<chisel:bricks:14>,
+	<chisel:bricks:15>,
 	<chisel:bricks:1>,
 	<chisel:bricks:2>,
 	<chisel:bricks:3>,
@@ -328,12 +334,6 @@ var skillz3req = [
 	<chisel:bricks:7>,
 	<chisel:bricks:8>,
 	<chisel:bricks:9>,
-	<chisel:bricks:10>,
-	<chisel:bricks:11>,
-	<chisel:bricks:12>,
-	<chisel:bricks:13>,
-	<chisel:bricks:14>,
-	<chisel:bricks:15>,
 	<chisel:bricks>,
 	<chisel:brownstone:1>,
 	<chisel:brownstone:2>,
@@ -350,6 +350,12 @@ var skillz3req = [
 	<chisel:factory1:2>,
 	<chisel:factory1:3>,
 	<chisel:factory1>,
+	<chisel:factory:10>,
+	<chisel:factory:11>,
+	<chisel:factory:12>,
+	<chisel:factory:13>,
+	<chisel:factory:14>,
+	<chisel:factory:15>,
 	<chisel:factory:1>,
 	<chisel:factory:2>,
 	<chisel:factory:3>,
@@ -359,12 +365,6 @@ var skillz3req = [
 	<chisel:factory:7>,
 	<chisel:factory:8>,
 	<chisel:factory:9>,
-	<chisel:factory:10>,
-	<chisel:factory:11>,
-	<chisel:factory:12>,
-	<chisel:factory:13>,
-	<chisel:factory:14>,
-	<chisel:factory:15>,
 	<chisel:factory>,
 	<chisel:futura>,
 	<chisel:technical1:1>,
@@ -372,6 +372,12 @@ var skillz3req = [
 	<chisel:technical1:3>,
 	<chisel:technical1:4>,
 	<chisel:technical1>,
+	<chisel:technical:10>,
+	<chisel:technical:11>,
+	<chisel:technical:12>,
+	<chisel:technical:13>,
+	<chisel:technical:14>,
+	<chisel:technical:15>,
 	<chisel:technical:1>,
 	<chisel:technical:2>,
 	<chisel:technical:3>,
@@ -381,12 +387,6 @@ var skillz3req = [
 	<chisel:technical:7>,
 	<chisel:technical:8>,
 	<chisel:technical:9>,
-	<chisel:technical:10>,
-	<chisel:technical:11>,
-	<chisel:technical:12>,
-	<chisel:technical:13>,
-	<chisel:technical:14>,
-	<chisel:technical:15>,
 	<chisel:technical>,
 	<chisel:technicalnew:1>,
 	<chisel:technicalnew:2>,
@@ -428,6 +428,8 @@ var skillz3req = [
 	<engineersdoors:fencegate_treated>,
 	<engineersdoors:trapdoor_steel>,
 	<engineersdoors:trapdoor_treated>,
+	<immersive_energy:sheetmetal:1>,
+	<immersive_energy:sheetmetal>,
 	<immersiveengineering:connector:6>,
 	<immersiveengineering:metal_decoration2:1>,
 	<immersiveengineering:metal_decoration2:2>,
@@ -437,6 +439,7 @@ var skillz3req = [
 	<immersiveengineering:metal_decoration2>,
 	<immersiveengineering:metal_ladder:1>,
 	<immersiveengineering:metal_ladder:2>,
+	<immersiveengineering:sheetmetal:10>,
 	<immersiveengineering:sheetmetal:1>,
 	<immersiveengineering:sheetmetal:2>,
 	<immersiveengineering:sheetmetal:3>,
@@ -444,7 +447,6 @@ var skillz3req = [
 	<immersiveengineering:sheetmetal:5>,
 	<immersiveengineering:sheetmetal:6>,
 	<immersiveengineering:sheetmetal:7>,
-	<immersiveengineering:sheetmetal:10>,
 	<immersiveengineering:sheetmetal>,
 	<immersiveengineering:stone_decoration:4>,
 	<immersiveengineering:stone_decoration:5>,
@@ -472,19 +474,6 @@ var skillz3req = [
 	<industrialrenewal:scaffold>,
 	<industrialrenewal:wall_concrete>,
 	<industrialrenewal:window>,
-	<chisel:technicalnew:3>,
-	<chisel:technicalnew:2>,
-	<chisel:technicalnew:1>,
-	<chisel:technicalnew>,
-	<chisel:technical1:4>,
-	<chisel:technical1:3>,
-	<chisel:technicalnew:7>,
-	<chisel:technicalnew:8>,
-	<immersive_energy:sheetmetal>,
-	<immersive_energy:sheetmetal:1>,
-	<chisel:technicalnew:6>,
-	<chisel:technicalnew:5>,
-	<chisel:technicalnew:4>
 	
 ] as IItemStack[];
 
@@ -543,6 +532,8 @@ for item in skillz4req {
 var skillz5req = [
 
 	<adpother:aerometer>,
+	<immersiveengineering:blueprint>.withTag({blueprint: "advanced_tool"}),
+	<immersive_energy:metal_machines0>,
 	<adpother:diamond_filter>,
 	<adpother:diamond_respirator>,
 	<adpother:diamond_vacuum_bag>,
@@ -719,7 +710,87 @@ var skillz7req = [
 	<randomthings:analogemitter>,
 	<randomthings:sidedredstone>,
 	<randomthings:triggerglass>,
-	<rewired:ecglass>
+	<rewired:ecglass>,
+	<rsgauges:pulseswitch2>,
+	<rsgauges:pulseswitch1>,
+	<rsgauges:contactmat2>,
+	<rsgauges:contactmat3>,
+	<rsgauges:trapdoorswitch1>,
+	<rsgauges:trapdoorswitch2>,
+	<rsgauges:contactmat1>,
+	<rsgauges:industrial_comparator_switch>,
+	<rsgauges:dimmerswitch1>,
+	<rsgauges:indicator2>,
+	<rsgauges:pulseswitch_glass3>,
+	<rsgauges:contactmat_glass1>,
+	<rsgauges:indicator_led_white_blink>,
+	<rsgauges:bistableswitch_rustic1>,
+	<rsgauges:contactmat_glass2>,
+	<rsgauges:pulseswitch_oldfancy4>,
+	<rsgauges:pulseswitch_oldfancy2>,
+	<rsgauges:pulseswitch_oldfancy1>,
+	<rsgauges:indicator_rustic_flag>,
+	<rsgauges:bistableswitch_glass1>,
+	<rsgauges:contactmat_rustic3>,
+	<rsgauges:trapdoorswitch_rustic1>,
+	<rsgauges:pulseswitch_glass2>,
+	<rsgauges:indicator4>,
+	<rsgauges:indicator1blink1>,
+	<rsgauges:trapdoorswitch_rustic2>,
+	<rsgauges:trapdoorswitch_rustic3>,
+	<rsgauges:pulseswitch6>,
+	<rsgauges:pulseswitch5>,
+	<rsgauges:bistableswitch6>,
+	<rsgauges:trapdoorswitch3>,
+	<rsgauges:pulseswitch3>,
+	<rsgauges:bistableswitch_glass2>,
+	<rsgauges:pulseswitch_glass1>,
+	<rsgauges:soundindicator1>,
+	<rsgauges:indicator1>,
+	<rsgauges:door_sensor_switch>,
+	<rsgauges:sensitiveglass_white>,
+	<rsgauges:sensitiveglass_red>,
+	<rsgauges:bistableswitch_oldfancy2>,
+	<rsgauges:sensitiveglass_green>,
+	<rsgauges:bistableswitch_oldfancy1>,
+	<rsgauges:valve_wheel_switch>,
+	<rsgauges:sensitiveglass>,
+	<rsgauges:sensitiveglass_blue>,
+	<rsgauges:arrowtarget>,
+	<rsgauges:bistableswitch4>,
+	<rsgauges:bistableswitch2>,
+	<rsgauges:bistableswitch8>,
+	<rsgauges:bistableswitch7>,
+	<rsgauges:bistableswitch1>,
+	<rsgauges:bistableswitch3>,
+	<rsgauges:bistableswitch5>,
+	<rsgauges:elevator_button>,
+	<rsgauges:indicator3>,
+	<rsgauges:indicator3blink1>,
+	<rsgauges:indicator_led_white>,
+	<rsgauges:indicator2blink1>,
+	<rsgauges:bistableswitch_rustic2>,
+	<rsgauges:pulseswitch_rustic1>,
+	<rsgauges:bistableswitch_rustic7>,
+	<rsgauges:pulseswitch_rustic2>,
+	<rsgauges:pulseswitch_rustic3>,
+	<rsgauges:sensitiveglass_lightgray>,
+	<rsgauges:sensitiveglass_lime>,
+	<rsgauges:sensitiveglass_purple>,
+	<rsgauges:sensitiveglass_brown>,
+	<rsgauges:sensitiveglass_black>,
+	<rsgauges:sensitiveglass_magenta>,
+	<rsgauges:sensitiveglass_cyan>,
+	<rsgauges:sensitiveglass_inverted>,
+	<rsgauges:sensitiveglass_yellow>,
+	<rsgauges:sensitiveglass_lightblue>,
+	<rsgauges:sensitiveglass_pink>,
+	<rsgauges:sensitiveglass_gray>,
+	<rsgauges:sensitiveglass_orange>,
+	<rsgauges:bistableswitch_rustic3>,
+	<rsgauges:contactmat_rustic2>,
+	<rsgauges:contactmat_rustic1>,
+	<rsgauges:pulseswitch_rustic7>
 	
 ] as IItemStack[];
 
@@ -857,7 +928,8 @@ var skillz9req = [
 	<immersiveintelligence:stone_decoration>,
 	<immersiveintelligence:data_connector:2>,
 	<immersiveintelligence:binoculars>,
-	<immersiveintelligence:binoculars:1>.withTag({enabled: 0 as byte})
+	<immersiveintelligence:binoculars:1>.withTag({enabled: 0 as byte}),
+	<randomthings:sounddampener>
 	
 ] as IItemStack[];
 
@@ -1056,7 +1128,54 @@ var skillz12req = [
 	<immersiveintelligence:material_ingot:6>,
 	<immersiveintelligence:material_plate:5>,
 	<immersiveintelligence:material_dust:5>,
-	<immersiveintelligence:material_boule>
+	<immersiveintelligence:material_boule>,
+	<rsgauges:powerplant_red>,
+	<rsgauges:relay_pulseswitchrx2>,
+	<rsgauges:automaticswitch1>,
+	<rsgauges:observerswitch1>,
+	<rsgauges:automaticswitch2>,
+	<rsgauges:automaticswitch3>,
+	<rsgauges:automaticswitch5>,
+	<rsgauges:automaticswitch6>,
+	<rsgauges:relay_bistableswitchrx1>,
+	<rsgauges:switchlink_pearl>,
+	<rsgauges:detectorswitch_glass1>,
+	<rsgauges:detectorswitch_glass2>,
+	<randomthings:idcard>,
+	<rsgauges:flatgauge3>,
+	<rsgauges:gauge_rustic2>,
+	<rsgauges:flatgauge1>,
+	<rsgauges:flatgauge6>,
+	<rsgauges:flatgauge2>,
+	<rsgauges:flatgauge5>,
+	<rsgauges:timerswitch_glass1>,
+	<rsgauges:daytimeswitch_glass1>,
+	<rsgauges:flatgauge4>,
+	<rsgauges:industrial_knock_switch>,
+	<rsgauges:industrial_knock_button>,
+	<rsgauges:automaticswitch4>,
+	<rsgauges:relay_pulseswitchtx1>,
+	<rsgauges:automaticswitch7>,
+	<rsgauges:relay_bistableswitchtx1>,
+	<rsgauges:relay_pulseswitchrx1>,
+	<rsgauges:powerplant_yellow>,
+	<rsgauges:relay_bistableswitchrx2>,
+	<projectred-core:resource_item:508>,
+	<projectred-core:resource_item:507>,
+	<projectred-core:resource_item:506>,
+	<projectred-core:resource_item:505>,
+	<projectred-core:resource_item:504>,
+	<projectred-core:resource_item:503>,
+	<projectred-core:resource_item:502>,
+	<projectred-core:resource_item:501>,
+	<projectred-core:resource_item:500>,
+	<projectred-core:resource_item:509>,
+	<projectred-core:resource_item:510>,
+	<projectred-core:resource_item:511>,
+	<projectred-core:resource_item:512>,
+	<projectred-core:resource_item:513>,
+	<projectred-core:resource_item:514>,
+	<projectred-core:resource_item:515>
 	
 ] as IItemStack[];
 
@@ -1148,8 +1267,12 @@ var skillz13req = [
 	<contenttweaker:dna_bodypart_legleft>,
 	<contenttweaker:dna_bodypart_legright>,
 	<contenttweaker:dna_bodypart_armright>,
-	<contenttweaker:dna_bodypart_skin>
-	
+	<contenttweaker:dna_bodypart_skin>,
+	<cyberware:heart_upgrades:2>,
+	<cyberware:component:7>,
+	<cyberware:skin_upgrades:2>,
+	<rewired:canopic_jar>
+
 ] as IItemStack[];
 
 for item in skillz13req {
@@ -1237,7 +1360,10 @@ var skillz14req = [
 	<immersiveintelligence:data_connector:5>,
 	<immersiveintelligence:cloth_decoration>,
 	<immersiveintelligence:cloth_decoration:1>,
-	<immersiveintelligence:metal_decoration:5>
+	<immersiveintelligence:metal_decoration:5>,
+	<randomthings:advancedredstoneinterface>,
+	<randomthings:basicredstoneinterface>,
+	<randomthings:redstonetool>
 
 ] as IItemStack[];
 
@@ -1359,7 +1485,8 @@ var skillz16req = [
 	<randomthings:ingredient:6>,
 	<randomthings:superlubricentboots>,
 	<randomthings:superlubricentplatform>,
-	<randomthings:superlubricentstone>
+	<randomthings:superlubricentstone>,
+	<immersiveintelligence:electric_wrench>
 
 ] as IItemStack[];
 
@@ -1438,7 +1565,12 @@ var skillz17req = [
 	<aether:skyroot_bed_item>,
 	<aether:zanite_sword>,
 	<aether:zanite_shovel>,
-	<aether:zanite_shield>
+	<aether:zanite_shield>,
+	<aether:scatterglass>,
+	<aether_legacy:sentry_boots>,
+	<aether_legacy:valkyrie_lance>,
+	<lost_aether:jeb_shield>,
+	<aether_legacy:skyroot_bed_item>
 
 ] as IItemStack[];
 
@@ -1473,7 +1605,8 @@ var skillz18req = [
 	<rewired:energydrink>,
 	<rewired:hand>,
 	<rewired:skin:1>,
-	<rewired:skin:2>
+	<rewired:skin:2>,
+	<rewired:cranium:1>
 		
 ] as IItemStack[];
 
@@ -1531,7 +1664,8 @@ var skillz20req = [
 	<fossil:skull_stick>,
 	<fossil:scarab_gem>,
 	<rewired:skin>,
-	<cyberware:heart_upgrades>
+	<cyberware:heart_upgrades>,
+	<randomthings:chunkanalyzer>
 	
 ] as IItemStack[];
 

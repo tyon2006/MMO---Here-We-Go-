@@ -5,13 +5,28 @@
 		"background": "emerald_ore"
 	},
 	{
+		"name": "nurve",
+		"localName": "NURVE",
+		"background": "prismarine_bricks"
+	},
+	{
 		"name": "grayce",
 		"localName": "GRAYCE",
 		"background": "bookshelf"
 	},
 	{
+		"name": "poyse",
+		"localName": "POYSE",
+		"background": "purpur_block"
+	},
+	{
 		"name": "skillz",
 		"localName": "SKILLZ",
 		"background": "brick"
+	},
+	{
+		"name": "gnack",
+		"localName": "GNACK",
+		"background": "red_nether_brick"
 	}
 ]
