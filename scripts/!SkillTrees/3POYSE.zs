@@ -204,7 +204,7 @@ var poyse10req = [
 	<rewired:torso>,
 	<cyberware:brain_upgrades:1>,
 	<cyclicmagic:magnet_anti_block>,
-	<randomthings:summoningpendulum>.withTag({entitys: []})
+	<randomthings:summoningpendulum>
 
 ] as IItemStack[];
 
