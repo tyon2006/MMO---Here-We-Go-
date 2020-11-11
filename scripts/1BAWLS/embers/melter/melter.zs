@@ -38,6 +38,11 @@ for item in plates {
 	mods.embers.Melter.remove(item);
 }
 
+mods.embers.Melter.add(<fluid:alchemical_redstone>*1152,<ore:oreCinnabar>);
+mods.embers.Melter.add(<fluid:alchemical_redstone>*576,<ore:quicksilver>);
+mods.embers.Melter.add(<fluid:alchemical_redstone>*64,<ore:nuggetQuicksilver>);
+
+mods.embers.Melter.add(<fluid:lead>*72,<ore:plateLead>);
 mods.embers.Melter.add(<fluid:lead>*72,<ore:plateLead>);
 mods.embers.Melter.add(<fluid:tin>*72,<ore:plateTin>);
 mods.embers.Melter.add(<fluid:dawnstone>*72,<ore:plateDawnstone>);
@@ -48,3 +53,8 @@ mods.embers.Melter.add(<fluid:aluminum>*72,<ore:plateAluminium>);
 mods.embers.Melter.add(<fluid:aluminium>*72,<ore:plateAluminum>);
 mods.embers.Melter.add(<fluid:electrum>*72,<ore:plateElectrum>);
 mods.embers.Melter.add(<fluid:zinc>*72,<ore:plateZinc>);
+
+
+
+
+

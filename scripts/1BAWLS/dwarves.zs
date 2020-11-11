@@ -196,10 +196,6 @@ recipes.removeShapeless(<minecraft:glowstone>, [<minecraft:glowstone_dust>, <min
 recipes.removeShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null],[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, null], [null, null, null]]);
 
 recipes.addShapeless(<minecraft:sea_lantern>, [<minecraft:dye:6>,<minecraft:glowstone>]);
-recipes.addShaped(<minecraft:glass>, 
-[[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
-[<minecraft:stone>, null, <minecraft:stone>], 
-[<minecraft:stone>, null, <minecraft:stone>]]);
 
 recipes.remove(<biomesoplenty:terrestrial_artifact>);
 recipes.addShapeless("biomesoplenty_terrestrial_artifact", <biomesoplenty:terrestrial_artifact>, 
