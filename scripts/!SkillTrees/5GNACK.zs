@@ -5,26 +5,26 @@ import mods.compatskills.Requirement.addRequirement;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
-var gnack1tooltip = "gnack1";
-var gnack2tooltip = "gnack2";
-var gnack3tooltip = "gnack3";
-var gnack4tooltip = "gnack4";
-var gnack5tooltip = "gnack5";
-var gnack6tooltip = "gnack6";
-var gnack7tooltip = "gnack7";
-var gnack8tooltip = "gnack8";
-var gnack9tooltip = "gnack9";
-var gnack10tooltip = "gnack10";
-var gnack1 = mods.compatskills.TraitCreator.createTrait("gnack1", 0, 0, "extraskills:gnack", 1);
-var gnack2 = mods.compatskills.TraitCreator.createTrait("gnack2", 2, 0, "extraskills:gnack", 1);
-var gnack3 = mods.compatskills.TraitCreator.createTrait("gnack3", 4, 0, "extraskills:gnack", 1);
-var gnack4 = mods.compatskills.TraitCreator.createTrait("gnack4", 1, 1, "extraskills:gnack", 1);
-var gnack5 = mods.compatskills.TraitCreator.createTrait("gnack5", 3, 1, "extraskills:gnack", 1);
-var gnack6 = mods.compatskills.TraitCreator.createTrait("gnack6", 0, 2, "extraskills:gnack", 1);
-var gnack7 = mods.compatskills.TraitCreator.createTrait("gnack7", 2, 2, "extraskills:gnack", 1);
-var gnack8 = mods.compatskills.TraitCreator.createTrait("gnack8", 4, 2, "extraskills:gnack", 1);
-var gnack9 = mods.compatskills.TraitCreator.createTrait("gnack9", 1, 3, "extraskills:gnack", 1);
-var gnack10 = mods.compatskills.TraitCreator.createTrait("gnack10", 3, 3, "extraskills:gnack", 1);
+var gnack1tooltip = "The Big Guns";
+var gnack2tooltip = "Power-Ups";
+var gnack3tooltip = "Rods, Sticks, and Staves";
+var gnack4tooltip = "Can't Find 'Em? Grind 'Em";
+var gnack5tooltip = "Tactful Orientation";
+var gnack6tooltip = "The Bigger Guns";
+var gnack7tooltip = "AA Batteries Required";
+var gnack8tooltip = "To The Core!";
+var gnack9tooltip = "Strategic Shaders";
+var gnack10tooltip = "Teleke-What, Now?";
+var gnack1 = mods.compatskills.TraitCreator.createTrait("gnack1", 0, 0, "extraskills:gnack", 2);
+var gnack2 = mods.compatskills.TraitCreator.createTrait("gnack2", 2, 0, "extraskills:gnack", 2);
+var gnack3 = mods.compatskills.TraitCreator.createTrait("gnack3", 4, 0, "extraskills:gnack", 2);
+var gnack4 = mods.compatskills.TraitCreator.createTrait("gnack4", 1, 1, "extraskills:gnack", 2);
+var gnack5 = mods.compatskills.TraitCreator.createTrait("gnack5", 3, 1, "extraskills:gnack", 2);
+var gnack6 = mods.compatskills.TraitCreator.createTrait("gnack6", 0, 2, "extraskills:gnack", 2);
+var gnack7 = mods.compatskills.TraitCreator.createTrait("gnack7", 2, 2, "extraskills:gnack", 2);
+var gnack8 = mods.compatskills.TraitCreator.createTrait("gnack8", 4, 2, "extraskills:gnack", 2);
+var gnack9 = mods.compatskills.TraitCreator.createTrait("gnack9", 1, 3, "extraskills:gnack", 2);
+var gnack10 = mods.compatskills.TraitCreator.createTrait("gnack10", 3, 3, "extraskills:gnack", 2);
 
 //**************************************
 //							GNACK 1

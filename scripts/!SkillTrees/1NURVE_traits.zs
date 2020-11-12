@@ -5,29 +5,29 @@ import mods.compatskills.Requirement.addRequirement;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
-var nurve1tooltip = "nurve1";
-var nurve2tooltip = "nurve2";
-var nurve3tooltip = "nurve3";
-var nurve4tooltip = "nurve4";
-var nurve5tooltip = "nurve5";
-var nurve6tooltip = "nurve6";
-var nurve7tooltip = "nurve7";
-var nurve8tooltip = "nurve8";
-var nurve9tooltip = "nurve9";
-var nurve10tooltip = "nurve10";
-var nurve1 = mods.compatskills.TraitCreator.createTrait("nurve1", 0, 0, "extraskills:nurve", 1);
-var nurve2 = mods.compatskills.TraitCreator.createTrait("nurve2", 2, 0, "extraskills:nurve", 1);
-var nurve3 = mods.compatskills.TraitCreator.createTrait("nurve3", 4, 0, "extraskills:nurve", 1);
-var nurve4 = mods.compatskills.TraitCreator.createTrait("nurve4", 1, 1, "extraskills:nurve", 1);
-var nurve5 = mods.compatskills.TraitCreator.createTrait("nurve5", 3, 1, "extraskills:nurve", 1);
-var nurve6 = mods.compatskills.TraitCreator.createTrait("nurve6", 0, 2, "extraskills:nurve", 1);
-var nurve7 = mods.compatskills.TraitCreator.createTrait("nurve7", 2, 2, "extraskills:nurve", 1);
-var nurve8 = mods.compatskills.TraitCreator.createTrait("nurve8", 4, 2, "extraskills:nurve", 1);
-var nurve9 = mods.compatskills.TraitCreator.createTrait("nurve9", 1, 3, "extraskills:nurve", 1);
-var nurve10 = mods.compatskills.TraitCreator.createTrait("nurve10", 3, 3, "extraskills:nurve", 1);
 
-nurve1.changeIcon("xat:/textures/items/weightless_stone.png"); 
-//this doesnt work. dont do this.
+var nurve1 = mods.compatskills.TraitCreator.createTrait("nurve1", 0, 0, "extraskills:nurve", 2);
+var nurve2 = mods.compatskills.TraitCreator.createTrait("nurve2", 2, 0, "extraskills:nurve", 2);
+var nurve3 = mods.compatskills.TraitCreator.createTrait("nurve3", 4, 0, "extraskills:nurve", 2);
+var nurve4 = mods.compatskills.TraitCreator.createTrait("nurve4", 1, 1, "extraskills:nurve", 2);
+var nurve5 = mods.compatskills.TraitCreator.createTrait("nurve5", 3, 1, "extraskills:nurve", 2);
+var nurve6 = mods.compatskills.TraitCreator.createTrait("nurve6", 0, 2, "extraskills:nurve", 2);
+var nurve7 = mods.compatskills.TraitCreator.createTrait("nurve7", 2, 2, "extraskills:nurve", 2);
+var nurve8 = mods.compatskills.TraitCreator.createTrait("nurve8", 4, 2, "extraskills:nurve", 2);
+var nurve9 = mods.compatskills.TraitCreator.createTrait("nurve9", 1, 3, "extraskills:nurve", 2);
+var nurve10 = mods.compatskills.TraitCreator.createTrait("nurve10", 3, 3, "extraskills:nurve", 2);
+
+
+var nurve1tooltip = "Lost My Marbles";
+var nurve2tooltip = "Defensive Positions";
+var nurve3tooltip = "Pacifist Trinkets";
+var nurve4tooltip = "Missing Relics";
+var nurve5tooltip = "Forgotten Moon Goodies";
+var nurve6tooltip = "Spray and Pray";
+var nurve7tooltip = "Not Your Father's Potions";
+var nurve8tooltip = "Equine Augmentation";
+var nurve9tooltip = "Stylin' Shaders";
+var nurve10tooltip = "The Next Level";
 
 //**************************************
 //							NURVE 1

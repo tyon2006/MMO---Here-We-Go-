@@ -7,19 +7,25 @@ import mods.jei.JEI.hide as hide;
 import mods.transmutationalchemy.mixer;
 import mods.inspirations.Cauldron;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 
 //***************************
 //		    RELEVENT FIXES
 //***************************
 
 //add recipe for lunar water to awkward
-recipes.addShapeless(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<nyx:lunar_water_bottle>, <ore:dustPrismarine>]);
+recipes.addShapeless(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<nyx:lunar_water_bottle>, <embers:dust_ember>]);
 
 //removals
 mods.inspirations.Cauldron.removeBrewingRecipe("extraalchemy:charged2_normal", "extraalchemy:charged_normal", <minecraft:nether_wart>);
 
 //lunar water tooltip
 <nyx:lunar_water_bottle>.addTooltip("A magical fluid used as a base in Dwarven alchemy. When consumed, will remove negative potion effects and give the player a short regeneration buff.");
+
+//mods.inspirations.Cauldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 4, false);
+//mods.inspirations.Cauldron.addFluidTransform(<liquid:potion>.withTag({Potion: "minecraft:awkward"}), <embers:dust_ember>, <liquid:lunar_water>, 4, false);
+//mods.inspirations.Cauldron.addFluidTransform(<liquid:potion>, <minecraft:glass>, <liquid:lunar_water>, 4, false);
+//mods.inspirations.Cauldron.addFluidTransform(<liquid:lava>, <minecraft:dirt>, <liquid:lunar_water>, 4, false);
 
 //***************************
 //		POTIONS IN CAULDRON

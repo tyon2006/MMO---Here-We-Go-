@@ -5,28 +5,26 @@ import mods.compatskills.Requirement.addRequirement;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
 
-var poyse1tooltip = "poyse1";
-var poyse2tooltip = "poyse2";
-var poyse3tooltip = "poyse3";
-var poyse4tooltip = "poyse4";
-var poyse5tooltip = "poyse5";
-var poyse6tooltip = "poyse6";
-var poyse7tooltip = "poyse7";
-var poyse8tooltip = "poyse8";
-var poyse9tooltip = "poyse9";
-var poyse10tooltip = "poyse10";
-var poyse1 = mods.compatskills.TraitCreator.createTrait("poyse1", 0, 0, "extraskills:poyse", 1);
-var poyse2 = mods.compatskills.TraitCreator.createTrait("poyse2", 2, 0, "extraskills:poyse", 1);
-var poyse3 = mods.compatskills.TraitCreator.createTrait("poyse3", 4, 0, "extraskills:poyse", 1);
-var poyse4 = mods.compatskills.TraitCreator.createTrait("poyse4", 1, 1, "extraskills:poyse", 1);
-var poyse5 = mods.compatskills.TraitCreator.createTrait("poyse5", 3, 1, "extraskills:poyse", 1);
-var poyse6 = mods.compatskills.TraitCreator.createTrait("poyse6", 0, 2, "extraskills:poyse", 1);
-var poyse7 = mods.compatskills.TraitCreator.createTrait("poyse7", 2, 2, "extraskills:poyse", 1);
-var poyse8 = mods.compatskills.TraitCreator.createTrait("poyse8", 4, 2, "extraskills:poyse", 1);
-var poyse9 = mods.compatskills.TraitCreator.createTrait("poyse9", 1, 3, "extraskills:poyse", 1);
-var poyse10 = mods.compatskills.TraitCreator.createTrait("poyse10", 3, 3, "extraskills:poyse", 1);
-
-poyse1.changeIcon("xat:/textures/items/weightless_stone.png"); //this doesnt work. dont do this.
+var poyse1tooltip = "Horse Magic Is a Legitimate Craft";
+var poyse2tooltip = "Mob Rule";
+var poyse3tooltip = "Can We Bottle That?";
+var poyse4tooltip = "Wards Aren't Turrets";
+var poyse5tooltip = "Magical Clockwerks";
+var poyse6tooltip = "Perfectly Legitimate Rat Magic";
+var poyse7tooltip = "Infused Obsidian";
+var poyse8tooltip = "Zombie Cyborgs? OK!";
+var poyse9tooltip = "Supernatural Shaders";
+var poyse10tooltip = "Applied Ender Magic";
+var poyse1 = mods.compatskills.TraitCreator.createTrait("poyse1", 0, 0, "extraskills:poyse", 2);
+var poyse2 = mods.compatskills.TraitCreator.createTrait("poyse2", 2, 0, "extraskills:poyse", 2);
+var poyse3 = mods.compatskills.TraitCreator.createTrait("poyse3", 4, 0, "extraskills:poyse", 2);
+var poyse4 = mods.compatskills.TraitCreator.createTrait("poyse4", 1, 1, "extraskills:poyse", 2);
+var poyse5 = mods.compatskills.TraitCreator.createTrait("poyse5", 3, 1, "extraskills:poyse", 2);
+var poyse6 = mods.compatskills.TraitCreator.createTrait("poyse6", 0, 2, "extraskills:poyse", 2);
+var poyse7 = mods.compatskills.TraitCreator.createTrait("poyse7", 2, 2, "extraskills:poyse", 2);
+var poyse8 = mods.compatskills.TraitCreator.createTrait("poyse8", 4, 2, "extraskills:poyse", 2);
+var poyse9 = mods.compatskills.TraitCreator.createTrait("poyse9", 1, 3, "extraskills:poyse", 2);
+var poyse10 = mods.compatskills.TraitCreator.createTrait("poyse10", 3, 3, "extraskills:poyse", 2);
 
 //**************************************
 //							POYSE 1
