@@ -1303,7 +1303,9 @@ var grayce15req = [
 	<randomthings:spectrepickaxe>,
 	<randomthings:spectreshovel>,
 	<randomthings:spectresword>,
-	<randomthings:weatheregg:*>
+	<randomthings:weatheregg:1>,
+	<randomthings:weatheregg:2>,
+	<randomthings:weatheregg>
 	
 ] as IItemStack[];
 
