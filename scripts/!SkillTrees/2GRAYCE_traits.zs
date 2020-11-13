@@ -58,14 +58,15 @@ var grayce20 = mods.compatskills.TraitCreator.createTrait("grayce20", 4, 3, "ext
 var grayce1req = [
 		
 	<ebwizardry:scroll:1>,
-	<thaumcraft:ingot:2>,
-	<thaumadditions:vis_scribing_tools>,
-	<quark:horse_whistle>,
+	<thaumadditions:dawn_totem>,
+	<thaumadditions:jar_brass>,
 	<thaumadditions:thaumic_lectern>,
-	<thaumadditions:vis_scribing_tools>,
+	<thaumadditions:twilight_totem>,
+	<thaumadditions:vis_scribing_tools>.withTag({}),
 	<thaumadditions:zeith_fur>,
 	<thaumcraft:alembic>,
 	<thaumcraft:arcane_workbench>,
+	<thaumcraft:arcane_workbench_charger>,
 	<thaumcraft:baubles:3>,
 	<thaumcraft:caster_basic>,
 	<thaumcraft:cloth_boots>,
@@ -79,16 +80,21 @@ var grayce1req = [
 	<thaumcraft:curio:5>,
 	<thaumcraft:curio:6>,
 	<thaumcraft:curio>,
+	<thaumcraft:everfull_urn>,
 	<thaumcraft:fabric>,
 	<thaumcraft:filter>,
+	<thaumcraft:focus_1>,
 	<thaumcraft:focus_pouch>,
 	<thaumcraft:goggles>,
+	<thaumcraft:ingot:2>,
 	<thaumcraft:ingot>,
 	<thaumcraft:jar_normal>,
 	<thaumcraft:jar_void>,
 	<thaumcraft:label>,
+	<thaumcraft:levitator>,
 	<thaumcraft:mechanism_complex>,
 	<thaumcraft:mechanism_simple>,
+	<thaumcraft:morphic_resonator>,
 	<thaumcraft:pech_wand>,
 	<thaumcraft:phial>,
 	<thaumcraft:recharge_pedestal>,
@@ -110,7 +116,12 @@ var grayce1req = [
 	<thaumcraft:thaumometer>,
 	<thaumcraft:thaumonomicon>,
 	<thaumcraft:vis_resonator>,
-	<thaumcraft:wand_workbench>
+	<thaumcraft:wand_workbench>,
+	<thaumicaugmentation:eldritch_lock_key:1>,
+	<thaumicaugmentation:eldritch_lock_key:2>,
+	<thaumicaugmentation:eldritch_lock_key:3>,
+	<thaumicaugmentation:eldritch_lock_key>,
+	<thaumicaugmentation:focus_ancient>
 	
 ] as IItemStack[];
 
@@ -125,9 +136,34 @@ for item in grayce1req {
 
 var grayce2req = [
 
-	<spartanweaponry:katana_copper>,
+	<iceandfire:dragonsteel_fire_axe>,
 	<iceandfire:dragonsteel_fire_sword>,
+	<iceandfire:dragonsteel_ice_axe>,
 	<iceandfire:dragonsteel_ice_sword>,
+	<spartancompat:glaive_gravitite>,
+	<spartancompat:glaive_holystone>,
+	<spartancompat:glaive_skyroot>,
+	<spartancompat:glaive_zanite>,
+	<spartancompat:halberd_gravitite>,
+	<spartancompat:halberd_holystone>,
+	<spartancompat:halberd_skyroot>,
+	<spartancompat:halberd_zanite>,
+	<spartancompat:katana_gravitite>,
+	<spartancompat:katana_holystone>,
+	<spartancompat:katana_skyroot>,
+	<spartancompat:katana_zanite>,
+	<spartancompat:pike_gravitite>,
+	<spartancompat:pike_holystone>,
+	<spartancompat:pike_skyroot>,
+	<spartancompat:pike_zanite>,
+	<spartancompat:rapier_gravitite>,
+	<spartancompat:rapier_holystone>,
+	<spartancompat:rapier_skyroot>,
+	<spartancompat:rapier_zanite>,
+	<spartancompat:saber_gravitite>,
+	<spartancompat:saber_holystone>,
+	<spartancompat:saber_skyroot>,
+	<spartancompat:saber_zanite>,
 	<spartanfire:glaive_desert>,
 	<spartanfire:glaive_desert_venom>,
 	<spartanfire:glaive_dragonbone>,
@@ -209,6 +245,7 @@ var grayce2req = [
 	<spartanweaponry:halberd_tin>,
 	<spartanweaponry:halberd_wood>,
 	<spartanweaponry:katana_bronze>,
+	<spartanweaponry:katana_copper>,
 	<spartanweaponry:katana_diamond>,
 	<spartanweaponry:katana_electrum>,
 	<spartanweaponry:katana_gold>,
@@ -331,6 +368,7 @@ var grayce3req = [
 	<chineseworkshop:black_tile_ridge_roof_edge_top:*>,
 	<chineseworkshop:black_tile_ridge_roof_edge_w:*>,
 	<chineseworkshop:black_tile_ridge_roof_edge_wg:*>,
+	<chineseworkshop:black_tile_ridge_roof_j:*>,
 	<chineseworkshop:black_tile_ridge_roof_top:*>,
 	<chineseworkshop:black_tile_roof:*>,
 	<chineseworkshop:black_tile_roof_j:*>,
@@ -403,6 +441,7 @@ var grayce3req = [
 	<chineseworkshop:yellow_tile_ridge_roof_j:*>,
 	<chineseworkshop:yellow_tile_ridge_roof_top:*>,
 	<chineseworkshop:yellow_tile_roof:*>,
+	<chineseworkshop:yellow_tile_roof_j:*>,
 	<chineseworkshop:yellow_tile_roof_slab:*>,
 	<chineseworkshop:yellow_tile_roof_slab_top:*>,
 	<chisel:arcane_stone1:*>,
@@ -416,6 +455,7 @@ var grayce3req = [
 	<thaumadditions:amber_lamp:*>,
 	<thaumadditions:brass_plated_silverwood:*>,
 	<thaumadditions:chiseled_amber_block:*>,
+	<thaumadditions:chiseled_greatwood>,
 	<thaumadditions:iron_framed_greatwood:*>,
 	<thaumcraft:pedestal_ancient:*>,
 	<thaumcraft:pedestal_eldritch:*>,
@@ -424,7 +464,19 @@ var grayce3req = [
 	<thaumcraft:stone_ancient_doorway:*>,
 	<thaumcraft:stone_ancient_glyphed:*>,
 	<thaumcraft:stone_ancient_tile:*>,
-	<thaumcraft:stone_eldritch_tile:*>
+	<thaumcraft:stone_eldritch_tile:*>,
+	<thaumicaugmentation:fortified_glass>,
+	<thaumicaugmentation:fortified_glass_pane>,
+	<thaumicaugmentation:starfield_glass:*>,
+	<thaumicaugmentation:stone:11>,
+	<thaumicaugmentation:stone:3>,
+	<thaumicaugmentation:stone:5>,
+	<thaumicaugmentation:stone:8>,
+	<thaumicaugmentation:stone:9>,
+	<aether:light_skyroot_decorative:*>,
+	<aether:light_skyroot_beam>,
+	<aether:dark_skyroot_decorative:*>,
+	<aether:dark_skyroot_beam>
 	
 ] as IItemStack[];
 
@@ -475,7 +527,18 @@ var grayce4req = [
 	<ebwizardry:wizard_handbook>,
 	<ebwizardry:wizard_hat>,
 	<ebwizardry:wizard_leggings>,
-	<ebwizardry:wizard_robe>
+	<ebwizardry:wizard_robe>,
+	<ebwizardry:melee_upgrade>,
+	<ebwizardry:attunement_upgrade>,
+	<ebwizardry:blast_upgrade>,
+	<ebwizardry:cooldown_upgrade>,
+	<ebwizardry:duration_upgrade>,
+	<ebwizardry:range_upgrade>,
+	<ebwizardry:condenser_upgrade>,
+	<ebwizardry:siphon_upgrade>,
+	<ebwizardry:storage_upgrade>,
+	<thaumadditions:disenchant_fabric>
+
 	
 ] as IItemStack[];
 
@@ -582,7 +645,10 @@ var grayce5req = [
 	<arcanearchives:radiant_tank>,
 	<arcanearchives:raw_quartz>,
 	<arcanearchives:storage_raw_quartz>,
-	<arcanearchives:tome_arcana>
+	<arcanearchives:tome_arcana>,
+	<thaumcraft:lamp_growth>,
+	<thaumcraft:lamp_fertility>,
+	<thaumcraft:lamp_arcane>
 
 ] as IItemStack[];
 
@@ -597,21 +663,79 @@ for item in grayce5req {
 
 var grayce6req = [
 
+	<thaumadditions:aspect_combiner>,
+	<thaumadditions:bone_eye>,
+	<thaumadditions:chester>,
+	<thaumadditions:crystal_bore>,
+	<thaumadditions:crystal_crusher>,
+	<thaumadditions:flux_concentrator>,
+	<thaumadditions:growth_chamber>,
+	<thaumadditions:jar_thaumium>,
+	<thaumadditions:salt_essence>.withTag({}),
+	<thaumadditions:taintkin>,
+	<thaumadditions:taintkin_lit>,
 	<thaumadditions:void_seed>,
+	<thaumcraft:arcane_ear>,
+	<thaumcraft:arcane_ear_toggle>,
+	<thaumcraft:bellows>,
 	<thaumcraft:bottle_taint>,
+	<thaumcraft:brain_box>,
 	<thaumcraft:causality_collapser>,
+	<thaumcraft:centrifuge>,
+	<thaumcraft:dioptra>,
 	<thaumcraft:elemental_axe>,
 	<thaumcraft:elemental_hoe>,
 	<thaumcraft:elemental_pick>,
 	<thaumcraft:elemental_shovel>,
+	<thaumcraft:elemental_sword>.withTag({}),
+	<thaumcraft:essentia_input>,
+	<thaumcraft:essentia_output>,
+	<thaumcraft:focus_2>,
 	<thaumcraft:golem_bell>,
+	<thaumcraft:golem_builder>,
 	<thaumcraft:grapple_gun>,
+	<thaumcraft:grapple_gun_spool>,
+	<thaumcraft:grapple_gun_tip>,
 	<thaumcraft:hand_mirror>,
+	<thaumcraft:infernal_furnace>,
 	<thaumcraft:infusion_matrix>,
+	<thaumcraft:inlay>,
+	<thaumcraft:jar_brace>,
+	<thaumcraft:jar_brain>,
+	<thaumcraft:matrix_cost>,
+	<thaumcraft:matrix_speed>,
+	<thaumcraft:metal_alchemical>,
+	<thaumcraft:metal_alchemical_advanced>,
+	<thaumcraft:mirror>,
+	<thaumcraft:mirror_essentia>,
+	<thaumcraft:pattern_crafter>,
 	<thaumcraft:pedestal_arcane>,
+	<thaumcraft:potion_sprayer>,
+	<thaumcraft:redstone_relay>,
 	<thaumcraft:resonator>,
+	<thaumcraft:smelter_aux>,
+	<thaumcraft:smelter_vent>,
+	<thaumcraft:stabilizer>,
+	<thaumcraft:thaumatorium>,
+	<thaumcraft:thaumatorium_top>,
+	<thaumcraft:tube>,
+	<thaumcraft:tube_buffer>,
+	<thaumcraft:tube_filter>,
+	<thaumcraft:tube_oneway>,
+	<thaumcraft:tube_restrict>,
+	<thaumcraft:tube_valve>,
+	<thaumcraft:vis_battery>,
+	<thaumicaugmentation:augment_builder_effect>.withTag({}),
+	<thaumicaugmentation:augment_builder_power>.withTag({}),
+	<thaumicaugmentation:augment_vis_battery>,
+	<thaumicaugmentation:biome_selector>.withTag({}),
 	<thaumicaugmentation:gauntlet>,
-	<thaumicaugmentation:rift_seed:1>
+	<thaumicaugmentation:material>,
+	<thaumicaugmentation:research_notes>,
+	<thaumicaugmentation:rift_feeder>,
+	<thaumicaugmentation:rift_seed:*>,
+	<thaumicaugmentation:vis_regenerator>,
+	<thaumcraft:primordial_pearl>
 
 ] as IItemStack[];
 
@@ -824,6 +948,16 @@ var grayce10req = [
 	<golems:golem_head>,
 	<golems:golem_paper>,
 	<golems:info_book>,
+	<thaumadditions:seal_symbol>.withTag({}),
+	<thaumcraft:activator_rail>,
+	<thaumcraft:golem>.withTag({}),
+	<thaumcraft:mind:*>,
+	<thaumcraft:module:*>,
+	<thaumcraft:paving_stone_barrier>,
+	<thaumcraft:paving_stone_travel>,
+	<thaumcraft:seal>,
+	<thaumcraft:turret:1>,
+	<thaumcraft:turret>,
 	<thaumicaugmentation:arcane_door:1>,
 	<thaumicaugmentation:arcane_door:2>,
 	<thaumicaugmentation:arcane_door>,
@@ -833,7 +967,15 @@ var grayce10req = [
 	<thaumicaugmentation:key:1>,
 	<thaumicaugmentation:key:2>,
 	<thaumicaugmentation:key>,
-	<thaumicaugmentation:warded_chest>
+	<thaumicaugmentation:material:1>,
+	<thaumicaugmentation:seal_copier>,
+	<thaumicaugmentation:warded_button_arcane_stone>,
+	<thaumicaugmentation:warded_button_greatwood>,
+	<thaumicaugmentation:warded_button_silverwood>,
+	<thaumicaugmentation:warded_chest>,
+	<thaumicaugmentation:warded_pressure_plate_arcane_stone>,
+	<thaumicaugmentation:warded_pressure_plate_greatwood>,
+	<thaumicaugmentation:warded_pressure_plate_silverwood>
 	
 ] as IItemStack[];
 
@@ -868,7 +1010,31 @@ var grayce11req = [
 	<thaumcraft:void_robe_helm>,
 	<thaumcraft:void_robe_legs>,
 	<thaumicaugmentation:gauntlet:1>,
-	<thaumicaugmentation:void_boots>
+	<thaumicaugmentation:void_boots>,
+	<thaumicaugmentation:impulse_cannon_augment:*>,
+	<thaumadditions:void_elemental_axe>.withTag({}),
+	<thaumicaugmentation:material:3>,
+	<thaumicaugmentation:augment_caster_rift_energy_storage>,
+	<thaumicaugmentation:augment_caster_rift_energy_storage>.withTag({}),
+	<thaumicaugmentation:primal_cutter>.withTag({}),
+	<thaumicaugmentation:elytra_harness_augment>,
+	<thaumadditions:mithrillium_block>,
+	<thaumcraft:vis_generator>,
+	<thaumcraft:condenser>,
+	<thaumcraft:condenser_lattice>,
+	<thaumcraft:condenser_lattice_dirty>,
+	<thaumcraft:turret:2>,
+	<thaumcraft:focus_3>,
+	<thaumadditions:void_thaumometer>,
+	<thaumadditions:void_elemental_pickaxe>.withTag({}),
+	<thaumadditions:void_elemental_shovel>.withTag({}),
+	<thaumadditions:mithrillium_smelter>,
+	<thaumadditions:essentia_sink>,
+	<thaumadditions:aura_charger>,
+	<thaumadditions:aura_disperser>,
+	<thaumadditions:shadow_beam_staff>,
+	<thaumadditions:essentia_pistol>,
+	<thaumadditions:the_beheader>
 
 ] as IItemStack[];
 
@@ -891,11 +1057,8 @@ var grayce12req = [
 	<arcanearchives:scintillating_inlay>,
 	<randomthings:advanceditemcollector>,
 	<randomthings:itemcollector>,
-	<randomthings:spectrecoil_ender>,
-	<randomthings:spectrecoil_normal>,
-	<randomthings:spectrecoil_number>,
-	<randomthings:spectrecoil_redstone>,
-	<randomthings:spectreenergyinjector>
+	<cyclicmagic:block_library>,
+	<cyclicmagic:block_library_ctrl>
 	
 ] as IItemStack[];
 
@@ -915,6 +1078,8 @@ var grayce13req = [
 
 	<iceandfire:dragon_flute>,
 	<iceandfire:dragon_horn>,
+	<iceandfire:dragon_horn_fire>,
+	<iceandfire:dragon_horn_ice>,
 	<iceandfire:dragon_meal>,
 	<iceandfire:dragon_stick>,
 	<iceandfire:dragonegg_blue>,
@@ -927,7 +1092,9 @@ var grayce13req = [
 	<iceandfire:dragonegg_white>,
 	<iceandfire:fire_stew>,
 	<iceandfire:frost_stew>,
-	<iceandfire:sickly_dragon_meal>
+	<iceandfire:sickly_dragon_meal>,
+	<iceandfire:summoning_crystal_fire>.withTag({}),
+	<iceandfire:summoning_crystal_ice>.withTag({})
 
 ] as IItemStack[];
 
@@ -1120,9 +1287,11 @@ for item in grayce14cons {
 var grayce15req = [
 
 	<iceandfire:dragonforge_fire_brick>,
+	<iceandfire:dragonforge_fire_core>,
 	<iceandfire:dragonforge_fire_core_disabled>,
 	<iceandfire:dragonforge_fire_input>,
 	<iceandfire:dragonforge_ice_brick>,
+	<iceandfire:dragonforge_ice_core>,
 	<iceandfire:dragonforge_ice_core_disabled>,
 	<iceandfire:dragonforge_ice_input>,
 	<iceandfire:dragonsteel_fire_ingot>,
@@ -1134,9 +1303,7 @@ var grayce15req = [
 	<randomthings:spectrepickaxe>,
 	<randomthings:spectreshovel>,
 	<randomthings:spectresword>,
-	<randomthings:weatheregg:1>,
-	<randomthings:weatheregg:2>,
-	<randomthings:weatheregg>
+	<randomthings:weatheregg:*>
 	
 ] as IItemStack[];
 
@@ -1153,17 +1320,43 @@ for item in grayce15req {
 
 var grayce16req = [
 
-	<thaumadditions:adaminite_fabric>,
-	<thaumadditions:adaminite_ingot>,
-	<thaumadditions:adaminite_plate>,
-	<thaumadditions:adaminite_hood>,
-	<thaumadditions:adaminite_robe>,
 	<thaumadditions:adaminite_belt>,
+	<thaumadditions:adaminite_block>,
 	<thaumadditions:adaminite_boots>,
-	<thaumadditions:jar_adaminite>,
-	<thaumadditions:entity_summoner>,
+	<thaumadditions:adaminite_fabric>,
+	<thaumadditions:adaminite_hood>,
+	<thaumadditions:adaminite_ingot>,
+	<thaumadditions:adaminite_nugget>,
+	<thaumadditions:adaminite_plate>,
+	<thaumadditions:adaminite_robe>,
 	<thaumadditions:adaminite_smelter>,
-	<thaumadditions:levitation_device>
+	<thaumadditions:adaminite_sword>,
+	<thaumadditions:cake>,
+	<thaumadditions:entity_summoner>,
+	<thaumadditions:jar_adaminite>,
+	<thaumadditions:levitation_device>,
+	<thaumadditions:vis_seeds>,
+	<thaumadditions:vis_seeds>.withTag({}),
+	<thaumcraft:void_siphon>,
+	<thaumicaugmentation:arcane_terraformer>,
+	<thaumicaugmentation:fracture_locator>.withTag({}),
+	<thaumicaugmentation:impetus_diffuser>,
+	<thaumicaugmentation:impetus_drainer>,
+	<thaumicaugmentation:impetus_gate>,
+	<thaumicaugmentation:impetus_generator>,
+	<thaumicaugmentation:impetus_linker>,
+	<thaumicaugmentation:impetus_matrix>,
+	<thaumicaugmentation:impetus_matrix_base>,
+	<thaumicaugmentation:impetus_mirror>,
+	<thaumicaugmentation:impetus_relay>,
+	<thaumicaugmentation:material:5>,
+	<thaumicaugmentation:rift_jar>,
+	<thaumicaugmentation:rift_jar>.withTag({}),
+	<thaumicaugmentation:rift_monitor>,
+	<thaumicaugmentation:rift_mover_input>,
+	<thaumicaugmentation:rift_mover_output>,
+	<thaumicaugmentation:stability_field_generator>,
+	<thaumicaugmentation:void_recharge_pedestal>
 
 ] as IItemStack[];
 
@@ -1217,7 +1410,9 @@ var grayce17req = [
 	<midnight:viridshroom_sporch>,
 	<randomthings:enderanchor>,
 	<randomthings:enderbridge>,
-	<randomthings:prismarineenderbridge>
+	<randomthings:prismarineenderbridge>,
+	<aether_legacy:cold_parachute>,
+	<aether_legacy:golden_parachute>
 
 ] as IItemStack[];
 
@@ -1263,7 +1458,13 @@ var grayce18req = [
 	<ebwizardry:ring_seeking>,
 	<ebwizardry:ring_shattering>,
 	<ebwizardry:ring_soulbinding>,
-	<thaumadditions:fragnant_pendant>
+	<thaumadditions:fragnant_pendant>,
+	<thaumcraft:charm_undying>,
+	<thaumicaugmentation:thaumostatic_harness>,
+	<thaumicaugmentation:elytra_harness>,
+	<thaumicaugmentation:thaumostatic_harness_augment:*>,
+	<thaumadditions:meteor_belt>,
+	<thaumadditions:striding_belt>
 	
 ] as IItemStack[];
 
@@ -1368,10 +1569,12 @@ var grayce20req = [
 	<thaumadditions:mithminite_fabric>,
 	<thaumadditions:mithminite_handle>,
 	<thaumadditions:mithminite_ingot>,
+	<thaumadditions:mithminite_nugget>,
 	<thaumadditions:mithminite_plate>,
 	<thaumadditions:mithminite_scythe>,
 	<thaumadditions:mithminite_smelter>,
-	<thaumadditions:wormhole_mirror>
+	<thaumadditions:wormhole_mirror>,
+	<thaumadditions:knowledge_tome>
 	
 ] as IItemStack[];
 

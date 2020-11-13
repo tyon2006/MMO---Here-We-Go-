@@ -153,13 +153,15 @@ for item in poyse7req {
 
 var poyse8req = [
 
-	<rewired:necrolimb:3>,
-	<rewired:necrolimb:2>,
-	<rewired:necrolimb:1>,
-	<rewired:necrolimb>,
+	<rewired:necrolimb:*>,
 	<randomthings:spectrecharger:2>,
 	<randomthings:spectrecharger:1>,
-	<randomthings:spectrecharger>
+	<randomthings:spectrecharger>,
+	<randomthings:spectreenergyinjector>,
+	<randomthings:spectrecoil_normal>,
+	<randomthings:spectrecoil_redstone>,
+	<randomthings:spectrecoil_ender>,
+	<randomthings:spectrecoil_number>
 
 ] as IItemStack[];
 
