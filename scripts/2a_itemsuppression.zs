@@ -719,7 +719,29 @@ var itemRemovalsMiscellaneous = [
 	<disenchanter:disenchantmenttable:6>,
 	<disenchanter:disenchantmenttable:7>,
 	<immersive_energy:material:1>,
-	<immersive_energy:metal_generators0>
+	<immersive_energy:metal_generators0>,
+	<aether_legacy:candy_cane_sword>,
+	<aether:present>,
+	<aether_legacy:repulsion_shield>,
+	<immersive_energy:toolupgrade:4>,
+	<quark:tallow>,
+	<aether_legacy:ginger_bread_man>,
+	<immersive_energy:power_armor_suit_head>,
+	<randomthings:eclipsedclock>,
+	<aether_legacy:candy_cane>,
+	<immersive_energy:power_armor_suit_leggs>,
+	<aether_legacy:present>,
+	<aether:bolt:5>,
+	<immersive_energy:toolupgrade:6>,
+	<immersive_energy:power_armor_suit_boots>,
+	<immersive_energy:toolupgrade:5>,
+	<immersive_energy:power_armor_suit_body>,
+	<quark:black_ash>,
+	<aether:candy_cane>,
+	<aether:winter_hat>,
+	<aether:wrapping_paper>,
+	<immersiveintelligence:data_connector:6>
+
 ] as IItemStack[];
 
 for item in itemRemovalsMiscellaneous {
