@@ -32,8 +32,8 @@ var poyse10 = mods.compatskills.TraitCreator.createTrait("poyse10", 3, 3, "extra
 
 var poyse1req = [
 
-	<cyclicmagic:horse_upgrade_jump>,
-	<cyclicmagic:horse_upgrade_type>
+	<cyclicmagic:horse_upgrade_jump:*>,
+	<cyclicmagic:horse_upgrade_type:*>
 
 ] as IItemStack[];
 
@@ -48,8 +48,8 @@ for item in poyse1req {
 
 var poyse2req = [
 
-	<cyclicmagic:water_candle>,
-	<cyclicmagic:tool_spawn_inspect>
+	<cyclicmagic:water_candle:*>,
+	<cyclicmagic:tool_spawn_inspect:*>
 
 ] as IItemStack[];
 
@@ -64,8 +64,8 @@ for item in poyse2req {
 
 var poyse3req = [
 
-	<cyclicmagic:exp_pylon>,
-	<cyclicmagic:block_enchanter>
+	<cyclicmagic:exp_pylon:*>,
+	<cyclicmagic:block_enchanter:*>
 
 ] as IItemStack[];
 
@@ -80,8 +80,8 @@ for item in poyse3req {
 
 var poyse4req = [
 
-	<wards:ward>,
-	<wards:enchanted_paper>
+	<wards:ward:*>,
+	<wards:enchanted_paper:*>
 
 ] as IItemStack[];
 
@@ -96,10 +96,10 @@ for item in poyse4req {
 
 var poyse5req = [
 
-	<mystgears:crafter_mechanical>,
-	<mystgears:vis_motor>,
-	<mystgears:essentia_motor>,
-	<thaumicperiphery:caster_ember>
+	<mystgears:crafter_mechanical:*>,
+	<mystgears:vis_motor:*>,
+	<mystgears:essentia_motor:*>,
+	<thaumicperiphery:caster_ember:*>
 
 ] as IItemStack[];
 
@@ -114,8 +114,8 @@ for item in poyse5req {
 
 var poyse6req = [
 
-	<rats:rat_upgrade_ender>,
-	<rats:rat_upgrade_dragon>
+	<rats:rat_upgrade_ender:*>,
+	<rats:rat_upgrade_dragon:*>
 
 ] as IItemStack[];
 
@@ -130,15 +130,15 @@ for item in poyse6req {
 
 var poyse7req = [
 
-	<thejungle:infused_obsidian>,
-	<thejungle:unadorned_ob_helm>,
-	<thejungle:unadorned_ob_chest>,
-	<thejungle:unadorned_ob_legs>,
-	<thejungle:unadorned_ob_boots>,
-	<thejungle:cere_helmet>,
-	<thejungle:cere_chest>,
-	<thejungle:cere_legs>,
-	<thejungle:cere_boots>
+	<thejungle:infused_obsidian:*>,
+	<thejungle:unadorned_ob_helm:*>,
+	<thejungle:unadorned_ob_chest:*>,
+	<thejungle:unadorned_ob_legs:*>,
+	<thejungle:unadorned_ob_boots:*>,
+	<thejungle:cere_helmet:*>,
+	<thejungle:cere_chest:*>,
+	<thejungle:cere_legs:*>,
+	<thejungle:cere_boots:*>
 
 ] as IItemStack[];
 
@@ -157,11 +157,11 @@ var poyse8req = [
 	<randomthings:spectrecharger:2>,
 	<randomthings:spectrecharger:1>,
 	<randomthings:spectrecharger>,
-	<randomthings:spectreenergyinjector>,
-	<randomthings:spectrecoil_normal>,
-	<randomthings:spectrecoil_redstone>,
-	<randomthings:spectrecoil_ender>,
-	<randomthings:spectrecoil_number>
+	<randomthings:spectreenergyinjector:*>,
+	<randomthings:spectrecoil_normal:*>,
+	<randomthings:spectrecoil_redstone:*>,
+	<randomthings:spectrecoil_ender:*>,
+	<randomthings:spectrecoil_number:*>
 
 ] as IItemStack[];
 
@@ -202,6 +202,8 @@ var poyse10req = [
 
 	<apotheosis:farmers_leash>.withTag({}),
 	<rewired:torso>,
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "rewired:torso", Count: 1 as byte, Damage: 0 as short}}),
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "cyberware:brain_upgrades", Count: 1 as byte, Damage: 1 as short}}),
 	<cyberware:brain_upgrades:1>,
 	<cyclicmagic:magnet_anti_block>,
 	<randomthings:summoningpendulum>

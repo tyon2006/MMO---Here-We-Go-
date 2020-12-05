@@ -3,6 +3,8 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.hide as hide;
 
+recipes.replaceAllOccurences(<industrialrenewal:small_slab>, <projectred-core:resource_item>);
+
 var unfitItems = [
 
 	<industrialrenewal:aisle_hazard>,
@@ -55,6 +57,9 @@ for item in unfitItems {
 	rh(item);
 
 }
+
+
+
 
 recipes.remove(<randomthings:sounddampener>);
 recipes.addShaped(<randomthings:sounddampener>, 

@@ -35,9 +35,9 @@ var nurve10tooltip = "The Next Level";
 
 var nurve1req = [
 
-	<xat:weightless_stone>,
-	<xat:greater_inertia_stone>,
-	<xat:inertia_null_stone>
+	<xat:weightless_stone:*>,
+	<xat:greater_inertia_stone:*>,
+	<xat:inertia_null_stone:*>
 
 ] as IItemStack[];
 
@@ -52,10 +52,10 @@ for item in nurve1req {
 
 var nurve2req = [
 
-	<xat:ender_tiara>,
-	<thaumicperiphery:pauldron>,
-	<thaumicperiphery:pauldron_repulsion>,
-	<charm:totem_of_shielding>
+	<xat:ender_tiara:*>,
+	<thaumicperiphery:pauldron:*>,
+	<thaumicperiphery:pauldron_repulsion:*>,
+	<charm:totem_of_shielding:*>
 
 ] as IItemStack[];
 
@@ -70,9 +70,9 @@ for item in nurve2req {
 
 var nurve3req = [
 
-	<randomthings:peacecandle>,
-	<cyclicmagic:charm_boat>,
-	<ebwizardry:charm_auto_smelt>
+	<randomthings:peacecandle:*>,
+	<cyclicmagic:charm_boat:*>,
+	<ebwizardry:charm_auto_smelt:*>
 
 ] as IItemStack[];
 
@@ -87,9 +87,9 @@ for item in nurve3req {
 
 var nurve4req = [
 
-	<inspirations:arrow>,
+	<inspirations:arrow:*>,
 	<immersiveengineering:bullet:2>.withTag({bullet: "potion"}),
-	<rats:rat_upgrade_archeologist>,
+	<rats:rat_upgrade_archeologist:*>,
 
 ] as IItemStack[];
 
@@ -104,8 +104,8 @@ for item in nurve4req {
 
 var nurve5req = [
 
-	<cyclicmagic:moon_sensor>,
-	<cyclicmagic:beacon_potion>
+	<cyclicmagic:moon_sensor:*>,
+	<cyclicmagic:beacon_potion:*>
 
 ] as IItemStack[];
 
@@ -120,9 +120,9 @@ for item in nurve5req {
 
 var nurve6req = [
 
-	<cyclicmagic:sword_weakness>,
-	<cyclicmagic:sword_slowness>,
-	<cyclicmagic:sword_ender>
+	<cyclicmagic:sword_weakness:*>,
+	<cyclicmagic:sword_slowness:*>,
+	<cyclicmagic:sword_ender:*>
 
 ] as IItemStack[];
 
@@ -155,9 +155,9 @@ for item in nurve7req {
 
 var nurve8req = [
 
-	<cyclicmagic:horse_upgrade_speed>,
-	<cyclicmagic:horse_upgrade_health>,
-	<cyclicmagic:horse_upgrade_variant>
+	<cyclicmagic:horse_upgrade_speed:*>,
+	<cyclicmagic:horse_upgrade_health:*>,
+	<cyclicmagic:horse_upgrade_variant:*>
 
 ] as IItemStack[];
 
@@ -196,10 +196,10 @@ for item in nurve9req {
 
 var nurve10req = [
 
-	<randomthings:obsidianwaterwalkingboots>,
-	<randomthings:lavawader>,
-	<randomthings:waterwalkingboots>,
-	<randomthings:magichood>
+	<randomthings:obsidianwaterwalkingboots:*>,
+	<randomthings:lavawader:*>,
+	<randomthings:waterwalkingboots:*>,
+	<randomthings:magichood:*>
 
 ] as IItemStack[];
 

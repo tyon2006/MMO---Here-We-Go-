@@ -32,8 +32,8 @@ var gnack10 = mods.compatskills.TraitCreator.createTrait("gnack10", 3, 3, "extra
 
 var gnack1req = [
 
-	<thaumicaugmentation:impulse_cannon>,
-	<thaumicaugmentation:autocaster_placer>
+	<thaumicaugmentation:impulse_cannon:*>,
+	<thaumicaugmentation:autocaster_placer:*>
 
 ] as IItemStack[];
 
@@ -48,10 +48,10 @@ for item in gnack1req {
 
 var gnack2req = [
 
-	<cyclicmagic:tool_mount_inverse>,
+	<cyclicmagic:tool_mount_inverse:*>,
 	<immersive_energy:toolupgrade:2>,
-	<bountifulbaubles:ringflywheeladvanced>,
-	<bountifulbaubles:ringflywheel>
+	<bountifulbaubles:ringflywheeladvanced:*>,
+	<bountifulbaubles:ringflywheel:*>
 
 ] as IItemStack[];
 
@@ -66,11 +66,11 @@ for item in gnack2req {
 
 var gnack3req = [
 
-	<cyclicmagic:tool_launcher>,
-	<cyclicmagic:tool_spelunker>,
-	<cyclicmagic:ender_dungeon>,
-	<cyclicmagic:tool_prospector>,
-	<cyclicmagic:tool_elevate>
+	<cyclicmagic:tool_launcher:*>,
+	<cyclicmagic:tool_spelunker:*>,
+	<cyclicmagic:ender_dungeon:*>,
+	<cyclicmagic:tool_prospector:*>,
+	<cyclicmagic:tool_elevate:*>
 
 ] as IItemStack[];
 
@@ -85,10 +85,10 @@ for item in gnack3req {
 
 var gnack4req = [
 
-	<mystgears:redstone_dynamo>,
-	<mystgears:windup_box>,
-	<mystgears:drill>,
-	<mystgears:drill_diamond>
+	<mystgears:redstone_dynamo:*>,
+	<mystgears:windup_box:*>,
+	<mystgears:drill:*>,
+	<mystgears:drill_diamond:*>
 
 ] as IItemStack[];
 
@@ -103,9 +103,9 @@ for item in gnack4req {
 
 var gnack5req = [
 
-	<randomthings:emeraldcompass>,
-	<randomthings:goldencompass>,
-	<cyclicmagic:cyclic_wand_build>
+	<randomthings:emeraldcompass:*>,
+	<randomthings:goldencompass:*>,
+	<cyclicmagic:cyclic_wand_build:*>
 
 ] as IItemStack[];
 
@@ -120,9 +120,9 @@ for item in gnack5req {
 
 var gnack6req = [
 
-	<mystgears:witchburn_gatling_gun>,
-	<mystgears:ember_gatling_gun>,
-	<mystgears:mechanical_turret>
+	<mystgears:witchburn_gatling_gun:*>,
+	<mystgears:ember_gatling_gun:*>,
+	<mystgears:mechanical_turret:*>
 
 ] as IItemStack[];
 
@@ -137,8 +137,8 @@ for item in gnack6req {
 
 var gnack7req = [
 
-	<randomthings:redstoneactivator>,
-	<randomthings:redstoneremote>
+	<randomthings:redstoneactivator:*>,
+	<randomthings:redstoneremote:*>
 
 ] as IItemStack[];
 
@@ -153,9 +153,9 @@ for item in gnack7req {
 
 var gnack8req = [
 
-	<ea:drillhead_void>,
-	<ea:drillhead_thaumium>,
-	<ea:upgrade_refining>
+	<ea:drillhead_void:*>,
+	<ea:drillhead_thaumium:*>,
+	<ea:upgrade_refining:*>
 
 ] as IItemStack[];
 
@@ -205,7 +205,8 @@ for item in gnack9req {
 var gnack10req = [
 
 	<rewired:hand:1>,
-	<cyclicmagic:magnet_block>
+	<cyclicmagic:magnet_block>,
+	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "rewired:hand", Count: 1 as byte, Damage: 1 as short}})
 
 ] as IItemStack[];
 
