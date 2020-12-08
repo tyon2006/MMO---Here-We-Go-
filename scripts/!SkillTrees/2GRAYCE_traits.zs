@@ -1071,6 +1071,9 @@ for item in grayce12req {
 //							GRAYCE 13
 //**************************************
 
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:icedragon>, "trait|compatskills:grayce13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:firedragon>, "trait|compatskills:grayce13");
+
 mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:icedragon>, "trait|compatskills:grayce13");
 mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:firedragon>, "trait|compatskills:grayce13");
 

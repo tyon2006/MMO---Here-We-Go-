@@ -23,7 +23,12 @@ mods.compatskills.DimensionLock.addDimensionLock(4, "or|[trait|compatskills:skil
 mods.compatskills.DimensionLock.addDimensionLock(-66, "or|[trait|compatskills:grayce17]~[trait|compatskills:bawls17]");
 mods.compatskills.DimensionLock.addDimensionLock(66, "or|[trait|compatskills:bawls17]~[trait|compatskills:skillz17]");
 
-//mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
+//global mount locking
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippocampus>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce6]~[trait|compatskills:skillz6]]");
+mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:hippocampus>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce6]~[trait|compatskills:skillz6]]");
+
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:amphithere>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce16]~[trait|compatskills:skillz16]]");
+mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:ampthithere>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce16]~[trait|compatskills:skillz16]]");
 
 var bawls1tooltip = "Basics";
 var bawls2tooltip = "Bashers";
@@ -1040,6 +1045,9 @@ for item in bawls8req {
 //							BAWLS 9
 //**************************************
 
+mods.compatskills.AnimalTameLock.addTameLock(<entity:rats:rat>, "trait|compatskills:bawls9");
+mods.compatskills.EntityMountLock.addMountLock(<entity:rats:rat>, "trait|compatskills:bawls9");
+
 var bawls9req = [
 
 	<rats:cheese:*>,
@@ -1222,6 +1230,9 @@ for item in bawls10req {
 //**************************************
 //							BAWLS 11
 //**************************************
+
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippogryph>, "trait|compatskills:bawls11");
+mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:hippogryph>, "trait|compatskills:bawls11");
 
 var bawls11req = [
 

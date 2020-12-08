@@ -807,6 +807,26 @@ for item in skillz7req {
 //							SKILLZ 8
 //**************************************
 
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.velociraptor>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.stegosaurus>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.compsognathus>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.deinonychus>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.dryosaurus>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.henodus>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.icthyosaurus>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.meganeura>, "trait|compatskills:skillz8");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.titanis>, "trait|compatskills:skillz8");
+
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.velociraptor>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.stegosaurus>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.compsognathus>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.deinonychus>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.dryosaurus>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.henodus>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.icthyosaurus>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.meganeura>, "trait|compatskills:skillz8");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.titanis>, "trait|compatskills:skillz8");
+
 var skillz8req = [
 
 	<fossil:analyzer>,
@@ -1191,6 +1211,46 @@ for item in skillz12req {
 //**************************************
 //							SKILLZ 13
 //**************************************
+
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.ankylosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.arthropleura>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.ceratosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.diplodocus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.elasmotherium>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.gallimimus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.kelenken>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.liopleurodon>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.mammoth>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.megaloceros>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.ornitholestes>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.pachycephalosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.parasaurolophus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.phorusrhacos>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.platybelodon>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.plesiosaur>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.smilodon>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.therizinosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.triceratops>, "trait|compatskills:skillz13");
+
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.ankylosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.arthropleura>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.ceratosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.diplodocus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.elasmotherium>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.gallimimus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.kelenken>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.liopleurodon>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.mammoth>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.megaloceros>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.ornitholestes>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.pachycephalosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.parasaurolophus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.phorusrhacos>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.platybelodon>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.plesiosaur>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.smilodon>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.therizinosaurus>, "trait|compatskills:skillz13");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.triceratops>, "trait|compatskills:skillz13");
 
 var skillz13req = [
 
@@ -1699,6 +1759,25 @@ for item in skillz19req {
 //**************************************
 //							SKILLZ 20
 //**************************************
+
+
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.spinosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.megalodon>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.tyrannosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.brachiosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.mosasaurus>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.sarcosuchus>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.allosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:fossil:fossil.megalania>, "trait|compatskills:skillz20");
+
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.spinosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.megalodon>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.tyrannosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.brachiosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.mosasaurus>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.sarcosuchus>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.allosaurus>, "trait|compatskills:skillz20");
+mods.compatskills.EntityMountLock.addMountLock(<entity:fossil:fossil.megalania>, "trait|compatskills:skillz20");
 
 var skillz20req = [
 
