@@ -705,6 +705,7 @@ for item in itemRemovalsWaystones {
 
 //Removes items from various mods
 var itemRemovalsMiscellaneous = [
+	<ebwizardry:magic_silk>,
 	<sophisticatedwolves:swkennel>,
 	<beasts:icon>,
 	<netherex:dull_mirror>,
