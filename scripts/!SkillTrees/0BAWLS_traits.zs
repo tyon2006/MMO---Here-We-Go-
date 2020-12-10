@@ -28,7 +28,7 @@ mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippocampus>, "o
 mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:hippocampus>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce6]~[trait|compatskills:skillz6]]");
 
 mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:amphithere>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce16]~[trait|compatskills:skillz16]]");
-mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:ampthithere>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce16]~[trait|compatskills:skillz16]]");
+mods.compatskills.EntityMountLock.addMountLock(<entity:iceandfire:amphithere>, "or|[trait|compatskills:bawls6]~[or|[trait|compatskills:grayce16]~[trait|compatskills:skillz16]]");
 
 var bawls1tooltip = "Basics";
 var bawls2tooltip = "Bashers";
