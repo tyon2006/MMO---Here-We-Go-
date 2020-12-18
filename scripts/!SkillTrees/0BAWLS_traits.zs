@@ -547,8 +547,6 @@ var bawls4req = [
 	<transmutationalchemy:mixer:*>,
 	<runesofwizardry_classics:dust_classic>,
 	<runesofwizardry_classics:dust_classic:1>,
-	<runesofwizardry_classics:dust_classic:2>,
-	<runesofwizardry_classics:dust_classic:3>,
 	<runesofwizardry:runic_dictionary>,
 	<runesofwizardry:dummyguide>,
 	<guideapi:runesofwizardry-guide_book>,
@@ -620,6 +618,9 @@ for item in bawls5req {
 //This allows other disciplines to use the items produced by this trait
 
 var bawls5cons = [
+	<transmutationalchemy:crystal_bedrock:*>,
+	<transmutationalchemy:crystal_void:*>,
+	<transmutationalchemy:crystal_void_seed:*>,
 	<mod_lavacow:fissionpotion>,
 	<nyx:lunar_water_bottle>,
 	<minecraft:potion>.withTag({Potion: "charm:coffee"}),
@@ -1343,9 +1344,6 @@ var bawls14req = [
 	<transmutationalchemy:auto_mixer:*>,
 	<transmutationalchemy:base_upgrade:*>,
 	<transmutationalchemy:containtment_shell:*>,
-	<transmutationalchemy:crystal_bedrock:*>,
-	<transmutationalchemy:crystal_void:*>,
-	<transmutationalchemy:crystal_void_seed:*>,
 	<transmutationalchemy:dragon_soul_sphere:*>,
 	<transmutationalchemy:heat_coil:*>,
 	<transmutationalchemy:infuser:*>,
