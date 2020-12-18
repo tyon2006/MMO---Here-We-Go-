@@ -10,6 +10,7 @@ import mods.jei.JEI.hide as hide;
 <bountifulbaubles:trinketobsidianskull>.displayName = "Obsidian Skull Charm";
 //add aspects
 mods.embers.Alchemy.addAspect("ale", <soot:mug>.withTag({Fluid: {FluidName: "dwarven_ale", Amount: 250}}));
+mods.embers.Alchemy.addAspect("antimony", <soot:signet_antimony>);
 
 //***************************
 //		     	RECIPES
@@ -36,22 +37,22 @@ mods.embers.Alchemy.add(<quark:diamond_heart>,
 <ore:gemAether>],
 {"iron": 24 to 36, "lead": 24 to 36});
 
-mods.embers.Alchemy.add(<transmutationalchemy:crystal_mind>*3,
+mods.embers.Alchemy.add(<transmutationalchemy:crystal_protection>*4,
 [<transmutationalchemy:nether_dust>,
 <transmutationalchemy:crystal_power>, <transmutationalchemy:crystal_power>, <transmutationalchemy:crystal_power>,
 <transmutationalchemy:crystal_power>], {"antimony": 4 to 8});
 
-mods.embers.Alchemy.add(<transmutationalchemy:crystal_protection>*3,
+mods.embers.Alchemy.add(<transmutationalchemy:venom_crystal>*4,
 [<transmutationalchemy:ender_dust>,
 <transmutationalchemy:crystal_mind>, <transmutationalchemy:crystal_mind>, <transmutationalchemy:crystal_mind>,
 <transmutationalchemy:crystal_mind>], {"antimony": 4 to 8});
 
-mods.embers.Alchemy.add(<transmutationalchemy:venom_crystal>*3,
+mods.embers.Alchemy.add(<transmutationalchemy:crystal_mind>*4,
 [<transmutationalchemy:venom_dust>,
 <transmutationalchemy:crystal_protection>, <transmutationalchemy:crystal_protection>, <transmutationalchemy:crystal_protection>,
 <transmutationalchemy:crystal_protection>], {"antimony": 4 to 8});
 
-mods.embers.Alchemy.add(<transmutationalchemy:crystal_power>*3,
+mods.embers.Alchemy.add(<transmutationalchemy:crystal_power>*4,
 [<transmutationalchemy:magical_dust>,
 <transmutationalchemy:venom_crystal>, <transmutationalchemy:venom_crystal>, <transmutationalchemy:venom_crystal>,
 <transmutationalchemy:venom_crystal>], {"antimony": 4 to 8});
