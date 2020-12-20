@@ -15,4 +15,11 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(<thaumcraft:ingot>, <thaumcraft:
 recipes.remove(<randomthings:ingredient:3>);
 mods.iceandfire.recipes.addIceDragonForgeRecipe(<thaumcraft:ingot>, <mod_lavacow:ectoplasm>, <randomthings:ingredient:3>);
 
+###Adds Rain and Storm Weather Egg Recipes###
+
+var iceeggies = <minecraft:egg>;
+
+mods.iceandfire.recipes.addIceDragonForgeRecipe(iceeggies, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aqua"}]}), <randomthings:weatheregg:1>);
+mods.iceandfire.recipes.addIceDragonForgeRecipe(iceeggies, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "potentia"}]}), <randomthings:weatheregg:2>);
+
 print("--- icedragonforge.zs initialized ---");
