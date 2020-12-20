@@ -17,6 +17,8 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(<thaumcraft:ingot>, <mod_lavacow
 
 ###Adds Rain and Storm Weather Egg Recipes###
 
+recipes.remove(<randomthings:weatheregg:1>);
+
 var iceeggies = <minecraft:egg>;
 
 mods.iceandfire.recipes.addIceDragonForgeRecipe(iceeggies, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aqua"}]}), <randomthings:weatheregg:1>);

@@ -12,6 +12,9 @@ mods.iceandfire.recipes.addFireDragonForgeRecipe(<thaumcraft:ingot>, <thaumcraft
 
 ###Adds Clear and Storm Weather Egg Recipes###
 
+recipes.remove(<randomthings:weatheregg:0>);
+recipes.remove(<randomthings:weatheregg:2>);
+
 var fireeggies = <minecraft:egg>;
 
 mods.iceandfire.recipes.addFireDragonForgeRecipe(fireeggies, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "lux"}]}), <randomthings:weatheregg:0>);
