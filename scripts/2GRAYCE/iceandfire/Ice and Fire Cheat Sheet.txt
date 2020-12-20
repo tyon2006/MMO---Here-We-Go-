@@ -1,0 +1,29 @@
+Ice and Fire supports Craft Tweaker natively for the addition or removal of recipes to the Dragon Forges.
+
+In your recipes.zs,
+
+mods.iceandfire.recipes.addFireDragonForgeRecipe(<input>, <bloodInput>, <output>);
+
+or
+
+mods.iceandfire.recipes.addIceDragonForgeRecipe(<input>, <bloodInput>, <output>);
+
+Where input, bloodInput, and output are all valid itemstacks.
+
+An example of added recipes would be as follows:
+
+mods.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:apple>, <minecraft:milk_bucket>, <minecraft:golden_apple>); mods.iceandfire.recipes.addFireDragonForgeRecipe(<tconstruct:nuggets:4>, <minecraft:milk_bucket>, <tconstruct:edible:0>); mods.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:brick>, <minecraft:lava_bucket>, <minecraft:gold_ingot>); mods.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:dirt>, <minecraft:water_bucket>, <iceandfire:frozen_dirt>);
+
+To remove a recipe, your 'recipes.zs' would contain:
+
+mods.iceandfire.recipes.removeFireDragonRecipe(<output>);
+
+or
+
+mods.iceandfire.recipes.removeIceDragonRecipe(<output>);
+
+Caution should be taken, as this will remove all recipes with this item as an output. An example of removing a recipe would be as follows:
+
+mods.iceandfire.recipes.removeFireDragonForgeRecipe(<iceandfire:dragonsteel_fire_ingot>);
+
+Which would remove the recipe for creating Fire Dragonsteel Ingots from the game.

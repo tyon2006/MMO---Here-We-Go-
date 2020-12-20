@@ -18,8 +18,7 @@ recipes.addShapedMirrored(<transmutationalchemy:blade>,
 [<minecraft:stick>,null]]);
 
 //unify ectoplasm
-//recipes.replaceAllOccurences(<randomthings:ingredient:2>, <bewitchment:ectoplasm>);
-//removed bewitchment
+recipes.replaceAllOccurences(<randomthings:ingredient:2>, <mod_lavacow:ectoplasm>);
 
 //***************************
 //		RENAMING

@@ -741,7 +741,8 @@ var itemRemovalsMiscellaneous = [
 	<aether:candy_cane>,
 	<aether:winter_hat>,
 	<aether:wrapping_paper>,
-	<immersiveintelligence:data_connector:6>
+	<immersiveintelligence:data_connector:6>,
+	<randomthings:ingredient:2>
 
 ] as IItemStack[];
 
