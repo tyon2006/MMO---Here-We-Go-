@@ -59,7 +59,7 @@ for item in unfitItems {
 }
 
 
-
+recipes.replaceAllOccurences(<primitivemobs:camouflage_dye>, <secretroomsmod:camouflage_paste>);
 
 recipes.remove(<randomthings:sounddampener>);
 recipes.addShaped(<randomthings:sounddampener>, 
