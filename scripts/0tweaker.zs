@@ -1,4 +1,3 @@
-
 #loader contenttweaker
 import crafttweaker.block.IBlock;
 import crafttweaker.block.IBlockState;
@@ -28,6 +27,9 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI;
 import mods.transmutationalchemy.mixer;
 import mods.contenttweaker.ItemFood;
+import mods.contenttweaker.Random;
+import crafttweaker.event.CommandEvent;
+
 
 var moltenElemental = mods.contenttweaker.VanillaFactory.createFluid("molten_elemental_alloy", Color.fromHex("C4B2D1"));
 moltenElemental.setViscosity(6000);

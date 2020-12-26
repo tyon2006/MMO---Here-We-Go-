@@ -1,3 +1,8 @@
+import mods.jei.JEI.removeAndHide as rh;
+import mods.embers.Stamper;
+import mods.jei.JEI;
+
+
 print("--- loading 2b_itemcorrection.zs ---");
 
 //***************************
@@ -8,6 +13,55 @@ print("--- loading 2b_itemcorrection.zs ---");
 recipes.remove(<minecraft:glowstone>);
 recipes.addShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>],[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]]);
 
+//***************************
+//		    CHAIN UNIFICATION
+//***************************
+
+recipes.replaceAllOccurences(<rustic:chain>, <cathedral:cathedral_chain_various>);
+recipes.replaceAllOccurences(<rustic:chain_silver>, <cathedral:cathedral_chain_various:5>);
+recipes.replaceAllOccurences(<rustic:chain_gold>, <cathedral:cathedral_chain_various:1>);
+recipes.replaceAllOccurences(<rusticthaumaturgy:chain_brass>, <cathedral:cathedral_chain_various:4>);
+
+recipes.remove(<cathedral:cathedral_chain_various>);
+recipes.remove(<cathedral:cathedral_chain_various:1>);
+recipes.remove(<cathedral:cathedral_chain_various:2>);
+recipes.remove(<cathedral:cathedral_chain_various:3>);
+recipes.remove(<cathedral:cathedral_chain_various:4>);
+recipes.remove(<cathedral:cathedral_chain_various:5>);
+recipes.remove(<cathedral:cathedral_chain_various:5>);
+
+recipes.addShapeless("Decorative Iron Chain", <cathedral:cathedral_chain_various>, [<iceandfire:chain>]);
+recipes.addShapeless("Iron Chain", <iceandfire:chain>, [<cathedral:cathedral_chain_various>]);
+recipes.addShapeless("Clean Iron Chain", <iceandfire:chain>, [<iceandfire:chain_sticky>]);
+
+<cathedral:cathedral_chain_various>.displayName = "Decorative Iron Chain";
+<cathedral:cathedral_chain_various:1>.displayName = "Decorative Gold Chain";
+<cathedral:cathedral_chain_various:2>.displayName = "Decorative Dwarven Chain";
+<cathedral:cathedral_chain_various:3>.displayName = "Decorative Copper Chain";
+<cathedral:cathedral_chain_various:4>.displayName = "Decorative Brass Chain";
+<cathedral:cathedral_chain_various:5>.displayName = "Decorative Silver Chain";
+<cathedral:cathedral_chain_various:6>.displayName = "Decorative Aetherium Chain";
+
+rh(<rustic:chain>);
+rh(<rustic:chain_silver>);
+rh(<rustic:chain_gold>);
+rh(<rusticthaumaturgy:chain_brass>);
+
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:1>, <fluid:gold>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:2>, <fluid:dawnstone>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:3>, <fluid:copper>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:4>, <fluid:brass>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:5>, <fluid:silver>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:6>, <fluid:aetherworks.aetherium_gas>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various:2>);
+
+recipes.addShapeless("Decorative Gold Chain", <cathedral:cathedral_chain_various:1>, 
+[<cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <ore:plateGold>]);
+recipes.addShapeless("Decorative Copper Chain", <cathedral:cathedral_chain_various:3>, 
+[<cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <ore:plateCopper>]);
+recipes.addShapeless("Decorative Brass Chain", <cathedral:cathedral_chain_various:4>, 
+[<cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <ore:plateBrass>]);
+recipes.addShapeless("Decorative Silver Chain", <cathedral:cathedral_chain_various:5>, 
+[<cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <cathedral:cathedral_chain_various>, <ore:plateSilver>]);
 
 //***************************
 //    DISPLAY NAMES
