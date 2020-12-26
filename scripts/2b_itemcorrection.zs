@@ -14,6 +14,12 @@ recipes.remove(<minecraft:glowstone>);
 recipes.addShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>],[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]]);
 
 //***************************
+//      MOLTEN BRASS
+//***************************
+
+
+
+//***************************
 //		    CHAIN UNIFICATION
 //***************************
 
@@ -50,7 +56,7 @@ rh(<rusticthaumaturgy:chain_brass>);
 mods.embers.Stamper.add(<cathedral:cathedral_chain_various:1>, <fluid:gold>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
 mods.embers.Stamper.add(<cathedral:cathedral_chain_various:2>, <fluid:dawnstone>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
 mods.embers.Stamper.add(<cathedral:cathedral_chain_various:3>, <fluid:copper>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
-mods.embers.Stamper.add(<cathedral:cathedral_chain_various:4>, <fluid:brass>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
+mods.embers.Stamper.add(<cathedral:cathedral_chain_various:4>, <fluid:molten_brass>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
 mods.embers.Stamper.add(<cathedral:cathedral_chain_various:5>, <fluid:silver>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various>);
 mods.embers.Stamper.add(<cathedral:cathedral_chain_various:6>, <fluid:aetherworks.aetherium_gas>*16, <embers:stamp_flat>, <cathedral:cathedral_chain_various:2>);
 

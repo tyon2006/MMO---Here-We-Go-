@@ -382,7 +382,6 @@ var bawls3req = [
 	<cathedral:basalt_stairs_checkered_small:*>,
 	<cathedral:basalt_stairs_checkered_tiles:*>,
 	<cathedral:basalt_stairs_checkered_tilessmall:*>,
-	<cathedral:cathedral_chain_various:*>,
 	<cathedral:cathedral_gargoyle_demon_basalt:*>,
 	<cathedral:cathedral_gargoyle_demon_dwemer:*>,
 	<cathedral:cathedral_gargoyle_demon_endstone:*>,

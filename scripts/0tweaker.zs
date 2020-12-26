@@ -30,6 +30,15 @@ import mods.contenttweaker.ItemFood;
 import mods.contenttweaker.Random;
 import crafttweaker.event.CommandEvent;
 
+var moltenBrass = mods.contenttweaker.VanillaFactory.createFluid("molten_brass", Color.fromHex("E0BB55"));
+moltenBrass.setViscosity(6000);
+moltenBrass.setDensity(2000);
+moltenBrass.setTemperature(1300);
+moltenBrass.setStillLocation("embers:blocks/molten_lead_still");
+moltenBrass.setFlowingLocation("embers:blocks/molten_lead_flowing");
+moltenBrass.register();
+
+
 
 var moltenElemental = mods.contenttweaker.VanillaFactory.createFluid("molten_elemental_alloy", Color.fromHex("C4B2D1"));
 moltenElemental.setViscosity(6000);
