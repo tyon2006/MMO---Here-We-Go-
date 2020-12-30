@@ -1,5 +1,5 @@
 
-mods.aetherworks.MetalFormer.addRecipe(<variedcommodities:ingot_bronze>, <fluid:aetherium_gas>*144, <aetherworks:item_resource:4>, 2100);
+mods.aetherworks.MetalFormer.addRecipe(<variedcommodities:ingot_bronze>, <fluid:aetherworks.aetherium_gas>*144, <aetherworks:item_resource:4>, 2100);
 
 recipes.removeShaped(<aetherworks:item_resource:2>,
 [[null, <ore:ingotCopper>, null],
