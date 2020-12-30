@@ -73,11 +73,11 @@
 
           <Choice value='none' displayValue='None' description='Fossils is not generated in the world.'/>
         </OptionChoice>
-        <OptionNumeric name='fsarFossilsFreq' default='0.6'  min='0' max='5' displayState=':= if(?enableFossilsandArchaeology, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFossilsandArchaeology'>
+        <OptionNumeric name='fsarFossilsFreq' default='0.3'  min='0' max='5' displayState=':= if(?enableFossilsandArchaeology, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFossilsandArchaeology'>
           <Description> Frequency multiplier for Fossils and Archaeology Fossils distributions </Description>
           <DisplayName>Fossils and Archaeology Fossils Freq.</DisplayName>
         </OptionNumeric>
-        <OptionNumeric name='fsarFossilsSize' default='0.5'  min='0' max='5' displayState=':= if(?enableFossilsandArchaeology, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFossilsandArchaeology'>
+        <OptionNumeric name='fsarFossilsSize' default='1'  min='0' max='5' displayState=':= if(?enableFossilsandArchaeology, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFossilsandArchaeology'>
           <Description> Size multiplier for Fossils and Archaeology Fossils distributions </Description>
           <DisplayName>Fossils and Archaeology Fossils Size</DisplayName>
         </OptionNumeric>
