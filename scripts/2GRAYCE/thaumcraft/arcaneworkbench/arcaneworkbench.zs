@@ -122,4 +122,23 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("EnchantmentWard", "INFUSIO
 recipes.remove(<wards:enchanted_paper>);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("EnchantedPaper", "INFUSIONENCHANTMENT", 5, [<aspect:perditio>], <wards:enchanted_paper>*5, [<minecraft:enchanted_book>]);
 
+###Rebuild Dragon Forge part recipes###
+recipes.remove(<iceandfire:dragonforge_ice_brick>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("DragonIceBrick", "BASEELDRITCH", 5, [<aspect:aqua>*5], <iceandfire:dragonforge_ice_brick>*2, [[<ore:frozenBlock>,<thaumcraft:stone_arcane>,<ore:frozenBlock>], [<thaumcraft:stone_arcane>,<ore:obsidian>,<thaumcraft:stone_arcane>], [<ore:frozenBlock>,<thaumcraft:stone_arcane>,<ore:frozenBlock>]]);
+
+recipes.remove(<iceandfire:dragonforge_ice_input>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("DragonIceAperture", "BASEELDRITCH", 50, [<aspect:ordo>*5], <iceandfire:dragonforge_ice_input>, [[<iceandfire:dragonforge_ice_brick>,<ore:plateVoid>,<iceandfire:dragonforge_ice_brick>], [<ore:plateVoid>,null,<ore:plateVoid>], [<iceandfire:dragonforge_ice_brick>,<ore:plateVoid>,<iceandfire:dragonforge_ice_brick>]]);
+
+recipes.remove(<iceandfire:dragonforge_ice_core_disabled>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("DragonIceCore", "BASEELDRITCH", 50, [<aspect:ordo>*5, <aspect:aqua>*5], <iceandfire:dragonforge_ice_core_disabled>, [[<iceandfire:dragonforge_ice_brick>,<iceandfire:dragonforge_ice_brick>,<iceandfire:dragonforge_ice_brick>], [<iceandfire:dragonforge_ice_brick>,<thaumcraft:infusion_matrix>,<iceandfire:dragonforge_ice_brick>], [<iceandfire:dragonforge_ice_brick>,<iceandfire:dragonforge_ice_brick>,<iceandfire:dragonforge_ice_brick>]]);
+
+recipes.remove(<iceandfire:dragonforge_fire_brick>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("DragonFireBrick", "BASEELDRITCH", 5, [<aspect:ignis>*5], <iceandfire:dragonforge_fire_brick>*2, [[<ore:charredBlock>,<thaumcraft:stone_arcane>,<ore:charredBlock>], [<thaumcraft:stone_arcane>,<ore:obsidian>,<thaumcraft:stone_arcane>], [<ore:charredBlock>,<thaumcraft:stone_arcane>,<ore:charredBlock>]]);
+
+recipes.remove(<iceandfire:dragonforge_fire_input>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("DragonFireAperture", "BASEELDRITCH", 50, [<aspect:ordo>*5], <iceandfire:dragonforge_fire_input>, [[<iceandfire:dragonforge_fire_brick>,<ore:plateVoid>,<iceandfire:dragonforge_fire_brick>], [<ore:plateVoid>,null,<ore:plateVoid>], [<iceandfire:dragonforge_fire_brick>,<ore:plateVoid>,<iceandfire:dragonforge_fire_brick>]]);
+
+recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("DragonFireCore", "BASEELDRITCH", 50, [<aspect:ordo>*5, <aspect:ignis>*5], <iceandfire:dragonforge_fire_core_disabled>, [[<iceandfire:dragonforge_fire_brick>,<iceandfire:dragonforge_fire_brick>,<iceandfire:dragonforge_fire_brick>], [<iceandfire:dragonforge_fire_brick>,<thaumcraft:infusion_matrix>,<iceandfire:dragonforge_fire_brick>], [<iceandfire:dragonforge_fire_brick>,<iceandfire:dragonforge_fire_brick>,<iceandfire:dragonforge_fire_brick>]]);
+
 print("--- arcaneworkbench.zs initialized ---");

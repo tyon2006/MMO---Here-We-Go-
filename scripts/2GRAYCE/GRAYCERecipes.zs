@@ -14,4 +14,7 @@ print("--- loading GRAYCERecipes.zs ---");
 recipes.remove(<chineseworkshop:thin_wall_w>);
 recipes.addShaped(<chineseworkshop:thin_wall_w>*9, [[<ore:slabWood>],[<ore:slabWood>],[<ore:slabWood>]]);
 
+recipes.remove(<ebwizardry:receptacle>);
+recipes.addShaped(<ebwizardry:receptacle>, [[<ore:ingotBrass>,null,<ore:ingotBrass>],[null,<ore:ingotBrass>,null]]);
+
 print("--- GRAYCERecipes.zs initialized ---");

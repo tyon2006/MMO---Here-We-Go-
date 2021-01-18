@@ -1,0 +1,417 @@
+HOPGraphite
+	ingotHOPGraphite
+	dustHOPGraphite
+
+Nagrilite
+	oreNagrilite
+	nuggetNagrilite
+	ingotNagrilite
+	blockNagrilite
+
+Iridium
+
+Void
+	gearVoid
+	nuggetVoid
+	plateVoid
+	ingotVoid
+	blockVoid
+
+Uranium
+	oreUranium
+	clusterUranium
+	blockSheetmetalUranium
+	fenceUranium
+	nuggetUranium
+	plateUranium
+	stickUranium
+	slabUranium
+	ingotUranium
+	dustUranium
+	slabSheetmetalUranium
+	blockUranium
+
+Antimony
+	gearAntimony
+	ingotAntimony
+
+Tin
+	rodTin
+	gearTin
+	oreTin
+	clusterTin
+	nuggetTin
+	plateTin
+	stickTin
+	ingotTin
+	dustTin
+	blockTin
+
+Gold
+	tubeVacuumGold
+	respiratorGold
+	bagVacuumGold
+	gearGold
+	oreGold
+	clusterGold
+	blockSheetmetalGold
+	fenceGold
+	nuggetGold
+	plateGold
+	stickGold
+	oreNetherGold
+	ingotGold
+	dustGold
+	slabSheetmetalGold
+	blockGold
+
+RedAlloy
+	ingotRedAlloy
+
+ElvenElementium
+
+Steel
+	beltSteel
+	springSteel
+	scaffoldingSteel
+	gearSteel
+	wireSteel
+	blockSheetmetalSteel
+	fenceSteel
+	nuggetSteel
+	plateSteel
+	stickSteel
+	slabSteel
+	ingotSteel
+	dustSteel
+	slabSheetmetalSteel
+	blockSteel
+
+ReinforcedIron
+
+JungleChitin
+	ingotJungleChitin
+
+AdvancedElectronicAlloy
+	nuggetAdvancedElectronicAlloy
+	plateAdvancedElectronicAlloy
+	ingotAdvancedElectronicAlloy
+	dustAdvancedElectronicAlloy
+
+Tenebrium
+	nuggetTenebrium
+	ingotTenebrium
+
+Bronze
+	gearBronze
+	nuggetBronze
+	plateBronze
+	ingotBronze
+	blockBronze
+
+Mithrillium
+	nuggetMithrillium
+	plateMithrillium
+	ingotMithrillium
+	blockMithrillium
+
+Aether
+	shardAether
+	gemAether
+	gearAether
+	oreAether
+	nuggetAether
+	plateAether
+	lensAether
+	ingotAether
+	blockAether
+
+Platinum
+	sheetmetalPlatinum
+	rodPlatinum
+	orePlatinum
+	clusterPlatinum
+	nuggetPlatinum
+	platePlatinum
+	stickPlatinum
+	slabPlatinum
+	ingotPlatinum
+	dustPlatinum
+	slabSheetmetalPlatinum
+	blockPlatinum
+
+Mithminite
+	nuggetMithminite
+	plateMithminite
+	ingotMithminite
+	blockMithminite
+
+FireDragonsteel
+	ingotFireDragonsteel
+	blockFireDragonsteel
+
+CosmicNeutronium
+
+Electrum
+	gearElectrum
+	wireElectrum
+	blockSheetmetalElectrum
+	fenceElectrum
+	nuggetElectrum
+	plateElectrum
+	stickElectrum
+	slabElectrum
+	ingotElectrum
+	dustElectrum
+	slabSheetmetalElectrum
+	blockElectrum
+
+Terrasteel
+
+Demonic
+	ingotDemonic
+
+Invar
+	blockInvar
+
+Adaminite
+	nuggetAdaminite
+	plateAdaminite
+	ingotAdaminite
+	blockAdaminite
+
+Lead
+	gearLead
+	oreLead
+	clusterLead
+	blockSheetmetalLead
+	fenceLead
+	nuggetLead
+	plateLead
+	stickLead
+	slabLead
+	ingotLead
+	dustLead
+	slabSheetmetalLead
+	blockLead
+
+Tungsten
+	sheetmetalTungsten
+	gearTungsten
+	oreTungsten
+	wireTungsten
+	clusterTungsten
+	nuggetTungsten
+	plateTungsten
+	stickTungsten
+	slabTungsten
+	ingotTungsten
+	dustTungsten
+	slabSheetmetalTungsten
+	blockTungsten
+
+Plastic
+	ingotPlastic
+
+Draconium
+
+Constantan
+	blockSheetmetalConstantan
+	fenceConstantan
+	nuggetConstantan
+	plateConstantan
+	stickConstantan
+	slabConstantan
+	ingotConstantan
+	dustConstantan
+	slabSheetmetalConstantan
+	blockConstantan
+
+Brass
+	springBrass
+	gearBrass
+	nuggetBrass
+	plateBrass
+	slabBrass
+	ingotBrass
+	dustBrass
+	slabSheetmetalBrass
+	blockBrass
+	sheetmetalBrass
+
+Glowing
+	gemGlowing
+	ingotGlowing
+	dustGlowing
+
+Gravitite
+	blockEnchantedGravitite
+	oreGravitite
+	ingotGravitite
+
+Arkenium
+	oreArkenium
+	stickArkenium
+	ingotArkenium
+
+IceDragonsteel
+	ingotIceDragonsteel
+	blockIceDragonsteel
+
+Copper
+	gearCopper
+	oreCopper
+	wireCopper
+	clusterCopper
+	blockSheetmetalCopper
+	fenceCopper
+	nuggetCopper
+	plateCopper
+	stickCopper
+	slabCopper
+	ingotCopper
+	dustCopper
+	slabSheetmetalCopper
+	blockCopper
+
+Iron
+	spongeIron
+	ringIron
+	dustTinyIron
+	tubeVacuumIron
+	respiratorIron
+	bagVacuumIron
+	springIron
+	gearIron
+	oreIron
+	clusterIron
+	blockSheetmetalIron
+	fenceIron
+	nuggetIron
+	plateIron
+	stickIron
+	oreNetherIron
+	ingotIron
+	dustIron
+	slabSheetmetalIron
+	blockIron
+
+CrystalMatrix
+
+Silicon
+	plateSilicon
+	nuggetSilicon
+	bouleSilicon
+	ingotSilicon
+	dustSilicon
+
+Ardite
+
+Nickel
+	gearNickel
+	oreNickel
+	clusterNickel
+	blockSheetmetalNickel
+	fenceNickel
+	nuggetNickel
+	plateNickel
+	stickNickel
+	slabNickel
+	ingotNickel
+	dustNickel
+	slabSheetmetalNickel
+	blockNickel
+
+Dragonbone
+	ingotDragonbone
+
+Thorium
+	oreThorium
+	clusterThorium
+	nuggetThorium
+	plateThorium
+	stickThorium
+	ingotThorium
+	dustThorium
+	blockThorium
+
+Dawnstone
+	gearDawnstone
+	nuggetDawnstone
+	plateDawnstone
+	ingotDawnstone
+	blockDawnstone
+
+Manasteel
+
+Magnet
+	ingotMagnet
+
+Thaumium
+	gearThaumium
+	nuggetThaumium
+	plateThaumium
+	ingotThaumium
+	blockThaumium
+
+Zinc
+	sheetmetalZinc
+	rodZinc
+	oreZinc
+	clusterZinc
+	nuggetZinc
+	plateZinc
+	stickZinc
+	slabZinc
+	ingotZinc
+	dustZinc
+	slabSheetmetalZinc
+	blockZinc
+
+DesertChitin
+	ingotDesertChitin
+
+Silver
+	woolSilver
+	gearSilver
+	oreSilver
+	clusterSilver
+	blockSheetmetalSilver
+	fenceSilver
+	nuggetSilver
+	plateSilver
+	stickSilver
+	slabSilver
+	ingotSilver
+	dustSilver
+	slabSheetmetalSilver
+	blockSilver
+
+Mithril
+	ingotMithril
+
+Cobalt
+	blockCobalt
+
+Aluminum
+	scaffoldingAluminum
+	gearAluminum
+	oreAluminum
+	wireAluminum
+	clusterAluminum
+	blockSheetmetalAluminum
+	fenceAluminum
+	nuggetAluminum
+	plateAluminum
+	stickAluminum
+	slabAluminum
+	ingotAluminum
+	dustAluminum
+	slabSheetmetalAluminum
+	blockAluminum
+
+ElectrotineAlloy
+	ingotElectrotineAlloy
+
+Infinity
+
