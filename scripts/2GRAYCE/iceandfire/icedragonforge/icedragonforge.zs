@@ -12,6 +12,8 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(<thaumcraft:ingot:1>, <thaumcraf
 
 ###Adds Spectral Steel Recipe###
 
+<randomthings:ingredient:3>.displayName = "Spectral Dragonsteel Ingot";
+
 recipes.remove(<randomthings:ingredient:3>);
 mods.iceandfire.recipes.addIceDragonForgeRecipe(<thaumcraft:ingot:1>, <mod_lavacow:ectoplasm>, <randomthings:ingredient:3>);
 
