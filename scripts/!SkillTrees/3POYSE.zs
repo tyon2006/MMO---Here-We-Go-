@@ -80,8 +80,7 @@ for item in poyse3req {
 
 var poyse4req = [
 
-	<wards:ward:*>,
-	<wards:enchanted_paper:*>
+	<wards:ward:*>
 
 ] as IItemStack[];
 
