@@ -1,0 +1,2846 @@
+[
+	{
+		"content": "betternether:cincinnasite",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:double_plant",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:double_plant:2",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:double_plant:3",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:1",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:11",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:12",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:14",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:15",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:2",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:3",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:4",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:5",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:6",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:8",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:1",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:3",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:4",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:5",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:1",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:2",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:3",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:4",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:5",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:6",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:mushroom:3",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:mushroom:4",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:mushroom:5",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:plant_1:10",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:plant_1:4",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:plant_1:6",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "charm:totem_of_returning",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "cyclicmagic:crystallized_amber",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "cyclicmagic:crystallized_obsidian",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:1",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:2",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:3",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:4",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:5",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:6",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "embers:ingot_tin",
+		"unitWorth": 775,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:aqua_creepers:aqua_creeper",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:beasts:giant_garden_eel",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:beasts:vile_eel",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:betteranimalsplus:tarantula",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:cyberware:cyberzombie",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:ebwizardry:husk_minion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:ebwizardry:phoenix",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:ebwizardry:storm_elemental",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:embers:ancient_golem",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:fossil:fossil.megalodon",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:ant",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:ant_ranger",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:anubis",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:arachne",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:baphomet",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:beholder",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:bone_knight",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:butler",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:cecaelia",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:chest",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:cobblestone_golem",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:creep",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:deathword",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:dhampir",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:ender_dragon_girl",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:ender_eye",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:flesh_lich",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:goblin",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:goblin_feral",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:harpy",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:hunter",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:illager_fire",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:illager_inquisitor",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:matango",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:mermaid",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:mimic",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:minotaur",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:mite",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:mummy",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:naga",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:nine_tails",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:oni",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:orc",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:selkie",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:shaman",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:sharko",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:siren",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:sphinx",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:spriggan",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:succubus",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:valkyrie",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:vampire",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:werecat",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:witch",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:wither_cow",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:yeti",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:grimoireofgaia:yuki-onna",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:cyclops",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_beast",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_ghoul",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_horse",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_knight",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_lich",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_scuttler",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:dread_thrall",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:gorgon",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:if_hydra",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:if_troll",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:myrmex_queen",
+		"unitWorth": 4333,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:myrmex_royal",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:myrmex_sentinel",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:myrmex_soldier",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:myrmex_swarmer",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:myrmex_worker",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:seaserpent",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:iceandfire:siren",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:idk:mutt",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:idk:pillager",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:idk:potionbud",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:idk:railliger",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:idk:ravager",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:idk:vampire",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:illagers_plus:archer",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:illagers_plus:enchanter",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:illagers_plus:furantur",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:illagers_plus:hoarder",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:illagers_plus:illager_king",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:illagers_plus:necromancer",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:magma_monsters:magma_monster",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:magma_monsters:magma_monster_grunt",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:cave_spider",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:creeper",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:enderman",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:endermite",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:evocation_illager",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:ghast",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:giant",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:guardian",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:husk",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:illusion_illager",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:magma_cube",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:shulker",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:skeleton",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:skeleton_horse",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:slime",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:spider",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:stray",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:vex",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:vindication_illager",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:witch",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:wither_skeleton",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:zombie",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:zombie_horse",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:minecraft:zombie_villager",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:boneworm",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:foglet",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:ithaqua",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:mimic",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:pingu",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:piranha",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:ptera",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:salamander",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:scarecrow",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:sludgelord",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:zombiefrozen",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:zombiemushroom",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mod_lavacow:zombiepiranha",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mowziesmobs:barako",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mowziesmobs:barakoana",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mowziesmobs:barakoaya",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mowziesmobs:foliaath",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mowziesmobs:frostmaw",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mutantbeasts:mutant_creeper",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mutantbeasts:mutant_enderman",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mutantbeasts:mutant_skeleton",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:mutantbeasts:mutant_zombie",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:brute",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:coolmar_spider",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:ember",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:frost",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:ghast_queen",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:mogus",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:nethermite",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:salamander",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:spinout",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:spore_creeper",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:netherex:wight",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:baby_spider",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:bewitched_tome",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:blazing_juggernaut",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:festive_creeper",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:flame_spewer",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:goblin",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:harpy",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:haunted_tool",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:mimic",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:mother_spider",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:rocket_creeper",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:skeleton_warrior",
+		"unitWorth": 50,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:support_creeper",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:treasure_slime",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:trollager",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:primitivemobs:void_eye",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:quark:ashen",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:quark:dweller",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:quark:foxhound",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:quark:pirate",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:quark:wraith",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:rats:black_death",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:rats:feral_ratlantean",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:rats:illager_piper",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:rats:plague_beast",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:rats:plague_cloud",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thaumcraft:brainyzombie",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thaumcraft:giantbrainyzombie",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thaumcraft:inhabitedzombie",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thaumcraft:wisp",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thejungle:junglespider",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thejungle:mistspider",
+		"unitWorth": 500,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thejungle:rhinopter",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thejungle:sacskel",
+		"unitWorth": 172,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "entity:thejungle:thewall",
+		"unitWorth": 2888,
+		"amount": {
+			"min": 4,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersive_energy:metal",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersive_energy:metal:4",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersive_energy:metal:5",
+		"unitWorth": 1444,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:material:25",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal",
+		"unitWorth": 13000,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:1",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:2",
+		"unitWorth": 775,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:20",
+		"unitWorth": 25,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:21",
+		"unitWorth": 555,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:22",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:23",
+		"unitWorth": 277,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:24",
+		"unitWorth": 277,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:3",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:4",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material:19",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_ingot:2",
+		"unitWorth": 4333,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_ingot:3",
+		"unitWorth": 13000,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_ingot:4",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_nugget:2",
+		"unitWorth": 1444,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_nugget:3",
+		"unitWorth": 1444,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_nugget:4",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:blaze_rod",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 3
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:bone",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:chorus_fruit",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:clay_ball",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:coal",
+		"unitWorth": 100,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:concrete_powder",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:diamond",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:double_plant:4",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:dye:3",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:dye:4",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:emerald",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:ender_pearl",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:ghast_tear",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:glowstone_dust",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:gold_ingot",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:gold_nugget",
+		"unitWorth": 277,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:gunpowder",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:iron_ingot",
+		"unitWorth": 775,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:iron_nugget",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:leather",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:nether_star",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:nether_wart",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:prismarine_shard",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:quartz",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:1",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:2",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:3",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:5",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:7",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:redstone",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:slime_ball",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:totem_of_undying",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:yellow_flower",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "mod_lavacow:cursed_fabric",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "mod_lavacow:holy_sludge",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "mod_lavacow:moltenbeef",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:amethyst_crystal",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:blazed_wither_bone",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:coolmar_spider_fang",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:frost_powder",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:frost_rod",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:frosted_wither_bone",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:ghast_queen_tear",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:rime_crystal",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "nyx:comet_shard",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "nyx:fallen_star",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "quark:glowshroom",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "randomthings:glowingmushroom",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "thaumcraft:amber",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "thaumcraft:brain",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:diamond_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:ember_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:emerald_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:gold_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:iron_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:jewelled_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:leaf_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:lightning_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:metallurgists_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:pilferers_lock_pick",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:ruby_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:sapphire_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:skeleton_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:spider_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:stone_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:thiefs_lock_pick",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:wood_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "waystones:return_scroll",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	}
+]

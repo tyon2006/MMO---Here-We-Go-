@@ -1,0 +1,1912 @@
+[
+	{
+		"content": "betternether:cincinnasite",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:double_plant",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:double_plant:2",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:double_plant:3",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:1",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:10",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:11",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:12",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:14",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:15",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:2",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:3",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:4",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:5",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:6",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_0:8",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:1",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:3",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:4",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:flower_1:5",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:1",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:2",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:3",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:4",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:5",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:gem:6",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:mushroom:3",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:mushroom:4",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:mushroom:5",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:plant_1:10",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:plant_1:4",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "biomesoplenty:plant_1:6",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"rash\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"jagged\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"hearty\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"spiked\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"fleeting\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"guarding\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"brisk\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"half_hearted\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"hard\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"warding\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"wild\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"angry\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"hasty\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"armored\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"intrepid\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"menacing\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"quick\"}",
+		"weight": 100
+	},
+	{
+		"content": "bountifulbaubles:modifierbook",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"nbt_data": "{baubleModifier: \"violent\"}",
+		"weight": 100
+	},
+	{
+		"content": "charm:totem_of_returning",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "corpsecomplex:scroll",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "cyclicmagic:crystallized_amber",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "cyclicmagic:crystallized_obsidian",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:1",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:2",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:3",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:4",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:5",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "dynamictrees:dendropotion:6",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "embers:ingot_tin",
+		"unitWorth": 775,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:bag_book",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box:1",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box:2",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box_diamond",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box_gold",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box_hat",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box_iron",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:box_old",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:chest",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:chest:1",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:chest:2",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:food_monster_feed",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:food_monster_feed_premium",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:misc_giga_gear",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:misc_soul_fiery",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:misc_soul_fire",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "grimoireofgaia:shard_misc",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersive_energy:metal",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersive_energy:metal:4",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersive_energy:metal:5",
+		"unitWorth": 1444,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:material:25",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal",
+		"unitWorth": 13000,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:1",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:2",
+		"unitWorth": 775,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:20",
+		"unitWorth": 25,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:21",
+		"unitWorth": 555,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:22",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:23",
+		"unitWorth": 277,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:24",
+		"unitWorth": 277,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:3",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveengineering:metal:4",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material:19",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_ingot:2",
+		"unitWorth": 4333,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_ingot:3",
+		"unitWorth": 13000,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_ingot:4",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_nugget:2",
+		"unitWorth": 1444,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_nugget:3",
+		"unitWorth": 1444,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "immersiveintelligence:material_nugget:4",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:blaze_rod",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 3
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:bone",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:chorus_fruit",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:clay_ball",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:coal",
+		"unitWorth": 100,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:concrete_powder",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:diamond",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:double_plant:4",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:dye:3",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:dye:4",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:emerald",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:ender_pearl",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:experience_bottle",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:ghast_tear",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:glowstone_dust",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:gold_ingot",
+		"unitWorth": 2500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:gold_nugget",
+		"unitWorth": 277,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:gunpowder",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:iron_ingot",
+		"unitWorth": 775,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:iron_nugget",
+		"unitWorth": 86,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:leather",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:nether_star",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:nether_wart",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"xat:dwarf\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:climb\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:dislocation_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:magic_focus\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:pacifism_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:glowing\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"quark:danger_sight\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:magnetism_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:return_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"cyclicmagic:bounce\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"cyclicmagic:swim\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:teleport_surface\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:reach\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:chance\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:sails_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"xat:fairy\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"xat:titan\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:recall_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:slow_fall\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:pyper_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:diamond_skin\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:purity\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"potioncore:levitation\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"charm:coffee\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:learning_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:hurry_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"minecraft:invisibility\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:photosynthesis_long\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:potion",
+		"unitWorth": 1000,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"nbt_data": "{Potion: \"extraalchemy:push_normal\"}",
+		"weight": 100
+	},
+	{
+		"content": "minecraft:prismarine_shard",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:quartz",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 16
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:1",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:2",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:3",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:5",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:red_flower:7",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:redstone",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 32
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:slime_ball",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:totem_of_undying",
+		"unitWorth": 10000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "minecraft:yellow_flower",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "mod_lavacow:cursed_fabric",
+		"unitWorth": 175,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "mod_lavacow:holy_sludge",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "mod_lavacow:moltenbeef",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:amethyst_crystal",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:blazed_wither_bone",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:coolmar_spider_fang",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:frost_powder",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:frost_rod",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:frosted_wither_bone",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:ghast_queen_tear",
+		"unitWorth": 26000,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "netherex:rime_crystal",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "nyx:comet_shard",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "nyx:fallen_star",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "ordinarycoins:coinbronze",
+		"unitWorth": 50,
+		"amount": {
+			"min": 1,
+			"max": 64
+		},
+		"weight": 100
+	},
+	{
+		"content": "ordinarycoins:coingold",
+		"unitWorth": 5000,
+		"amount": {
+			"min": 1,
+			"max": 64
+		},
+		"weight": 100
+	},
+	{
+		"content": "ordinarycoins:coinsilver",
+		"unitWorth": 500,
+		"amount": {
+			"min": 1,
+			"max": 64
+		},
+		"weight": 100
+	},
+	{
+		"content": "quark:glowshroom",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "randomthings:glowingmushroom",
+		"unitWorth": 172,
+		"amount": {
+			"min": 1,
+			"max": 8
+		},
+		"weight": 100
+	},
+	{
+		"content": "thaumcraft:amber",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "thaumcraft:brain",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 4
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:diamond_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:ember_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:emerald_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:gold_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:iron_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:jewelled_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:leaf_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:lightning_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:metallurgists_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:pilferers_lock_pick",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:ruby_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:sapphire_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:skeleton_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:spider_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:stone_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:thiefs_lock_pick",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "treasure2:wood_key",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "waystones:bound_scroll",
+		"unitWorth": 465,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	},
+	{
+		"content": "waystones:return_scroll",
+		"unitWorth": 450,
+		"amount": {
+			"min": 1,
+			"max": 1
+		},
+		"weight": 100
+	},
+	{
+		"content": "waystones:warp_scroll",
+		"unitWorth": 1500,
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"weight": 100
+	}
+]
