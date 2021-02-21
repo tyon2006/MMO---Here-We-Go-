@@ -1,0 +1,10 @@
+{
+	"name" : "dwarf:loot",
+	"loot_tables" : [
+		{"level" : [0], "table" : "letsgo:dwarfLoot1"},
+		{"level" : [1], "table" : "letsgo:dwarfLoot2"},
+		{"level" : [2], "table" : "letsgo:dwarfLoot3"},
+		{"level" : [3], "table" : "letsgo:dwarfLoot4"},
+		{"level" : [4], "table" : "letsgo:dwarfLoot5"}
+	]
+}
