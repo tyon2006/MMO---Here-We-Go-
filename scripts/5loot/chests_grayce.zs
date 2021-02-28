@@ -5,10 +5,8 @@ import loottweaker.vanilla.loot.Conditions;
 import loottweaker.vanilla.loot.Functions;
 import crafttweaker.item.IItemStack;
 
-
-
 //*********************************
-//				HUMAN CHEST TIER 1
+//				DRAGON CHEST TIER 1
 //*********************************
 
 var dragonLoot1 = LootTweaker.newTable("letsgo:dragonLoot1");
@@ -18,15 +16,15 @@ var counter = 0;
 
 var dragonLootPoolMain1Array = [
 
-	<immersiveengineering:material>*3,
-	<minecraft:arrow>*4,
-	<minecraft:paper>*2,
-	<immersiveengineering:material:4>*3,
-	<minecraft:iron_nugget>*3,
-	<minecraft:coal>*2,
-	<minecraft:wool>*2,
-	<minecraft:leather>,
-	<inspirations:dyed_bottle:4>
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})*3,
+	<minecraft:clay_ball>*2,
+	<immersiveintelligence:material:19>*2,
+	<thaumcraft:nugget:10>
 
 ] as IItemStack[];
 
@@ -40,16 +38,13 @@ for item in dragonLootPoolMain1Array  {
 var dragonLootPoolCommon1 = dragonLoot1.addPool("common", 3, 7, 0, 0);
 var dragonLootPoolCommon1Array = [
 
-	<immersiveengineering:material:4>,
-	<immersiveengineering:metal:23>,
-	<minecraft:brick>,
-	<immersiveengineering:material>,
-	<immersiveengineering:treated_wood_slab>,
-	<immersiveengineering:seed>,
-	<minecraft:iron_nugget>,
-	<immersiveengineering:material:5>,
-	<engineerstools:ariadne_coal>
-
+	<thaumcraft:nugget:9>,
+	<ebwizardry:crystal_shard>,
+	<minecraft:string>,
+	<minecraft:paper>,
+	<minecraft:dye>,
+	<minecraft:leather>,
+	<thaumcraft:tallow>
 
 ] as IItemStack[];
 
@@ -63,15 +58,15 @@ for item in dragonLootPoolCommon1Array  {
 var dragonLootPoolUncommon1 = dragonLoot1.addPool("uncommon", 2, 5, 0, 0);
 var dragonLootPoolUncommon1Array = [
 
-	<minecraft:iron_nugget>,
+	<minecraft:dye:4>,
 	<minecraft:quartz>,
 	<minecraft:clay_ball>,
-	<immersiveengineering:material:3>,
-	<immersiveengineering:metal:23>,
-	<immersiveengineering:material:20>,
-	<minecraft:wheat>,
-	<immersiveengineering:material:22>,
-	<immersiveengineering:metal:39>
+	<thaumcraft:brain>,
+	<arcanearchives:radiant_dust>,
+	<minecraft:feather>,
+	<minecraft:experience_bottle>,
+	<thaumcraft:candle_white>,
+	<thaumcraft:salis_mundus>
 
 ] as IItemStack[];
 
@@ -85,15 +80,15 @@ for item in dragonLootPoolUncommon1Array  {
 var dragonLootPoolRare1 = dragonLoot1.addPool("rare", 1, 1, 0, 0);
 var dragonLootPoolRare1Array = [
 
-	<minecraft:arrow>,
-	<immersiveengineering:metal>,
-	<spartanshields:shield_basic_silver>,
-	<spartanweaponry:throwing_knife_silver>,
-	<spartanweaponry:javelin_silver>,
-	<spartanweaponry:lance_silver>,
-	<spartanweaponry:longbow_silver>,
-	<spartanweaponry:mace_silver>,
-	<spartanweaponry:longsword_silver>
+	<arcanearchives:quartz_sliver>,
+	<spartanweaponry:rapier_silver>,
+	<spartanweaponry:katana_silver>,
+	<spartanweaponry:saber_silver>,
+	<spartanweaponry:halberd_silver>,
+	<spartanweaponry:glaive_silver>,
+	<ebwizardry:magic_wand>,
+	<apotheosis:fishing_rod_book>,
+	<apotheosis:digger_book>
 
 ] as IItemStack[];
 
@@ -105,7 +100,7 @@ for item in dragonLootPoolRare1Array  {
 }
 
 //*********************************
-//				HUMAN CHEST TIER 2
+//				DRAGON CHEST TIER 2
 //*********************************
 
 var dragonLoot2 = LootTweaker.newTable("letsgo:dragonLoot2");
@@ -115,15 +110,15 @@ counter = 0;
 
 var dragonLootPoolMain2Array = [
 
-	<immersiveengineering:material>*3,
-	<minecraft:arrow>*4,
-	<minecraft:paper>*2,
-	<immersiveengineering:material:4>*3,
-	<minecraft:iron_nugget>*3,
-	<minecraft:coal>*2,
-	<minecraft:wool>*2,
-	<minecraft:leather>,
-	<inspirations:dyed_bottle:4>
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})*3,
+	<minecraft:clay_ball>*2,
+	<immersiveintelligence:material:19>*2,
+	<thaumcraft:nugget:10>
 
 ] as IItemStack[];
 
@@ -137,15 +132,15 @@ for item in dragonLootPoolMain2Array  {
 var dragonLootPoolCommon2 = dragonLoot2.addPool("common", 3, 7, 0, 0);
 var dragonLootPoolCommon2Array = [
 
-	<minecraft:paper>,
-	<minecraft:wool>,
-	<minecraft:leaves>,
-	<immersiveengineering:material>,
-	<immersiveengineering:treated_wood_slab>,
-	<minecraft:brick>,
-	<immersiveengineering:material:5>,
-	<immersiveengineering:material:20>,
-	<minecraft:gunpowder>
+	<thaumcraft:nugget:8>,
+	<thaumcraft:nugget:5>,
+	<chineseworkshop:material:2>,
+	<chineseworkshop:material>,
+	<ebwizardry:blank_scroll>,
+	<thaumcraft:fabric>,
+	<thaumcraft:phial>,
+	<thaumcraft:mirrored_glass>,
+	<ebwizardry:magic_crystal>
 
 ] as IItemStack[];
 
@@ -159,15 +154,15 @@ for item in dragonLootPoolCommon2Array  {
 var dragonLootPoolUncommon2 = dragonLoot2.addPool("uncommon", 2, 5, 0, 0);
 var dragonLootPoolUncommon2Array = [
 
-	<immersiveengineering:metal:22>,
-	<minecraft:bone>,
-	<immersiveengineering:material:24>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "casull"}),
-	<immersiveengineering:bullet:2>.withTag({bullet: "silver"}),
-	<fossil:relic_scrap>,
-	<immersiveengineering:metal:39>,
-	<immersiveengineering:material:23>,
-	<immersiveengineering:metal:33>
+	<thaumcraft:nugget:6>,
+	<iceandfire:manuscript>,
+	<thaumcraft:vishroom>,
+	<thaumcraft:cinderpearl>,
+	<thaumcraft:shimmerleaf>,
+	<thaumcraft:nitor_yellow>,
+	<thaumcraft:plate>,
+	<wards:enchanted_paper>,
+	<thaumcraft:curio:1>
 
 ] as IItemStack[];
 
@@ -181,15 +176,15 @@ for item in dragonLootPoolUncommon2Array  {
 var dragonLootPoolRare2 = dragonLoot2.addPool("rare", 1, 1, 0, 0);
 var dragonLootPoolRare2Array = [
 
-	<immersiveengineering:bullet>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "silver"}),
-	<immersiveengineering:bullet:2>.withTag({bullet: "he"}),
-	<immersiveengineering:material:1>,
-	<minecraft:leather>,
-	<contenttweaker:filterdust>,
-	<contenttweaker:filtercarbon>,
-	<contenttweaker:filtersulfur>,
-	<immersiveengineering:metal:16>
+	<ebwizardry:identification_scroll>,
+	<ebwizardry:duration_upgrade>,
+	<ebwizardry:cooldown_upgrade>,
+	<ebwizardry:storage_upgrade>,
+	<ebwizardry:range_upgrade>,
+	<ebwizardry:blast_upgrade>,
+	<ebwizardry:attunement_upgrade>,
+	<apotheosis:armor_feet_book>,
+	<apotheosis:null_book>
 
 ] as IItemStack[];
 
@@ -201,7 +196,7 @@ for item in dragonLootPoolRare2Array  {
 }
 
 //*********************************
-//				HUMAN CHEST TIER 3
+//				DRAGON CHEST TIER 3
 //*********************************
 
 var dragonLoot3 = LootTweaker.newTable("letsgo:dragonLoot3");
@@ -211,15 +206,15 @@ counter = 0;
 
 var dragonLootPoolMain3Array = [
 
-	<immersiveengineering:material>*3,
-	<minecraft:arrow>*4,
-	<minecraft:paper>*2,
-	<immersiveengineering:material:4>*3,
-	<minecraft:iron_nugget>*3,
-	<minecraft:coal>*2,
-	<minecraft:wool>*2,
-	<minecraft:leather>,
-	<inspirations:dyed_bottle:4>
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})*3,
+	<minecraft:clay_ball>*2,
+	<immersiveintelligence:material:19>*2,
+	<thaumcraft:nugget:10>
 
 ] as IItemStack[];
 
@@ -233,16 +228,15 @@ for item in dragonLootPoolMain3Array  {
 var dragonLootPoolCommon3 = dragonLoot3.addPool("common", 3, 7, 0, 0);
 var dragonLootPoolCommon3Array = [
 
-	<minecraft:sand>,
-	<minecraft:gravel>,
-	<minecraft:dye:15>,
-	<minecraft:clay_ball>,
-	<minecraft:coal>,
-	<immersiveengineering:treated_wood>,
-	<immersiveengineering:metal:24>,
-	<immersiveengineering:metal:28>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "casull"})
-
+	<thaumcraft:triple_meat_treat>,
+	<thaumcraft:quicksilver>,
+	<thaumcraft:amber>,
+	<minecraft:ender_pearl>,
+	<thaumcraft:ingot:2>,
+	<thaumcraft:ingot>,
+	<thaumcraft:plate:2>,
+	<thaumcraft:vis_resonator>,
+	<thaumcraft:mechanism_simple>
 
 ] as IItemStack[];
 
@@ -256,15 +250,15 @@ for item in dragonLootPoolCommon3Array  {
 var dragonLootPoolUncommon3 = dragonLoot3.addPool("uncommon", 2, 5, 0, 0);
 var dragonLootPoolUncommon3Array = [
 
-	<immersiveengineering:metal:22>,
-	<cyberware:neuropozyne>,
-	<immersiveengineering:material:6>,
-	<minecraft:rotten_flesh>,
-	<immersiveengineering:metal:20>,
-	<fossil:biofossil>,
-	<immersiveengineering:metal:38>,
-	<minecraft:redstone>,
-	<minecraft:glowstone_dust>
+	<ebwizardry:spectral_dust:1>,
+	<ebwizardry:spectral_dust:2>,
+	<ebwizardry:spectral_dust:3>,
+	<ebwizardry:spectral_dust:5>,
+	<ebwizardry:spectral_dust:6>,
+	<ebwizardry:spectral_dust:7>,
+	<ebwizardry:spectral_dust:4>,
+	<thaumcraft:void_seed>,
+	<thaumcraft:curio>
 
 ] as IItemStack[];
 
@@ -278,15 +272,15 @@ for item in dragonLootPoolUncommon3Array  {
 var dragonLootPoolRare3 = dragonLoot3.addPool("rare", 1, 1, 0, 0);
 var dragonLootPoolRare3Array = [
 
-	<secretroomsmod:camouflage_paste>*3,
-	<fossil:tar_fossil>*2,
-	<spartanshields:shield_basic_steel>,
-	<spartanweaponry:throwing_knife_steel>,
-	<spartanweaponry:javelin_steel>,
-	<spartanweaponry:lance_steel>,
-	<spartanweaponry:longbow_steel>,
-	<spartanweaponry:mace_steel>,
-	<spartanweaponry:longsword_steel>
+	<spartanweaponryarcana:katana_thaumium>,
+	<spartanweaponryarcana:saber_thaumium>,
+	<spartanweaponryarcana:halberd_thaumium>,
+	<spartanweaponryarcana:glaive_thaumium>,
+	<spartanweaponryarcana:rapier_thaumium>,
+	<thaumcraft:alumentum>,
+	<randomthings:weatheregg>,
+	<apotheosis:scrap_tome>,
+	<apotheosis:weapon_book>
 
 ] as IItemStack[];
 
@@ -298,7 +292,7 @@ for item in dragonLootPoolRare3Array  {
 }
 
 //*********************************
-//				HUMAN CHEST TIER 4
+//				DRAGON CHEST TIER 4
 //*********************************
 
 var dragonLoot4 = LootTweaker.newTable("letsgo:dragonLoot4");
@@ -308,15 +302,15 @@ counter = 0;
 
 var dragonLootPoolMain4Array = [
 
-	<immersiveengineering:material>*3,
-	<minecraft:arrow>*4,
-	<minecraft:paper>*2,
-	<immersiveengineering:material:4>*3,
-	<minecraft:iron_nugget>*3,
-	<minecraft:coal>*2,
-	<minecraft:wool>*2,
-	<minecraft:leather>,
-	<inspirations:dyed_bottle:4>
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})*3,
+	<minecraft:clay_ball>*2,
+	<immersiveintelligence:material:19>*2,
+	<thaumcraft:nugget:10>
 
 ] as IItemStack[];
 
@@ -330,15 +324,15 @@ for item in dragonLootPoolMain4Array  {
 var dragonLootPoolCommon4 = dragonLoot4.addPool("common", 3, 7, 0, 0);
 var dragonLootPoolCommon4Array = [
 
-	<immersiveengineering:metal:24>,
-	<immersiveengineering:metal:28>,
-	<immersiveengineering:material>,
-	<immersiveengineering:treated_wood>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "flare"}),
-	<randomthings:beans>,
-	<rewired:meat_cooked>,
-	<immersiveengineering:metal:26>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "buckshot"})
+	<thaumcraft:nugget:7>,
+	<iceandfire:troll_leather_frost>,
+	<iceandfire:troll_leather_forest>,
+	<thaumcraft:morphic_resonator>,
+	<thaumcraft:plate:3>,
+	<iceandfire:fire_stew>,
+	<iceandfire:frost_stew>,
+	<thaumadditions:zeith_fur>,
+	<thaumcraft:curio:6>
 
 ] as IItemStack[];
 
@@ -352,15 +346,15 @@ for item in dragonLootPoolCommon4Array  {
 var dragonLootPoolUncommon4 = dragonLoot4.addPool("uncommon", 2, 5, 0, 0);
 var dragonLootPoolUncommon4Array = [
 
-	<immersiveengineering:metal:20>,
-	<cyberware:neuropozyne>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "zettaindustries:hook_bullet"}),
-	<immersiveengineering:material:2>,
-	<rewired:powerbar>,
-	<immersiveintelligence:material_wire>,
-	<rewired:energydrink>,
-	<mod_lavacow:holy_grenade>,
-	<immersiveintelligence:material:2>
+	<immersiveengineering:metal:3>,
+	<betteranimalsplus:wolf_pelt_timber>,
+	<iceandfire:dragon_meal>,
+	<iceandfire:troll_leather_mountain>,
+	<iceandfire:shiny_scales>,
+	<iceandfire:chain_sticky>,
+	<biomesoplenty:double_plant:2>,
+	<thaumcraft:curio:4>,
+	<thaumcraft:curio:2>
 
 ] as IItemStack[];
 
@@ -374,15 +368,15 @@ for item in dragonLootPoolUncommon4Array  {
 var dragonLootPoolRare4 = dragonLoot4.addPool("rare", 1, 1, 0, 0);
 var dragonLootPoolRare4Array = [
 
-	<immersiveengineering:metal:26>,
-	<immersiveengineering:bullet:2>.withTag({bullet: "dragonsbreath"}),
-	<ebwizardry:firebomb>,
-	<ebwizardry:poison_bomb>,
-	<cyclicmagic:dynamite_safe>,
-	<immersiveengineering:material:27>,
-	<cyclicmagic:ender_tnt_4>,
-	<fossil:bio_goo>,
-	<immersiveintelligence:material:12>
+	<thaumcraft:alumentum>,
+	<ebwizardry:resplendent_thread>,
+	<ebwizardry:crystal_silver_plating>,
+	<ebwizardry:ethereal_crystalweave>,
+	<minecraft:chorus_fruit>,
+	<randomthings:weatheregg:1>,
+	<apotheosis:armor_legs_book>,
+	<apotheosis:armor_head_book>,
+	<aether_legacy:cold_parachute>
 
 ] as IItemStack[];
 
@@ -394,7 +388,7 @@ for item in dragonLootPoolRare4Array  {
 }
 
 //*********************************
-//				HUMAN CHEST TIER 5
+//				DRAGON CHEST TIER 5
 //*********************************
 
 var dragonLoot5 = LootTweaker.newTable("letsgo:dragonLoot5");
@@ -404,15 +398,15 @@ counter = 0;
 
 var dragonLootPoolMain5Array = [
 
-	<immersiveengineering:material>*3,
-	<minecraft:arrow>*4,
-	<minecraft:paper>*2,
-	<immersiveengineering:material:4>*3,
-	<minecraft:iron_nugget>*3,
-	<minecraft:coal>*2,
-	<minecraft:wool>*2,
-	<minecraft:leather>,
-	<inspirations:dyed_bottle:4>
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})*3,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})*3,
+	<minecraft:clay_ball>*2,
+	<immersiveintelligence:material:19>*2,
+	<thaumcraft:nugget:10>
 
 ] as IItemStack[];
 
@@ -426,15 +420,15 @@ for item in dragonLootPoolMain5Array  {
 var dragonLootPoolCommon5 = dragonLoot5.addPool("common", 3, 7, 0, 0);
 var dragonLootPoolCommon5Array = [
 
-	<immersiveengineering:metal:31>,
-	<immersiveintelligence:material:2>,
-	<immersiveengineering:material:26>,
-	<forge:bucketfilled>.withTag({FluidName: "sulfuric_acid", Amount: 1000}),
-	<forge:bucketfilled>.withTag({FluidName: "hydrofluoric_acid", Amount: 1000}),
-	<immersiveengineering:metal:38>,
-	<immersiveintelligence:material>,
-	<zettaindustries:charcoalblock>,
-	<zettaindustries:sulfurblock>
+	<mod_lavacow:ectoplasm>,
+	<iceandfire:fire_lily>,
+	<iceandfire:frost_lily>,
+	<thaumcraft:ingot:1>,
+	<thaumcraft:sanity_soap>,
+	<thaumadditions:mithrillium_nugget>,
+	<thaumcraft:pech_wand>,
+	<thaumicaugmentation:research_notes>,
+	<thaumcraft:curio:3>
 
 ] as IItemStack[];
 
@@ -448,15 +442,15 @@ for item in dragonLootPoolCommon5Array  {
 var dragonLootPoolUncommon5 = dragonLoot5.addPool("uncommon", 2, 5, 0, 0);
 var dragonLootPoolUncommon5Array = [
 
-	<immersive_energy:metal:4>,
-	<forge:bucketfilled>.withTag({FluidName: "etching_acid", Amount: 1000}),
-	<immersiveintelligence:material:19>,
-	<immersiveintelligence:material:3>,
-	<immersive_energy:material>,
-	<immersiveintelligence:material_plate:3>,
-	<immersiveintelligence:material:4>,
-	<forge:bucketfilled>.withTag({FluidName: "nitric_acid", Amount: 1000}),
-	<immersiveintelligence:material_plate>
+	<midnight:dark_pearl>,
+	<iceandfire:fire_lily>,
+	<iceandfire:frost_lily>,
+	<midnight:tendrilweed>,
+	<midnight:dragon_nest>,
+	<aether:burrukai_pelt>,
+	<aether:taegore_hide>,
+	<minecraft:dragon_breath>,
+	<thaumcraft:curio:5>
 
 ] as IItemStack[];
 
@@ -470,15 +464,15 @@ for item in dragonLootPoolUncommon5Array  {
 var dragonLootPoolRare5 = dragonLoot5.addPool("rare", 1, 1, 0, 0);
 var dragonLootPoolRare5Array = [
 
-	<immersiveintelligence:material_nugget:2>,
-	<immersiveengineering:metal:27>,
-	<immersiveintelligence:material:1>,
-	<immersiveintelligence:material:18>,
-	<fossil:amber>,
-	<mutantbeasts:chemical_x>,
-	<immersiveintelligence:material:7>,
-	<immersiveengineering:material:21>,
-	<immersiveengineering:metal:25>
+	<ebwizardry:grand_crystal>,
+	<iceandfire:frost_stew>,
+	<iceandfire:fire_stew>,
+	<ebwizardry:melee_upgrade>,
+	<randomthings:weatheregg:2>,
+	<minecraft:record_mellohi>,
+	<apotheosis:armor_chest_book>,
+	<apotheosis:bow_book>,
+	<aether_legacy:golden_parachute>
 
 ] as IItemStack[];
 
