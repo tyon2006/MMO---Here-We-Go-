@@ -1,7 +1,3 @@
-
-<entity:minecraft:sheep>.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
-
-
 <entity:aqua_creepers:aqua_creeper>.addPlayerOnlyDrop(<grimoireofgaia:food_coalfish> % 20, 1, 1);
 <entity:beasts:giant_garden_eel>.addPlayerOnlyDrop(<betteranimalsplus:eel_meat_raw> % 20, 1, 1);
 <entity:beasts:vile_eel>.addPlayerOnlyDrop(<betteranimalsplus:eel_meat_raw> % 20, 1, 1);
