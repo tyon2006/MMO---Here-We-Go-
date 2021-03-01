@@ -1,0 +1,131 @@
+{
+    Profession:"vtt:tycoon",
+    Career:"tycoon",
+
+    Offers:{
+        Recipes:[
+            {action:"clear"},
+            {action:"add", buy:{id:"minecraft:emerald",Count:1},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1},
+			{action:"add", buy:{id:"ordinarycoins:coinbronze",Count:44},sell:{id:"minecraft:detector_rail",Count:1},CareerLevel:1},
+			 {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 44
+   },
+   sell: {
+      id: "minecraft:detector_rail",
+      Count: 1
+   },
+   CareerLevel: 2,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 31
+   },
+   sell: {
+      id: "grimoireofgaia:misc_furnace_fuel",
+      Count: 1
+   },
+   CareerLevel: 2,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 8
+   },
+   sell: {
+      id: "immersiveengineering:material",
+      Count: 1
+   },
+   Damage: 6,
+   CareerLevel: 1,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 9
+   },
+   sell: {
+      id: "minecraft:coal",
+      Count: 1
+   },
+   CareerLevel: 1,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 4
+   },
+   sell: {
+      id: "minecraft:cooked_beef",
+      Count: 1
+   },
+   CareerLevel: 1,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 8
+   },
+   sell: {
+      id: "immersiveengineering:metal",
+      Count: 1
+   },
+   Damage: 28,
+   CareerLevel: 1,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 41
+   },
+   sell: {
+      id: "betteranimalsplus:blubber",
+      Count: 1
+   },
+   CareerLevel: 1,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 44
+   },
+   sell: {
+      id: "minecraft:rail",
+      Count: 1
+   },
+   CareerLevel: 1,
+   chance: 0.5
+},
+ {
+   action: "add",
+   buy: {
+      id: "ordinarycoins:coinbronze",
+      Count: 44
+   },
+   sell: {
+      id: "minecraft:activator_rail",
+      Count: 1
+   },
+   CareerLevel: 2,
+   chance: 0.5
+}
+        ]
+    }
+}
