@@ -98,6 +98,7 @@ recipes.addShapeless("Decorative Silver Chain", <cathedral:cathedral_chain_vario
 <thejungle:sapphire>.displayName = "Bluegem";
 <soot:essence>.withTag({type: "null"}).displayName = "Empty Essence Flask";
 <soot:essence>.withTag({type: "null"}).addTooltip("Used to extract essence from the top of an Essence Decanter.");
+<ordinarycoins:coinbronze>.displayName = "Copper Coin";
 
 //***************************
 //    BOUNTIFUL BAUBLES
