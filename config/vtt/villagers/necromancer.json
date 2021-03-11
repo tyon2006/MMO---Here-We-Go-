@@ -1,0 +1,10 @@
+{
+	profession: {
+		name: "vtt:necromancer",
+		texture: "vtt:textures/entity/villager/necromancer.png",
+		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_necromancer.png"
+	},
+	careers: [
+		"necromancer"
+	]
+}

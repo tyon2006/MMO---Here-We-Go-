@@ -1,8 +1,8 @@
 {
 	profession: {
 		name: "vtt:tycoon",
-		texture: "vtt:textures/entity/villager/redstoner.png",
-		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_redstoner.png"
+		texture: "vtt:textures/entity/villager/tycoon.png",
+		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_tycoon.png"
 	},
 	careers: [
 		"tycoon"

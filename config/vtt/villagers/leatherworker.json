@@ -1,10 +1,10 @@
 {
 	profession: {
-		name: "vtt:gourmand",
+		name: "vtt:leatherworker",
 		texture: "vtt:textures/entity/villager/gourmand.png",
 		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_gourmand.png"
 	},
 	careers: [
-		"gourmand"
+		"leatherworker"
 	]
 }

@@ -1,7 +1,7 @@
 {
 	profession: {
 		name: "vtt:stonemason",
-		texture: "vtt:textures/entity/villager/redstoner.png",
+		texture: "vtt:textures/entity/villager/stonemason.png",
 		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_redstoner.png"
 	},
 	careers: [
