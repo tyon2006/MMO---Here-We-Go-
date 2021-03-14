@@ -6,25 +6,482 @@
 		Recipes:[
 		
 			{
-				action: "add",
-				CareerLevel: 1,
-				buyB: {id:"ordinarycoins:coingold",Count:{min:8,max:12}}, buy: {id:"minecraft:skull",Count:1,Damage:0},
-				sell: {id:"minecraft:spawn_egg",Count:1,Damage:0,tag:{EntityTag:{id:"minecraft:skeleton"}}}
+				action: "clear"
 			},
 			
-			{
-				action: "add",
-				CareerLevel: 1,
-				buyB: {id:"ordinarycoins:coingold",Count:{min:8,max:12}}, buy: {id:"minecraft:skull",Count:1,Damage:2},
-				sell: {id:"minecraft:spawn_egg",Count:1,Damage:0,tag:{EntityTag:{id:"minecraft:zombie"}}}
-			},
-			
-			{
-				action: "add",
-				CareerLevel: 1,
-				buyB: {id:"ordinarycoins:coingold",Count:{min:8,max:12}}, buy: {id:"minecraft:skull",Count:1,Damage:4},
-				sell: {id:"minecraft:spawn_egg",Count:1,Damage:0,tag:{EntityTag:{id:"minecraft:creeper"}}}
-			}
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:bone",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 5
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 11
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 10
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "treasure2:skeleton_key",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:skull",
+      "Count": 1,
+      "Damage": 2
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "mod_lavacow:canerottenmeat",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:fleshchunk",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 7
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "iceandfire:dragonbone",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:brain",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 2
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 6
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "rewired:meat_raw",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 9
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 8
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "cyberware:body_part",
+      "Count": 1,
+      "Damage": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "grimoireofgaia:food_rotten_heart",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:spider_eye",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:rotten_flesh",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 12
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "thaumcraft:flesh_block",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:skull",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:spawn_egg",
+      "Count": 1,
+      "tag": "{EntityTag: {id: \"minecraft:skeleton\"}}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:spawn_egg",
+      "Count": 1,
+      "tag": "{EntityTag: {id: \"minecraft:skeleton_horse\"}}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:spawn_egg",
+      "Count": 1,
+      "tag": "{EntityTag: {id: \"minecraft:zombie\"}}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:spawn_egg",
+      "Count": 1,
+      "tag": "{EntityTag: {id: \"minecraft:zombie_horse\"}}"
+   }
+}
 			
 		]
 	}

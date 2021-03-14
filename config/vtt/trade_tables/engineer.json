@@ -5,7 +5,200 @@
 	Offers:{
 		Recipes:[
 		
-			{action:"add", buy:{id:"minecraft:beetroot",Count:{min:15,max:19}},sell:{id:"ordinarycoins:coingold",Count:1}, CareerLevel:1}
+			{action:"clear"},
+			 {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:material",
+      "Count": 1,
+      "Damage": 20
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:tool",
+      "Count": 1,
+      "Damage": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:material",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:metal_device0",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "immersiveengineering:wirecoil",
+      "Count": 1,
+      "Damage": 6
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:tripwire_hook",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:connector",
+      "Count": 1,
+      "Damage": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:connector",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:connector",
+      "Count": 1,
+      "Damage": 3
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveengineering:wirecoil",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "immersiveengineering:wirecoil",
+      "Count": 1,
+      "Damage": 5
+   }
+}
 			
 		]
 	}

@@ -5,7 +5,338 @@
 	Offers:{
 		Recipes:[
 		
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:9,max:12}},sell:{id:"minecraft:diamond_shovel",Count:1,tag:{ench:"random"}}, CareerLevel:3}
+			{action:"clear"},
+			 {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "randomthings:enderletter",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "thaumcraft:phial",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:feather",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:fabric",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "thaumcraft:vis_resonator",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:ender_pearl",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "wards:enchanted_paper",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:dye",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 1
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 1
+   },
+   "sell": {
+      "id": "thaumcraft:nugget",
+      "Count": 1,
+      "Damage": 9
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:loot_bag",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "arcanearchives:radiant_dust",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:curio",
+      "Count": 1,
+      "Damage": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "thaumcraft:tallow",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:crystal_essence",
+      "Count": 1,
+      "tag": "{Aspects: [{amount: 1, key: \"aer\"}]}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:crystal_essence",
+      "Count": 1,
+      "tag": "{Aspects: [{amount: 1, key: \"aqua\"}]}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:crystal_essence",
+      "Count": 1,
+      "tag": "{Aspects: [{amount: 1, key: \"ignis\"}]}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:crystal_essence",
+      "Count": 1,
+      "tag": "{Aspects: [{amount: 1, key: \"ordo\"}]}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:crystal_essence",
+      "Count": 1,
+      "tag": "{Aspects: [{amount: 1, key: \"terra\"}]}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thaumcraft:crystal_essence",
+      "Count": 1,
+      "tag": "{Aspects: {amount: 1, key: \"perditio\"}]}"
+   }
+}
 			
 		]
 	}

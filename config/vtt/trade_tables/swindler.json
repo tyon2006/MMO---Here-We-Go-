@@ -5,7 +5,371 @@
 	Offers:{
 		Recipes:[
 		
-			{action:"add", buy:{id:"minecraft:beetroot",Count:{min:15,max:19}},sell:{id:"ordinarycoins:coingold",Count:1}, CareerLevel:1}
+			{action:"clear"},
+			 {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 27
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:chicken_sword",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 72
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:nanorum_head",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:crown2",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:crown",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 72
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "aetherworks:item_resource",
+      "Count": 1,
+      "Damage": 5
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 27
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "thaumicaugmentation:material",
+      "Count": 1,
+      "Damage": 3
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 31
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "immersiveintelligence:material",
+      "Count": 1,
+      "Damage": 12
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 72
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:nanorum_chest",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:emerald_glaive",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:nanorum_legs",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 54
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:dragon_egg",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 36
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 1
+   },
+   "sell": {
+      "id": "minecraft:skull",
+      "Count": 1,
+      "Damage": 5
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "cyclicmagic:evoker_fang",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 27
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "minecraft:end_rod",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 27
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "aether_legacy:golden_parachute",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 72
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "minecraft:elytra",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "variedcommodities:nanorum_boots",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 31
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "variedcommodities:tuxedo_chest",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 4
+   },
+   "sell": {
+      "id": "minecraft:enchanted_book",
+      "Count": 1,
+      "tag": "{ench:\"random\"}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:potion",
+      "Count": 1,
+      "tag": "{Potion: \"minecraft:luck\"}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:potion",
+      "Count": 1,
+      "tag": "{Potion:\"random\"}"
+   }
+}
 			
 		]
 	}

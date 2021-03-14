@@ -5,313 +5,468 @@
     Offers:{
         Recipes:[
             {action:"clear"},
-			 {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "mod_lavacow:mousse",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "minecraft:poisonous_potato",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "minecraft:cooked_mutton",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "rats:cooked_rat",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "minecraft:cooked_beef",
-      "Count": 1
-   }
-},
  {
    "action": "add",
    "CareerLevel": 2,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 1
+      "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 7
+      "Count": 6
    },
    "sell": {
-      "id": "thaumcraft:chunk",
+      "id": "biomesoplenty:flower_1",
+      "Count": 1,
+      "Damage": 4
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 5
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 4
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 3
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 2
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
       "Count": 1,
       "Damage": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
+   "CareerLevel": 1,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 1
+      "Count": 2
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 7
+      "Count": 2
    },
    "sell": {
-      "id": "mod_lavacow:ptera_wing_cooked",
-      "Count": 1
+      "id": "minecraft:red_flower",
+      "Count": 1,
+      "Damage": 8
    }
 },
  {
    "action": "add",
    "CareerLevel": 2,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 1
+      "Count": 2
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 7
+      "Count": 2
    },
    "sell": {
-      "id": "charm:suspicious_soup",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "mod_lavacow:green_bacon_and_eggs",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "betternether:stalagnate_bowl_wart",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "grimoireofgaia:food_honey",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 5
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-   "sell": {
-      "id": "mod_lavacow:piranha_cooked",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 5
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-   "sell": {
-      "id": "betteranimalsplus:turkey_cooked",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 5
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-   "sell": {
-      "id": "grimoireofgaia:food_mandrake",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 5
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-   "sell": {
-      "id": "grimoireofgaia:food_nether_wart",
+      "id": "minecraft:double_plant",
       "Count": 1
    }
 },
  {
    "action": "add",
    "CareerLevel": 4,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 6
    },
    "sell": {
-      "id": "mod_lavacow:moltenbeef",
+      "id": "ebwizardry:crystal_flower",
       "Count": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 1,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 2
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 2
    },
    "sell": {
-      "id": "grimoireofgaia:food_monster_feed",
-      "Count": 1
+      "id": "minecraft:red_flower",
+      "Count": 1,
+      "Damage": 3
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:red_flower",
+      "Count": 1,
+      "Damage": 2
    }
 },
  {
    "action": "add",
    "CareerLevel": 4,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 6
    },
    "sell": {
-      "id": "grimoireofgaia:food_monster_feed_premium",
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 6
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:red_flower",
       "Count": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 3,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 6
    },
    "sell": {
-      "id": "rewired:meat_cooked",
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 8
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_1",
+      "Count": 1,
+      "Damage": 3
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_1",
+      "Count": 1,
+      "Damage": 2
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_1",
+      "Count": 1,
+      "Damage": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_1",
       "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 15
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 14
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 13
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 12
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 11
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 10
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "biomesoplenty:flower_0",
+      "Count": 1,
+      "Damage": 9
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:red_flower",
+      "Count": 1,
+      "Damage": 1
    }
 }
         ]

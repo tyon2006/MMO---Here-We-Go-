@@ -5,21 +5,350 @@
 	Offers:{
 		Recipes:[
 		
-			{action:"add", buy:{id:"minecraft:sugar",Count:{min:18,max:22}},sell:{id:"ordinarycoins:coingold",Count:1}, CareerLevel:1},
-			{action:"add", buy:{id:"minecraft:brown_mushroom",Count:{min:15,max:19}},sell:{id:"ordinarycoins:coingold",Count:1}, CareerLevel:1},
-			{action:"add", buyB:{id:"ordinarycoins:coingold",Count:1},buy:{id:"minecraft:carrot",Count:1},sell:{id:"minecraft:golden_carrot",Count:1}, CareerLevel:1},
-			{action:"add", buyB:{id:"ordinarycoins:coingold",Count:1},buy:{id:"minecraft:melon",Count:1},sell:{id:"minecraft:speckled_melon",Count:1}, CareerLevel:1},
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:3,max:5}},sell:{id:"minecraft:fish",Count:1,Damage:3}, CareerLevel:1},
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:3,max:5}},sell:{id:"minecraft:rabbit_foot",Count:1}, CareerLevel:1},
-			
-			{action:"add", buy:{id:"minecraft:gunpowder",Count:{min:18,max:22}},sell:{id:"ordinarycoins:coingold",Count:1}, CareerLevel:2},
-			{action:"add", buy:{id:"minecraft:spider_eye",Count:{min:12,max:16}},sell:{id:"ordinarycoins:coingold",Count:1}, CareerLevel:2},
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:3,max:5}},sell:{id:"minecraft:magma_cream",Count:1}, CareerLevel:2},
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:2},
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:4,max:6}},sell:{id:"minecraft:fermented_spider_eye",Count:{min:2,max:3}}, CareerLevel:2},
-			
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:3,max:5}},sell:{id:"minecraft:potion",Count:1,tag:{Potion:"random"}}, CareerLevel:3},
-			{action:"add", buy:{id:"ordinarycoins:coingold",Count:{min:3,max:5}},sell:{id:"minecraft:tipped_arrow",Count:{min:8,max:16},tag:{Potion:"random"}}, CareerLevel:3}
+			{action:"clear"},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:rhombus_bottle",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:long_bottle",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:nether_wart",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "dynamictrees:dendropotion",
+      "Count": 1,
+      "Damage": 6
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "dynamictrees:dendropotion",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:leaf",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "inspirations:materials",
+      "Count": 1,
+      "Damage": 3
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:triangle_bottle",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:night_leaf",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:sunny_leaf",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "transmutationalchemy:magical_dust",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "transmutationalchemy:elemental_clay",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "transmutationalchemy:crystal_power",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 5
+   },
+
+   "sell": {
+      "id": "minecraft:glass_bottle",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "nyx:lunar_water_bottle",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "transmutationalchemy:square_bottle",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "inspirations:materials",
+      "Count": 1,
+      "Damage": 2
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:potion",
+      "Count": 1,
+      "tag": "{Potion: \"minecraft:awkward\"}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 5
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:potion",
+      "Count": 1,
+      "tag": "{Potion: \"minecraft:mundane\"}"
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "minecraft:potion",
+      "Count": 1,
+      "tag": "{Potion:\"random\"}"
+   }
+}
 
 		]
 	}

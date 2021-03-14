@@ -5,311 +5,255 @@
     Offers:{
         Recipes:[
             {action:"clear"},
-			 {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-   },
-
-   "sell": {
-      "id": "mod_lavacow:mousse",
-      "Count": 1
-   }
-},
  {
    "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
+   "CareerLevel": 4,
+   "chance": 0.4,
    "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
    },
-
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
    "sell": {
-      "id": "minecraft:poisonous_potato",
+      "id": "thejungle:saurohn_spear",
       "Count": 1
    }
 },
  {
    "action": "add",
    "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "minecraft:cooked_mutton",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "rats:cooked_rat",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "minecraft:cooked_beef",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "thaumcraft:chunk",
-      "Count": 1,
-      "Damage": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "mod_lavacow:ptera_wing_cooked",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "charm:suspicious_soup",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "mod_lavacow:green_bacon_and_eggs",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "betternether:stalagnate_bowl_wart",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "grimoireofgaia:food_honey",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
       "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
+      "Count": 5
+   },
+   "sell": {
+      "id": "fossil:relic_scrap",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 36
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 1
+   },
+   "sell": {
+      "id": "iceandfire:dragon_flute",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 62
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
       "Count": 4
    },
    "sell": {
-      "id": "mod_lavacow:piranha_cooked",
+      "id": "rats:rat_flute",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:bone",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "mod_lavacow:bonesword",
       "Count": 1
    }
 },
  {
    "action": "add",
    "CareerLevel": 3,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 5
+      "Count": 62
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
       "Count": 4
    },
    "sell": {
-      "id": "betteranimalsplus:turkey_cooked",
+      "id": "fossil:tooth_dagger",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "mowziesmobs:blowgun",
       "Count": 1
    }
 },
  {
    "action": "add",
    "CareerLevel": 3,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 5
+      "Count": 18
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 4
+      "Count": 6
    },
    "sell": {
-      "id": "grimoireofgaia:food_mandrake",
+      "id": "thejungle:carved_bone_handle",
       "Count": 1
    }
 },
  {
    "action": "add",
    "CareerLevel": 3,
-   "chance": 0.5,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 18
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 6
+   },
+   "sell": {
+      "id": "thejungle:carved_bone",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
       "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 4
+      "Count": 6
    },
    "sell": {
-      "id": "grimoireofgaia:food_nether_wart",
+      "id": "mod_lavacow:bonestew",
       "Count": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 2,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 6
    },
    "sell": {
-      "id": "mod_lavacow:moltenbeef",
+      "id": "thejungle:decorative_seal",
       "Count": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 1,
+   "chance": 0.4,
    "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 11
-   },
-   "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 5
    },
+
    "sell": {
-      "id": "grimoireofgaia:food_monster_feed",
+      "id": "universalbestiary:identifier",
       "Count": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 2,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 5
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 6
    },
    "sell": {
-      "id": "grimoireofgaia:food_monster_feed_premium",
+      "id": "mowziesmobs:dart",
       "Count": 1
    }
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 3,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 11
+      "Count": 18
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 0
+      "Count": 6
    },
    "sell": {
-      "id": "rewired:meat_cooked",
+      "id": "thejungle:bonegrip",
       "Count": 1
    }
 }

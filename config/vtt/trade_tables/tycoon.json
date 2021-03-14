@@ -5,17 +5,17 @@
     Offers:{
         Recipes:[
             {action:"clear"},
- {
+  {
    "action": "add",
    "CareerLevel": 1,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
       "Count": 1
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 1
+      "Count": 2
    },
    "sell": {
       "id": "minecraft:coal",
@@ -24,141 +24,15 @@
 },
  {
    "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 5
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-   "sell": {
-      "id": "industrialrenewal:crossing_rail",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "grimoireofgaia:food_coalfish",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 8
-   },
-
-   "sell": {
-      "id": "immersiveengineering:material",
-      "Count": 1,
-      "Damage": 6
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 1,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "minecraft:cooked_beef",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "industrialrenewal:normal_rail",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "industrialrenewal:detector_rail",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-
-   "sell": {
-      "id": "grimoireofgaia:misc_furnace_fuel",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 2,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 8
-   },
-
-   "sell": {
-      "id": "immersiveengineering:metal",
-      "Count": 1,
-      "Damage": 28
-   }
-},
- {
-   "action": "add",
    "CareerLevel": 3,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 5
+      "Count": 6
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 4
+      "Count": 2
    },
    "sell": {
       "id": "industrialrenewal:buffer_stop_rail",
@@ -167,66 +41,32 @@
 },
  {
    "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
+   "CareerLevel": 1,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 5
+      "Count": 6
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 4
+      "Count": 2
    },
    "sell": {
-      "id": "industrialrenewal:rail_loader",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 1
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 7
-   },
-   "sell": {
-      "id": "industrialrenewal:booster_rail",
-      "Count": 1
-   }
-},
- {
-   "action": "add",
-   "CareerLevel": 3,
-   "chance": 0.5,
-   "buy": {
-      "id": "ordinarycoins:coinsilver",
-      "Count": 5
-   },
-   "buyB": {
-      "id": "ordinarycoins:coinbronze",
-      "Count": 4
-   },
-   "sell": {
-      "id": "industrialrenewal:rail_gate",
+      "id": "industrialrenewal:crossing_rail",
       "Count": 1
    }
 },
  {
    "action": "add",
    "CareerLevel": 4,
-   "chance": 0.5,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
-      "Count": 16
+      "Count": 18
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 4
+      "Count": 6
    },
    "sell": {
       "id": "grimoireofgaia:shard",
@@ -236,18 +76,184 @@
 },
  {
    "action": "add",
-   "CareerLevel": 4,
-   "chance": 0.5,
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "industrialrenewal:normal_rail",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 5
+   },
+   "buyB": {},
+   "sell": {
+      "id": "grimoireofgaia:food_coalfish",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
    "buy": {
       "id": "ordinarycoins:coinsilver",
       "Count": 1
    },
    "buyB": {
       "id": "ordinarycoins:coinbronze",
-      "Count": 7
+      "Count": 1
+   },
+   "sell": {
+      "id": "immersiveengineering:material",
+      "Count": 1,
+      "Damage": 6
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 1,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "minecraft:cooked_beef",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 4,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
    },
    "sell": {
       "id": "betteranimalsplus:blubber",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "industrialrenewal:detector_rail",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 5
+   },
+   "buyB": {},
+   "sell": {
+      "id": "grimoireofgaia:misc_furnace_fuel",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "industrialrenewal:rail_loader",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 2
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "industrialrenewal:booster_rail",
+      "Count": 1
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 2,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 1
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 1
+   },
+   "sell": {
+      "id": "immersiveengineering:metal",
+      "Count": 1,
+      "Damage": 28
+   }
+},
+ {
+   "action": "add",
+   "CareerLevel": 3,
+   "chance": 0.4,
+   "buy": {
+      "id": "ordinarycoins:coinsilver",
+      "Count": 6
+   },
+   "buyB": {
+      "id": "ordinarycoins:coinbronze",
+      "Count": 2
+   },
+   "sell": {
+      "id": "industrialrenewal:rail_gate",
       "Count": 1
    }
 }
