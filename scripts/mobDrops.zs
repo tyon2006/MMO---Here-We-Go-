@@ -2,7 +2,6 @@
 <entity:beasts:giant_garden_eel>.addPlayerOnlyDrop(<betteranimalsplus:eel_meat_raw> % 20, 1, 1);
 <entity:beasts:vile_eel>.addPlayerOnlyDrop(<betteranimalsplus:eel_meat_raw> % 20, 1, 1);
 <entity:betteranimalsplus:tarantula>.addPlayerOnlyDrop(<biomesoplenty:plant_1:6> % 20, 1, 1);
-<entity:cyberware:cyberzombie>.addPlayerOnlyDrop(<immersiveintelligence:material_nugget:5> % 20, 1, 1);
 <entity:embers:ancient_golem>.addPlayerOnlyDrop(<embers:dust_ember> % 20, 1, 1);
 <entity:fossil:fossil.megalodon>.addPlayerOnlyDrop(<iceandfire:sea_serpent_scales_blue> % 20, 1, 1);
 <entity:golems:golem_bookshelf>.addPlayerOnlyDrop(<minecraft:experience_bottle> % 20, 1, 1);
