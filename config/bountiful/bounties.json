@@ -432,15 +432,6 @@
 		"weight": 100
 	},
 	{
-		"content": "entity:cyberware:cyberzombie",
-		"unitWorth": 1000,
-		"amount": {
-			"min": 4,
-			"max": 16
-		},
-		"weight": 100
-	},
-	{
 		"content": "entity:ebwizardry:husk_minion",
 		"unitWorth": 1000,
 		"amount": {
