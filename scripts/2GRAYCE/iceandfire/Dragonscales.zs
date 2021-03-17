@@ -39,7 +39,7 @@ recipes.addShaped("dragonscaleblock_red",<iceandfire:dragonscale_red>,[
 	
 	recipes.addShaped("dragonscaleblock_white",<iceandfire:dragonscale_white>,[
 	[<iceandfire:dragonscales_white>,<iceandfire:dragonscales_white>], 
-	[<iceandfire:dragonscales_white>,<iceandfire:dragonscales_red>]]);
+	[<iceandfire:dragonscales_white>,<iceandfire:dragonscales_white>]]);
 	
 	recipes.addShaped("dragonscaleblock_sapphire",<iceandfire:dragonscale_sapphire>,[
 	[<iceandfire:dragonscales_sapphire>,<iceandfire:dragonscales_sapphire>], 
