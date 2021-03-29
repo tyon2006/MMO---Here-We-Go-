@@ -417,8 +417,10 @@
       }
     },
     "3:10": {
-      "questID:3": 3,
-      "preRequisites:11": [],
+      "questID:3": 4,
+      "preRequisites:11": [
+        25
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -432,7 +434,7 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:nether_star",
+            "id:8": "embers:dawnstone_mail",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -443,193 +445,27 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Dwarven Lore",
+          "desc:8": "Older than §chumans§r, yet younger than §5dragonkin§r, §6dwarves§r take the middle-child place in the hierarchy of the prime races. \n\nDuring the early ages, a great catastrophe befell the dwarves in their endless delve, as they reached §5the §5void§r and fell prey to its horrors. The experience led all dwarves to abolish the practice of arcane magic, which they believed to be linked to the monstrosities that were loosed that day, and that it empowers them. \n\nThe advent of humans was thought to be beneficial to their kind; a potential ally in the war against the arcane, and the dragonkin that wielded it. But it soon became clear that humans had very little concern for such matters, and their §cgreat machines§r have become anathematic blight on the §3Overworld§r, polluting its skies, tarnishing and destroying much of the once-plentiful §9Aetherium§r, scarring the ground and making it poisonous, the elements themselves reeling from the abuse. \n\nDwarves see draconic spellcasting as evil, but admire their §6tinkering§r, seeing it as a masterful manipulation of the most primal element, which dwarves themselves have not yet come to understand. Of humans, they delight in the wonders of §6mechanical law§r but abhor their overambitious and \"wasteful\" use of the same, seeing uncontrolled industrialization for the damage it wreaks on the world around it.\n"
         }
       },
       "tasks:9": {
         "0:10": {
-          "advancement_id:8": "",
           "index:3": 0,
-          "taskID:8": "bq_standard:advancement"
-        },
-        "1:10": {
-          "visible:1": 0,
-          "invert:1": 0,
-          "range:3": -1,
-          "index:3": 1,
-          "structure:8": "",
-          "hideInfo:1": 0,
-          "posX:3": 0,
-          "posY:3": 0,
-          "posZ:3": 0,
-          "biome:8": "",
-          "name:8": "New Location",
-          "dimension:3": 0,
-          "taxiCabDist:1": 0,
-          "taskID:8": "bq_standard:location"
-        },
-        "2:10": {
-          "partialMatch:1": 1,
-          "item:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:water_bucket",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "requiredUses:3": 1,
-          "ignoreNbt:1": 0,
-          "index:3": 2,
-          "block:10": {
-            "blockID:8": "minecraft:air",
-            "nbt:10": {},
-            "amount:3": 0,
-            "oreDict:8": "",
-            "meta:3": 0
-          },
-          "onHit:1": 0,
-          "onInteract:1": 1,
-          "allowOffHand:1": 1,
-          "taskID:8": "bq_standard:interact_item",
-          "allowMainHand:1": 1
+          "taskID:8": "bq_standard:checkbox"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
     },
     "4:10": {
-      "questID:3": 4,
-      "preRequisites:11": [
-        5
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "COMPLETED",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Ember Flux",
-          "desc:8": "Go talk to Mich MacGuffin. Immediately."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "npcDialogID:3": 3,
-          "description:8": "Go talk to Mich MacGuffin",
-          "index:3": 0,
-          "taskID:8": "bq_npc_integration:npc_dialog"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "ordinarycoins:coingold",
-              "Count:3": 25,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 1
-        }
-      }
-    },
-    "5:10": {
       "questID:3": 5,
-      "preRequisites:11": [
-        5
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 1,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "trigger:ember_flux",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "description:8": "",
-          "index:3": 0,
-          "trigger:8": "minecraft:impossible",
-          "conditions:8": "{}",
-          "taskID:8": "bq_standard:trigger"
-        },
-        "1:10": {
-          "advancement_id:8": "universalbestiary:minecraft_llama",
-          "index:3": 1,
-          "taskID:8": "bq_standard:advancement"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "score:8": "ember_flux",
-          "rewardID:8": "bq_standard:scoreboard",
-          "index:3": 0,
-          "type:8": "dummy",
-          "value:3": 1,
-          "relative:1": 1
-        },
-        "1:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 1
-        }
-      }
-    },
-    "6:10": {
-      "questID:3": 6,
       "preRequisites:11": [
         4
       ],
@@ -640,13 +476,13 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:nether_star",
+            "id:8": "mystgears:mechanical_turret",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -654,26 +490,110 @@
           "globalshare:1": 0,
           "questlogic:8": "AND",
           "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 1,
+          "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "trigger:ember_flux_2",
-          "desc:8": "No Description"
+          "name:8": "Gnomish Lore",
+          "desc:8": "§4Gnomes§r are cursed §chumans§r, their typical knowledge and skill for engineering and reliable mechanics all but utterly extinguished. In its place, fanatical creativity is found, as if desperate to reinvent their lost mastery which their forebears jealously guard. \n\nCast out of their urban homes, gnomes were considered to be tainted by the arcane and the horrors of the deep (and indeed, they may well be). Lost and alone on the surface, the gnomes were taken in by §6dwarves§r who found their penchant for invention to be invaluable, profiting from gnomish innovation which rocketed them forward whole ages in advancements. \n\nThe gnomes, for their part, benefit from dwarven protection and muscle, allowing their visions to come to light from the safety of a willing and stalwart guardianship. Gnomes are the creators of the §4GNACK§r Skill.\n\n\n§6"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
       "rewards:9": {
         "0:10": {
-          "score:8": "ember_flux",
-          "rewardID:8": "bq_standard:scoreboard",
-          "index:3": 0,
-          "type:8": "dummy",
-          "value:3": 1,
-          "relative:1": 1
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
         }
       }
     },
-    "7:10": {
+    "5:10": {
+      "questID:3": 6,
+      "preRequisites:11": [
+        31,
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "embers:dawnstone_anvil",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "NOR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Join the Dawnholdt (Choose 1)",
+          "desc:8": "§cCompleting this quest will prevent you from accepting the §5Mystic Accord (GRAYCE)§c and Stevannia (SKILLZ) quests and initial traits.§r\n\nUnleash your inner dwarf and join the §6Dawnholdt!§r\n\n§l§6§l§7Discipline Skill:§r §6BAWLS\n\n§l§6§l§7Themes of Interest:§r Creation of magical trinkets using physical processes, alchemy, runic magic, elemental energy manipulation, masterwork equipment, superior strength-of-arms, physical fortitude.\n\n§l§6§l§7Combat Specialty:§r Melee\n\n§l§6§l§7Species:§r §6Dwarves§r, §eGnomes§r\n\n§l§6§l§7Favored Dimension:§r §5The Erebus§r; §l§7§7Opposed Dimension:§r §5The Midnight§r\n\n§l§6§l§7Preferred Biomes:§r §bAlps§r, §bCold Desert§r, §bCrag§r, §bExtreme Hills§r, §bMutated Extreme Hills§r, §bFoothills§r, §bGlacier§r, §bHighland§r, §bIce Plains§r, §bIce Mountains§r, §bMaple Woods§r, §bMountain§r, §bIce Plains Spikes§r, §bMega Spruce Taiga§r, §bRedwood Taiga Hills§r, §bTaiga§r, §bMutated Taiga§r, §bRedwood Forest§r, §bSeasonal Forest§r, §bShield§r, §bSnowy Coniferous Forest§r, §bSnowy Forest§r, §bSnowy Tundra§r, §bTaiga Hills§r, §bTundra§r, §bVolcanic Island§r\n§l\n§l§6§l§a§8§7Associated Mods:§r §eEmbers§r, §eTransmutation Alchemy§r, §eRunes of Wizardry§r, §eRats§r, §eBountiful Baubles§r\n\n§c§cCompleting this quest will prevent you from accepting the §5Mystic Accord (GRAYCE)§c and Stevannia (SKILLZ) quests and initial traits.§r\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        },
+        "1:10": {
+          "index:3": 1,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "This quest will give you the first two traits in the §6BAWLS§r tree for free (Basics and Bashers). It will also give you two exclusive §6BAWLS§r melee weapons. \n\n§c§cCompleting this quest will prevent you from accepting the §5Mystic Accord (GRAYCE)§c and Stevannia (SKILLZ) quests and initial traits.§r",
+          "viaPlayer:1": 0,
+          "index:3": 0,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "/reskillable incrementskill @p extraskills.bawls 5\n/reskillable toggletrait @p compatskills.bawls1\n/reskillable toggletrait @p compatskills.bawls2"
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "spartanweaponry:battleaxe_copper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "spartanweaponry:hammer_copper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "6:10": {
       "questID:3": 7,
       "preRequisites:11": [],
       "properties:10": {
@@ -683,7 +603,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -757,9 +677,11 @@
         }
       }
     },
-    "8:10": {
+    "7:10": {
       "questID:3": 8,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        26
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -773,7 +695,7 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:nether_star",
+            "id:8": "thaumcraft:fortress_chest",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -784,42 +706,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "9:10": {
-      "questID:3": 9,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Open up BAWLS",
-          "desc:8": "No Description"
+          "name:8": "Dragon Lore",
+          "desc:8": "§5Dragonkin§r are the oldest of the races, and practice the oldest discipline form: §5magic§r. \n\nMagic has been present since the dawn of time and is built on §5principles§r that have weathered the eons agelessly. In theory, the §5forces§r of magic are the ultimate in conservation. No more magic exists today than did at the dawn of time, and no less. Thus it is slow to develop, difficult to innovate and not as adaptable in application as the other two disciplines of §ctechnological law§r and §6magitechnical elements§r. \n\nDragonkin believe themselves to have direct lineage from their §5feral dragon§r cousins and that they are thus \"refined\" forms of the same thing, though they possess no breath weapons and cannot fly of their own volition. \n\nThey see §chumans§r as young upstarts whose §chubris§r will punish them for trying to equal dragons who are their natural superiors. They see §7§6dwarves§r as admirable for their skills, but loathsome for dwarven §6greed§r which rivals that of their own. Likewise they consider the art of dwarven element manipulation to be inferior to that of the §5arcane arts§r.\n"
         }
       },
       "tasks:9": {
@@ -832,15 +720,15 @@
         "0:10": {
           "amount:3": 1,
           "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
+          "isLevels:1": 0,
           "index:3": 0
         }
       }
     },
-    "10:10": {
-      "questID:3": 10,
+    "8:10": {
+      "questID:3": 9,
       "preRequisites:11": [
-        9
+        13
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -849,13 +737,13 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "COMPLETED",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "embers:shard_ember",
+            "id:8": "questbook:itemquestbook",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -865,22 +753,93 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
-          "name:8": "First quest in bawls",
-          "desc:8": "gimme 1 level"
+          "ismain:1": 0,
+          "name:8": "Better Questing",
+          "desc:8": "The menu you\u0027re clicking through right now comes from §eBetter Questing§r. You can open this menu by pressing the tilde §9~§r key, or by opening the §9Quest Book§r that you\u0027ll receive for completing this quest. \n\nQuests are grouped by themes in different Questlines. They can be single quests, appear in chains, or have more complex (or even hidden) rules for unlocking and completing them. \n\nSome complete automatically when you finish it\u0027s last goal and some require input for completion and they\u0027ll always have some kind of reward. You\u0027ll get a notification each time you complete and unlock a quest. \n\nNote this quest also has more than 1 reward. Take a moment to use the arrow buttons in the frame below to view all rewards and check the box on the right when you\u0027re done. "
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
       "rewards:9": {
         "0:10": {
-          "amount:3": 2,
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "questbook:itemquestbook",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
           "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "9:10": {
+      "questID:3": 10,
+      "preRequisites:11": [
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:bullet",
+            "Count:3": 1,
+            "tag:10": {
+              "bullet:8": "potion"
+            },
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Pech Lore",
+          "desc:8": "§dPeches§r are cursed §6dwarves§r; mutated, stunted, and §davarice§r-consumed. \n\nThey are unfriendly to anyone unless placated with §dtreasures§r, and their penchant for hoarding has brought them under the gaze of the dragonkin. Their continual draw to §5dragonkin§r, dragons, and their lairs for their riches has bred a unique dynamic: peches seek treasure and bring it back to their draconic masters, in exchange they share in a wealth they could not possibly acquire by themselves. \n\nPeches are remarkable masters of §darcane arts§r, for reasons not yet known, and dragonkin pay them handsomely for their work. Pech are the creators of the §dNURVE§r Skill.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
           "index:3": 0
         }
       }
     },
-    "11:10": {
+    "10:10": {
       "questID:3": 11,
       "preRequisites:11": [],
       "properties:10": {
@@ -918,144 +877,18 @@
           "ignoreNBT:1": 1,
           "index:3": 0,
           "targetNBT:10": {
-            "ReturnToStart:1": 1,
-            "NpcInv:9": {},
-            "BossColor:3": 0,
-            "PotionEffect:3": 0,
-            "Size:3": 5,
-            "stopAndInteract:1": 1,
-            "Resistances:10": {
-              "Arrow:5": 1.0,
-              "Explosion:5": 1.0,
-              "Knockback:5": 1.0,
-              "Melee:5": 1.0
-            },
-            "BossBar:1": 0,
-            "RespawnTime:3": 20,
-            "NpcAngrySound:8": "",
-            "ReactsToFire:1": 0,
-            "IgnoreCobweb:1": 0,
-            "PositionOffsetZ:5": 5.0,
-            "PositionOffsetY:5": 5.0,
-            "PositionOffsetX:5": 5.0,
-            "LootMode:3": 0,
-            "TransformHasAI:1": 0,
-            "AttackStrenght:3": 5,
-            "PersistenceRequired:1": 0,
-            "id:8": "customnpcs:customnpc",
-            "IsStatue:1": 0,
-            "MovingPatern:3": 0,
-            "NpcLines:10": {
-              "Lines:9": {}
-            },
-            "DefendFaction:1": 0,
-            "FireIndirect:3": 0,
-            "NpcVisible:3": 0,
-            "LinkedNpcName:8": "",
-            "NpcScenes:10": {
-              "Scenes:9": {}
-            },
-            "HitSound:8": "minecraft:entity.arrow.hit",
-            "FindShelter:3": 2,
-            "Air:2": 300,
-            "TacticalVariant:3": 0,
-            "Orientation:3": 0,
-            "ScriptLanguage:8": "ECMAScript",
-            "HandItems:9": {
-              "0:10": {},
-              "1:10": {}
-            },
-            "KnockBack:3": 0,
-            "TransformHasJob:1": 0,
-            "ArmorDropChances:9": {
-              "0:5": 0.085,
-              "1:5": 0.085,
-              "2:5": 0.085,
-              "3:5": 0.085
-            },
-            "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
-            "BurnInSun:1": 0,
-            "StandingState:3": 0,
-            "AttackInvisible:1": 0,
-            "NpcInteractNPCLines:10": {
-              "Lines:9": {}
-            },
-            "HurtTime:2": 0,
-            "WalkingRange:3": 10,
-            "ShotCount:3": 1,
-            "pDur:3": 5,
-            "StartPosNew:11": [
-              0,
-              0,
-              0
-            ],
-            "AttackRange:3": 2,
-            "NpcKillLines:10": {
-              "Lines:9": {}
-            },
-            "PotionImmune:1": 0,
-            "AvoidsSun:1": 0,
-            "Texture:8": "customnpcs:textures/entity/humanmale/steve.png",
-            "NpcJob:3": 0,
-            "BurstCount:3": 1,
-            "NpcAttackLines:10": {
-              "Lines:9": {}
-            },
-            "pSpeed:3": 10,
-            "pArea:3": 0,
-            "DeathTime:2": 0,
-            "pImpact:3": 0,
-            "MoveState:3": 0,
-            "pRender3D:1": 1,
-            "Motion:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
-            "CombatRegen:3": 0,
-            "NpcsTimers:9": {},
-            "MarkovGender:3": 0,
-            "pEffect:3": 0,
-            "DistanceToMelee:3": 0,
-            "NpcStepSound:8": "",
-            "FireRate:3": 5,
-            "LeftHanded:1": 0,
-            "pEffAmp:3": 0,
-            "OnGround:1": 0,
-            "Dimension:3": 0,
-            "ImmuneToFire:1": 0,
-            "NpcKilledLines:10": {
-              "Lines:9": {}
-            },
-            "UUIDMost:4": 6575440419074756207,
-            "Fire:2": -1,
-            "ArmorItems:9": {
-              "0:10": {},
-              "1:10": {},
-              "2:10": {},
-              "3:10": {}
-            },
-            "DisablePitch:1": 0,
-            "pPhysics:1": 1,
-            "TransformHasInv:1": 0,
-            "NpcInteractLines:10": {
-              "Lines:9": {
-                "0:10": {
-                  "Line:8": "Hello @p",
-                  "Song:8": "",
-                  "Slot:3": 0
-                }
-              }
-            },
             "HurtByTimestamp:3": 0,
-            "pSpin:1": 0,
-            "NpcHurtSound:8": "minecraft:entity.player.hurt",
-            "pTrail:3": 0,
-            "CreatureType:3": 0,
+            "ForgeData:10": {},
+            "Angry:1": 0,
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 0.8500000238418579,
+              "5:6": 0.30000001192092896
+            },
+            "Sitting:1": 0,
             "Attributes:9": {
               "0:10": {
                 "Base:6": -2.0,
@@ -1142,7 +975,7 @@
                 "Name:8": "attribute.name.aether.impact"
               },
               "21:10": {
-                "Base:6": 20.0,
+                "Base:6": 8.0,
                 "Name:8": "generic.maxHealth"
               },
               "22:10": {
@@ -1150,7 +983,7 @@
                 "Name:8": "generic.knockbackResistance"
               },
               "23:10": {
-                "Base:6": 0.25,
+                "Base:6": 0.30000001192092896,
                 "Name:8": "generic.movementSpeed"
               },
               "24:10": {
@@ -1170,45 +1003,36 @@
                 "Name:8": "generic.followRange"
               },
               "28:10": {
-                "Base:6": 5.0,
+                "Base:6": 4.0,
                 "Name:8": "generic.attackDamage"
-              },
-              "29:10": {
-                "Base:6": 0.5,
-                "Name:8": "generic.flyingSpeed"
               }
             },
+            "HasChest:1": 0,
             "Invulnerable:1": 0,
-            "TransformHasDisplay:1": 0,
-            "NoFallDamage:1": 0,
+            "FallFlying:1": 0,
+            "ForcedAge:3": 0,
+            "PortalCooldown:3": 0,
             "AbsorptionAmount:5": 0.0,
-            "TransformHasRole:1": 0,
-            "Name:8": "Zdziwigostryja",
             "FallDistance:5": 0.0,
-            "SkinColor:3": 16777215,
-            "NpcIdleSound:8": "",
-            "Weapons:9": {},
-            "NPCDialogOptions:9": {},
-            "AggroRange:3": 16,
-            "DirectLOS:1": 1,
-            "HealthRegen:3": 1,
+            "InLove:3": 0,
+            "DeathTime:2": 0,
             "ForgeCaps:10": {
               "xat:race:10": {
                 "default_height:5": 0.0,
+                "imbued_race:8": "None",
                 "default_width:5": 0.0,
-                "race:8": "Human",
+                "trait_color:8": "16777215",
                 "bonus_mana:3": 0,
-                "prev_race:8": "Human",
+                "prev_race:8": "None",
                 "login:1": 1,
                 "first_login:1": 0,
                 "target:3": 100,
+                "original_race:8": "None",
+                "trait_opacity:5": 1.0,
+                "trait_shown:1": 1,
                 "size:3": 100,
                 "mana:5": 100.0,
-                "width:5": 0.0,
-                "transformed:1": 0,
-                "fake:1": 0,
-                "height:5": 0.0,
-                "affinity:5": 1.0
+                "fake:1": 0
               },
               "llibrary:extendedentitydatacapability:10": {
                 "mm:living:10": {
@@ -1216,11 +1040,14 @@
                   "freezeProgress:5": 0.0,
                   "frozenPitch:5": 0.0,
                   "prevHasAI:1": 0,
+                  "freezeDecayDelay:3": 0,
                   "frozenYawHead:5": 0.0,
-                  "frozenEntityID:3": -1,
                   "frozenLimbSwingAmount:5": 0.0,
                   "frozenRenderYawOffset:5": 0.0,
                   "frozenSwingProgress:5": 0.0
+                },
+                "Ice And Fire - Chicken Property Tracker:10": {
+                  "TimeUntilNextEgg:3": 1
                 },
                 "Ice And Fire - Siren Property Tracker:10": {
                   "CharmedBySiren:1": 0,
@@ -1229,6 +1056,10 @@
                 "Ice And Fire - Frozen Property Tracker:10": {
                   "TicksUntilUnfrozen:3": 0,
                   "IsFrozen:1": 0
+                },
+                "Fossils - Mammal Tracker:10": {
+                  "EmbryoProgress:3": 0,
+                  "Embryo:3": -1
                 },
                 "Ice and Fire - Player Property Tracker:10": {
                   "DismountedDragon:1": 0,
@@ -1248,6 +1079,9 @@
               "aether:entityinfo:10": {
                 "hasSpawnArea:1": 0
               },
+              "kathairis:wasinkathairis:10": {
+                "wasInKathairis:1": 0
+              },
               "aether:statuseffects:10": {},
               "thaumicaugmentation:portal_state:10": {
                 "inPortal:1": 0
@@ -1257,149 +1091,1424 @@
               "0:5": 0.085,
               "1:5": 0.085
             },
-            "NpcModelData:10": {
-              "LegsConfig:10": {
-                "NotShared:1": 0,
-                "ScaleZ:5": 1.0,
-                "TransZ:5": 0.0,
-                "TransY:5": 0.0,
-                "TransX:5": 0.0,
-                "ScaleY:5": 1.0,
-                "ScaleX:5": 1.0
-              },
-              "BodyConfig:10": {
-                "NotShared:1": 0,
-                "ScaleZ:5": 1.0,
-                "TransZ:5": 0.0,
-                "TransY:5": 0.0,
-                "TransX:5": 0.0,
-                "ScaleY:5": 1.0,
-                "ScaleX:5": 1.0
-              },
-              "Eyes:10": {
-                "Pattern:1": 0,
-                "Glint:1": 1,
-                "Type:1": -1,
-                "PositionY:3": 1,
-                "SkinColor:3": 11830381,
-                "PlayerTexture:1": 0,
-                "Color:3": 6704179,
-                "BrowColor:3": 5982516,
-                "BrowThickness:3": 4
-              },
-              "LegParts:10": {
-                "Pattern:1": 0,
-                "Type:1": 0,
-                "PlayerTexture:1": 0,
-                "Color:3": 16777215
-              },
-              "Parts:9": {},
-              "ArmsConfig:10": {
-                "NotShared:1": 0,
-                "ScaleZ:5": 1.0,
-                "TransZ:5": 0.0,
-                "TransY:5": 0.0,
-                "TransX:5": 0.0,
-                "ScaleY:5": 1.0,
-                "ScaleX:5": 1.0
-              },
-              "ExtraData:10": {},
-              "HeadConfig:10": {
-                "NotShared:1": 0,
-                "ScaleZ:5": 1.0,
-                "TransZ:5": 0.0,
-                "TransY:5": 0.0,
-                "TransX:5": 0.0,
-                "ScaleY:5": 1.0,
-                "ScaleX:5": 1.0
-              }
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:wolf",
+            "Age:3": 1,
+            "CollarColor:1": 1,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
             },
-            "minDelay:3": 20,
-            "DoorInteract:3": 2,
-            "MoveSpeed:3": 5,
-            "TransformEditingModus:1": 0,
-            "UsingSkinUrl:1": 0,
             "Leashed:1": 0,
-            "SkinUrl:8": "",
-            "CanSwim:1": 1,
-            "GroundSound:8": "minecraft:block.stone.break",
-            "MaxHealth:3": 20,
-            "HideBodyWhenKilled:1": 0,
-            "AttackSpeed:3": 20,
-            "PotionDuration:3": 5,
-            "maxDelay:3": 40,
-            "ScriptEnabled:1": 0,
-            "Role:3": 0,
-            "DropChance:9": {},
-            "FactionPoints:10": {
-              "DecreaseFaction1Points:1": 0,
-              "OptionFaction2Points:3": 100,
-              "OptionFactions1:3": -1,
-              "OptionFactions2:3": -1,
-              "OptionFaction1Points:3": 100,
-              "DecreaseFaction2Points:1": 0
-            },
-            "pDamage:3": 4,
-            "KilledTime:4": 0,
-            "AimWhileShooting:1": 0,
-            "CanPickUpLoot:1": 0,
-            "AttackOtherFactions:1": 0,
-            "CanDrown:1": 1,
-            "pSize:3": 5,
-            "CanSprint:1": 0,
-            "CanLeap:1": 0,
-            "TransformIsActive:1": 0,
-            "ForgeData:10": {},
-            "MovingState:3": 0,
-            "MovingPos:3": 0,
-            "PotionAmp:3": 0,
-            "OnAttack:3": 0,
-            "TacticalRadius:3": 8,
-            "FallFlying:1": 0,
-            "MaxExp:3": 0,
-            "OrderedLines:1": 0,
-            "PortalCooldown:3": 0,
-            "pGlows:1": 0,
-            "TransformHasAdvanced:1": 0,
-            "TransformHasStats:1": 0,
-            "MovementType:3": 0,
-            "FiringSound:8": "minecraft:entity.arrow.shoot",
-            "ModRev:3": 18,
-            "Accuracy:3": 60,
-            "MinExp:3": 0,
-            "Armor:9": {},
-            "CloakTexture:8": "",
-            "GlowTexture:8": "",
-            "MaxFiringRange:3": 15,
-            "pXlr8:1": 0,
-            "MarkovGeneratorId:3": 2,
-            "Scripts:9": {},
-            "UUIDLeast:4": -8940429525668653545,
-            "Health:5": 20.0,
-            "pStick:1": 0,
-            "MovingPause:1": 1,
-            "NpcDeathSound:8": "minecraft:entity.player.hurt",
-            "MovingPathNew:9": {},
-            "FactionID:3": 0,
-            "Title:8": "",
-            "TotalTicksAlive:4": 0,
+            "UUIDLeast:4": -7583687991501787820,
+            "Health:5": 8.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
             "Rotation:9": {
-              "0:5": 4.8736444,
+              "0:5": 6.1822,
               "1:5": 0.0
             },
-            "ShowName:3": 0,
-            "npcInteracting:1": 1,
             "UpdateBlocked:1": 0,
-            "AvoidsWater:1": 0,
-            "NoLivingAnimation:1": 0,
-            "SpawnCycle:3": 0
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "OwnerUUID:8": "",
+            "UUIDMost:4": 2895047148042535917,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
           },
           "taskID:8": "bq_standard:meeting",
-          "target:8": "customnpcs:customnpc",
+          "target:8": "minecraft:wolf",
           "subtypes:1": 1
         }
       },
       "rewards:9": {}
+    },
+    "11:10": {
+      "questID:3": 12,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "COMPLETED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:writable_book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Press ~ to Begin",
+          "desc:8": "Welcome to§2§2§6 MMO - Let\u0027s Go!§f We\u0027ll get right to it: This pack is different from anything you\u0027ve ever seen. We§r §l§rreally, §oreally, §lreally §rrecommend you play through this tutorial. It only takes a few minutes and you\u0027ll get some rewards for playing along.\n\n§cYou should not just close this window then run off and see what happens - §nYou\u0027ll die and it will suck.§r \n\nHit the §lClaim§l§r button below to complete this quest, then hit the §lBack§r button to be returned to the tutorial questline menu. From there, you can continue onto the next quest. \n "
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Set game difficulty to Passive. But, just for a little while to let you finish these quests. ",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "/difficulty 0\n"
+        }
+      }
+    },
+    "12:10": {
+      "questID:3": 13,
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:red_flower",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Peaceful Mode",
+          "desc:8": "If you\u0027ve never played §aMMO - Let\u0027s Go §fbefore, §fbe aware that it comes with some unique and powerful challenges. This questline will serve to ease you into the experience. Some quests, like this one, have more text than others. You can use the scroll bar on the right or your mousewheel to see the rest of the quest text. \n\nWhen you completed the previous quest, we changed the game difficulty to peaceful so you can finish reading this questline without worrying about being mauled by a §9Zombie§r. \n\nSorry to trick you! Don\u0027t worry, we\u0027ll set it back to normal at the very end, and you\u0027ll get a warning when it comes. If you\u0027re the creator or host of your world you can change your gamemode at any time by §rusing the §o/difficulty§r command. \n\nWhen you\u0027re ready to move on, click the §lCheckbox §ron the right followed by §lDetect/Submit§r and then §lClaim§r the reward and unlock the next quest.\n  "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "13:10": {
+      "questID:3": 14,
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:map",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Difficulty and Where am I Going? (WAIG)",
+          "desc:8": "In §a§aMMO - Let\u0027s Go §r§reach overworld biome has a \"difficulty\" level. Each time you transition from one biome to another, a message will appear on the screen letting you know the name of the biome and its difficulty level. This message is powered by the mod §e§eWhere am I going? (WAIG). §r§rYou\u0027ll find different mobs appearing in different biomes, and the higher the diffiiculty, the more challenging the mobs. \n\nThe ore you find will also increase in value as difficulty increases. Dungeons and ruins increase in complexity, as does the treasure you will find within.\n\nYou should start in a level 1 biome and work your way up as you need greater ores and treasures. If you\u0027re struggling in a high level biome, consider relocating to a lower level one until you\u0027re ready to take on the challenge. §o§oDon\u0027t worry about finding one, §r§rwe\u0027ll get you set up toward the end of this tutorial. \n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "14:10": {
+      "questID:3": 15,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "biomesoplenty:earth",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Climate and Antique Atlas",
+          "desc:8": "Biomes now spawn together in climate bands. That means that when traveling longitudinally (East and West) you will find biomes that have similar temperature and traveling lattitudinally (North or South) you will find the temperature rises and falls as if traveling around a globe. Biomes with extreme temperature differences are also much less likely to spawn side-by-side.\n\nTo help you navigate this new world, we\u0027ve included §l§l§l§eAntique Atlas§r. This book automatically maps terrain as you travel and lets you set waypoints to help you remember points of interest. By placing the §9Antique Atlas§r in your toolbar, you can also view the atlas as a minimap. To activate, you must right click after creating it. §o\n\nHave one on the house!\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "antiqueatlas:empty_antique_atlas",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "15:10": {
+      "questID:3": 16,
+      "preRequisites:11": [
+        28
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:experience_bottle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Traits and Experience",
+          "desc:8": "Keep an eye on your experience! Collecting and managing experience is a key component of §aMMO - Let\u0027s Go!§r\n\nTake a moment to close your §9Quest Book§r, open your inventory, and click on the §9Skills§r tab on the left. \n\nIn this new menu, you will see a variety of skill trees, created using §eReskillable§r. These §9Skills§r represent the core disciplines of §aMMO - Let\u0027s Go§r. BAWLS, GRAYCE, and SKILLZ are the primary disciplines through which players experience content. NURVE, POYSE, and GNACK represent specialized secondary disciplines focused on connecting the primary disciplines.\n\nEach §9Skill§r tree contains a number of §9Traits§r; 20 for primary trees, and 10 for secondary trees. §9Traits§r allow you to learn how to make and use related items. To gain a §9Trait§r, experience must be invested in the §9Skill§r to earn skill points. Points in a §9Skill§r may be spent on §9Traits§r for that tree. Invested experience permanently increases your §9Skill§r level, which likewise increases the amount of experience needed to advance to the next level. Many §9Traits§r have a required minimum level in the §9Skill§r to be selected. So invest early and often!\n\nTo see all items that a particular §9Trait§r teaches, simply type the §9Trait\u0027s§r name in the search bar for §eJEI§r!\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 5,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "16:10": {
+      "questID:3": 17,
+      "preRequisites:11": [
+        28
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "variedcommodities:skull",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Death",
+          "desc:8": "Accidents happen. §c§c§c§cCreepers§r§r§r§r also happen. \n\nDeath is a normal part of playing this pack. When you die, you\u0027ll drop your experience and all your items except your armor, toolbar, main and off-hands, and your §9§9§9§9Backpack§r§r§r§r. We highly recommend keeping your most important items in your §9§9§9§9Backpack§r§r§r§r. Lost items and a portion of your experience will be stored in a §9Gravestone§r with your name on it at the site of your death. You also lose 10% equipment durability but it will never reduce below a durability of 1 (dying will never break your equipment). \n\nWhen you respawn, you\u0027ll have reduced health, reduced hunger, and some minor debuffs, but only for a moment and you can eat to get rid of the effect right away. You can find §9Grave Scrolls§r that will teleport you back to your last death location and we recommend you carry a few of those around in your backpack at all times. \n\nWe do not recommend messing around with the game rule for dropping items on death. That might complicate things. "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "corpsecomplex:scroll",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "17:10": {
+      "questID:3": 18,
+      "preRequisites:11": [
+        23
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "wearablebackpacks:backpack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Wear a Backpack",
+          "desc:8": "§eWearble Backpacks§r increases your carrying capacity by serving as a separate inventory that rides around on your back. \n\nYou can place them on the ground, interact with them like a chest, and dye them to your favorite color. When in your inventory, you can place the §9Backpack§r like a normal block. To equip, place it on the ground then hold §l§r§oshift + left click§r with an open hand until it breaks. To unequip, §oshift + right click§r on the ground with an open hand. You may access an equipped §9Backpack\u0027s§r inventory by pressing §o§9§r§r§o§9§oI§r. \n\nMost importantly, items you place in your §9Backpack§r will not be lost on death and you will respawn with it on your body. Use them to protect your most precious items!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "wearablebackpacks:backpack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "18:10": {
+      "questID:3": 19,
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "waystones:waystone",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Waystones",
+          "desc:8": "You might have noticed by now that §aMMO - Let\u0027s Go§r will require you to travel a lot. \n\n§eWaystones §rgives you a method of fast travel to assist with exploration.\n\nThis quest will give you a §9Warp Stone§r which can be used to teleport you to any §9Waystone§r you\u0027ve previously located. §9Waystones§r can be found in villages and will be uniquely named for the village itself and can be used to teleport between each other. The §9Warpstone§r has a cooldown, however, so to supplement the cooldown you can carry §9Return Scrolls§r, §9Bound Scrolls§r, and §9Warp Scrolls§r. Locate them in §eJEI§r to learn more about how they each work."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "waystones:warp_stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "19:10": {
+      "questID:3": 20,
+      "preRequisites:11": [
+        21
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "grimoireofgaia:misc_quill",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Extra Gamerules (Optional)",
+          "desc:8": "This one is optional, but we recommend the following tweaks to improve your experience. Finishing this quest will turn off the spreading of fire, turn off showing of death messages, and reduce the randomtick speed from 3 to 2. \n\nWe recommend these changes because fire will burn the entire world down, showing of death messages can get really spammy with some of the mobs that are in this pack, and reducing the randomtick speed showed a modest performance improvement at the cost of plants growing unnoticeably slower. Is this all personal preference? Sure.\n\nIf you don\u0027t like the results, you can always modify them later using the following commands:\n\n/gamerule doFireTick\n/gamerule showDeathMessages\n/gamerule randomTickSpeed\n\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Run a command script",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "/gamerule doFireTick false\n/gamerule showDeathMessages false\n/gamerule randomTickSpeed 2"
+        }
+      }
+    },
+    "20:10": {
+      "questID:3": 21,
+      "preRequisites:11": [
+        28
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "spartanweaponry:dynamite",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Mobs Gonna Grief (Optional)",
+          "desc:8": "Now, not only §cCreepers§r can come ruin your house. There are many mobs that can do great and terrible things to your home, so we\u0027ll now set the doMobGriefing gamerule to false. This gamerule stops mobs from being able to destroy the blocks around them.\n\nIf you like the extra challenge and are the creator or host of your world, you can change this back any time with the command below:\n\n/gamerule doMobGriefing\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Run a command script",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "/gamerule doMobGriefing false"
+        }
+      }
+    },
+    "21:10": {
+      "questID:3": 22,
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "ordinarycoins:coingold",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Your money\u0027s no good here!",
+          "desc:8": "Remember §9Emeralds§r? §oYeah, we don\u0027t like carrying them around, either§r. \n\nWe like cold, hard cash, and now, so do villagers. Nearly all villagers have been given entirely new trade tables and accept §9Copper Coins§r and §9Silver Coins§r as payment and only sell items in exchange for currency (not the other way around). There are more than 700 items for sale across all villagers, so you should find a lot of nice and useful surprises as you trade with them. All mobs have a chance of dropping coins and more challenging mobs drop more coins than less challenging ones.\n\nCoins trade up in increments of 8. That is to say that 8 §9Copper Coins§r equal 1 §9Silver coin§r, 8 §9Silver Coins§r equal 1 §9Gold coin§r, and so on. You can trade up or trade down coins in your inventory with the commands below:\n\n/coins stack\n/coins unstack"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "ordinarycoins:coinbronze",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "22:10": {
+      "questID:3": 23,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Recipe Changes and JEI",
+          "desc:8": "If you\u0027re familiar with the mods in §aMMO - Let\u0027s Go§r, you\u0027ll quickly find that there have been a lot of changes to recipes. We aimed to make the mods feel more like they belonged together, rather than just shoving them together §okitchen-sink-style§r. But, that means we\u0027ve changed things up quite a bit. \n\n§eJust Enough Items (JEI)§r is your best friend for crafting items and learning what items can be used for. Take a moment to open your inventory and look to the right - that\u0027s the §eJEI§r interface. There\u0027s a search bar on the bottom you can use to filter and find what you\u0027re looking for. If you want to know how to craft an item, mouse over it and press the §9R§r key. If you want to know what recipes an item is used in, mouse over and press the §9U§r key. \n\n§eJEI§r is capable of much more than that, so go check it out!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "23:10": {
+      "questID:3": 24,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {},
+              "thaumicaugmentation:elytra_harness_augment:10": {}
+            },
+            "id:8": "minecraft:banner",
+            "Count:3": 1,
+            "Damage:2": 15,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Choose a Side!",
+          "desc:8": "With each discipline is an accompanying §9Faction§r. §9Factions§r represent the typical users of a discipline and are divided along the lines of some typical fantasy species. \n\nEach §9Faction§r has a unique style or character from the others, a leading fantasy specie, and other §9Factions§r it either clashes or allies with. We will explore each primary §9Faction§r in its own introduction. \n\nPlayers may choose to associate with any §9Factions§r corresponding to a §9Skill§r. Each §9Faction§r has a set of preferred biomes, crafting methods, dimensions, armor, weapons, construction materials, and aesthetics. A §9Faction\u0027s§r preferences can set the tone for its players, providing a unique look and feel to gameplay.\n\nIn the next few quests, you\u0027ll get an introduction to each and be allowed to choose 1 to get the first 2 §9Traits§r for free! Choose wisely, as you may only choose one of the §9Factions§r.\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "24:10": {
+      "questID:3": 25,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "embers:ember_cluster",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "BAWLS and the Dwarves of Dawnholdt",
+          "desc:8": "\n§o\"Nobody does it better!\"§r\n\nLiving in mighty underground strongholds of ancient carven stone where the music of hammers sound on anvil heads under the roar of furnaces are the §6dwarves§r of §6Dawnholdt§r. \n\nThe masters of the long-lived dwarven tradition of §6magitech§r known as §6BAWLS!§r Priding themselves in the §6quality§r of their work, the dwarves of Dawnholdt§r are an uncompromising lot. They favor hands-on hard work over automated processes and reliance on high-quality §9Dawnstone§r over outright magic or raw ore. Take pride in your work!\n\nMagitech is a loose term for the manipulation of primal elements through pseudo-scientific means of alchemy, metallurgy, and archaic machinery to create §6artifacts§r of power far greater than the two disciplines of technology and magic can produce by themselves. Practitioners of BAWLS§r should feel like §6masters§r of their craft and that what they produce is sought-after and prized.\n \n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "25:10": {
+      "questID:3": 26,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "thaumcraft:salis_mundus",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "GRAYCE and the Dragons of the Mystic Accord",
+          "desc:8": "§o\"Behold, the wizard! Beware his powers!\"\n\nUnspeakable powers!§r In their resplendent towers loftily gazing over serene green forests and lush jungles, the §5dragonkin§r of the §5Mystic Accord§r are a loose alliance of separate houses banded together under the irrestistible magnet of self-interest. \n\nThough not all dragonkin agree on every detail, the collected knowledge of the §5arcane arts of §5thaumaturgy§r has become known as §5GRAYCE§r between them. There is no force greater, no cause more noble, and no peoples more worthy of your time. Behold the face of true power!\n\nMagic is arcane, unknowable, and mighty. Practitioners of §5magic§r should feel mysterious, strong, and able to match toe-to-toe with any foe. Both convenience- and combat-oriented, magic lends itself to adventure, discovery, grandeur and treasures.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "26:10": {
+      "questID:3": 27,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveintelligence:data_wire",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "SKILLZ and the Humans of Stevannia",
+          "desc:8": "§o\"There’s a tool for that.\"\n\nO\u0027 §cStevannia§r, the greatest of lands that ever shall be, and hail the §cSupreme Leader Herobrine§r, its magnificent leader! The §chuman§r citizens of Stevannia are the masters of the art of engineering §cSKILLZ§r. \n\nResourceful, inventive, and striving to survive in a hostile world, the people of Stevannia have rapidly advanced in technological prowess to solve their every need with specialized §cequipment and machinery§r. Quality of life comes first!\n\nTech is new, innovative, exciting, and bold, based on understanding the principles of the physical world and how to bend it with nothing more than your own two hands (and a lot of §csteel§r). Practitioners of §ctechnology§r should feel like nothing is beyond their reach with enough elbow-grease. The experience of day-to-day life and adventuring alike should feel convenient, eased and facilitated by know-how.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "27:10": {
+      "questID:3": 28,
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:leather_chestplate",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Starting Gear",
+          "desc:8": "It\u0027s not safe to go alone. §oIt\u0027s also not safe to go naked.§r We\u0027ll get you a basic set of §9Leather Armor§r that should see you through the earlier parts of your experience. \n\nAlso note that this (and many other armor sets) have §eSet Bonuses§r. Wearing multiple pieces of the set will grant increasingly powerful bonuses in addition to its normal abilities.\n\nYou can wear all of the parts of a given set for the best bonuses, or mix and match parts of different sets for unique combinations.\n\nSuit up!\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:leather_helmet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:leather_chestplate",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:leather_leggings",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:leather_boots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 1
+        }
+      }
+    },
+    "28:10": {
+      "questID:3": 29,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:iron_ore",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Ore Spawns",
+          "desc:8": "We\u0027ve developed §aMMO - Let\u0027s Go§r to have a natural progression that follows the biomes, mobs, drops, ore spawns, and traits in a sensical order.  \n\n§aIn MMO - Let\u0027s Go§r, ore spawns change from biome to biome, and tier to tier. You can\u0027t just hold up in a single biome and find every resource you\u0027ll need. By the end of this tutorial, you\u0027ll get a feel for how to progress through the content and understand that we want you to explore many biomes in increasing order of difficulty.\n\nFor instance, you will not find §9Iron Ore§r in tier 1 biomes. This might sound crazy, but we\u0027ve also changed many recipes and introduced new ways of doing things that will reduce your demand for §9Iron Ore§r until you\u0027re further along. \n\nOre also spawns in different shapes and at different heights than you may be used to. You might find ore in veins, sheets, clouds, or dikes that are full of liquid. Ore spawns occur less frequently than you are used to, but they spawn in much, §r§omuch§r larger sizes. §o\n\n§7§oOdds are, if you find a single spawn of an ore type, it will be all the ore you need for quite a while!§r\n "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "29:10": {
+      "questID:3": 30,
+      "preRequisites:11": [
+        6,
+        31,
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:filled_map",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Almost There...",
+          "desc:8": "Arguably, getting you to the right starting biome is the single most important part of §aMMO - Let\u0027s Go! §r\n\nWith the way Minecraft spawning works, that\u0027s a tough feat, so we have to ask you to help us out with this one. To get you to the right biome, we need you to teleport yourself there with a command. \n\nUse the command §9/biomesop tpbiome \u003cbiomename\u003e§r to get you to the biome of your choice. Just replace \u003cbiomename\u003e with the fully qualified name of the biome you want. If you hit §9TAB§r while typing the command, it will help you with a list of options.\n\nWe recommend choosing tier 1 biome listed under the faction you chose in the previous quest. If you\u0027re still unsure, we\u0027ve got some samples below for each faction. You\u0027ll have to type this into chat yourself and run it.\n\n§6Dwarves of Dawholdt - BAWLS§r\n/biomesop tpbiome biomesoplenty:highland\n/biomesop tpbiome minecraft:mutated_redwood_taiga\n\n§5Dragons of the Mystic Accord - GRAYCE§r\n/biomesop tpbiome minecraft:jungle\n/biomesop tpbiome biomesoplenty:grove\n\n§cHumans of Stevannia - SKILLZ§r\n/biomesop tpbiome biomesoplenty:dead_forest\n/biomesop tpbiome minecraft:desert\n\nThe command can take a minute to run. Sometimes it doesn\u0027t work because the nearest instance of the biome you entered is too far for it to find. You will need to change which biome you want to go to and try again.\n\nWhen you\u0027re settled, finish this quest and use the command §9/sethome §rto make sure you spawn at home the next time you die. \n\n\n§n§r§o§8§7Look, we know this isn\u0027t perfect, but getting you to the right starting biome is absolutely necessary to set you up for success. Remember in the first quest where we said you\u0027d die a lot and it will suck? We were mostly talking about where to start.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "30:10": {
+      "questID:3": 31,
+      "preRequisites:11": [
+        6,
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "thaumcraft:arcane_workbench",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "NOR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Embrace the wonders of the Mystic Accord (Choose 1)",
+          "desc:8": "§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§  §cand §cStevannia (SKILLZ) quests and initial traits.§r\n\n§oMake the right choice: join the §5§oMystic Accord!\n\n§7Discipline Skill:§r §5GRAYCE\n\n§7Themes of Interest:§r Creation of magical trinkets using magic rather than physical processes, spellcasting, arcane energy manipulation, obscure methods and processes, occultism, cosmic horror, dragons and monsters\n§r§7\nCombat Specialty:§r Magic\n§r§7\nSpecies:§r §9§5Dragonkin, §9§dPech§r\n§r§7\nFavored Dimension:§r §5The Midnight§r; §r§7Opposed Dimension:§r §5The Aether§r\n§r§7\nPreferred Biomes:§r §bBayou§r, §bBog§r, §bDead Forest§r, §bDead Swamp§r, §bDesert§r, §bDesert Hills§r, §bMutated Desert§r, §bFen§r, §bGravel Beach§r, §bLush Swamp§r, §bMangrove§r, §bMarsh§r, §bMesa§r, §bMesa Plateau§r, §bMutated Mesa Plateau§r, §bBryce Mesa§r, §bMoor§r, §bSavanna Plateau§r, §bMutated Swampland§r, §bOutback§r, §bQuagmire§r, §bShrubland§r, §bSteppe§r, §bSwampland§r, §bWasteland§r, §bWetland§r, §bXeric Shrubland§r\n§r§7\n§r§7Associated Mods:§r §eThaumcraft§r, §eElectroblob\u0027s Wizardry§r, §eArcane Archives§r, §eIce and Fire§r, §eChinese Workshop§r\n\n§\n§c§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§  §cand §cStevannia (SKILLZ) quests and initial traits.§r\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        },
+        "1:10": {
+          "index:3": 1,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "This quest will give you the first two traits in the §5GRAYCE§r tree for free (Fundamentals and Instruments). It will also give you two exclusive §5GRAYCE§r melee finesse weapons. \n\n§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§  §cand §cStevannia (SKILLZ) quests and initial traits.§r",
+          "viaPlayer:1": 0,
+          "index:3": 0,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "/reskillable incrementskill @p extraskills.grayce 5\n/reskillable toggletrait @p compatskills.grayce1\n/reskillable toggletrait @p compatskills.grayce2"
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "spartanweaponry:rapier_copper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "spartanweaponry:glaive_copper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "31:10": {
+      "questID:3": 32,
+      "preRequisites:11": [
+        30
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:diamond_sword",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Let\u0027s Go!",
+          "desc:8": "Alright, that\u0027s it! The tutorial is now over. Thanks for hanging in there. \n\nWe\u0027ll go ahead and set the gamemode back to normal difficulty and you can move along. We have so much more to come in future releases, but the core skills we covered in this tutorial should be more than enough to get you started. As always, check out our §9Discord§r and §9Issues Page§r on §9Curseforge§r if you have trouble or want to provide feedback. \n\nWe\u0027re always looking for more beta testers, so come talk to us and thank you for playing!\n "
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Finishing this quest will set the game difficulty back to 2 (normal) and also set your home to make extra sure that you won\u0027t be accidentally sent back to the world spawn.",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "#Script Comment\n/difficulty 2\n/sethome"
+        }
+      }
+    },
+    "32:10": {
+      "questID:3": 33,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:faraday_suit_chest",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Human Lore",
+          "desc:8": "The youngest of the prime races, §chumans§r have found themselves in a unique position, their survival in an ancient world filled with hostility has shaped them into a people dependent on their wits, tools, and ability to adapt rapidly using disciplines that build and evolve across generations. \n\nEvery advancement that humans enjoy today is built on the backs and brains of every human that has ever come before, with their machines the brain-children of not just one mind, but a hundred together, one after the other. As such, human §ctechnology§r requires very little inherent power or talent to use, but a great deal of instruction and training, and in many cases, an outright §cuser’s manual§r. \n\nHumans consider §5draconic magic§r to be incredible but stifling, as it is known to have not evolved since its advent, and thus has already reached its maximum potential. §6Dwarven§r §6metallurgy§r and §6elemental manipulation§r impresses human §cengineers§r, and many believe there is some physical law at work; however most consider it a pseudoscience, unreliable and thus unusable.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "33:10": {
+      "questID:3": 34,
+      "preRequisites:11": [
+        33
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "rats:rat_upgrade_dragon",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Kobold Lore",
+          "desc:8": "§dKobolds§r are cursed §5dragonkin§r, thus hated by their predecessors and thought to be an ill omen, a source of ruin, and the inevitable destruction of dragon kind should their \"disease\" spread. \n\nIn reality, they aren’t contagious but superstition makes dragonkin inclined to kill kobolds on-sight. Kobolds allied with §chumans§r, offering their expertise in §dmechanical processes§r and §c§delemental energies§r. Rumor has it that kobolds were responsible for the discovery of steam technology which both humans and §6dwarves§r have used to great effect in their works. Kobolds are the creators of the §dPOYSE§r Skill.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "34:10": {
+      "questID:3": 35,
+      "preRequisites:11": [
+        6,
+        31
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "engineersdecor:treated_wood_crafting_table",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "NOR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Sign up for Stevannia (Choose 1)",
+          "desc:8": "§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r\n\nSign up for §cStevannia§r today, and our munificent leader Herobrine might not destroy you!\n\n§l§7Discipline Skill:§r §cSKILLZ\n\n§l§7Themes of Interest:§r Heavy machinery, technological innovations, physics/natural-law-abiding processes, early-20th-century technology, technological solutions and emulations of magical phenomena, convenience, ease-of-access\n\n§l§7Combat Specialty:§r Ranged\n\n§l§7Species:§r §9§cHumans§r, §9§4§eGnomes§r\n\n§l§7Favored Dimension:§r §5The Aether§r; §l§7Opposed Dimension:§r §5The Erebus§r\n\n§l§7Preferred Biomes:§r §bBamboo Forest§r, §bBoreal Forest§r, §bCherry Blossom Grove§r, §bConiferous Forest§r, §bEerie§r, §bEucalyptus Forest§r, §bFlower Island§r, §bGrove§r, §bJungle§r, §bJungle Hills§r, §bMutated Jungle§r, §bLavender Fields§r, §bLush Desert§r, §bMagical Forest§r, §bMushroom Island§r, §bFlower Forest§r, §bMystic Grove§r, §bOasis§r, §bOminous Woods§r, §bOvergrown Cliffs§r, §bRainforest§r, §bRoofed Forest§r, §bSacred Springs§r, §bTemperate Rainforest§r, §bTropical Island§r, §bTropical Rainforest \n§l§r\n§7Associated Mods:§r §eImmersive Engineering§r, §eIndustrial Renewal§r, §eMulti-Storage§r, §eZetta Industries§r, §eSecret Rooms§r,§e Project Red\n\n§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        },
+        "1:10": {
+          "index:3": 1,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "This quest will give you the first two traits in the §6§cSKILLZ§r tree for free (Essentials of Engineering and Armaments). It will also give you two exclusive §6§cSKILLZ§r ranged weapons. \n\n§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r",
+          "viaPlayer:1": 0,
+          "index:3": 0,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "/reskillable incrementskill @p extraskills.skillz 5\n/reskillable toggletrait @p compatskills.skillz1\n/reskillable toggletrait @p compatskills.skillz2"
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "spartanweaponry:javelin_copper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "spartanweaponry:throwing_knife_copper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -1476,9 +2585,212 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -12,
+          "x:3": 12,
+          "y:3": -72,
+          "id:3": 4,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": -36,
+          "id:3": 5,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 12,
+          "id:3": 6,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": -24,
+          "id:3": 8,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": -24,
           "id:3": 9,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": -24,
+          "id:3": 10,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 48,
+          "x:3": -84,
+          "y:3": -120,
+          "id:3": 12,
+          "sizeY:3": 48
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": -60,
+          "id:3": 13,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 12,
+          "id:3": 14,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 24,
+          "id:3": 15,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 156,
+          "id:3": 16,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 132,
+          "id:3": 17,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 84,
+          "id:3": 18,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 96,
+          "id:3": 19,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": 120,
+          "id:3": 20,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 132,
+          "id:3": 21,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 96,
+          "id:3": 22,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 48,
+          "id:3": 23,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 48,
+          "x:3": 72,
+          "y:3": -120,
+          "id:3": 24,
+          "sizeY:3": 48
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -108,
+          "id:3": 25,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": -60,
+          "id:3": 26,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": -108,
+          "id:3": 27,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 120,
+          "id:3": 28,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 24,
+          "id:3": 29,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 72,
+          "id:3": 30,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 36,
+          "id:3": 31,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 108,
+          "id:3": 32,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 156,
+          "y:3": -72,
+          "id:3": 33,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": 156,
+          "y:3": -36,
+          "id:3": 34,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": 120,
+          "y:3": 12,
+          "id:3": 35,
           "sizeY:3": 24
         }
       },
@@ -1486,7 +2798,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Intro Quests",
+          "name:8": "Single Player Tutorial",
           "icon:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
@@ -1504,15 +2816,7 @@
       "order:3": 0
     },
     "4:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 0,
-          "id:3": 10,
-          "sizeY:3": 24
-        }
-      },
+      "quests:9": {},
       "lineID:3": 4,
       "properties:10": {
         "betterquesting:10": {
@@ -1581,29 +2885,7 @@
       "order:3": 6
     },
     "7:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 0,
-          "id:3": 4,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 0,
-          "id:3": 5,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 0,
-          "id:3": 6,
-          "sizeY:3": 24
-        }
-      },
+      "quests:9": {},
       "lineID:3": 7,
       "properties:10": {
         "betterquesting:10": {
@@ -1659,7 +2941,7 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:book",
+            "id:8": "minecraft:chest",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -1782,7 +3064,7 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:book",
+            "id:8": "minecraft:diamond_sword",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -1802,7 +3084,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "party_enable:1": 1,
