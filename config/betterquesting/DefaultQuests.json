@@ -2061,6 +2061,15 @@
               },
               "id:8": "minecraft:leather_helmet",
               "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 2,
+                    "id:2": 34
+                  }
+                },
+                "RepairCost:3": 1
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -2070,6 +2079,15 @@
               },
               "id:8": "minecraft:leather_chestplate",
               "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 2,
+                    "id:2": 34
+                  }
+                },
+                "RepairCost:3": 1
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -2079,6 +2097,15 @@
               },
               "id:8": "minecraft:leather_leggings",
               "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 2,
+                    "id:2": 34
+                  }
+                },
+                "RepairCost:3": 1
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -2088,6 +2115,15 @@
               },
               "id:8": "minecraft:leather_boots",
               "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 2,
+                    "id:2": 34
+                  }
+                },
+                "RepairCost:3": 1
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
