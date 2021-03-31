@@ -9,7 +9,13 @@ import mods.transmutationalchemy.mixer;
 import mods.inspirations.Cauldron;
 import crafttweaker.item.IItemStack;
 
-
+//***************************
+//		ITEM TOOLTIPS
+//***************************
+<waystones:return_scroll>.addTooltip(format.gray("A single-use scroll that returns you to the last waystone that you placed, yourself."));
+<waystones:bound_scroll>.addTooltip(format.gray("Right click on a waystone to bind. A single-use scroll that will return to the bound waystone when used."));
+<waystones:warp_scroll>.addTooltip(format.gray("A single-use scroll that behaves like the Warp Stone, but does not have the Warp Stone's cooldown. Allows you to warp to previously-visited Waystones. "));
+<waystones:warp_stone>.addTooltip(format.gray("Allows you to warp to previously-visited Waystones. Has a cooldown."));
 
 //***************************
 //		RECIPE CONFLICTS
