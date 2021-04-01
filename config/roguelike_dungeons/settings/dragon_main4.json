@@ -3,11 +3,12 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Bamboo Forest",
-			"Flower Island",
-			"JungleEdge M",
-			"Oasis",
-			"Roofed Forest"
+			"biomesoplenty:bamboo_forest",
+			"biomesoplenty:flower_island",
+			"biomesoplenty:oasis",
+			"biomesoplenty:tropical_rainforest",
+			"minecraft:mutated_jungle_edge",
+			"minecraft:roofed_forest"
 		]
 	},
 	"inherit": [

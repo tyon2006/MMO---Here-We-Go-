@@ -3,10 +3,10 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Highland",
-			"Mountain",
-			"Mega Spruce Taiga",
-			"Taiga M"
+			"biomesoplenty:highland",
+			"biomesoplenty:mountain",
+			"minecraft:mutated_redwood_taiga",
+			"minecraft:mutated_taiga"
 		]
 	},
 	"inherit": [

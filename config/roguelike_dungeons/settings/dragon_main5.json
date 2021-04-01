@@ -3,10 +3,10 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Eerie",
-			"Ominous Woods",
-			"Overgrown Cliffs",
-			"Tropical Island"
+			"biomesoplenty:ominous_woods",
+			"biomesoplenty:overgrown_cliffs",
+			"biomesoplenty:tropical_island",
+			"thaumcraft:eerie"
 		]
 	},
 	"inherit": [

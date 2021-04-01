@@ -3,13 +3,13 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Cherry Blossom Grove",
-			"Coniferous Forest",
-			"Eucalyptus Forest",
-			"JungleHills",
-			"Lush Desert",
-			"Magical Forest",
-			"Temperate Rainforest"
+			"biomesoplenty:cherry_blossom_grove",
+			"biomesoplenty:coniferous_forest",
+			"biomesoplenty:eucalyptus_forest",
+			"biomesoplenty:lush_desert",
+			"biomesoplenty:temperate_rainforest",
+			"minecraft:jungle_hills",
+			"thaumcraft:magical_forest"
 		]
 	},
 	"inherit": [

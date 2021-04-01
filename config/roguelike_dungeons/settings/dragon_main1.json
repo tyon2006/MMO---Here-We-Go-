@@ -3,11 +3,11 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Boreal Forest",
-			"Grove",
-			"Jungle",
-			"Flower Forest",
-			"Jungle M"
+			"biomesoplenty:boreal_forest",
+			"biomesoplenty:grove",
+			"minecraft:jungle",
+			"minecraft:mutated_forest",
+			"minecraft:mutated_jungle"
 		]
 	},
 	"inherit": [

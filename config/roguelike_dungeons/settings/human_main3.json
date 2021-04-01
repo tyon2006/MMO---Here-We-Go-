@@ -3,12 +3,12 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Bog",
-			"Lush Swamp",
-			"Mesa Plateau M",
-			"Mesa Plateau F M",
-			"Outback",
-			"Steppe"
+			"biomesoplenty:bog",
+			"biomesoplenty:lush_swamp",
+			"biomesoplenty:outback",
+			"biomesoplenty:steppe",
+			"minecraft:mutated_mesa_clear_rock",
+			"minecraft:mutated_mesa_rock"
 		]
 	},
 	"inherit": [

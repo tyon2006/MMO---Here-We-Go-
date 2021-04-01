@@ -3,13 +3,13 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Alps",
-			"AlpsFoothills",
-			"Crag",
-			"Extreme Hills+ M",
-			"RedwoodForestEdge",
-			"Shield",
-			"Snowy Forest"
+			"biomesoplenty:alps",
+			"biomesoplenty:alps_foothills",
+			"biomesoplenty:crag",
+			"biomesoplenty:redwood_forest_edge",
+			"biomesoplenty:shield",
+			"biomesoplenty:snowy_forest",
+			"minecraft:mutated_extreme_hills_with_trees"
 		]
 	},
 	"inherit": [

@@ -3,13 +3,13 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Extreme Hills+",
-			"Ice Plains",
-			"Maple Woods",
-			"MountainFoothills",
-			"Extreme Hills M",
-			"Seasonal Forest",
-			"Volcanic Island"
+			"biomesoplenty:maple_woods",
+			"biomesoplenty:mountain_foothills",
+			"biomesoplenty:seasonal_forest",
+			"biomesoplenty:volcanic_island",
+			"minecraft:extreme_hills_with_trees",
+			"minecraft:ice_flats",
+			"minecraft:mutated_extreme_hills"
 		]
 	},
 	"inherit": [

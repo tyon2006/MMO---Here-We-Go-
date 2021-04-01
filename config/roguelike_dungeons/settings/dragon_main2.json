@@ -3,13 +3,13 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"JungleEdge",
-			"Lavender Fields",
-			"MushroomIsland",
-			"MushroomIslandShore",
-			"Mystic Grove",
-			"Rainforest",
-			"Sacred Springs"
+			"biomesoplenty:lavender_fields",
+			"biomesoplenty:mystic_grove",
+			"biomesoplenty:rainforest",
+			"biomesoplenty:sacred_springs",
+			"minecraft:jungle_edge",
+			"minecraft:mushroom_island",
+			"minecraft:mushroom_island_shore"
 		]
 	},
 	"inherit": [

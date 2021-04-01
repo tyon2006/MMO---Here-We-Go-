@@ -3,11 +3,11 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Fen",
-			"Savanna Plateau M",
-			"Swampland M",
-			"Shrubland",
-			"Wetland"
+			"biomesoplenty:fen",
+			"biomesoplenty:shrubland",
+			"biomesoplenty:wetland",
+			"minecraft:mutated_savanna_rock",
+			"minecraft:mutated_swampland"
 		]
 	},
 	"inherit": [

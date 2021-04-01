@@ -3,12 +3,12 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Dead Swamp",
-			"DesertHills",
-			"Mesa Plateau F",
-			"Desert M",
-			"Quagmire",
-			"Wasteland"
+			"biomesoplenty:dead_swamp",
+			"biomesoplenty:quagmire",
+			"biomesoplenty:wasteland",
+			"minecraft:desert_hills",
+			"minecraft:mesa_rock",
+			"minecraft:mutated_desert"
 		]
 	},
 	"inherit": [

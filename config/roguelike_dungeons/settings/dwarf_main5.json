@@ -3,13 +3,13 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Glacier",
-			"Ice Mountains",
-			"Ice Plains Spikes",
-			"Redwood Taiga Hills M",
-			"RedwoodForest",
-			"SnowyTundra",
-			"Tundra"
+			"biomesoplenty:glacier",
+			"biomesoplenty:redwood_forest",
+			"biomesoplenty:snowy_tundra",
+			"biomesoplenty:tundra",
+			"minecraft:ice_mountains",
+			"minecraft:mutated_ice_flats",
+			"minecraft:mutated_redwood_taiga_hills"
 		]
 	},
 	"inherit": [

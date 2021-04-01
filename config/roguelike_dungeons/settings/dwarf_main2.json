@@ -3,11 +3,11 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Cold Desert",
-			"Extreme Hills",
-			"Extreme Hills Edge",
-			"Snowy Coniferous Forest",
-			"TaigaHills"
+			"biomesoplenty:cold_desert",
+			"biomesoplenty:snowy_coniferous_forest",
+			"minecraft:extreme_hills",
+			"minecraft:smaller_extreme_hills",
+			"minecraft:taiga_hills"
 		]
 	},
 	"inherit": [

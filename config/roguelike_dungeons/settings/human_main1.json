@@ -3,12 +3,12 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Dead Forest",
-			"Desert",
-			"Gravel Beach",
-			"Marsh",
-			"Mesa (Bryce)",
-			"Swampland"
+			"biomesoplenty:dead_forest",
+			"biomesoplenty:gravel_beach",
+			"biomesoplenty:marsh",
+			"minecraft:desert",
+			"minecraft:mutated_mesa",
+			"minecraft:swampland"
 		]
 	},
 	"inherit": [

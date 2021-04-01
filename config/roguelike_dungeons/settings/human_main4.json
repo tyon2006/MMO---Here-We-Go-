@@ -3,12 +3,12 @@
 	"exclusive": true,
 	"criteria": {
 		"biomes": [
-			"Bayou",
-			"Mangrove",
-			"Mesa",
-			"Mesa Plateau",
-			"Moor",
-			"Xeric Shrubland"
+			"biomesoplenty:bayou",
+			"biomesoplenty:mangrove",
+			"biomesoplenty:moor",
+			"biomesoplenty:xeric_shrubland",
+			"minecraft:mesa",
+			"minecraft:mesa_clear_rock"
 		]
 	},
 	"inherit": [
