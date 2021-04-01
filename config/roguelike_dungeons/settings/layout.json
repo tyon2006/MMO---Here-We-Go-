@@ -1,8 +1,0 @@
-{
-	"name" : "demo:layout",
-	"num_rooms" : [10, 10, 10, 10, 10],
-	"scatter" : [11, 11, 11, 11, 11],
-	"layouts" : [
-		{"level" : [0, 1, 2, 3, 4], "type" : "mst"}
-	]
-}
