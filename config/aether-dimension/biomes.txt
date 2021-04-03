@@ -1,0 +1,7 @@
+#Format is modId:biomeRegistryName=biomeWeight
+#Example being minecraft:forest=100
+
+kathairis:mystic desert=10
+kathairis:mystic forest=10
+kathairis:mystic plains=10
+kathairis:mystic swamps=10
