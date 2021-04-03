@@ -1,0 +1,15 @@
+{
+	"name": "Nether Biomes",
+	"icon": "minecraft:nether_star",
+	"category": "nether",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Players should venture into the Nether once they've invested in a trait that grants access to the dimension. Practitioners of all disciplines must eventually seek the resources of the Nether to continue their progression. "
+		},
+		{
+			"type": "text",
+			"text": "Level 3 Nether Biomes$(li)Arctic Abyss$(li)Corrupted Sands$(li)Fungi Forest$(li)Hell$(li)Phantasmagoric Inferno$(li)Ruthless Sands$(li)Torrid Wasteland$(li)Undergarden$(li)Visceral Heap"
+		}
+	]
+}

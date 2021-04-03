@@ -1,0 +1,15 @@
+{
+	"name": "End Biomes",
+	"icon": "minecraft:ender_pearl",
+	"category": "end",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Players should venture into the End once they've invested in a trait that grants access to the dimension. Practitioners of all disciplines must eventually seek the resources of the End to continue their progression. "
+		},
+		{
+			"type": "text",
+			"text": "Level 4 End Biomes$(li)The End$(li)The Void$(li)Acid Plains$(li)Stygian Forest"
+		}
+	]
+}

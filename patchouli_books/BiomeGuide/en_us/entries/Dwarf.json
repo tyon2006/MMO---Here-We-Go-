@@ -1,0 +1,31 @@
+{
+	"name": "Dwarf Biomes",
+	"icon": "embers:dust_ember",
+	"category": "overworld",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Dwarves and practitioners of BAWLS prefer tall, remote, and defensible biomes and have a tendency to carve their homes directly into rock walls on the surface and under the ground. Dwarves draw their strength from the Sun, the Moon, and Bedrock. Fortifying themselves in mountains and less habitable regions allow them to focus on being close to the sources of their power."
+		},
+		{
+			"type": "text",
+			"text": "Level 1 Biomes$(li)Highland$(li)Mega Spruce Taiga$(li)Mountain$(li)Taiga M"
+		},
+		{
+			"type": "text",
+			"text": "Level 2 Biomes$(li)Cold Desert$(li)Extreme Hills$(li)Extreme Hills Edge$(li)Snowy Coniferous Forest$(li)TaigaHills"
+		},
+		{
+			"type": "text",
+			"text": "Level 3 Biomes$(li)Extreme Hills M$(li)Extreme Hills+$(li)Ice Plains$(li)Maple Woods$(li)MountainFoothills$(li)Seasonal Forest$(li)Volcanic Island"
+		},
+		{
+			"type": "text",
+			"text": "Level 4 Biomes$(li)Alps$(li)AlpsFoothills$(li)Crag$(li)Extreme Hills+ M$(li)RedwoodForestEdge$(li)Shield$(li)Snowy Forest"
+		},
+		{
+			"type": "text",
+			"text": "Level 5 Biomes$(li)Glacier$(li)Ice Mountains$(li)Ice Plains Spikes$(li)Redwood Taiga Hills M$(li)RedwoodForest$(li)SnowyTundra$(li)Tundra"
+		}
+	]
+}

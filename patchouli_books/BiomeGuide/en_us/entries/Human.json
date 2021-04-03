@@ -1,0 +1,31 @@
+{
+	"name": "Human Biomes",
+	"icon": "immersiveengineering:wirecoil:2",
+	"category": "overworld",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Humans and practitioners of SKILLZ reside mainly in deserts, swamps, and sparse biomes. As the last of the dominant races to mature, the most habitable biomes were already claimed by Dragons and Dwarves when they came to power. Humans were forced to adapt to less desirable climates. Their seemingly relentless adapability is what maintained their position among the dominant races."
+		},
+		{
+			"type": "text",
+			"text": "Level 1 Biomes$(li)Dead Forest$(li)Desert$(li)Gravel Beach$(li)Marsh$(li)Mesa (Bryce)$(li)Swampland"
+		},
+		{
+			"type": "text",
+			"text": "Level 2 Biomes$(li)Fen$(li)Savanna Plateau M$(li)Shrubland$(li)Swampland M$(li)Wetland"
+		},
+		{
+			"type": "text",
+			"text": "Level 3 Biomes$(li)Bog$(li)Lush Swamp$(li)Mesa Plateau F M$(li)Mesa Plateau M$(li)Outback$(li)Steppe"
+		},
+		{
+			"type": "text",
+			"text": "Level 4 Biomes$(li)Bayou$(li)Mangrove$(li)Mesa$(li)Mesa Plateau$(li)Moor$(li)Xeric Shrubland"
+		},
+		{
+			"type": "text",
+			"text": "Level 5 Biomes$(li)Dead Swamp$(li)Desert M$(li)DesertHills$(li)Mesa Plateau F$(li)Quagmire$(li)Wasteland"
+		}
+	]
+}

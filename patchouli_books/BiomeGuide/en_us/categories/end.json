@@ -1,0 +1,6 @@
+{
+	"name": "End Biomes",
+	"description": "All End biomes are set to a tier 4 difficulty. Players cannot enter the End until they invest in a Trait that allows them to enter it. For more information on this, read the description of the Traits in your preferred primary Skill tree.",
+	"icon": "minecraft:end_stone",
+	"sortnum": 2
+}

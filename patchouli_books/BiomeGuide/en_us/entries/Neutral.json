@@ -1,0 +1,31 @@
+{
+	"name": "Neutral Biomes",
+	"icon": "minecraft:emerald",
+	"category": "overworld",
+	"pages": [
+		{
+			"type": "text",
+			"text": "There are many biomes still unclaimed by Dragons, Dwarves, and Humans. These remaining biomes span from mild and meadowed to cool and forested. Here you will find many more Villagers and Illagers and a wide variety of creatures, but fewer remnants of the modern dominant races."
+		},
+		{
+			"type": "text",
+			"text": "Level 1 Biomes$(li)Taiga$(li)White Beach"
+		},
+		{
+			"type": "text",
+			"text": "Level 2 Biomes$(li)Birch Forest Hills$(li)Birch Forest M$(li)Dried Reef$(li)ForestHills$(li)FrozenOcean$(li)Meadow$(li)Pasture$(li)Prairie$(li)Savanna M"
+		},
+		{
+			"type": "text",
+			"text": "Level 3 Biomes$(li)Birch Forest Hills M$(li)Cold Taiga$(li)Coral Reef$(li)Flower Field$(li)Kelp Forest$(li)Land of Lakes$(li)Mega Taiga Hills$(li)Sunflower Plains"
+		},
+		{
+			"type": "text",
+			"text": "Level 4 Biomes$(li)Chaparral$(li)Cold Taiga Hills$(li)Cold Taiga M$(li)Mega Taiga$(li)Woodland"
+		},
+		{
+			"type": "text",
+			"text": "Level 5 Biomes$(li)Deep Ocean$(li)Roofed Forest M$(li)Savanna Plateau"
+		}
+	]
+}

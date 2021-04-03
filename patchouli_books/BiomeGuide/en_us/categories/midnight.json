@@ -1,0 +1,6 @@
+{
+	"name": "Midnight Biomes",
+	"description": "All Midnight biomes are set to a tier 6 difficulty. Players cannot enter the Midnight until they invest in a Trait that allows them to enter it. For more information on this, read the description of the Traits in your preferred primary Skill tree.",
+	"icon": "midnight:midnight_mycelium",
+	"sortnum": 3
+}

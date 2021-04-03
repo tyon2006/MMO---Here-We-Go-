@@ -1,0 +1,10 @@
+{
+	"name": "Biome Guide",
+	"landing_text": "This book will help you understand which biomes are favored by what disciplines and their assigned difficulty level.",
+	"version": 1,
+	"advancement_namespaces": [
+		"mmolg"
+	],
+	"model": "minecraft:writable_book",
+	"creative_tab": "misc"
+}

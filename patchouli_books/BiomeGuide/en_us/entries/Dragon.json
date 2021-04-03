@@ -1,0 +1,31 @@
+{
+	"name": "Dragon Biomes",
+	"icon": "thaumcraft:salis_mundus",
+	"category": "overworld",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Dragons and practitioners of GRAYCE prefer warm, verdent climates and those rich with natural magic. The oldest of the races, Dragons were able to stake their claim in their preferred biomes with little resistance. "
+		},
+		{
+			"type": "text",
+			"text": "Level 1 Biomes$(li)Boreal Forest$(li)Grove$(li)Jungle$(li)Flower Forest$(li)Jungle M"
+		},
+		{
+			"type": "text",
+			"text": "Level 2 Biomes$(li)Lavender Fields$(li)Mystic Grove$(li)Rainforest$(li)Sacred Springs$(li)JungleEdge$(li)MushroomIsland$(li)MushroomIslandShore"
+		},
+		{
+			"type": "text",
+			"text": "Level 3 Biomes$(li)Cherry Blossom Grove$(li)Coniferous Forest$(li)Eucalyptus Forest$(li)Lush Desert$(li)Temperate Rainforest$(li)JungleHills$(li)Magical Forest"
+		},
+		{
+			"type": "text",
+			"text": "Level 4 Biomes$(li)Bamboo Forest$(li)Flower Island$(li)Oasis$(li)Tropical Rainforest$(li)JungleEdge M$(li)Roofed Forest"
+		},
+		{
+			"type": "text",
+			"text": "Level 5 Biomes$(li)Ominous Woods$(li)Overgrown Cliffs$(li)Tropical Island$(li)Eerie"
+		}
+	]
+}

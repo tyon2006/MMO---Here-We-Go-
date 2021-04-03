@@ -1,0 +1,15 @@
+{
+	"name": "Erebus Biomes",
+	"icon": "erebus:materials:9",
+	"category": "erebus",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Players should venture into the Erebus once they've invested in a trait that grants access to the dimension. Practitioners of BAWLS and SKILLZ must eventually seek the resources of the Erebus to continue their progression. "
+		},
+		{
+			"type": "text",
+			"text": "Level 6 Erebus Biomes$(li)Elysian Fields$(li)Elysian Forest$(li)Fungal Forest$(li)Petrified Forest$(li)Submerged Swamp$(li)Subterranean Savannah$(li)Ulterior Outback$(li)Underground Jungle$(li)Volcanic Desert"
+		}
+	]
+}

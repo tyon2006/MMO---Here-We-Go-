@@ -1,0 +1,15 @@
+{
+	"name": "Midnight Biomes",
+	"icon": "midnight:dark_pearl",
+	"category": "midnight",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Players should venture into the Midnight once they've invested in a trait that grants access to the dimension. Practitioners of GRAYCE and BAWLS must eventually seek the resources of the Midnight to continue their progression. "
+		},
+		{
+			"type": "text",
+			"text": "Level 6 Midnight Biomes$(li)Black Ridge$(li)Crystal Spires$(li)Deceitful Bog$(li)Fungi Forest$(li)Hilly Fungi Forest$(li)Hilly Vigilant Forest$(li)Night Plains$(li)Obscured Peaks$(li)Obscured Plateau$(li)Phantasmal Valley$(li)Runebush Grove$(li)Vigilant Forest$(li)Warped Fields"
+		}
+	]
+}

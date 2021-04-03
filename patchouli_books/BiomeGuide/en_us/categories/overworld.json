@@ -1,0 +1,6 @@
+{
+	"name": "Overworld Biomes",
+	"description": "Biomes in the Overworld difficulty level range is 1 - 5. Players should start in the lowest level possible and venture into higher level biomes when they have better gear and more traits. While some races have favored biomes, any biome can support every Skill.",
+	"icon": "minecraft:grass",
+	"sortnum": 0
+}

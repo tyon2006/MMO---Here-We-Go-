@@ -1,0 +1,15 @@
+{
+	"name": "Aether Biomes",
+	"icon": "aether:zanite_gemstone",
+	"category": "aether",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Players should venture into the Aether once they've invested in a trait that grants access to the dimension. Practitioners of SKILLZ and GRAYCE must eventually seek the resources of the Aether to continue their progression. "
+		},
+		{
+			"type": "text",
+			"text": "Level 6 Aether Biomes$(li)Aether$(li)Mystic Desert$(li)Mystic Forest$(li)Mystic Plains$(li)Mystic Swamps"
+		}
+	]
+}
