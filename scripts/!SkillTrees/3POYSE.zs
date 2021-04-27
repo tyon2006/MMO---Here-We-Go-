@@ -39,7 +39,7 @@ var poyse1req = [
 
 for item in poyse1req {
 	addRequirement(item, "trait|compatskills:poyse1");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse1tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse1tooltip));
 }
 
 //**************************************
@@ -55,7 +55,7 @@ var poyse2req = [
 
 for item in poyse2req {
 	addRequirement(item, "trait|compatskills:poyse2");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse2tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse2tooltip));
 }
 
 //**************************************
@@ -71,7 +71,7 @@ var poyse3req = [
 
 for item in poyse3req {
 	addRequirement(item, "trait|compatskills:poyse3");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse3tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse3tooltip));
 }
 
 //**************************************
@@ -86,7 +86,7 @@ var poyse4req = [
 
 for item in poyse4req {
 	addRequirement(item, "trait|compatskills:poyse4");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse4tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse4tooltip));
 }
 
 //**************************************
@@ -104,7 +104,7 @@ var poyse5req = [
 
 for item in poyse5req {
 	addRequirement(item, "trait|compatskills:poyse5");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse5tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse5tooltip));
 }
 
 //**************************************
@@ -120,7 +120,7 @@ var poyse6req = [
 
 for item in poyse6req {
 	addRequirement(item, "trait|compatskills:poyse6");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse6tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse6tooltip));
 }
 
 //**************************************
@@ -143,7 +143,7 @@ var poyse7req = [
 
 for item in poyse7req {
 	addRequirement(item, "trait|compatskills:poyse7");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse7tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse7tooltip));
 }
 
 //**************************************
@@ -166,7 +166,7 @@ var poyse8req = [
 
 for item in poyse8req {
 	addRequirement(item, "trait|compatskills:poyse8");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse8tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse8tooltip));
 }
 
 //**************************************
@@ -190,7 +190,7 @@ var poyse9req = [
 
 for item in poyse9req {
 	addRequirement(item, "trait|compatskills:poyse9");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse9tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse9tooltip));
 }
 
 //**************************************
@@ -211,6 +211,6 @@ var poyse10req = [
 
 for item in poyse10req {
 	addRequirement(item, "trait|compatskills:poyse10");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkAqua("POYSE - " + poyse10tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.lightPurple("POYSE - " + poyse10tooltip));
 }
 

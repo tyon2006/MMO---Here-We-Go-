@@ -39,7 +39,7 @@ var gnack1req = [
 
 for item in gnack1req {
 	addRequirement(item, "trait|compatskills:gnack1");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack1tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack1tooltip));
 }
 
 //**************************************
@@ -57,7 +57,7 @@ var gnack2req = [
 
 for item in gnack2req {
 	addRequirement(item, "trait|compatskills:gnack2");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack2tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack2tooltip));
 }
 
 //**************************************
@@ -76,7 +76,7 @@ var gnack3req = [
 
 for item in gnack3req {
 	addRequirement(item, "trait|compatskills:gnack3");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack3tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack3tooltip));
 }
 
 //**************************************
@@ -94,7 +94,7 @@ var gnack4req = [
 
 for item in gnack4req {
 	addRequirement(item, "trait|compatskills:gnack4");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack4tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack4tooltip));
 }
 
 //**************************************
@@ -111,7 +111,7 @@ var gnack5req = [
 
 for item in gnack5req {
 	addRequirement(item, "trait|compatskills:gnack5");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack5tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack5tooltip));
 }
 
 //**************************************
@@ -128,7 +128,7 @@ var gnack6req = [
 
 for item in gnack6req {
 	addRequirement(item, "trait|compatskills:gnack6");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack6tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack6tooltip));
 }
 
 //**************************************
@@ -144,7 +144,7 @@ var gnack7req = [
 
 for item in gnack7req {
 	addRequirement(item, "trait|compatskills:gnack7");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack7tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack7tooltip));
 }
 
 //**************************************
@@ -161,7 +161,7 @@ var gnack8req = [
 
 for item in gnack8req {
 	addRequirement(item, "trait|compatskills:gnack8");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack8tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack8tooltip));
 }
 
 //**************************************
@@ -195,7 +195,7 @@ var gnack9req = [
 
 for item in gnack9req {
 	addRequirement(item, "trait|compatskills:gnack9");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack9tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack9tooltip));
 }
 
 //**************************************
@@ -212,5 +212,5 @@ var gnack10req = [
 
 for item in gnack10req {
 	addRequirement(item, "trait|compatskills:gnack10");
-	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("GNACK - " + gnack10tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.darkRed("GNACK - " + gnack10tooltip));
 }

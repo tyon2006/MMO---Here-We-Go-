@@ -43,7 +43,7 @@ var nurve1req = [
 
 for item in nurve1req {
 	addRequirement(item, "trait|compatskills:nurve1");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve1tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve1tooltip));
 }
 
 //**************************************
@@ -61,7 +61,7 @@ var nurve2req = [
 
 for item in nurve2req {
 	addRequirement(item, "trait|compatskills:nurve2");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve2tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve2tooltip));
 }
 
 //**************************************
@@ -78,7 +78,7 @@ var nurve3req = [
 
 for item in nurve3req {
 	addRequirement(item, "trait|compatskills:nurve3");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve3tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve3tooltip));
 }
 
 //**************************************
@@ -95,7 +95,7 @@ var nurve4req = [
 
 for item in nurve4req {
 	addRequirement(item, "trait|compatskills:nurve4");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve4tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve4tooltip));
 }
 
 //**************************************
@@ -111,7 +111,7 @@ var nurve5req = [
 
 for item in nurve5req {
 	addRequirement(item, "trait|compatskills:nurve5");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve5tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve5tooltip));
 }
 
 //**************************************
@@ -128,7 +128,7 @@ var nurve6req = [
 
 for item in nurve6req {
 	addRequirement(item, "trait|compatskills:nurve6");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve6tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve6tooltip));
 }
 
 //**************************************
@@ -146,7 +146,7 @@ var nurve7req = [
 
 for item in nurve7req {
 	addRequirement(item, "trait|compatskills:nurve7");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve7tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve7tooltip));
 }
 
 //**************************************
@@ -163,7 +163,7 @@ var nurve8req = [
 
 for item in nurve8req {
 	addRequirement(item, "trait|compatskills:nurve8");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve8tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve8tooltip));
 }
 
 //**************************************
@@ -187,7 +187,7 @@ var nurve9req = [
 
 for item in nurve9req {
 	addRequirement(item, "trait|compatskills:nurve9");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve9tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve9tooltip));
 }
 
 //**************************************
@@ -205,7 +205,7 @@ var nurve10req = [
 
 for item in nurve10req {
 	addRequirement(item, "trait|compatskills:nurve10");
-	item.addTooltip(format.darkPurple("Requires: ") + format.darkGreen("NURVE - " + nurve10tooltip));
+	item.addTooltip(format.darkPurple("Requires: ") + format.yellow("NURVE - " + nurve10tooltip));
 }
 
 

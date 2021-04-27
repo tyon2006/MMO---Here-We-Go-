@@ -1,6 +1,25 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.PlayerBreakSpeedEvent;
+import crafttweaker.block.IBlock;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
+import mods.jei.JEI;
+import crafttweaker.player.IPlayer;
+import crafttweaker.event.ILivingEvent;
+import crafttweaker.world.IWorld;
+import crafttweaker.world.IWorldProvider;
+import crafttweaker.world.IWorldInfo;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.entity.IEntityDrop;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.contenttweaker.Commands;
+import crafttweaker.world.IBiome;
+import crafttweaker.block.IBlockState;
+import crafttweaker.event.EnderTeleportEvent;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.IEventCancelable;
 //import mods.compatskills.AnimalTameLock;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
@@ -50,6 +69,305 @@ var grayce19 = mods.compatskills.TraitCreator.createTrait("grayce19", 3, 3, "ext
 var grayce20 = mods.compatskills.TraitCreator.createTrait("grayce20", 4, 3, "extraskills:grayce", 2, "and|[extraskills:grayce|40]~[trait|compatskills:grayce16]");
 
 //grayce2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
+
+//setup dragon preferred biomes
+var biomeArray = ["Bamboo Forest", "Boreal Forest", "Cherry Blossom Grove", "Coniferous Forest", "Eucalyptus Forest", "Flower Island", "Grove", "Lavender Fields", "Lush Desert", "Mystic Grove", "Oasis", "Ominous Woods", "Overgrown Cliffs", "Rainforest", "Sacred Springs", "Temperate Rainforest", "Tropical Island", "Tropical Rainforest", "Jungle", "JungleEdge", "JungleHills", "MushroomIsland", "MushroomIslandShore", "Flower Forest", "Jungle M", "JungleEdge M", "Roofed Forest", "Eerie", "Magical Forest"] as string[];
+
+//heals the player after a kill
+grayce1.onKillMob = function(event as crafttweaker.event.EntityLivingDeathEvent) 
+{
+    if (event.entity.world.isRemote()) 
+    {
+        return;
+    }
+    
+    if (event.entity.world.time % 1 == 0)  
+    {
+        if (event.damageSource.trueSource instanceof IPlayer) 
+        {
+            val player as IPlayer = event.damageSource.trueSource;
+            player.health = player.health + 0.5;
+        }
+    }
+};
+
+//deal extra player damage in preferred biomes
+grayce2.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+	//if isNull(player.currentItem) {
+	//	print("no item found in hand?");
+    //          return;
+    //      }
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+                {
+                        //print("found in biome");
+                        event.amount = event.amount * 1.05;
+                        //print(event.amount);
+                }
+            }
+    }
+};
+
+//dragon guard while crouching
+grayce3.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+	if (event.entity.world.isRemote()) 
+	{
+		return;
+    }
+   if (event.player.world.time % 1 == 0) 
+   {
+     val player as IPlayer = event.player;
+     if (player.isSneaking) 
+        player.addPotionEffect(<potion:midnight:dragon_guard>.makePotionEffect(1, 0));
+	}
+};
+
+//no damage on ender TP
+grayce4.onEnderTeleport = function(event as crafttweaker.event.EnderTeleportEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+        if (!event.isCanceled()) {
+            event.attackDamage = 0.0;
+        }
+};
+
+//gives player a thorns buff on 20% of ticks for 5 seconds
+grayce5.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+	//print("you just took damage from source:");
+	//print(event.damageSource.damageType);
+		
+    if(event.entity.world.time % 5 == 0) {
+        val player as IPlayer = event.entity;
+        player.addPotionEffect(<potion:wards:effect_thorns>.makePotionEffect(5 * 20, 0));
+    }
+};
+
+//give 5% more damage to EBW damage sources
+grayce6.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+
+	//print("damage type:");
+	//print(event.damageSource.damageType);
+	
+    if (event.damageSource.trueSource instanceof IPlayer && (event.damageSource.damageType == "wizardry_magic" || event.damageSource.damageType == "indirect_wizardry_magic"))
+    {
+			event.amount = event.amount * 1.05;	
+    }
+};
+
+//get full return on breaking glowstone
+grayce7.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<minecraft:glowstone_dust>] as IItemStack[];
+   for items in itemArray
+   {
+
+		for item in event.drops{
+			
+			if (items.displayName == item.stack.displayName) 
+			{
+					event.drops = [items*4%100];
+			}
+		}
+	}
+};
+
+//get full return on breaking sea lanterns
+grayce7.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<minecraft:prismarine_crystals>] as IItemStack[];
+   for items in itemArray
+   {
+
+		for item in event.drops{
+			
+			if (items.displayName == item.stack.displayName) 
+			{
+					event.drops = [items*5%100];
+					event.addItem(<minecraft:prismarine_shard>*4);
+			}
+		}
+	}
+};
+
+//break crystal flower to find shimmerpetal
+grayce8.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+	val player as IPlayer = event.player;
+   
+	//if !(player.currentItem.matches(<minecraft:diamond_pickaxe>))
+	//{
+	//	print("did not find shears in players hand for grayce8");
+	//	return;
+	//}
+
+	//print("found player for grayce8");
+	var itemArray = [<ebwizardry:crystal_flower>] as IItemStack[];
+	for items in itemArray {
+		//print("checking item in itemArray:");
+		//print(items.displayName);
+		for item in event.drops{
+			//print("checking item in event.drops:");
+			//print(item.stack.displayName);
+			if (items.displayName == item.stack.displayName) 
+			{
+				var randomInt = player.world.random.nextInt(100) as int;
+				//print("rolling chance:");
+				//print(randomInt);
+				if (randomInt <= 10) {
+						//print("adding a new item to drop");
+						event.drops = [<rusticthaumaturgy:shimmerpetal>%100];
+				}
+			}
+		}
+	}
+};
+	
+//gives player buff on ender tp
+grayce9.onEnderTeleport = function(event as crafttweaker.event.EnderTeleportEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+        if (event.entity instanceof IPlayer) {
+			val player as IPlayer = event.entity;
+			player.addPotionEffect(<potion:ebwizardry:font_of_mana>.makePotionEffect(120, 0));
+		}
+};
+
+//get cinnabar from suflur
+grayce10.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<soot:sulfur_clump>] as IItemStack[];
+   for items in itemArray
+   {
+		for item in event.drops {
+			if (items.displayName == item.stack.displayName) {
+					event.addItem(<thaumcraft:quicksilver>);
+			}
+		}
+	}
+};
+
+//give 10% more damage to EBW damage sources
+grayce11.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+
+	//print("damage type:");
+	//print(event.damageSource.damageType);
+	
+    if (event.damageSource.trueSource instanceof IPlayer && (event.damageSource.damageType == "wizardry_magic" || event.damageSource.damageType == "indirect_wizardry_magic"))
+    {
+			event.amount = event.amount * 1.10;	
+    }
+	
+};
+
+//get cinnabar from suflur
+grayce12.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<fossil:plant_fossil>] as IItemStack[];
+   for items in itemArray
+   {
+		for item in event.drops {
+			if (items.displayName == item.stack.displayName) {
+					event.addItem(<thaumcraft:amber>);
+			}
+		}
+	}
+};
+
+//reduce damage taken in favored biomes by 5%
+grayce13.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+	//print("you just took damage from source:");
+	//print(event.damageSource.damageType);
+			
+    val player as IEntityLivingBase = event.entity;
+    var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+    //print("player source and damage type match found");
+    for biomes in biomeArray 
+    {
+        if (playerBiome.name == biomes) 
+        {
+                //print("found in biome");
+                event.amount = event.amount * 0.95;
+                //print(event.amount);
+        }
+    }
+};
+
+//gives player buff on ender tp
+grayce14.onEnderTeleport = function(event as crafttweaker.event.EnderTeleportEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+        if (event.entity instanceof IPlayer) {
+			val player as IPlayer = event.entity;
+			player.addPotionEffect(<potion:ebwizardry:empowerment>.makePotionEffect(120, 0));
+		}
+};
+
+//deal extra player damage in preferred biomes
+grayce15.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+	//if isNull(player.currentItem) {
+	//	print("no item found in hand?");
+    //          return;
+    //      }
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+                {
+                        //print("found in biome");
+                        event.amount = event.amount * 1.05;
+                        //print(event.amount);
+                }
+            }
+    }
+};
+
+//give 10% more damage to EBW damage sources
+grayce16.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+
+	//print("damage type:");
+	//print(event.damageSource.damageType);
+	
+    if (event.damageSource.trueSource instanceof IPlayer && (event.damageSource.damageType == "wizardry_magic" || event.damageSource.damageType == "indirect_wizardry_magic"))
+    {
+			event.amount = event.amount * 1.10;	
+    }
+};
 
 //**************************************
 //							GRAYCE 1

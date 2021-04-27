@@ -1,6 +1,26 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.PlayerBreakSpeedEvent;
+import crafttweaker.block.IBlock;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
+import mods.jei.JEI;
+import crafttweaker.player.IPlayer;
+import crafttweaker.event.ILivingEvent;
+import crafttweaker.world.IWorld;
+import crafttweaker.world.IWorldProvider;
+import crafttweaker.world.IWorldInfo;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.entity.IEntityDrop;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.contenttweaker.Commands;
+import crafttweaker.world.IBiome;
+import crafttweaker.block.IBlockState;
+import crafttweaker.event.EnderTeleportEvent;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.player.IFoodStats;
 //import mods.compatskills.AnimalTameLock;
 
 //mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements),
@@ -51,6 +71,329 @@ var skillz20 = mods.compatskills.TraitCreator.createTrait("skillz20", 4, 3, "ext
 
 //skillz2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
 
+//setup human preferred biomes
+var biomeArray = ["Bayou", "Bog", "Dead Forest", "Dead Swamp", "Fen", "Gravel Beach", "Lush Swamp", "Mangrove", "Marsh", "Moor", "Outback", "Quagmire", "Shrubland", "Steppe", "Wasteland", "Wetland", "Xeric Shrubland", "Desert", "DesertHills", "Mesa", "Mesa Plateau", "Mesa Plateau F", "Desert M", "Mesa (Bryce)", "Mesa Plateau M", "Mesa Plateau F M", "Savanna Plateau M", "Swampland M", "Swampland"] as string[];
+
+//longer breath
+skillz1.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+    if (event.entity.world.isRemote()) 
+    {
+        return;
+    }
+	
+   if (event.player.world.time % 100 == 0) 
+   {
+     val player as IPlayer = event.player;
+     if (player.getAir() < 270 && player.getAir() >= 60) 
+     {
+        player.setAir(player.getAir() + 30);
+     }
+   }
+};
+
+//deal extra player damage in preferred biomes
+skillz2.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+        val player as IEntityLivingBase = event.entity;
+        var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+        //print("player source and damage type match found");
+        for biomes in biomeArray 
+        {
+            if (playerBiome.name == biomes) 
+            {
+                    //print("found in biome");
+                    event.amount = event.amount * 1.05;
+                    //print(event.amount);
+            }
+        }
+    }
+};
+
+//muffle while crouching
+skillz3.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+	if (event.entity.world.isRemote()) 
+	{
+		return;
+    }
+   if (event.player.world.time % 1 == 0) 
+   {
+     val player as IPlayer = event.player;
+     if (player.isSneaking) 
+        player.addPotionEffect(<potion:ebwizardry:muffle>.makePotionEffect(1, 0));
+	}
+};
+
+//extra coal on coal drop
+skillz4.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<minecraft:coal>] as IItemStack[];
+   for items in itemArray
+   {
+
+		for item in event.drops{
+			
+			if (items.displayName == item.stack.displayName) 
+			{
+					event.addItem(<minecraft:coal>);
+			}
+		}
+	}
+};
+
+//gives player a speed buff on 20% of ticks for 5 seconds
+skillz5.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+        }
+		
+    if(event.entity.world.time % 5 == 0) {
+        val player as IPlayer = event.entity;
+        player.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(5 * 20, 0));
+    }
+};
+
+
+//deal extra player damage in preferred biomes
+skillz6.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+	//if isNull(player.currentItem) {
+	//	print("no item found in hand?");
+    //          return;
+    //      }
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+                {
+                        //print("found in biome");
+                        event.amount = event.amount * 1.05;
+                        //print(event.amount);
+                }
+            }
+    }
+};
+
+//break granite into redstone
+skillz7.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+	val player as IPlayer = event.player;
+   
+	var itemArray = [<minecraft:stone:1>] as IItemStack[];
+	for items in itemArray {
+		//print("checking item in itemArray:");
+		//print(items.displayName);
+		for item in event.drops{
+			//print("checking item in event.drops:");
+			//print(item.stack.displayName);
+			if (items.displayName == item.stack.displayName) 
+			{
+				var randomInt = player.world.random.nextInt(100) as int;
+				//print("rolling chance:");
+				//print(randomInt);
+				if (randomInt <= 10) {
+						//print("adding a new item to drop");
+						event.drops = [<minecraft:redstone>*2%100];
+				}
+			}
+		}
+	}
+};
+
+//less hunger
+skillz8.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+    if (event.entity.world.isRemote()) 
+    {
+        return;
+    }
+	
+   if (event.player.world.time % 240 == 0) 
+   {
+     val player as IPlayer = event.player;
+	 
+	 print(player.foodStats.foodLevel);
+     if (player.foodStats.foodLevel < 10) 
+     {
+		player.foodStats.addStats(1, 0);
+		print("new food stats");
+		print(player.foodStats.foodLevel);
+     }
+   }
+};
+
+//take less damage from traps (cactus, fall, drown, fallingtree, inWall)
+skillz9.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+	//print("you just took damage from source:");
+	//print(event.damageSource.damageType);
+			
+	if ((event.damageSource.damageType == "cactus" || 
+	event.damageSource.damageType == "fall" || 
+	event.damageSource.damageType == "drown" || 
+	event.damageSource.damageType == "fallingtree" || 
+	event.damageSource.damageType == "inWall"))
+    {
+			event.amount = event.amount * 0.9;	
+    }
+};
+
+//blast protection while crouching
+skillz10.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+	if (event.entity.world.isRemote()) 
+	{
+		return;
+    }
+   if (event.player.world.time % 1 == 0) 
+   {
+     val player as IPlayer = event.player;
+     if (player.isSneaking) 
+        player.addPotionEffect(<potion:wards:effect_blast_protection>.makePotionEffect(1, 0));
+	}
+};
+
+//EXPLOSIA BULLETTO
+skillz11.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+
+	//print("damage type:");
+	//print(event.damageSource.damageType);
+	
+    //if (event.damageSource.trueSource instanceof IPlayer && (event.damageSource.damageType == "wizardry_magic" || event.damageSource.damageType == "indirect_wizardry_magic"))
+    if ((event.damageSource.damageType == "thrown" || 
+	event.damageSource.damageType == "explosion.player" || 
+	event.damageSource.damageType == "ieRevolver_casull" || 
+	event.damageSource.damageType == "ieRevolver_armorPiercing" || 
+	event.damageSource.damageType == "ieRevolver_silver" || 
+	event.damageSource.damageType == "ieRevolver_potion" || 
+	event.damageSource.damageType == "ieRevolver_dragonsbreath" || 
+	event.damageSource.damageType == "ieRevolver_buckshot"))
+	{
+			event.amount = event.amount * 1.10;	
+    }
+};
+
+//take less damage from traps (cactus, fall, drown, fallingtree, inWall)
+skillz12.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+	//print("you just took damage from source:");
+	//print(event.damageSource.damageType);
+			
+	if ((event.damageSource.damageType == "ieWireShock" || 
+	event.damageSource.damageType == "ieTesla" || 
+	event.damageSource.damageType == "dissolve"))
+    {
+			event.amount = event.amount * 0.9;	
+    }
+};
+
+skillz13.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+	//print("you just took damage from source:");
+	//print(event.damageSource.damageType);
+			
+	val player as IPlayer = event.entity;
+	if(player.health < 8) {
+			var randomInt = player.world.random.nextInt(100) as int;
+			//print("rolling chance:");
+			//print(randomInt);
+			if (randomInt <= 33) {
+				player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(1, 0));
+			}
+	}
+};
+
+//take less damage in preferred biome
+skillz14.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+
+	val player as IPlayer = event.entity;
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+				{
+					event.amount = event.amount * 0.95;	
+				}
+            }
+    }
+};
+
+//deal extra player damage in preferred biomes
+skillz15.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+	//if isNull(player.currentItem) {
+	//	print("no item found in hand?");
+    //          return;
+    //      }
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+                {
+                        //print("found in biome");
+                        event.amount = event.amount * 1.05;
+                        //print(event.amount);
+                }
+            }
+    }
+};
+
+//EXPLOSIA BULLETTO
+skillz16.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+
+    if ((event.damageSource.damageType == "thrown" || 
+	event.damageSource.damageType == "explosion.player" || 
+	event.damageSource.damageType == "ieRevolver_casull" || 
+	event.damageSource.damageType == "ieRevolver_armorPiercing" || 
+	event.damageSource.damageType == "ieRevolver_silver" || 
+	event.damageSource.damageType == "ieRevolver_potion" || 
+	event.damageSource.damageType == "ieRevolver_dragonsbreath" || 
+	event.damageSource.damageType == "ieRevolver_buckshot"))
+	{
+			event.amount = event.amount * 1.10;	
+    }
+};
 
 //**************************************
 //							SKILLZ 1

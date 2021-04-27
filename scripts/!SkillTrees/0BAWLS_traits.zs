@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerBreakSpeedEvent;
+import crafttweaker.block.IBlock;
 import mods.compatskills.TraitCreator;
 import mods.compatskills.Requirement.addRequirement;
 import mods.jei.JEI;
@@ -13,6 +14,12 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.entity.IEntityDrop;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Commands;
+import crafttweaker.world.IBiome;
+import crafttweaker.block.IBlockState;
+import crafttweaker.event.EnderTeleportEvent;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.IEventCancelable;
 
 
 //global dimension locking
@@ -76,15 +83,323 @@ var bawls20 = mods.compatskills.TraitCreator.createTrait("bawls20", 4, 3, "extra
 
 //bawls2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
 
-bawls1.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+//setup human preferred biomes
+var biomeArray = ["Alps", "AlpsFoothills", "Cold Desert", "Crag", "Glacier", "Highland", "Maple Woods", "Mountain", "MountainFoothills", "RedwoodForest", "RedwoodForestEdge", "Seasonal Forest", "Shield", "Snowy Coniferous Forest", "Snowy Forest", "SnowyTundra", "Tundra", "Volcanic Island", "Extreme Hills", "Extreme Hills+", "Ice Plains", "Ice Mountains", "Extreme Hills M", "Extreme Hills+ M", "Ice Plains Spikes", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Taiga M", "Extreme Hills Edge", "TaigaHills"] as string[];
+
+//give player clay drops from dirt
+bawls1.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+	val player as IPlayer = event.player;
+   
+	var itemArray = [<minecraft:dirt>, <biomesoplenty:dirt>] as IItemStack[];
+	for items in itemArray {
+		//print("checking item in itemArray:");
+		//print(items.displayName);
+		for item in event.drops{
+			//print("checking item in event.drops:");
+			//print(item.stack.displayName);
+			if (items.displayName == item.stack.displayName) 
+			{
+				var randomInt = player.world.random.nextInt(100) as int;
+				//print("rolling chance:");
+				//print(randomInt);
+				if (randomInt <= 10) {
+						//print("adding a new item to drop");
+						event.drops = [<minecraft:clay_ball>%100];
+				}
+			}
+		}
+	}
+};
+
+//deal extra player damage in preferred biomes
+bawls2.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+        val player as IEntityLivingBase = event.entity;
+        var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+        //print("player source and damage type match found");
+        for biomes in biomeArray 
+        {
+            if (playerBiome.name == biomes) 
+            {
+                    //print("found in biome");
+                    event.amount = event.amount * 1.05;
+                    //print(event.amount);
+            }
+        }
+    }
+};
+
+//knockback resist while crouching
+bawls3.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+    if (event.entity.world.isRemote()) 
+    {
+        return;
+    }
+   if (event.player.world.time % 1 == 0) 
+ {
+     val player as IPlayer = event.player;
+     if (player.isSneaking) 
+        player.addPotionEffect(<potion:quark:resilience>.makePotionEffect(1, 0));
+ }
+};
+
+//break basalt and obsidian into 
+bawls4.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+	val player as IPlayer = event.player;
+   
+	var itemArray = [<chisel:basalt2:7>, <minecraft:obsidian>, <quark:basalt>] as IItemStack[];
+	for items in itemArray {
+		//print("checking item in itemArray:");
+		//print(items.displayName);
+		for item in event.drops{
+			//print("checking item in event.drops:");
+			//print(item.stack.displayName);
+			if (items.displayName == item.stack.displayName) 
+			{
+				var randomInt = player.world.random.nextInt(100) as int;
+				//print("rolling chance:");
+				//print(randomInt);
+				if (randomInt <= 5) {
+						//print("adding a new item to drop");
+						event.addItem(<embers:dust_ember>);
+				}
+			}
+		}
+	}
+};
+
+//gives player a absorp 20% of ticks for 5 seconds
+bawls5.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
     if (event.entity.world.isRemote()) {
 			return;
         }
- 
-    if(event.entity.world.time % 10 == 0) {
+		
+    if(event.entity.world.time % 5 == 0) {
         val player as IPlayer = event.entity;
-        player.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(6 * 20, 0));
-        player.addPotionEffect(<potion:minecraft:absorption>.makePotionEffect(6 * 20, 0));
+        player.addPotionEffect(<potion:minecraft:health_boost>.makePotionEffect(5 * 20, 0));
+    }
+};
+
+//immunity to hotfloor
+bawls6.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+	//print("you just took damage from source:");
+	//print(event.damageSource.damageType);
+			
+	if ((event.damageSource.damageType == "hotfloor"))
+    {
+			event.amount = 0;	
+    }
+};
+
+//deal extra player damage in preferred biomes
+bawls7.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+    
+    //print("damage type:");
+    //print(event.damageSource.damageType);
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+        val player as IEntityLivingBase = event.entity;
+        var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+        //print("player source and damage type match found");
+        for biomes in biomeArray 
+        {
+            if (playerBiome.name == biomes) 
+            {
+                    //print("found in biome");
+                    event.amount = event.amount * 1.05;
+                    //print(event.amount);
+            }
+        }
+    }
+};
+
+//moar gems
+bawls8.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<minecraft:emerald>, <minecraft:quartz>, <thaumcraft:amber>, <iceandfire:sapphire_gem>, <minecraft:dye:4>, <minecraft:diamond>, <biomesoplenty:gem>, <biomesoplenty:gem:1>, <erebus:materials:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <minecraft:prismarine_shard>] as IItemStack[];
+   for items in itemArray
+   {
+
+		for item in event.drops{
+			
+			if (items.displayName == item.stack.displayName) 
+			{
+					event.addItem(item);
+			}
+		}
+	}
+};
+
+//take less damage in preferred biome
+bawls9.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+
+	val player as IPlayer = event.entity;
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+				{
+					event.amount = event.amount * 0.95;	
+				}
+            }
+    }
+};
+
+//get ember grit from ash block
+bawls10.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+   val player as IPlayer = event.player;
+   var itemArray = [<biomesoplenty:ash>] as IItemStack[];
+   for items in itemArray
+   {
+
+		for item in event.drops{
+			
+			if (items.displayName == item.stack.displayName) 
+			{
+					event.addItem(<embers:dust_ember>);
+			}
+		}
+	}
+};
+
+//knockback resist while crouching
+bawls11.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+    if (event.entity.world.isRemote()) 
+    {
+        return;
+    }
+   if (event.player.world.time % 1 == 0) 
+ {
+     val player as IPlayer = event.player;
+     if (player.isSneaking) 
+        player.addPotionEffect(<potion:potioncore:iron_skin>.makePotionEffect(1, 0));
+ }
+};
+
+//extinguishes fire
+bawls12.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent) 
+{
+    if (event.entity.world.isRemote()) 
+    {
+        return;
+    }
+	
+   if (event.player.world.time % 100 == 0) 
+   {
+     val player as IPlayer = event.player;
+     if (player.isBurning) 
+     {
+         player.extinguish();
+     }
+   }
+};
+
+//give 15% more damage to ember and witchburn
+bawls13.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+
+	//print("bawls 13 damage type:");
+	//print(event.damageSource.damageType);
+	
+    if (event.damageSource.trueSource instanceof IPlayer && (event.damageSource.damageType == "ember" || event.damageSource.damageType == "witchburn"))
+    {
+			event.amount = event.amount * 1.15;	
+    }
+	
+};
+
+//take less damage in preferred biome
+bawls14.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+    if (event.entity.world.isRemote()) {
+			return;
+    }
+
+	val player as IPlayer = event.entity;
+    
+    if (event.damageSource.trueSource instanceof IPlayer)
+    {
+            val player as IEntityLivingBase = event.entity;
+            var playerBiome = player.world.getBiome(event.entity.position) as IBiome;
+            //print("player source and damage type match found");
+            for biomes in biomeArray 
+            {
+                if (playerBiome.name == biomes) 
+				{
+					event.amount = event.amount * 0.95;	
+				}
+            }
+    }
+};
+
+//get ember grit from gold and copper ore
+bawls15.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent)
+{
+	val player as IPlayer = event.player;
+   
+	var itemArray = [<immersiveengineering:ore>, <minecraft:gold_ore>] as IItemStack[];
+	for items in itemArray {
+		//print("checking item in itemArray:");
+		//print(items.displayName);
+		for item in event.drops{
+			//print("checking item in event.drops:");
+			//print(item.stack.displayName);
+			if (items.displayName == item.stack.displayName) 
+			{
+				var randomInt = player.world.random.nextInt(100) as int;
+				//print("rolling chance:");
+				//print(randomInt);
+				if (randomInt <= 5) {
+						//print("adding a new item to drop");
+						event.addItem(<embers:dust_ember>);
+				}
+			}
+		}
+	}
+};
+
+//deal extra damage during the full moon
+bawls16.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent)
+{
+ val player as IPlayer = event.entity;
+	
+	//print("moon phase:");
+	//print(event.entity.world.getMoonPhase());
+    
+    if (event.entity.world.getMoonPhase() == 0)
+    {
+       {
+			//print("before increase");
+			//print(event.amount);
+			event.amount = event.amount * 1.20;
+			//print("after increase");
+			//print(event.amount);
+       }
     }
 };
 

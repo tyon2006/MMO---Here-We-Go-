@@ -1222,7 +1222,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Press ~ to Begin",
-          "desc:8": "Welcome to§2§2§6 MMO - Let\u0027s Go!§f We\u0027ll get right to it: This pack is different from anything you\u0027ve ever seen. We§r §l§rreally, §oreally, §lreally §rrecommend you play through this tutorial. It only takes a few minutes and you\u0027ll get some rewards for playing along.\n\n§cYou should not just close this window then run off and see what happens - §nYou\u0027ll die and it will suck.§r \n\nHit the §lClaim§l§r button below to complete this quest, then hit the §lBack§r button to be returned to the tutorial questline menu. From there, you can continue onto the next quest. \n "
+          "desc:8": "Welcome to§2§2§6 MMO - Let\u0027s Go!§f We\u0027ll get right to it: This pack is different from anything you\u0027ve ever seen. We§r §l§rreally, §lreally §rrecommend you play through this tutorial. It only takes a few minutes and you\u0027ll get some rewards for playing along.\n\n§cYou should not just close this window then run off and see what happens - §nYou\u0027ll die and it will suck.§r \n\nHit the §lClaim§l§r button below to complete this quest, then hit the §lBack§r button to be returned to the tutorial questline menu. From there, you can continue onto the next quest. \n "
         }
       },
       "tasks:9": {},
@@ -2283,7 +2283,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Almost There...",
-          "desc:8": "Arguably, getting you to the right starting biome is the single most important part of §aMMO - Let\u0027s Go! §r\n\nWith the way Minecraft spawning works, that\u0027s a tough feat, so we have to ask you to help us out with this one. To get you to the right biome, we need you to teleport yourself there with a command. \n\nUse the command §9/biomesop tpbiome \u003cbiomename\u003e§r to get you to the biome of your choice. Just replace \u003cbiomename\u003e with the fully qualified name of the biome you want. If you hit §9TAB§r while typing the command, it will help you with a list of options.\n\nWe recommend choosing tier 1 biome listed under the faction you chose in the previous quest. If you\u0027re still unsure, we\u0027ve got some samples below for each faction. You\u0027ll have to type this into chat yourself and run it.\n\n§6Dwarves of Dawholdt - BAWLS§r\n/biomesop tpbiome biomesoplenty:highland\n/biomesop tpbiome minecraft:mutated_redwood_taiga\n\n§5Dragons of the Mystic Accord - GRAYCE§r\n/biomesop tpbiome minecraft:jungle\n/biomesop tpbiome biomesoplenty:grove\n\n§cHumans of Stevannia - SKILLZ§r\n/biomesop tpbiome biomesoplenty:dead_forest\n/biomesop tpbiome minecraft:desert\n\nThe command can take a minute to run. Sometimes it doesn\u0027t work because the nearest instance of the biome you entered is too far for it to find. You will need to change which biome you want to go to and try again.\n\nWhen you\u0027re settled, finish this quest and use the command §9/sethome §rto make sure you spawn at home the next time you die. \n\n\n§n§r§o§8§7Look, we know this isn\u0027t perfect, but getting you to the right starting biome is absolutely necessary to set you up for success. Remember in the first quest where we said you\u0027d die a lot and it will suck? We were mostly talking about where to start.\n\n"
+          "desc:8": "Arguably, getting you to the right starting biome is the single most important part of §aMMO - Let\u0027s Go! §r\n\n§eNote, this quest only works in creative worlds that allow cheat commands. Complete and move on from this quest if your world isn\u0027t creative. You can still use the §9Biome Compass§e you received earlier in this quest line to go find a biome to call home.§r\n\nWith the way Minecraft spawning works, that\u0027s a tough feat, so we have to ask you to help us out with this one. To get you to the right biome, we need you to teleport yourself there with a command. \n\nUse the command §9/biomesop tpbiome \u003cbiomename\u003e§r to get you to the biome of your choice. Just replace \u003cbiomename\u003e with the fully qualified name of the biome you want. If you hit §9TAB§r while typing the command, it will help you with a list of options.\n\nWe recommend choosing tier 1 biome listed under the faction you chose in the previous quest. If you\u0027re still unsure, we\u0027ve got some samples below for each faction. You\u0027ll have to type this into chat yourself and run it.\n\n§6Dwarves of Dawholdt - BAWLS§r\n/biomesop tpbiome biomesoplenty:highland\n/biomesop tpbiome minecraft:mutated_redwood_taiga\n\n§5Dragons of the Mystic Accord - GRAYCE§r\n/biomesop tpbiome minecraft:jungle\n/biomesop tpbiome biomesoplenty:grove\n\n§cHumans of Stevannia - SKILLZ§r\n/biomesop tpbiome biomesoplenty:dead_forest\n/biomesop tpbiome minecraft:desert\n\nThe command can take a minute to run. Sometimes it doesn\u0027t work because the nearest instance of the biome you entered is too far for it to find. You will need to change which biome you want to go to and try again.\n\nWhen you\u0027re settled, finish this quest and use the command §9/sethome §rto make sure you spawn at home the next time you die. \n\n\n§n§r§o§8§7Look, we know this isn\u0027t perfect, but getting you to the right starting biome is absolutely necessary to set you up for success. Remember in the first quest where we said you\u0027d die a lot and it will suck? We were mostly talking about where to start.\n\n"
         }
       },
       "tasks:9": {
@@ -2615,6 +2615,65 @@
           }
         }
       }
+    },
+    "36:10": {
+      "questID:3": 36,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "naturescompass:naturescompass",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Find a Biome using Nature\u0027s Compass",
+          "desc:8": "Searching for a specific biome can be really challenging. Finding the right biome is an essential part of §aMMO - Let\u0027s Go§n§n§r, so we\u0027ve included a special compass to help. This item is called §9Nature\u0027s Compass§r.\n\nTo use the §9Nature\u0027s Compass§r, hold it in your hand and right-click. You\u0027ll be presented with a list of biomes that the compass can help you find. Scroll or use the search box to find a specific biome, and if the biome is reasonably close, the compass will point to your selection. \n\nTake a moment after completing this quest to get familiar with the §9Nature\u0027s Compass§r."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "naturescompass:naturescompass",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -2904,6 +2963,13 @@
           "x:3": 120,
           "y:3": 12,
           "id:3": 35,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 60,
+          "id:3": 36,
           "sizeY:3": 24
         }
       },
