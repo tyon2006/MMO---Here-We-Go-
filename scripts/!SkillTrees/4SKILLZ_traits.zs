@@ -240,7 +240,7 @@ skillz8.onPlayerTick = function(event as crafttweaker.event.PlayerTickEvent)
    }
 };
 
-//take less damage from traps (cactus, fall, drown, fallingtree, inWall)
+//take less damage from traps (cactus, drown, fallingtree, inWall)
 skillz9.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
     if (event.entity.world.isRemote()) {
 			return;
@@ -249,12 +249,11 @@ skillz9.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
 	//print(event.damageSource.damageType);
 			
 	if ((event.damageSource.damageType == "cactus" || 
-	event.damageSource.damageType == "fall" || 
 	event.damageSource.damageType == "drown" || 
 	event.damageSource.damageType == "fallingtree" || 
 	event.damageSource.damageType == "inWall"))
     {
-			event.amount = event.amount * 0.9;	
+			event.amount = event.amount * 0.75;	
     }
 };
 
@@ -293,7 +292,7 @@ skillz11.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEven
     }
 };
 
-//take less damage from traps (cactus, fall, drown, fallingtree, inWall)
+//take less damage from traps 
 skillz12.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
     if (event.entity.world.isRemote()) {
 			return;
@@ -303,9 +302,10 @@ skillz12.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
 			
 	if ((event.damageSource.damageType == "ieWireShock" || 
 	event.damageSource.damageType == "ieTesla" || 
+	event.damageSource.damageType == "fall" || 
 	event.damageSource.damageType == "dissolve"))
     {
-			event.amount = event.amount * 0.9;	
+			event.amount = event.amount * 0.75;	
     }
 };
 
