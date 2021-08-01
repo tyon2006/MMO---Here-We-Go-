@@ -10,6 +10,46 @@ import mods.inspirations.Cauldron;
 import crafttweaker.item.IItemStack;
 
 //***************************
+//		BACKPACKS
+//***************************
+
+recipes.remove(<wearablebackpacks:backpack>);
+recipes.addShaped("Leather Backpack", <wearablebackpacks:backpack>,
+ [[<ore:leather>,<ore:ingotTin>,<ore:leather>],
+  [<ore:leather>,<ore:wool>,<ore:leather>],
+  [<ore:leather>,<ore:leather>,<ore:leather>]]);
+
+recipes.addShaped("Copper Backpack", <wearablebackpacks:backpack>.withTag({display: {color: 6504960, Name: "Copper Backpack", Lore:["20 Slots"]}, backpack: {size: [5, 4]}}),
+ [[<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],
+  [<ore:ingotCopper>,<wearablebackpacks:backpack>,<ore:ingotCopper>],
+  [<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>]]);
+  
+recipes.addShaped("Lead Backpack", <wearablebackpacks:backpack>.withTag({display: {color: 6712709, Name: "Lead Backpack", Lore:["25 Slots"]}, backpack: {size: [5, 5]}}),
+ [[<ore:ingotLead>,<ore:ingotLead>,<ore:ingotLead>],
+  [<ore:ingotLead>,<wearablebackpacks:backpack>.withTag({display: {color: 6504960, Name: "Copper Backpack", Lore:["20 Slots"]}, backpack: {size: [5, 4]}}),<ore:ingotLead>],
+  [<ore:ingotLead>,<ore:ingotLead>,<ore:ingotLead>]]);
+  
+recipes.addShaped("Silver Backpack", <wearablebackpacks:backpack>.withTag({display: {color: 12500690, Name: "Silver Backpack", Lore:["30 Slots"]}, backpack: {size: [6, 5]}}),
+ [[<ore:ingotSilver>,<ore:ingotSilver>,<ore:ingotSilver>],
+  [<ore:ingotSilver>,<wearablebackpacks:backpack>.withTag({display: {color: 6712709, Name: "Lead Backpack", Lore:["25 Slots"]}, backpack: {size: [5, 5]}}),<ore:ingotSilver>],
+  [<ore:ingotSilver>,<ore:ingotSilver>,<ore:ingotSilver>]]);
+  
+recipes.addShaped("Gold Backpack", <wearablebackpacks:backpack>.withTag({display: {color: 16766720, Name: "Gold Backpack", Lore:["35 Slots"]}, backpack: {size: [7, 5]}}),
+ [[<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>],
+  [<ore:ingotGold>,<wearablebackpacks:backpack>.withTag({display: {color: 12500690, Name: "Silver Backpack", Lore:["30 Slots"]}, backpack: {size: [6, 5]}}),<ore:ingotGold>],
+  [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>]]);
+  
+recipes.addShaped("Thorium Backpack", <wearablebackpacks:backpack>.withTag({display: {color: 6579300, Name: "Thorium Backpack", Lore:["40 Slots"]}, backpack: {size: [8, 5]}}),
+ [[<ore:ingotThorium>,<ore:ingotThorium>,<ore:ingotThorium>],
+  [<ore:ingotThorium>,<wearablebackpacks:backpack>.withTag({display: {color: 16766720, Name: "Gold Backpack", Lore:["35 Slots"]}, backpack: {size: [7, 5]}}),<ore:ingotThorium>],
+  [<ore:ingotThorium>,<ore:ingotThorium>,<ore:ingotThorium>]]);
+  
+recipes.addShaped("Platinum Backpack", <wearablebackpacks:backpack>.withTag({display: {color: 14475775, Name: "Platinum Backpack", Lore:["45 Slots"]}, backpack: {size: [9, 5]}}),
+ [[<ore:ingotPlatinum>,<ore:ingotPlatinum>,<ore:ingotPlatinum>],
+  [<ore:ingotPlatinum>,<wearablebackpacks:backpack>.withTag({display: {color: 6579300, Name: "Thorium Backpack", Lore:["40 Slots"]}, backpack: {size: [8, 5]}}),<ore:ingotPlatinum>],
+  [<ore:ingotPlatinum>,<ore:ingotPlatinum>,<ore:ingotPlatinum>]]);
+
+//***************************
 //		ITEM TOOLTIPS
 //***************************
 <waystones:return_scroll>.addTooltip(format.gray("A single-use scroll that returns you to the last waystone that you placed, yourself."));
