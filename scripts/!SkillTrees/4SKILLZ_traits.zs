@@ -913,6 +913,7 @@ var skillz5req = [
 	<contenttweaker:filterdust>,
 	<contenttweaker:filtersulfur>,
 	<contenttweaker:filtercarbon>,
+	<contenttweaker:filtercharcoal>,
 	<immersive_energy:hefty_wrench>,
 	<immersive_energy:toolupgrade:1>,
 	<immersive_energy:toolupgrade>,

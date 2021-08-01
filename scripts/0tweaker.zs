@@ -101,6 +101,9 @@ filterCarbon.register();
 var filterDust = mods.contenttweaker.VanillaFactory.createItem("filterDust");
 filterDust.maxStackSize = 64;
 filterDust.register();
+var filterCharcoal = mods.contenttweaker.VanillaFactory.createItem("filterCharcoal");
+filterCharcoal.maxStackSize = 64;
+filterCharcoal.register();
 
 var dna_bodypart_armleft = mods.contenttweaker.VanillaFactory.createItem("dna_bodypart_armleft");
 dna_bodypart_armleft.maxStackSize = 64;

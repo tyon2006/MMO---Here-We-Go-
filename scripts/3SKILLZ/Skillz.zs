@@ -58,7 +58,6 @@ for item in unfitItems {
 
 }
 
-
 recipes.replaceAllOccurences(<primitivemobs:camouflage_dye>, <secretroomsmod:camouflage_paste>);
 
 recipes.remove(<randomthings:sounddampener>);
@@ -73,3 +72,11 @@ recipes.addShaped(<randomthings:portablesounddampener>,
 [<iceandfire:chain_link>,<thaumicaugmentation:material:4>,<iceandfire:chain_link>], 
 [null, <iceandfire:chain_link>, null]]);
 
+//***************************
+//					FILTERS
+//***************************
+
+<contenttweaker:filterdust>.addTooltip(format.gray("For use in Filter Blocks to remove dust pollution from the air. Much more effective than using paper as a filter."));
+<contenttweaker:filtercarbon>.addTooltip(format.gray("For use in Filter Blocks to remove carbon pollution from the air. Much more effective than using leaves as a filter."));
+<contenttweaker:filtersulfur>.addTooltip(format.gray("For use in Filter Blocks to remove sulfur pollution from the air. Much more effective than using wool as a filter."));
+<contenttweaker:filtercharcoal>.addTooltip(format.gray("For use in Filter Blocks to remove all forms of pollution from the air. It might even be strong enough to clean up STANK."));
