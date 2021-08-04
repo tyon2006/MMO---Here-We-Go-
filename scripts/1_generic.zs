@@ -49,6 +49,8 @@ recipes.addShaped("Platinum Backpack", <wearablebackpacks:backpack>.withTag({dis
   [<ore:ingotPlatinum>,<wearablebackpacks:backpack>.withTag({display: {color: 6579300, Name: "Thorium Backpack", Lore:["40 Slots"]}, backpack: {size: [8, 5]}}),<ore:ingotPlatinum>],
   [<ore:ingotPlatinum>,<ore:ingotPlatinum>,<ore:ingotPlatinum>]]);
 
+<ebwizardry:imbuement_altar>.hardness = 5;
+
 //***************************
 //		ITEM TOOLTIPS
 //***************************

@@ -1,9 +1,12 @@
 import mods.jei.JEI.removeAndHide as rh;
 import mods.embers.Stamper;
 import mods.jei.JEI;
-
+import crafttweaker.item.IItemStack;
 
 print("--- loading 2b_itemcorrection.zs ---");
+
+
+
 
 //***************************
 //    RECIPE CORRECTIONS
@@ -14,10 +17,39 @@ recipes.remove(<minecraft:glowstone>);
 recipes.addShaped(<minecraft:glowstone>, [[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>],[<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]]);
 
 //***************************
-//      MOLTEN BRASS
+//    	TREASURE2!
 //***************************
 
+var itemRemovalsTreasure2Remove = [
 
+	<treasure2:onyx_gold_ring>,
+	<treasure2:gold_ring>,
+	<treasure2:ruby_gold_ring>,
+	<treasure2:emerald_gold_ring>,
+	<treasure2:diamond_gold_ring>,
+	<treasure2:sapphire_gold_ring>,
+	<treasure2:castle_ring>,
+	<treasure2:angels_ring>,
+	<treasure2:ring_of_fortitude>,
+	<treasure2:bracelet_of_wonder>,
+	<treasure2:silver_necklace>,
+	<treasure2:gold_necklace>,
+	<treasure2:sapphire_silver_amulet>,
+	<treasure2:amethyst_gold_amulet>,
+	<treasure2:onyx_gold_amulet>,
+	<treasure2:ruby_gold_amulet>,
+	<treasure2:sapphire_amulet>,
+	<treasure2:silver_ring>,
+	<treasure2:gold_bracelet>,
+	<treasure2:pocket_watch>,
+	<treasure2:silver_signet_ring>,
+	<treasure2:amethyst_silver_ring>
+	
+] as IItemStack[];
+
+for item in itemRemovalsTreasure2Remove {
+    recipes.remove(item);
+}
 
 //***************************
 //		    CHAIN UNIFICATION

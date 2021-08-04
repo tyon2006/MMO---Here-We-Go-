@@ -401,6 +401,28 @@ for item in itemRemovalsProjectRed {
 }
 
 //************************************
+//      TREASURE2!
+//************************************
+
+//Cleans up unsuitable items
+var itemRemovalsTreasure2 = [
+	
+	<treasure2:onyx_ore>,
+	<treasure2:amethyst_ore>,
+	<treasure2:ruby_ore>,
+	<treasure2:sapphire_ore>,
+	<treasure2:amethyst>,
+	<treasure2:onyx>,
+	<treasure2:sapphire>,
+	<treasure2:ruby>
+		
+] as IItemStack[];
+
+for item in itemRemovalsTreasure2 {
+    rh(item);
+}
+
+//************************************
 //      CYBERWARE AND REWIRED
 //************************************
 
