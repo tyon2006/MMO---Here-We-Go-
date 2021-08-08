@@ -199,7 +199,6 @@ for item in poyse9req {
 
 var poyse10req = [
 
-	<apotheosis:farmers_leash>.withTag({}),
 	<rewired:torso>,
 	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "rewired:torso", Count: 1 as byte, Damage: 0 as short}}),
 	<immersiveintelligence:assembly_scheme>.withTag({recipeItem: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "cyberware:brain_upgrades", Count: 1 as byte, Damage: 1 as short}}),
