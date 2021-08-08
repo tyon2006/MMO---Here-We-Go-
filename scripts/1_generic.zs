@@ -80,7 +80,46 @@ recipes.replaceAllOccurences(<randomthings:ingredient:2>, <mod_lavacow:ectoplasm
 //		MISC CHANGES
 //***************************
 
+recipes.remove(<spartanweaponry:bolt>);
+recipes.addShaped(<spartanweaponry:bolt>*4, [[null, null, <minecraft:flint>],[null, <ore:nuggetAnyIndustrial>, null],[<ore:nuggetAnyIndustrial>, null, null]]);
+recipes.remove(<spartanweaponry:bolt_diamond>);
+recipes.addShaped(<spartanweaponry:bolt_diamond>*4, [[null, null, <minecraft:diamond>],[null, <ore:nuggetAnyIndustrial>, null],[<ore:nuggetAnyIndustrial>, null, null]]);
+
 furnace.addRecipe(<immersiveengineering:material:25>, <iceandfire:rotten_egg>);
+
+recipes.addShapeless(<corpsecomplex:scroll>,[<tombmanygraves:death_list>,<tombmanygraves:death_list>,<tombmanygraves:death_list>]);
+
+recipes.addShapeless(<minecraft:leather>,[<ore:dustSalt>,<minecraft:rotten_flesh>,<ore:dustSalt>,<minecraft:rotten_flesh>]);
+
+recipes.addShaped(<minecraft:shears>, [[null, <ore:ingotAnyIndustrial>],[<ore:ingotAnyIndustrial>, null]]);
+recipes.addShaped(<minecraft:bucket>, [[<ore:ingotAnyIndustrial>, null, <ore:ingotAnyIndustrial>],[null, <ore:ingotAnyIndustrial>, null]]);
+
+recipes.replaceAllOccurences(<ore:ingotIron>, <ore:ingotAnyIndustrial>, <minecraft:cauldron>);
+
+var itemReplaceIronWithIndustrial = [
+
+		<embers:tinker_hammer>,
+		<minecraft:cauldron>,
+		<minecraft:piston>,
+		<minecraft:hopper>,
+		<minecraft:tripwire_hook>,
+		<minecraft:compass>,
+		<minecraft:minecart>,
+		<clothesline:crank>,
+		<clothesline:clothesline_anchor>,
+		<immersiveengineering:tool>,
+		<chisel:factory>,
+		<chisel:tyrian>
+		
+] as IItemStack[];
+
+for item in itemReplaceIronWithIndustrial {
+
+	recipes.replaceAllOccurences(<ore:ingotIron>, <ore:ingotAnyIndustrial>, item);
+
+}
+
+recipes.replaceAllOccurences(<ore:ingotLead>, <ore:ingotAnyIndustrial>, <embers:tinker_hammer>.withTag({}));
 
 recipes.remove(<extraalchemy:potion_bag>);
 recipes.addShaped("Alchemy Bag", <extraalchemy:potion_bag>,
