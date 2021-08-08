@@ -80,6 +80,8 @@ recipes.replaceAllOccurences(<randomthings:ingredient:2>, <mod_lavacow:ectoplasm
 //		MISC CHANGES
 //***************************
 
+furnace.addRecipe(<immersiveengineering:material:25>, <iceandfire:rotten_egg>);
+
 recipes.remove(<extraalchemy:potion_bag>);
 recipes.addShaped("Alchemy Bag", <extraalchemy:potion_bag>,
  [[<iceandfire:chain_link>,<ore:leather>,<iceandfire:chain_link>],
