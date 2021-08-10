@@ -60,6 +60,9 @@ for item in unfitItems {
 
 recipes.replaceAllOccurences(<primitivemobs:camouflage_dye>, <secretroomsmod:camouflage_paste>);
 
+recipes.remove(<immersiveengineering:stone_decoration:1>);
+furnace.addRecipe(<immersiveengineering:stone_decoration:1>, <immersiveengineering:stone_decoration>);
+
 recipes.remove(<randomthings:sounddampener>);
 recipes.addShaped(<randomthings:sounddampener>, 
 [[<ore:wool>, <projectred-core:resource_item:1>, <ore:wool>],
