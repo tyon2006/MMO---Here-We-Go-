@@ -77,8 +77,6 @@ erebusTransOre.setDropHandler(function(drops, world, position, state, fortune) {
 });
 erebusTransOre.register();
 
-<ebwizardry:imbuement_altar>.hardness = 5;
-
 var midnightPortalSpawner = mods.contenttweaker.VanillaFactory.createItem("midnight_portal_spawner");
 midnightPortalSpawner.maxDamage = 5;
 midnightPortalSpawner.setMaxStackSize(1);
