@@ -1338,24 +1338,6 @@
           "rewardID:8": "bq_standard:xp",
           "isLevels:1": 0,
           "index:3": 0
-        },
-        "1:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 1,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "patchouli:guide_book",
-              "Count:3": 1,
-              "tag:10": {
-                "patchouli:book:8": "patchouli:biomeguide"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
         }
       }
     },
@@ -1500,7 +1482,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Death",
-          "desc:8": "Accidents happen. §c§c§c§cCreepers§r§r§r§r also happen. \n\nDeath is a normal part of playing this pack. When you die, you\u0027ll drop your experience and all your items except your armor, toolbar, main and off-hands, and your §9§9§9§9Backpack§r§r§r§r. We highly recommend keeping your most important items in your §9§9§9§9Backpack§r§r§r§r. Lost items and a portion of your experience will be stored in a §9Gravestone§r with your name on it at the site of your death. You also lose 10% equipment durability but it will never reduce below a durability of 1 (dying will never break your equipment). \n\nWhen you respawn, you\u0027ll have reduced health, reduced hunger, and some minor debuffs, but only for a moment and you can eat to get rid of the effect right away. You can find §9Grave Scrolls§r that will teleport you back to your last death location and we recommend you carry a few of those around in your backpack at all times. \n\nWe do not recommend messing around with the game rule for dropping items on death. That might complicate things. "
+          "desc:8": "Accidents happen. §c§c§c§cCreepers§r§r§r§r also happen. \n\nDeath is a normal part of playing this pack. When you die, you\u0027ll drop your experience and all your items except your armor, toolbar, main and off-hands, and your §9§9§9§9Backpack§r§r§r§r. We highly recommend keeping your most important items in your §9§9§9§9Backpack§r§r§r§r. Lost items and a portion of your experience will be stored in a §9Gravestone§r with your name on it at the site of your death (walk over it to pick it up). If you keepInventory on death, you\u0027ll still always drop money and experience. You also lose 5% equipment durability but it will never reduce below a durability of 1 (dying will never break your equipment). \n\nWhen you respawn, you\u0027ll have reduced health, reduced hunger, and some minor debuffs, but only for a moment and you can eat to get rid of the effect right away. You can find or craft §9Grave Scrolls§r that will teleport you back to your last death location and we recommend you carry a few of those around in your backpack at all times. \n\nWe do not recommend messing around with the game rule for dropping items on death. That might complicate things. "
         }
       },
       "tasks:9": {
@@ -2233,7 +2215,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Ore Spawns",
-          "desc:8": "We\u0027ve developed §aMMO - Let\u0027s Go§r to have a natural progression that follows the biomes, mobs, drops, ore spawns, and traits in a sensical order.  \n\n§aIn MMO - Let\u0027s Go§r, ore spawns change from biome to biome, and tier to tier. You can\u0027t just hold up in a single biome and find every resource you\u0027ll need. By the end of this tutorial, you\u0027ll get a feel for how to progress through the content and understand that we want you to explore many biomes in increasing order of difficulty.\n\nFor instance, you will not find §9Iron Ore§r in tier 1 biomes. This might sound crazy, but we\u0027ve also changed many recipes and introduced new ways of doing things that will reduce your demand for §9Iron Ore§r until you\u0027re further along. \n\nOre also spawns in different shapes and at different heights than you may be used to. You might find ore in veins, sheets, clouds, or dikes that are full of liquid. Ore spawns occur less frequently than you are used to, but they spawn in much, §r§omuch§r larger sizes. §o\n\n§7§oOdds are, if you find a single spawn of an ore type, it will be all the ore you need for quite a while!§r\n "
+          "desc:8": "We\u0027ve developed §aMMO - Let\u0027s Go§r to have a natural progression that follows the biomes, mobs, drops, ore spawns, and traits in a sensical order.  \n\n§aIn MMO - Let\u0027s Go§r, ore spawns change from biome to biome, and tier to tier. You can\u0027t just hold up in a single biome and find every resource you\u0027ll need. By the end of this tutorial, you\u0027ll get a feel for how to progress through the content and understand that we want you to explore many biomes in increasing order of difficulty.\n\nFor instance, you will find §9Iron Ore§r than expected in tier 1 biomes. This might sound crazy, but we\u0027ve also changed many recipes and introduced new ways of doing things that will reduce your demand for §9Iron Ore§r until you\u0027re further along. \n\nOre also spawns in different shapes and at different heights than you may be used to. You might find ore in veins, sheets, clouds, or dikes that are full of liquid. Ore spawns occur less frequently than you are used to, but they spawn in much, §r§omuch§r larger sizes. §o\n\n§7§oOdds are, if you find a single spawn of an ore type, it will be all the ore you need for quite a while!§r\n "
         }
       },
       "tasks:9": {
@@ -2570,8 +2552,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Sign up for Stevannia (Choose 1)",
-          "desc:8": "§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r\n\nSign up for §cStevannia§r today, and our munificent leader Herobrine might not destroy you!\n\n§l§7Discipline Skill:§r §cSKILLZ\n\n§l§7Themes of Interest:§r Heavy machinery, technological innovations, physics/natural-law-abiding processes, early-20th-century technology, technological solutions and emulations of magical phenomena, convenience, ease-of-access\n\n§l§7Combat Specialty:§r Ranged\n\n§l§7Species:§r §9§cHumans§r, §9§4§eGnomes§r\n\n§l§7Favored Dimension:§r §5The Aether§r; §l§7Opposed Dimension:§r §5The Erebus§r\n\n§l§7Preferred 
-		  Biomes:§r §bBayou§r, §bBog§r, §bDead Forest§r, §bDead Swamp§r, §bDesert§r, §bDesert Hills§r, §bMutated Desert§r, §bFen§r, §bGravel Beach§r, §bLush Swamp§r, §bMangrove§r, §bMarsh§r, §bMesa§r, §bMesa Plateau§r, §bMutated Mesa Plateau§r, §bBryce Mesa§r, §bMoor§r, §bSavanna Plateau§r, §bMutated Swampland§r, §bOutback§r, §bQuagmire§r, §bShrubland§r, §bSteppe§r, §bSwampland§r, §bWasteland§r, §bWetland§r, §bXeric Shrubland§r\n§l§r\n§7Associated Mods:§r §eImmersive Engineering§r, §eIndustrial Renewal§r, §eMulti-Storage§r, §eZetta Industries§r, §eSecret Rooms§r,§e Project Red\n\n§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r\n"
+          "desc:8": "§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r\n\nSign up for §cStevannia§r today, and our munificent leader Herobrine might not destroy you!\n\n§l§7Discipline Skill:§r §cSKILLZ\n\n§l§7Themes of Interest:§r Heavy machinery, technological innovations, physics/natural-law-abiding processes, early-20th-century technology, technological solutions and emulations of magical phenomena, convenience, ease-of-access\n\n§l§7Combat Specialty:§r Ranged\n\n§l§7Species:§r §9§cHumans§r, §9§4§eGnomes§r\n\n§l§7Favored Dimension:§r §5The Aether§r; §l§7Opposed Dimension:§r §5The Erebus§r\n\n§l§7Preferred \r\n\t\t  Biomes:§r §bBayou§r, §bBog§r, §bDead Forest§r, §bDead Swamp§r, §bDesert§r, §bDesert Hills§r, §bMutated Desert§r, §bFen§r, §bGravel Beach§r, §bLush Swamp§r, §bMangrove§r, §bMarsh§r, §bMesa§r, §bMesa Plateau§r, §bMutated Mesa Plateau§r, §bBryce Mesa§r, §bMoor§r, §bSavanna Plateau§r, §bMutated Swampland§r, §bOutback§r, §bQuagmire§r, §bShrubland§r, §bSteppe§r, §bSwampland§r, §bWasteland§r, §bWetland§r, §bXeric Shrubland§r\n§l§r\n§7Associated Mods:§r §eImmersive Engineering§r, §eIndustrial Renewal§r, §eMulti-Storage§r, §eZetta Industries§r, §eSecret Rooms§r,§e Project Red\n\n§cCompleting this quest will prevent you from accepting the §6Dawnholdt (BAWLS)§r§c and §5Mystic Accord (GRAYCE)§c quests and initial traits.§r\n"
         }
       },
       "tasks:9": {
