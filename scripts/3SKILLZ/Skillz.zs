@@ -58,6 +58,18 @@ for item in unfitItems {
 
 }
 
+
+recipes.remove(<immersiveengineering:metal_decoration2:4>);
+recipes.addShaped(<immersiveengineering:metal_decoration2:4>, 
+[[null, <ore:plateIron>, null],
+[<ore:paneGlass>,<ore:dustGlowstone>,<ore:paneGlass>], 
+[null, <ore:plateIron>, null]]);
+
+recipes.addShaped(<immersiveengineering:metal_decoration2:4>*4, 
+[[null, <ore:plateIron>, null],
+[<ore:paneGlass>,<ore:blockGlowstone>,<ore:paneGlass>], 
+[null, <ore:plateIron>, null]]);
+
 recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), 
 [[<ore:ingotCopper>,<ore:ingotTin>,<ore:ingotIron>],
