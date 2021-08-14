@@ -449,7 +449,9 @@ var skillz1req = [
 	<sophisticatedwolves:swpetcarrier>,
 	<sophisticatedwolves:swwhistle>,
 	<immersiveintelligence:wrench>,
-	<immersiveintelligence:tachometer>
+	<immersiveintelligence:tachometer>,
+	<fossil:sifter_active>,
+	<fossil:sifter>
 	
 ] as IItemStack[];
 
@@ -917,7 +919,10 @@ var skillz5req = [
 	<immersive_energy:hefty_wrench>,
 	<immersive_energy:toolupgrade:1>,
 	<immersive_energy:toolupgrade>,
-	<immersive_energy:toolupgrade:3>
+	<immersive_energy:toolupgrade:3>,
+	<randomthings:soundpattern>,
+	<randomthings:soundrecorder>,
+	<randomthings:soundbox>
 		
 ] as IItemStack[];
 
@@ -1194,7 +1199,6 @@ var skillz8req = [
 	<fossil:meganeura_egg>,
 	<fossil:pterosaur_egg>,
 	<fossil:quagga_syringe>,
-	<fossil:sifter>,
 	<fossil:stegosaurus_egg>,
 	<fossil:stunted_essence>,
 	<fossil:tiktaalik_egg>,
@@ -2089,9 +2093,7 @@ var skillz19req = [
 	<immersiveintelligence:metal_decoration:2>,
 	<immersiveintelligence:press_mold>,
 	<immersiveintelligence:radio_configurator:1>,
-	<randomthings:portablesounddampener>,
-	<randomthings:soundpattern>,
-	<randomthings:soundrecorder>
+	<randomthings:portablesounddampener>
 	
 ] as IItemStack[];
 

@@ -58,10 +58,26 @@ for item in unfitItems {
 
 }
 
+recipes.remove(<immersiveengineering:toolbox>);
+recipes.addShaped(<immersiveengineering:toolbox>, 
+[[<ore:ingotAnyIndustrial>, <ore:ingotAnyIndustrial>, <ore:ingotAnyIndustrial>],
+[<ore:dyeRed>,<immersiveengineering:wooden_device0>,<ore:dyeRed>]]);
+
+recipes.remove(<immersiveengineering:metal_decoration2:4>);
+recipes.addShaped(<immersiveengineering:metal_decoration2:4>, 
+[[null, <ore:plateIron>, null],
+[<ore:paneGlass>,<ore:dustGlowstone>,<ore:paneGlass>], 
+[null, <ore:plateIron>, null]]);
+
+recipes.addShaped(<immersiveengineering:metal_decoration2:4>*4, 
+[[null, <ore:plateIron>, null],
+[<ore:paneGlass>,<ore:blockGlowstone>,<ore:paneGlass>], 
+[null, <ore:plateIron>, null]]);
+
 recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), 
 [[<ore:ingotCopper>,<ore:ingotTin>,<ore:ingotIron>],
-[<iceandfire:chain_link>,<thaumicaugmentation:material:4>,<iceandfire:chain_link>], 
+[<ore:dyeBlue>,<ore:dyeBlue>,<ore:dyeBlue>], 
 [<ore:paper>, <ore:paper>, <ore:paper>]]);
 
 //Using an existing Category String
