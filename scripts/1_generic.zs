@@ -80,7 +80,7 @@ recipes.replaceAllOccurences(<randomthings:ingredient:2>, <mod_lavacow:ectoplasm
 //		MISC CHANGES
 //***************************
 
-recipes.addShapeless(<minecraft:grass>,[<minecraft:dirt>,<tombmanygraves:death_list>,<minecraft:wheat_seeds>]);
+recipes.addShapeless(<minecraft:grass>,[<minecraft:dirt>,<minecraft:wheat_seeds>]);
 
 recipes.remove(<spartanweaponry:bolt>);
 recipes.addShaped(<spartanweaponry:bolt>*4, [[null, null, <minecraft:flint>],[null, <ore:nuggetAnyIndustrial>, null],[<ore:nuggetAnyIndustrial>, null, null]]);
