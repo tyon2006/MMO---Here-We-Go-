@@ -1,0 +1,135 @@
+{
+	"name" : "dragon:spawners",
+	"spawners" : [
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "illagers_plus:furantur"},
+				{"name" : "illagers_plus:hoarder"},
+				{"name" : "idk:railliger"}
+			],
+			"level" : [0]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "illagers_plus:furantur"},
+				{"name" : "illagers_plus:hoarder"},
+				{"name" : "idk:railliger"}
+			],
+			"level" : [0]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "illagers_plus:furantur"},
+				{"name" : "illagers_plus:hoarder"},
+				{"name" : "idk:railliger"}
+			],
+			"level" : [0]
+		},
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "idk:vampire"},
+				{"name" : "thaumcraft:inhabitedzombie"},
+				{"name" : "netherex:coolmar_spider"}
+			],
+			"level" : [1]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "idk:vampire"},
+				{"name" : "thaumcraft:inhabitedzombie"},
+				{"name" : "netherex:coolmar_spider"}
+			],
+			"level" : [1]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "idk:vampire"},
+				{"name" : "thaumcraft:inhabitedzombie"},
+				{"name" : "netherex:coolmar_spider"}
+			],
+			"level" : [1]
+		},
+				{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "mod_lavacow:ghostray"},
+				{"name" : "aether:cockatrice"},
+				{"name" : "aether:tempest"}
+			],
+			"level" : [2]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "mod_lavacow:ghostray"},
+				{"name" : "aether:cockatrice"},
+				{"name" : "aether:tempest"}
+			],
+			"level" : [2]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "mod_lavacow:ghostray"},
+				{"name" : "aether:cockatrice"},
+				{"name" : "aether:tempest"}
+			],
+			"level" : [2]
+		},
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "thaumcraft:cultistknight"},
+				{"name" : "thaumcraft:cultistcleric"}
+			],
+			"level" : [3]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "thaumcraft:cultistknight"},
+				{"name" : "thaumcraft:cultistcleric"}
+			],
+			"level" : [3]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "thaumcraft:cultistportallesser"},
+				{"name" : "thaumcraft:cultistknight"},
+				{"name" : "thaumcraft:cultistcleric"}
+			],
+			"level" : [3]
+		},
+				{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "thaumicaugmentation:eldritch_guardian"},
+				{"name" : "thaumcraft:eldritchcrab"}
+			],
+			"level" : [4]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "thaumicaugmentation:eldritch_guardian"},
+				{"name" : "thaumcraft:eldritchcrab"}
+			],
+			"level" : [4]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "thaumicaugmentation:eldritch_guardian"},
+				{"name" : "thaumcraft:eldritchcrab"}
+			],
+			"level" : [4]
+		}
+	]
+}

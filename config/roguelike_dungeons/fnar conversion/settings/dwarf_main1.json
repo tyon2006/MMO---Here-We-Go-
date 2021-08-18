@@ -1,0 +1,21 @@
+{
+	"name": "dwarf:main1",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:highland",
+			"biomesoplenty:mountain",
+			"minecraft:mutated_redwood_taiga",
+			"minecraft:mutated_taiga"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout1",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme1",
+		"dwarf:spawners",
+		"dwarf:loot"
+	]
+}

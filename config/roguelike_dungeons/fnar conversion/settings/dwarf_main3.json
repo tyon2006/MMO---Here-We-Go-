@@ -1,0 +1,24 @@
+{
+	"name": "dwarf:main3",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:maple_woods",
+			"biomesoplenty:mountain_foothills",
+			"biomesoplenty:seasonal_forest",
+			"biomesoplenty:volcanic_island",
+			"minecraft:extreme_hills_with_trees",
+			"minecraft:ice_flats",
+			"minecraft:mutated_extreme_hills"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout3",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme3",
+		"dwarf:spawners",
+		"demo:loot"
+	]
+}

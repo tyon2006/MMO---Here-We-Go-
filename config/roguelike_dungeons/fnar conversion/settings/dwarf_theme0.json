@@ -1,0 +1,33 @@
+{
+	"name": "dwarf:theme0",
+	"themes": [
+		{
+			"level" : [0, 1, 2, 3, 4],
+			"primary" : {
+				"walls" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "soot:caminite_tiles", "meta" : 0}, "weight" : 15},
+						{"type" : "METABLOCK", "data" : {"name" : "embers:block_caminite_brick", "meta" : 0}, "weight" : 25},
+						{"type" : "METABLOCK", "data" : {"name" : "quark:elder_sea_lantern", "meta" : 0}, "weight" : 1}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "embers:stairs_caminite_brick", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "embers:sealed_planks", "meta" : 0}},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:elder_sea_lantern", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_clay", "meta" : 0}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "soot:caminite_large_tile_stairs", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "soot:sealed_tile", "meta" : 0}},
+				"door" : {"name" : "rustic:ironwood_door"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			}
+		}
+	]
+}			

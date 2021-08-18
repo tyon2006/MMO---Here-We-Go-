@@ -1,0 +1,24 @@
+{
+	"name": "dragon:main3",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:cherry_blossom_grove",
+			"biomesoplenty:coniferous_forest",
+			"biomesoplenty:eucalyptus_forest",
+			"biomesoplenty:lush_desert",
+			"biomesoplenty:temperate_rainforest",
+			"minecraft:jungle_hills",
+			"thaumcraft:magical_forest"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout3",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme3",
+		"dragon:spawners",
+		"dragon:loot"
+	]
+}

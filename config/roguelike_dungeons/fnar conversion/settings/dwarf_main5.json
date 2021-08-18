@@ -1,0 +1,24 @@
+{
+	"name": "dwarf:main5",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:glacier",
+			"biomesoplenty:redwood_forest",
+			"biomesoplenty:snowy_tundra",
+			"biomesoplenty:tundra",
+			"minecraft:ice_mountains",
+			"minecraft:mutated_ice_flats",
+			"minecraft:mutated_redwood_taiga_hills"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout5",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme5",
+		"dwarf:spawners",
+		"dwarf:loot"
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"name": "human:main5",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:dead_swamp",
+			"biomesoplenty:quagmire",
+			"biomesoplenty:wasteland",
+			"minecraft:desert_hills",
+			"minecraft:mesa_rock",
+			"minecraft:mutated_desert"
+		]
+	},
+	"inherit": [
+		"human:tower",
+		"human:layout5",
+		"human:rooms",
+		"human:segments",
+		"human:theme5",
+		"human:spawners",
+		"human:loot"
+	]
+}

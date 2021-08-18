@@ -1,0 +1,24 @@
+{
+	"name" : "dragon:segments",
+	"segments" : [
+		{"level": [0,1,2,3,4], "type" : "CHEST", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "WALL", "weight" : 2},
+		{"level": [0,1,2,3], "type" : "INSET", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "DOOR", "weight" : 2},
+		{"level": [0,1,2,3,4], "type" : "CELL", "weight" : 5},
+		{"level": [0,1,2], "type" : "LAMP", "weight" : 2},
+		{"level": [0,1,2], "type" : "FLOWERS", "weight" : 2},
+		{"level": [1,2,3,4], "type" : "ARROW", "weight" : 1},
+		{"level": [0,1,2], "type" : "BOOKS", "weight" : 1},
+		{"level": [0,1,2], "type" : "FLOWERS", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "TOMB", "weight" : 2},
+		{"level": [1,2,3,4], "type" : "SKULL", "weight" : 1},
+		{"level": [0,1,2], "type" : "ARROW", "weight" : 1},
+		{"level": [0,1,2,3,4], "type" : "ANKH", "weight" : 5},
+		{"level": [0], "type" : "SPAWNER", "weight" : 1},
+		{"level": [1], "type" : "SPAWNER", "weight" : 2},
+		{"level": [2], "type" : "SPAWNER", "weight" : 3},
+		{"level": [3], "type" : "SPAWNER", "weight" : 4},
+		{"level": [4], "type" : "SPAWNER", "weight" : 5}
+	]
+}

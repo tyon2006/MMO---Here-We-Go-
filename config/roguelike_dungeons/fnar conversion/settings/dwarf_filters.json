@@ -1,0 +1,6 @@
+{
+	"name" : "dwarf:filters",
+	"filters" : [
+		{"level" : 3, "name" : "cobweb"}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"name": "human:main4",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:bayou",
+			"biomesoplenty:mangrove",
+			"biomesoplenty:moor",
+			"biomesoplenty:xeric_shrubland",
+			"minecraft:mesa",
+			"minecraft:mesa_clear_rock"
+		]
+	},
+	"inherit": [
+		"human:tower",
+		"human:layout4",
+		"human:rooms",
+		"human:segments",
+		"human:theme4",
+		"human:spawners",
+		"human:loot"
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"name" : "dragon:tower",
+	"tower" : {
+		"type" : "ENIKO",
+		"theme" : {
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall"}},
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall"}},
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:white_gray_wall"}},
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall"}},
+						{"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall"}}
+					]
+				},
+				"pillar" : {
+					"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:dark_green_pillar"}
+				},
+				"stair" : {
+					"type" : "METABLOCK", "data" : {"name" : "chineseworkshop:black_brick_wall_stairs"}
+				}
+			},
+			"secondary" : {
+				"walls" : {
+					"type" : "METABLOCK",
+					"data" : {"name" : "thaumcraft:plank_greatwood"}
+				},
+				"pillar" : {
+					"type" : "METABLOCK",
+					"data" : {"name" : "chineseworkshop:dark_green_pillar"}
+				},
+				"stair" : {
+					"type" : "METABLOCK",
+					"data" : {"name" : "thaumcraft:stairs_greatwood"}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "dragon:main1",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:boreal_forest",
+			"biomesoplenty:grove",
+			"minecraft:jungle",
+			"minecraft:mutated_forest",
+			"minecraft:mutated_jungle"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout1",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme1",
+		"dragon:spawners",
+		"dragon:loot"
+	]
+}

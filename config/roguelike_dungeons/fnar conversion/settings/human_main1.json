@@ -1,0 +1,23 @@
+{
+	"name": "human:main1",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:dead_forest",
+			"biomesoplenty:gravel_beach",
+			"biomesoplenty:marsh",
+			"minecraft:desert",
+			"minecraft:mutated_mesa",
+			"minecraft:swampland"
+		]
+	},
+	"inherit": [
+		"human:tower",
+		"human:layout1",
+		"human:rooms",
+		"human:segments",
+		"human:theme1",
+		"human:spawners",
+		"human:loot"
+	]
+}

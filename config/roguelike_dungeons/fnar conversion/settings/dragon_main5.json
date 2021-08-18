@@ -1,0 +1,21 @@
+{
+	"name": "dragon:main5",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:ominous_woods",
+			"biomesoplenty:overgrown_cliffs",
+			"biomesoplenty:tropical_island",
+			"thaumcraft:eerie"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout5",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme5",
+		"dragon:spawners",
+		"dragon:loot"
+	]
+}

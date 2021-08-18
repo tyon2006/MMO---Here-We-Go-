@@ -1,0 +1,92 @@
+{
+	"name": "human:theme2",
+	"themes": [
+		{
+			"level" : [0],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:stonebrick2", "meta" : 8}, "weight" : 5},
+							{"type" : "METABLOCK", "data" : {"name" : "engineersdecor:slag_brick_block", "meta" : 0}, "weight" : 40}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:stonebrick2", "meta" : 8}, "weight" : 5},
+							{"type" : "METABLOCK", "data" : {"name" : "engineersdecor:slag_brick_block", "meta" : 0}, "weight" : 40}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:stonebrick2", "meta" : 8}, "weight" : 5},
+							{"type" : "METABLOCK", "data" : {"name" : "engineersdecor:slag_brick_block", "meta" : 0}, "weight" : 40}]
+						},
+						{"type" : "WEIGHTED", "data" : [
+							{"type" : "METABLOCK", "data" : {"name" : "chisel:stonebrick2", "meta" : 8}, "weight" : 5},
+							{"type" : "METABLOCK", "data" : {"name" : "engineersdecor:slag_brick_block", "meta" : 0}, "weight" : 40},
+							{"type" : "METABLOCK", "data" : {"name" : "fossil:skull_lantern", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "engineersdecor:slag_brick_block", "meta" : 0}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "chisel:stonebrick2", "meta" : 0}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "engineersdecor:slag_brick_stairs", "meta" : 0}},
+				"floor" : {
+					"type" : "WEIGHTED",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:treated_wood", "meta" : 0}, "weight" : 10},
+						{"type" : "METABLOCK", "data" : {"name" : "rats:garbage_pile", "meta" : 0}, "weight" : 1},
+						{"type" : "METABLOCK", "data" : {"name" : "storagedrawersunlimited:trim_immersiveengineering_treated_wood", "meta" : 0}, "weight" : 2}
+					]
+				},
+				"door" : {"name" : "engineersdoors:door_treated_reinforced"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "fossil:skull_lantern", "meta" : 0}},
+				"liquid" : {"name" : "immersiveengineering:fluidcreosote"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:sheetmetal", "meta" : 0}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "biomesoplenty:log_4", "meta" : 5}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:steel_scaffolding_stairs2", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "storagedrawersunlimited:trim_immersiveengineering_treated_wood", "meta" : 0}},
+				"door" : {"name" : "engineersdoors:door_treated_ornate"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "fossil:skull_lantern", "meta" : 0}},
+				"liquid" : {"name" : "immersiveengineering:fluidcreosote"}
+			}
+		},
+				{
+			"level" : [1,2,3,4],
+			"primary" : {
+				"walls" : {
+					"type" : "LAYERS",
+					"data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:brownstone", "meta" : 0}},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:brownstone", "meta" : 0}},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:brownstone", "meta" : 3}},
+						{"type" : "WEIGHTED", "data" : [
+								{"type" : "METABLOCK", "data" : {"name" : "chisel:brownstone", "meta" : 0}, "weight" : 25},
+								{"type" : "METABLOCK", "data" : {"name" : "betternether:cincinnasite_lantern", "meta" : 0}, "weight" : 1}
+							]
+						},
+						{"type" : "METABLOCK", "data" : {"name" : "chisel:brownstone", "meta" : 8}}
+					]
+				},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "chisel:brownstone", "meta" : 1}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:steel_scaffolding_stairs2", "meta" : 0}},
+				"floor" : {"type" : "JUMBLE", "data" : [
+						{"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:treated_wood", "meta" : 1}},
+						{"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:treated_wood", "meta" : 2}}]
+				},
+				"door" : {"name" : "engineersdoors:door_concrete"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "betternether:cincinnasite_lantern", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			},
+			"secondary" : {
+				"walls" : {"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:sheetmetal", "meta" : 2}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:stone_decoration", "meta" : 7}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "immersiveengineering:stone_decoration_stairs_concrete_leaded", "meta" : 0}},
+				"door" : {"name" : "engineersdoors:door_concrete_reinforced"},
+				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "betternether:cincinnasite_lantern", "meta" : 0}},
+				"liquid" : {"name" : "nyx:lunar_water"}
+			}
+		}
+	]
+}			

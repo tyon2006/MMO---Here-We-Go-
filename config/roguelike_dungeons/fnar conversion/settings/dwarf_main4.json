@@ -1,0 +1,24 @@
+{
+	"name": "dwarf:main4",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:alps",
+			"biomesoplenty:alps_foothills",
+			"biomesoplenty:crag",
+			"biomesoplenty:redwood_forest_edge",
+			"biomesoplenty:shield",
+			"biomesoplenty:snowy_forest",
+			"minecraft:mutated_extreme_hills_with_trees"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout4",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme4",
+		"dwarf:spawners",
+		"demo:loot"
+	]
+}

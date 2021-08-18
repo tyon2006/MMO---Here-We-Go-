@@ -1,0 +1,23 @@
+{
+	"name": "dragon:main4",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:bamboo_forest",
+			"biomesoplenty:flower_island",
+			"biomesoplenty:oasis",
+			"biomesoplenty:tropical_rainforest",
+			"minecraft:mutated_jungle_edge",
+			"minecraft:roofed_forest"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout4",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme4",
+		"dragon:spawners",
+		"dragon:loot"
+	]
+}

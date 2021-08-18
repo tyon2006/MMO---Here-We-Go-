@@ -1,0 +1,24 @@
+{
+	"name": "dragon:main2",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:lavender_fields",
+			"biomesoplenty:mystic_grove",
+			"biomesoplenty:rainforest",
+			"biomesoplenty:sacred_springs",
+			"minecraft:jungle_edge",
+			"minecraft:mushroom_island",
+			"minecraft:mushroom_island_shore"
+		]
+	},
+	"inherit": [
+		"dragon:tower",
+		"dragon:layout2",
+		"dragon:rooms",
+		"dragon:segments",
+		"dragon:theme2",
+		"dragon:spawners",
+		"dragon:loot"
+	]
+}

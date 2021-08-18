@@ -1,0 +1,57 @@
+{
+	"name": "human:tower",
+	"tower": {
+		"type": "HOUSE",
+		"theme": {
+			"primary": {
+				"walls": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "engineersdecor:slag_brick_block"
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "chisel:stonebrick2",
+						"meta": 8
+					}
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "engineersdecor:slag_brick_stairs"
+					}
+				},
+				"floor": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "immersiveengineering:treated_wood",
+						"meta": 1
+					}
+				}
+			},
+			"secondary": {
+				"walls": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "engineersdecor:slag_brick_block"
+					}
+				},
+				"pillar": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "chisel:stonebrick2",
+						"meta": 8
+					}
+				},
+				"stair": {
+					"type": "METABLOCK",
+					"data": {
+						"name": "minecraft:nether_brick_stairs"
+					}
+				}
+			}
+		}
+	}
+}

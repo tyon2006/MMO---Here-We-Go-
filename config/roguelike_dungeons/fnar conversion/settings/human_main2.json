@@ -1,0 +1,22 @@
+{
+	"name": "human:main2",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:fen",
+			"biomesoplenty:shrubland",
+			"biomesoplenty:wetland",
+			"minecraft:mutated_savanna_rock",
+			"minecraft:mutated_swampland"
+		]
+	},
+	"inherit": [
+		"human:tower",
+		"human:layout2",
+		"human:rooms",
+		"human:segments",
+		"human:theme2",
+		"human:spawners",
+		"human:loot"
+	]
+}

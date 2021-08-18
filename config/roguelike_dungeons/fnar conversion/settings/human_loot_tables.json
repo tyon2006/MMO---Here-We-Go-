@@ -1,0 +1,10 @@
+{
+	"name" : "human:loot",
+	"lootTables" : [
+		{"level" : [0], "table" : "letsgo:humanLoot1"},
+		{"level" : [1], "table" : "letsgo:humanLoot2"},
+		{"level" : [2], "table" : "letsgo:humanLoot3"},
+		{"level" : [3], "table" : "letsgo:humanLoot4"},
+		{"level" : [4], "table" : "letsgo:humanLoot5"}
+	]
+}

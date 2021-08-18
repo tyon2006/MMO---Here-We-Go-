@@ -1,0 +1,23 @@
+{
+	"name": "human:main3",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:bog",
+			"biomesoplenty:lush_swamp",
+			"biomesoplenty:outback",
+			"biomesoplenty:steppe",
+			"minecraft:mutated_mesa_clear_rock",
+			"minecraft:mutated_mesa_rock"
+		]
+	},
+	"inherit": [
+		"human:tower",
+		"human:layout3",
+		"human:rooms",
+		"human:segments",
+		"human:theme3",
+		"human:spawners",
+		"human:loot"
+	]
+}

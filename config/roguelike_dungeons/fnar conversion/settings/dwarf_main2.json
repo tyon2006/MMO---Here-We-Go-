@@ -1,0 +1,22 @@
+{
+	"name": "dwarf:main2",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"biomesoplenty:cold_desert",
+			"biomesoplenty:snowy_coniferous_forest",
+			"minecraft:extreme_hills",
+			"minecraft:smaller_extreme_hills",
+			"minecraft:taiga_hills"
+		]
+	},
+	"inherit": [
+		"dwarf:tower",
+		"dwarf:layout2",
+		"dwarf:rooms",
+		"dwarf:segments",
+		"dwarf:theme2",
+		"dwarf:spawners",
+		"dwarf:loot"
+	]
+}

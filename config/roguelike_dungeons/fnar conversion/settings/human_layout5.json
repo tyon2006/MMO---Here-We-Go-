@@ -1,0 +1,8 @@
+{
+	"name" : "human:layout5",
+	"numRooms" : [10, 11, 12, 13, 14],
+	"scatter" : [12, 14, 15, 16, 17],
+	"layouts" : [
+		{"level" : [0, 1, 2, 3, 4], "type" : "CLASSIC"}
+	]
+}
