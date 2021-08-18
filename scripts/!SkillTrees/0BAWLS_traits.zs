@@ -483,15 +483,10 @@ for item in bawls1req {
 
 var bawls2req = [
 
-	<embers:axe_bronze:*>,
 	<embers:axe_dawnstone:*>,
-	<embers:hoe_bronze:*>,
 	<embers:hoe_dawnstone:*>,
-	<embers:pickaxe_bronze:*>,
 	<embers:pickaxe_dawnstone:*>,
-	<embers:shovel_bronze:*>,
 	<embers:shovel_dawnstone:*>,
-	<embers:sword_bronze:*>,
 	<embers:sword_dawnstone:*>,
 	<spartancompat:battleaxe_gravitite:*>,
 	<spartancompat:battleaxe_holystone:*>,

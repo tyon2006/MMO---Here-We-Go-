@@ -58,6 +58,31 @@ for item in unfitItems {
 
 }
 
+recipes.remove(<immersiveengineering:toolbox>);
+recipes.addShaped(<immersiveengineering:toolbox>, 
+[[<ore:ingotAnyIndustrial>, <ore:ingotAnyIndustrial>, <ore:ingotAnyIndustrial>],
+[<ore:dyeRed>,<immersiveengineering:wooden_device0>,<ore:dyeRed>]]);
+
+recipes.remove(<immersiveengineering:metal_decoration2:4>);
+recipes.addShaped(<immersiveengineering:metal_decoration2:4>, 
+[[null, <ore:plateIron>, null],
+[<ore:paneGlass>,<ore:dustGlowstone>,<ore:paneGlass>], 
+[null, <ore:plateIron>, null]]);
+
+recipes.addShaped(<immersiveengineering:metal_decoration2:4>*4, 
+[[null, <ore:plateIron>, null],
+[<ore:paneGlass>,<ore:blockGlowstone>,<ore:paneGlass>], 
+[null, <ore:plateIron>, null]]);
+
+recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), 
+[[<ore:ingotCopper>,<ore:ingotTin>,<ore:ingotIron>],
+[<ore:dyeBlue>,<ore:dyeBlue>,<ore:dyeBlue>], 
+[<ore:paper>, <ore:paper>, <ore:paper>]]);
+
+//Using an existing Category String
+mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineering:material:26>, [<ore:blockGlass>, <ore:wireCopper>, <ore:dustRedstone>, <ore:plateTin>]);
+
 recipes.replaceAllOccurences(<primitivemobs:camouflage_dye>, <secretroomsmod:camouflage_paste>);
 
 recipes.remove(<immersiveengineering:stone_decoration:1>);
@@ -76,7 +101,7 @@ recipes.addShaped(<randomthings:portablesounddampener>,
 [null, <iceandfire:chain_link>, null]]);
 
 //***************************
-//					FILTERS
+//			FILTERS
 //***************************
 
 <contenttweaker:filterdust>.addTooltip(format.gray("For use in Filter Blocks to remove dust pollution from the air. Much more effective than using paper as a filter."));
