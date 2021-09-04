@@ -166,7 +166,7 @@
 				},
 				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stone_ancient_glyphed", "meta" : 12}},
 				"stair" : {"type" : "METABLOCK", "data" : {"name" : "thaumcraft:stairs_ancient", "meta" : 0}},
-				"floor" : {"type" : "METABLOCK", "data" : {"name" : "industrialrenewal:industrial_floor", "meta" : 0}},
+				"floor" : {"type" : "METABLOCK", "data" : {"name" : "thaumicaugmentation:stone", "meta" : 10}},
 				"door" : {"name" : "midnight:tenebrum_door"},
 				"lightblock" : {"type" : "METABLOCK", "data" : {"name" : "thaumadditions:amber_lamp", "meta" : 0}},
 				"liquid" : {"name" : "thaumcraft:liquid_death"}

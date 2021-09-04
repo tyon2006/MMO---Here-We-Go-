@@ -1,6 +1,6 @@
 {
 	"name" : "dragon:layout3",
-	"num_rooms" : [10, 11, 12, 0, 0],
+	"numRooms" : [10, 11, 12, 0, 0],
 	"scatter" : [12, 14, 15, 1, 1],
 	"layouts" : [
 		{"level" : [0, 1, 2, 3, 4], "type" : "CLASSIC"}

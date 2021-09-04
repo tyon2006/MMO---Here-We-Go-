@@ -1,6 +1,6 @@
 {
 	"name" : "dragon:loot",
-	"loot_tables" : [
+	"lootTables" : [
 		{"level" : [0], "table" : "letsgo:dragonLoot1"},
 		{"level" : [1], "table" : "letsgo:dragonLoot2"},
 		{"level" : [2], "table" : "letsgo:dragonLoot3"},
