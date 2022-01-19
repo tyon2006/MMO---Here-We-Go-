@@ -5,13 +5,14 @@ import loottweaker.vanilla.loot.Conditions;
 import loottweaker.vanilla.loot.Functions;
 import crafttweaker.item.IItemStack;
 
-
+#https://loottweaker-docs.readthedocs.io/en/latest/tutorials/adding-loot-basic.html
 
 //*********************************
 //				HUMAN CHEST TIER 1
 //*********************************
 
 var humanLoot1 = LootTweaker.newTable("letsgo:humanLoot1");
+#params are: minimum rolls, maximum rolls, minimum bonus rolls, and maximum bonus rolls
 var humanLootPoolMain1 = humanLoot1.addPool("main", 4, 10, 0, 0);
 
 var counter = 0;
