@@ -1326,7 +1326,6 @@ var skillz10req = [
 	<ebwizardry:smoke_bomb>,
 	<ebwizardry:spark_bomb>,
 	<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}),
-	<immersiveintelligence:casing_revolver>,
 	<immersiveengineering:bullet:2>.withTag({bullet: "casull"}),
 	<immersiveengineering:bullet:2>.withTag({bullet: "armor_piercing"}),
 	<immersiveengineering:bullet:2>.withTag({bullet: "he"}),
@@ -1387,7 +1386,6 @@ var skillz11req = [
 	<immersiveengineering:stone_decoration:2>,
 	<immersiveengineering:wirecoil:2>,
 	<immersivepetroleum:metal_device>,
-	<immersivetech:metal_device>,
 	<immersivetech:stone_decoration>,
 	<industrialrenewal:chunk_loader>,
 	<industrialrenewal:dam_axis>,
@@ -1863,7 +1861,6 @@ var skillz15req = [
 	<immersiveengineering:toolupgrade:13>,
 	<mod_lavacow:holy_grenade>,
 	<zettaindustries:hook>,
-	<immersiveintelligence:casing_machinegun>,
 	<immersiveintelligence:bullet_magazine>,
 	<immersiveintelligence:machinegun>,
 	<immersiveengineering:drillhead>,
@@ -1874,7 +1871,6 @@ var skillz15req = [
 	<immersiveintelligence:press_mold:2>,
 	<immersiveintelligence:press_mold:3>,
 	<immersiveintelligence:tracer_powder>.withTag({colour: 16777215}),
-	<immersiveintelligence:casing_grenade>,
 	<immersiveintelligence:weapon_upgrade:7>,
 	<immersiveintelligence:weapon_upgrade:6>,
 	<immersiveintelligence:weapon_upgrade:5>,
@@ -1882,8 +1878,7 @@ var skillz15req = [
 	<immersiveintelligence:weapon_upgrade:3>,
 	<immersiveintelligence:weapon_upgrade:2>,
 	<immersiveintelligence:weapon_upgrade:1>,
-	<immersiveintelligence:weapon_upgrade>,
-	<immersiveintelligence:casing_submachinegun>
+	<immersiveintelligence:weapon_upgrade>
 	
 ] as IItemStack[];
 
@@ -2083,7 +2078,6 @@ var skillz19req = [
 	<cyclicmagic:builder_block>,
 	<cyclicmagic:tool_swap>.withTag({ActionType: 3, timeout: 0}),
 	<cyclicmagic:tool_swap_match>.withTag({ActionType: 0, timeout: 0}),
-	<immersiveintelligence:casing_artillery>,
 	<immersiveintelligence:drillhead:1>,
 	<immersiveintelligence:drillhead:2>,
 	<immersiveintelligence:drillhead:3>,

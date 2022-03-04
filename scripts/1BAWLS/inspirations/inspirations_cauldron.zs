@@ -196,7 +196,8 @@ mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:recall_normal", "minec
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:recall_strong", "extraalchemy:recall_normal", <quark:glowshroom>);
 mods.inspirations.Cauldron.addBrewingRecipe("extraalchemy:recall_long", "extraalchemy:recall_normal", <transmutationalchemy:crystal_void>);
 
-mods.inspirations.Cauldron.addBrewingRecipe("xat:restorative", "minecraft:awkward", <minecraft:speckled_melon>);
+//removed from mod update
+//mods.inspirations.Cauldron.addBrewingRecipe("xat:restorative", "minecraft:awkward", <minecraft:speckled_melon>);
 
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:purity", "minecraft:awkward", <biomesoplenty:flower_0:14>);
 mods.inspirations.Cauldron.addBrewingRecipe("potioncore:long_purity", "potioncore:purity", <transmutationalchemy:crystal_void>);
