@@ -1,0 +1,8 @@
+{
+	"name" : "flesh:layout1",
+	"numRooms" : [10, 10, 10, 10, 10],
+	"scatter" : [12, 12, 12, 12, 12],
+	"layouts" : [
+		{"level" : [0, 1, 2, 3, 4], "type" : "MST"}
+	]
+}

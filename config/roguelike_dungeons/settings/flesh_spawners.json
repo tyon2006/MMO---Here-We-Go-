@@ -1,0 +1,32 @@
+{
+	"name" : "flesh:spawners",
+	"spawners" : [
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "specialmobs:plaguezombie"},
+				{"name" : "mod_lavacow:boneworm"},
+				{"name" : "specialmobs:plaguepigzombie"}
+			],
+			"level" : [0,1,2,3,4]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "specialmobs:strawberryslime"},
+				{"name" : "specialmobs:watermelonslime"},
+				{"name" : "specialmobs:caramelslime"}
+			],
+			"level" : [0,1,2,3,4]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "grimoireofgaia:flesh_lich"},
+				{"name" : "grimoireofgaia:bone_knight"},
+				{"name" : "specialmobs:brutewitherskeleton"}
+			],
+			"level" : [0,1,2,3,4]
+		}
+	]
+}

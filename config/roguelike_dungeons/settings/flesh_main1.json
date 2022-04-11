@@ -1,0 +1,18 @@
+{
+	"name": "flesh:main1",
+	"exclusive": true,
+	"criteria": {
+		"biomes": [
+			"minecraft:hell"
+		]
+	},
+	"inherit": [
+		"flesh:tower",
+		"flesh:layout1",
+		"flesh:rooms",
+		"flesh:segments",
+		"flesh:theme1",
+		"flesh:spawners",
+		"flesh:loot"
+	]
+}
