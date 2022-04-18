@@ -1,0 +1,87 @@
+{
+  "name": "illager:theme1",
+  "themes": [
+    {
+      "level": [0,1,2,3,4],
+      "primary": {
+        "door": {"name": "dark_oak_door"},
+        "floor": {"type": "WEIGHTED", "data": [
+            {"type": "METABLOCK", "data": {"name": "stone"}, "weight": 5},
+            {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 0}, "weight": 75},
+            {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 2}, "weight": 10},
+
+            {"type": "METABLOCK", "data": {"name": "cobblestone"}, "weight": 10},
+            {"type": "METABLOCK", "data": {"name": "stone_stairs"}, "weight": 2},
+            {"type": "METABLOCK", "data": {"name": "idk:blockoframie"}, "weight": 2},
+
+            {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 1}, "weight": 15},
+            {"type": "METABLOCK", "data": {"name": "mossy_cobblestone"}, "weight": 10},
+
+            {"type": "METABLOCK", "data": {"name": "idk:mudstone"}, "weight": 2},
+            {"type": "METABLOCK", "data": {"name": "idk:whitewashedramie"}, "weight": 1}
+          ]
+        },
+        "lightblock": {"type":  "METABLOCK", "data":  {"name":  "quark:lit_lamp"}},
+        "pillar": {"type": "LAYERS", "data": [
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 1}},
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 0}},
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 3}},
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 2}}
+        ]},
+        "stair" : {"type" : "METABLOCK", "data" : {"name" : "stone_brick_stairs"}},
+        "walls": {"type": "WEIGHTED", "data": [
+          {"type": "METABLOCK", "data": {"name": "stone", "meta": 0}, "weight": 5},
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 0}, "weight": 5},
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 2}, "weight": 5},
+
+          {"type": "METABLOCK", "data": {"name": "cobblestone"}, "weight": 3},
+          {"type": "METABLOCK", "data": {"name": "stone_stairs"}, "weight": 3},
+          {"type": "METABLOCK", "data": {"name": "minecraft:planks", "meta": 5}, "weight": 5},
+
+          {"type": "METABLOCK", "data": {"name": "mossy_cobblestone"}, "weight": 5},
+          {"type": "METABLOCK", "data": {"name": "stonebrick", "meta": 1}, "weight": 10},
+          {"type": "METABLOCK", "data": {"name": "idk:emeralddeposit"}, "weight": 1}
+        ]
+        },
+		"liquid" : {"name" : "biomesop:sand"}
+      },
+      "secondary": {
+        "lightblock": {"type":  "METABLOCK", "data":  {"name":  "quark:lit_lamp"}},
+        "walls": {"type": "WEIGHTED", "data": [
+            {"type" : "METABLOCK", "data" : {"name" : "planks", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "quark:lit_lamp", "meta" : 0}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "minecraft:dark_oak_stairs", "meta" : 0}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "minecraft:wooden_slab", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "charm:crate_sealed", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "charm:crate", "meta" : 5}, "weight" : 2},
+			{"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 1}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 2}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 3}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 4}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 6}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 7}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 8}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "chisel:bookshelf_darkoak", "meta" : 9}, "weight" : 2}
+          ]
+        },
+        "stair" : {"type" : "METABLOCK", "data" : {"name" : "dark_oak_stairs"}},
+        "pillar" : {"type" : "METABLOCK", "data" : {"name" : "log2", "meta" : 1}},
+        "door": {"name": "dark_oak_door"},
+        "floor" : {"type" : "WEIGHTED", "data" : [
+            {"type" : "METABLOCK", "data" : {"name" : "planks", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "minecraft:log2", "meta" : 1}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "minecraft:dark_oak_stairs", "meta" : 0}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "minecraft:wooden_slab", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "charm:crate_sealed", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "charm:crate", "meta" : 5}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "idk:blockoftannedramie", "meta" : 0}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "idk:silverbricks", "meta" : 0}, "weight" : 2},
+            {"type" : "METABLOCK", "data" : {"name" : "idk:whitewashedramie", "meta" : 0}, "weight" : 2}
+          ]
+        },
+		"liquid" : {"name" : "biomesop:sand"}
+      }
+    }
+  ]
+}

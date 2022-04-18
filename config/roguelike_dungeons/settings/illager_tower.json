@@ -1,0 +1,7 @@
+{
+	"name" : "illager:tower",
+	"tower" : {
+		"type" : "BUMBO",
+		"inherit": "illager:theme1"
+	}
+}

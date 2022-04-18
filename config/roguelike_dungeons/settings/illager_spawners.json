@@ -1,0 +1,42 @@
+{
+	"name" : "illager:spawners",
+	"spawners" : [
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{"name" : "idk:pillager"},
+				{"name" : "illagers_plus:hoarder"},
+				{"name" : "illagers_plus:archer"},
+				{"name" : "idk:railliger"}
+			],
+			"level" : [0,1,2,3,4]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "illagers_plus:enchanter"},
+				{"name" : "idk:potionbud"},
+				{"name" : "idk:ravager"},
+				{"name" : "idk:mutt"}
+			],
+			"level" : [0,1,2,3,4]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{"name" : "idk:pillager"},
+				{"name" : "idk:vampire"},
+				{"name" : "illagers_plus:furantur"},
+				{"name" : "illagers_plus:necromancer"}
+			],
+			"level" : [0,1,2,3,4]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{"name" : "illagers_plus:illager_king"}
+			],
+			"level" : [4]
+		}
+	]
+}

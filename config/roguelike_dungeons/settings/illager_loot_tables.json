@@ -1,0 +1,6 @@
+{
+	"name" : "illager:loot",
+	"lootTables" : [
+		{"level" : [0,1,2,3,4], "table" : "letsgo:illagerLoot1"},
+	]
+}
