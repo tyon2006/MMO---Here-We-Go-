@@ -88,11 +88,22 @@ recipes.replaceAllOccurences(<primitivemobs:camouflage_dye>, <secretroomsmod:cam
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 furnace.addRecipe(<immersiveengineering:stone_decoration:1>, <immersiveengineering:stone_decoration>);
 
-recipes.remove(<randomthings:sounddampener>);
-recipes.addShaped(<randomthings:sounddampener>, 
-[[<ore:wool>, <projectred-core:resource_item:1>, <ore:wool>],
+recipes.remove(<immersiveengineering:wirecoil:5>);
+recipes.addShaped(<immersiveengineering:wirecoil:5>, 
+[[null, <ore:dustRedstone>, null],
+[<ore:wireCopper>,<ore:stickWood>,<ore:wireCopper>], 
+[null, <ore:dustRedstone>, null]]);
+
+recipes.addShaped(<immersiveengineering:wirecoil:5>, 
+[[null, <ore:wireCopper>, null],
+[<ore:dustRedstone>,<ore:stickWood>,<ore:dustRedstone>], 
+[null, <ore:wireCopper>, null]]);
+
+recipes.remove(<randomthings:portablesounddampener>);
+recipes.addShaped(<randomthings:portablesounddampener>, 
+[[null, <projectred-core:resource_item:1>, null],
 [<projectred-core:resource_item:1>, <minecraft:noteblock>, <projectred-core:resource_item:1>], 
-[<ore:wool>, <projectred-core:resource_item:1>, <ore:wool>]]);
+[null, <projectred-core:resource_item:1>, null]]);
 
 recipes.remove(<randomthings:portablesounddampener>);
 recipes.addShaped(<randomthings:portablesounddampener>, 

@@ -34,15 +34,9 @@ var itemRemovalsTreasure2Remove = [
 	<treasure2:bracelet_of_wonder>,
 	<treasure2:silver_necklace>,
 	<treasure2:gold_necklace>,
-	<treasure2:sapphire_silver_amulet>,
-	<treasure2:amethyst_gold_amulet>,
-	<treasure2:onyx_gold_amulet>,
-	<treasure2:ruby_gold_amulet>,
-	<treasure2:sapphire_amulet>,
 	<treasure2:silver_ring>,
 	<treasure2:gold_bracelet>,
 	<treasure2:pocket_watch>,
-	<treasure2:silver_signet_ring>,
 	<treasure2:amethyst_silver_ring>
 	
 ] as IItemStack[];
