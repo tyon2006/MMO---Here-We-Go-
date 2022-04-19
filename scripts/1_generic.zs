@@ -75,6 +75,9 @@ recipes.replaceAllOccurences(<randomthings:ingredient:2>, <mod_lavacow:ectoplasm
 //***************************
 
 <embers:pump>.displayName = "Fluid Extractor";
+<ebwizardry:magic_crystal:7>.displayName = "Dazzling Crystal";
+<ebwizardry:crystal_block:7>.displayName = "Block of Dazzling Crystal";
+<ebwizardry:scroll:183>.displayName = "Scroll of Dazzling Totem";
 
 //***************************
 //			IRON REDUCTION
