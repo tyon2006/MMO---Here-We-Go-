@@ -77,30 +77,25 @@ recipes.replaceAllOccurences(<randomthings:ingredient:2>, <mod_lavacow:ectoplasm
 <embers:pump>.displayName = "Fluid Extractor";
 
 //***************************
-//		MISC CHANGES
+//			IRON REDUCTION
 //***************************
 
-recipes.addShapeless(<minecraft:grass>,[<minecraft:dirt>,<minecraft:wheat_seeds>]);
+recipes.addShaped(<inspirations:pipe>*4, [[<ore:ingotAnyIndustrial>, <ore:plankWood>, <ore:plankWood>]]);
 
 recipes.remove(<spartanweaponry:bolt>);
 recipes.addShaped(<spartanweaponry:bolt>*4, [[null, null, <minecraft:flint>],[null, <ore:nuggetAnyIndustrial>, null],[<ore:nuggetAnyIndustrial>, null, null]]);
 recipes.remove(<spartanweaponry:bolt_diamond>);
 recipes.addShaped(<spartanweaponry:bolt_diamond>*4, [[null, null, <minecraft:diamond>],[null, <ore:nuggetAnyIndustrial>, null],[<ore:nuggetAnyIndustrial>, null, null]]);
 
-furnace.addRecipe(<immersiveengineering:material:25>, <iceandfire:rotten_egg>);
-
-recipes.addShapeless(<corpsecomplex:scroll>,[<tombmanygraves:death_list>,<tombmanygraves:death_list>,<tombmanygraves:death_list>]);
-
-recipes.addShapeless(<minecraft:leather>,[<ore:dustSalt>,<minecraft:rotten_flesh>,<ore:dustSalt>,<minecraft:rotten_flesh>]);
-
-recipes.addShaped(<minecraft:shears>, [[null, <ore:ingotAnyIndustrial>],[<ore:ingotAnyIndustrial>, null]]);
-recipes.addShaped(<minecraft:bucket>, [[<ore:ingotAnyIndustrial>, null, <ore:ingotAnyIndustrial>],[null, <ore:ingotAnyIndustrial>, null]]);
-
-recipes.replaceAllOccurences(<ore:ingotIron>, <ore:ingotAnyIndustrial>, <minecraft:cauldron>);
 
 var itemReplaceIronWithIndustrial = [
 
+		<minecraft:cauldron>,
+		<minecraft:shield>,
+		<minecraft:flint_and_steel>,
 		<embers:tinker_hammer>,
+		<minecraft:shears>,
+		<minecraft:bucket>,
 		<minecraft:cauldron>,
 		<minecraft:piston>,
 		<minecraft:hopper>,
@@ -122,6 +117,45 @@ for item in itemReplaceIronWithIndustrial {
 }
 
 recipes.replaceAllOccurences(<ore:ingotLead>, <ore:ingotAnyIndustrial>, <embers:tinker_hammer>.withTag({}));
+
+//***************************
+//			GOLD REDUCTION
+//***************************
+
+var itemReplaceGoldWithPrecious = [
+
+		<thaumcraft:baubles:6>,
+		<minecraft:clock>,
+		<sophisticatedwolves:swwhistle>,
+		<cyclicmagic:exp_pylon>,
+		<cyclicmagic:block_user>,
+		<chisel:chisel_hitech>,
+		<thaumcraft:baubles:4>,
+		<thaumcraft:baubles:5>,
+		<transmutationalchemy:elemental_ingot>,
+		<toolbelt:pouch>,
+		<randomthings:escaperope>
+		
+] as IItemStack[];
+
+for item in itemReplaceGoldWithPrecious {
+
+	recipes.replaceAllOccurences(<ore:ingotGold>, <ore:ingotAnyPrecious>, item);
+
+}
+
+recipes.replaceAllOccurences(<ore:ingotLead>, <ore:ingotAnyIndustrial>, <embers:tinker_hammer>.withTag({}));
+
+//***************************
+//		MISC CHANGES
+//***************************
+
+furnace.addRecipe(<immersiveengineering:material:25>, <iceandfire:rotten_egg>);
+
+recipes.addShapeless(<corpsecomplex:scroll>,[<tombmanygraves:death_list>,<tombmanygraves:death_list>,<tombmanygraves:death_list>]);
+
+recipes.addShapeless(<minecraft:leather>,[<ore:dustSalt>,<minecraft:rotten_flesh>,<ore:dustSalt>,<minecraft:rotten_flesh>]);
+recipes.addShapeless(<minecraft:grass>,[<minecraft:dirt>,<minecraft:wheat_seeds>]);
 
 recipes.remove(<extraalchemy:potion_bag>);
 recipes.addShaped("Alchemy Bag", <extraalchemy:potion_bag>,
