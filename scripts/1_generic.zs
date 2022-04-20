@@ -153,7 +153,7 @@ recipes.replaceAllOccurences(<ore:ingotLead>, <ore:ingotAnyIndustrial>, <embers:
 //		MISC CHANGES
 //***************************
 
-recipes.addShapeless(<immersiveengineering:material:24>, [<embers:tinker_hammer>.reuse(), <immersiveintelligence:ore:3>]);
+recipes.addShapeless(<immersiveintelligence:material:19>, [<embers:tinker_hammer>.reuse(), <immersiveintelligence:ore:3>]);
 
 furnace.addRecipe(<immersiveengineering:material:25>, <iceandfire:rotten_egg>);
 
