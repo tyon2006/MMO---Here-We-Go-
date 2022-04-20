@@ -4,4 +4,4 @@ import mods.jei.JEI.hide as hide;
 import crafttweaker.item.IItemStack;
 import mods.rustic.EvaporatingBasin;
 
-EvaporatingBasin.addRecipe(<minecraft:beetroot>, <liquid:beetroot_soup>);
+EvaporatingBasin.addRecipe(<immersiveengineering:material:24>, <liquid:beetroot_soup>*50);
