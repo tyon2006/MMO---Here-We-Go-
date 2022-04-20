@@ -153,6 +153,8 @@ recipes.replaceAllOccurences(<ore:ingotLead>, <ore:ingotAnyIndustrial>, <embers:
 //		MISC CHANGES
 //***************************
 
+recipes.addShapeless(<minecraft:stick>, [<embers:tinker_hammer>.reuse(), <immersiveintelligence:ore:3>]);
+
 furnace.addRecipe(<immersiveengineering:material:25>, <iceandfire:rotten_egg>);
 
 recipes.addShapeless(<corpsecomplex:scroll>,[<tombmanygraves:death_list>,<tombmanygraves:death_list>,<tombmanygraves:death_list>]);
