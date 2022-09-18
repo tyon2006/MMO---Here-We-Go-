@@ -5,6 +5,17 @@ import crafttweaker.item.IItemStack;
 
 print("--- loading 2b_itemcorrection.zs ---");
 
+//recipe not using dictionary entry for nether brick with condenser
+recipes.addShaped("Advanced Condenser", <rustic:condenser_advanced>,
+ [[null,<ore:ingotBrickNether>,null],
+  [<ore:ingotBrickNether>,<minecraft:bucket>,<ore:ingotBrickNether>],
+  [<ore:ingotBrickNether>,<ore:blockIron>,<ore:ingotBrickNether>]]);
+  
+  recipes.addShaped("Advanced Retort", <rustic:retort_advanced>,
+ [[null,<ore:ingotBrickNether>,null],
+  [<ore:ingotAnyIndustrial>,<minecraft:bucket>,null],
+  [null,<ore:ingotBrickNether>,null]]);
+
 //***************************
 //    HONEY DICTIFICATION
 //***************************
