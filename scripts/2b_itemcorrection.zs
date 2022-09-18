@@ -5,8 +5,22 @@ import crafttweaker.item.IItemStack;
 
 print("--- loading 2b_itemcorrection.zs ---");
 
+//***************************
+//    HONEY DICTIFICATION
+//***************************
+val oreDropHoney = <ore:dropHoney>;
+oreDropHoney.add(<rustic:honeycomb>);
+oreDropHoney.add(<biomesoplenty:filled_honeycomb>);
+oreDropHoney.add(<biomesoplenty:jar_filled>);
 
+val oreFoodFilledhoneycomb = <ore:foodFilledhoneycomb>;
+oreFoodFilledhoneycomb.add(<rustic:honeycomb>);
 
+val oreMaterialWaxcomb = <ore:materialWaxcomb>;
+oreMaterialWaxcomb.add(<biomesoplenty:filled_honeycomb>);
+
+val oreMaterialHoneycomb = <ore:materialHoneycomb>;
+oreMaterialHoneycomb.add(<biomesoplenty:honeycomb>);
 
 //***************************
 //    RECIPE CORRECTIONS
