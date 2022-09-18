@@ -22,6 +22,12 @@ oreMaterialWaxcomb.add(<biomesoplenty:filled_honeycomb>);
 val oreMaterialHoneycomb = <ore:materialHoneycomb>;
 oreMaterialHoneycomb.add(<biomesoplenty:honeycomb>);
 
+recipes.addShapeless(<erebus:materials:20>*4,[<biomesoplenty:honey_block>]);
+recipes.addShapeless(<biomesoplenty:honeycomb>*4,[<biomesoplenty:hive:1>]);
+recipes.addShapeless(<biomesoplenty:honeycomb>*4,[<biomesoplenty:hive:2>]);
+recipes.addShapeless(<biomesoplenty:filled_honeycomb>*4,[<biomesoplenty:hive:3>]);
+recipes.addShapeless(<biomesoplenty:filled_honeycomb>,[<rustic:honeycomb>]);
+
 //***************************
 //    RECIPE CORRECTIONS
 //***************************
