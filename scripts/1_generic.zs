@@ -10,6 +10,11 @@ import mods.inspirations.Cauldron;
 import crafttweaker.item.IItemStack;
 
 //***************************
+//		MI
+//***************************
+<ebwizardry:imbuement_altar>.hardness = 5;
+
+//***************************
 //		BACKPACKS
 //***************************
 
@@ -49,7 +54,7 @@ recipes.addShaped("Platinum Backpack", <wearablebackpacks:backpack>.withTag({dis
   [<ore:ingotPlatinum>,<wearablebackpacks:backpack>.withTag({display: {color: 6579300, Name: "Thorium Backpack", Lore:["40 Slots"]}, backpack: {size: [8, 5]}}),<ore:ingotPlatinum>],
   [<ore:ingotPlatinum>,<ore:ingotPlatinum>,<ore:ingotPlatinum>]]);
 
-<ebwizardry:imbuement_altar>.hardness = 5;
+
 
 //***************************
 //		ITEM TOOLTIPS
@@ -152,6 +157,11 @@ recipes.replaceAllOccurences(<ore:ingotLead>, <ore:ingotAnyIndustrial>, <embers:
 //***************************
 //		MISC CHANGES
 //***************************
+
+rh(<disenchanter:experience_jar>);
+recipes.addShapeless(<disenchanter:experience_jar>, [<iceandfire:jar_empty>, <nyx:fallen_star>,<nyx:fallen_star>]);
+
+<ebwizardry:imbuement_altar>.hardness = 5;
 
 recipes.addShapeless(<immersiveintelligence:material:19>, [<embers:tinker_hammer>.reuse(), <immersiveintelligence:ore:3>]);
 
