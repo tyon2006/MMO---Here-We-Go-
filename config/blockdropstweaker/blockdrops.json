@@ -1,4 +1,84 @@
 {
+	"immersiveintelligence:ore,3": {
+		"replace": true,
+		"allowsilktouch": true,
+		"dropsilktouchalways": true,
+		"toolsBlacklist": true,
+		"tools": [],
+		"biomeBlacklist": true,
+		"biomes": [],
+		"minYLevel": 0,
+		"maxYLevel": 256,
+		"minExp": 0,
+		"maxExp": 0,
+		"gamestageBlacklist": true,
+		"gamestageAll": true,
+		"gameStageList": [],
+		"modifierBlacklist": true,
+		"modifierList": [],
+		"traitBlacklist": true,
+		"traitList": [],
+		"enchantmentBlacklist": true,
+		"enchantmentList": [],
+		"nbtBlacklist": true,
+		"nbtList": [],
+		"fortunechance": {
+			"0": 100,
+			"1": 100,
+			"2": 100,
+			"3": 100
+		},
+		"dropdatalist": [
+			{
+				"id": "immersiveintelligence:material",
+				"metadata": 19,
+				"toolsBlacklist": true,
+				"tools": [],
+				"fortunechancemap": {
+					"0": 100,
+					"1": 100,
+					"2": 100,
+					"3": 100
+				},
+				"fortunequantitymap": {
+					"0": {
+						"minquantity": 1,
+						"maxquantity": 4
+					},
+					"1": {
+						"minquantity": 2,
+						"maxquantity": 4
+					},
+					"2": {
+						"minquantity": 3,
+						"maxquantity": 4
+					},
+					"3": {
+						"minquantity": 4,
+						"maxquantity": 4
+					}
+				},
+				"biomeBlacklist": true,
+				"biomes": [],
+				"minYLevel": 0,
+				"maxYLevel": 256,
+				"minExp": 0,
+				"maxExp": 1,
+				"gamestageBlacklist": true,
+				"gamestageAll": true,
+				"gameStageList": [],
+				"modifierBlacklist": true,
+				"modifierList": [],
+				"traitBlacklist": true,
+				"traitList": [],
+				"enchantmentBlacklist": true,
+				"enchantmentList": [],
+				"nbtBlacklist": true,
+				"nbtList": [],
+				"exclusive": false
+			}
+		]
+	},
 	"grimoireofgaia:block_pearl,*": {
 		"replace": true,
 		"allowsilktouch": true,
@@ -42,11 +122,11 @@
 				},
 				"fortunequantitymap": {
 					"0": {
-						"minquantity": 3,
+						"minquantity": 1,
 						"maxquantity": 4
 					},
 					"1": {
-						"minquantity": 3,
+						"minquantity": 2,
 						"maxquantity": 4
 					},
 					"2": {
@@ -54,7 +134,7 @@
 						"maxquantity": 4
 					},
 					"3": {
-						"minquantity": 3,
+						"minquantity": 4,
 						"maxquantity": 4
 					}
 				},
@@ -64,6 +144,246 @@
 				"maxYLevel": 256,
 				"minExp": 0,
 				"maxExp": 0,
+				"gamestageBlacklist": true,
+				"gamestageAll": true,
+				"gameStageList": [],
+				"modifierBlacklist": true,
+				"modifierList": [],
+				"traitBlacklist": true,
+				"traitList": [],
+				"enchantmentBlacklist": true,
+				"enchantmentList": [],
+				"nbtBlacklist": true,
+				"nbtList": [],
+				"exclusive": false
+			}
+		]
+	},
+	"transmutationalchemy:power_crystal_ore,*": {
+		"replace": true,
+		"allowsilktouch": true,
+		"dropsilktouchalways": true,
+		"toolsBlacklist": true,
+		"tools": [],
+		"biomeBlacklist": true,
+		"biomes": [],
+		"minYLevel": 0,
+		"maxYLevel": 256,
+		"minExp": 0,
+		"maxExp": 1,
+		"gamestageBlacklist": true,
+		"gamestageAll": true,
+		"gameStageList": [],
+		"modifierBlacklist": true,
+		"modifierList": [],
+		"traitBlacklist": true,
+		"traitList": [],
+		"enchantmentBlacklist": true,
+		"enchantmentList": [],
+		"nbtBlacklist": true,
+		"nbtList": [],
+		"fortunechance": {
+			"0": 100,
+			"1": 100,
+			"2": 100,
+			"3": 100
+		},
+		"dropdatalist": [
+			{
+				"id": "transmutationalchemy:crystal_power",
+				"metadata": 0,
+				"toolsBlacklist": true,
+				"tools": [],
+				"fortunechancemap": {
+					"0": 100,
+					"1": 100,
+					"2": 100,
+					"3": 100
+				},
+				"fortunequantitymap": {
+					"0": {
+						"minquantity": 1,
+						"maxquantity": 2
+					},
+					"1": {
+						"minquantity": 1,
+						"maxquantity": 3
+					},
+					"2": {
+						"minquantity": 2,
+						"maxquantity": 3
+					},
+					"3": {
+						"minquantity": 2,
+						"maxquantity": 4
+					}
+				},
+				"biomeBlacklist": true,
+				"biomes": [],
+				"minYLevel": 0,
+				"maxYLevel": 256,
+				"minExp": 0,
+				"maxExp": 0,
+				"gamestageBlacklist": true,
+				"gamestageAll": true,
+				"gameStageList": [],
+				"modifierBlacklist": true,
+				"modifierList": [],
+				"traitBlacklist": true,
+				"traitList": [],
+				"enchantmentBlacklist": true,
+				"enchantmentList": [],
+				"nbtBlacklist": true,
+				"nbtList": [],
+				"exclusive": false
+			}
+		]
+	},
+	"transmutationalchemy:mind_crystal_ore,*": {
+		"replace": true,
+		"allowsilktouch": true,
+		"dropsilktouchalways": true,
+		"toolsBlacklist": true,
+		"tools": [],
+		"biomeBlacklist": true,
+		"biomes": [],
+		"minYLevel": 0,
+		"maxYLevel": 256,
+		"minExp": 0,
+		"maxExp": 2,
+		"gamestageBlacklist": true,
+		"gamestageAll": true,
+		"gameStageList": [],
+		"modifierBlacklist": true,
+		"modifierList": [],
+		"traitBlacklist": true,
+		"traitList": [],
+		"enchantmentBlacklist": true,
+		"enchantmentList": [],
+		"nbtBlacklist": true,
+		"nbtList": [],
+		"fortunechance": {
+			"0": 100,
+			"1": 100,
+			"2": 100,
+			"3": 100
+		},
+		"dropdatalist": [
+			{
+				"id": "transmutationalchemy:crystal_mind",
+				"metadata": 0,
+				"toolsBlacklist": true,
+				"tools": [],
+				"fortunechancemap": {
+					"0": 100,
+					"1": 100,
+					"2": 100,
+					"3": 100
+				},
+				"fortunequantitymap": {
+					"0": {
+						"minquantity": 1,
+						"maxquantity": 2
+					},
+					"1": {
+						"minquantity": 1,
+						"maxquantity": 3
+					},
+					"2": {
+						"minquantity": 2,
+						"maxquantity": 3
+					},
+					"3": {
+						"minquantity": 2,
+						"maxquantity": 4
+					}
+				},
+				"biomeBlacklist": true,
+				"biomes": [],
+				"minYLevel": 0,
+				"maxYLevel": 256,
+				"minExp": 0,
+				"maxExp": 0,
+				"gamestageBlacklist": true,
+				"gamestageAll": true,
+				"gameStageList": [],
+				"modifierBlacklist": true,
+				"modifierList": [],
+				"traitBlacklist": true,
+				"traitList": [],
+				"enchantmentBlacklist": true,
+				"enchantmentList": [],
+				"nbtBlacklist": true,
+				"nbtList": [],
+				"exclusive": false
+			}
+		]
+	},
+	"transmutationalchemy:protection_crystal_ore,*": {
+		"replace": true,
+		"allowsilktouch": true,
+		"dropsilktouchalways": true,
+		"toolsBlacklist": true,
+		"tools": [],
+		"biomeBlacklist": true,
+		"biomes": [],
+		"minYLevel": 0,
+		"maxYLevel": 256,
+		"minExp": 0,
+		"maxExp": 2,
+		"gamestageBlacklist": true,
+		"gamestageAll": true,
+		"gameStageList": [],
+		"modifierBlacklist": true,
+		"modifierList": [],
+		"traitBlacklist": true,
+		"traitList": [],
+		"enchantmentBlacklist": true,
+		"enchantmentList": [],
+		"nbtBlacklist": true,
+		"nbtList": [],
+		"fortunechance": {
+			"0": 100,
+			"1": 100,
+			"2": 100,
+			"3": 100
+		},
+		"dropdatalist": [
+			{
+				"id": "transmutationalchemy:crystal_protection",
+				"metadata": 0,
+				"toolsBlacklist": true,
+				"tools": [],
+				"fortunechancemap": {
+					"0": 100,
+					"1": 100,
+					"2": 100,
+					"3": 100
+				},
+				"fortunequantitymap": {
+					"0": {
+						"minquantity": 1,
+						"maxquantity": 2
+					},
+					"1": {
+						"minquantity": 1,
+						"maxquantity": 3
+					},
+					"2": {
+						"minquantity": 2,
+						"maxquantity": 3
+					},
+					"3": {
+						"minquantity": 2,
+						"maxquantity": 4
+					}
+				},
+				"biomeBlacklist": true,
+				"biomes": [],
+				"minYLevel": 0,
+				"maxYLevel": 256,
+				"minExp": 0,
+				"maxExp": 2,
 				"gamestageBlacklist": true,
 				"gamestageAll": true,
 				"gameStageList": [],
