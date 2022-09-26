@@ -223,6 +223,8 @@ recipes.addShapedMirrored("fairy_dew", <bountifulbaubles:reforger>,
 
 recipes.remove(<xat:dwarf_stout>);
 
+//copy fire jar
+recipes.addShapeless(<biomesoplenty:jar_filled:1>*2,[<biomesoplenty:jar_filled:1>,<biomesoplenty:jar_empty>]);
 
 
 
