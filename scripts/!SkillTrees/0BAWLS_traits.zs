@@ -3,6 +3,8 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerBreakSpeedEvent;
 import crafttweaker.block.IBlock;
 import mods.compatskills.TraitCreator;
+import mods.compatskills.SkillChange;
+import mods.compatskills.Skill;
 import mods.compatskills.Requirement.addRequirement;
 import mods.jei.JEI;
 import crafttweaker.player.IPlayer;
@@ -82,8 +84,13 @@ var bawls19 = mods.compatskills.TraitCreator.createTrait("bawls19", 3, 3, "extra
 var bawls20 = mods.compatskills.TraitCreator.createTrait("bawls20", 4, 3, "extraskills:bawls", 2, "and|[extraskills:bawls|40]~[trait|compatskills:bawls16]");
 
 //bawls2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
+//add effects on skill level up
 
-//setup human preferred biomes
+
+mods.compatskills.SkillChange.addLevelUpCommands(<skill:extraskills:bawls>, 2,"/heal @p", "/effect @p extraalchemy:effect.learning 600", "/particle flame ~ ~ ~ 2 2 2 1 2000 @p", "/say Confidence surges as your mastery grows! This is how you get BAWLS!");
+
+
+//setup dwarf preferred biomes
 var biomeArray = ["Alps", "AlpsFoothills", "Cold Desert", "Crag", "Glacier", "Highland", "Maple Woods", "Mountain", "MountainFoothills", "RedwoodForest", "RedwoodForestEdge", "Seasonal Forest", "Shield", "Snowy Coniferous Forest", "Snowy Forest", "SnowyTundra", "Tundra", "Volcanic Island", "Extreme Hills", "Extreme Hills+", "Ice Plains", "Ice Mountains", "Extreme Hills M", "Extreme Hills+ M", "Ice Plains Spikes", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Taiga M", "Extreme Hills Edge", "TaigaHills"] as string[];
 
 //give player clay drops from dirt
