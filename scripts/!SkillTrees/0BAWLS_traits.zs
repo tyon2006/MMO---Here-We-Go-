@@ -86,8 +86,14 @@ var bawls20 = mods.compatskills.TraitCreator.createTrait("bawls20", 4, 3, "extra
 //bawls2.changeIcon("transmutationalchemy:/textures/items/magical_dust.png"); //this doesnt work. dont do this.
 //add effects on skill level up
 
+var traitNums = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] as int[];
+for item in traitNums{
+	mods.compatskills.SkillChange.addLevelUpCommands(<skill:extraskills:bawls>, item,"/heal @p", "/effect @p extraalchemy:effect.learning 600", "/particle flame ~ ~ ~ 2 2 2 1 2000 force @p", "/title @p subtitle \"Confidence surges as your mastery grows!\"","/title @p title {\"text\":\"This is how you get BAWLS!\", \"color\":\"gold\"}");
+	mods.compatskills.SkillChange.addLevelUpCommands(<skill:extraskills:grayce>, item,"/heal @p", "/effect @p extraalchemy:effect.learning 600", "/particle flame ~ ~ ~ 2 2 2 1 2000 force @p", "/title @p subtitle \"With great power comes the will to use it!\"","/title @p title {\"text\":\"Show the world your GRAYCE!\", \"color\":\"dark_purple\"}");
+	mods.compatskills.SkillChange.addLevelUpCommands(<skill:extraskills:skillz>, item,"/heal @p", "/effect @p extraalchemy:effect.learning 600", "/particle flame ~ ~ ~ 2 2 2 1 2000 force @p", "/title @p subtitle \"Keep that momentum going!\"","/title @p title {\"text\":\"That's the true test of SKILLZ!\", \"color\":\"red\"}");
+	
+}
 
-mods.compatskills.SkillChange.addLevelUpCommands(<skill:extraskills:bawls>, 2,"/heal @p", "/effect @p extraalchemy:effect.learning 600", "/particle flame ~ ~ ~ 2 2 2 1 2000 @p", "/say Confidence surges as your mastery grows! This is how you get BAWLS!");
 
 
 //setup dwarf preferred biomes
